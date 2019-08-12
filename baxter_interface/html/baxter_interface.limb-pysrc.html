@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>baxter_interface.limb</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="baxter_interface-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://sdk.rethinkrobotics.com/wiki/">Project Homepage</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="baxter_interface-module.html">Package&nbsp;baxter_interface</a> ::
+        Module&nbsp;limb
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="baxter_interface.limb-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="baxter_interface.limb-module.html">Module baxter_interface.limb</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-comment"># Copyright (c) 2013-2015, Rethink Robotics</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-comment"># All rights reserved.</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-comment">#</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-comment"># Redistribution and use in source and binary forms, with or without</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-comment"># modification, are permitted provided that the following conditions are met:</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-comment">#</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-comment"># 1. Redistributions of source code must retain the above copyright notice,</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-comment">#    this list of conditions and the following disclaimer.</tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-comment"># 2. Redistributions in binary form must reproduce the above copyright</tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"><tt class="py-comment">#    notice, this list of conditions and the following disclaimer in the</tt> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"><tt class="py-comment">#    documentation and/or other materials provided with the distribution.</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"><tt class="py-comment"># 3. Neither the name of the Rethink Robotics nor the names of its</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-comment">#    contributors may be used to endorse or promote products derived from</tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"><tt class="py-comment">#    this software without specific prior written permission.</tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"><tt class="py-comment">#</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"><tt class="py-comment"># THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"</tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line"><tt class="py-comment"># AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"><tt class="py-comment"># IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"><tt class="py-comment"># ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"><tt class="py-comment"># LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line"><tt class="py-comment"># CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line"><tt class="py-comment"># SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line"><tt class="py-comment"># INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line"><tt class="py-comment"># CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line"><tt class="py-comment"># ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line"><tt class="py-comment"># POSSIBILITY OF SUCH DAMAGE.</tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line"> </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">collections</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line"> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-0" class="py-name" targets="Method baxter_dataflow.weakrefset.WeakSet.copy()=baxter_dataflow.weakrefset.WeakSet-class.html#copy"><a title="baxter_dataflow.weakrefset.WeakSet.copy" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-0', 'copy', 'link-0');">copy</a></tt> <tt class="py-keyword">import</tt> <tt class="py-name">deepcopy</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line"> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">rospy</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line"> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">sensor_msgs</tt><tt class="py-op">.</tt><tt class="py-name">msg</tt> <tt class="py-keyword">import</tt> <tt class="py-op">(</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">    <tt class="py-name">JointState</tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line"><tt class="py-op">)</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">std_msgs</tt><tt class="py-op">.</tt><tt class="py-name">msg</tt> <tt class="py-keyword">import</tt> <tt class="py-op">(</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line">    <tt class="py-name">Float64</tt><tt class="py-op">,</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line"><tt class="py-op">)</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line"> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-1" class="py-name" targets="Package baxter_dataflow=baxter_dataflow-module.html"><a title="baxter_dataflow" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-1', 'baxter_dataflow', 'link-1');">baxter_dataflow</a></tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line"> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">baxter_core_msgs</tt><tt class="py-op">.</tt><tt class="py-name">msg</tt> <tt class="py-keyword">import</tt> <tt class="py-op">(</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">    <tt class="py-name">JointCommand</tt><tt class="py-op">,</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">    <tt class="py-name">EndpointState</tt><tt class="py-op">,</tt> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line"><tt class="py-op">)</tt> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-2" class="py-name" targets="Package baxter_interface=baxter_interface-module.html"><a title="baxter_interface" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-2', 'baxter_interface', 'link-2');">baxter_interface</a></tt> <tt class="py-keyword">import</tt> <tt id="link-3" class="py-name" targets="Module baxter_interface.settings=baxter_interface.settings-module.html"><a title="baxter_interface.settings" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-3', 'settings', 'link-3');">settings</a></tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line"> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line"> </tt>
+<a name="Limb"></a><div id="Limb-def"><a name="L50"></a><tt class="py-lineno"> 50</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb-toggle" onclick="return toggle('Limb');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html">Limb</a><tt class="py-op">(</tt><tt class="py-base-class">object</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Limb-expanded"><a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line"><tt class="py-docstring">    Interface class for a limb on the Baxter robot.</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line"> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line">    <tt class="py-comment"># Containers</tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">    <tt id="link-4" class="py-name" targets="Class baxter_interface.limb.Limb.Point=baxter_interface.limb.Limb.Point-class.html"><a title="baxter_interface.limb.Limb.Point" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-4', 'Point', 'link-4');">Point</a></tt> <tt class="py-op">=</tt> <tt class="py-name">collections</tt><tt class="py-op">.</tt><tt class="py-name">namedtuple</tt><tt class="py-op">(</tt><tt class="py-string">'Point'</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-string">'x'</tt><tt class="py-op">,</tt> <tt class="py-string">'y'</tt><tt class="py-op">,</tt> <tt class="py-string">'z'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line">    <tt id="link-5" class="py-name" targets="Class baxter_interface.limb.Limb.Quaternion=baxter_interface.limb.Limb.Quaternion-class.html"><a title="baxter_interface.limb.Limb.Quaternion" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-5', 'Quaternion', 'link-5');">Quaternion</a></tt> <tt class="py-op">=</tt> <tt class="py-name">collections</tt><tt class="py-op">.</tt><tt class="py-name">namedtuple</tt><tt class="py-op">(</tt><tt class="py-string">'Quaternion'</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-string">'x'</tt><tt class="py-op">,</tt> <tt class="py-string">'y'</tt><tt class="py-op">,</tt> <tt class="py-string">'z'</tt><tt class="py-op">,</tt> <tt class="py-string">'w'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line"> </tt>
+<a name="Limb.__init__"></a><div id="Limb.__init__-def"><a name="L59"></a><tt class="py-lineno"> 59</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.__init__-toggle" onclick="return toggle('Limb.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">limb</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.__init__-expanded"><a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line"><tt class="py-docstring">        Constructor.</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line"><tt class="py-docstring">        @type limb: str</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line"><tt class="py-docstring">        @param limb: limb to interface</tt> </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt> <tt class="py-op">=</tt> <tt id="link-6" class="py-name" targets="Module baxter_interface.limb=baxter_interface.limb-module.html"><a title="baxter_interface.limb" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-6', 'limb', 'link-6');">limb</a></tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_angle</tt> <tt class="py-op">=</tt> <tt class="py-name">dict</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_velocity</tt> <tt class="py-op">=</tt> <tt class="py-name">dict</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_effort</tt> <tt class="py-op">=</tt> <tt class="py-name">dict</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_cartesian_pose</tt> <tt class="py-op">=</tt> <tt class="py-name">dict</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_cartesian_velocity</tt> <tt class="py-op">=</tt> <tt class="py-name">dict</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_cartesian_effort</tt> <tt class="py-op">=</tt> <tt class="py-name">dict</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line"> </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_names</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt> </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">            <tt class="py-string">'left'</tt><tt class="py-op">:</tt> <tt class="py-op">[</tt><tt class="py-string">'left_s0'</tt><tt class="py-op">,</tt> <tt class="py-string">'left_s1'</tt><tt class="py-op">,</tt> <tt class="py-string">'left_e0'</tt><tt class="py-op">,</tt> <tt class="py-string">'left_e1'</tt><tt class="py-op">,</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">                     <tt class="py-string">'left_w0'</tt><tt class="py-op">,</tt> <tt class="py-string">'left_w1'</tt><tt class="py-op">,</tt> <tt class="py-string">'left_w2'</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">            <tt class="py-string">'right'</tt><tt class="py-op">:</tt> <tt class="py-op">[</tt><tt class="py-string">'right_s0'</tt><tt class="py-op">,</tt> <tt class="py-string">'right_s1'</tt><tt class="py-op">,</tt> <tt class="py-string">'right_e0'</tt><tt class="py-op">,</tt> <tt class="py-string">'right_e1'</tt><tt class="py-op">,</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">                      <tt class="py-string">'right_w0'</tt><tt class="py-op">,</tt> <tt class="py-string">'right_w1'</tt><tt class="py-op">,</tt> <tt class="py-string">'right_w2'</tt><tt class="py-op">]</tt> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">            <tt class="py-op">}</tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line"> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">        <tt class="py-name">ns</tt> <tt class="py-op">=</tt> <tt class="py-string">'/robot/limb/'</tt> <tt class="py-op">+</tt> <tt id="link-7" class="py-name"><a title="baxter_interface.limb" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-7', 'limb', 'link-6');">limb</a></tt> <tt class="py-op">+</tt> <tt class="py-string">'/'</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line"> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt> <tt class="py-op">=</tt> <tt class="py-name">JointCommand</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line"> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_pub_speed_ratio</tt> <tt class="py-op">=</tt> <tt class="py-name">rospy</tt><tt class="py-op">.</tt><tt class="py-name">Publisher</tt><tt class="py-op">(</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">            <tt class="py-name">ns</tt> <tt class="py-op">+</tt> <tt class="py-string">'set_speed_ratio'</tt><tt class="py-op">,</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">            <tt class="py-name">Float64</tt><tt class="py-op">,</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">            <tt class="py-name">latch</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">            <tt class="py-name">queue_size</tt><tt class="py-op">=</tt><tt class="py-number">10</tt><tt class="py-op">)</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line"> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_pub_joint_cmd</tt> <tt class="py-op">=</tt> <tt class="py-name">rospy</tt><tt class="py-op">.</tt><tt class="py-name">Publisher</tt><tt class="py-op">(</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">            <tt class="py-name">ns</tt> <tt class="py-op">+</tt> <tt class="py-string">'joint_command'</tt><tt class="py-op">,</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">            <tt class="py-name">JointCommand</tt><tt class="py-op">,</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">            <tt class="py-name">tcp_nodelay</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">            <tt class="py-name">queue_size</tt><tt class="py-op">=</tt><tt class="py-number">1</tt><tt class="py-op">)</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line"> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_pub_joint_cmd_timeout</tt> <tt class="py-op">=</tt> <tt class="py-name">rospy</tt><tt class="py-op">.</tt><tt class="py-name">Publisher</tt><tt class="py-op">(</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">            <tt class="py-name">ns</tt> <tt class="py-op">+</tt> <tt class="py-string">'joint_command_timeout'</tt><tt class="py-op">,</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">            <tt class="py-name">Float64</tt><tt class="py-op">,</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">            <tt class="py-name">latch</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">            <tt class="py-name">queue_size</tt><tt class="py-op">=</tt><tt class="py-number">10</tt><tt class="py-op">)</tt> </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line"> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">        <tt class="py-name">_cartesian_state_sub</tt> <tt class="py-op">=</tt> <tt class="py-name">rospy</tt><tt class="py-op">.</tt><tt class="py-name">Subscriber</tt><tt class="py-op">(</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">            <tt class="py-name">ns</tt> <tt class="py-op">+</tt> <tt class="py-string">'endpoint_state'</tt><tt class="py-op">,</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">            <tt class="py-name">EndpointState</tt><tt class="py-op">,</tt> </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name" targets="Method baxter_interface.limb.Limb._on_endpoint_states()=baxter_interface.limb.Limb-class.html#_on_endpoint_states"><a title="baxter_interface.limb.Limb._on_endpoint_states" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-8', '_on_endpoint_states', 'link-8');">_on_endpoint_states</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line">            <tt class="py-name">queue_size</tt><tt class="py-op">=</tt><tt class="py-number">1</tt><tt class="py-op">,</tt> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line">            <tt class="py-name">tcp_nodelay</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line"> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">        <tt class="py-name">joint_state_topic</tt> <tt class="py-op">=</tt> <tt class="py-string">'robot/joint_states'</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">        <tt class="py-name">_joint_state_sub</tt> <tt class="py-op">=</tt> <tt class="py-name">rospy</tt><tt class="py-op">.</tt><tt class="py-name">Subscriber</tt><tt class="py-op">(</tt> </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">            <tt class="py-name">joint_state_topic</tt><tt class="py-op">,</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">            <tt class="py-name">JointState</tt><tt class="py-op">,</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-9" class="py-name" targets="Method baxter_interface.limb.Limb._on_joint_states()=baxter_interface.limb.Limb-class.html#_on_joint_states"><a title="baxter_interface.limb.Limb._on_joint_states" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-9', '_on_joint_states', 'link-9');">_on_joint_states</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line">            <tt class="py-name">queue_size</tt><tt class="py-op">=</tt><tt class="py-number">1</tt><tt class="py-op">,</tt> </tt>
+<a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line">            <tt class="py-name">tcp_nodelay</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line"> </tt>
+<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line">        <tt class="py-name">err_msg</tt> <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-string">"%s limb init failed to get current joint_states "</tt> </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line">                   <tt class="py-string">"from %s"</tt><tt class="py-op">)</tt> <tt class="py-op">%</tt> <tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt><tt class="py-op">.</tt><tt class="py-name">capitalize</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-name">joint_state_topic</tt><tt class="py-op">)</tt> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">        <tt id="link-10" class="py-name"><a title="baxter_dataflow" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-10', 'baxter_dataflow', 'link-1');">baxter_dataflow</a></tt><tt class="py-op">.</tt><tt id="link-11" class="py-name" targets="Function baxter_dataflow.wait_for'.wait_for()=baxter_dataflow.wait_for%27-module.html#wait_for"><a title="baxter_dataflow.wait_for'.wait_for" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-11', 'wait_for', 'link-11');">wait_for</a></tt><tt class="py-op">(</tt><tt class="py-keyword">lambda</tt><tt class="py-op">:</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_angle</tt><tt class="py-op">.</tt><tt class="py-name">keys</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">&gt;</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">                                 <tt class="py-name">timeout_msg</tt><tt class="py-op">=</tt><tt class="py-name">err_msg</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line"> </tt>
+<a name="Limb._on_joint_states"></a><div id="Limb._on_joint_states-def"><a name="L123"></a><tt class="py-lineno">123</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb._on_joint_states-toggle" onclick="return toggle('Limb._on_joint_states');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#_on_joint_states">_on_joint_states</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">msg</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb._on_joint_states-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb._on_joint_states-expanded"><a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">idx</tt><tt class="py-op">,</tt> <tt class="py-name">name</tt> <tt class="py-keyword">in</tt> <tt class="py-name">enumerate</tt><tt class="py-op">(</tt><tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">name</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt> <tt class="py-keyword">in</tt> <tt class="py-name">name</tt><tt class="py-op">:</tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_angle</tt><tt class="py-op">[</tt><tt class="py-name">name</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt id="link-12" class="py-name" targets="Method baxter_interface.gripper.Gripper.position()=baxter_interface.gripper.Gripper-class.html#position"><a title="baxter_interface.gripper.Gripper.position" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-12', 'position', 'link-12');">position</a></tt><tt class="py-op">[</tt><tt class="py-name">idx</tt><tt class="py-op">]</tt> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_velocity</tt><tt class="py-op">[</tt><tt class="py-name">name</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">velocity</tt><tt class="py-op">[</tt><tt class="py-name">idx</tt><tt class="py-op">]</tt> </tt>
+<a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_effort</tt><tt class="py-op">[</tt><tt class="py-name">name</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">effort</tt><tt class="py-op">[</tt><tt class="py-name">idx</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line"> </tt>
+<a name="Limb._on_endpoint_states"></a><div id="Limb._on_endpoint_states-def"><a name="L130"></a><tt class="py-lineno">130</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb._on_endpoint_states-toggle" onclick="return toggle('Limb._on_endpoint_states');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#_on_endpoint_states">_on_endpoint_states</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">msg</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb._on_endpoint_states-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb._on_endpoint_states-expanded"><a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">        <tt class="py-comment"># Comments in this private method are for documentation purposes.</tt> </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line">        <tt class="py-comment"># _pose = {'position': (x, y, z), 'orientation': (x, y, z, w)}</tt> </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_cartesian_pose</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">            <tt class="py-string">'position'</tt><tt class="py-op">:</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="baxter_interface.limb.Limb.Point" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-13', 'Point', 'link-4');">Point</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">pose</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name"><a title="baxter_interface.gripper.Gripper.position" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-14', 'position', 'link-12');">position</a></tt><tt class="py-op">.</tt><tt id="link-15" class="py-name" targets="Variable baxter_interface.limb.Limb.Point.x=baxter_interface.limb.Limb.Point-class.html#x,Variable baxter_interface.limb.Limb.Quaternion.x=baxter_interface.limb.Limb.Quaternion-class.html#x"><a title="baxter_interface.limb.Limb.Point.x
+baxter_interface.limb.Limb.Quaternion.x" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-15', 'x', 'link-15');">x</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L136"></a><tt class="py-lineno">136</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">pose</tt><tt class="py-op">.</tt><tt id="link-16" class="py-name"><a title="baxter_interface.gripper.Gripper.position" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-16', 'position', 'link-12');">position</a></tt><tt class="py-op">.</tt><tt id="link-17" class="py-name" targets="Variable baxter_interface.limb.Limb.Point.y=baxter_interface.limb.Limb.Point-class.html#y,Variable baxter_interface.limb.Limb.Quaternion.y=baxter_interface.limb.Limb.Quaternion-class.html#y"><a title="baxter_interface.limb.Limb.Point.y
+baxter_interface.limb.Limb.Quaternion.y" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-17', 'y', 'link-17');">y</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">pose</tt><tt class="py-op">.</tt><tt id="link-18" class="py-name"><a title="baxter_interface.gripper.Gripper.position" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-18', 'position', 'link-12');">position</a></tt><tt class="py-op">.</tt><tt id="link-19" class="py-name" targets="Variable baxter_interface.limb.Limb.Point.z=baxter_interface.limb.Limb.Point-class.html#z,Variable baxter_interface.limb.Limb.Quaternion.z=baxter_interface.limb.Limb.Quaternion-class.html#z"><a title="baxter_interface.limb.Limb.Point.z
+baxter_interface.limb.Limb.Quaternion.z" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-19', 'z', 'link-19');">z</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line">            <tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line">            <tt class="py-string">'orientation'</tt><tt class="py-op">:</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-20" class="py-name"><a title="baxter_interface.limb.Limb.Quaternion" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-20', 'Quaternion', 'link-5');">Quaternion</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L140"></a><tt class="py-lineno">140</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">pose</tt><tt class="py-op">.</tt><tt class="py-name">orientation</tt><tt class="py-op">.</tt><tt id="link-21" class="py-name"><a title="baxter_interface.limb.Limb.Point.x
+baxter_interface.limb.Limb.Quaternion.x" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-21', 'x', 'link-15');">x</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L141"></a><tt class="py-lineno">141</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">pose</tt><tt class="py-op">.</tt><tt class="py-name">orientation</tt><tt class="py-op">.</tt><tt id="link-22" class="py-name"><a title="baxter_interface.limb.Limb.Point.y
+baxter_interface.limb.Limb.Quaternion.y" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-22', 'y', 'link-17');">y</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">pose</tt><tt class="py-op">.</tt><tt class="py-name">orientation</tt><tt class="py-op">.</tt><tt id="link-23" class="py-name"><a title="baxter_interface.limb.Limb.Point.z
+baxter_interface.limb.Limb.Quaternion.z" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-23', 'z', 'link-19');">z</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L143"></a><tt class="py-lineno">143</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">pose</tt><tt class="py-op">.</tt><tt class="py-name">orientation</tt><tt class="py-op">.</tt><tt id="link-24" class="py-name" targets="Variable baxter_interface.limb.Limb.Quaternion.w=baxter_interface.limb.Limb.Quaternion-class.html#w"><a title="baxter_interface.limb.Limb.Quaternion.w" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-24', 'w', 'link-24');">w</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line">            <tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L145"></a><tt class="py-lineno">145</tt>  <tt class="py-line">        <tt class="py-op">}</tt> </tt>
+<a name="L146"></a><tt class="py-lineno">146</tt>  <tt class="py-line">        <tt class="py-comment"># _twist = {'linear': (x, y, z), 'angular': (x, y, z)}</tt> </tt>
+<a name="L147"></a><tt class="py-lineno">147</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_cartesian_velocity</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt> </tt>
+<a name="L148"></a><tt class="py-lineno">148</tt>  <tt class="py-line">            <tt class="py-string">'linear'</tt><tt class="py-op">:</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-25" class="py-name"><a title="baxter_interface.limb.Limb.Point" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-25', 'Point', 'link-4');">Point</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L149"></a><tt class="py-lineno">149</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">twist</tt><tt class="py-op">.</tt><tt class="py-name">linear</tt><tt class="py-op">.</tt><tt id="link-26" class="py-name"><a title="baxter_interface.limb.Limb.Point.x
+baxter_interface.limb.Limb.Quaternion.x" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-26', 'x', 'link-15');">x</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L150"></a><tt class="py-lineno">150</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">twist</tt><tt class="py-op">.</tt><tt class="py-name">linear</tt><tt class="py-op">.</tt><tt id="link-27" class="py-name"><a title="baxter_interface.limb.Limb.Point.y
+baxter_interface.limb.Limb.Quaternion.y" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-27', 'y', 'link-17');">y</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L151"></a><tt class="py-lineno">151</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">twist</tt><tt class="py-op">.</tt><tt class="py-name">linear</tt><tt class="py-op">.</tt><tt id="link-28" class="py-name"><a title="baxter_interface.limb.Limb.Point.z
+baxter_interface.limb.Limb.Quaternion.z" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-28', 'z', 'link-19');">z</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L152"></a><tt class="py-lineno">152</tt>  <tt class="py-line">            <tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L153"></a><tt class="py-lineno">153</tt>  <tt class="py-line">            <tt class="py-string">'angular'</tt><tt class="py-op">:</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-29" class="py-name"><a title="baxter_interface.limb.Limb.Point" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-29', 'Point', 'link-4');">Point</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L154"></a><tt class="py-lineno">154</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">twist</tt><tt class="py-op">.</tt><tt class="py-name">angular</tt><tt class="py-op">.</tt><tt id="link-30" class="py-name"><a title="baxter_interface.limb.Limb.Point.x
+baxter_interface.limb.Limb.Quaternion.x" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-30', 'x', 'link-15');">x</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L155"></a><tt class="py-lineno">155</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">twist</tt><tt class="py-op">.</tt><tt class="py-name">angular</tt><tt class="py-op">.</tt><tt id="link-31" class="py-name"><a title="baxter_interface.limb.Limb.Point.y
+baxter_interface.limb.Limb.Quaternion.y" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-31', 'y', 'link-17');">y</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L156"></a><tt class="py-lineno">156</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">twist</tt><tt class="py-op">.</tt><tt class="py-name">angular</tt><tt class="py-op">.</tt><tt id="link-32" class="py-name"><a title="baxter_interface.limb.Limb.Point.z
+baxter_interface.limb.Limb.Quaternion.z" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-32', 'z', 'link-19');">z</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L157"></a><tt class="py-lineno">157</tt>  <tt class="py-line">            <tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L158"></a><tt class="py-lineno">158</tt>  <tt class="py-line">        <tt class="py-op">}</tt> </tt>
+<a name="L159"></a><tt class="py-lineno">159</tt>  <tt class="py-line">        <tt class="py-comment"># _wrench = {'force': (x, y, z), 'torque': (x, y, z)}</tt> </tt>
+<a name="L160"></a><tt class="py-lineno">160</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_cartesian_effort</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt> </tt>
+<a name="L161"></a><tt class="py-lineno">161</tt>  <tt class="py-line">            <tt class="py-string">'force'</tt><tt class="py-op">:</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-33" class="py-name"><a title="baxter_interface.limb.Limb.Point" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-33', 'Point', 'link-4');">Point</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L162"></a><tt class="py-lineno">162</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">wrench</tt><tt class="py-op">.</tt><tt id="link-34" class="py-name" targets="Method baxter_interface.gripper.Gripper.force()=baxter_interface.gripper.Gripper-class.html#force"><a title="baxter_interface.gripper.Gripper.force" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-34', 'force', 'link-34');">force</a></tt><tt class="py-op">.</tt><tt id="link-35" class="py-name"><a title="baxter_interface.limb.Limb.Point.x
+baxter_interface.limb.Limb.Quaternion.x" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-35', 'x', 'link-15');">x</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L163"></a><tt class="py-lineno">163</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">wrench</tt><tt class="py-op">.</tt><tt id="link-36" class="py-name"><a title="baxter_interface.gripper.Gripper.force" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-36', 'force', 'link-34');">force</a></tt><tt class="py-op">.</tt><tt id="link-37" class="py-name"><a title="baxter_interface.limb.Limb.Point.y
+baxter_interface.limb.Limb.Quaternion.y" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-37', 'y', 'link-17');">y</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L164"></a><tt class="py-lineno">164</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">wrench</tt><tt class="py-op">.</tt><tt id="link-38" class="py-name"><a title="baxter_interface.gripper.Gripper.force" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-38', 'force', 'link-34');">force</a></tt><tt class="py-op">.</tt><tt id="link-39" class="py-name"><a title="baxter_interface.limb.Limb.Point.z
+baxter_interface.limb.Limb.Quaternion.z" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-39', 'z', 'link-19');">z</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L165"></a><tt class="py-lineno">165</tt>  <tt class="py-line">            <tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L166"></a><tt class="py-lineno">166</tt>  <tt class="py-line">            <tt class="py-string">'torque'</tt><tt class="py-op">:</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-40" class="py-name"><a title="baxter_interface.limb.Limb.Point" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-40', 'Point', 'link-4');">Point</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L167"></a><tt class="py-lineno">167</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">wrench</tt><tt class="py-op">.</tt><tt class="py-name">torque</tt><tt class="py-op">.</tt><tt id="link-41" class="py-name"><a title="baxter_interface.limb.Limb.Point.x
+baxter_interface.limb.Limb.Quaternion.x" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-41', 'x', 'link-15');">x</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L168"></a><tt class="py-lineno">168</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">wrench</tt><tt class="py-op">.</tt><tt class="py-name">torque</tt><tt class="py-op">.</tt><tt id="link-42" class="py-name"><a title="baxter_interface.limb.Limb.Point.y
+baxter_interface.limb.Limb.Quaternion.y" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-42', 'y', 'link-17');">y</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L169"></a><tt class="py-lineno">169</tt>  <tt class="py-line">                <tt class="py-name">msg</tt><tt class="py-op">.</tt><tt class="py-name">wrench</tt><tt class="py-op">.</tt><tt class="py-name">torque</tt><tt class="py-op">.</tt><tt id="link-43" class="py-name"><a title="baxter_interface.limb.Limb.Point.z
+baxter_interface.limb.Limb.Quaternion.z" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-43', 'z', 'link-19');">z</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L170"></a><tt class="py-lineno">170</tt>  <tt class="py-line">            <tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L171"></a><tt class="py-lineno">171</tt>  <tt class="py-line">        <tt class="py-op">}</tt> </tt>
+</div><a name="L172"></a><tt class="py-lineno">172</tt>  <tt class="py-line"> </tt>
+<a name="Limb.joint_names"></a><div id="Limb.joint_names-def"><a name="L173"></a><tt class="py-lineno">173</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.joint_names-toggle" onclick="return toggle('Limb.joint_names');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#joint_names">joint_names</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.joint_names-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.joint_names-expanded"><a name="L174"></a><tt class="py-lineno">174</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L175"></a><tt class="py-lineno">175</tt>  <tt class="py-line"><tt class="py-docstring">        Return the names of the joints for the specified limb.</tt> </tt>
+<a name="L176"></a><tt class="py-lineno">176</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L177"></a><tt class="py-lineno">177</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: [str]</tt> </tt>
+<a name="L178"></a><tt class="py-lineno">178</tt>  <tt class="py-line"><tt class="py-docstring">        @return: ordered list of joint names from proximal to distal</tt> </tt>
+<a name="L179"></a><tt class="py-lineno">179</tt>  <tt class="py-line"><tt class="py-docstring">        (i.e. shoulder to wrist).</tt> </tt>
+<a name="L180"></a><tt class="py-lineno">180</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L181"></a><tt class="py-lineno">181</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_names</tt><tt class="py-op">[</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L182"></a><tt class="py-lineno">182</tt>  <tt class="py-line"> </tt>
+<a name="Limb.joint_angle"></a><div id="Limb.joint_angle-def"><a name="L183"></a><tt class="py-lineno">183</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.joint_angle-toggle" onclick="return toggle('Limb.joint_angle');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#joint_angle">joint_angle</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">joint</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.joint_angle-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.joint_angle-expanded"><a name="L184"></a><tt class="py-lineno">184</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L185"></a><tt class="py-lineno">185</tt>  <tt class="py-line"><tt class="py-docstring">        Return the requested joint angle.</tt> </tt>
+<a name="L186"></a><tt class="py-lineno">186</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L187"></a><tt class="py-lineno">187</tt>  <tt class="py-line"><tt class="py-docstring">        @type joint: str</tt> </tt>
+<a name="L188"></a><tt class="py-lineno">188</tt>  <tt class="py-line"><tt class="py-docstring">        @param joint: name of a joint</tt> </tt>
+<a name="L189"></a><tt class="py-lineno">189</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: float</tt> </tt>
+<a name="L190"></a><tt class="py-lineno">190</tt>  <tt class="py-line"><tt class="py-docstring">        @return: angle in radians of individual joint</tt> </tt>
+<a name="L191"></a><tt class="py-lineno">191</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L192"></a><tt class="py-lineno">192</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_angle</tt><tt class="py-op">[</tt><tt class="py-name">joint</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L193"></a><tt class="py-lineno">193</tt>  <tt class="py-line"> </tt>
+<a name="Limb.joint_angles"></a><div id="Limb.joint_angles-def"><a name="L194"></a><tt class="py-lineno">194</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.joint_angles-toggle" onclick="return toggle('Limb.joint_angles');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#joint_angles">joint_angles</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.joint_angles-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.joint_angles-expanded"><a name="L195"></a><tt class="py-lineno">195</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L196"></a><tt class="py-lineno">196</tt>  <tt class="py-line"><tt class="py-docstring">        Return all joint angles.</tt> </tt>
+<a name="L197"></a><tt class="py-lineno">197</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L198"></a><tt class="py-lineno">198</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: dict({str:float})</tt> </tt>
+<a name="L199"></a><tt class="py-lineno">199</tt>  <tt class="py-line"><tt class="py-docstring">        @return: unordered dict of joint name Keys to angle (rad) Values</tt> </tt>
+<a name="L200"></a><tt class="py-lineno">200</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L201"></a><tt class="py-lineno">201</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">deepcopy</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_angle</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L202"></a><tt class="py-lineno">202</tt>  <tt class="py-line"> </tt>
+<a name="Limb.joint_velocity"></a><div id="Limb.joint_velocity-def"><a name="L203"></a><tt class="py-lineno">203</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.joint_velocity-toggle" onclick="return toggle('Limb.joint_velocity');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#joint_velocity">joint_velocity</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">joint</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.joint_velocity-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.joint_velocity-expanded"><a name="L204"></a><tt class="py-lineno">204</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L205"></a><tt class="py-lineno">205</tt>  <tt class="py-line"><tt class="py-docstring">        Return the requested joint velocity.</tt> </tt>
+<a name="L206"></a><tt class="py-lineno">206</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L207"></a><tt class="py-lineno">207</tt>  <tt class="py-line"><tt class="py-docstring">        @type joint: str</tt> </tt>
+<a name="L208"></a><tt class="py-lineno">208</tt>  <tt class="py-line"><tt class="py-docstring">        @param joint: name of a joint</tt> </tt>
+<a name="L209"></a><tt class="py-lineno">209</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: float</tt> </tt>
+<a name="L210"></a><tt class="py-lineno">210</tt>  <tt class="py-line"><tt class="py-docstring">        @return: velocity in radians/s of individual joint</tt> </tt>
+<a name="L211"></a><tt class="py-lineno">211</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L212"></a><tt class="py-lineno">212</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_velocity</tt><tt class="py-op">[</tt><tt class="py-name">joint</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L213"></a><tt class="py-lineno">213</tt>  <tt class="py-line"> </tt>
+<a name="Limb.joint_velocities"></a><div id="Limb.joint_velocities-def"><a name="L214"></a><tt class="py-lineno">214</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.joint_velocities-toggle" onclick="return toggle('Limb.joint_velocities');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#joint_velocities">joint_velocities</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.joint_velocities-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.joint_velocities-expanded"><a name="L215"></a><tt class="py-lineno">215</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L216"></a><tt class="py-lineno">216</tt>  <tt class="py-line"><tt class="py-docstring">        Return all joint velocities.</tt> </tt>
+<a name="L217"></a><tt class="py-lineno">217</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L218"></a><tt class="py-lineno">218</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: dict({str:float})</tt> </tt>
+<a name="L219"></a><tt class="py-lineno">219</tt>  <tt class="py-line"><tt class="py-docstring">        @return: unordered dict of joint name Keys to velocity (rad/s) Values</tt> </tt>
+<a name="L220"></a><tt class="py-lineno">220</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L221"></a><tt class="py-lineno">221</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">deepcopy</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_velocity</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L222"></a><tt class="py-lineno">222</tt>  <tt class="py-line"> </tt>
+<a name="Limb.joint_effort"></a><div id="Limb.joint_effort-def"><a name="L223"></a><tt class="py-lineno">223</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.joint_effort-toggle" onclick="return toggle('Limb.joint_effort');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#joint_effort">joint_effort</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">joint</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.joint_effort-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.joint_effort-expanded"><a name="L224"></a><tt class="py-lineno">224</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L225"></a><tt class="py-lineno">225</tt>  <tt class="py-line"><tt class="py-docstring">        Return the requested joint effort.</tt> </tt>
+<a name="L226"></a><tt class="py-lineno">226</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L227"></a><tt class="py-lineno">227</tt>  <tt class="py-line"><tt class="py-docstring">        @type joint: str</tt> </tt>
+<a name="L228"></a><tt class="py-lineno">228</tt>  <tt class="py-line"><tt class="py-docstring">        @param joint: name of a joint</tt> </tt>
+<a name="L229"></a><tt class="py-lineno">229</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: float</tt> </tt>
+<a name="L230"></a><tt class="py-lineno">230</tt>  <tt class="py-line"><tt class="py-docstring">        @return: effort in Nm of individual joint</tt> </tt>
+<a name="L231"></a><tt class="py-lineno">231</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L232"></a><tt class="py-lineno">232</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_effort</tt><tt class="py-op">[</tt><tt class="py-name">joint</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L233"></a><tt class="py-lineno">233</tt>  <tt class="py-line"> </tt>
+<a name="Limb.joint_efforts"></a><div id="Limb.joint_efforts-def"><a name="L234"></a><tt class="py-lineno">234</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.joint_efforts-toggle" onclick="return toggle('Limb.joint_efforts');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#joint_efforts">joint_efforts</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.joint_efforts-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.joint_efforts-expanded"><a name="L235"></a><tt class="py-lineno">235</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L236"></a><tt class="py-lineno">236</tt>  <tt class="py-line"><tt class="py-docstring">        Return all joint efforts.</tt> </tt>
+<a name="L237"></a><tt class="py-lineno">237</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L238"></a><tt class="py-lineno">238</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: dict({str:float})</tt> </tt>
+<a name="L239"></a><tt class="py-lineno">239</tt>  <tt class="py-line"><tt class="py-docstring">        @return: unordered dict of joint name Keys to effort (Nm) Values</tt> </tt>
+<a name="L240"></a><tt class="py-lineno">240</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L241"></a><tt class="py-lineno">241</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">deepcopy</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_effort</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L242"></a><tt class="py-lineno">242</tt>  <tt class="py-line"> </tt>
+<a name="Limb.endpoint_pose"></a><div id="Limb.endpoint_pose-def"><a name="L243"></a><tt class="py-lineno">243</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.endpoint_pose-toggle" onclick="return toggle('Limb.endpoint_pose');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#endpoint_pose">endpoint_pose</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.endpoint_pose-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.endpoint_pose-expanded"><a name="L244"></a><tt class="py-lineno">244</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L245"></a><tt class="py-lineno">245</tt>  <tt class="py-line"><tt class="py-docstring">        Return Cartesian endpoint pose {position, orientation}.</tt> </tt>
+<a name="L246"></a><tt class="py-lineno">246</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L247"></a><tt class="py-lineno">247</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: dict({str:L{Limb.Point},str:L{Limb.Quaternion}})</tt> </tt>
+<a name="L248"></a><tt class="py-lineno">248</tt>  <tt class="py-line"><tt class="py-docstring">        @return: position and orientation as named tuples in a dict</tt> </tt>
+<a name="L249"></a><tt class="py-lineno">249</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L250"></a><tt class="py-lineno">250</tt>  <tt class="py-line"><tt class="py-docstring">        C{pose = {'position': (x, y, z), 'orientation': (x, y, z, w)}}</tt> </tt>
+<a name="L251"></a><tt class="py-lineno">251</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L252"></a><tt class="py-lineno">252</tt>  <tt class="py-line"><tt class="py-docstring">          - 'position': Cartesian coordinates x,y,z in</tt> </tt>
+<a name="L253"></a><tt class="py-lineno">253</tt>  <tt class="py-line"><tt class="py-docstring">                        namedtuple L{Limb.Point}</tt> </tt>
+<a name="L254"></a><tt class="py-lineno">254</tt>  <tt class="py-line"><tt class="py-docstring">          - 'orientation': quaternion x,y,z,w in named tuple</tt> </tt>
+<a name="L255"></a><tt class="py-lineno">255</tt>  <tt class="py-line"><tt class="py-docstring">                           L{Limb.Quaternion}</tt> </tt>
+<a name="L256"></a><tt class="py-lineno">256</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L257"></a><tt class="py-lineno">257</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">deepcopy</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_cartesian_pose</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L258"></a><tt class="py-lineno">258</tt>  <tt class="py-line"> </tt>
+<a name="Limb.endpoint_velocity"></a><div id="Limb.endpoint_velocity-def"><a name="L259"></a><tt class="py-lineno">259</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.endpoint_velocity-toggle" onclick="return toggle('Limb.endpoint_velocity');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#endpoint_velocity">endpoint_velocity</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.endpoint_velocity-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.endpoint_velocity-expanded"><a name="L260"></a><tt class="py-lineno">260</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L261"></a><tt class="py-lineno">261</tt>  <tt class="py-line"><tt class="py-docstring">        Return Cartesian endpoint twist {linear, angular}.</tt> </tt>
+<a name="L262"></a><tt class="py-lineno">262</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L263"></a><tt class="py-lineno">263</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: dict({str:L{Limb.Point},str:L{Limb.Point}})</tt> </tt>
+<a name="L264"></a><tt class="py-lineno">264</tt>  <tt class="py-line"><tt class="py-docstring">        @return: linear and angular velocities as named tuples in a dict</tt> </tt>
+<a name="L265"></a><tt class="py-lineno">265</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L266"></a><tt class="py-lineno">266</tt>  <tt class="py-line"><tt class="py-docstring">        C{twist = {'linear': (x, y, z), 'angular': (x, y, z)}}</tt> </tt>
+<a name="L267"></a><tt class="py-lineno">267</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L268"></a><tt class="py-lineno">268</tt>  <tt class="py-line"><tt class="py-docstring">          - 'linear': Cartesian velocity in x,y,z directions in</tt> </tt>
+<a name="L269"></a><tt class="py-lineno">269</tt>  <tt class="py-line"><tt class="py-docstring">                      namedtuple L{Limb.Point}</tt> </tt>
+<a name="L270"></a><tt class="py-lineno">270</tt>  <tt class="py-line"><tt class="py-docstring">          - 'angular': Angular velocity around x,y,z axes in named tuple</tt> </tt>
+<a name="L271"></a><tt class="py-lineno">271</tt>  <tt class="py-line"><tt class="py-docstring">                       L{Limb.Point}</tt> </tt>
+<a name="L272"></a><tt class="py-lineno">272</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L273"></a><tt class="py-lineno">273</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">deepcopy</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_cartesian_velocity</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L274"></a><tt class="py-lineno">274</tt>  <tt class="py-line"> </tt>
+<a name="Limb.endpoint_effort"></a><div id="Limb.endpoint_effort-def"><a name="L275"></a><tt class="py-lineno">275</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.endpoint_effort-toggle" onclick="return toggle('Limb.endpoint_effort');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#endpoint_effort">endpoint_effort</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.endpoint_effort-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.endpoint_effort-expanded"><a name="L276"></a><tt class="py-lineno">276</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L277"></a><tt class="py-lineno">277</tt>  <tt class="py-line"><tt class="py-docstring">        Return Cartesian endpoint wrench {force, torque}.</tt> </tt>
+<a name="L278"></a><tt class="py-lineno">278</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L279"></a><tt class="py-lineno">279</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: dict({str:L{Limb.Point},str:L{Limb.Point}})</tt> </tt>
+<a name="L280"></a><tt class="py-lineno">280</tt>  <tt class="py-line"><tt class="py-docstring">        @return: force and torque at endpoint as named tuples in a dict</tt> </tt>
+<a name="L281"></a><tt class="py-lineno">281</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L282"></a><tt class="py-lineno">282</tt>  <tt class="py-line"><tt class="py-docstring">        C{wrench = {'force': (x, y, z), 'torque': (x, y, z)}}</tt> </tt>
+<a name="L283"></a><tt class="py-lineno">283</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L284"></a><tt class="py-lineno">284</tt>  <tt class="py-line"><tt class="py-docstring">          - 'force': Cartesian force on x,y,z axes in</tt> </tt>
+<a name="L285"></a><tt class="py-lineno">285</tt>  <tt class="py-line"><tt class="py-docstring">                     namedtuple L{Limb.Point}</tt> </tt>
+<a name="L286"></a><tt class="py-lineno">286</tt>  <tt class="py-line"><tt class="py-docstring">          - 'torque': Torque around x,y,z axes in named tuple</tt> </tt>
+<a name="L287"></a><tt class="py-lineno">287</tt>  <tt class="py-line"><tt class="py-docstring">                      L{Limb.Point}</tt> </tt>
+<a name="L288"></a><tt class="py-lineno">288</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L289"></a><tt class="py-lineno">289</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">deepcopy</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_cartesian_effort</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L290"></a><tt class="py-lineno">290</tt>  <tt class="py-line"> </tt>
+<a name="Limb.set_command_timeout"></a><div id="Limb.set_command_timeout-def"><a name="L291"></a><tt class="py-lineno">291</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.set_command_timeout-toggle" onclick="return toggle('Limb.set_command_timeout');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#set_command_timeout">set_command_timeout</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">timeout</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.set_command_timeout-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.set_command_timeout-expanded"><a name="L292"></a><tt class="py-lineno">292</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L293"></a><tt class="py-lineno">293</tt>  <tt class="py-line"><tt class="py-docstring">        Set the timeout in seconds for the joint controller</tt> </tt>
+<a name="L294"></a><tt class="py-lineno">294</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L295"></a><tt class="py-lineno">295</tt>  <tt class="py-line"><tt class="py-docstring">        @type timeout: float</tt> </tt>
+<a name="L296"></a><tt class="py-lineno">296</tt>  <tt class="py-line"><tt class="py-docstring">        @param timeout: timeout in seconds</tt> </tt>
+<a name="L297"></a><tt class="py-lineno">297</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L298"></a><tt class="py-lineno">298</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_pub_joint_cmd_timeout</tt><tt class="py-op">.</tt><tt class="py-name">publish</tt><tt class="py-op">(</tt><tt class="py-name">Float64</tt><tt class="py-op">(</tt><tt class="py-name">timeout</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L299"></a><tt class="py-lineno">299</tt>  <tt class="py-line"> </tt>
+<a name="Limb.exit_control_mode"></a><div id="Limb.exit_control_mode-def"><a name="L300"></a><tt class="py-lineno">300</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.exit_control_mode-toggle" onclick="return toggle('Limb.exit_control_mode');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#exit_control_mode">exit_control_mode</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">timeout</tt><tt class="py-op">=</tt><tt class="py-number">0.2</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.exit_control_mode-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.exit_control_mode-expanded"><a name="L301"></a><tt class="py-lineno">301</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L302"></a><tt class="py-lineno">302</tt>  <tt class="py-line"><tt class="py-docstring">        Clean exit from advanced control modes (joint torque or velocity).</tt> </tt>
+<a name="L303"></a><tt class="py-lineno">303</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L304"></a><tt class="py-lineno">304</tt>  <tt class="py-line"><tt class="py-docstring">        Resets control to joint position mode with current positions.</tt> </tt>
+<a name="L305"></a><tt class="py-lineno">305</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L306"></a><tt class="py-lineno">306</tt>  <tt class="py-line"><tt class="py-docstring">        @type timeout: float</tt> </tt>
+<a name="L307"></a><tt class="py-lineno">307</tt>  <tt class="py-line"><tt class="py-docstring">        @param timeout: control timeout in seconds [0.2]</tt> </tt>
+<a name="L308"></a><tt class="py-lineno">308</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L309"></a><tt class="py-lineno">309</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-44" class="py-name" targets="Method baxter_interface.limb.Limb.set_command_timeout()=baxter_interface.limb.Limb-class.html#set_command_timeout"><a title="baxter_interface.limb.Limb.set_command_timeout" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-44', 'set_command_timeout', 'link-44');">set_command_timeout</a></tt><tt class="py-op">(</tt><tt class="py-name">timeout</tt><tt class="py-op">)</tt> </tt>
+<a name="L310"></a><tt class="py-lineno">310</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-45" class="py-name" targets="Method baxter_interface.limb.Limb.set_joint_positions()=baxter_interface.limb.Limb-class.html#set_joint_positions"><a title="baxter_interface.limb.Limb.set_joint_positions" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-45', 'set_joint_positions', 'link-45');">set_joint_positions</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-46" class="py-name" targets="Method baxter_interface.limb.Limb.joint_angles()=baxter_interface.limb.Limb-class.html#joint_angles"><a title="baxter_interface.limb.Limb.joint_angles" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-46', 'joint_angles', 'link-46');">joint_angles</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L311"></a><tt class="py-lineno">311</tt>  <tt class="py-line"> </tt>
+<a name="Limb.set_joint_position_speed"></a><div id="Limb.set_joint_position_speed-def"><a name="L312"></a><tt class="py-lineno">312</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.set_joint_position_speed-toggle" onclick="return toggle('Limb.set_joint_position_speed');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#set_joint_position_speed">set_joint_position_speed</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">speed</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.set_joint_position_speed-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.set_joint_position_speed-expanded"><a name="L313"></a><tt class="py-lineno">313</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L314"></a><tt class="py-lineno">314</tt>  <tt class="py-line"><tt class="py-docstring">        Set ratio of max joint speed to use during joint position moves.</tt> </tt>
+<a name="L315"></a><tt class="py-lineno">315</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L316"></a><tt class="py-lineno">316</tt>  <tt class="py-line"><tt class="py-docstring">        Set the proportion of maximum controllable velocity to use</tt> </tt>
+<a name="L317"></a><tt class="py-lineno">317</tt>  <tt class="py-line"><tt class="py-docstring">        during joint position control execution. The default ratio</tt> </tt>
+<a name="L318"></a><tt class="py-lineno">318</tt>  <tt class="py-line"><tt class="py-docstring">        is `0.3`, and can be set anywhere from [0.0-1.0] (clipped).</tt> </tt>
+<a name="L319"></a><tt class="py-lineno">319</tt>  <tt class="py-line"><tt class="py-docstring">        Once set, a speed ratio will persist until a new execution</tt> </tt>
+<a name="L320"></a><tt class="py-lineno">320</tt>  <tt class="py-line"><tt class="py-docstring">        speed is set.</tt> </tt>
+<a name="L321"></a><tt class="py-lineno">321</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L322"></a><tt class="py-lineno">322</tt>  <tt class="py-line"><tt class="py-docstring">        @type speed: float</tt> </tt>
+<a name="L323"></a><tt class="py-lineno">323</tt>  <tt class="py-line"><tt class="py-docstring">        @param speed: ratio of maximum joint speed for execution</tt> </tt>
+<a name="L324"></a><tt class="py-lineno">324</tt>  <tt class="py-line"><tt class="py-docstring">                      default= 0.3; range= [0.0-1.0]</tt> </tt>
+<a name="L325"></a><tt class="py-lineno">325</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L326"></a><tt class="py-lineno">326</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_pub_speed_ratio</tt><tt class="py-op">.</tt><tt class="py-name">publish</tt><tt class="py-op">(</tt><tt class="py-name">Float64</tt><tt class="py-op">(</tt><tt class="py-name">speed</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L327"></a><tt class="py-lineno">327</tt>  <tt class="py-line"> </tt>
+<a name="Limb.set_joint_positions"></a><div id="Limb.set_joint_positions-def"><a name="L328"></a><tt class="py-lineno">328</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.set_joint_positions-toggle" onclick="return toggle('Limb.set_joint_positions');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#set_joint_positions">set_joint_positions</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">positions</tt><tt class="py-op">,</tt> <tt class="py-param">raw</tt><tt class="py-op">=</tt><tt class="py-name">False</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.set_joint_positions-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.set_joint_positions-expanded"><a name="L329"></a><tt class="py-lineno">329</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L330"></a><tt class="py-lineno">330</tt>  <tt class="py-line"><tt class="py-docstring">        Commands the joints of this limb to the specified positions.</tt> </tt>
+<a name="L331"></a><tt class="py-lineno">331</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L332"></a><tt class="py-lineno">332</tt>  <tt class="py-line"><tt class="py-docstring">        B{IMPORTANT:} 'raw' joint position control mode allows for commanding</tt> </tt>
+<a name="L333"></a><tt class="py-lineno">333</tt>  <tt class="py-line"><tt class="py-docstring">        joint positions, without modification, directly to the JCBs</tt> </tt>
+<a name="L334"></a><tt class="py-lineno">334</tt>  <tt class="py-line"><tt class="py-docstring">        (Joint Controller Boards). While this results in more unaffected</tt> </tt>
+<a name="L335"></a><tt class="py-lineno">335</tt>  <tt class="py-line"><tt class="py-docstring">        motions, 'raw' joint position control mode bypasses the safety system</tt> </tt>
+<a name="L336"></a><tt class="py-lineno">336</tt>  <tt class="py-line"><tt class="py-docstring">        modifications (e.g. collision avoidance).</tt> </tt>
+<a name="L337"></a><tt class="py-lineno">337</tt>  <tt class="py-line"><tt class="py-docstring">        Please use with caution.</tt> </tt>
+<a name="L338"></a><tt class="py-lineno">338</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L339"></a><tt class="py-lineno">339</tt>  <tt class="py-line"><tt class="py-docstring">        @type positions: dict({str:float})</tt> </tt>
+<a name="L340"></a><tt class="py-lineno">340</tt>  <tt class="py-line"><tt class="py-docstring">        @param positions: joint_name:angle command</tt> </tt>
+<a name="L341"></a><tt class="py-lineno">341</tt>  <tt class="py-line"><tt class="py-docstring">        @type raw: bool</tt> </tt>
+<a name="L342"></a><tt class="py-lineno">342</tt>  <tt class="py-line"><tt class="py-docstring">        @param raw: advanced, direct position control mode</tt> </tt>
+<a name="L343"></a><tt class="py-lineno">343</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L344"></a><tt class="py-lineno">344</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt><tt class="py-op">.</tt><tt class="py-name">names</tt> <tt class="py-op">=</tt> <tt class="py-name">positions</tt><tt class="py-op">.</tt><tt class="py-name">keys</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L345"></a><tt class="py-lineno">345</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt><tt class="py-op">.</tt><tt id="link-47" class="py-name" targets="Method baxter_interface.gripper.Gripper.command()=baxter_interface.gripper.Gripper-class.html#command"><a title="baxter_interface.gripper.Gripper.command" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-47', 'command', 'link-47');">command</a></tt> <tt class="py-op">=</tt> <tt class="py-name">positions</tt><tt class="py-op">.</tt><tt class="py-name">values</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L346"></a><tt class="py-lineno">346</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">raw</tt><tt class="py-op">:</tt> </tt>
+<a name="L347"></a><tt class="py-lineno">347</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt><tt class="py-op">.</tt><tt class="py-name">mode</tt> <tt class="py-op">=</tt> <tt class="py-name">JointCommand</tt><tt class="py-op">.</tt><tt class="py-name">RAW_POSITION_MODE</tt> </tt>
+<a name="L348"></a><tt class="py-lineno">348</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L349"></a><tt class="py-lineno">349</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt><tt class="py-op">.</tt><tt class="py-name">mode</tt> <tt class="py-op">=</tt> <tt class="py-name">JointCommand</tt><tt class="py-op">.</tt><tt class="py-name">POSITION_MODE</tt> </tt>
+<a name="L350"></a><tt class="py-lineno">350</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_pub_joint_cmd</tt><tt class="py-op">.</tt><tt class="py-name">publish</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L351"></a><tt class="py-lineno">351</tt>  <tt class="py-line"> </tt>
+<a name="Limb.set_joint_velocities"></a><div id="Limb.set_joint_velocities-def"><a name="L352"></a><tt class="py-lineno">352</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.set_joint_velocities-toggle" onclick="return toggle('Limb.set_joint_velocities');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#set_joint_velocities">set_joint_velocities</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">velocities</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.set_joint_velocities-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.set_joint_velocities-expanded"><a name="L353"></a><tt class="py-lineno">353</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L354"></a><tt class="py-lineno">354</tt>  <tt class="py-line"><tt class="py-docstring">        Commands the joints of this limb to the specified velocities.</tt> </tt>
+<a name="L355"></a><tt class="py-lineno">355</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L356"></a><tt class="py-lineno">356</tt>  <tt class="py-line"><tt class="py-docstring">        B{IMPORTANT}: set_joint_velocities must be commanded at a rate great</tt> </tt>
+<a name="L357"></a><tt class="py-lineno">357</tt>  <tt class="py-line"><tt class="py-docstring">        than the timeout specified by set_command_timeout. If the timeout is</tt> </tt>
+<a name="L358"></a><tt class="py-lineno">358</tt>  <tt class="py-line"><tt class="py-docstring">        exceeded before a new set_joint_velocities command is received, the</tt> </tt>
+<a name="L359"></a><tt class="py-lineno">359</tt>  <tt class="py-line"><tt class="py-docstring">        controller will switch modes back to position mode for safety purposes.</tt> </tt>
+<a name="L360"></a><tt class="py-lineno">360</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L361"></a><tt class="py-lineno">361</tt>  <tt class="py-line"><tt class="py-docstring">        @type velocities: dict({str:float})</tt> </tt>
+<a name="L362"></a><tt class="py-lineno">362</tt>  <tt class="py-line"><tt class="py-docstring">        @param velocities: joint_name:velocity command</tt> </tt>
+<a name="L363"></a><tt class="py-lineno">363</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L364"></a><tt class="py-lineno">364</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt><tt class="py-op">.</tt><tt class="py-name">names</tt> <tt class="py-op">=</tt> <tt class="py-name">velocities</tt><tt class="py-op">.</tt><tt class="py-name">keys</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L365"></a><tt class="py-lineno">365</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt><tt class="py-op">.</tt><tt id="link-48" class="py-name"><a title="baxter_interface.gripper.Gripper.command" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-48', 'command', 'link-47');">command</a></tt> <tt class="py-op">=</tt> <tt class="py-name">velocities</tt><tt class="py-op">.</tt><tt class="py-name">values</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L366"></a><tt class="py-lineno">366</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt><tt class="py-op">.</tt><tt class="py-name">mode</tt> <tt class="py-op">=</tt> <tt class="py-name">JointCommand</tt><tt class="py-op">.</tt><tt class="py-name">VELOCITY_MODE</tt> </tt>
+<a name="L367"></a><tt class="py-lineno">367</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_pub_joint_cmd</tt><tt class="py-op">.</tt><tt class="py-name">publish</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L368"></a><tt class="py-lineno">368</tt>  <tt class="py-line"> </tt>
+<a name="Limb.set_joint_torques"></a><div id="Limb.set_joint_torques-def"><a name="L369"></a><tt class="py-lineno">369</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.set_joint_torques-toggle" onclick="return toggle('Limb.set_joint_torques');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#set_joint_torques">set_joint_torques</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">torques</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.set_joint_torques-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.set_joint_torques-expanded"><a name="L370"></a><tt class="py-lineno">370</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L371"></a><tt class="py-lineno">371</tt>  <tt class="py-line"><tt class="py-docstring">        Commands the joints of this limb to the specified torques.</tt> </tt>
+<a name="L372"></a><tt class="py-lineno">372</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L373"></a><tt class="py-lineno">373</tt>  <tt class="py-line"><tt class="py-docstring">        B{IMPORTANT}: set_joint_torques must be commanded at a rate great than</tt> </tt>
+<a name="L374"></a><tt class="py-lineno">374</tt>  <tt class="py-line"><tt class="py-docstring">        the timeout specified by set_command_timeout. If the timeout is</tt> </tt>
+<a name="L375"></a><tt class="py-lineno">375</tt>  <tt class="py-line"><tt class="py-docstring">        exceeded before a new set_joint_torques command is received, the</tt> </tt>
+<a name="L376"></a><tt class="py-lineno">376</tt>  <tt class="py-line"><tt class="py-docstring">        controller will switch modes back to position mode for safety purposes.</tt> </tt>
+<a name="L377"></a><tt class="py-lineno">377</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L378"></a><tt class="py-lineno">378</tt>  <tt class="py-line"><tt class="py-docstring">        @type torques: dict({str:float})</tt> </tt>
+<a name="L379"></a><tt class="py-lineno">379</tt>  <tt class="py-line"><tt class="py-docstring">        @param torques: joint_name:torque command</tt> </tt>
+<a name="L380"></a><tt class="py-lineno">380</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L381"></a><tt class="py-lineno">381</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt><tt class="py-op">.</tt><tt class="py-name">names</tt> <tt class="py-op">=</tt> <tt class="py-name">torques</tt><tt class="py-op">.</tt><tt class="py-name">keys</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L382"></a><tt class="py-lineno">382</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt><tt class="py-op">.</tt><tt id="link-49" class="py-name"><a title="baxter_interface.gripper.Gripper.command" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-49', 'command', 'link-47');">command</a></tt> <tt class="py-op">=</tt> <tt class="py-name">torques</tt><tt class="py-op">.</tt><tt class="py-name">values</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L383"></a><tt class="py-lineno">383</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt><tt class="py-op">.</tt><tt class="py-name">mode</tt> <tt class="py-op">=</tt> <tt class="py-name">JointCommand</tt><tt class="py-op">.</tt><tt class="py-name">TORQUE_MODE</tt> </tt>
+<a name="L384"></a><tt class="py-lineno">384</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_pub_joint_cmd</tt><tt class="py-op">.</tt><tt class="py-name">publish</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_command_msg</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L385"></a><tt class="py-lineno">385</tt>  <tt class="py-line"> </tt>
+<a name="Limb.move_to_neutral"></a><div id="Limb.move_to_neutral-def"><a name="L386"></a><tt class="py-lineno">386</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.move_to_neutral-toggle" onclick="return toggle('Limb.move_to_neutral');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#move_to_neutral">move_to_neutral</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">timeout</tt><tt class="py-op">=</tt><tt class="py-number">15.0</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.move_to_neutral-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.move_to_neutral-expanded"><a name="L387"></a><tt class="py-lineno">387</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L388"></a><tt class="py-lineno">388</tt>  <tt class="py-line"><tt class="py-docstring">        Command the joints to the center of their joint ranges</tt> </tt>
+<a name="L389"></a><tt class="py-lineno">389</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L390"></a><tt class="py-lineno">390</tt>  <tt class="py-line"><tt class="py-docstring">        Neutral is defined as::</tt> </tt>
+<a name="L391"></a><tt class="py-lineno">391</tt>  <tt class="py-line"><tt class="py-docstring">          ['*_s0', '*_s1', '*_e0', '*_e1', '*_w0', '*_w1', '*_w2']</tt> </tt>
+<a name="L392"></a><tt class="py-lineno">392</tt>  <tt class="py-line"><tt class="py-docstring">          [0.0, -0.55, 0.0, 0.75, 0.0, 1.26, 0.0]</tt> </tt>
+<a name="L393"></a><tt class="py-lineno">393</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L394"></a><tt class="py-lineno">394</tt>  <tt class="py-line"><tt class="py-docstring">        @type timeout: float</tt> </tt>
+<a name="L395"></a><tt class="py-lineno">395</tt>  <tt class="py-line"><tt class="py-docstring">        @param timeout: seconds to wait for move to finish [15]</tt> </tt>
+<a name="L396"></a><tt class="py-lineno">396</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L397"></a><tt class="py-lineno">397</tt>  <tt class="py-line">        <tt class="py-name">angles</tt> <tt class="py-op">=</tt> <tt class="py-name">dict</tt><tt class="py-op">(</tt><tt class="py-name">zip</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-50" class="py-name" targets="Method baxter_interface.limb.Limb.joint_names()=baxter_interface.limb.Limb-class.html#joint_names"><a title="baxter_interface.limb.Limb.joint_names" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-50', 'joint_names', 'link-50');">joint_names</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L398"></a><tt class="py-lineno">398</tt>  <tt class="py-line">                          <tt class="py-op">[</tt><tt class="py-number">0.0</tt><tt class="py-op">,</tt> <tt class="py-op">-</tt><tt class="py-number">0.55</tt><tt class="py-op">,</tt> <tt class="py-number">0.0</tt><tt class="py-op">,</tt> <tt class="py-number">0.75</tt><tt class="py-op">,</tt> <tt class="py-number">0.0</tt><tt class="py-op">,</tt> <tt class="py-number">1.26</tt><tt class="py-op">,</tt> <tt class="py-number">0.0</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L399"></a><tt class="py-lineno">399</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-51" class="py-name" targets="Method baxter_interface.limb.Limb.move_to_joint_positions()=baxter_interface.limb.Limb-class.html#move_to_joint_positions"><a title="baxter_interface.limb.Limb.move_to_joint_positions" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-51', 'move_to_joint_positions', 'link-51');">move_to_joint_positions</a></tt><tt class="py-op">(</tt><tt class="py-name">angles</tt><tt class="py-op">,</tt> <tt class="py-name">timeout</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L400"></a><tt class="py-lineno">400</tt>  <tt class="py-line"> </tt>
+<a name="Limb.move_to_joint_positions"></a><div id="Limb.move_to_joint_positions-def"><a name="L401"></a><tt class="py-lineno">401</tt> <a class="py-toggle" href="baxter_interface.limb-pysrc.html#" id="Limb.move_to_joint_positions-toggle" onclick="return toggle('Limb.move_to_joint_positions');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="baxter_interface.limb.Limb-class.html#move_to_joint_positions">move_to_joint_positions</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">positions</tt><tt class="py-op">,</tt> <tt class="py-param">timeout</tt><tt class="py-op">=</tt><tt class="py-number">15.0</tt><tt class="py-op">,</tt> </tt>
+<a name="L402"></a><tt class="py-lineno">402</tt>  <tt class="py-line">                                <tt class="py-param">threshold</tt><tt class="py-op">=</tt><tt id="link-52" class="py-name"><a title="baxter_interface.settings" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-52', 'settings', 'link-3');">settings</a></tt><tt class="py-op">.</tt><tt id="link-53" class="py-name" targets="Variable baxter_interface.JOINT_ANGLE_TOLERANCE=baxter_interface-module.html#JOINT_ANGLE_TOLERANCE,Variable baxter_interface.settings.JOINT_ANGLE_TOLERANCE=baxter_interface.settings-module.html#JOINT_ANGLE_TOLERANCE"><a title="baxter_interface.JOINT_ANGLE_TOLERANCE
+baxter_interface.settings.JOINT_ANGLE_TOLERANCE" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-53', 'JOINT_ANGLE_TOLERANCE', 'link-53');">JOINT_ANGLE_TOLERANCE</a></tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Limb.move_to_joint_positions-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Limb.move_to_joint_positions-expanded"><a name="L403"></a><tt class="py-lineno">403</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L404"></a><tt class="py-lineno">404</tt>  <tt class="py-line"><tt class="py-docstring">        (Blocking) Commands the limb to the provided positions.</tt> </tt>
+<a name="L405"></a><tt class="py-lineno">405</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L406"></a><tt class="py-lineno">406</tt>  <tt class="py-line"><tt class="py-docstring">        Waits until the reported joint state matches that specified.</tt> </tt>
+<a name="L407"></a><tt class="py-lineno">407</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L408"></a><tt class="py-lineno">408</tt>  <tt class="py-line"><tt class="py-docstring">        This function uses a low-pass filter to smooth the movement.</tt> </tt>
+<a name="L409"></a><tt class="py-lineno">409</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L410"></a><tt class="py-lineno">410</tt>  <tt class="py-line"><tt class="py-docstring">        @type positions: dict({str:float})</tt> </tt>
+<a name="L411"></a><tt class="py-lineno">411</tt>  <tt class="py-line"><tt class="py-docstring">        @param positions: joint_name:angle command</tt> </tt>
+<a name="L412"></a><tt class="py-lineno">412</tt>  <tt class="py-line"><tt class="py-docstring">        @type timeout: float</tt> </tt>
+<a name="L413"></a><tt class="py-lineno">413</tt>  <tt class="py-line"><tt class="py-docstring">        @param timeout: seconds to wait for move to finish [15]</tt> </tt>
+<a name="L414"></a><tt class="py-lineno">414</tt>  <tt class="py-line"><tt class="py-docstring">        @type threshold: float</tt> </tt>
+<a name="L415"></a><tt class="py-lineno">415</tt>  <tt class="py-line"><tt class="py-docstring">        @param threshold: position threshold in radians across each joint when</tt> </tt>
+<a name="L416"></a><tt class="py-lineno">416</tt>  <tt class="py-line"><tt class="py-docstring">        move is considered successful [0.008726646]</tt> </tt>
+<a name="L417"></a><tt class="py-lineno">417</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L418"></a><tt class="py-lineno">418</tt>  <tt class="py-line">        <tt class="py-name">cmd</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-54" class="py-name"><a title="baxter_interface.limb.Limb.joint_angles" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-54', 'joint_angles', 'link-46');">joint_angles</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L419"></a><tt class="py-lineno">419</tt>  <tt class="py-line"> </tt>
+<a name="L420"></a><tt class="py-lineno">420</tt>  <tt class="py-line">        <tt class="py-keyword">def</tt> <tt class="py-def-name">filtered_cmd</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L421"></a><tt class="py-lineno">421</tt>  <tt class="py-line">            <tt class="py-comment"># First Order Filter - 0.2 Hz Cutoff</tt> </tt>
+<a name="L422"></a><tt class="py-lineno">422</tt>  <tt class="py-line">            <tt class="py-keyword">for</tt> <tt class="py-name">joint</tt> <tt class="py-keyword">in</tt> <tt class="py-name">positions</tt><tt class="py-op">.</tt><tt class="py-name">keys</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L423"></a><tt class="py-lineno">423</tt>  <tt class="py-line">                <tt class="py-name">cmd</tt><tt class="py-op">[</tt><tt class="py-name">joint</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-number">0.012488</tt> <tt class="py-op">*</tt> <tt class="py-name">positions</tt><tt class="py-op">[</tt><tt class="py-name">joint</tt><tt class="py-op">]</tt> <tt class="py-op">+</tt> <tt class="py-number">0.98751</tt> <tt class="py-op">*</tt> <tt class="py-name">cmd</tt><tt class="py-op">[</tt><tt class="py-name">joint</tt><tt class="py-op">]</tt> </tt>
+<a name="L424"></a><tt class="py-lineno">424</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-name">cmd</tt> </tt>
+</div><a name="L425"></a><tt class="py-lineno">425</tt>  <tt class="py-line"> </tt>
+<a name="L426"></a><tt class="py-lineno">426</tt>  <tt class="py-line">        <tt class="py-keyword">def</tt> <tt class="py-def-name">genf</tt><tt class="py-op">(</tt><tt class="py-param">joint</tt><tt class="py-op">,</tt> <tt class="py-param">angle</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L427"></a><tt class="py-lineno">427</tt>  <tt class="py-line">            <tt class="py-keyword">def</tt> <tt class="py-def-name">joint_diff</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L428"></a><tt class="py-lineno">428</tt>  <tt class="py-line">                <tt class="py-keyword">return</tt> <tt class="py-name">abs</tt><tt class="py-op">(</tt><tt class="py-name">angle</tt> <tt class="py-op">-</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_angle</tt><tt class="py-op">[</tt><tt class="py-name">joint</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L429"></a><tt class="py-lineno">429</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-name">joint_diff</tt> </tt>
+</div><a name="L430"></a><tt class="py-lineno">430</tt>  <tt class="py-line"> </tt>
+<a name="L431"></a><tt class="py-lineno">431</tt>  <tt class="py-line">        <tt class="py-name">diffs</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">genf</tt><tt class="py-op">(</tt><tt class="py-name">j</tt><tt class="py-op">,</tt> <tt class="py-name">a</tt><tt class="py-op">)</tt> <tt class="py-keyword">for</tt> <tt class="py-name">j</tt><tt class="py-op">,</tt> <tt class="py-name">a</tt> <tt class="py-keyword">in</tt> <tt class="py-name">positions</tt><tt class="py-op">.</tt><tt class="py-name">items</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> <tt class="py-keyword">if</tt> </tt>
+<a name="L432"></a><tt class="py-lineno">432</tt>  <tt class="py-line">                 <tt class="py-name">j</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">_joint_angle</tt><tt class="py-op">]</tt> </tt>
+<a name="L433"></a><tt class="py-lineno">433</tt>  <tt class="py-line"> </tt>
+<a name="L434"></a><tt class="py-lineno">434</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-55" class="py-name"><a title="baxter_interface.limb.Limb.set_joint_positions" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-55', 'set_joint_positions', 'link-45');">set_joint_positions</a></tt><tt class="py-op">(</tt><tt class="py-name">filtered_cmd</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L435"></a><tt class="py-lineno">435</tt>  <tt class="py-line">        <tt id="link-56" class="py-name"><a title="baxter_dataflow" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-56', 'baxter_dataflow', 'link-1');">baxter_dataflow</a></tt><tt class="py-op">.</tt><tt id="link-57" class="py-name"><a title="baxter_dataflow.wait_for'.wait_for" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-57', 'wait_for', 'link-11');">wait_for</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L436"></a><tt class="py-lineno">436</tt>  <tt class="py-line">            <tt class="py-keyword">lambda</tt><tt class="py-op">:</tt> <tt class="py-op">(</tt><tt class="py-name">all</tt><tt class="py-op">(</tt><tt class="py-name">diff</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> <tt class="py-op">&lt;</tt> <tt class="py-name">threshold</tt> <tt class="py-keyword">for</tt> <tt class="py-name">diff</tt> <tt class="py-keyword">in</tt> <tt class="py-name">diffs</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L437"></a><tt class="py-lineno">437</tt>  <tt class="py-line">            <tt class="py-name">timeout</tt><tt class="py-op">=</tt><tt class="py-name">timeout</tt><tt class="py-op">,</tt> </tt>
+<a name="L438"></a><tt class="py-lineno">438</tt>  <tt class="py-line">            <tt class="py-name">timeout_msg</tt><tt class="py-op">=</tt><tt class="py-op">(</tt><tt class="py-string">"%s limb failed to reach commanded joint positions"</tt> <tt class="py-op">%</tt> </tt>
+<a name="L439"></a><tt class="py-lineno">439</tt>  <tt class="py-line">                         <tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt><tt class="py-op">.</tt><tt class="py-name">capitalize</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">,</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L440"></a><tt class="py-lineno">440</tt>  <tt class="py-line">            <tt class="py-name">rate</tt><tt class="py-op">=</tt><tt class="py-number">100</tt><tt class="py-op">,</tt> </tt>
+<a name="L441"></a><tt class="py-lineno">441</tt>  <tt class="py-line">            <tt class="py-name">raise_on_error</tt><tt class="py-op">=</tt><tt class="py-name">False</tt><tt class="py-op">,</tt> </tt>
+<a name="L442"></a><tt class="py-lineno">442</tt>  <tt class="py-line">            <tt class="py-name">body</tt><tt class="py-op">=</tt><tt class="py-keyword">lambda</tt><tt class="py-op">:</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-58" class="py-name"><a title="baxter_interface.limb.Limb.set_joint_positions" class="py-name" href="baxter_interface.limb-pysrc.html#" onclick="return doclink('link-58', 'set_joint_positions', 'link-45');">set_joint_positions</a></tt><tt class="py-op">(</tt><tt class="py-name">filtered_cmd</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L443"></a><tt class="py-lineno">443</tt>  <tt class="py-line">            <tt class="py-op">)</tt> </tt>
+</div></div><a name="L444"></a><tt class="py-lineno">444</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="baxter_interface-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://sdk.rethinkrobotics.com/wiki/">Project Homepage</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Jan  8 14:32:10 2015
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
