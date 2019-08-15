@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Set Interaction Options Example - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Set_Interaction_Options_Example","wgTitle":"Set Interaction Options Example","wgCurRevisionId":1356,"wgRevisionId":1356,"wgArticleId":189,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Set_Interaction_Options_Example","wgRelevantArticleId":189,"wgRequestId":"085ae2b36e33dfaee27f3ba8","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="a/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="a/opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Set_Interaction_Options_Example rootpage-Set_Interaction_Options_Example skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(a/skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="a/index.php?title=Special:UserLogin&amp;returnto=Set+Interaction+Options+Example">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="Set_Interaction_Options_Example#">More</a>
+                <ul>
+                <li id="ca-viewsource"><a href="a/index.php?title=Set_Interaction_Options_Example&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="a/index.php?title=Set_Interaction_Options_Example&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="Set_Interaction_Options_Example" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">Set Interaction Options Example</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="a/index.php?title=Set_Interaction_Options_Example&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="Set_Interaction_Options_Example#column-one">navigation</a>
+                    ,                     <a href="Set_Interaction_Options_Example#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="title-block">
+<p><span style="font-size:120%;"><b>This example shows interaction control usage by set the desired interaction control options in the current configuration. Note that the arm is not commanded to move but it will have the specified interaction control behavior.</b></span>
+</p>
+</div>
+<div class="toclimit-2"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Set_Interaction_Options_Example#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="Set_Interaction_Options_Example#Usage"><span class="tocnumber">2</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="Set_Interaction_Options_Example#Arguments"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="Set_Interaction_Options_Example#Code_Walkthrough"><span class="tocnumber">4</span> <span class="toctext">Code Walkthrough</span></a></li>
+</ul>
+</div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p><b>NEW functionality in the SDK/Intera 5.2 Update!</b><br />
+This interaction option setting example demonstrates how to use interaction control mode to generate a desired interaction behavior in the current arm configuration. 
+</p><p>If you would like to follow along with the actual source code for the example on GitHub, it can be found through <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/set_interaction_options.py">this link</a> for joint torque spring example.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<p>Start the interaction option setting example from an RSDK terminal session using:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_examples set_interaction_options.py
+</pre></div>
+<p>A default interaction control command message will be printed out after start:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="o">[</span>INFO<span class="o">]</span> <span class="o">[</span>WallTime: <span class="m">1511299000</span>.977577<span class="o">]</span> header: 
+  seq: <span class="m">1</span>
+  stamp: 
+    secs: <span class="m">1511299000</span>
+    nsecs: <span class="m">977231979</span>
+  frame_id: base
+interaction_control_active: True
+K_impedance: <span class="o">[</span><span class="m">1300</span>.0, <span class="m">1300</span>.0, <span class="m">1300</span>.0, <span class="m">30</span>.0, <span class="m">30</span>.0, <span class="m">30</span>.0<span class="o">]</span>
+max_impedance: <span class="o">[</span>True, True, True, True, True, True<span class="o">]</span>
+D_impedance: <span class="o">[]</span>
+K_nullspace: <span class="o">[</span><span class="m">5</span>.0, <span class="m">10</span>.0, <span class="m">5</span>.0, <span class="m">10</span>.0, <span class="m">5</span>.0, <span class="m">10</span>.0, <span class="m">5</span>.0<span class="o">]</span>
+force_command: <span class="o">[</span><span class="m">0</span>.0, <span class="m">0</span>.0, <span class="m">0</span>.0, <span class="m">0</span>.0, <span class="m">0</span>.0, <span class="m">0</span>.0<span class="o">]</span>
+interaction_frame: 
+  position: 
+    x: <span class="m">0</span>
+    y: <span class="m">0</span>
+    z: <span class="m">0</span>
+  orientation: 
+    x: <span class="m">0</span>
+    y: <span class="m">0</span>
+    z: <span class="m">0</span>
+    w: <span class="m">1</span>
+endpoint_name: right_hand
+in_endpoint_frame: False
+disable_damping_in_force_control: False
+disable_reference_resetting: False
+</pre></div>
+<p>The interaction control command message will be published at 10Hz by default. 
+</p><p>Pressing <code> Control-C </code> at any time will stop publishing the command message and exit the example.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Arguments">Arguments</span></h2>
+<p>See the available arguments on the command line by passing set_interaction_options.py the <code>-h</code>, help argument:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_examples set_interaction_options.py -h
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>usage: set_interaction_options.py <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>-s <span class="o">{</span><span class="m">0</span>,1<span class="o">}]</span>
+                                  <span class="o">[</span>-k K_IMPEDANCE <span class="o">[</span>K_IMPEDANCE ...<span class="o">]]</span>
+                                  <span class="o">[</span>-m <span class="o">{</span><span class="m">0</span>,1<span class="o">}</span> <span class="o">[{</span><span class="m">0</span>,1<span class="o">}</span> ...<span class="o">]]</span>
+                                  <span class="o">[</span>-md <span class="o">{</span><span class="m">1</span>,2,3,4<span class="o">}</span> <span class="o">[{</span><span class="m">1</span>,2,3,4<span class="o">}</span> ...<span class="o">]]</span>
+                                  <span class="o">[</span>-fr INTERACTION_FRAME <span class="o">[</span>INTERACTION_FRAME ...<span class="o">]]</span>
+                                  <span class="o">[</span>-ef<span class="o">]</span> <span class="o">[</span>-en ENDPOINT_NAME<span class="o">]</span>
+                                  <span class="o">[</span>-f FORCE_COMMAND <span class="o">[</span>FORCE_COMMAND ...<span class="o">]]</span>
+                                  <span class="o">[</span>-kn K_NULLSPACE <span class="o">[</span>K_NULLSPACE ...<span class="o">]]</span> <span class="o">[</span>-dd<span class="o">]</span>
+                                  <span class="o">[</span>-dr<span class="o">]</span> <span class="o">[</span>-rc<span class="o">]</span> <span class="o">[</span>-r RATE<span class="o">]</span>
+
+    Set the desired interaction control options in the current configuration.
+    Note that the arm is not commanded to move but it will have the specified
+    interaction control behavior. If publish rate is <span class="m">0</span> where the interaction
+    control <span class="nb">command</span> is only published once, after entering and exiting zero-G,
+    the arm will <span class="k">return</span> to normal position mode. Also, regardless of the publish
+    rate, the zero-G behavior will not be affected by this. The future motion
+    commands need to be sent with interaction parameters <span class="k">if</span> we want to keep
+    interaction control behaviors during the trajectory execution<span class="p">;</span> otherwise,
+    the arm will move in position mode during the motion even <span class="k">if</span> this script
+    is still running.
+
+    Call using:
+    $ rosrun intera_examples set_interaction_options.py  <span class="o">[</span>arguments: see below<span class="o">]</span>
+
+    -s <span class="m">1</span>
+    --&gt; Set interaction active to True <span class="o">(</span><span class="m">0</span> <span class="k">for</span> False<span class="o">)</span> in the current configuration
+
+    -k <span class="m">500</span>.0 <span class="m">500</span>.0 <span class="m">500</span>.0 <span class="m">10</span>.0 <span class="m">10</span>.0 <span class="m">10</span>.0
+    --&gt; Set K_impedance to <span class="o">[</span><span class="m">500</span>.0 <span class="m">500</span>.0 <span class="m">500</span>.0 <span class="m">10</span>.0 <span class="m">10</span>.0 <span class="m">10</span>.0<span class="o">]</span> in the current configuration
+
+    -m <span class="m">1</span> <span class="m">1</span> <span class="m">0</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span>
+    --&gt; Set max_impedance to <span class="o">[</span>True True False True True True<span class="o">]</span> in the current configuration
+
+    -md <span class="m">1</span> <span class="m">1</span> <span class="m">2</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span>
+    --&gt; Set interaction_control_mode to <span class="o">[</span>impedance, impedance, force, impedance, impedance, impedance<span class="o">]</span>
+        in the current configuration <span class="o">(</span><span class="m">1</span>: impedance, <span class="m">2</span>: force, <span class="m">3</span>: impedance w/ force limit,
+        <span class="m">4</span>: force w/ motion limit<span class="o">)</span>
+
+    -fr <span class="m">0</span>.1 <span class="m">0</span>.2 <span class="m">0</span>.3 <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span>
+    --&gt; Set the pose of the interaction_frame -- position: <span class="o">(</span><span class="m">0</span>.1, <span class="m">0</span>.2, <span class="m">0</span>.3<span class="o">)</span> and orientation <span class="o">(</span><span class="m">1</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span><span class="o">)</span>
+
+    -ef
+    --&gt; Set in_endpoint_frame to True in the current configuration <span class="o">(</span>use TCP frame as reference frame<span class="o">)</span>
+
+    -f <span class="m">0</span>.0 <span class="m">0</span>.0 <span class="m">30</span>.0 <span class="m">0</span>.0 <span class="m">0</span>.0 <span class="m">0</span>.0
+    --&gt; Set force_command to <span class="o">[</span><span class="m">0</span>.0 <span class="m">0</span>.0 <span class="m">30</span>.0 <span class="m">0</span>.0 <span class="m">0</span>.0 <span class="m">0</span>.0<span class="o">]</span> in the current configuration
+
+    -kn <span class="m">5</span>.0 <span class="m">3</span>.0 <span class="m">5</span>.0 <span class="m">4</span>.0 <span class="m">6</span>.0 <span class="m">4</span>.0 <span class="m">6</span>.0
+    --&gt; Set K_nullspace to <span class="o">[</span><span class="m">5</span>.0 <span class="m">3</span>.0 <span class="m">5</span>.0 <span class="m">4</span>.0 <span class="m">6</span>.0 <span class="m">4</span>.0 <span class="m">6</span>.0<span class="o">]</span> in the current configuration
+
+    -r <span class="m">20</span>
+    --&gt; Set desired publish rate <span class="o">(</span>Hz<span class="o">)</span>
+    
+
+optional arguments:
+  -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+  -s <span class="o">{</span><span class="m">0</span>,1<span class="o">}</span>, --interaction_active <span class="o">{</span><span class="m">0</span>,1<span class="o">}</span>
+                        Activate <span class="o">(</span><span class="m">1</span><span class="o">)</span> or Deactivate <span class="o">(</span><span class="m">0</span><span class="o">)</span> interaction controller
+  -k K_IMPEDANCE <span class="o">[</span>K_IMPEDANCE ...<span class="o">]</span>, --K_impedance K_IMPEDANCE <span class="o">[</span>K_IMPEDANCE ...<span class="o">]</span>
+                        A list of desired stiffnesses, one <span class="k">for</span> each of the <span class="m">6</span>
+                        directions -- stiffness units are <span class="o">(</span>N/m<span class="o">)</span> <span class="k">for</span> first <span class="m">3</span>
+                        and <span class="o">(</span>Nm/rad<span class="o">)</span> <span class="k">for</span> second <span class="m">3</span> values
+  -m <span class="o">{</span><span class="m">0</span>,1<span class="o">}</span> <span class="o">[{</span><span class="m">0</span>,1<span class="o">}</span> ...<span class="o">]</span>, --max_impedance <span class="o">{</span><span class="m">0</span>,1<span class="o">}</span> <span class="o">[{</span><span class="m">0</span>,1<span class="o">}</span> ...<span class="o">]</span>
+                        A list of maximum stiffness behavior state, one <span class="k">for</span>
+                        each of the <span class="m">6</span> directions <span class="o">(</span>a single value can be
+                        provided to apply the same value to all the
+                        directions<span class="o">)</span> -- <span class="m">0</span> <span class="k">for</span> False, <span class="m">1</span> <span class="k">for</span> True
+  -md <span class="o">{</span><span class="m">1</span>,2,3,4<span class="o">}</span> <span class="o">[{</span><span class="m">1</span>,2,3,4<span class="o">}</span> ...<span class="o">]</span>, --interaction_control_mode <span class="o">{</span><span class="m">1</span>,2,3,4<span class="o">}</span> <span class="o">[{</span><span class="m">1</span>,2,3,4<span class="o">}</span> ...<span class="o">]</span>
+                        A list of desired interaction control mode <span class="o">(</span><span class="m">1</span>:
+                        impedance, <span class="m">2</span>: force, <span class="m">3</span>: impedance with force limit, <span class="m">4</span>:
+                        force with motion limit<span class="o">)</span>, one <span class="k">for</span> each of the <span class="m">6</span>
+                        directions
+  -fr INTERACTION_FRAME <span class="o">[</span>INTERACTION_FRAME ...<span class="o">]</span>, --interaction_frame INTERACTION_FRAME <span class="o">[</span>INTERACTION_FRAME ...<span class="o">]</span>
+                        Specify the reference frame <span class="k">for</span> the interaction
+                        controller -- first <span class="m">3</span> values are positions <span class="o">[</span>m<span class="o">]</span> and
+                        last <span class="m">4</span> values are orientation in quaternion <span class="o">(</span>w, x, y,
+                        z<span class="o">)</span> which has to be normalized values
+  -ef, --in_endpoint_frame
+                        Set the desired reference frame to endpoint frame<span class="p">;</span>
+                        otherwise, it is base frame by default
+  -en ENDPOINT_NAME, --endpoint_name ENDPOINT_NAME
+                        Set the desired endpoint frame by its name<span class="p">;</span> otherwise,
+                        it is right_hand frame by default
+  -f FORCE_COMMAND <span class="o">[</span>FORCE_COMMAND ...<span class="o">]</span>, --force_command FORCE_COMMAND <span class="o">[</span>FORCE_COMMAND ...<span class="o">]</span>
+                        A list of desired force commands, one <span class="k">for</span> each of the
+                        <span class="m">6</span> directions -- in force control mode this is the
+                        vector of desired forces/torques to be regulated in
+                        <span class="o">(</span>N<span class="o">)</span> and <span class="o">(</span>Nm<span class="o">)</span>, in impedance with force limit mode this
+                        vector specifies the magnitude of forces/torques <span class="o">(</span>N
+                        and Nm<span class="o">)</span> that the <span class="nb">command</span> will not exceed
+  -kn K_NULLSPACE <span class="o">[</span>K_NULLSPACE ...<span class="o">]</span>, --K_nullspace K_NULLSPACE <span class="o">[</span>K_NULLSPACE ...<span class="o">]</span>
+                        A list of desired nullspace stiffnesses, one <span class="k">for</span> each
+                        of the <span class="m">7</span> joints <span class="o">(</span>a single value can be provided to
+                        apply the same value to all the directions<span class="o">)</span> -- units
+                        are in <span class="o">(</span>Nm/rad<span class="o">)</span>
+  -dd, --disable_damping_in_force_control
+                        Disable damping in force control
+  -dr, --disable_reference_resetting
+                        The reference signal is reset to actual position to
+                        avoid jerks/jumps when interaction parameters are
+                        changed. This option allows the user to disable this
+                        feature.
+  -rc, --rotations_for_constrained_zeroG
+                        Allow arbitrary rotational displacements from the
+                        current orientation <span class="k">for</span> constrained zero-G <span class="o">(</span>works only
+                        with a stationary reference orientation<span class="o">)</span>
+  -r RATE, --rate RATE  A desired publish rate <span class="k">for</span> updating interaction
+                        control commands <span class="o">(</span>10Hz by default<span class="o">)</span> -- <span class="m">0</span> <span class="k">if</span> we want to
+                        publish it only once
+</pre></div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Code_Walkthrough">Code Walkthrough</span></h2>
+<p>Now, let's break down the code.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">33 </span><span class="kn">import</span> <span class="nn">rospy</span>
+<span class="lineno">34 </span><span class="kn">from</span> <span class="nn">intera_core_msgs.msg</span> <span class="kn">import</span> <span class="n">InteractionControlCommand</span>
+<span class="lineno">35 </span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="lineno">36 </span><span class="kn">from</span> <span class="nn">geometry_msgs.msg</span> <span class="kn">import</span> <span class="n">Pose</span>
+<span class="lineno">37 </span><span class="kn">from</span> <span class="nn">intera_motion_interface</span> <span class="kn">import</span> <span class="n">InteractionOptions</span>
+<span class="lineno">38 </span><span class="kn">from</span> <span class="nn">intera_motion_interface.utility_functions</span> <span class="kn">import</span> <span class="n">int2bool</span>
+</pre></div>
+<p>This imports the intera motion interface to access the InteractionOptions class. Also, <code>InteractionControlCommand</code> message is imported from <code>geometry_msgs.msg</code>.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">43 </span>    <span class="k">try</span><span class="p">:</span>
+<span class="lineno">44 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s1">&#39;set_interaction_options_py&#39;</span><span class="p">)</span>
+<span class="lineno">45 </span>        <span class="n">pub</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Publisher</span><span class="p">(</span><span class="s1">&#39;/robot/limb/right/interaction_control_command&#39;</span><span class="p">,</span> <span class="n">InteractionControlCommand</span><span class="p">,</span> <span class="n">queue_size</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="lineno">46 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="lineno">47 </span>
+<span class="lineno">48 </span>        <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">rate</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="lineno">49 </span>            <span class="n">rate</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Rate</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">rate</span><span class="p">)</span>
+<span class="lineno">50 </span>        <span class="k">elif</span> <span class="n">args</span><span class="o">.</span><span class="n">rate</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="lineno">51 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logwarn</span><span class="p">(</span><span class="s1">&#39;Interaction control options will be set only once!&#39;</span><span class="p">)</span>
+<span class="lineno">52 </span>        <span class="k">elif</span> <span class="n">args</span><span class="o">.</span><span class="n">rate</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="lineno">53 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s1">&#39;Invalid publish rate!&#39;</span><span class="p">)</span>
+</pre></div>
+<p>The rospy is first initialized, and a publisher for ros topic (<code>/robot/limb/right/interaction_control_command</code>) is created. The publish rate is set to what is provided in the argument. 
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno"> 69 </span>        <span class="c1"># set the interaction control options in the current configuration</span>
+<span class="lineno"> 70 </span>        <span class="n">interaction_options</span> <span class="o">=</span> <span class="n">InteractionOptions</span><span class="p">()</span>
+<span class="lineno"> 71 </span>
+<span class="lineno"> 72 </span>        <span class="n">interaction_options</span><span class="o">.</span><span class="n">set_interaction_control_active</span><span class="p">(</span><span class="n">int2bool</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">interaction_active</span><span class="p">))</span>
+<span class="lineno"> 73 </span>        <span class="n">interaction_options</span><span class="o">.</span><span class="n">set_K_impedance</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">K_impedance</span><span class="p">)</span>
+<span class="lineno"> 74 </span>        <span class="n">interaction_options</span><span class="o">.</span><span class="n">set_max_impedance</span><span class="p">(</span><span class="n">int2bool</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">max_impedance</span><span class="p">))</span>
+<span class="lineno"> 75 </span>        <span class="n">interaction_options</span><span class="o">.</span><span class="n">set_interaction_control_mode</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">interaction_control_mode</span><span class="p">)</span>
+<span class="lineno"> 76 </span>        <span class="n">interaction_options</span><span class="o">.</span><span class="n">set_in_endpoint_frame</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">in_endpoint_frame</span><span class="p">)</span>
+<span class="lineno"> 77 </span>        <span class="n">interaction_options</span><span class="o">.</span><span class="n">set_force_command</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">force_command</span><span class="p">)</span>
+<span class="lineno"> 78 </span>        <span class="n">interaction_options</span><span class="o">.</span><span class="n">set_K_nullspace</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">K_nullspace</span><span class="p">)</span>
+<span class="lineno"> 79 </span>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">:</span>
+<span class="lineno"> 80 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s1">&#39;The number of elements must be 7!&#39;</span><span class="p">)</span>
+<span class="lineno"> 81 </span>        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">)</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
+<span class="lineno"> 82 </span>            <span class="n">quat_sum_square</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">*</span><span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> 
+<span class="lineno"> 83 </span>            <span class="o">+</span> <span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">*</span><span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="o">*</span><span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+<span class="lineno"> 84 </span>            <span class="k">if</span> <span class="n">quat_sum_square</span>  <span class="o">&lt;</span> <span class="mf">1.0</span> <span class="o">+</span> <span class="mf">1e-7</span> <span class="ow">and</span> <span class="n">quat_sum_square</span> <span class="o">&gt;</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="mf">1e-7</span><span class="p">:</span>
+<span class="lineno"> 85 </span>                <span class="n">interaction_frame</span> <span class="o">=</span> <span class="n">Pose</span><span class="p">()</span>
+<span class="lineno"> 86 </span>                <span class="n">interaction_frame</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="lineno"> 87 </span>                <span class="n">interaction_frame</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="lineno"> 88 </span>                <span class="n">interaction_frame</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="lineno"> 89 </span>                <span class="n">interaction_frame</span><span class="o">.</span><span class="n">orientation</span><span class="o">.</span><span class="n">w</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="lineno"> 90 </span>                <span class="n">interaction_frame</span><span class="o">.</span><span class="n">orientation</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="lineno"> 91 </span>                <span class="n">interaction_frame</span><span class="o">.</span><span class="n">orientation</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+<span class="lineno"> 92 </span>                <span class="n">interaction_frame</span><span class="o">.</span><span class="n">orientation</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">interaction_frame</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+<span class="lineno"> 93 </span>                <span class="n">interaction_options</span><span class="o">.</span><span class="n">set_interaction_frame</span><span class="p">(</span><span class="n">interaction_frame</span><span class="p">)</span>
+<span class="lineno"> 94 </span>            <span class="k">else</span><span class="p">:</span>
+<span class="lineno"> 95 </span>                <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s1">&#39;Invalid input to quaternion! The quaternion must be a unit quaternion!&#39;</span><span class="p">)</span>
+<span class="lineno"> 96 </span>        <span class="k">else</span><span class="p">:</span>
+<span class="lineno"> 97 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s1">&#39;Invalid input to interaction_frame!&#39;</span><span class="p">)</span>
+<span class="lineno"> 98 </span>
+<span class="lineno"> 99 </span>        <span class="n">interaction_options</span><span class="o">.</span><span class="n">set_disable_damping_in_force_control</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">disable_damping_in_force_control</span><span class="p">)</span>
+<span class="lineno">100 </span>        <span class="n">interaction_options</span><span class="o">.</span><span class="n">set_disable_reference_resetting</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">disable_reference_resetting</span><span class="p">)</span>
+<span class="lineno">101 </span>        <span class="n">interaction_options</span><span class="o">.</span><span class="n">set_rotations_for_constrained_zeroG</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">rotations_for_constrained_zeroG</span><span class="p">)</span>
+<span class="lineno">102 </span>
+<span class="lineno">103 </span>        <span class="n">msg</span> <span class="o">=</span> <span class="n">interaction_options</span><span class="o">.</span><span class="n">to_msg</span><span class="p">()</span>
+</pre></div>
+<p>An object for <code>InteractionOptions</code> class is created. Then the interaction parameters are set as specified in the arguments using the helper functions provided by the class. After setting all the parameters, a ROS message is generated.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">81 </span>        <span class="c1"># print the resultant interaction options once</span>
+<span class="lineno">82 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="lineno">83 </span>        <span class="n">pub</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="lineno">84 </span>
+<span class="lineno">85 </span>        <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">rate</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="lineno">86 </span>            <span class="k">while</span> <span class="ow">not</span> <span class="n">rospy</span><span class="o">.</span><span class="n">is_shutdown</span><span class="p">():</span>
+<span class="lineno">87 </span>                <span class="n">rate</span><span class="o">.</span><span class="n">sleep</span><span class="p">()</span>
+<span class="lineno">88 </span>                <span class="n">pub</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</pre></div>
+<p>The generated ROS message is printed out once and it is published at a specified rate.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">155 </span>    <span class="k">except</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ROSInterruptException</span><span class="p">:</span>
+<span class="lineno">156 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s1">&#39;Keyboard interrupt detected from the user. </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+<span class="lineno">157 </span>                         <span class="s1">&#39;Exiting the node...&#39;</span><span class="p">)</span>
+<span class="lineno">158 </span>
+<span class="lineno">159 </span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="lineno">160 </span>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+<p>Once interrupted, the script exits gracefully printing an error.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815155101
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.054 seconds
+Real time usage: 2.089 seconds
+Preprocessor visited node count: 81/1000000
+Preprocessor generated node count: 254/1000000
+Post‐expand include size: 37/2097152 bytes
+Template argument size: 1/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 31231/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.632      1 Template:TOClimit
+100.00%    0.632      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:189-0!canonical and timestamp 20190815155059 and revision id 1356
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="a/index.php?title=Set_Interaction_Options_Example&amp;oldid=1356">http://sdk.rethinkrobotics.com/intera/a/index.php?title=Set_Interaction_Options_Example&amp;oldid=1356</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="a/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.054","walltime":"2.089","ppvisitednodes":{"value":81,"limit":1000000},"ppgeneratednodes":{"value":254,"limit":1000000},"postexpandincludesize":{"value":37,"limit":2097152},"templateargumentsize":{"value":1,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":31231,"limit":5000000},"timingprofile":["100.00%    0.632      1 Template:TOClimit","100.00%    0.632      1 -total"]},"cachereport":{"timestamp":"20190815155101","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":2394});});</script></body></html>

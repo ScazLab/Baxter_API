@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Robot Setup - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Robot_Setup","wgTitle":"Robot Setup","wgCurRevisionId":1582,"wgRevisionId":0,"wgArticleId":10,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Robot_Setup","wgRelevantArticleId":10,"wgRequestId":"a3f6d9036122298ff364a8eb","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Robot_Setup rootpage-Robot_Setup skin-cavendishrr action-edit"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=Robot+Setup&amp;returntoquery=action%3Dedit">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Robot_Setup&amp;action=edit#">More</a>
+                <ul>
+                <li id="ca-viewsource" class="selected"><a href="index.php?title=Robot_Setup&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Robot_Setup&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Robot_Setup" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">View source for Robot Setup</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Robot_Setup&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                ← <a href="../Robot_Setup" title="Robot Setup">Robot Setup</a>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Robot_Setup&amp;action=edit#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Robot_Setup&amp;action=edit#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Intera_SDK:Users&amp;action=edit&amp;redlink=1" class="new" title="Intera SDK:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">&lt;div class="title-block">
+
+&lt;span style="font-size:120%;">'''This tutorial describes the unpacking and assembly process for Sawyer and any purchased accessories'''&lt;/span>
+
+&lt;/div>
+
+{{TOClimit|limit=2}}
+
+&lt;div class="content-block">
+
+== Required Hardware ==
+
+=== Required Tools ===
+
+* Pallet jack
+* Flat-head screwdriver (pedestal only)
+* 24mm Socket wrench (pedestal only)
+* 6mm Hex key
+
+=== Optional Hardware ===
+* Electric Parallel Gripper Kit (EPG)
+* Vacuum Gripper Kit (VG)
+* Mobile pedestal
+* Mounting plate
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Choose Appropriate Workspace ==
+It is important to choose an appropriate location for Sawyer to reside where the arms can fully stretch without risk of collision.
+
+Please see Sawyer's reachable workspace documentation: [[Workspace_Guidelines#tab=Sawyer|Sawyer's workspace guidelines]] for help choosing a location.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Unpack Contents == 
+
+See the Setting Up Sawyer video at the bottom of this page for more information and video instructions.  Refer also to the Sawyer Setup Guide located in the accessories box.
+
+*Using a pallet jack, move the robot, pedestal and all accessories to an area close to the workspace.  Ensure that there is adequate room to open all boxes and the crate and unpack the contents.   
+*Open the accessories box in order to obtain the Setup Guide.
+*Open the robot and controller boxes and set them aside in preparation for mounting the robot and controller.
+*Locate the power, communication, and display cables in the accessories box and ensure they are accessible.  See the section below for a list of contents included in the accessories box.
+*Unpack the pedestal first if one was purchased with the robot.  See the next section for the complete pedestal unpacking and setup instructions.
+
+ '''Note:''' Please confirm all parts ordered are include in the shipment, and all packaging is intact.
+
+ '''Note:''' The pedestal base weighs 169 lbs., and Sawyer weighs 42 lbs.. Follow proper lifting guidelines 
+ and restrictions for these weights.
+
+=== Accessories Box Contents ===
+
+==== Content List ====
+
+More information coming soon!
+
+==== Landmarks ====
+The Robot Positioning System (In Intera) uses landmarks placed in the workspace.  A landmark is a design or mark placed in the field of view of an imaging system to be used as a point of reference. It is similar in some ways to a registration mark used in printing to keep the different images aligned.  Rethink Robotics currently supplies landmarks on anodized aluminum with an adhesive backing.  These landmarks are placed on the surface of modules in the work area.
+
+[[File:Landmark 1.jpg|200px]]
+
+   '''Note:'''Landmark numbers 1-4 are included with the purchase of a robot and 5-20 can be purchased as an additional accessory.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Pedestal Setup ==
+
+'''(Optional)''' Applicable when using the standard Sawyer pedestal.
+
+Refer to the Sawyer Setup Guide located in the accessories box and the video at the bottom of this page for more information.
+
+   '''Note:'''  Please contact Rethink Robotics Support for a PDF copy of the Sawyer Setup Guide.
+
+=== Instructions ===
+'''Required Tools:'''
+*24mm Socket Wrench
+*Flathead Screwdriver
+
+'''Instructions:'''
+#Using a flathead screwdriver, pry up each of the metal tabs on top edge of the pedestal crate and remove the cover from the crate.
+#Using the same technique, remove one of the longer sides of the pedestal crate.
+#Raise the leveling feet until they clear the supports, about 3 cm (1 in).
+#Roll out the pedestal base. Pedestal weighs 77 kg (169 lbs.)
+#Lock wheels at he back of the pedestal.
+#Open the largest of the three cardboard boxes in the pedestal crate and remove the 2 threaded rods.
+#Remove the column from the box and place the column on the base while aligning the notch.
+#Open the second largest of the three cardboard boxes and remove the handlebar.
+#Place the handlebar on top of the column with the flat side away from the notch in the column and base.
+#Insert the threaded robs into the two large holes in the handlebar while ensuring the washer remains in place.
+#Tighten the rods using the 24mm socket wrench.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Mounting Sawyer ==
+
+=== Standard Pedestal ===
+[[File:Sawyer Mounting to Handlebar.PNG|700px]]
+#Carefully lift the robot arm out of box 1.  Avoid lifting Sawyer by the head.  Arm weighs 19 kg (42 lbs).
+#At the base of the arm are 7 screw holes and 1 dowel hole.  Place the arm on the pedestal, aligning the dowel pin hole first.
+#Hold the arm in place and insert the screws into the holes at the base of the arm.
+#Tighten the 7 screws using a 6mm hex key.
+
+=== Alternate Surface ===
+
+Please see the [[Alternative_Mounting#tab=Sawyer|Alternate Mounting]] page for more information.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Controller Setup ==
+
+  '''Notes:'''
+  Power Requirements: 100-240 VAC, 47-63 Hz, 4A MAX
+  Pneumatic Line Requirement: 60-90 PSI
+  Air Must be Filtered and Oil-Free
+
+#Remove the controller from box 2 and place upside down while keeping the foam on the top of the controller for protection.  Controller weighs 17kg (38 lbs).
+#Obtain the controller and power cables from the accessories box.
+#If mounting to the standard pedestal, feed the controller cable and display cable through the back of the controller stand.
+#Plug the cables into the controller and ensure they are secure.
+#Plug the power cord into the controller and ensure that the cable is secure and latched.  Determine which direction the power cord will be fed in order to be routed to the nearest outlet.  Feed the power cable through one of the controller stands if necessary.
+#If mounting to the standard pedestal, set the controller upright on the back of the pedestal with the door facing away from the pedestal column.  Using a 5mm hex key, insert and tighten the 4 provided mounting screws.
+#Connect and secure the controller and display cables to the robot.  If using a standard pedestal, remove the cable cover from the column, tuck in the cables, and replace the cover to keep the cables in place.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Power On ==
+
+Congratulations! You have now set up your Sawyer Robot.  Power on the robot by pressing the power button on Sawyer's controller.  Sawyer is fully booted when the green condition  light appears on Sawyer's head and the Sawyer SDK Screen shows on the Robot Screen. At this point Sawyer will be homed and enabled.
+
+[[File:Sawyer Head SDK v2.png|600px]]
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Video ==
+
+{{#ev:youtube|tIJNg3uCvS8|500}}
+
+&lt;headertabs/>
+
+&lt;/div>
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="http://sdk.rethinkrobotics.com/intera/Template:TOClimit" title="Template:TOClimit">Template:TOClimit</a> (<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Template:TOClimit&amp;action=edit" title="Template:TOClimit">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Robot_Setup" title="Robot Setup">Robot Setup</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Robot_Setup">http://sdk.rethinkrobotics.com/intera/Robot_Setup</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":58});});</script></body></html>

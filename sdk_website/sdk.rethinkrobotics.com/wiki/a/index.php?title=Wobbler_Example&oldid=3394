@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Wobbler Example - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Wobbler_Example","wgTitle":"Wobbler Example","wgCurRevisionId":3394,"wgRevisionId":3394,"wgArticleId":296,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Wobbler_Example","wgRelevantArticleId":296,"wgRequestId":"71d3831fac06ccf3cfbd071d","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Wobbler_Example rootpage-Wobbler_Example skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Wobbler+Example&amp;returntoquery=oldid%3D3394">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Wobbler Example</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Wobbler_Example&amp;oldid=3394#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Wobbler_Example&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Wobbler_Example&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Wobbler_Example" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 15:35, 29 July 2014 by <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span> <span class="comment">(Changed protection level for &quot;<a href="../Wobbler_Example" title="Wobbler Example">Wobbler Example</a>&quot;: Setting Permissions for (almost all) Pages - editable and moveable by all logged in users ([Edit=Allow only autoconfirmed users] (indefinite) [Move=Allow only autoconfirmed users] (indefinite)))</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Wobbler_Example&amp;diff=prev&amp;oldid=3394" title="Wobbler Example">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Wobbler_Example&amp;direction=prev&amp;oldid=3394" title="Wobbler Example">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Wobbler_Example&amp;oldid=3394#column-one">navigation</a>, <a href="index.php?title=Wobbler_Example&amp;oldid=3394#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div style="padding:5px; border:1px solid #ffcc00; background:#FFFDDF; margin-bottom:0.2em; Font-size:140%;"><a href="../Examples" title="Examples"><img alt="Back.png" src="images/b/b9/Back.png" width="29" height="20" /></a> <a href="../Examples" title="Examples">Examples</a></div>
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Wobbler_Example&amp;oldid=3394#Joint_Velocity_Control"><span class="tocnumber">1</span> <span class="toctext">Joint Velocity Control</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Wobbler_Example&amp;oldid=3394#Summary"><span class="tocnumber">1.1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=Wobbler_Example&amp;oldid=3394#Code_Walkthrough"><span class="tocnumber">1.2</span> <span class="toctext">Code Walkthrough</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="index.php?title=Wobbler_Example&amp;oldid=3394#Overview"><span class="tocnumber">1.3</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="index.php?title=Wobbler_Example&amp;oldid=3394#Usage"><span class="tocnumber">1.4</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="index.php?title=Wobbler_Example&amp;oldid=3394#Documentation"><span class="tocnumber">1.5</span> <span class="toctext">Documentation</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="index.php?title=Wobbler_Example&amp;oldid=3394#Troubleshooting"><span class="tocnumber">1.6</span> <span class="toctext">Troubleshooting</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Joint_Velocity_Control">Joint Velocity Control</span></h1>
+<h2><span class="mw-headline" id="Summary">Summary</span></h2>
+<p>Use wobbler as an example of controlling Baxter using joint velocity control.
+</p>
+<h2><span class="mw-headline" id="Code_Walkthrough">Code Walkthrough</span></h2>
+<p><a href="../Wobbler_-_Code_Walkthrough" title="Wobbler - Code Walkthrough">Wobbler - Code Walkthrough</a>
+</p>
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>There are two modes of control for Baxter's arms, joint position and joint velocity control. This example 'wobbles' both arms by driving each joint's velocity according to a sinusoid around a neutral position. The example shows how to set velocity control mode and read joint states at 1000Hz
+</p>
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<p>Start wobbler from an RSDK terminal session using:
+</p><p>$ rosrun baxter_examples joint_velocity_wobbler.py
+</p>
+<h2><span class="mw-headline" id="Documentation">Documentation</span></h2>
+<p><a href="../Wobbler_-_Code_Walkthrough" title="Wobbler - Code Walkthrough">Wobbler - Code Walkthrough</a>
+</p>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<p>For common issues specific to using wobbler with Baxter, check out the <a href="../Contact" title="Contact">Troubleshooting page</a>.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815161047
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.011 seconds
+Real time usage: 0.012 seconds
+Preprocessor visited node count: 35/1000000
+Preprocessor generated node count: 66/1000000
+Post‐expand include size: 164/2097152 bytes
+Template argument size: 16/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.689      1 Template:Parent_header
+100.00%    0.689      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:296-0!canonical and timestamp 20190815161047 and revision id 3394
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Wobbler_Example&amp;oldid=3394">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Wobbler_Example&amp;oldid=3394</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.011","walltime":"0.012","ppvisitednodes":{"value":35,"limit":1000000},"ppgeneratednodes":{"value":66,"limit":1000000},"postexpandincludesize":{"value":164,"limit":2097152},"templateargumentsize":{"value":16,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.689      1 Template:Parent_header","100.00%    0.689      1 -total"]},"cachereport":{"timestamp":"20190815161047","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":34});});</script></body></html>

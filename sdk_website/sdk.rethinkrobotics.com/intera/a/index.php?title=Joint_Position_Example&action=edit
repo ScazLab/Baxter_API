@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Joint Position Example - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Joint_Position_Example","wgTitle":"Joint Position Example","wgCurRevisionId":1165,"wgRevisionId":0,"wgArticleId":57,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Joint_Position_Example","wgRelevantArticleId":57,"wgRequestId":"6a8e95610b1d6e58074128e5","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Joint_Position_Example rootpage-Joint_Position_Example skin-cavendishrr action-edit"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=Joint+Position+Example&amp;returntoquery=action%3Dedit">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Joint_Position_Example&amp;action=edit#">More</a>
+                <ul>
+                <li id="ca-viewsource" class="selected"><a href="index.php?title=Joint_Position_Example&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Joint_Position_Example&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Joint_Position_Example" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">View source for Joint Position Example</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Joint_Position_Example&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                ← <a href="../Joint_Position_Example" title="Joint Position Example">Joint Position Example</a>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Joint_Position_Example&amp;action=edit#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Joint_Position_Example&amp;action=edit#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Intera_SDK:Users&amp;action=edit&amp;redlink=1" class="new" title="Intera SDK:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">&lt;div class="title-block">
+
+&lt;span style="font-size:120%;">'''The joint position example(keyboard, joystick) demonstrates basic joint position control. The key or button mapped to either increasing or decreasing the angle of a particular joint on Sawyer's arm.'''&lt;/span>
+
+&lt;/div>
+
+{{TOClimit|limit=2}}
+
+&lt;div class="content-block">
+
+== Introduction == 
+
+Use a game controller or your dev machine's keyboard  to control the angular joint positions of Sawyer's arm. 
+If you would like to follow along with the actual source code for these examples on GitHub, it can be found through [https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/joint_position_joystick.py link for joint position joystick] and [https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/joint_position_keyboard.py link for joint position keyboard].
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Usage ==
+
+Start the joint position keyboard example program, ex:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_examples joint_position_keyboard.py
+&lt;/syntaxhighlight>
+
+Start the joint position joystick example program, ex:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_examples joint_position_joystick.py
+&lt;/syntaxhighlight>
+
+Upon startup, you will be prompted with the following:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+Initializing node... 
+Getting robot state... 
+Enabling robot... 
+[INFO] [WallTime: 1399575163.891211] Robot Enabled
+Controlling joints. Press ? for help, Esc to quit.
+&lt;/syntaxhighlight>
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Arguments ==
+
+'''Important Arguments:'''  
+
+See the joint position example available arguments on the command line by passing:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_examples joint_position_keyboard.py -h
+&lt;/syntaxhighlight>
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+usage: joint_position_keyboard.py [-h] [-l LIMB]
+
+RSDK Joint Position Example: Keyboard Control
+    Use your dev machine's keyboard to control joint positions.
+    Each key corresponds to increasing or decreasing the angle
+    of a joint on Sawyer's arm. The increasing and descreasing
+    are represented by number key and letter key next to the number.
+    
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -l LIMB, --limb LIMB
+                        Limb on which to run the joint position keyboard example
+&lt;/syntaxhighlight>
+
+For joint position joystick example: 
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_examples joint_position_joystick.py -h
+&lt;/syntaxhighlight>
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+usage: joint_position_joystick.py [-h] [-l LIMB] [-j JOYSTICK]
+
+SDK Joint Position Example: Joystick Control
+    Use a game controller to control the angular joint positions
+    of Sawyer's arms.
+    Attach a game controller to your dev machine and run this
+    example along with the ROS joy_node to control the position
+    of each joint in Sawyer's arm using the joystick. Be sure to
+    provide your *joystick* type to setup appropriate key mappings.
+    Each stick axis maps to a joint angle; which joints are currently
+    controlled can be incremented by using the mapped increment buttons.
+    Ex:
+      (x,y -> e0,e1) >>increment>> (x,y -> e1,e2)
+
+required arguments:
+  -j, --joystick        specify the type of joystick to use
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -l LIMB, --limb LIMB
+                        Limb on which to run the joint position joystick example
+&lt;/syntaxhighlight>
+
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Joint Position Keyboard Code Walkthrough == 
+
+Now, let's break down the code.
+
+&lt;syntaxhighlight lang="python" line start="33" enclose="div">
+"""
+SDK Joint Position Example: keyboard
+"""
+import argparse
+
+import rospy
+
+import intera_interface
+import intera_external_devices
+
+from intera_interface import CHECK_VERSION
+&lt;/syntaxhighlight>
+
+This imports the intera interface for accessing the limb and the gripper class. The &lt;code>intera_external_devices&lt;/code> is imported to use its getch function, that captures the key presses on the keyboard. The &lt;code>CHECK_VERSION&lt;/code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs.
+
+&lt;syntaxhighlight lang="python" line start="43" enclose="div">
+def map_keyboard(side):
+    limb = intera_interface.Limb(side)
+    
+    try:
+        gripper = intera_interface.Gripper(side)
+    except:
+        has_gripper = False
+        rospy.logerr("Could not initalize the gripper.")
+    else:
+        has_gripper = True
+
+    joints = limb.joint_names()
+&lt;/syntaxhighlight>
+
+The instance of Limb class, &lt;code>limb&lt;/code> and the instance of Gripper class, &lt;code>gripper&lt;/code> are created. &lt;code>joint_names()&lt;/code> method returns an array of joints of the limb.
+
+&lt;syntaxhighlight lang="python" line start="56" enclose="div">
+    def set_j(limb, joint_name, delta):
+        current_position = limb.joint_angle(joint_name)
+        joint_command = {joint_name: current_position + delta}
+        limb.set_joint_positions(joint_command)
+
+    def set_g(action):
+        if has_gripper:
+            if action == "close":
+                gripper.close()
+            elif action == "open":
+                gripper.open()
+            elif action == "calibrate":
+                gripper.calibrate()
+&lt;/syntaxhighlight>
+
+The &lt;code>set_j()&lt;/code> function is invoked whenever a valid key press occurs. The &lt;code>limb&lt;/code> refers to the limb instance of Sawyer's limb. &lt;code>delta&lt;/code> refers to the required displacement of the joint from its current position. The method &lt;code>joint_angle()&lt;/code> returns the current position of that joint. Then the joint command message is updated for that corresponding joint to indicate the new position. &lt;code>set_joint_position()&lt;/code> method publishes the joint commands to the position controller. 
+The &lt;code>set_g&lt;/code> function calls gripper action function(&lt;code>open()&lt;/code>, or &lt;code>close()&lt;/code> or &lt;code>calibrate()&lt;/code>) when corresponding action is provided.
+
+&lt;syntaxhighlight lang="python" line start="70" enclose="div">
+    bindings = {
+        '1': (set_j, [limb, joints[0], 0.1], joints[0]+" increase"),
+        'q': (set_j, [limb, joints[0], -0.1], joints[0]+" decrease"),
+        '2': (set_j, [limb, joints[1], 0.1], joints[1]+" increase"),
+        'w': (set_j, [limb, joints[1], -0.1], joints[1]+" decrease"),
+        '3': (set_j, [limb, joints[2], 0.1], joints[2]+" increase"),
+        'e': (set_j, [limb, joints[2], -0.1], joints[2]+" decrease"),
+        '4': (set_j, [limb, joints[3], 0.1], joints[3]+" increase"),
+        'r': (set_j, [limb, joints[3], -0.1], joints[3]+" decrease"),
+        '5': (set_j, [limb, joints[4], 0.1], joints[4]+" increase"),
+        't': (set_j, [limb, joints[4], -0.1], joints[4]+" decrease"),
+        '6': (set_j, [limb, joints[5], 0.1], joints[5]+" increase"),
+        'y': (set_j, [limb, joints[5], -0.1], joints[5]+" decrease"),
+        '7': (set_j, [limb, joints[6], 0.1], joints[6]+" increase"),
+        'u': (set_j, [limb, joints[6], -0.1], joints[6]+" decrease"),
+        '8': (set_g, "close", side+" gripper close"),
+        'i': (set_g, "open", side+" gripper open"),
+        '9': (set_g, "calibrate", side+" gripper calibrate")
+     }
+&lt;/syntaxhighlight>
+
+The &lt;code>bindings&lt;/code> is a dictionary that holds the set of characters in the keyboard and their corresponding joints.
+
+&lt;syntaxhighlight lang="python" line start="89" enclose="div">
+    done = False
+    print("Controlling joints. Press ? for help, Esc to quit.")
+    while not done and not rospy.is_shutdown():
+        c = intera_external_devices.getch()
+        if c:
+            #catch Esc or ctrl-c
+            if c in ['\x1b', '\x03']:
+                done = True
+                rospy.signal_shutdown("Example finished.")
+&lt;/syntaxhighlight>
+
+The &lt;code>done&lt;/code> variable captures whether "esc" or "ctrl-c" was hit. The while loop iterates as long as the "esc" or "ctrl-c" is hit or ros-shutdown signal is given. c captures the keyboard input. If "esc" or "ctrl-c" is given then &lt;code>done&lt;/code> gets updated as true, and a shutdown signal will be sent.
+
+&lt;syntaxhighlight lang="python" line start="98" enclose="div">
+            elif c in bindings:
+                cmd = bindings[c]
+                if c == '8' or c == 'i' or c == '9':
+                    cmd[0](cmd[1])
+                    print("command: %s" % (cmd[2],))
+                else:
+                    #expand binding to something like "set_j(right, 'j0', 0.1)"
+                    cmd[0](*cmd[1])
+                    print("command: %s" % (cmd[2],))
+&lt;/syntaxhighlight>
+
+The user inputted key is checked whether it is in the &lt;code>bindings&lt;/code> dictionary. &lt;code>bindings[c]&lt;/code> returns the value of the key c from the dictionary. The 0th index of the value refers to the function to be called and the next index holds the arguments to be sent along with that function. &lt;code>cmd[2]&lt;/code> is the description of the joint command from the dictionary above.
+
+&lt;syntaxhighlight lang="python" line start="107" enclose="div">
+            else:
+                print("key bindings: ")
+                print("  Esc: Quit")
+                print("  ?: Help")
+                for key, val in sorted(bindings.items(),
+                                       key=lambda x: x[1][2]):
+                    print("  %s: %s" % (key, val[2]))
+&lt;/syntaxhighlight>
+
+This case is executed when the key pressed is not a valid input. So, the key is sorted and is printed along with its corresponding description.
+
+&lt;syntaxhighlight lang="python" line start="115" enclose="div">
+def main():
+    """RSDK Joint Position Example: Keyboard Control
+    Use your dev machine's keyboard to control joint positions.
+    Each key corresponds to increasing or decreasing the angle
+    of a joint on Sawyer's arm. The increasing and descreasing
+    are represented by number key and letter key next to the number.
+    """
+    epilog = """
+See help inside the example with the '?' key for key bindings.
+    """
+    rp = intera_interface.RobotParams()
+    valid_limbs = rp.get_limb_names()
+    if not valid_limbs:
+        rp.log_message(("Cannot detect any limb parameters on this robot. "
+                        "Exiting."), "ERROR")
+        return
+    arg_fmt = argparse.RawDescriptionHelpFormatter
+    parser = argparse.ArgumentParser(formatter_class=arg_fmt,
+                                     description=main.__doc__,
+                                     epilog=epilog)
+    parser.add_argument(
+        "-l", "--limb", dest="limb", default=valid_limbs[0],
+        choices=valid_limbs,
+        help="Limb on which to run the joint position keyboard example"
+    )
+    args = parser.parse_args(rospy.myargv()[1:])
+
+    print("Initializing node... ")
+    rospy.init_node("sdk_joint_position_keyboard")
+    print("Getting robot state... ")
+    rs = intera_interface.RobotEnable(CHECK_VERSION)
+    init_state = rs.state().enabled
+&lt;/syntaxhighlight>
+
+The node is initialized and then the software version is checked for compatiblity with the local version. &lt;code>init_state&lt;/code> captures Sawyer's initial state. This is to make sure that Sawyer is sent back to the same state after the program exits.
+
+&lt;syntaxhighlight lang="python" line start="150" enclose="div">
+    def clean_shutdown():
+        print("\nExiting example.")
+        if not init_state:
+            print("Disabling robot...")
+            rs.disable()
+    rospy.on_shutdown(clean_shutdown)
+&lt;/syntaxhighlight>
+
+As explained above, the robot is checked if it was initially disabled and if so, it is disabled upon the program's termination.
+
+&lt;syntaxhighlight lang="python" line start="157" enclose="div">
+    rospy.loginfo("Enabling robot...")
+    rs.enable()
+    map_keyboard(args.limb)
+    print("Done.")
+
+
+if __name__ == '__main__':
+    main()
+&lt;/syntaxhighlight>
+
+The robot is enabled before the programs execution. It is important to note that Sawyer should be auto-enabled before trying to move its joints. &lt;code>map_keyboard()&lt;/code> function captures the key input and moves the joint as explained above.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Joint Position Joystick Code Walkthrough == 
+
+Now, let's break down the code.
+
+&lt;syntaxhighlight lang="python" line start="33" enclose="div">
+import argparse
+
+import rospy
+
+import intera_interface
+import intera_external_devices
+
+from intera_interface import CHECK_VERSION
+&lt;/syntaxhighlight>
+
+This imports the intera interface for accessing the limb and the gripper class. The &lt;code>intera_external_devices&lt;/code> is imported to use its &lt;code>joystick&lt;/code> function, that captures the key presses on the joystick. The &lt;code>CHECK_VERSION&lt;/code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs.
+
+&lt;syntaxhighlight lang="python" line start="43" enclose="div">
+def rotate(l):
+    """
+    Rotates a list left.
+    @param l: the list
+    """
+    if len(l):
+        v = l[0]
+        l[:-1] = l[1:]
+        l[-1] = v
+&lt;/syntaxhighlight>
+
+The &lt;code>rotate&lt;/code> function rotates a list, it will be used in bindings. This moves all the elements in the list to one position to their left. So the element at 0th position moves to the nth position, element at nth position moves to (n-1)th position, and so on.
+
+&lt;syntaxhighlight lang="python" line start="54" enclose="div">
+def set_j(cmd, limb, joints, index, delta):
+    """
+    Set the selected joint to current pos + delta.
+    @param cmd: the joint command dictionary
+    @param limb: the limb to get the pos from
+    @param joints: a list of joint names
+    @param index: the index in the list of names
+    @param delta: delta to update the joint by
+    joint/index is to make this work in the bindings.
+    """
+    joint = joints[index]
+    cmd[joint] = delta + limb.joint_angle(joint)
+&lt;/syntaxhighlight>
+
+&lt;code>joint_angle()&lt;/code> method returns the current angle of the corresponding joint. This function builds the dictionary that is to be passed as a joint command. The last line assigns the new position which has an offset of &lt;code>delta&lt;/code> from the current position.
+
+&lt;syntaxhighlight lang="python" line start="69" enclose="div">
+def map_joystick(joystick, side):
+    """
+    Maps joystick input to joint position commands.
+    @param joystick: an instance of a Joystick
+    """
+    limb = intera_interface.Limb(side)
+    gripper = None
+    try:
+        gripper = intera_interface.Gripper(side)
+    except:
+        rospy.loginfo("Could not detect a connected electric gripper.")
+&lt;/syntaxhighlight>
+
+The instance of Limb class and the instance of Gripper class are created. No gripper will raise could not detect gripper info.
+
+&lt;syntaxhighlight lang="python" line start="82" enclose="div">
+    def set_g(action):
+        if gripper is not None:
+            if action == "close":
+                gripper.close()
+            elif action == "open":
+                gripper.open()
+            elif action == "calibrate":
+                gripper.calibrate()
+&lt;/syntaxhighlight>
+
+The &lt;code>set_g&lt;/code> function calls gripper action function(&lt;code>open()&lt;/code>, or &lt;code>close()&lt;/code> or &lt;code>calibrate()&lt;/code>) when corresponding action is provided.
+
+&lt;syntaxhighlight lang="python" line start="91" enclose="div">
+    limb_cmd = {}
+
+    #available joints
+    joints = limb.joint_names()
+
+    #abbreviations
+    jhi = lambda s: joystick.stick_value(s) > 0
+    jlo = lambda s: joystick.stick_value(s) &lt; 0
+    bdn = joystick.button_down
+    bup = joystick.button_up
+&lt;/syntaxhighlight>
+
+Create instance of joint names and abbreviations for joystick values, button up and button down. The &lt;code>joint_names()&lt;/code> method returns a list of joints associated with the limb. The &lt;code>stick_value()&lt;/code> method returns the dead-banded, scaled and offset value of the axis. The abbreviations for all these functions are created to be used within the bindings dictionary below.
+
+&lt;syntaxhighlight lang="python" line start="102" enclose="div">
+    def print_help(bindings_list):
+        print("Press Ctrl-C to quit.")
+        for bindings in bindings_list:
+            for (test, _cmd, doc) in bindings:
+                if callable(doc):
+                    doc = doc()
+                print("%s: %s" % (str(test[1][0]), doc))
+&lt;/syntaxhighlight>
+
+The information about the joystick buttons and the corresponding joints are displayed. This information is available in &lt;code>bindings_list&lt;/code> as below. The &lt;code>doc&lt;/code> refers to the last element of the tuple and it is checked if it is a callable function. So, if there is a lambda function that evaluates and returns a string, then that function is called. Finally, the results are displayed.
+
+&lt;syntaxhighlight lang="python" line start="110" enclose="div">
+    bindings_list = []
+    bindings = [
+        ((jlo, ['leftStickHorz']), (set_j, [limb_cmd, limb, joints, 0, 0.1]),
+            lambda: "Increase " + joints[0]),
+        ((jhi, ['leftStickHorz']), (set_j, [limb_cmd, limb, joints, 0, -0.1]),
+            lambda: "Decrease " + joints[0]),
+        ((jlo, ['leftStickVert']), (set_j, [limb_cmd, limb, joints, 1, 0.1]),
+            lambda: "Increase " + joints[1]),
+        ((jhi, ['leftStickVert']), (set_j, [limb_cmd, limb, joints, 1, -0.1]),
+            lambda: "Decrease " + joints[1]),
+        ((jlo, ['rightStickHorz']), (set_j, [limb_cmd, limb, joints, 2, 0.1]),
+            lambda: "Increase " + joints[2]),
+        ((jhi, ['rightStickHorz']), (set_j, [limb_cmd, limb, joints, 2, -0.1]),
+            lambda: "Decrease " + joints[2]),
+        ((jlo, ['rightStickVert']), (set_j, [limb_cmd, limb, joints, 3, 0.1]),
+            lambda: "Increase " + joints[3]),
+        ((jhi, ['rightStickVert']), (set_j, [limb_cmd, limb, joints, 3, -0.1]),
+            lambda: "Decrease " + joints[3]),
+        ((bdn, ['leftBumper']), (rotate, [joints]), side + ": cycle joint"),
+        ((bdn, ['function1']), (print_help, [bindings_list]), "help"),
+        ((bdn, ['function2']), (print_help, [bindings_list]), "help"),
+        ]
+    if gripper:
+        bindings.extend([
+            ((bdn, ['rightTrigger']), (set_g, ['close'], gripper), side + " gripper close"),
+            ((bup, ['rightTrigger']), (set_g, ['open'], gripper), side + " gripper open"),
+            ((bdn, ['btnLeft']), (set_g, ['calibrate'], gripper), "right calibrate")
+            ])
+    bindings_list.append(bindings)
+&lt;/syntaxhighlight>
+
+The first element of every tuple refers to the command that has to be executed. As indicated above &lt;code>set_j, bdn, bup, jhi&lt;/code> and &lt;code>jlo&lt;/code> refers to the function and their acronyms. The second tuple has a list that holds the list of arguments to be passed along with that function. The last element holds a string or a function that evaluates and forms a string to detail the joint under consideration.
+
+&lt;syntaxhighlight lang="python" line start="140" enclose="div">
+    rate = rospy.Rate(100)
+    print_help(bindings_list)
+    print("Press Ctrl-C to stop. ")
+    while not rospy.is_shutdown():
+        for (test, cmd, doc) in bindings:
+            if test[0](*test[1]):
+                cmd[0](*cmd[1])
+                if callable(doc):
+                    print(doc())
+                else:
+                    print(doc)
+        if len(limb_cmd):
+            limb.set_joint_positions(limb_cmd)
+            limb_cmd.clear()
+        rate.sleep()
+    return False
+&lt;/syntaxhighlight>
+
+The test tuple holds the function that needs to be called for a particular value to be tested. For instance, the first tuple holds the abbreviation bdn and the parameter rightTrigger that is passed along. This test function checks whether the joystick's button_down is pressed. If this is true then the cmd, that refers to the second tuple (gripper.close,[]) is parsed as above. For the first binding, the expression cmd[0](*cmd[1]) returns the function call gripper.close([]). The next line checks if the last tuple is a function (lambda) or not (string). Since the joints being controlled are updated dynamically, the lambda function is used to retrieve the current joints rj[0] and rj[1].
+The dictionaries limb_cmd hold the joint commands for the limb. These dictionaries get populated when the set_j method is called by the previous section of code.
+
+&lt;syntaxhighlight lang="python" line start="158" enclose="div">
+def main():
+    """SDK Joint Position Example: Joystick Control
+    Use a game controller to control the angular joint positions
+    of Sawyer's arms.
+    Attach a game controller to your dev machine and run this
+    example along with the ROS joy_node to control the position
+    of each joint in Sawyer's arm using the joystick. Be sure to
+    provide your *joystick* type to setup appropriate key mappings.
+    Each stick axis maps to a joint angle; which joints are currently
+    controlled can be incremented by using the mapped increment buttons.
+    Ex:
+      (x,y -> e0,e1) >>increment>> (x,y -> e1,e2)
+    """
+    epilog = """
+See help inside the example with the "Start" button for controller
+key bindings.
+    """
+    rp = intera_interface.RobotParams()
+    valid_limbs = rp.get_limb_names()
+    if not valid_limbs:
+        rp.log_message(("Cannot detect any limb parameters on this robot. "
+                        "Exiting."), "ERROR")
+        return
+    arg_fmt = argparse.RawDescriptionHelpFormatter
+    parser = argparse.ArgumentParser(formatter_class=arg_fmt,
+                                     description=main.__doc__,
+                                     epilog=epilog)
+    required = parser.add_argument_group('required arguments')
+    required.add_argument(
+        '-j', '--joystick', required=True,
+        choices=['xbox', 'logitech', 'ps3'],
+        help='specify the type of joystick to use'
+    )
+    parser.add_argument(
+        "-l", "--limb", dest="limb", default=valid_limbs[0],
+        choices=valid_limbs,
+        help="Limb on which to run the joint position joystick example"
+    )
+    args = parser.parse_args(rospy.myargv()[1:])
+
+    joystick = None
+    if args.joystick == 'xbox':
+        joystick = intera_external_devices.joystick.XboxController()
+    elif args.joystick == 'logitech':
+        joystick = intera_external_devices.joystick.LogitechController()
+    elif args.joystick == 'ps3':
+        joystick = intera_external_devices.joystick.PS3Controller()
+    else:
+        parser.error("Unsupported joystick type '%s'" % (args.joystick))
+
+    print("Initializing node... ")
+    rospy.init_node("sdk_joint_position_joystick")
+    print("Getting robot state... ")
+    rs = intera_interface.RobotEnable(CHECK_VERSION)
+    init_state = rs.state().enabled
+&lt;/syntaxhighlight>
+
+The type of joystick input is captured as entered by the user and an instance of the corresponding interface is created.
+The node is initialized and the robot is enabled.
+
+&lt;syntaxhighlight lang="python" line start="217" enclose="div">
+    def clean_shutdown():
+        print("\nExiting example.")
+        if not init_state:
+            print("Disabling robot...")
+            rs.disable()
+    rospy.on_shutdown(clean_shutdown)
+
+    rospy.loginfo("Enabling robot...")
+    rs.enable()
+
+    map_joystick(joystick, args.limb)
+    print("Done.")
+
+
+if __name__ == '__main__':
+    main()
+&lt;/syntaxhighlight>
+
+The &lt;code>map_joystick()&lt;/code> method performs the mapping and execution of the commands as explained above.
+
+&lt;/div>
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="http://sdk.rethinkrobotics.com/intera/Template:TOClimit" title="Template:TOClimit">Template:TOClimit</a> (<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Template:TOClimit&amp;action=edit" title="Template:TOClimit">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Joint_Position_Example" title="Joint Position Example">Joint Position Example</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Joint_Position_Example">http://sdk.rethinkrobotics.com/intera/Joint_Position_Example</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":1742});});</script></body></html>

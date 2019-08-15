@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Gripper Keyboard - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Gripper_Keyboard_-_Code_Walkthrough","wgTitle":"Gripper Keyboard - Code Walkthrough","wgCurRevisionId":4029,"wgRevisionId":0,"wgArticleId":474,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Gripper_Keyboard_-_Code_Walkthrough","wgRelevantArticleId":474,"wgRequestId":"43491a97beaedccd5d69eac5","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Gripper_Keyboard_-_Code_Walkthrough rootpage-Gripper_Keyboard_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Gripper+Keyboard+-+Code+Walkthrough&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Gripper Keyboard - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Gripper_Keyboard_-_Code_Walkthrough&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Gripper_Keyboard_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Gripper_Keyboard_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Gripper_Keyboard_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Gripper_Keyboard_-_Code_Walkthrough" title="Gripper Keyboard - Code Walkthrough">Gripper Keyboard - Code Walkthrough</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Gripper_Keyboard_-_Code_Walkthrough&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Gripper_Keyboard_-_Code_Walkthrough&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">{{Template:Parent header|parent=Gripper Example}}
+== Introduction ==
+This example demonstrates the usage of the gripper control via baxter interface. The &lt;code>main()&lt;/code> function enables the robot and invokes the &lt;code>map_keyboard()&lt;/code> function. It is at this function where the keyboard keys are mapped to individual gripper actions and the commands are executed periodically.&lt;br />
+'''Interfaces - '''
+&lt;div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
+* Gripper.reboot()
+* Gripper.calibrate()
+* Gripper.close()
+* Gripper.open()
+* Gripper.set_velocity(&lt;''double''>)
+* Gripper.stop()
+* Gripper.position()
+* Gripper.command_position(&lt;''double''>,&lt;''double''>)
+* Gripper.parameters()
+* Gripper.set_holding_force(&lt;''double''>, &lt;''double''>)
+* Gripper.set_moving_force(&lt;''double''>, &lt;''double''>)
+* Gripper.set_velocity(&lt;''double''>, &lt;''double''>)
+* Gripper.set_dead_band(&lt;''double''>, &lt;''double''>)
+&lt;/div>
+
+== Code Walkthrough ==
+
+Now, let's break down the code.
+
+&lt;syntaxhighlight lang="python" line start="33" enclose="div">
+import argparse
+
+import rospy
+
+import baxter_interface
+import baxter_external_devices
+
+from baxter_interface import CHECK_VERSION
+&lt;/syntaxhighlight>
+
+This imports the baxter interface for accessing the limb and the gripper class. The &lt;code>baxter_external_devices&lt;/code> is imported to use its &lt;code>getch&lt;/code> function that captures the key presses on the keyboard. The &lt;code>CHECK_VERSION&lt;/code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs. 
+
+&lt;syntaxhighlight lang="python" line start="43" enclose="div">
+def map_keyboard():
+    # initialize interfaces
+    print("Getting robot state... ")
+    rs = baxter_interface.RobotEnable(CHECK_VERSION)
+    init_state = rs.state().enabled
+    left = baxter_interface.Gripper('left', CHECK_VERSION)
+    right = baxter_interface.Gripper('right', CHECK_VERSION)
+&lt;/syntaxhighlight>
+
+The &lt;code>init_state&lt;/code> variable captures the current state of the robot. Two instances of the Gripper class are created for either of Baxter's limbs.
+
+&lt;syntaxhighlight lang="python" line start="51" enclose="div">
+    def clean_shutdown():
+        if not init_state:
+            print("Disabling robot...")
+            rs.disable()
+        print("Exiting example.")
+    rospy.on_shutdown(clean_shutdown)
+&lt;/syntaxhighlight>
+
+On shutdown request, Baxter's state is sent back to its initial state.
+
+&lt;syntaxhighlight lang="python" line start="58" enclose="div">
+    def capability_warning(gripper, cmd):
+        msg = ("%s %s - not capable of '%s' command" %
+               (gripper.name, gripper.type(), cmd))
+        rospy.logwarn(msg)
+&lt;/syntaxhighlight>
+
+This function is invoked when a gripper control command is called with custom grippers. It displays a warning message.
+
+&lt;syntaxhighlight lang="python" line start="63" enclose="div">
+    def offset_position(gripper, offset):
+        if gripper.type() != 'electric':
+            capability_warning(gripper, 'command_position')
+            return
+        current = gripper.position()
+        gripper.command_position(current + offset)
+&lt;/syntaxhighlight>
+
+The gripper type is checked for an electric gripper. &lt;code>command_position()&lt;/code> sets the gripper to the commanded position. It moves the fingers from close(0) to open(100) state based on the passed double value.
+
+&lt;syntaxhighlight lang="python" line start="70" enclose="div">
+    def offset_holding(gripper, offset):
+        if gripper.type() != 'electric':
+            capability_warning(gripper, 'set_holding_force')
+            return
+        current = gripper.parameters()['holding_force']
+        gripper.set_holding_force(current + offset)
+&lt;/syntaxhighlight>
+
+&lt;code>set_holding_force()&lt;/code> method is used to set the force of the grippers when the fingers come in contact with an object between them. 
+
+&lt;syntaxhighlight lang="python" line start="77" enclose="div">
+    def offset_moving(gripper, offset):
+        if gripper.type() != 'electric':
+            capability_warning(gripper, 'set_moving_force')
+            return
+        current = gripper.parameters()['moving_force']
+        gripper.set_moving_force(current + offset)
+&lt;/syntaxhighlight>
+
+&lt;code>set_moving_force()&lt;/code> method is used to set the force of the grippers immediately before the fingers come in contact with an object between them. 
+
+&lt;syntaxhighlight lang="python" line start="84" enclose="div">
+    def offset_velocity(gripper, offset):
+        if gripper.type() != 'electric':
+            capability_warning(gripper, 'set_velocity')
+            return
+        current = gripper.parameters()['velocity']
+        gripper.set_velocity(current + offset)
+&lt;/syntaxhighlight>
+
+&lt;code>set_velocity()&lt;/code> method is used to set the velocity at which the grippers would open/close.
+
+&lt;syntaxhighlight lang="python" line start="91" enclose="div">
+    def offset_dead_band(gripper, offset):
+        if gripper.type() != 'electric':
+            capability_warning(gripper, 'set_dead_band')
+            return
+        current = gripper.parameters()['dead_zone']
+        gripper.set_dead_band(current + offset)
+&lt;/syntaxhighlight>
+
+&lt;code>set_dead_band()&lt;/code> method is used to set the dead zone of the grippers. Precisely, it refers to the minimum distance between the gripper fingers when they are in closed state.
+
+&lt;syntaxhighlight lang="python" line start="98" enclose="div">
+    bindings = {
+    #   key: (function, args, description)
+        'r': (left.reboot, [], "left: reboot"),
+        'R': (right.reboot, [], "right: reboot"),
+        'c': (left.calibrate, [], "left: calibrate"),
+        'C': (right.calibrate, [], "right: calibrate"),
+        'q': (left.close, [], "left: close"),
+        'Q': (right.close, [], "right: close"),
+        'w': (left.open, [], "left: open"),
+        'W': (right.open, [], "right: open"),
+        '[': (left.set_velocity, [100.0], "left:  set 100% velocity"),
+        '{': (right.set_velocity, [100.0], "right:  set 100% velocity"),
+        ']': (left.set_velocity, [30.0], "left:  set 30% velocity"),
+        '}': (right.set_velocity, [30.0], "right:  set 30% velocity"),
+        's': (left.stop, [], "left: stop"),
+        'S': (right.stop, [], "right: stop"),
+        'z': (offset_dead_band, [left, -1.0], "left:  decrease dead band"),
+        'Z': (offset_dead_band, [right, -1.0], "right:  decrease dead band"),
+        'x': (offset_dead_band, [left, 1.0], "left:  increase dead band"),
+        'X': (offset_dead_band, [right, 1.0], "right:  increase dead band"),
+        'f': (offset_moving, [left, -5.0], "left:  decrease moving force"),
+        'F': (offset_moving, [right, -5.0], "right:  decrease moving force"),
+        'g': (offset_moving, [left, 5.0], "left:  increase moving force"),
+        'G': (offset_moving, [right, 5.0], "right:  increase moving force"),
+        'h': (offset_holding, [left, -5.0], "left:  decrease holding force"),
+        'H': (offset_holding, [right, -5.0], "right:  decrease holding force"),
+        'j': (offset_holding, [left, 5.0], "left:  increase holding force"),
+        'J': (offset_holding, [right, 5.0], "right:  increase holding force"),
+        'v': (offset_velocity, [left, -5.0], "left:  decrease velocity"),
+        'V': (offset_velocity, [right, -5.0], "right:  decrease velocity"),
+        'b': (offset_velocity, [left, 5.0], "left:  increase velocity"),
+        'B': (offset_velocity, [right, 5.0], "right:  increase velocity"),
+        'u': (offset_position, [left, -15.0], "left:  decrease position"),
+        'U': (offset_position, [right, -15.0], "right:  decrease position"),
+        'i': (offset_position, [left, 15.0], "left:  increase position"),
+        'I': (offset_position, [right, 15.0], "right:  increase position"),
+    }
+&lt;/syntaxhighlight>
+
+The &lt;code>bindings&lt;/code> is a dictionary that holds the set of characters in the keyboard and their corresponding gripperfunctions.
+
+&lt;syntaxhighlight lang="python" line start="136" enclose="div">
+    done = False
+    print("Enabling robot... ")
+    rs.enable()
+    print("Controlling grippers. Press ? for help, Esc to quit.")
+    while not done and not rospy.is_shutdown():
+        c = baxter_external_devices.getch()
+        if c:
+            if c in ['\x1b', '\x03']:
+                done = True
+&lt;/syntaxhighlight>
+
+The &lt;code>done&lt;/code> variable is used to capture if "esc" or "ctrl-c" was hit. The while loop iterates till the "esc" or "ctrl-c" is inputted or ros-shutdown signal is given. &lt;code>c&lt;/code> captures the keyboard input. If "esc" or "ctrl-c" is given then &lt;code>done&lt;/code> gets updated as true, and shutdown signal is sent.
+
+&lt;syntaxhighlight lang="python" line start="145" enclose="div">
+            elif c in bindings:
+                cmd = bindings[c]
+                cmd[0](*cmd[1])
+                print("command: %s" % (cmd[2],))
+&lt;/syntaxhighlight>
+
+The user inputted key is checked whether it is in the &lt;code>bindings&lt;/code> dictionary. &lt;code>bindings[c]&lt;/code> returns the value of the key &lt;code>c&lt;/code> from the dictionary. The 0th index of the value refers to the function to be called and the next index holds the arguments to be sent along with that function. &lt;code>cmd[2]&lt;/code> is the description of the joint command from the dictionary above.
+
+&lt;syntaxhighlight lang="python" line start="149" enclose="div">
+            else:
+                print("key bindings: ")
+                print("  Esc: Quit")
+                print("  ?: Help")
+                for key, val in sorted(bindings.items(),
+                                       key=lambda x: x[1][2]):
+                    print("  %s: %s" % (key, val[2]))
+    # force shutdown call if caught by key handler
+    rospy.signal_shutdown("Example finished.")
+&lt;/syntaxhighlight>
+
+This case is executed when the key pressed is not valid. So, the key is sorted and printed along with its corresponding description.
+
+&lt;syntaxhighlight lang="python" line start="160" enclose="div">
+def main():
+    """RSDK Gripper Example: Keyboard Control
+
+    Use your dev machine's keyboard to control and configure
+    Baxter's grippers.
+
+    Run this example to command various gripper movements while
+    adjusting gripper parameters, including calibration, velocity,
+    and force. Uses the baxter_interface.Gripper class and the
+    helper function, baxter_external_devices.getch.
+    """
+    epilog = """
+See help inside the example with the '?' key for key bindings.
+    """
+    arg_fmt = argparse.RawDescriptionHelpFormatter
+    parser = argparse.ArgumentParser(formatter_class=arg_fmt,
+                                     description=main.__doc__,
+                                     epilog=epilog)
+    parser.parse_args(rospy.myargv()[1:])
+
+    print("Initializing node... ")
+    rospy.init_node("rsdk_gripper_keyboard")
+&lt;/syntaxhighlight>
+
+The node is initialized.
+
+&lt;syntaxhighlight lang="python" line start="183" enclose="div">
+    map_keyboard()
+
+
+if __name__ == '__main__':
+    main()
+&lt;/syntaxhighlight>
+
+It is important to note that Baxter should be enabled before trying to move its joints. &lt;code>map_keyboard()&lt;/code> function captures the key input and moves the joint as explained above.
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="../Template:Parent_header" title="Template:Parent header">Template:Parent header</a> (<a href="index.php?title=Template:Parent_header&amp;action=edit" title="Template:Parent header">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Gripper_Keyboard_-_Code_Walkthrough" title="Gripper Keyboard - Code Walkthrough">Gripper Keyboard - Code Walkthrough</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Gripper_Keyboard_-_Code_Walkthrough">http://sdk.rethinkrobotics.com/wiki/Gripper_Keyboard_-_Code_Walkthrough</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":38});});</script></body></html>

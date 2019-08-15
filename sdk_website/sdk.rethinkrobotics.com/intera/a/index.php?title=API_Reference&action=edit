@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for API Reference - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"API_Reference","wgTitle":"API Reference","wgCurRevisionId":1285,"wgRevisionId":0,"wgArticleId":39,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"API_Reference","wgRelevantArticleId":39,"wgRequestId":"2c0e33fdc05f5d86ef955f27","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-API_Reference rootpage-API_Reference skin-cavendishrr action-edit"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=API+Reference&amp;returntoquery=action%3Dedit">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=API_Reference&amp;action=edit#">More</a>
+                <ul>
+                <li id="ca-viewsource" class="selected"><a href="index.php?title=API_Reference&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=API_Reference&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../API_Reference" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">View source for API Reference</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=API_Reference&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                ← <a href="../API_Reference" title="API Reference">API Reference</a>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=API_Reference&amp;action=edit#column-one">navigation</a>
+                    ,                     <a href="index.php?title=API_Reference&amp;action=edit#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Intera_SDK:Users&amp;action=edit&amp;redlink=1" class="new" title="Intera SDK:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">__NOTOC__
+&lt;div class="title-block">
+
+&lt;span style="font-size:120%;">'''This page serves as a lookup reference for all the hardware and functionality for the SDK. The main interface of the SDK is via ROS Topics and Services, which you will find listed and described below along with other core information needed to interface with the robot.'''&lt;/span>
+
+&lt;/div>
+
+{{TOClimit|limit=2}}
+
+&lt;div class="content-block">
+
+= ROS Topic API Reference =
+
+
+==Python Code API==
+: For the [[Robot Interface|Robot Interface]] Python classes (built on top of the ROS API), please see the [https://rethinkrobotics.github.io/intera_sdk_docs/index.html Code API Reference] page.
+
+{| class="wikitable"
+|-
+! scope="col"| Robot
+! scope="col"| Movement
+! scope="col"| Sensors+
+! scope="col"| I/O
+|- style="vertical-align:top;"
+|
+* [[#Enable Robot|Enabling the Robot]]
+* [[#Robot Description (URDF)|Robot Description (URDF)]]
+||
+* [[#Joints|Joints]] 
+** [[#Arm Joints|Arm Joints]]
+** [[#Head Joints|Head Joints]]
+* [[#Cartesian Endpoint|Cartesian Endpoint]]
+** [[#Endpoint State|Endpoint State]]
+** [[#Kinematics Solver Service|Kinematics Solver Service]]
+* [[#Gripper (End-Effector)|Gripper (End-Effector)]]
+||
+* [[#Accelerometer|Accelerometer]]
+* [[#Cameras|Cameras]]
+* [[#Head Display Screen|Head Display Screen]]
+|
+* [[#Navigators|Navigators]]
+* [[#Cuff Buttons|Cuff Buttons]]
+* [[#Lights|LED Lights]]
+|}
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+= Robot =
+
+
+== Enable Robot ==
+Be sure that you 'Enable' the robot before attempting to control any of the motors.  The easiest method for controlling the robot is to use the &lt;code>enable_robot.py&lt;/code> ROS executable found in the following example:[https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_interface/scripts/enable_robot.py Enable Robot Script]
+
+=== Robot State ===
+&lt;code>/robot/state&lt;/code> ([https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/AssemblyState.html intera_core_msgs/AssemblyState])
+Subscribe to the Robot State for the enabled and error state of the robot hardware itself. It also includes information on the EStop.
+The robot must be enabled (&lt;code>enabled: true&lt;/code>) in order to move the robot. Use the [https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_interface/scripts/enable_robot.py Enable Robot Script], or the "Enable Robot Topic" below, to enable the robot.
+It is possible for the robot to have non-fatal errors, so &lt;code>error&lt;/code> can be &lt;code>true&lt;/code> while &lt;code>enabled&lt;/code> is also &lt;code>true&lt;/code>.
+For more complete information on robot state, see [[E-STOP and Enable Robot]].
+
+=== Enable Robot ===
+&lt;code>/robot/set_super_enable&lt;/code> ([http://www.ros.org/doc/api/std_msgs/html/msg/Bool.html std_msgs/Bool])  
+&lt;code>data&lt;/code>: &lt;code>true&lt;/code> to Enable robot motors; &lt;code>false&lt;/code> to disable.
+You can check the Robot State Topic to see if the robot enabled properly or if it has an error.
+
+=== Reset Robot State ===
+&lt;code>/robot/set_super_reset&lt;/code> ([http://www.ros.org/doc/api/std_msgs/html/msg/Empty.html std_msgs/Empty])  
+Publish an Empty message to reset the state after an error.
+A reset will clear all pre-existing errors and the state (it will disable).
+
+
+== Robot Description (URDF) ==
+
+Sawyer automatically builds an appropriate URDF (Unified Robot Description Format) on boot and loads it onto the ROS Parameter Server, under the ROS parameter name &lt;code>/robot_description&lt;/code>.  From here, it is accessible by rviz, tf and other ROS utilities that use the URDF.
+
+The [http://wiki.ros.org/urdf Unified Robot Description Format (URDF)] is the standard ROS XML representation of the robot model (kinematics, dynamics, sensors) describing Sawyer.
+
+Sawyer generates his URDF dynamically on robot startup. This model is updated when any gripper is attached or detached, an object is 'grasped' or released and its mass is compensated for, and when new urdf segments are provided/commanded to the gripper plugins. As of SDK versions >= 1.0.0 Sawyer's internal robot model, is loaded to the [http://wiki.ros.org/Parameter%20Server parameter server] on the topic &lt;code>/robot_description&lt;/code>
+
+The default URDF for Sawyer is available in the [https://github.com/RethinkRobotics/intera_common intera_common] repository. The package &lt;code> sawyer_description &lt;/code> contains the URDF and accompanying meshes.
+
+=== Getting a Copy of the URDF from the parameter server ===
+
+You can now get the current URDF describing '''your''' Sawyer.
+
+From a [[SDK_Shell | properly initialized]] Sawyer environment, export the URDF from the &lt;code>/robot_description&lt;/code> parameter on the ROS parameter server where it is stored, to a file of your choice (ex: &lt;code>sawyer_urdf.xml&lt;/code>):
+
+&lt;source lang="bash">
+$ rosparam get -p /robot_description | tail -n +2 > sawyer_urdf.xml
+&lt;/source>
+
+The &lt;code>-p&lt;/code> outputs the parameter using pretty print. The output urdf is piped through the &lt;code>tail&lt;/code> command first to remove a dummy first line - an artifact of the pretty print.  
+
+'''Tip:''' You can check that you now have a proper URDF by running: 
+&lt;source lang="bash">
+$ rosrun urdfdom check_urdf sawyer_urdf.xml
+&lt;/source>
+
+=== Robot State Publisher ===
+
+The URDF is used by Sawyer's [http://wiki.ros.org/urdf Robot State Publishers] to create a tree of [http://wiki.ros.org/tf transforms (tfs)]. In fact, Sawyer has two of such publishers:
+'''robot_ref_publisher''': publishes transforms that reflect the commanded robot state.
+'''robot_state_publisher''': publishes transforms that reflect the measured state of the robot.
+
+These robot publishers live internal to Sawyer and are accessible to the RSDK over ROS. The "ref" tfs are used by the robot internals, but you may find them useful to see where the robot will move at the next timestep. Otherwise, be sure to use the non-"ref" transforms if you're only interested in the Sawyer's current state.
+
+=== Getting a Copy of the URDF Dynamically ===
+Sawyer generates the URDF dynamically on initialization, based on the attached arm.  In some cases, users may want to get the current URDF off the robot.  
+From a working Sawyer RSDK environment, export the URDF from the &lt;code>/robot_description&lt;/code> parameter on the ROS parameter server where it is stored, to a file of your choice (ex: &lt;code>sawyer_urdf.xml&lt;/code>):
+
+&lt;source lang="bash">
+$ rosparam get -p /robot_description | tail -n +2 > sawyer_urdf.xml
+&lt;/source>
+
+The &lt;code>-p&lt;/code> outputs the parameter using pretty print.  The output urdf is piped through the &lt;code>tail&lt;/code> command first to remove a dummy first line - an artifact of the pretty print.  
+
+'''Tip:''' You can check that you now have a proper URDF by running: 
+
+&lt;source lang="bash">
+$ rosrun urdf_parser check_urdf sawyer_urdf.xml
+&lt;/source>
+
+If this doesn't work, you can just remove the tail command and use a text editor to manually remove the first few lines before the actual xml (all the lines before &lt;code>&lt;?xml version="1.0" ?>&lt;/code>).
+&lt;source lang="bash">
+    $ rosparam get -p /robot_description > sawyer_urdf.xml
+    $ head sawyer_urdf.xml
+    |  
+      &lt;?xml version="1.0" ?>  
+      &lt;!-- =================================================================================== -->  
+      &lt;!-- |    This document was autogenerated by xacro from sawyerp2.urdf.xacro            | -->  
+    ...  
+    $ gedit sawyer_urdf.xml &amp;
+    $ head sawyer_urdf.xml
+      &lt;?xml version="1.0" ?>  
+      &lt;!-- =================================================================================== -->  
+      &lt;!-- |    This document was autogenerated by xacro from sawyerp2.urdf.xacro            | -->  
+    ...
+&lt;/source>
+&lt;/div>
+
+
+&lt;div class="content-block">
+
+= Movement =
+
+
+== Joints ==
+Sawyer has 7 joints (DoF) in arm and one more joint in its head (side-to-side panning).  The control for the head is done separately from the arm; however, you can read the current joint states (position, velocity, and effort) for all the joints on arm and head by subscribing to one topic:
+&lt;code>/robot/joint_states&lt;/code> ([http://www.ros.org/doc/api/sensor_msgs/html/msg/JointState.html sensor_msgs-JointState])  
+where the units for the position of a joint are in (rad), the units of velocity are in (rad/s) and the units of effort in each joint is in (Nm).
+
+=== Arm Joints ===
+The following sections cover the arm joints sensing and control in more detail: [[Arm Joints]].
+
+=== Head Joints ===
+The head state topic will give you the current &lt;code>pan&lt;/code> angle (side-to-side) of the head and report boolean status flags if the robot is currently moving its head.  
+
+'''Note: Flags may not report 'true' values until after the first respective movement command is sent.'''  
+
+'''Component ID:'''&lt;code>head_pan&lt;/code> 
+
+'''Head State:'''  &lt;br />
+&lt;code>/robot/head/head_state&lt;/code> ([https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/HeadState.html intera_core_msgs-HeadState]). &lt;code>pan&lt;/code> field gives you the current angle (radians) of the head.  0 is forward, &lt;code>-pi/2&lt;/code> to Sawyer's right, and &lt;code>+pi/2&lt;/code> to Sawyer's left. &lt;code>isPanning&lt;/code> is boolean field that will switch to True while the robot is executing a command.  
+
+'''Note: The &lt;code>isPanning&lt;/code> field is initialized to True upon startup and will update thereafter.'''
+
+'''Head (Joint) State:'''  &lt;br />
+&lt;code>/robot/joint_states&lt;/code> ([http://www.ros.org/doc/api/sensor_msgs/html/msg/JointState.html sensor_msgs-JointState]).The position of the head may also be determined from the &lt;code>joint_state&lt;/code> message.
+
+=== Head Movement Control ===
+'''Pan Head:'''  &lt;br />
+&lt;code>/robot/head/command_head_pan&lt;/code> ([https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/HeadPanCommand.html intera_core_msgs-HeadPanCommand])  
+&lt;code>target&lt;/code> sets the target angle.  0.0 is straight ahead.
+&lt;code>speed&lt;/code> is an integer from [0-100], 100 = max speed.
+Setting an angle in the command_head_pan topic does not gurantee the head will get to that position.  There is a small deband around the reference angle around the order of +/- 0.12 radians.
+
+=== Example: ===
+&lt;source lang="bash">
+    # Check head position/state: 
+    $ rostopic echo /robot/head/head_state
+    # Move (pan) head side-to-side: 
+    $ rostopic pub /robot/head/command_head_pan intera_core_msgs/HeadPanCommand -- 0.0 100
+&lt;/source>
+
+
+
+== Cartesian Endpoint ==
+Published at 100 Hz, the endpoint state topic provides the current Cartesian Position, Velocity and Effort at the endpoint for either limb.
+
+=== Endpoint State ===
+'''Endpoint State''': &lt;code>/robot/limb/right/endpoint_state&lt;/code>  [https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/EndpointState.html intera_core_msgs-EndpointState]).
+The endpoint state message provides the current &lt;code>position/orientation pose&lt;/code>, &lt;code>linear/angular velocity&lt;/code>, and &lt;code>force/torque effort&lt;/code> of the robot end-effector at 100 Hz. Pose is in Meters, Velocity in m/s, Effort in Nm.
+The robot's "endpoint" is definied as the &lt;code>right_gripper&lt;/code> tf frame. This frame is updated dynamically when gripper is connected to the robot &lt;!--or a [[Gripper Customization]] command is sent-->.
+The [[Robot Description | URDF]] on the parameter server will now update when the Robot Model is updated by Gripper changes. Check the ROS Parameter for an updated copy of the URDF, especially before using IK or motion planners, such as [[MoveIt_Tutorial|MoveIt!]].
+
+=== Kinematics Solver Service ===
+The following sections cover the Forward Kinematics Solver Service and Inverse Kinematics Solver Service in more detail: [[Kinematics Solvers |Kinematics Solvers]]
+
+
+
+== Gripper (End-Effector) ==
+Before using an End-Effector, or Gripper, you must first send the calibration command. You can check whether the gripper has been calibrated yet by echoing on the gripper state topic for that hand. Once calibrated, gripper can be controlled using the simplified command_grip and command_release topics, or using the more direct command_set topic.
+For more information on using the gripper, see the [[Gripper_Example | Gripper Example Program]].
+
+=== Gripper Configuration ===
+([https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/IOComponentCommand.html intera_core_msgs-IOComponentCommand])
+
+'''Calibrate Gripper'''  &lt;br />
+Publish an IO Command message to calibrate a new gripper by set signal &lt;code>calibrate&lt;/code> to &lt;code>True&lt;/code>. Gripper should open and close once.
+The &lt;code>calibrated&lt;/code> field of the gripper state topic will also update to '1' after successful calibration.
+Once calibrated, the gripper will not calibrate again unless the command reset message is sent, or the robot is restarted.
+
+'''Reset Gripper'''  &lt;br />
+Publish an IO Command message to reset the gripper state by set signal &lt;code>reboot&lt;/code> to &lt;code>True&lt;/code>.
+The &lt;code>calibrated&lt;/code> field of the gripper state message will reset to '0'.
+
+=== Gripper State ===
+'''Gripper State'''  &lt;br />
+&lt;code>/io/end_effector/state&lt;/code>
+The io signal &lt;code>calibrated&lt;/code> field must be true (1) before you can control the gripper.  Use the IO command to calibrate the gripper.
+The gripper state message will also give you the current &lt;code>position&lt;/code>, &lt;code>force&lt;/code>, and if the gripper is current &lt;code>moving&lt;/code>.  Position is from [0.0-100.0] [close-open].
+
+=== Simple Gripper Control ===
+'''Simple Gripper Close''' &lt;br /> 
+&lt;code>/io/end_effector/command&lt;/code> the signal &lt;code>'position_m'&lt;/code> value to MIN_POSITION: 0.0.
+Publish an IO Command message to grip.
+
+'''Simple Gripper Open'''  &lt;br />
+&lt;code>/io/end_effector/command&lt;/code> the signal &lt;code>'position_m'&lt;/code> value to MAX_POSITION: 0.041667.
+Publish an IO Command message to release.
+
+&lt;/div>
+
+
+&lt;div class="content-block">
+
+= Sensors+ =
+
+== Accelerometer ==
+The robot hand has a 3-axis accelerometer located inside the cuff, in the same plane as the gripper electrical connection header.  The positive z-axis points back 'up' the arm (towards the previous wrist joint, j6).  The positive x-axis points towards the direction of gripper, and the y-axis points towards the cuff buttons, using standard [http://en.wikipedia.org/wiki/Right-hand_rule Right-Hand-Rule] notation.
+
+'''Component IDs:''' &lt;br />
+&lt;code>right_accelerometer&lt;/code>  
+
+'''Accelerometer State:''' &lt;br />
+&lt;code>/robot/accelerometer/&lt;component_id>/state&lt;/code>([https://http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html sensor_msgs-ImuMessage]) 
+
+Acceleration values (in m/s^2) are published under &lt;code>linear_acceleration&lt;/code> for the x, y, and z axes.  The force of gravity is NOT compensated for.
+
+&lt;source lang="bash">
+names: ['right_accelerometer']
+states: 
+  - 
+    header: 
+      seq: 120921
+      stamp: 
+        secs: 0
+        nsecs: 0
+      frame_id: ''
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 0.0
+    orientation_covariance: [-1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    angular_velocity: 
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    angular_velocity_covariance: [-1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    linear_acceleration: 
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    linear_acceleration_covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+&lt;/source>
+
+
+== Cameras ==
+You can access Sawyer's hand camera and the head camera using the standard ROS image types and image_transport mechanism listed below.  You can use the ROS Services to open, close, and configure each of the cameras. See the [[Camera Image Display Example]] for more information on using the cameras. Useful tools for using cameras in ROS include [http://wiki.ros.org/rviz/DisplayTypes/Camera rviz Camera Display].  
+
+'''IMPORTANT:''' You can only have one open at a time at standard resolutions, due to bandwidth limitations.
+
+'''Component IDs:''' &lt;code>right_hand_camera&lt;/code>, &lt;code>head_camera&lt;/code>
+
+'''Camera Published Topics'''
+
+Raw Image: &lt;code>/internal_camera/&lt;component_id>/image_raw&lt;/code> ([http://www.ros.org/doc/api/sensor_msgs/html/msg/Image.html sensor_msgs-Image])  
+
+Camera Intrinsics: &lt;code>/internal_camera/&lt;component_id>/camera_info&lt;/code> ([http://www.ros.org/doc/api/sensor_msgs/html/msg/CameraInfo.html sensor_msgs-CameraInfo])
+
+Rectify Color Image: &lt;code>/internal_camera/head_camera/image_rect_color&lt;/code> ([http://wiki.ros.org/image_proc image_proc])
+
+Rectify Image: &lt;code>/internal_camera/right_hand_camera/image_rect&lt;/code> ([http://wiki.ros.org/image_proc image_proc])
+
+
+== Head Display Screen ==
+Images can be displayed on Sawyer's LCD screen by publishing the image data as a ROS &lt;code>sensor_msgs/Image&lt;/code>.  
+
+'''Display Image'''&lt;code>/robot/head_display&lt;/code> ([http://www.ros.org/doc/api/sensor_msgs/html/msg/Image.html sensor_msgs-Image]).
+
+Publish image data as a [http://ros.org/wiki/sensor_msgs ROS Image message] to update the display.
+The screen resolution is 1024 x 600.  Images smaller than this will appear in the top-left corner.  
+There are dedicated ROS packages for working with and sending ROS Image messages, including [http://ros.org/wiki/image_transport image_transport] and [http://ros.org/wiki/image_pipeline image_pipeline].  
+Useful tools for working with images in ROS include [http://wiki.ros.org/image_view Image_view] and [http://ros.org/wiki/image_transport#republish republish]. Also see [http://ros.org/wiki/camera_drivers camera_drivers] for assistance working with your own cameras.
+
+For more information on displaying images to Sawyer's LCD screen, see the [[Head Display Image Example]].
+&lt;/div>
+
+&lt;div class="content-block">
+
+= Inputs and Outputs =
+
+
+== Navigators ==
+There are two Navigators on Sawyer's body: one on side of the body and one on the arm.  Each Navigator is comprised of three push buttons, one of which is also an indexing scroll wheel, and one set of white LED light.
+
+'''Component IDs''': &lt;code>right, head&lt;/code>
+
+'''Read Button States:'''&lt;code>/io/robot/navigator/state&lt;/code> ([https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/IODeviceStatus.html intera_core_msgs-IODeviceStatus])
+
+'''Wheel State:'''&lt;code>/io/robot/navigator/state&lt;/code> ([https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/IODeviceStatus.html intera_core_msgs-IODeviceStatus])
+
+'''Command Buttons:'''&lt;code>/io/robot/navigator/command&lt;/code>([https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/IOComponentCommand.html intera_core_msga-IOComponentCommand])
+
+The states of the push buttons are the values type in integer at &lt;code>data&lt;/code> area. For the wheel on navigator, the &lt;code>data&lt;/code> field returns an integer between [0-255].  Each physical 'click' of the wheel corresponds to a +/-1 increment.  The value will loop when it goes above or below the bounds.  
+The values have corresponding meaning: &lt;code>0:'OFF', 1:'CLICK', 2:'LONG_PRESS', 3:'DOUBLE_CLICK'&lt;/code>
+
+
+*   '''&lt;Component ID>_button_ok:'''  The circular button in the middle of the navigator.
+*   '''&lt;Component ID>_button_back:'''  The button above the OK button, typically with a 'Back' arrow symbol.
+*   '''&lt;Component ID>_button_show:'''  The "Rethink Button", is above the OK button, next to back button and typically is labeled with the Rethink logo.
+*   '''&lt;Component ID>_button_triangle(the 'X' button):'''  The button below circle button and square button.
+*   '''&lt;Component ID>_button_circle:'''  The button labeled with a circle, next to the square button.
+*   '''&lt;Component ID>_button_square:'''  The button labeled with a square, next to the circle button.
+*   '''&lt;Component ID>_wheel:''' The wheel of circular button in the middle of the navigator.
+
+
+== Cuff Buttons ==
+There are two buttons and one touch sensor in the cuff of the hand: cuff button, OK button and cuff grasp button.  The state of each button is published in a DigitalIOState message under its own topic (DigitalIOState constants: PRESSED==1, UNPRESSED==0). Integer &lt;code>data&lt;/code> will read PRESSED (1) when the cuff sensor is squeezed, and UNPRESSED (0) otherwise.
+
+'''Component IDs:''' &lt;code>right_cuff, right_button_lower, right_button_upper&lt;/code>. 
+
+'''Read Button Squeezed:''' &lt;code>/io/robot/cuff/state&lt;/code> ([https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/IODeviceStatus.html intera_core_msgs-IODeviceStatus])
+
+'''Command Cuff:'''&lt;code>/io/robot/cuff/command&lt;/code>([https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/IOComponentCommand.html intera_core_msga-IOComponentCommand])
+
+
+== Lights  ==
+The head LEDs at the top of Sawyer's head, and navigator LEDs are inside of navigator.
+
+To get state or set command to HALO and Navigator LEDS, we are using &lt;code>IODeviceInterface&lt;/code> to config, status and command topics. The data are type in bool in &lt;code>data&lt;/code> area.
+
+'''Lights Component IDs:'''&lt;br />
+&lt;code>head_red_light&lt;/code>, &lt;code>head_blue_light&lt;/code>, &lt;code>head_green_light&lt;/code>, &lt;code>right_hand_blue_light&lt;/code>, &lt;code>right_hand_green_light&lt;/code>,  &lt;code>right_hand_red_light&lt;/code>
+
+'''LEDs State:''' &lt;code>/io/robot/robot/state&lt;/code> ([https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/IODeviceStatus.html intera_core_msgs-IODeviceStatus])
+
+'''Command Light:'''&lt;code>/io/robot/robot/command&lt;/code>([https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/IOComponentCommand.html intera_core_msga-IOComponentCommand])
+
+&lt;/div>
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="http://sdk.rethinkrobotics.com/intera/Template:TOClimit" title="Template:TOClimit">Template:TOClimit</a> (<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Template:TOClimit&amp;action=edit" title="Template:TOClimit">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../API_Reference" title="API Reference">API Reference</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../API_Reference">http://sdk.rethinkrobotics.com/intera/API_Reference</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":45});});</script></body></html>

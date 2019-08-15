@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Gripper Example - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Gripper_Example","wgTitle":"Gripper Example","wgCurRevisionId":1151,"wgRevisionId":1151,"wgArticleId":60,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Gripper_Example","wgRelevantArticleId":60,"wgRequestId":"fff0f17e2365df7905c529e5","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Gripper_Example rootpage-Gripper_Example skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=Gripper+Example&amp;returntoquery=oldid%3D1151">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Gripper_Example&amp;oldid=1151#">More</a>
+                <ul>
+                <li id="ca-viewsource"><a href="index.php?title=Gripper_Example&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Gripper_Example&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Gripper_Example" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">Gripper Example</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Gripper_Example&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                <div class="mw-revision"><div id="mw-revision-info">Revision as of 20:21, 16 January 2017 by <a href="index.php?title=User:Swang&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Swang (page does not exist)"><bdi>Swang</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Swang&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Swang (page does not exist)">talk</a> | <a href="../Special:Contributions/Swang" class="mw-usertoollinks-contribs" title="Special:Contributions/Swang">contribs</a>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Gripper_Example&amp;diff=prev&amp;oldid=1151" title="Gripper Example">diff</a>) <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Gripper_Example&amp;direction=prev&amp;oldid=1151" title="Gripper Example">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Gripper_Example&amp;oldid=1151#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Gripper_Example&amp;oldid=1151#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="title-block">
+<p><span style="font-size:120%;"><b>Use gripper control as an example of controlling Sawyer's gripper.</b></span>
+</p>
+</div>
+<div class="toclimit-2"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Gripper_Example&amp;oldid=1151#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="index.php?title=Gripper_Example&amp;oldid=1151#Usage"><span class="tocnumber">2</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="index.php?title=Gripper_Example&amp;oldid=1151#Key_Bindings"><span class="tocnumber">3</span> <span class="toctext">Key Bindings</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="index.php?title=Gripper_Example&amp;oldid=1151#Joystick_Control"><span class="tocnumber">4</span> <span class="toctext">Joystick Control</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="index.php?title=Gripper_Example&amp;oldid=1151#Gripper_Joystick_Example_Code_Walkthrough"><span class="tocnumber">5</span> <span class="toctext">Gripper Joystick Example Code Walkthrough</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="index.php?title=Gripper_Example&amp;oldid=1151#Gripper_Keyboard_Example_Code_Walkthrough"><span class="tocnumber">6</span> <span class="toctext">Gripper Keyboard Example Code Walkthrough</span></a></li>
+</ul>
+</div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>Uses the keyboard or joystick to control Sawyer's gripper. Position, velocity, holding, and moving force can be controlled and sensed. Both logitech and xbox game controllers are supported. If you would like to follow along with the actual source code for these examples on GitHub, it can be found through <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/gripper_joystick.py">this link for gripper_joystick</a> and <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/gripper_keyboard.py">this link for gripper_keyboard</a>.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<p>The robot should always enabled after start, try the command from an <a href="../SDK_Shell" title="SDK Shell">SDK terminal session</a> if the robot is not enabled:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_interface robot_enable.py
+</pre></div>
+<p>Start gripper control from an RSDK terminal session:
+</p><p>Gripper keyboard Example:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_examples gripper_keyboard.py
+</pre></div>
+<p>Gripper Joystick Example:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_examples gripper_joystick.py
+</pre></div>
+<p>IMPORTANT: You will have to calibrate gripper before using any of the other commands using C/c commands:
+</p><p>Once calibrated, future calibrate commands will not do anything unless you send a 'reboot' first.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Key_Bindings">Key Bindings</span></h2>
+<p>Get a list of commands by entering '?'
+</p><p>For gripper keyboard example:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>key: description,
+<span class="s1">&#39;r&#39;</span>: <span class="s2">&quot;reboot&quot;</span>,
+<span class="s1">&#39;c&#39;</span>: <span class="s2">&quot;calibrate&quot;</span>,
+<span class="s1">&#39;q&#39;</span>: <span class="s2">&quot;close&quot;</span>,
+<span class="s1">&#39;o&#39;</span>: <span class="s2">&quot;open&quot;</span>,
+<span class="s1">&#39;+&#39;</span>: <span class="s2">&quot;set 100% velocity&quot;</span>,
+<span class="s1">&#39;-&#39;</span>: <span class="s2">&quot;set 30% velocity&quot;</span>,
+<span class="s1">&#39;s&#39;</span>: <span class="s2">&quot;stop&quot;</span>,
+<span class="s1">&#39;h&#39;</span>: <span class="s2">&quot;decrease holding force&quot;</span>,
+<span class="s1">&#39;j&#39;</span>: <span class="s2">&quot;increase holding force&quot;</span>,
+<span class="s1">&#39;u&#39;</span>: <span class="s2">&quot;decrease position&quot;</span>,
+<span class="s1">&#39;i&#39;</span>: <span class="s2">&quot;increase position&quot;</span>,
+</pre></div>
+<p><br />
+For gripper joystick example:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>command: description,
+<span class="s1">&#39;btnLeft&#39;</span>      : <span class="s2">&quot;reboot&quot;</span>,
+<span class="s1">&#39;btnUp&#39;</span>        : <span class="s2">&quot;calibrate&quot;</span>,
+<span class="s1">&#39;leftTrigger&#39;</span>  : <span class="s2">&quot;close&quot;</span>,
+<span class="s1">&#39;leftTrigger&#39;</span>  : <span class="s2">&quot;open (release)&quot;</span>,
+<span class="s1">&#39;leftBumper&#39;</span>   : <span class="s2">&quot;stop&quot;</span>,
+<span class="s1">&#39;leftStickHorz&#39;</span>: <span class="s2">&quot;decrease position by step when stick value less than 0, increase position by step when stick value larger than 0&quot;</span>,
+<span class="s1">&#39;leftStickVert&#39;</span>: <span class="s2">&quot;decrease holding force by step when stick value less than 0, increase holding force by step when stick value larger than 0&quot;</span>,
+<span class="s1">&#39;function1&#39;</span> or <span class="s1">&#39;function2&#39;</span>: <span class="s2">&quot;help&quot;</span>
+</pre></div>
+<p><br />
+You can monitor the changes you are making using the following rostopic which you can monitor from a different shell:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rostopic <span class="nb">echo</span> /robot/end_effector/right_gripper/command
+</pre></div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Joystick_Control">Joystick Control</span></h2>
+<p>To use the example gripper program using a joystick game controller to control the gripper:
+</p><p>First ensure that joy drivers are installed.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rospack find joy
+</pre></div>
+<p>If not run:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get install ros-indigo-joystick-drivers
+</pre></div>
+<p>To run the example:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ roslaunch intera_examples gripper_joystick.launch joystick:<span class="o">=</span>&lt;joystick_type&gt;
+</pre></div>
+<p>Where <code>joystick_type</code> is 'xbox', 'logitech', or 'ps3'. <i>(If using a ps3, make sure you run the node from the ROS ps3joy package in a separate sudo terminal.  See instructions here: <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/ps3joy/Tutorials/PairingJoystickAndBluetoothDongle">ps3joy</a> )</i>
+</p><p><b>NOTE:</b> This method uses an included ROS launch file to start both the gripper example and joy_node using the roslaunch tool. You can exit the gripper example by hitting any keyboard key, however you will have to <code>ctrl-c</code> to also cleanup the joy_node.
+</p><p><b>NOTE:</b> Don't forget to calibrate gripper first.
+</p><p><b>NOTE:</b> The 'joystick left &lt;-&gt; robot right' mappings are not typos; they assume the user is in front of the robot when using the joystick.
+</p><p><a href="../File:Joystick.jpg" class="image"><img alt="Joystick.jpg" src="images/thumb/1/10/Joystick.jpg/700px-Joystick.jpg" width="700" height="325" srcset="/intera/a/images/thumb/1/10/Joystick.jpg/1050px-Joystick.jpg 1.5x, /intera/a/images/1/10/Joystick.jpg 2x" /></a>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th scope="col">Buttons
+</th>
+<th scope="col">Action
+</th></tr>
+<tr>
+<td>Function 1 or 2 <i>(e.g. Select/Select)</i></td>
+<td>Help
+</td></tr>
+<tr>
+<td>Left Button (X)</td>
+<td>right: gripper calibrate
+</td></tr>
+<tr>
+<td>Top Button (Y)</td>
+<td>
+</td></tr>
+<tr>
+<td>Left Trigger <i>[PRESS]</i></td>
+<td>right: gripper close
+</td></tr>
+<tr>
+<td>Left Trigger <i>[RELEASE]</i></td>
+<td>right: gripper open
+</td></tr>
+<tr>
+<td>Left Bumper</td>
+<td>right: cycle <code>&lt;current joints&gt; +1</code>
+</td></tr>
+<tr>
+<td><i>&lt;Any Keyboard key&gt;</i></td>
+<td>Quit
+</td></tr></tbody></table>
+<table class="wikitable">
+
+<tbody><tr>
+<th scope="col">Stick Axes
+</th>
+<th scope="col">Action
+</th></tr>
+<tr>
+<td>Left Stick Horizontal</td>
+<td>right:  increase/decrease <code>&lt;current joint 1&gt;</code> (j0)
+</td></tr>
+<tr>
+<td>Left Stick Vertical</td>
+<td>right:  increase/decrease <code>&lt;current joint 2&gt;</code> (j1)
+</td></tr></tbody></table>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Gripper_Joystick_Example_Code_Walkthrough">Gripper Joystick Example Code Walkthrough</span></h2>
+<p>This example demonstrates the usage of the gripper control via intera interface. The <code>main()</code> function invokes the <code>map_joystick()</code> function. It is at this function where the joystick buttons are mapped to individual gripper actions and the commands are executed periodically.
+</p><p>Now, let's break down the code.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">33 </span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="lineno">34 </span>
+<span class="lineno">35 </span><span class="kn">import</span> <span class="nn">rospy</span>
+<span class="lineno">36 </span>
+<span class="lineno">37 </span><span class="kn">import</span> <span class="nn">intera_interface</span>
+<span class="lineno">38 </span><span class="kn">import</span> <span class="nn">intera_external_devices</span>
+</pre></div>
+<p>This imports the <code>intera_interface</code> for accessing the <code>limb</code> and the <code>gripper</code> class. The <code>intera_external_devices</code> is imported to use its <code>getch</code> function that captures the key presses on the joystick.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">41 </span><span class="k">def</span> <span class="nf">map_joystick</span><span class="p">(</span><span class="n">joystick</span><span class="p">,</span> <span class="n">limb</span><span class="p">):</span>
+<span class="lineno">42 </span>    <span class="sd">&quot;&quot;&quot;</span>
+<span class="lineno">43 </span><span class="sd">    maps joystick input to gripper commands</span>
+<span class="lineno">44 </span>
+<span class="lineno">45 </span><span class="sd">    @param joystick: an instance of a Joystick</span>
+<span class="lineno">46 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">47 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Getting robot state... &quot;</span><span class="p">)</span>
+<span class="lineno">48 </span>    <span class="n">rs</span> <span class="o">=</span> <span class="n">intera_interface</span><span class="o">.</span><span class="n">RobotEnable</span><span class="p">(</span><span class="n">CHECK_VERSION</span><span class="p">)</span>
+<span class="lineno">49 </span>    <span class="n">init_state</span> <span class="o">=</span> <span class="n">rs</span><span class="o">.</span><span class="n">state</span><span class="p">()</span>
+<span class="lineno">50 </span>    <span class="k">try</span><span class="p">:</span>
+<span class="lineno">51 </span>        <span class="n">gripper</span> <span class="o">=</span> <span class="n">intera_interface</span><span class="o">.</span><span class="n">Gripper</span><span class="p">(</span><span class="n">limb</span><span class="p">)</span>
+<span class="lineno">52 </span>    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+<span class="lineno">53 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s2">&quot;Could not detect a gripper attached to the robot.&quot;</span><span class="p">)</span>
+<span class="lineno">54 </span>        <span class="k">return</span>
+</pre></div>
+<p>The <code>init_state</code> variable captures the current state of the robot. The gripper instance class, <code>gripper</code>, is created, if the gripper is not attached, a logerr message will show up.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">56 </span>    <span class="k">def</span> <span class="nf">clean_shutdown</span><span class="p">():</span>
+<span class="lineno">57 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Exiting example...&quot;</span><span class="p">)</span>
+<span class="lineno">58 </span>        <span class="k">if</span> <span class="ow">not</span> <span class="n">init_state</span><span class="p">:</span>
+<span class="lineno">59 </span>            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Disabling robot...&quot;</span><span class="p">)</span>
+<span class="lineno">60 </span>            <span class="n">rs</span><span class="o">.</span><span class="n">disable</span><span class="p">()</span>
+<span class="lineno">61 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">on_shutdown</span><span class="p">(</span><span class="n">clean_shutdown</span><span class="p">)</span>
+</pre></div>
+<p>On shutdown request, Sawyer's state is sent back to its initial state.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">63 </span>    <span class="c1"># decrease position dead_zone</span>
+<span class="lineno">64 </span>    <span class="n">gripper</span><span class="o">.</span><span class="n">set_dead_zone</span><span class="p">(</span><span class="mf">2.5</span><span class="p">)</span>
+<span class="lineno">65 </span>
+<span class="lineno">66 </span>    <span class="c1"># abbreviations</span>
+<span class="lineno">67 </span>    <span class="n">jhi</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">joystick</span><span class="o">.</span><span class="n">stick_value</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
+<span class="lineno">68 </span>    <span class="n">jlo</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">joystick</span><span class="o">.</span><span class="n">stick_value</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span>
+<span class="lineno">69 </span>    <span class="n">bdn</span> <span class="o">=</span> <span class="n">joystick</span><span class="o">.</span><span class="n">button_down</span>
+<span class="lineno">70 </span>    <span class="n">bup</span> <span class="o">=</span> <span class="n">joystick</span><span class="o">.</span><span class="n">button_up</span>
+</pre></div>
+<p>Setup the gripper dead zone and joystick abbreviations.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">72 </span>    <span class="k">def</span> <span class="nf">print_help</span><span class="p">(</span><span class="n">bindings_list</span><span class="p">):</span>
+<span class="lineno">73 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Press Ctrl-C to quit.&quot;</span><span class="p">)</span>
+<span class="lineno">74 </span>        <span class="k">for</span> <span class="n">bindings</span> <span class="ow">in</span> <span class="n">bindings_list</span><span class="p">:</span>
+<span class="lineno">75 </span>            <span class="k">for</span> <span class="p">(</span><span class="n">test</span><span class="p">,</span> <span class="n">_cmd</span><span class="p">,</span> <span class="n">doc</span><span class="p">)</span> <span class="ow">in</span> <span class="n">bindings</span><span class="p">:</span>
+<span class="lineno">76 </span>                <span class="k">if</span> <span class="nb">callable</span><span class="p">(</span><span class="n">doc</span><span class="p">):</span>
+<span class="lineno">77 </span>                    <span class="n">doc</span> <span class="o">=</span> <span class="n">doc</span><span class="p">()</span>
+<span class="lineno">78 </span>                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">test</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">doc</span><span class="p">))</span>
+</pre></div>
+<p>The <code>print_help</code> function print helpful commands and docs.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">80 </span>    <span class="k">def</span> <span class="nf">offset_position</span><span class="p">(</span><span class="n">offset</span><span class="p">):</span>
+<span class="lineno">81 </span>        <span class="n">current</span> <span class="o">=</span> <span class="n">gripper</span><span class="o">.</span><span class="n">get_position</span><span class="p">()</span>
+<span class="lineno">82 </span>        <span class="n">gripper</span><span class="o">.</span><span class="n">set_position</span><span class="p">(</span><span class="n">current</span> <span class="o">+</span> <span class="n">offset</span><span class="p">)</span>
+<span class="lineno">83 </span>
+<span class="lineno">84 </span>    <span class="k">def</span> <span class="nf">offset_holding</span><span class="p">(</span><span class="n">offset</span><span class="p">):</span>
+<span class="lineno">85 </span>        <span class="n">current</span> <span class="o">=</span> <span class="n">gripper</span><span class="o">.</span><span class="n">get_force</span><span class="p">()</span>
+<span class="lineno">86 </span>        <span class="n">gripper</span><span class="o">.</span><span class="n">set_holding_force</span><span class="p">(</span><span class="n">current</span> <span class="o">+</span> <span class="n">offset</span><span class="p">)</span>
+</pre></div>
+<p>Setup gripper position and holding force.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno"> 88 </span>    <span class="n">num_steps</span> <span class="o">=</span> <span class="mf">10.0</span>
+<span class="lineno"> 89 </span>    <span class="n">bindings_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="lineno"> 90 </span>    <span class="n">bindings</span> <span class="o">=</span> <span class="p">(</span>
+<span class="lineno"> 91 </span>        <span class="c1">#(test, command, description)</span>
+<span class="lineno"> 92 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;btnLeft&#39;</span><span class="p">]),</span> <span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">reboot</span><span class="p">,</span> <span class="p">[]),</span> <span class="s2">&quot;reboot&quot;</span><span class="p">),</span>
+<span class="lineno"> 93 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;btnUp&#39;</span><span class="p">]),</span> <span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">calibrate</span><span class="p">,</span> <span class="p">[]),</span> <span class="s2">&quot;calibrate&quot;</span><span class="p">),</span>
+<span class="lineno"> 94 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftTrigger&#39;</span><span class="p">]),</span> <span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">close</span><span class="p">,</span> <span class="p">[]),</span> <span class="s2">&quot;close&quot;</span><span class="p">),</span>
+<span class="lineno"> 95 </span>        <span class="p">((</span><span class="n">bup</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftTrigger&#39;</span><span class="p">]),</span> <span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">open</span><span class="p">,</span> <span class="p">[]),</span> <span class="s2">&quot;open (release)&quot;</span><span class="p">),</span>
+<span class="lineno"> 96 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftBumper&#39;</span><span class="p">]),</span> <span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">stop</span><span class="p">,</span> <span class="p">[]),</span> <span class="s2">&quot;stop&quot;</span><span class="p">),</span>
+<span class="lineno"> 97 </span>        <span class="p">((</span><span class="n">jlo</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftStickHorz&#39;</span><span class="p">]),</span> <span class="p">(</span><span class="n">offset_position</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">MAX_POSITION</span> <span class="o">/</span> <span class="n">num_steps</span><span class="p">)]),</span>
+<span class="lineno"> 98 </span>                                    <span class="s2">&quot;decrease position&quot;</span><span class="p">),</span>
+<span class="lineno"> 99 </span>        <span class="p">((</span><span class="n">jhi</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftStickHorz&#39;</span><span class="p">]),</span> <span class="p">(</span><span class="n">offset_position</span><span class="p">,</span> <span class="p">[</span><span class="n">gripper</span><span class="o">.</span><span class="n">MAX_POSITION</span> <span class="o">/</span> <span class="n">num_steps</span><span class="p">]),</span>
+<span class="lineno">100 </span>                                     <span class="s2">&quot;increase position&quot;</span><span class="p">),</span>
+<span class="lineno">101 </span>        <span class="p">((</span><span class="n">jlo</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftStickVert&#39;</span><span class="p">]),</span> <span class="p">(</span><span class="n">offset_holding</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">MAX_FORCE</span> <span class="o">/</span> <span class="n">num_steps</span><span class="p">)]),</span>
+<span class="lineno">102 </span>                                    <span class="s2">&quot;decrease holding force&quot;</span><span class="p">),</span>
+<span class="lineno">103 </span>        <span class="p">((</span><span class="n">jhi</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftStickVert&#39;</span><span class="p">]),</span> <span class="p">(</span><span class="n">offset_holding</span><span class="p">,</span> <span class="p">[</span><span class="n">gripper</span><span class="o">.</span><span class="n">MAX_FORCE</span> <span class="o">/</span> <span class="n">num_steps</span><span class="p">]),</span>
+<span class="lineno">104 </span>                                    <span class="s2">&quot;increase holding force&quot;</span><span class="p">),</span>
+<span class="lineno">105 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;function1&#39;</span><span class="p">]),</span> <span class="p">(</span><span class="n">print_help</span><span class="p">,</span> <span class="p">[</span><span class="n">bindings_list</span><span class="p">]),</span> <span class="s2">&quot;help&quot;</span><span class="p">),</span>
+<span class="lineno">106 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;function2&#39;</span><span class="p">]),</span> <span class="p">(</span><span class="n">print_help</span><span class="p">,</span> <span class="p">[</span><span class="n">bindings_list</span><span class="p">]),</span> <span class="s2">&quot;help&quot;</span><span class="p">),</span>
+<span class="lineno">107 </span>    <span class="p">)</span>
+<span class="lineno">108 </span>    <span class="n">bindings_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bindings</span><span class="p">)</span>
+</pre></div>
+<p>The bindings is a dictionary that holds the set of characters in the joystick and their corresponding gripper functions.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">110 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;Enabling robot...&quot;</span><span class="p">)</span>
+<span class="lineno">111 </span>    <span class="n">rs</span><span class="o">.</span><span class="n">enable</span><span class="p">()</span>
+<span class="lineno">112 </span>    <span class="n">rate</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Rate</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="lineno">113 </span>    <span class="n">print_help</span><span class="p">(</span><span class="n">bindings_list</span><span class="p">)</span>
+<span class="lineno">114 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Press &lt;Start&gt; button for help; Ctrl-C to stop...&quot;</span><span class="p">)</span>
+<span class="lineno">115 </span>    <span class="k">while</span> <span class="ow">not</span> <span class="n">rospy</span><span class="o">.</span><span class="n">is_shutdown</span><span class="p">():</span>
+<span class="lineno">116 </span>        <span class="c1"># test each joystick condition and call binding cmd if true</span>
+<span class="lineno">117 </span>        <span class="k">for</span> <span class="p">(</span><span class="n">test</span><span class="p">,</span> <span class="n">cmd</span><span class="p">,</span> <span class="n">doc</span><span class="p">)</span> <span class="ow">in</span> <span class="n">bindings</span><span class="p">:</span>
+<span class="lineno">118 </span>            <span class="k">if</span> <span class="n">test</span><span class="p">[</span><span class="mi">0</span><span class="p">](</span><span class="o">*</span><span class="n">test</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+<span class="lineno">119 </span>                <span class="n">cmd</span><span class="p">[</span><span class="mi">0</span><span class="p">](</span><span class="o">*</span><span class="n">cmd</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="lineno">120 </span>                <span class="k">print</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span>
+<span class="lineno">121 </span>        <span class="n">rate</span><span class="o">.</span><span class="n">sleep</span><span class="p">()</span>
+<span class="lineno">122 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">signal_shutdown</span><span class="p">(</span><span class="s2">&quot;Example finished.&quot;</span><span class="p">)</span>
+</pre></div>
+<p>The while loop iterates till the <code>Esc</code> or <code>ctrl-c</code> is inputted or ros-shutdown signal is given. If <code>Esc</code> or <code>ctrl-c</code> is given then shutdown signal is sent.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">125 </span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="lineno">126 </span>    <span class="sd">&quot;&quot;&quot;RSDK Gripper Example: Joystick Control</span>
+<span class="lineno">127 </span>
+<span class="lineno">128 </span><span class="sd">    Use a game controller to control the grippers.</span>
+<span class="lineno">129 </span>
+<span class="lineno">130 </span><span class="sd">    Attach a game controller to your dev machine and run this</span>
+<span class="lineno">131 </span><span class="sd">    example along with the ROS joy_node to control gripper</span>
+<span class="lineno">132 </span><span class="sd">    using the joysticks and buttons. Be sure to provide</span>
+<span class="lineno">133 </span><span class="sd">    the *joystick* type you are using as an argument to setup</span>
+<span class="lineno">134 </span><span class="sd">    appropriate key mappings.</span>
+<span class="lineno">135 </span>
+<span class="lineno">136 </span><span class="sd">    Uses the intera_interface.Gripper class and the helper classes</span>
+<span class="lineno">137 </span><span class="sd">    in intera_external_devices.Joystick.</span>
+<span class="lineno">138 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">139 </span>    <span class="n">epilog</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="lineno">140 </span><span class="s2">See help inside the example with the &quot;Start&quot; button for controller</span>
+<span class="lineno">141 </span><span class="s2">key bindings.</span>
+<span class="lineno">142 </span><span class="s2">    &quot;&quot;&quot;</span>
+<span class="lineno">143 </span>    <span class="n">rp</span> <span class="o">=</span> <span class="n">intera_interface</span><span class="o">.</span><span class="n">RobotParams</span><span class="p">()</span>
+<span class="lineno">144 </span>    <span class="n">valid_limbs</span> <span class="o">=</span> <span class="n">rp</span><span class="o">.</span><span class="n">get_limb_names</span><span class="p">()</span>
+<span class="lineno">145 </span>    <span class="k">if</span> <span class="ow">not</span> <span class="n">valid_limbs</span><span class="p">:</span>
+<span class="lineno">146 </span>        <span class="n">rp</span><span class="o">.</span><span class="n">log_message</span><span class="p">((</span><span class="s2">&quot;Cannot detect any limb parameters on this robot. &quot;</span>
+<span class="lineno">147 </span>                        <span class="s2">&quot;Exiting.&quot;</span><span class="p">),</span> <span class="s2">&quot;ERROR&quot;</span><span class="p">)</span>
+<span class="lineno">148 </span>        <span class="k">return</span>
+<span class="lineno">149 </span>    <span class="n">arg_fmt</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">RawDescriptionHelpFormatter</span>
+<span class="lineno">150 </span>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">formatter_class</span><span class="o">=</span><span class="n">arg_fmt</span><span class="p">,</span>
+<span class="lineno">151 </span>                                     <span class="n">description</span><span class="o">=</span><span class="n">main</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">,</span>
+<span class="lineno">152 </span>                                     <span class="n">epilog</span><span class="o">=</span><span class="n">epilog</span><span class="p">)</span>
+<span class="lineno">153 </span>    <span class="n">required</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">add_argument_group</span><span class="p">(</span><span class="s1">&#39;required arguments&#39;</span><span class="p">)</span>
+<span class="lineno">154 </span>    <span class="n">required</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+<span class="lineno">155 </span>        <span class="s1">&#39;-j&#39;</span><span class="p">,</span> <span class="s1">&#39;--joystick&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;xbox&#39;</span><span class="p">,</span> <span class="s1">&#39;logitech&#39;</span><span class="p">,</span> <span class="s1">&#39;ps3&#39;</span><span class="p">],</span>
+<span class="lineno">156 </span>        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;specify the type of joystick to use&#39;</span>
+<span class="lineno">157 </span>    <span class="p">)</span>
+<span class="lineno">158 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+<span class="lineno">159 </span>        <span class="s2">&quot;-l&quot;</span><span class="p">,</span> <span class="s2">&quot;--limb&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;limb&quot;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">valid_limbs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+<span class="lineno">160 </span>        <span class="n">choices</span><span class="o">=</span><span class="n">valid_limbs</span><span class="p">,</span>
+<span class="lineno">161 </span>        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Limb on which to run the gripper joystick example&quot;</span>
+<span class="lineno">162 </span>    <span class="p">)</span>
+<span class="lineno">163 </span>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">myargv</span><span class="p">()[</span><span class="mi">1</span><span class="p">:])</span>
+</pre></div>
+<p>Initialized the node and the joystick argument needs to be provided.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">125 </span>    <span class="n">joystick</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="lineno">126 </span>    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">joystick</span> <span class="o">==</span> <span class="s1">&#39;xbox&#39;</span><span class="p">:</span>
+<span class="lineno">127 </span>        <span class="n">joystick</span> <span class="o">=</span> <span class="n">intera_external_devices</span><span class="o">.</span><span class="n">joystick</span><span class="o">.</span><span class="n">XboxController</span><span class="p">()</span>
+<span class="lineno">128 </span>    <span class="k">elif</span> <span class="n">args</span><span class="o">.</span><span class="n">joystick</span> <span class="o">==</span> <span class="s1">&#39;logitech&#39;</span><span class="p">:</span>
+<span class="lineno">129 </span>        <span class="n">joystick</span> <span class="o">=</span> <span class="n">intera_external_devices</span><span class="o">.</span><span class="n">joystick</span><span class="o">.</span><span class="n">LogitechController</span><span class="p">()</span>
+<span class="lineno">130 </span>    <span class="k">elif</span> <span class="n">args</span><span class="o">.</span><span class="n">joystick</span> <span class="o">==</span> <span class="s1">&#39;ps3&#39;</span><span class="p">:</span>
+<span class="lineno">131 </span>        <span class="n">joystick</span> <span class="o">=</span> <span class="n">intera_external_devices</span><span class="o">.</span><span class="n">joystick</span><span class="o">.</span><span class="n">PS3Controller</span><span class="p">()</span>
+<span class="lineno">132 </span>    <span class="k">else</span><span class="p">:</span>
+<span class="lineno">133 </span>        <span class="c1"># Should never reach this case with proper argparse usage</span>
+<span class="lineno">134 </span>        <span class="n">parser</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Unsupported joystick type &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">joystick</span><span class="p">))</span>
+<span class="lineno">135 </span>
+<span class="lineno">136 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Initializing node... &quot;</span><span class="p">)</span>
+<span class="lineno">137 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s2">&quot;sdk_gripper_joystick&quot;</span><span class="p">)</span>
+<span class="lineno">138 </span>
+<span class="lineno">139 </span>    <span class="n">map_joystick</span><span class="p">(</span><span class="n">joystick</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">limb</span><span class="p">)</span>
+<span class="lineno">140 </span>
+<span class="lineno">141 </span>
+<span class="lineno">142 </span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</pre></div>
+<p>Joystick device selection.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Gripper_Keyboard_Example_Code_Walkthrough">Gripper Keyboard Example Code Walkthrough</span></h2>
+<p>This example demonstrates the usage of the gripper control via intera interface. The <code>main()</code> function invokes the <code>map_keyboard()</code> function. It is at this function where the keyboard keys are mapped to individual gripper actions and the commands are executed periodically.
+</p><p>Now, let's break down the code.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">33 </span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="lineno">34 </span>
+<span class="lineno">35 </span><span class="kn">import</span> <span class="nn">rospy</span>
+<span class="lineno">36 </span>
+<span class="lineno">37 </span><span class="kn">import</span> <span class="nn">intera_interface</span>
+<span class="lineno">38 </span><span class="kn">import</span> <span class="nn">intera_external_devices</span>
+<span class="lineno">39 </span><span class="kn">from</span> <span class="nn">intera_interface</span> <span class="kn">import</span> <span class="n">CHECK_VERSION</span>
+</pre></div>
+<p>This imports the <code>intera interface</code> for accessing the limb and the gripper class. The <code>intera_external_devices</code> is imported to use its getch function that captures the key presses on the keyboard. The <code>CHECK_VERSION</code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">41 </span><span class="k">def</span> <span class="nf">map_keyboard</span><span class="p">(</span><span class="n">limb</span><span class="p">):</span>
+<span class="lineno">42 </span>    <span class="c1"># initialize interfaces</span>
+<span class="lineno">43 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Getting robot state...&quot;</span><span class="p">)</span>
+<span class="lineno">44 </span>    <span class="n">rs</span> <span class="o">=</span> <span class="n">intera_interface</span><span class="o">.</span><span class="n">RobotEnable</span><span class="p">(</span><span class="n">CHECK_VERSION</span><span class="p">)</span>
+<span class="lineno">45 </span>    <span class="n">init_state</span> <span class="o">=</span> <span class="n">rs</span><span class="o">.</span><span class="n">state</span><span class="p">()</span>
+<span class="lineno">46 </span>    <span class="k">try</span><span class="p">:</span>
+<span class="lineno">47 </span>        <span class="n">gripper</span> <span class="o">=</span> <span class="n">intera_interface</span><span class="o">.</span><span class="n">Gripper</span><span class="p">(</span><span class="n">limb</span><span class="p">)</span>
+<span class="lineno">48 </span>    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+<span class="lineno">49 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s2">&quot;Could not detect a gripper attached to the robot.&quot;</span><span class="p">)</span>
+<span class="lineno">50 </span>        <span class="k">return</span>
+</pre></div>
+<p>The <code>init_state</code> variable captures the current state of the robot. The <code>Gripper</code> instance class is created. If no gripper detect, the logerr message will show up.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">51 </span>    <span class="k">def</span> <span class="nf">clean_shutdown</span><span class="p">():</span>
+<span class="lineno">52 </span>        <span class="k">if</span> <span class="ow">not</span> <span class="n">init_state</span><span class="p">:</span>
+<span class="lineno">53 </span>            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Disabling robot...&quot;</span><span class="p">)</span>
+<span class="lineno">54 </span>            <span class="n">rs</span><span class="o">.</span><span class="n">disable</span><span class="p">()</span>
+<span class="lineno">55 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Exiting example.&quot;</span><span class="p">)</span>
+<span class="lineno">56 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">on_shutdown</span><span class="p">(</span><span class="n">clean_shutdown</span><span class="p">)</span>
+</pre></div>
+<p>On shutdown request, Sawyer's state is sent back to its initial state.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">57 </span>    <span class="k">def</span> <span class="nf">offset_position</span><span class="p">(</span><span class="n">offset</span><span class="p">):</span>
+<span class="lineno">58 </span>        <span class="n">current</span> <span class="o">=</span> <span class="n">gripper</span><span class="o">.</span><span class="n">get_position</span><span class="p">()</span>
+<span class="lineno">59 </span>        <span class="n">gripper</span><span class="o">.</span><span class="n">set_position</span><span class="p">(</span><span class="n">current</span> <span class="o">+</span> <span class="n">offset</span><span class="p">)</span>
+<span class="lineno">60 </span>
+<span class="lineno">61 </span>    <span class="k">def</span> <span class="nf">offset_holding</span><span class="p">(</span><span class="n">offset</span><span class="p">):</span>
+<span class="lineno">62 </span>        <span class="n">current</span> <span class="o">=</span> <span class="n">gripper</span><span class="o">.</span><span class="n">get_force</span><span class="p">()</span>
+<span class="lineno">63 </span>        <span class="n">gripper</span><span class="o">.</span><span class="n">set_holding_force</span><span class="p">(</span><span class="n">current</span> <span class="o">+</span> <span class="n">offset</span><span class="p">)</span>
+</pre></div>
+<p>Setup gripper position and holding force.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">65 </span>    <span class="n">num_steps</span> <span class="o">=</span> <span class="mf">10.0</span>
+<span class="lineno">66 </span>    <span class="n">thirty_percent_velocity</span> <span class="o">=</span> <span class="mf">0.3</span><span class="o">*</span><span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">MAX_VELOCITY</span> <span class="o">-</span> <span class="n">gripper</span><span class="o">.</span><span class="n">MIN_VELOCITY</span><span class="p">)</span> <span class="o">+</span> <span class="n">gripper</span><span class="o">.</span><span class="n">MIN_VELOCITY</span>
+<span class="lineno">67 </span>    <span class="n">bindings</span> <span class="o">=</span> <span class="p">{</span>
+<span class="lineno">68 </span>    <span class="c1">#   key: (function, args, description)</span>
+<span class="lineno">69 </span>        <span class="s1">&#39;r&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">reboot</span><span class="p">,</span> <span class="p">[],</span> <span class="s2">&quot;reboot&quot;</span><span class="p">),</span>
+<span class="lineno">70 </span>        <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">calibrate</span><span class="p">,</span> <span class="p">[],</span> <span class="s2">&quot;calibrate&quot;</span><span class="p">),</span>
+<span class="lineno">71 </span>        <span class="s1">&#39;q&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">close</span><span class="p">,</span> <span class="p">[],</span> <span class="s2">&quot;close&quot;</span><span class="p">),</span>
+<span class="lineno">72 </span>        <span class="s1">&#39;o&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">open</span><span class="p">,</span> <span class="p">[],</span> <span class="s2">&quot;open&quot;</span><span class="p">),</span>
+<span class="lineno">73 </span>        <span class="s1">&#39;+&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">set_velocity</span><span class="p">,</span> <span class="p">[</span><span class="n">gripper</span><span class="o">.</span><span class="n">MAX_VELOCITY</span><span class="p">],</span> <span class="s2">&quot;set 100% velocity&quot;</span><span class="p">),</span>
+<span class="lineno">74 </span>        <span class="s1">&#39;-&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">set_velocity</span><span class="p">,</span> <span class="p">[</span><span class="n">thirty_percent_velocity</span><span class="p">],</span> <span class="s2">&quot;set 30% velocity&quot;</span><span class="p">),</span>
+<span class="lineno">75 </span>        <span class="s1">&#39;s&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">stop</span><span class="p">,</span> <span class="p">[],</span> <span class="s2">&quot;stop&quot;</span><span class="p">),</span>
+<span class="lineno">76 </span>        <span class="s1">&#39;h&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset_holding</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">MAX_FORCE</span> <span class="o">/</span> <span class="n">num_steps</span><span class="p">)],</span> <span class="s2">&quot;decrease holding force&quot;</span><span class="p">),</span>
+<span class="lineno">77 </span>        <span class="s1">&#39;j&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset_holding</span><span class="p">,</span> <span class="p">[</span><span class="n">gripper</span><span class="o">.</span><span class="n">MAX_FORCE</span> <span class="o">/</span> <span class="n">num_steps</span><span class="p">],</span> <span class="s2">&quot;increase holding force&quot;</span><span class="p">),</span>
+<span class="lineno">78 </span>        <span class="s1">&#39;u&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset_position</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="p">(</span><span class="n">gripper</span><span class="o">.</span><span class="n">MAX_POSITION</span> <span class="o">/</span> <span class="n">num_steps</span><span class="p">)],</span> <span class="s2">&quot;decrease position&quot;</span><span class="p">),</span>
+<span class="lineno">79 </span>        <span class="s1">&#39;i&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">offset_position</span><span class="p">,</span> <span class="p">[</span><span class="n">gripper</span><span class="o">.</span><span class="n">MAX_POSITION</span> <span class="o">/</span> <span class="n">num_steps</span><span class="p">],</span> <span class="s2">&quot;increase position&quot;</span><span class="p">),</span>
+<span class="lineno">80 </span>    <span class="p">}</span>
+</pre></div>
+<p>The bindings is a dictionary that holds the set of characters in the keyboard and their corresponding gripper functions.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno"> 82 </span>    <span class="n">done</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="lineno"> 83 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;Enabling robot...&quot;</span><span class="p">)</span>
+<span class="lineno"> 84 </span>    <span class="n">rs</span><span class="o">.</span><span class="n">enable</span><span class="p">()</span>
+<span class="lineno"> 85 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Controlling grippers. Press ? for help, Esc to quit.&quot;</span><span class="p">)</span>
+<span class="lineno"> 86 </span>    <span class="k">while</span> <span class="ow">not</span> <span class="n">done</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">rospy</span><span class="o">.</span><span class="n">is_shutdown</span><span class="p">():</span>
+<span class="lineno"> 87 </span>        <span class="n">c</span> <span class="o">=</span> <span class="n">intera_external_devices</span><span class="o">.</span><span class="n">getch</span><span class="p">()</span>
+<span class="lineno"> 88 </span>        <span class="k">if</span> <span class="n">c</span><span class="p">:</span>
+<span class="lineno"> 89 </span>            <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;</span><span class="se">\x1b</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\x03</span><span class="s1">&#39;</span><span class="p">]:</span>
+<span class="lineno"> 90 </span>                <span class="n">done</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="lineno"> 91 </span>            <span class="k">elif</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">bindings</span><span class="p">:</span>
+<span class="lineno"> 92 </span>                <span class="n">cmd</span> <span class="o">=</span> <span class="n">bindings</span><span class="p">[</span><span class="n">c</span><span class="p">]</span>
+<span class="lineno"> 93 </span>                <span class="n">cmd</span><span class="p">[</span><span class="mi">0</span><span class="p">](</span><span class="o">*</span><span class="n">cmd</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="lineno"> 94 </span>                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;command: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">cmd</span><span class="p">[</span><span class="mi">2</span><span class="p">],))</span>
+<span class="lineno"> 95 </span>            <span class="k">else</span><span class="p">:</span>
+<span class="lineno"> 96 </span>                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;key bindings: &quot;</span><span class="p">)</span>
+<span class="lineno"> 97 </span>                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;  Esc: Quit&quot;</span><span class="p">)</span>
+<span class="lineno"> 98 </span>                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;  ?: Help&quot;</span><span class="p">)</span>
+<span class="lineno"> 99 </span>                <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">bindings</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span>
+<span class="lineno">100 </span>                                       <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]):</span>
+<span class="lineno">101 </span>                    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;  </span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">val</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
+<span class="lineno">102 </span>    <span class="c1"># force shutdown call if caught by key handler</span>
+<span class="lineno">103 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">signal_shutdown</span><span class="p">(</span><span class="s2">&quot;Example finished.&quot;</span><span class="p">)</span>
+</pre></div>
+<p>The while loop iterates till the <code>Esc</code> or <code>Ctrl-c</code> is inputted or ros-shutdown signal is given. If <code>Esc</code> or <code>Ctrl-c</code> is given then shutdown signal is sent.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">106 </span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="lineno">107 </span>    <span class="sd">&quot;&quot;&quot;RSDK Gripper Example: Keyboard Control</span>
+<span class="lineno">108 </span>
+<span class="lineno">109 </span><span class="sd">    Use your dev machine&#39;s keyboard to control and configure grippers.</span>
+<span class="lineno">110 </span>
+<span class="lineno">111 </span><span class="sd">    Run this example to command various gripper movements while</span>
+<span class="lineno">112 </span><span class="sd">    adjusting gripper parameters, including calibration, velocity,</span>
+<span class="lineno">113 </span><span class="sd">    and force. Uses the intera_interface.Gripper class and the</span>
+<span class="lineno">114 </span><span class="sd">    helper function, intera_external_devices.getch.</span>
+<span class="lineno">115 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">116 </span>    <span class="n">epilog</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="lineno">117 </span><span class="s2">See help inside the example with the &#39;?&#39; key for key bindings.</span>
+<span class="lineno">118 </span><span class="s2">    &quot;&quot;&quot;</span>
+<span class="lineno">119 </span>    <span class="n">rp</span> <span class="o">=</span> <span class="n">intera_interface</span><span class="o">.</span><span class="n">RobotParams</span><span class="p">()</span>
+<span class="lineno">120 </span>    <span class="n">valid_limbs</span> <span class="o">=</span> <span class="n">rp</span><span class="o">.</span><span class="n">get_limb_names</span><span class="p">()</span>
+<span class="lineno">121 </span>    <span class="k">if</span> <span class="ow">not</span> <span class="n">valid_limbs</span><span class="p">:</span>
+<span class="lineno">122 </span>        <span class="n">rp</span><span class="o">.</span><span class="n">log_message</span><span class="p">((</span><span class="s2">&quot;Cannot detect any limb parameters on this robot. &quot;</span>
+<span class="lineno">123 </span>                        <span class="s2">&quot;Exiting.&quot;</span><span class="p">),</span> <span class="s2">&quot;ERROR&quot;</span><span class="p">)</span>
+<span class="lineno">124 </span>        <span class="k">return</span>
+<span class="lineno">125 </span>    <span class="n">arg_fmt</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">RawDescriptionHelpFormatter</span>
+<span class="lineno">126 </span>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">formatter_class</span><span class="o">=</span><span class="n">arg_fmt</span><span class="p">,</span>
+<span class="lineno">127 </span>                                     <span class="n">description</span><span class="o">=</span><span class="n">main</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">,</span>
+<span class="lineno">128 </span>                                     <span class="n">epilog</span><span class="o">=</span><span class="n">epilog</span><span class="p">)</span>
+<span class="lineno">129 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+<span class="lineno">130 </span>        <span class="s2">&quot;-l&quot;</span><span class="p">,</span> <span class="s2">&quot;--limb&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;limb&quot;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">valid_limbs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+<span class="lineno">131 </span>        <span class="n">choices</span><span class="o">=</span><span class="n">valid_limbs</span><span class="p">,</span>
+<span class="lineno">132 </span>        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Limb on which to run the gripper keyboard example&quot;</span>
+<span class="lineno">133 </span>    <span class="p">)</span>
+<span class="lineno">134 </span>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">myargv</span><span class="p">()[</span><span class="mi">1</span><span class="p">:])</span>
+<span class="lineno">135 </span>
+<span class="lineno">136 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Initializing node... &quot;</span><span class="p">)</span>
+<span class="lineno">137 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s2">&quot;sdk_gripper_keyboard&quot;</span><span class="p">)</span>
+<span class="lineno">138 </span>
+<span class="lineno">139 </span>    <span class="n">map_keyboard</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">limb</span><span class="p">)</span>
+<span class="lineno">140 </span>
+<span class="lineno">141 </span>
+<span class="lineno">142 </span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</pre></div>
+<p>Initialized the node then call <code>map_keyboard</code> function.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815154936
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.145 seconds
+Real time usage: 6.861 seconds
+Preprocessor visited node count: 232/1000000
+Preprocessor generated node count: 606/1000000
+Post‐expand include size: 37/2097152 bytes
+Template argument size: 1/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 53060/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.751      1 Template:TOClimit
+100.00%    0.751      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:60-0!canonical and timestamp 20190815154929 and revision id 1151
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Gripper_Example&amp;oldid=1151">http://sdk.rethinkrobotics.com/intera/a/index.php?title=Gripper_Example&amp;oldid=1151</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.145","walltime":"6.861","ppvisitednodes":{"value":232,"limit":1000000},"ppgeneratednodes":{"value":606,"limit":1000000},"postexpandincludesize":{"value":37,"limit":2097152},"templateargumentsize":{"value":1,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":53060,"limit":5000000},"timingprofile":["100.00%    0.751      1 Template:TOClimit","100.00%    0.751      1 -total"]},"cachereport":{"timestamp":"20190815154936","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":43});});</script></body></html>

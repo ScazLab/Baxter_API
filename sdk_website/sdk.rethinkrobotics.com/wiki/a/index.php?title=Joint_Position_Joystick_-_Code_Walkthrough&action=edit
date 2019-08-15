@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Joint Position Joystick - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Joint_Position_Joystick_-_Code_Walkthrough","wgTitle":"Joint Position Joystick - Code Walkthrough","wgCurRevisionId":3281,"wgRevisionId":0,"wgArticleId":477,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Joint_Position_Joystick_-_Code_Walkthrough","wgRelevantArticleId":477,"wgRequestId":"032657e0a9611661bd453869","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Joint_Position_Joystick_-_Code_Walkthrough rootpage-Joint_Position_Joystick_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Joint+Position+Joystick+-+Code+Walkthrough&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Joint Position Joystick - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Joint_Position_Joystick_-_Code_Walkthrough&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Joint_Position_Joystick_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Joint_Position_Joystick_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Joint_Position_Joystick_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Joint_Position_Joystick_-_Code_Walkthrough" title="Joint Position Joystick - Code Walkthrough">Joint Position Joystick - Code Walkthrough</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Joint_Position_Joystick_-_Code_Walkthrough&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Joint_Position_Joystick_-_Code_Walkthrough&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">{{Template:Parent header|parent=Joint Position Example}}
+== Introduction ==
+
+This example demonstrates the usage of the position controller to move the limbs to various positions via the Joystick interface. The &lt;code>main()&lt;/code> function enables the robot and invokes the &lt;code>map_keyboard()&lt;/code> function. It is at this function where the Joystick's key presses are mapped to individual joints and the commands are sent to the position controller periodically. Pressing the left or the right bumper button on the joystick shifts the joint being controlled in the corresponding limb to the next one. For instance, if the joint being controlled initially in the left limb is left_so, then pressing the left bumper button would update the currently controlled joint as left_s1. This is performed in the &lt;code>rotate()&lt;/code> function.&lt;br />
+'''Interfaces - '''
+&lt;div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
+* Limb.joint_names()
+* Limb.joint_angle(&lt;''string''>)
+* Limb.set_joint_positions(&lt;''double''>)
+&lt;/div>
+
+== Code Walkthrough ==
+
+Now, let's break down the code.
+
+&lt;syntaxhighlight lang="python" line start="33" enclose="div">
+import argparse
+
+import rospy
+
+import baxter_interface
+import baxter_external_devices
+
+from baxter_interface import CHECK_VERSION
+&lt;/syntaxhighlight>
+
+This imports the baxter interface for accessing the limb and the gripper class. The &lt;code>baxter_external_devices&lt;/code> is imported to use its &lt;code>getch&lt;/code> function, that captures the key presses on the joystick. The &lt;code>CHECK_VERSION&lt;/code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs.
+
+&lt;syntaxhighlight lang="python" line start="43" enclose="div">
+def rotate(l):
+    """
+    Rotates a list left.
+
+    @param l: the list
+    """
+    if len(l):
+        v = l[0]
+        l[:-1] = l[1:]
+        l[-1] = v
+&lt;/syntaxhighlight>
+
+This moves all the elements in the list to one position to their left. So the element at 0th position moves to the nth position, element at nth position moves to (n-1)th position, and so on.
+
+&lt;syntaxhighlight lang="python" line start="55" enclose="div">
+def set_j(cmd, limb, joints, index, delta):
+    """
+    Set the selected joint to current pos + delta.
+
+    @param cmd: the joint command dictionary
+    @param limb: the limb to get the pos from
+    @param joints: a list of joint names
+    @param index: the index in the list of names
+    @param delta: delta to update the joint by
+
+    joint/index is to make this work in the bindings.
+    """
+    joint = joints[index]
+    cmd[joint] = delta + limb.joint_angle(joint)
+&lt;/syntaxhighlight>
+
+&lt;code>joint_angle()&lt;/code> method returns the current angle of the corresponding joint. This function builds the dictionary that is to be passed as a joint command. The last line assigns the new position which has an offset of &lt;code>delta&lt;/code> from the current position.
+
+&lt;syntaxhighlight lang="python" line start="71" enclose="div">
+def map_joystick(joystick):
+    """
+    Maps joystick input to joint position commands.
+
+    @param joystick: an instance of a Joystick
+    """
+    left = baxter_interface.Limb('left')
+    right = baxter_interface.Limb('right')
+    grip_left = baxter_interface.Gripper('left', CHECK_VERSION)
+    grip_right = baxter_interface.Gripper('right', CHECK_VERSION)
+    lcmd = {}
+    rcmd = {}
+&lt;/syntaxhighlight>
+
+Two instances of the Limb class are created for each of Baxter's limbs. Similarly two instances of the Gripper class  are created for the left and right grippers. The software version is checked for compatibility with the local version. &lt;code>lcmd&lt;/code> and &lt;code>rcmd&lt;/code> are the two dictionaries which would hold the set of commands from the below bindings to be executed on the left and right limbs respectively.
+
+&lt;syntaxhighlight lang="python" line start="85" enclose="div">
+    lj = left.joint_names()
+    rj = right.joint_names()
+
+    #abbreviations
+    jhi = lambda s: joystick.stick_value(s) > 0
+    jlo = lambda s: joystick.stick_value(s) &lt; 0
+    bdn = joystick.button_down
+    bup = joystick.button_up
+&lt;/syntaxhighlight>
+
+The &lt;code>joint_names()&lt;/code> method returns a list of joints associated with that limb. The &lt;code>stick_value()&lt;/code> method returns the deadbanded, scaled and offset value of the axis. The abbreviations for all these functions are created to be used within the bindings dictionary below.
+
+&lt;syntaxhighlight lang="python" line start="94" enclose="div">
+    def print_help(bindings_list):
+        print("Press Ctrl-C to quit.")
+        for bindings in bindings_list:
+            for (test, _cmd, doc) in bindings:
+                if callable(doc):
+                    doc = doc()
+                print("%s: %s" % (str(test[1][0]), doc))
+&lt;/syntaxhighlight>
+
+The information about the joystick buttons and the corresponding joints are displayed. This information is available in &lt;code>bindings_list&lt;/code> as below. The &lt;code>doc&lt;/code> refers to the last element of the tuple and it is checked if it is a callable function. So, if there is a lambda function that evaluates and returns a string, then that function is called. Finally, the results are displayed.
+
+&lt;syntaxhighlight lang="python" line start="102" enclose="div">
+    bindings_list = []
+    bindings = (
+        ((bdn, ['rightTrigger']),
+         (grip_left.close,  []), "left gripper close"),
+        ((bup, ['rightTrigger']),
+         (grip_left.open,   []), "left gripper open"),
+        ((bdn, ['leftTrigger']),
+         (grip_right.close, []), "right gripper close"),
+        ((bup, ['leftTrigger']),
+         (grip_right.open,  []), "right gripper open"),
+        ((jlo, ['leftStickHorz']),
+         (set_j, [rcmd, right, rj, 0,  0.1]), lambda: "right inc " + rj[0]),
+        ((jhi, ['leftStickHorz']),
+         (set_j, [rcmd, right, rj, 0, -0.1]), lambda: "right dec " + rj[0]),
+        ((jlo, ['rightStickHorz']),
+         (set_j, [lcmd, left,  lj, 0,  0.1]), lambda: "left inc " + lj[0]),
+        ((jhi, ['rightStickHorz']),
+         (set_j, [lcmd, left,  lj, 0, -0.1]), lambda: "left dec " + lj[0]),
+        ((jlo, ['leftStickVert']),
+         (set_j, [rcmd, right, rj, 1,  0.1]), lambda: "right inc " + rj[1]),
+        ((jhi, ['leftStickVert']),
+         (set_j, [rcmd, right, rj, 1, -0.1]), lambda: "right dec " + rj[1]),
+        ((jlo, ['rightStickVert']),
+         (set_j, [lcmd, left,  lj, 1,  0.1]), lambda: "left inc " + lj[1]),
+        ((jhi, ['rightStickVert']),
+         (set_j, [lcmd, left,  lj, 1, -0.1]), lambda: "left dec " + lj[1]),
+        ((bdn, ['rightBumper']),
+         (rotate, [lj]), "left: cycle joint"),
+        ((bdn, ['leftBumper']),
+         (rotate, [rj]), "right: cycle joint"),
+        ((bdn, ['btnRight']),
+         (grip_left.calibrate, []), "left calibrate"),
+        ((bdn, ['btnLeft']),
+         (grip_right.calibrate, []), "right calibrate"),
+        ((bdn, ['function1']),
+         (print_help, [bindings_list]), "help"),
+        ((bdn, ['function2']),
+         (print_help, [bindings_list]), "help"),
+        )
+    bindings_list.append(bindings)
+&lt;/syntaxhighlight>
+
+The first element of every tuple refers to the command that has to be executed. As indicated above &lt;code>set_j&lt;/code>, &lt;code>bdn&lt;/code>, &lt;code>bup&lt;/code>, &lt;code>jhi&lt;/code> and &lt;code>jlo&lt;/code> refers to the function and their acronyms. The second tuple has a list that holds the list of arguments to be passed along with that function. The last element holds a string or a function that evaluates and forms a string to detail the joint under consideration.
+
+&lt;syntaxhighlight lang="python" line start="143" enclose="div">
+    rate = rospy.Rate(100)
+    print_help(bindings_list)
+    print("Press Ctrl-C to stop. ")
+    while not rospy.is_shutdown():
+        for (test, cmd, doc) in bindings:
+            if test[0](*test[1]):
+                cmd[0](*cmd[1])
+                if callable(doc):
+                    print(doc())
+                else:
+                    print(doc)
+&lt;/syntaxhighlight>
+
+The &lt;code>test&lt;/code> tuple holds the function that needs to be called for a particular value to be tested. For instance, the first tuple holds the abbreviation &lt;code>bdn&lt;/code> and the parameter &lt;code>rightTrigger&lt;/code> that is passed along. This test function checks whether the joystick's &lt;code>button_down&lt;/code> is pressed. If this is true then the &lt;code>cmd&lt;/code>, that refers to the second tuple &lt;code>(grip_left.close,[])&lt;/code> is parsed as above. For the first binding, the expression &lt;code>cmd[0](*cmd[1])&lt;/code> returns the function call &lt;code>grip_left.close([])&lt;/code>. The next line checks if the last tuple is a function (lambda) or not (string). Since the joints being controlled are updated dynamically, the lambda function is used to retrieve the current joints &lt;code>rj[0]&lt;/code>, &lt;code>lj[0]&lt;/code>, &lt;code>rj[1]&lt;/code> and &lt;code>lj[1]&lt;/code>.
+
+&lt;syntaxhighlight lang="python" line start="154" enclose="div">
+        if len(lcmd):
+            left.set_joint_positions(lcmd)
+            lcmd.clear()
+        if len(rcmd):
+            right.set_joint_positions(rcmd)
+            rcmd.clear()
+        rate.sleep()
+    return False
+&lt;/syntaxhighlight>
+The dictionaries &lt;code>lcmd&lt;/code> and &lt;code>rcmd&lt;/code> hold the joint commands for the left and right limbs. These dictionaries get populated when the &lt;code>set_j&lt;/code> method is called by the previous section of code.
+
+&lt;syntaxhighlight lang="python" line start="164" enclose="div">
+def main():
+    """RSDK Joint Position Example: Joystick Control
+
+    Use a game controller to control the angular joint positions
+    of Baxter's arms.
+
+    Attach a game controller to your dev machine and run this
+    example along with the ROS joy_node to control the position
+    of each joint in Baxter's arms using the joysticks. Be sure to
+    provide your *joystick* type to setup appropriate key mappings.
+
+    Each stick axis maps to a joint angle; which joints are currently
+    controlled can be incremented by using the mapped increment buttons.
+    Ex:
+      (x,y -> e0,e1) >>increment>> (x,y -> e1,e2)
+    """
+    epilog = """
+See help inside the example with the "Start" button for controller
+key bindings.
+    """
+    arg_fmt = argparse.RawDescriptionHelpFormatter
+    parser = argparse.ArgumentParser(formatter_class=arg_fmt,
+                                     description=main.__doc__,
+                                     epilog=epilog)
+    required = parser.add_argument_group('required arguments')
+    required.add_argument(
+        '-j', '--joystick', required=True,
+        choices=['xbox', 'logitech', 'ps3'],
+        help='specify the type of joystick to use'
+    )
+    args = parser.parse_args(rospy.myargv()[1:])
+
+    joystick = None
+    if args.joystick == 'xbox':
+        joystick = baxter_external_devices.joystick.XboxController()
+    elif args.joystick == 'logitech':
+        joystick = baxter_external_devices.joystick.LogitechController()
+    elif args.joystick == 'ps3':
+        joystick = baxter_external_devices.joystick.PS3Controller()
+    else:
+        parser.error("Unsupported joystick type '%s'" % (args.joystick))
+&lt;/syntaxhighlight>
+
+The type of joystick input is captured as entered by the user and an instance of the corresponding interface is created.
+
+&lt;syntaxhighlight lang="python" line start="206" enclose="div">
+    print("Initializing node... ")
+    rospy.init_node("rsdk_joint_position_joystick")
+    print("Getting robot state... ")
+    rs = baxter_interface.RobotEnable(CHECK_VERSION)
+    init_state = rs.state().enabled
+
+    def clean_shutdown():
+        print("\nExiting example.")
+        if not init_state:
+            print("Disabling robot...")
+            rs.disable()
+    rospy.on_shutdown(clean_shutdown)
+
+    print("Enabling robot... ")
+    rs.enable()
+
+    map_joystick(joystick)
+    print("Done.")
+
+
+if __name__ == '__main__':
+    main()
+&lt;/syntaxhighlight>
+
+The node is initialized and the robot is enabled. The &lt;code>map_joystick()&lt;/code> method performs the mapping and execution of the commands as explained above.
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="../Template:Parent_header" title="Template:Parent header">Template:Parent header</a> (<a href="index.php?title=Template:Parent_header&amp;action=edit" title="Template:Parent header">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Joint_Position_Joystick_-_Code_Walkthrough" title="Joint Position Joystick - Code Walkthrough">Joint Position Joystick - Code Walkthrough</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Joint_Position_Joystick_-_Code_Walkthrough">http://sdk.rethinkrobotics.com/wiki/Joint_Position_Joystick_-_Code_Walkthrough</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":35});});</script></body></html>

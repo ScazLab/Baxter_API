@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Gripper Cuff Control - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Gripper_Cuff_Control_-_Code_Walkthrough","wgTitle":"Gripper Cuff Control - Code Walkthrough","wgCurRevisionId":3252,"wgRevisionId":3252,"wgArticleId":544,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Gripper_Cuff_Control_-_Code_Walkthrough","wgRelevantArticleId":544,"wgRequestId":"5470b2e349c0e2ed7224b20e","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Gripper_Cuff_Control_-_Code_Walkthrough rootpage-Gripper_Cuff_Control_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Gripper+Cuff+Control+-+Code+Walkthrough&amp;returntoquery=oldid%3D3252">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Gripper Cuff Control - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Gripper_Cuff_Control_-_Code_Walkthrough&amp;oldid=3252#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Gripper_Cuff_Control_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Gripper_Cuff_Control_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Gripper_Cuff_Control_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 15:11, 29 July 2014 by <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span> <span class="comment">(Protected &quot;<a href="../Gripper_Cuff_Control_-_Code_Walkthrough" title="Gripper Cuff Control - Code Walkthrough">Gripper Cuff Control - Code Walkthrough</a>&quot;: Setting Permissions for (almost all) Pages - editable and moveable by all logged in users ([Edit=Allow only autoconfirmed users] (indefinite) [Move=Allow only autoconfirmed users] (indefinite)))</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Gripper_Cuff_Control_-_Code_Walkthrough&amp;diff=prev&amp;oldid=3252" title="Gripper Cuff Control - Code Walkthrough">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Gripper_Cuff_Control_-_Code_Walkthrough&amp;direction=prev&amp;oldid=3252" title="Gripper Cuff Control - Code Walkthrough">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Gripper_Cuff_Control_-_Code_Walkthrough&amp;oldid=3252#column-one">navigation</a>, <a href="index.php?title=Gripper_Cuff_Control_-_Code_Walkthrough&amp;oldid=3252#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>This program demonstrates the usage of gripper interface to control the close and open actions of the grippers. The <code>main()</code> function creates an instance of the <code>GripperConnect</code>  class which connects the gripper buttons to various callback functions. <br />
+<b>Interfaces - </b>
+</p>
+<div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
+<ul><li>DigitalIO.state_changed()</li>
+<li>Gripper.calibrated()</li>
+<li>Gripper.calibrate()</li>
+<li>Gripper.type()</li>
+<li>Gripper.on_type_changed</li>
+<li>Gripper.close()</li>
+<li>Gripper.open()</li>
+<li>Gripper.ready()</li></ul>
+</div>
+<h2><span class="mw-headline" id="Code_Walkthrough">Code Walkthrough</span></h2>
+<p>Now, let's break down the code.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">30 </span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="lineno">31 </span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="lineno">32 </span>
+<span class="lineno">33 </span><span class="kn">import</span> <span class="nn">rospy</span>
+<span class="lineno">34 </span>
+<span class="lineno">35 </span><span class="kn">from</span> <span class="nn">baxter_interface</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="lineno">36 </span>    <span class="n">DigitalIO</span><span class="p">,</span>
+<span class="lineno">37 </span>    <span class="n">Gripper</span><span class="p">,</span>
+<span class="lineno">38 </span>    <span class="n">Navigator</span><span class="p">,</span>
+<span class="lineno">39 </span>    <span class="n">CHECK_VERSION</span><span class="p">,</span>
+<span class="lineno">40 </span><span class="p">)</span>
+</pre></div>
+<p>The interfaces for the grippers, the navigator buttons, and the lights are imported. The <code>CHECK_VERSION</code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">43 </span><span class="k">class</span> <span class="nc">GripperConnect</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="lineno">44 </span>    <span class="sd">&quot;&quot;&quot;</span>
+<span class="lineno">45 </span><span class="sd">    Connects wrist button presses to gripper open/close commands.</span>
+<span class="lineno">46 </span>
+<span class="lineno">47 </span><span class="sd">    Uses the DigitalIO Signal feature to make callbacks to connected</span>
+<span class="lineno">48 </span><span class="sd">    action functions when the button values change.</span>
+<span class="lineno">49 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">50 </span>
+<span class="lineno">51 </span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arm</span><span class="p">,</span> <span class="n">lights</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+<span class="lineno">52 </span>        <span class="sd">&quot;&quot;&quot;</span>
+<span class="lineno">53 </span><span class="sd">        @type arm: str</span>
+<span class="lineno">54 </span><span class="sd">        @param arm: arm of gripper to control {left, right}</span>
+<span class="lineno">55 </span><span class="sd">        @type lights: bool</span>
+<span class="lineno">56 </span><span class="sd">        @param lights: if lights should activate on cuff grasp</span>
+<span class="lineno">57 </span><span class="sd">        &quot;&quot;&quot;</span>
+<span class="lineno">58 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_arm</span> <span class="o">=</span> <span class="n">arm</span>
+<span class="lineno">59 </span>        <span class="c1"># inputs</span>
+<span class="lineno">60 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_close_io</span> <span class="o">=</span> <span class="n">DigitalIO</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">_upper_button&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">arm</span><span class="p">,))</span>  <span class="c1"># &#39;dash&#39; btn</span>
+<span class="lineno">61 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_open_io</span> <span class="o">=</span> <span class="n">DigitalIO</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">_lower_button&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">arm</span><span class="p">,))</span>   <span class="c1"># &#39;circle&#39; btn</span>
+<span class="lineno">62 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_light_io</span> <span class="o">=</span> <span class="n">DigitalIO</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">_lower_cuff&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">arm</span><span class="p">,))</span>    <span class="c1"># cuff squeeze</span>
+<span class="lineno">63 </span>        <span class="c1"># outputs</span>
+<span class="lineno">64 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span> <span class="o">=</span> <span class="n">Gripper</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">arm</span><span class="p">,),</span> <span class="n">CHECK_VERSION</span><span class="p">)</span>
+<span class="lineno">65 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_nav</span> <span class="o">=</span> <span class="n">Navigator</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">arm</span><span class="p">,))</span>
+</pre></div>
+<p>Instances of the cuff squeeze, grasp, and open buttons are created. Also, interfaces for the gripper and the navigator are created.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">67 </span>        <span class="c1"># connect callback fns to signals</span>
+<span class="lineno">68 </span>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">type</span><span class="p">()</span> <span class="o">!=</span> <span class="s1">&#39;custom&#39;</span><span class="p">:</span>
+<span class="lineno">69 </span>            <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">calibrated</span><span class="p">()</span> <span class="ow">or</span>
+<span class="lineno">70 </span>                    <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">calibrate</span><span class="p">()</span> <span class="o">==</span> <span class="bp">True</span><span class="p">):</span>
+<span class="lineno">71 </span>                <span class="n">rospy</span><span class="o">.</span><span class="n">logwarn</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> (</span><span class="si">%s</span><span class="s2">) calibration failed.&quot;</span><span class="p">,</span>
+<span class="lineno">72 </span>                              <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">(),</span>
+<span class="lineno">73 </span>                              <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">type</span><span class="p">())</span>
+<span class="lineno">74 </span>        <span class="k">else</span><span class="p">:</span>
+<span class="lineno">75 </span>            <span class="n">msg</span> <span class="o">=</span> <span class="p">((</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> (</span><span class="si">%s</span><span class="s2">) not capable of gripper commands.&quot;</span>
+<span class="lineno">76 </span>                   <span class="s2">&quot; Running cuff-light connection only.&quot;</span><span class="p">)</span> <span class="o">%</span>
+<span class="lineno">77 </span>                   <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">type</span><span class="p">()))</span>
+<span class="lineno">78 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logwarn</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</pre></div>
+<p>The method <code>calibrated()</code> returns true if the grippers were already in a calibrated state. <code>calibrate()</code> method performs the actual calibration for the grippers. <code>type()</code> method returns the gripper types like "electric", "vacuum" or "custom" and the name returns the component id of the gripper. The grippers are verified not to be custom grippers and then calibrated if they were not already calibrated.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">33 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">on_type_changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_check_calibration</span><span class="p">)</span>
+<span class="lineno">34 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_open_io</span><span class="o">.</span><span class="n">state_changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_open_action</span><span class="p">)</span>
+<span class="lineno">35 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_close_io</span><span class="o">.</span><span class="n">state_changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_close_action</span><span class="p">)</span>
+<span class="lineno">36 </span>
+<span class="lineno">37 </span>        <span class="k">if</span> <span class="n">lights</span><span class="p">:</span>
+<span class="lineno">38 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_light_io</span><span class="o">.</span><span class="n">state_changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_light_action</span><span class="p">)</span>
+<span class="lineno">39 </span>
+<span class="lineno">40 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> Cuff Control initialized...&quot;</span><span class="p">,</span>
+<span class="lineno">41 </span>                      <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+</pre></div>
+<p>The <code>on_type_changed</code> method is invoked whenever a new type of gripper is connected. This event is connected to the <code>_check_calibration()</code> function. Similarly on the state changed event (On/Off) for the gripper open/close buttons and the light, the functions <code>_open_action</code>, <code>_close_action</code> and <code>_light_actions()</code> are triggered respectively.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">90 </span>    <span class="k">def</span> <span class="nf">_open_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="lineno">91 </span>        <span class="k">if</span> <span class="n">value</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_grippable</span><span class="p">():</span>
+<span class="lineno">92 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logdebug</span><span class="p">(</span><span class="s2">&quot;gripper open triggered&quot;</span><span class="p">)</span>
+<span class="lineno">93 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+</pre></div>
+<p>The <code>open()</code> method opens the gripper when the button sends a True value.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">95 </span>    <span class="k">def</span> <span class="nf">_close_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="lineno">96 </span>        <span class="k">if</span> <span class="n">value</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_grippable</span><span class="p">():</span>
+<span class="lineno">97 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logdebug</span><span class="p">(</span><span class="s2">&quot;gripper close triggered&quot;</span><span class="p">)</span>
+<span class="lineno">98 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+<p>The <code>open()</code> method closes the gripper when the button sends a True value.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">100 </span>    <span class="k">def</span> <span class="nf">_light_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="lineno">101 </span>        <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+<span class="lineno">102 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logdebug</span><span class="p">(</span><span class="s2">&quot;cuff grasp triggered&quot;</span><span class="p">)</span>
+<span class="lineno">103 </span>        <span class="k">else</span><span class="p">:</span>
+<span class="lineno">104 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logdebug</span><span class="p">(</span><span class="s2">&quot;cuff release triggered&quot;</span><span class="p">)</span>
+<span class="lineno">105 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_nav</span><span class="o">.</span><span class="n">inner_led</span> <span class="o">=</span> <span class="n">value</span>
+<span class="lineno">106 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_nav</span><span class="o">.</span><span class="n">outer_led</span> <span class="o">=</span> <span class="n">value</span>
+</pre></div>
+<p>This method assigns the boolean value that was signalled to the light I/O interface, through to the navigator's LEDs.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">108 </span>    <span class="k">def</span> <span class="nf">_check_calibration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="lineno">109 </span>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">calibrated</span><span class="p">():</span>
+<span class="lineno">110 </span>            <span class="k">return</span> <span class="bp">True</span>
+<span class="lineno">111 </span>        <span class="k">elif</span> <span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;electric&#39;</span><span class="p">:</span>
+<span class="lineno">112 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;calibrating </span><span class="si">%s</span><span class="s2">...&quot;</span><span class="p">,</span>
+<span class="lineno">113 </span>                          <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+<span class="lineno">114 </span>            <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">calibrate</span><span class="p">()</span> <span class="o">==</span> <span class="bp">True</span><span class="p">)</span>
+<span class="lineno">115 </span>        <span class="k">else</span><span class="p">:</span>
+<span class="lineno">116 </span>            <span class="k">return</span> <span class="bp">False</span>
+</pre></div>
+<p>This method is invoked when the gripper type is changed. This method checks if the grippers are already calibrated and calibrates them if not.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">118 </span>    <span class="k">def</span> <span class="nf">_is_grippable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno">119 </span>        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">calibrated</span><span class="p">()</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">ready</span><span class="p">())</span>
+</pre></div>
+<p>The <code>ready()</code> method returns a bool describing if the gripper ready, i.e. is calibrated, not busy (as in resetting or rebooting), and not moving. This method indicates if the gripper is already calibrated and ready to be used.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">122 </span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="lineno">123 </span>    <span class="sd">&quot;&quot;&quot;RSDK Gripper Button Control Example</span>
+<span class="lineno">124 </span>
+<span class="lineno">125 </span><span class="sd">    Connects cuff buttons to gripper open/close commands:</span>
+<span class="lineno">126 </span><span class="sd">        &#39;Circle&#39; Button    - open gripper</span>
+<span class="lineno">127 </span><span class="sd">        &#39;Dash&#39; Button      - close gripper</span>
+<span class="lineno">128 </span><span class="sd">        Cuff &#39;Squeeze&#39;     - turn on Nav lights</span>
+<span class="lineno">129 </span>
+<span class="lineno">130 </span><span class="sd">    Run this example in the background or in another terminal</span>
+<span class="lineno">131 </span><span class="sd">    to be able to easily control the grippers by hand while</span>
+<span class="lineno">132 </span><span class="sd">    using the robot. Can be run in parallel with other code.</span>
+<span class="lineno">133 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">134 </span>    <span class="n">arg_fmt</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">RawDescriptionHelpFormatter</span>
+<span class="lineno">135 </span>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">formatter_class</span><span class="o">=</span><span class="n">arg_fmt</span><span class="p">,</span>
+<span class="lineno">136 </span>                                     <span class="n">description</span><span class="o">=</span><span class="n">main</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+<span class="lineno">137 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-g&#39;</span><span class="p">,</span> <span class="s1">&#39;--gripper&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;gripper&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span>
+<span class="lineno">138 </span>                        <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">],</span>
+<span class="lineno">139 </span>                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;gripper limb to control (default: both)&#39;</span><span class="p">)</span>
+<span class="lineno">140 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-n&#39;</span><span class="p">,</span> <span class="s1">&#39;--no-lights&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;lights&#39;</span><span class="p">,</span>
+<span class="lineno">141 </span>                        <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_false&#39;</span><span class="p">,</span>
+<span class="lineno">142 </span>                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;do not trigger lights on cuff grasp&#39;</span><span class="p">)</span>
+<span class="lineno">143 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-v&#39;</span><span class="p">,</span> <span class="s1">&#39;--verbose&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;verbosity&#39;</span><span class="p">,</span>
+<span class="lineno">144 </span>                        <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_const&#39;</span><span class="p">,</span> <span class="n">const</span><span class="o">=</span><span class="n">rospy</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">,</span>
+<span class="lineno">145 </span>                        <span class="n">default</span><span class="o">=</span><span class="n">rospy</span><span class="o">.</span><span class="n">INFO</span><span class="p">,</span>
+<span class="lineno">146 </span>                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;print debug statements&#39;</span><span class="p">)</span>
+<span class="lineno">147 </span>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">myargv</span><span class="p">()[</span><span class="mi">1</span><span class="p">:])</span>
+</pre></div>
+<p>The side of the gripper and the option of using the navigator lights are parsed from the command line arguments, as entered by the user.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">149 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s1">&#39;rsdk_gripper_cuff_control_</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">gripper</span><span class="p">,),</span>
+<span class="lineno">150 </span>                    <span class="n">log_level</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">verbosity</span><span class="p">)</span>
+<span class="lineno">151 </span>
+<span class="lineno">152 </span>    <span class="n">arms</span> <span class="o">=</span> <span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">gripper</span><span class="p">,)</span> <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">gripper</span> <span class="o">!=</span> <span class="s1">&#39;both&#39;</span> <span class="k">else</span> <span class="p">(</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<span class="lineno">153 </span>    <span class="n">grip_ctrls</span> <span class="o">=</span> <span class="p">[</span><span class="n">GripperConnect</span><span class="p">(</span><span class="n">arm</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">lights</span><span class="p">)</span> <span class="k">for</span> <span class="n">arm</span> <span class="ow">in</span> <span class="n">arms</span><span class="p">]</span>
+<span class="lineno">154 </span>
+<span class="lineno">155 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Press cuff buttons to control grippers. Spinning...&quot;</span><span class="p">)</span>
+<span class="lineno">156 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">spin</span><span class="p">()</span>
+<span class="lineno">157 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Gripper Button Control Finished.&quot;</span><span class="p">)</span>
+<span class="lineno">158 </span>    <span class="k">return</span> <span class="mi">0</span>
+<span class="lineno">159 </span>
+<span class="lineno">160 </span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="lineno">161 </span>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</pre></div>
+<p>The node is initialized and an instance of the GripperConnect is created for either of the side, or both the sides as desired by the user.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815161429
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.058 seconds
+Real time usage: 2.125 seconds
+Preprocessor visited node count: 41/1000000
+Preprocessor generated node count: 236/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 25433/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:544-0!canonical and timestamp 20190815161427 and revision id 3252
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Gripper_Cuff_Control_-_Code_Walkthrough&amp;oldid=3252">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Gripper_Cuff_Control_-_Code_Walkthrough&amp;oldid=3252</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.058","walltime":"2.125","ppvisitednodes":{"value":41,"limit":1000000},"ppgeneratednodes":{"value":236,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":25433,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815161430","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":47});});</script></body></html>

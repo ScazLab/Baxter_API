@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Software Version - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Software_Version","wgTitle":"Software Version","wgCurRevisionId":4355,"wgRevisionId":0,"wgArticleId":314,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Software_Version","wgRelevantArticleId":314,"wgRequestId":"8f710448a1884322175f204d","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Software_Version rootpage-Software_Version skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Software+Version&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Software Version</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Software_Version&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Software_Version&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Software_Version&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Software_Version" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Software_Version" title="Software Version">Software Version</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Software_Version&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Software_Version&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">__TOC__
+
+
+&lt;span style="font-size:1.5em">The latest version of the SDK is [[Release - v1.2.0|v1.2.0]].&lt;/span>
+
+== Robot Software Version ==
+'''''NOTE:''' If asked what "version" you're running, this is probably the one we mean.''  
+It is convenient to report the software version running on the robot when reporting a ticket.
+
+1. cd to the sdk examples directory on the development workstation
+
+&lt;source lang="bash">
+    $ cd ~/ros_ws
+&lt;/source>
+2. Run baxter.sh
+
+&lt;source lang="bash">
+    $ ./baxter.sh
+&lt;/source>
+3. Run rosparm to get the software version
+
+&lt;source lang="bash">
+    $ rosparam get /rethink/software_version
+&lt;/source>
+&lt;source lang="bash">
+    1.2.0.57
+&lt;/source>
+In this case, the version would be "v1.2.0". (The 57 is the number of builds prior to this release).
+
+== Workstation SDK Software Version ==
+You should make sure your Developer Workstation is installed with and running a compatible version of the SDK software from the github repository. The version number corresponds to the git 'tag' you checked out.
+
+There are two ways to check this:
+
+1. Look at version listed at the top of the &lt;code>CHANGES.md&lt;/code> file in the ~/ros_ws/src/baxter directory.
+
+2. Look for the "closest" tag in your git checkout:
+&lt;source lang="bash">
+    $ cd ~/ros_ws/src
+    $ cd baxter
+    # OR 'cd baxter_common' OR 'baxter_examples' OR 'baxter_inteface' OR 'baxter_tools'
+    $ git describe
+    v0.7.0-g01afa20
+&lt;/source>
+In this case, the version would be "v0.7.0".
+
+
+== Gripper Firmware Version ==
+The Electric Grippers ''need'' to be on the same version as the Robot Software. If attached during a Robot Software Update, the Gripper Firmware will be updated automatically as part of the process.  Otherwise, you can always update or check the firmware version through the FSM Tests in the [[Field Service Menu (FSM)]].
+
+You can also check the version of your grippers from the command line on your workstation.
+
+* From an [[RSDK Shell]] run (for &lt;code>left_gripper&lt;/code> and &lt;code>right_gripper&lt;/code>):
+*: &lt;source lang="bash">
+    $ rostopic echo /robot/end_effector/left_gripper/properties
+&lt;/source>
+*: Example response:
+*: &lt;source lang="bash">
+    id: 65538
+    ui_type: 2
+    manufacturer: Rethink Robotics, Inc.
+    product: Electric Parallel Gripper
+    serial_number: 4166823565
+    firmware_rev: 0.7.0 4.0
+    firmware_date: 2013/11/20 13:16:00
+    controls_grip: True
+    senses_grip: True
+    reverses_grip: True
+    controls_force: True
+    senses_force: True
+    controls_position: True
+    senses_position: True
+    properties: ''
+---
+&lt;/source>
+* Look for the value in the &lt;code>firmware_rev&lt;/code> field.  For this example we see the firmware version is 0.7.0.
+*: &lt;source lang="bash">
+    firmware_rev: 0.7.0 4.0
+&lt;/source>
+*: If this number does not match your Robot Software version (higher or lower), it is very important you update the Gripper Firmware in the [[Field Service Menu (FSM)]] right away.  Mismatched firmware can cause gripper jamming and errors.
+===Updating Gripper Firmware===
+There is a simple utility built into the FSM.  Simply reboot into the FSM, select Tests from the main menu, and then select the Update_End_Effector_firmware option from the Tests menu.
+
+[[File: UpdateGripperFirmware.png| link=| 600px]]
+
+== Other Versions ==
+There are a couple other versions of mention for your [[Development Workstation Setup Instructions|Development Workstation Setup]].  You will want to make sure that these system or software versions meet the [[System requirements|Recommended System Requirements]].
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Software_Version" title="Software Version">Software Version</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Software_Version">http://sdk.rethinkrobotics.com/wiki/Software_Version</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":34});});</script></body></html>

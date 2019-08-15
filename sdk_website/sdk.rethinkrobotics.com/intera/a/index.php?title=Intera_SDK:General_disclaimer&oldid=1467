@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Intera SDK:General disclaimer - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"Project","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":4,"wgPageName":"Intera_SDK:General_disclaimer","wgTitle":"General disclaimer","wgCurRevisionId":1467,"wgRevisionId":1467,"wgArticleId":133,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Intera_SDK:General_disclaimer","wgRelevantArticleId":133,"wgRequestId":"4c20c2415dd7bc13479677e8","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-4 ns-subject page-Intera_SDK_General_disclaimer rootpage-Intera_SDK_General_disclaimer skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=Intera+SDK%3AGeneral+disclaimer&amp;returntoquery=oldid%3D1467">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#">More</a>
+                <ul>
+                <li id="ca-nstab-project" class="selected"><a href="../Intera_SDK:General_disclaimer" title="View the project page [a]" accesskey="a">Project page</a></li><li id="ca-talk" class="new"><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Intera_SDK_talk:General_disclaimer&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+                    </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">Intera SDK:General disclaimer</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                <div class="mw-revision"><div id="mw-revision-info">Revision as of 18:09, 16 January 2018 by <a href="index.php?title=User:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Imcmahon (page does not exist)"><bdi>Imcmahon</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Imcmahon (page does not exist)">talk</a> | <a href="../Special:Contributions/Imcmahon" class="mw-usertoollinks-contribs" title="Special:Contributions/Imcmahon">contribs</a>)</span> <span class="comment">(<a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#Copyright_and_Trademark_Information">→</a>‎<span dir="auto"><span class="autocomment">Copyright and Trademark Information</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Intera_SDK:General_disclaimer&amp;diff=prev&amp;oldid=1467" title="Intera SDK:General disclaimer">diff</a>) <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Intera_SDK:General_disclaimer&amp;direction=prev&amp;oldid=1467" title="Intera SDK:General disclaimer">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="toclimit-2"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#TERMS_AND_CONDITIONS_OF_USE_FOR:"><span class="tocnumber">1</span> <span class="toctext">TERMS AND CONDITIONS OF USE FOR:</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#Copyright_and_Trademark_Information"><span class="tocnumber">2</span> <span class="toctext">Copyright and Trademark Information</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#Contributions"><span class="tocnumber">3</span> <span class="toctext">Contributions</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#Conduct"><span class="tocnumber">4</span> <span class="toctext">Conduct</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#Use_of_Wiki_and_Its_Content"><span class="tocnumber">5</span> <span class="toctext">Use of Wiki and Its Content</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#Confidential_Information_and_Accuracy_of_Content"><span class="tocnumber">6</span> <span class="toctext">Confidential Information and Accuracy of Content</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#No_Warranties"><span class="tocnumber">7</span> <span class="toctext">No Warranties</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#Compliance_with_DMCA"><span class="tocnumber">8</span> <span class="toctext">Compliance with DMCA</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#Limitation_of_Liability"><span class="tocnumber">9</span> <span class="toctext">Limitation of Liability</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#Links_to_Third-Party_Web_Sites"><span class="tocnumber">10</span> <span class="toctext">Links to Third-Party Web Sites</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#No_Implied_Endorsements"><span class="tocnumber">11</span> <span class="toctext">No Implied Endorsements</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#Jurisdictional_Issues"><span class="tocnumber">12</span> <span class="toctext">Jurisdictional Issues</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#Enforcement_of_Terms_and_Conditions"><span class="tocnumber">13</span> <span class="toctext">Enforcement of Terms and Conditions</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467#Entire_Agreement"><span class="tocnumber">14</span> <span class="toctext">Entire Agreement</span></a></li>
+</ul>
+</div>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="TERMS_AND_CONDITIONS_OF_USE_FOR:">TERMS AND CONDITIONS OF USE FOR:</span></h2>
+<p><a rel="nofollow" class="external free" href="../../intera.1">http://sdk.rethinkrobotics.com/intera</a>
+</p><p><br />
+PLEASE READ THESE TERMS AND CONDITIONS OF USE CAREFULLY. THESE TERMS AND CONDITIONS MAY HAVE CHANGED SINCE YOUR LAST VISIT TO THIS WIKI. BY USING THIS WIKI, YOU INDICATE YOUR ACCEPTANCE OF THESE TERMS AND CONDITIONS AND YOUR COMPLIANCE WITH ALL APPLICABLE LAWS AND REGULATIONS INCLUDING ALL EXPORT CONTROL LAWS AND REGULATIONS. IF YOU DO NOT ACCEPT THESE TERMS AND CONDITIONS, THEN DO NOT USE THIS WIKI. 
+</p><p><br />
+Rethink Robotics, Inc. ("Rethink") maintains this wiki as a service to its customers, potential customers, and other interested parties. Rethink may revise these terms at any time by placing new terms on this wiki.  Please visit us frequently to check for revised terms and to browse and download materials and documents contained in this wiki, subject to the terms and conditions set out below.
+</p><p><br />
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Copyright_and_Trademark_Information">Copyright and Trademark Information</span></h2>
+<p>Copyright © 2008-2018 Rethink Robotics, Inc. All rights reserved.  
+</p><p>This wiki is an online open-content collaborative portal hosted by Rethink, and the information which it contains, is the property of Rethink and its affiliates and licensors or of contributors who have contributed material pursuant to these terms and conditions or a previous version of these terms and conditions, and is protected from unauthorized copying and dissemination by United States copyright law, trademark law, international conventions and other intellectual property laws. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Contributions">Contributions</span></h2>
+<p>By uploading, submitting or otherwise making available or contributing to the wiki any software, reference designs, feedback or other materials (“Submitted Material”), you hereby make any Submitted Material that is not software available to all users of this wiki under the Creative Commons Attribution-ShareAlike 3.0 Unported License and you hereby make any Submitted Material that is software available to all users of this wiki under the BSD 2-Clause license found at www.opensource.org.  You represent and warrant that you have sufficient rights in those materials or information to grant these rights and licenses. You agree that you will not unilaterally revoke or seek invalidation of any license that you have granted under these terms and conditions, even if you terminate use of this wiki.  You also agree that Rethink and users of this wiki are free to use any ideas, concepts, know-how or techniques that are embodied in the Submitted Material.
+</p><p><br />
+<b>Further, you hereby give permission to Rethink to release your name or otherwise publicize the fact that you submitted materials or other information to us, and Rethink may do so without the need of further notice to you.</b>
+</p><p><b>Notwithstanding any other terms in these terms and conditions, Rethink may remove any posting or upload you make at Rethink's sole discretion.</b>  
+</p><p><br />
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Conduct">Conduct</span></h2>
+<p>You may not use the wiki to communicate in any manner any unlawful or inappropriate information or materials, including without limitation anything that is threatening, libelous, defamatory, obscene, inflammatory, pornographic or profane. Rethink may investigate complaints or violations of these terms and conditions and, notwithstanding any other terms or policies, it may take any action it deems appropriate including, without limitation, disclosing any information to enforcement agencies or others. In addition, Rethink reserves the right to pursue all remedies available for such violations, and may revoke access to the wiki at any time.
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Use_of_Wiki_and_Its_Content">Use of Wiki and Its Content</span></h2>
+<p>There may be delays, omissions, or inaccuracies in information contained in this wiki. The information on this wiki is provided with the understanding that Rethink and various contributors providing such information do not constitute the rendering of legal, accounting, tax, career or other professional advice or services. As such, information on this wiki should not be relied upon or used as a substitute for consultation with professional advisors. 
+</p><p>Rethink may alter, suspend, or discontinue this wiki at any time for any reason, without notice or cost. The wiki may become unavailable due to maintenance or malfunction of computer equipment or other reasons.
+</p><p>By using this wiki, you agree to indemnify, hold harmless and defend Rethink from any claims, damages, losses, liabilities, and all costs and expenses of defense, including but not limited to, attorneys' fees, resulting directly or indirectly from a claim by a third party that is based on your use of this wiki in violation of these terms.
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Confidential_Information_and_Accuracy_of_Content">Confidential Information and Accuracy of Content</span></h2>
+<p>Information that you submit to this wiki is publicly posted and no information or material submitted to this wiki will be deemed to be confidential.
+</p><p>The information on this wiki may contain technical inaccuracies or typographical errors. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="No_Warranties">No Warranties</span></h2>
+<p>INFORMATION AND DOCUMENTS, INCLUDING SUBMITTED MATERIALS, PROVIDED ON THIS WIKI ARE PROVIDED "AS IS." SPECIFICALLY, BUT WITHOUT LIMITATION, RETHINK DOES NOT WARRANT THAT: (i) THE INFORMATION ON THIS  WIKI IS CORRECT, ACCURATE, RELIABLE OR COMPLETE; (ii) THE FUNCTIONS CONTAINED ON THIS  WIKI WILL BE UNINTERRUPTED OR ERROR-FREE; (iii) DEFECTS WILL BE CORRECTED, OR (iv) THIS  WIKI OR THE SERVER(S) THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. 
+</p><p>It is the user's responsibility to ascertain whether any information downloaded from this wiki is free of viruses, worms, trojan horses, or other items of a potentially destructive nature. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Compliance_with_DMCA">Compliance with DMCA</span></h2>
+<p>It is critical that the Submitted Material can be re-used by other users without fear of liability and that it is not infringing the proprietary rights of others. Rethink will respond to notices of alleged infringement that comply with the formalities of the Digital Millennium Copyright Act (DMCA). 
+</p><p>If you believe any materials accessible on or from this wiki infringe your copyright, you may request removal of those materials (or access thereto) from this wiki by contacting Rethink’s copyright agent (identified below) and providing the following information: 
+</p>
+<ol><li>Identification of the copyrighted work that you believe to be infringed. Please describe the work, and where possible include a copy or the location (e.g., URL) of an authorized version of the work.</li>
+<li>Identification of the material that you believe to be infringing and its location. Please describe the material, and provide us with its URL or any other pertinent information that will allow us to locate the material.</li>
+<li>Your name, address, telephone number and (if available) e-mail address.</li>
+<li>A statement that you have a good faith belief that the complained of use of the materials is not authorized by the copyright owner, its agent, or the law.</li>
+<li>A statement that the information that you have supplied is accurate, and indicating that "under penalty of perjury," you are the copyright owner or are authorized to act on the copyright owner’s behalf.</li>
+<li>A signature or the electronic equivalent from the copyright holder or authorized representative.</li></ol>
+<p><br />
+Rethink’s agent for copyright issues relating to this web site is as follows:
+</p><p><br />
+Steven Daignault
+</p><p>Rethink Robotics, Inc.
+</p><p>27-43 Wormwood Street, Suite 300
+</p><p>Boston, MA 02210
+</p><p>Tel – 617-600-0491
+</p><p>Fax – 617-812-0448
+</p><p>sdaignault@rethinkrobotics.com
+</p><p><br />
+</p><p>In an effort to protect the rights of copyright owners, Rethink maintains a policy for the termination, in appropriate circumstances, of subscribers and account holders of this web site who are repeat infringers. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Limitation_of_Liability">Limitation of Liability</span></h2>
+<p>UNDER NO CIRCUMSTANCES SHALL RETHINK BE LIABLE FOR ANY INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, MULTIPLE OR OTHER INDIRECT DAMAGES THAT RESULT FROM THE USE OF, OR THE INABILITY TO USE, THIS  WIKI OR THE INFORMATION CONTAINED ON THIS  WIKI, EVEN IF RETHINK HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL RETHINK'S TOTAL LIABILITY TO YOU FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION RESULTING FROM YOUR USE OF THIS WIKI, WHETHER IN CONTRACT, TORT (INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE) OR OTHERWISE, EXCEED TEN DOLLARS ($10). 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Links_to_Third-Party_Web_Sites">Links to Third-Party Web Sites</span></h2>
+<p>This wiki may contain links to non-Rethink web sites. These links are provided to you as a convenience, and Rethink is not responsible for the content of any linked web site. Any outside web site accessed from this wiki is independent from Rethink, and Rethink has no control over the content of that web site. In addition, a link to any non-Rethink web site does not imply that Rethink endorses or accepts any responsibility for the content or use of such a web site. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="No_Implied_Endorsements">No Implied Endorsements</span></h2>
+<p>In no event shall any reference to any third party or third party product or service be construed as an approval or endorsement by Rethink of that third party or of any product or service provided by a third party. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Jurisdictional_Issues">Jurisdictional Issues</span></h2>
+<p>Rethink makes no representation that information on this wiki is appropriate or available for use outside the United States. Those who choose to access this wiki from outside the United States do so on their own initiative and are responsible for compliance with local laws, if and to the extent local laws are applicable.
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Enforcement_of_Terms_and_Conditions">Enforcement of Terms and Conditions</span></h2>
+<p>These terms and conditions are governed and interpreted pursuant to the laws of the Commonwealth of Massachusetts, United States of America, notwithstanding any principles of conflicts of law. 
+</p><p>All disputes arising out of or relating to these Terms and Conditions shall be finally resolved by arbitration conducted in the English language in Boston, Massachusetts, U.S.A. under the commercial arbitration rules of the American Arbitration Association. The parties shall appoint as sole arbitrator a retired judge who presided in the Commonwealth of Massachusetts. The parties shall bear equally the cost of the arbitration (except that the prevailing party shall be entitled to an award of reasonable attorneys' fees incurred in connection with the arbitration in such an amount as may be determined by the arbitrator). All decisions of the arbitrator shall be final and binding on both parties and enforceable in any court of competent jurisdiction. Notwithstanding this, application may be made to any court for a judicial acceptance of the award or order of enforcement. Notwithstanding the foregoing, Rethink shall be entitled to seek injunctive relief, security, or other equitable remedies from the United States District Court for the District of Massachusetts or any other court of competent jurisdiction. 
+</p><p>If any part of these terms is unlawful, void, or unenforceable, that part will be deemed severable and will not affect the validity and enforceability of the remaining provisions. Rethink may, at its sole discretion and without notice, revise these terms at any time by updating this posting. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Entire_Agreement">Entire Agreement</span></h2>
+<p>This is the entire Agreement between the parties relating to the subject matter herein and shall not be modified except in writing signed by both parties or by a new posting by Rethink, as described above. 
+For Additional Information 
+If you have any questions about the rights and restrictions above, please contact: support@rethinkrobotics.com
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815155117
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.013 seconds
+Real time usage: 0.014 seconds
+Preprocessor visited node count: 77/1000000
+Preprocessor generated node count: 130/1000000
+Post‐expand include size: 37/2097152 bytes
+Template argument size: 1/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.591      1 Template:TOClimit
+100.00%    0.591      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:133-0!canonical and timestamp 20190815155117 and revision id 1467
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467">http://sdk.rethinkrobotics.com/intera/a/index.php?title=Intera_SDK:General_disclaimer&amp;oldid=1467</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.013","walltime":"0.014","ppvisitednodes":{"value":77,"limit":1000000},"ppgeneratednodes":{"value":130,"limit":1000000},"postexpandincludesize":{"value":37,"limit":2097152},"templateargumentsize":{"value":1,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.591      1 Template:TOClimit","100.00%    0.591      1 -total"]},"cachereport":{"timestamp":"20190815155117","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":135});});</script></body></html>

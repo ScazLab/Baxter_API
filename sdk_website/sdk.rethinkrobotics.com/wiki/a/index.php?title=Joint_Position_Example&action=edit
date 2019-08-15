@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Joint Position Example - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Joint_Position_Example","wgTitle":"Joint Position Example","wgCurRevisionId":3793,"wgRevisionId":0,"wgArticleId":342,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Joint_Position_Example","wgRelevantArticleId":342,"wgRequestId":"33fb7e672abc1baf8a0e556e","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Joint_Position_Example rootpage-Joint_Position_Example skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Joint+Position+Example&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Joint Position Example</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Joint_Position_Example&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Joint_Position_Example&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Joint_Position_Example&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Joint_Position_Example" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Joint_Position_Example" title="Joint Position Example">Joint Position Example</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Joint_Position_Example&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Joint_Position_Example&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">{{Template:Parent header|parent=Example Programs}}
+== Summary ==
+The Joint Position Control Examples demonstrate how to use position control to move and sense the arm based on joint angles.  Examples include keyboard or joystick based user control of arm angles, along with complementary example programs to record and playback joint positions.
+
+== Code Walkthrough ==
+[[Joint Position Joystick - Code Walkthrough]], [[Joint Position Recorder - Code Walkthrough]], [[Joint Position File Playback - Code Walkthrough]]
+
+== Overview ==
+The joint_position example allows control of Baxter's arm in joint position mode. Either the keyboard or a joystick can be used as a controller. Joint names are labeled below.
+
+[[File:joint_description.png|width=340px|height=386px]]
+
+'''''Note:''' For control of Head Joints, see the [[Head Movement Example|Head Wobbler Example]].''
+&lt;br />&lt;br />
+
+== Keyboard Control ==
+Start the example joint_position program using the keyboard to control Baxter:
+    $ rosrun baxter_examples joint_position_keyboard.py
+
+== Joystick Control ==
+To run the example joint_position program using a joystick game controller to control the joints:
+
+First ensure that joy drivers are installed. 
+
+    $ rospack find joy
+
+If it returns an error.
+
+    [rospack] Error: stack/package joy not found
+
+then run:
+
+    $ sudo apt-get install ros-indigo-joystick-drivers
+
+Run the above &lt;code>rospack&lt;/code> command again to ensure that the drivers are successfully installed. If it again returns an error &lt;redirect to troubleshooting section that shows to source the bash script>
+
+To run the example:
+    $ roslaunch baxter_examples joint_position_joystick.launch joystick:=&lt;joystick_type>  
+
+Where &lt;code>&lt;joystick_type>&lt;/code> is 'xbox', 'logitech', or 'ps3'.  
+''(If using a ps3, make sure you run the node from the ROS ps3joy package in a separate sudo terminal.  See instructions here: [http://www.ros.org/wiki/ps3joy/Tutorials/PairingJoystickAndBluetoothDongle ps3joy] )''
+
+=== Joystick Button Mappings ===
+'''NOTE:''' Don't forget to calibrate each gripper before using gripper open/close. 
+
+
+
+[[File:Joystick.jpg]]
+{| class="wikitable"
+|-
+! scope="col"|Buttons
+! scope="col"|Action
+! scope="col"|Buttons
+! scope="col"|Action
+|-
+| Function 1 or 2 ''(e.g. Select/Select)'' || Help || ''&lt;Any Keyboard key>'' || Quit
+|-
+| Left Button (X)     || right: gripper calibrate      || Right Button (B)   || left: gripper calibrate
+|-
+| Top Button (Y)    ||           || Bottom Button (A)  || 
+|-
+| Left Trigger ''[PRESS]''    || right: gripper close  || Right Trigger ''[PRESS]''    || left: gripper close
+|-
+| Left Trigger ''[RELEASE]''  || right: gripper open   || Right Trigger ''[RELEASE]''  || left: gripper open
+|-
+| Left Bumper               || right: cycle &lt;code>&lt;current joints> +1&lt;/code>   || Right Bumper  || left: cycle &lt;code>&lt;current joints> +1&lt;/code>
+|}
+
+{| class="wikitable"
+|-
+! scope="col"|Stick Axes
+! scope="col"|Action
+|-
+| Left Stick Horizontal    || right:  increase/decrease &lt;code>&lt;current joint 1>&lt;/code> (s0)
+|-
+| Left Stick Vertical    || right:  increase/decrease &lt;code>&lt;current joint 2>&lt;/code> (s1)
+|-
+| Right Stick Horizontal   || left:  increase/decrease &lt;code>&lt;current joint 1>&lt;/code> (s0)
+|-
+| Right Stick Vertical   || left:  increase/decrease &lt;code>&lt;current joint 2>&lt;/code> (s1)
+|}
+
+'''NOTE:''' The 'joystick left &lt;-> robot right' mappings are not typos; they assume the user is in front of the robot when using the joystick.
+Press any keyboard key to quit.  
+
+'''NOTE:'''  The left and right bumper buttons will cycle through the joints that are controlled with the left and right stick (&lt;code>&lt;current joint 1>&lt;/code> and &lt;code>&lt;current joint 2>&lt;/code>).  The order the joints are cycled through is S0-S1-E0-E1-W0-W1-W2.
+
+=== Alternative Manual Start ===
+Alternatively, you can run the joint_position '''example''' and the '''joy_node''' (joystick driver) independently in their own shells:
+
+1. Initialize an environment and run the &lt;code>joy_node&lt;/code>:
+    $ cd ~/ros_ws
+    $ ./baxter.sh
+    $ rosrun joy joy_node
+
+2. From ''another shell'', repeat the initialization and run the example program:
+    = repeat lines 1-2 above =
+    $ rosrun baxter_examples joint_position_joystick.py -j xbox
+
+For the joystick examples to work, the joy_node driver must be running at the same time as the example.  Using any of the other one-line launch commands to start the joystick examples is really just using a short-cut to start two programs at once.
+
+== Recording Joint Positions ==
+To start recording the joint positions at any time use:
+    $ rosrun baxter_examples joint_recorder.py -f &lt;filename>
+'''NOTE:''' You can open and close the grippers while recording by using Baxter's cuff buttons:  Oval = Close, Circle = Open
+
+After you have finished recording, stop the joint_position program using &lt;Ctrl-C> or hit one of the function 1 or 2 buttons on the game controller.
+
+== Playback Recordings ==
+To playback the recording use:
+    $ rosrun baxter_examples joint_position_file_playback.py -f &lt;filename>
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="../Template:Parent_header" title="Template:Parent header">Template:Parent header</a> (<a href="index.php?title=Template:Parent_header&amp;action=edit" title="Template:Parent header">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Joint_Position_Example" title="Joint Position Example">Joint Position Example</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Joint_Position_Example">http://sdk.rethinkrobotics.com/wiki/Joint_Position_Example</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":38});});</script></body></html>

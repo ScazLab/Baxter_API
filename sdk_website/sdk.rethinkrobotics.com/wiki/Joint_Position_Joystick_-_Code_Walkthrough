@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Joint Position Joystick - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Joint_Position_Joystick_-_Code_Walkthrough","wgTitle":"Joint Position Joystick - Code Walkthrough","wgCurRevisionId":3281,"wgRevisionId":3281,"wgArticleId":477,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Joint_Position_Joystick_-_Code_Walkthrough","wgRelevantArticleId":477,"wgRequestId":"d8bc08acd320a03535edb8bc","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="a/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Joint_Position_Joystick_-_Code_Walkthrough rootpage-Joint_Position_Joystick_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(a/skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="a/index.php?title=Special:UserLogin&amp;returnto=Joint+Position+Joystick+-+Code+Walkthrough">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Joint Position Joystick - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="Joint_Position_Joystick_-_Code_Walkthrough#">More</a><ul><li id="ca-viewsource"><a href="a/index.php?title=Joint_Position_Joystick_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="a/index.php?title=Joint_Position_Joystick_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="Joint_Position_Joystick_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="Learning">Learning</a></li>
+                <li id="n-Community"><a href="Community">Community</a></li>
+                <li id="n-Support"><a href="Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="Joint_Position_Joystick_-_Code_Walkthrough#column-one">navigation</a>, <a href="Joint_Position_Joystick_-_Code_Walkthrough#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div style="padding:5px; border:1px solid #ffcc00; background:#FFFDDF; margin-bottom:0.2em; Font-size:140%;"><a href="Joint_Position_Example" title="Joint Position Example"><img alt="Back.png" src="a/images/b/b9/Back.png" width="29" height="20" /></a> <a href="Joint_Position_Example" title="Joint Position Example">Joint Position Example</a></div>
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>This example demonstrates the usage of the position controller to move the limbs to various positions via the Joystick interface. The <code>main()</code> function enables the robot and invokes the <code>map_keyboard()</code> function. It is at this function where the Joystick's key presses are mapped to individual joints and the commands are sent to the position controller periodically. Pressing the left or the right bumper button on the joystick shifts the joint being controlled in the corresponding limb to the next one. For instance, if the joint being controlled initially in the left limb is left_so, then pressing the left bumper button would update the currently controlled joint as left_s1. This is performed in the <code>rotate()</code> function.<br />
+<b>Interfaces - </b>
+</p>
+<div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
+<ul><li>Limb.joint_names()</li>
+<li>Limb.joint_angle(&lt;<i>string</i>&gt;)</li>
+<li>Limb.set_joint_positions(&lt;<i>double</i>&gt;)</li></ul>
+</div>
+<h2><span class="mw-headline" id="Code_Walkthrough">Code Walkthrough</span></h2>
+<p>Now, let's break down the code.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">33 </span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="lineno">34 </span>
+<span class="lineno">35 </span><span class="kn">import</span> <span class="nn">rospy</span>
+<span class="lineno">36 </span>
+<span class="lineno">37 </span><span class="kn">import</span> <span class="nn">baxter_interface</span>
+<span class="lineno">38 </span><span class="kn">import</span> <span class="nn">baxter_external_devices</span>
+<span class="lineno">39 </span>
+<span class="lineno">40 </span><span class="kn">from</span> <span class="nn">baxter_interface</span> <span class="kn">import</span> <span class="n">CHECK_VERSION</span>
+</pre></div>
+<p>This imports the baxter interface for accessing the limb and the gripper class. The <code>baxter_external_devices</code> is imported to use its <code>getch</code> function, that captures the key presses on the joystick. The <code>CHECK_VERSION</code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">43 </span><span class="k">def</span> <span class="nf">rotate</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+<span class="lineno">44 </span>    <span class="sd">&quot;&quot;&quot;</span>
+<span class="lineno">45 </span><span class="sd">    Rotates a list left.</span>
+<span class="lineno">46 </span>
+<span class="lineno">47 </span><span class="sd">    @param l: the list</span>
+<span class="lineno">48 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">49 </span>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+<span class="lineno">50 </span>        <span class="n">v</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="lineno">51 </span>        <span class="n">l</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<span class="lineno">52 </span>        <span class="n">l</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
+</pre></div>
+<p>This moves all the elements in the list to one position to their left. So the element at 0th position moves to the nth position, element at nth position moves to (n-1)th position, and so on.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">55 </span><span class="k">def</span> <span class="nf">set_j</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">limb</span><span class="p">,</span> <span class="n">joints</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">delta</span><span class="p">):</span>
+<span class="lineno">56 </span>    <span class="sd">&quot;&quot;&quot;</span>
+<span class="lineno">57 </span><span class="sd">    Set the selected joint to current pos + delta.</span>
+<span class="lineno">58 </span>
+<span class="lineno">59 </span><span class="sd">    @param cmd: the joint command dictionary</span>
+<span class="lineno">60 </span><span class="sd">    @param limb: the limb to get the pos from</span>
+<span class="lineno">61 </span><span class="sd">    @param joints: a list of joint names</span>
+<span class="lineno">62 </span><span class="sd">    @param index: the index in the list of names</span>
+<span class="lineno">63 </span><span class="sd">    @param delta: delta to update the joint by</span>
+<span class="lineno">64 </span>
+<span class="lineno">65 </span><span class="sd">    joint/index is to make this work in the bindings.</span>
+<span class="lineno">66 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">67 </span>    <span class="n">joint</span> <span class="o">=</span> <span class="n">joints</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+<span class="lineno">68 </span>    <span class="n">cmd</span><span class="p">[</span><span class="n">joint</span><span class="p">]</span> <span class="o">=</span> <span class="n">delta</span> <span class="o">+</span> <span class="n">limb</span><span class="o">.</span><span class="n">joint_angle</span><span class="p">(</span><span class="n">joint</span><span class="p">)</span>
+</pre></div>
+<p><code>joint_angle()</code> method returns the current angle of the corresponding joint. This function builds the dictionary that is to be passed as a joint command. The last line assigns the new position which has an offset of <code>delta</code> from the current position.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">71 </span><span class="k">def</span> <span class="nf">map_joystick</span><span class="p">(</span><span class="n">joystick</span><span class="p">):</span>
+<span class="lineno">72 </span>    <span class="sd">&quot;&quot;&quot;</span>
+<span class="lineno">73 </span><span class="sd">    Maps joystick input to joint position commands.</span>
+<span class="lineno">74 </span>
+<span class="lineno">75 </span><span class="sd">    @param joystick: an instance of a Joystick</span>
+<span class="lineno">76 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">77 </span>    <span class="n">left</span> <span class="o">=</span> <span class="n">baxter_interface</span><span class="o">.</span><span class="n">Limb</span><span class="p">(</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+<span class="lineno">78 </span>    <span class="n">right</span> <span class="o">=</span> <span class="n">baxter_interface</span><span class="o">.</span><span class="n">Limb</span><span class="p">(</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<span class="lineno">79 </span>    <span class="n">grip_left</span> <span class="o">=</span> <span class="n">baxter_interface</span><span class="o">.</span><span class="n">Gripper</span><span class="p">(</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">CHECK_VERSION</span><span class="p">)</span>
+<span class="lineno">80 </span>    <span class="n">grip_right</span> <span class="o">=</span> <span class="n">baxter_interface</span><span class="o">.</span><span class="n">Gripper</span><span class="p">(</span><span class="s1">&#39;right&#39;</span><span class="p">,</span> <span class="n">CHECK_VERSION</span><span class="p">)</span>
+<span class="lineno">81 </span>    <span class="n">lcmd</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="lineno">82 </span>    <span class="n">rcmd</span> <span class="o">=</span> <span class="p">{}</span>
+</pre></div>
+<p>Two instances of the Limb class are created for each of Baxter's limbs. Similarly two instances of the Gripper class  are created for the left and right grippers. The software version is checked for compatibility with the local version. <code>lcmd</code> and <code>rcmd</code> are the two dictionaries which would hold the set of commands from the below bindings to be executed on the left and right limbs respectively.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">85 </span>    <span class="n">lj</span> <span class="o">=</span> <span class="n">left</span><span class="o">.</span><span class="n">joint_names</span><span class="p">()</span>
+<span class="lineno">86 </span>    <span class="n">rj</span> <span class="o">=</span> <span class="n">right</span><span class="o">.</span><span class="n">joint_names</span><span class="p">()</span>
+<span class="lineno">87 </span>
+<span class="lineno">88 </span>    <span class="c1">#abbreviations</span>
+<span class="lineno">89 </span>    <span class="n">jhi</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">joystick</span><span class="o">.</span><span class="n">stick_value</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
+<span class="lineno">90 </span>    <span class="n">jlo</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">joystick</span><span class="o">.</span><span class="n">stick_value</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span>
+<span class="lineno">91 </span>    <span class="n">bdn</span> <span class="o">=</span> <span class="n">joystick</span><span class="o">.</span><span class="n">button_down</span>
+<span class="lineno">92 </span>    <span class="n">bup</span> <span class="o">=</span> <span class="n">joystick</span><span class="o">.</span><span class="n">button_up</span>
+</pre></div>
+<p>The <code>joint_names()</code> method returns a list of joints associated with that limb. The <code>stick_value()</code> method returns the deadbanded, scaled and offset value of the axis. The abbreviations for all these functions are created to be used within the bindings dictionary below.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno"> 94 </span>    <span class="k">def</span> <span class="nf">print_help</span><span class="p">(</span><span class="n">bindings_list</span><span class="p">):</span>
+<span class="lineno"> 95 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Press Ctrl-C to quit.&quot;</span><span class="p">)</span>
+<span class="lineno"> 96 </span>        <span class="k">for</span> <span class="n">bindings</span> <span class="ow">in</span> <span class="n">bindings_list</span><span class="p">:</span>
+<span class="lineno"> 97 </span>            <span class="k">for</span> <span class="p">(</span><span class="n">test</span><span class="p">,</span> <span class="n">_cmd</span><span class="p">,</span> <span class="n">doc</span><span class="p">)</span> <span class="ow">in</span> <span class="n">bindings</span><span class="p">:</span>
+<span class="lineno"> 98 </span>                <span class="k">if</span> <span class="nb">callable</span><span class="p">(</span><span class="n">doc</span><span class="p">):</span>
+<span class="lineno"> 99 </span>                    <span class="n">doc</span> <span class="o">=</span> <span class="n">doc</span><span class="p">()</span>
+<span class="lineno">100 </span>                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">test</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span> <span class="n">doc</span><span class="p">))</span>
+</pre></div>
+<p>The information about the joystick buttons and the corresponding joints are displayed. This information is available in <code>bindings_list</code> as below. The <code>doc</code> refers to the last element of the tuple and it is checked if it is a callable function. So, if there is a lambda function that evaluates and returns a string, then that function is called. Finally, the results are displayed.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">102 </span>    <span class="n">bindings_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="lineno">103 </span>    <span class="n">bindings</span> <span class="o">=</span> <span class="p">(</span>
+<span class="lineno">104 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;rightTrigger&#39;</span><span class="p">]),</span>
+<span class="lineno">105 </span>         <span class="p">(</span><span class="n">grip_left</span><span class="o">.</span><span class="n">close</span><span class="p">,</span>  <span class="p">[]),</span> <span class="s2">&quot;left gripper close&quot;</span><span class="p">),</span>
+<span class="lineno">106 </span>        <span class="p">((</span><span class="n">bup</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;rightTrigger&#39;</span><span class="p">]),</span>
+<span class="lineno">107 </span>         <span class="p">(</span><span class="n">grip_left</span><span class="o">.</span><span class="n">open</span><span class="p">,</span>   <span class="p">[]),</span> <span class="s2">&quot;left gripper open&quot;</span><span class="p">),</span>
+<span class="lineno">108 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftTrigger&#39;</span><span class="p">]),</span>
+<span class="lineno">109 </span>         <span class="p">(</span><span class="n">grip_right</span><span class="o">.</span><span class="n">close</span><span class="p">,</span> <span class="p">[]),</span> <span class="s2">&quot;right gripper close&quot;</span><span class="p">),</span>
+<span class="lineno">110 </span>        <span class="p">((</span><span class="n">bup</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftTrigger&#39;</span><span class="p">]),</span>
+<span class="lineno">111 </span>         <span class="p">(</span><span class="n">grip_right</span><span class="o">.</span><span class="n">open</span><span class="p">,</span>  <span class="p">[]),</span> <span class="s2">&quot;right gripper open&quot;</span><span class="p">),</span>
+<span class="lineno">112 </span>        <span class="p">((</span><span class="n">jlo</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftStickHorz&#39;</span><span class="p">]),</span>
+<span class="lineno">113 </span>         <span class="p">(</span><span class="n">set_j</span><span class="p">,</span> <span class="p">[</span><span class="n">rcmd</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">rj</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>  <span class="mf">0.1</span><span class="p">]),</span> <span class="k">lambda</span><span class="p">:</span> <span class="s2">&quot;right inc &quot;</span> <span class="o">+</span> <span class="n">rj</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
+<span class="lineno">114 </span>        <span class="p">((</span><span class="n">jhi</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftStickHorz&#39;</span><span class="p">]),</span>
+<span class="lineno">115 </span>         <span class="p">(</span><span class="n">set_j</span><span class="p">,</span> <span class="p">[</span><span class="n">rcmd</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">rj</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1</span><span class="p">]),</span> <span class="k">lambda</span><span class="p">:</span> <span class="s2">&quot;right dec &quot;</span> <span class="o">+</span> <span class="n">rj</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
+<span class="lineno">116 </span>        <span class="p">((</span><span class="n">jlo</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;rightStickHorz&#39;</span><span class="p">]),</span>
+<span class="lineno">117 </span>         <span class="p">(</span><span class="n">set_j</span><span class="p">,</span> <span class="p">[</span><span class="n">lcmd</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span>  <span class="n">lj</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>  <span class="mf">0.1</span><span class="p">]),</span> <span class="k">lambda</span><span class="p">:</span> <span class="s2">&quot;left inc &quot;</span> <span class="o">+</span> <span class="n">lj</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
+<span class="lineno">118 </span>        <span class="p">((</span><span class="n">jhi</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;rightStickHorz&#39;</span><span class="p">]),</span>
+<span class="lineno">119 </span>         <span class="p">(</span><span class="n">set_j</span><span class="p">,</span> <span class="p">[</span><span class="n">lcmd</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span>  <span class="n">lj</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1</span><span class="p">]),</span> <span class="k">lambda</span><span class="p">:</span> <span class="s2">&quot;left dec &quot;</span> <span class="o">+</span> <span class="n">lj</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
+<span class="lineno">120 </span>        <span class="p">((</span><span class="n">jlo</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftStickVert&#39;</span><span class="p">]),</span>
+<span class="lineno">121 </span>         <span class="p">(</span><span class="n">set_j</span><span class="p">,</span> <span class="p">[</span><span class="n">rcmd</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">rj</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span>  <span class="mf">0.1</span><span class="p">]),</span> <span class="k">lambda</span><span class="p">:</span> <span class="s2">&quot;right inc &quot;</span> <span class="o">+</span> <span class="n">rj</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+<span class="lineno">122 </span>        <span class="p">((</span><span class="n">jhi</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftStickVert&#39;</span><span class="p">]),</span>
+<span class="lineno">123 </span>         <span class="p">(</span><span class="n">set_j</span><span class="p">,</span> <span class="p">[</span><span class="n">rcmd</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">rj</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1</span><span class="p">]),</span> <span class="k">lambda</span><span class="p">:</span> <span class="s2">&quot;right dec &quot;</span> <span class="o">+</span> <span class="n">rj</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+<span class="lineno">124 </span>        <span class="p">((</span><span class="n">jlo</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;rightStickVert&#39;</span><span class="p">]),</span>
+<span class="lineno">125 </span>         <span class="p">(</span><span class="n">set_j</span><span class="p">,</span> <span class="p">[</span><span class="n">lcmd</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span>  <span class="n">lj</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span>  <span class="mf">0.1</span><span class="p">]),</span> <span class="k">lambda</span><span class="p">:</span> <span class="s2">&quot;left inc &quot;</span> <span class="o">+</span> <span class="n">lj</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+<span class="lineno">126 </span>        <span class="p">((</span><span class="n">jhi</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;rightStickVert&#39;</span><span class="p">]),</span>
+<span class="lineno">127 </span>         <span class="p">(</span><span class="n">set_j</span><span class="p">,</span> <span class="p">[</span><span class="n">lcmd</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span>  <span class="n">lj</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1</span><span class="p">]),</span> <span class="k">lambda</span><span class="p">:</span> <span class="s2">&quot;left dec &quot;</span> <span class="o">+</span> <span class="n">lj</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+<span class="lineno">128 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;rightBumper&#39;</span><span class="p">]),</span>
+<span class="lineno">129 </span>         <span class="p">(</span><span class="n">rotate</span><span class="p">,</span> <span class="p">[</span><span class="n">lj</span><span class="p">]),</span> <span class="s2">&quot;left: cycle joint&quot;</span><span class="p">),</span>
+<span class="lineno">130 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;leftBumper&#39;</span><span class="p">]),</span>
+<span class="lineno">131 </span>         <span class="p">(</span><span class="n">rotate</span><span class="p">,</span> <span class="p">[</span><span class="n">rj</span><span class="p">]),</span> <span class="s2">&quot;right: cycle joint&quot;</span><span class="p">),</span>
+<span class="lineno">132 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;btnRight&#39;</span><span class="p">]),</span>
+<span class="lineno">133 </span>         <span class="p">(</span><span class="n">grip_left</span><span class="o">.</span><span class="n">calibrate</span><span class="p">,</span> <span class="p">[]),</span> <span class="s2">&quot;left calibrate&quot;</span><span class="p">),</span>
+<span class="lineno">134 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;btnLeft&#39;</span><span class="p">]),</span>
+<span class="lineno">135 </span>         <span class="p">(</span><span class="n">grip_right</span><span class="o">.</span><span class="n">calibrate</span><span class="p">,</span> <span class="p">[]),</span> <span class="s2">&quot;right calibrate&quot;</span><span class="p">),</span>
+<span class="lineno">136 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;function1&#39;</span><span class="p">]),</span>
+<span class="lineno">137 </span>         <span class="p">(</span><span class="n">print_help</span><span class="p">,</span> <span class="p">[</span><span class="n">bindings_list</span><span class="p">]),</span> <span class="s2">&quot;help&quot;</span><span class="p">),</span>
+<span class="lineno">138 </span>        <span class="p">((</span><span class="n">bdn</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;function2&#39;</span><span class="p">]),</span>
+<span class="lineno">139 </span>         <span class="p">(</span><span class="n">print_help</span><span class="p">,</span> <span class="p">[</span><span class="n">bindings_list</span><span class="p">]),</span> <span class="s2">&quot;help&quot;</span><span class="p">),</span>
+<span class="lineno">140 </span>        <span class="p">)</span>
+<span class="lineno">141 </span>    <span class="n">bindings_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bindings</span><span class="p">)</span>
+</pre></div>
+<p>The first element of every tuple refers to the command that has to be executed. As indicated above <code>set_j</code>, <code>bdn</code>, <code>bup</code>, <code>jhi</code> and <code>jlo</code> refers to the function and their acronyms. The second tuple has a list that holds the list of arguments to be passed along with that function. The last element holds a string or a function that evaluates and forms a string to detail the joint under consideration.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">143 </span>    <span class="n">rate</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Rate</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="lineno">144 </span>    <span class="n">print_help</span><span class="p">(</span><span class="n">bindings_list</span><span class="p">)</span>
+<span class="lineno">145 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Press Ctrl-C to stop. &quot;</span><span class="p">)</span>
+<span class="lineno">146 </span>    <span class="k">while</span> <span class="ow">not</span> <span class="n">rospy</span><span class="o">.</span><span class="n">is_shutdown</span><span class="p">():</span>
+<span class="lineno">147 </span>        <span class="k">for</span> <span class="p">(</span><span class="n">test</span><span class="p">,</span> <span class="n">cmd</span><span class="p">,</span> <span class="n">doc</span><span class="p">)</span> <span class="ow">in</span> <span class="n">bindings</span><span class="p">:</span>
+<span class="lineno">148 </span>            <span class="k">if</span> <span class="n">test</span><span class="p">[</span><span class="mi">0</span><span class="p">](</span><span class="o">*</span><span class="n">test</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+<span class="lineno">149 </span>                <span class="n">cmd</span><span class="p">[</span><span class="mi">0</span><span class="p">](</span><span class="o">*</span><span class="n">cmd</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="lineno">150 </span>                <span class="k">if</span> <span class="nb">callable</span><span class="p">(</span><span class="n">doc</span><span class="p">):</span>
+<span class="lineno">151 </span>                    <span class="k">print</span><span class="p">(</span><span class="n">doc</span><span class="p">())</span>
+<span class="lineno">152 </span>                <span class="k">else</span><span class="p">:</span>
+<span class="lineno">153 </span>                    <span class="k">print</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span>
+</pre></div>
+<p>The <code>test</code> tuple holds the function that needs to be called for a particular value to be tested. For instance, the first tuple holds the abbreviation <code>bdn</code> and the parameter <code>rightTrigger</code> that is passed along. This test function checks whether the joystick's <code>button_down</code> is pressed. If this is true then the <code>cmd</code>, that refers to the second tuple <code>(grip_left.close,[])</code> is parsed as above. For the first binding, the expression <code>cmd[0](*cmd[1])</code> returns the function call <code>grip_left.close([])</code>. The next line checks if the last tuple is a function (lambda) or not (string). Since the joints being controlled are updated dynamically, the lambda function is used to retrieve the current joints <code>rj[0]</code>, <code>lj[0]</code>, <code>rj[1]</code> and <code>lj[1]</code>.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">154 </span>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lcmd</span><span class="p">):</span>
+<span class="lineno">155 </span>            <span class="n">left</span><span class="o">.</span><span class="n">set_joint_positions</span><span class="p">(</span><span class="n">lcmd</span><span class="p">)</span>
+<span class="lineno">156 </span>            <span class="n">lcmd</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="lineno">157 </span>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">rcmd</span><span class="p">):</span>
+<span class="lineno">158 </span>            <span class="n">right</span><span class="o">.</span><span class="n">set_joint_positions</span><span class="p">(</span><span class="n">rcmd</span><span class="p">)</span>
+<span class="lineno">159 </span>            <span class="n">rcmd</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="lineno">160 </span>        <span class="n">rate</span><span class="o">.</span><span class="n">sleep</span><span class="p">()</span>
+<span class="lineno">161 </span>    <span class="k">return</span> <span class="bp">False</span>
+</pre></div>
+<p>The dictionaries <code>lcmd</code> and <code>rcmd</code> hold the joint commands for the left and right limbs. These dictionaries get populated when the <code>set_j</code> method is called by the previous section of code.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">164 </span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="lineno">165 </span>    <span class="sd">&quot;&quot;&quot;RSDK Joint Position Example: Joystick Control</span>
+<span class="lineno">166 </span>
+<span class="lineno">167 </span><span class="sd">    Use a game controller to control the angular joint positions</span>
+<span class="lineno">168 </span><span class="sd">    of Baxter&#39;s arms.</span>
+<span class="lineno">169 </span>
+<span class="lineno">170 </span><span class="sd">    Attach a game controller to your dev machine and run this</span>
+<span class="lineno">171 </span><span class="sd">    example along with the ROS joy_node to control the position</span>
+<span class="lineno">172 </span><span class="sd">    of each joint in Baxter&#39;s arms using the joysticks. Be sure to</span>
+<span class="lineno">173 </span><span class="sd">    provide your *joystick* type to setup appropriate key mappings.</span>
+<span class="lineno">174 </span>
+<span class="lineno">175 </span><span class="sd">    Each stick axis maps to a joint angle; which joints are currently</span>
+<span class="lineno">176 </span><span class="sd">    controlled can be incremented by using the mapped increment buttons.</span>
+<span class="lineno">177 </span><span class="sd">    Ex:</span>
+<span class="lineno">178 </span><span class="sd">      (x,y -&gt; e0,e1) &gt;&gt;increment&gt;&gt; (x,y -&gt; e1,e2)</span>
+<span class="lineno">179 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">180 </span>    <span class="n">epilog</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="lineno">181 </span><span class="s2">See help inside the example with the &quot;Start&quot; button for controller</span>
+<span class="lineno">182 </span><span class="s2">key bindings.</span>
+<span class="lineno">183 </span><span class="s2">    &quot;&quot;&quot;</span>
+<span class="lineno">184 </span>    <span class="n">arg_fmt</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">RawDescriptionHelpFormatter</span>
+<span class="lineno">185 </span>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">formatter_class</span><span class="o">=</span><span class="n">arg_fmt</span><span class="p">,</span>
+<span class="lineno">186 </span>                                     <span class="n">description</span><span class="o">=</span><span class="n">main</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">,</span>
+<span class="lineno">187 </span>                                     <span class="n">epilog</span><span class="o">=</span><span class="n">epilog</span><span class="p">)</span>
+<span class="lineno">188 </span>    <span class="n">required</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">add_argument_group</span><span class="p">(</span><span class="s1">&#39;required arguments&#39;</span><span class="p">)</span>
+<span class="lineno">189 </span>    <span class="n">required</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+<span class="lineno">190 </span>        <span class="s1">&#39;-j&#39;</span><span class="p">,</span> <span class="s1">&#39;--joystick&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+<span class="lineno">191 </span>        <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;xbox&#39;</span><span class="p">,</span> <span class="s1">&#39;logitech&#39;</span><span class="p">,</span> <span class="s1">&#39;ps3&#39;</span><span class="p">],</span>
+<span class="lineno">192 </span>        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;specify the type of joystick to use&#39;</span>
+<span class="lineno">193 </span>    <span class="p">)</span>
+<span class="lineno">194 </span>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">myargv</span><span class="p">()[</span><span class="mi">1</span><span class="p">:])</span>
+<span class="lineno">195 </span>
+<span class="lineno">196 </span>    <span class="n">joystick</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="lineno">197 </span>    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">joystick</span> <span class="o">==</span> <span class="s1">&#39;xbox&#39;</span><span class="p">:</span>
+<span class="lineno">198 </span>        <span class="n">joystick</span> <span class="o">=</span> <span class="n">baxter_external_devices</span><span class="o">.</span><span class="n">joystick</span><span class="o">.</span><span class="n">XboxController</span><span class="p">()</span>
+<span class="lineno">199 </span>    <span class="k">elif</span> <span class="n">args</span><span class="o">.</span><span class="n">joystick</span> <span class="o">==</span> <span class="s1">&#39;logitech&#39;</span><span class="p">:</span>
+<span class="lineno">200 </span>        <span class="n">joystick</span> <span class="o">=</span> <span class="n">baxter_external_devices</span><span class="o">.</span><span class="n">joystick</span><span class="o">.</span><span class="n">LogitechController</span><span class="p">()</span>
+<span class="lineno">201 </span>    <span class="k">elif</span> <span class="n">args</span><span class="o">.</span><span class="n">joystick</span> <span class="o">==</span> <span class="s1">&#39;ps3&#39;</span><span class="p">:</span>
+<span class="lineno">202 </span>        <span class="n">joystick</span> <span class="o">=</span> <span class="n">baxter_external_devices</span><span class="o">.</span><span class="n">joystick</span><span class="o">.</span><span class="n">PS3Controller</span><span class="p">()</span>
+<span class="lineno">203 </span>    <span class="k">else</span><span class="p">:</span>
+<span class="lineno">204 </span>        <span class="n">parser</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Unsupported joystick type &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">joystick</span><span class="p">))</span>
+</pre></div>
+<p>The type of joystick input is captured as entered by the user and an instance of the corresponding interface is created.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">206 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Initializing node... &quot;</span><span class="p">)</span>
+<span class="lineno">207 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s2">&quot;rsdk_joint_position_joystick&quot;</span><span class="p">)</span>
+<span class="lineno">208 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Getting robot state... &quot;</span><span class="p">)</span>
+<span class="lineno">209 </span>    <span class="n">rs</span> <span class="o">=</span> <span class="n">baxter_interface</span><span class="o">.</span><span class="n">RobotEnable</span><span class="p">(</span><span class="n">CHECK_VERSION</span><span class="p">)</span>
+<span class="lineno">210 </span>    <span class="n">init_state</span> <span class="o">=</span> <span class="n">rs</span><span class="o">.</span><span class="n">state</span><span class="p">()</span><span class="o">.</span><span class="n">enabled</span>
+<span class="lineno">211 </span>
+<span class="lineno">212 </span>    <span class="k">def</span> <span class="nf">clean_shutdown</span><span class="p">():</span>
+<span class="lineno">213 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Exiting example.&quot;</span><span class="p">)</span>
+<span class="lineno">214 </span>        <span class="k">if</span> <span class="ow">not</span> <span class="n">init_state</span><span class="p">:</span>
+<span class="lineno">215 </span>            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Disabling robot...&quot;</span><span class="p">)</span>
+<span class="lineno">216 </span>            <span class="n">rs</span><span class="o">.</span><span class="n">disable</span><span class="p">()</span>
+<span class="lineno">217 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">on_shutdown</span><span class="p">(</span><span class="n">clean_shutdown</span><span class="p">)</span>
+<span class="lineno">218 </span>
+<span class="lineno">219 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Enabling robot... &quot;</span><span class="p">)</span>
+<span class="lineno">220 </span>    <span class="n">rs</span><span class="o">.</span><span class="n">enable</span><span class="p">()</span>
+<span class="lineno">221 </span>
+<span class="lineno">222 </span>    <span class="n">map_joystick</span><span class="p">(</span><span class="n">joystick</span><span class="p">)</span>
+<span class="lineno">223 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Done.&quot;</span><span class="p">)</span>
+<span class="lineno">224 </span>
+<span class="lineno">225 </span>
+<span class="lineno">226 </span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="lineno">227 </span>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+<p>The node is initialized and the robot is enabled. The <code>map_joystick()</code> method performs the mapping and execution of the commands as explained above.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815161446
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.073 seconds
+Real time usage: 1.923 seconds
+Preprocessor visited node count: 50/1000000
+Preprocessor generated node count: 270/1000000
+Post‐expand include size: 192/2097152 bytes
+Template argument size: 44/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 36453/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.572      1 Template:Parent_header
+100.00%    0.572      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:477-0!canonical and timestamp 20190815161444 and revision id 3281
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="a/index.php?title=Joint_Position_Joystick_-_Code_Walkthrough&amp;oldid=3281">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Joint_Position_Joystick_-_Code_Walkthrough&amp;oldid=3281</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="a/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.073","walltime":"1.923","ppvisitednodes":{"value":50,"limit":1000000},"ppgeneratednodes":{"value":270,"limit":1000000},"postexpandincludesize":{"value":192,"limit":2097152},"templateargumentsize":{"value":44,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":36453,"limit":5000000},"timingprofile":["100.00%    0.572      1 Template:Parent_header","100.00%    0.572      1 -total"]},"cachereport":{"timestamp":"20190815161446","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":2015});});</script></body></html>

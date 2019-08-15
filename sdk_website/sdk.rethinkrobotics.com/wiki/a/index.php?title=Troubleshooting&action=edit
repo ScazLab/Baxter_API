@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Troubleshooting - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Troubleshooting","wgTitle":"Troubleshooting","wgCurRevisionId":4025,"wgRevisionId":0,"wgArticleId":598,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Troubleshooting","wgRelevantArticleId":598,"wgRequestId":"53363ede9b9bd2eb77db23a6","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["sysop"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Troubleshooting rootpage-Troubleshooting skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Troubleshooting&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Troubleshooting</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Troubleshooting&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Troubleshooting&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Troubleshooting&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Troubleshooting" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Troubleshooting" title="Troubleshooting">Troubleshooting</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Troubleshooting&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Troubleshooting&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">&lt;span style="font-size:120%;">'''The purpose of this section is to provide tools for troubleshooting hardware, software, and networking issues with Baxter.'''&lt;/span>
+
+
+We recommend using the workflow below when troubleshooting an issue - in many cases others have come across the same questions!
+
+
+[[File:Troubleshooting Workflow.png|700px|Support]]
+
+
+In a majority of cases, an issue will fall within one of the three categories listed below.
+
+*Hardware
+*Software
+*Networking
+
+
+To troubleshoot an issue, start by browsing the debugging strategies section below or search the wiki for documentation concerning the problem.
+
+
+==Debugging Strategies==
+'''What to do when something is just not right?  Here are some starter steps you can take when debugging Baxter, or just for when you want to inspect what's going on.'''
+
+&lt;span id="The Basic System Checks">&amp;nbsp;&lt;/span>
+== Start Here! - The Basic System Checks ==
+Often times, an issue that a user is having may simply be from the robot software and/or the SDK software being either out of date or incompatible with each other.  Follow the three steps below to make sure that your systems are compatible with each other.
+
+Is the robot running the same version of software as your SDK workstation?
+* [[Software_Update_-_v1.0.0#II._Setup_and_Check_Version|Checking s/w version]]
+
+Are the robot and workstation running the latest available software release? (Today that would be the 1.0.0 software)
+*[[Software Update - v1.0.0|Instructions on accessing the latest software and updating your robot]].
+
+Is your workstation capable of working well with Baxter? 
+*[[System requirements|Minimum SDK requirements]].
+
+
+== Commonly Reported Issues ==
+*[[Trouble enabling robot]]
+*[[Arms are pulling in Zero-G mode]]
+*[[Calibration and/or Tare is failing]]
+*[[Baxter arms are tucked and untuck arms example is not working]]
+*[[Gripper commands are failing]]
+
+&lt;span id="Understanding the Problem">&amp;nbsp;&lt;/span>
+== Understanding the Problem ==
+As a Research SDK user you are in a more free-form environment than standard Baxter customers, and often will be dealing with hardware, software, and environment configurations all at the same time.  The first step in resolving your problem is determining what type of problem it could be.  As previously mentioned, the majority of issues can be groups into one of the below categories.  In each category we will try to help you determine what group your specific issue falls within and provide you with tools to help resolve.
+
+*Hardware
+*Software
+*Networking
+
+&lt;span id="Hardware">&amp;nbsp;&lt;/span>
+==== Hardware====
+The first step is determining if you are facing a Hardware problem.  Many hardware issues are fairly apparent that something physical is broken - if there's a crack in a screen or a ripped cable, there's little mystery left.  Other issues may be internal or electrical and need a bit of investigation to discover.  
+
+Possible symptoms of a hardware failure:
+*Baxter will not bootup
+*Arms are disabling and falling slowing
+*[[Gripper commands are failing|Electric gripper is stuck in an "open" position]]
+
+Available tools to help you troubleshoot:
+*[[Tools - robot monitor|Robot Monitor]] - ROS package to display robot diagnostics.
+*[[Field Service Menu (FSM)#Tests Menu|Field Service Menu]] - Low level hardware tests that can be run on Baxter.
+*[[FTP Log Files|Export Logs]] - Rethink Robotics Support will require the log files from a customer with a potential hardware failure.
+
+
+If you face a Hardware problem, you can always contact The Rethink Robotics Support team at RSDK.Support@RethinkRobotics.com and start working with them to further diagnose the issue, and possibly schedule a service call.
+
+==== Software Issues ====
+If your problem doesn't seem to be related to a physical component of the robot, then you'll need to figure out if the issue is in the Software - and furthermore, ''which'' Software. The three major players in the software system will be ROS, the Research SDK (both on-robot and on-development machine), and of course, your own code. ROS introspection features and the Topic/Service based communication help out to easily inspect what's going on when debugging your code.  Useful tools include [[rviz]] and [http://www.ros.org/rxbag rxbag (rosbag)].
+
+Possible symptoms of a software failure:
+*Baxter will not boot up
+*Baxter is shutting down
+*Calibration/Tare Failure
+*[[Trouble enabling robot|Unable to enable arms]]
+
+Available tools to help you troubleshoot:
+* [[rviz]]
+* [[Tools - rxconsole|rxconsole]]
+* [http://www.ros.org/rxbag rxbag (rosbag)] - Record, view, and playback ROS topics ([http://www.ros.org/rxbag/Commandline Command-line reference])
+* [http://www.ros.org/rxplot rxplot] - Plot ROS topics data on a simple graph (Numerical and boolean data)
+
+
+If you think you're having a software problem, checkout some of the other tools on the wiki and also the ROS documentation.  If you've found a bug in the software, you can also see if it's in our GitHub tickting system, and if not, please add it! =)
+
+==== Network &amp; Environment Issues ====
+If your problems seem to be dipping into the area of communication issues, there's a good chance that checking into your Network configuration and Environment settings is a very worthwhile step.  ROS and various network setups sometimes take a bit of TLC.  Thankfully there is a great little checklist you can run through over at the [http://www.ros.org/ROS/NetworkSetup ROS wiki] that will help you sort out many of the possible issues!
+
+Possible symptoms of Newtwork issues:
+*[[Networking#Baxter|Cannot ping Baxter]]
+*[[Trouble enabling robot|Cannot enable Baxter]]
+
+Available tools to help you troubleshoot:
+*[[Networking]]
+
+&lt;span id="Still Stuck?">&amp;nbsp;&lt;/span>
+
+== Still Stuck? ==
+
+&lt;span style="font-size:120%;">'''[https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users User Forum]&lt;/span> - The Baxter Research Robot Community Forum, hosted by Google Groups, is a great place to communicate with the Rethink Robotics Support team, as well as other Baxter Researchers.  Post your question, and you'll get an answer, either from other community members, or the folks here at Rethink.
+
+
+&lt;span style="font-size:120%;">'''[mailto:rsdk.support@rethinkrobotics.com Rethink Robotics Support]&lt;/span> - Send a message with specific details about the problem you are experiencing as well as the troubleshooting steps that you have already taken if the wiki and forum have not resolved your issue.
+
+----
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Troubleshooting" title="Troubleshooting">Troubleshooting</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Troubleshooting">http://sdk.rethinkrobotics.com/wiki/Troubleshooting</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":359});});</script></body></html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>IK Service - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"IK_Service_-_Code_Walkthrough","wgTitle":"IK Service - Code Walkthrough","wgCurRevisionId":3271,"wgRevisionId":3271,"wgArticleId":450,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"IK_Service_-_Code_Walkthrough","wgRelevantArticleId":450,"wgRequestId":"f023d6bf17a6b605d37b1309","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-IK_Service_-_Code_Walkthrough rootpage-IK_Service_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=IK+Service+-+Code+Walkthrough&amp;returntoquery=oldid%3D3271">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">IK Service - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=IK_Service_-_Code_Walkthrough&amp;oldid=3271#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=IK_Service_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=IK_Service_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../IK_Service_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 15:14, 29 July 2014 by <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span> <span class="comment">(Protected &quot;<a href="../IK_Service_-_Code_Walkthrough" title="IK Service - Code Walkthrough">IK Service - Code Walkthrough</a>&quot;: Setting Permissions for (almost all) Pages - editable and moveable by all logged in users ([Edit=Allow only autoconfirmed users] (indefinite) [Move=Allow only autoconfirmed users] (indefinite)))</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=IK_Service_-_Code_Walkthrough&amp;diff=prev&amp;oldid=3271" title="IK Service - Code Walkthrough">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=IK_Service_-_Code_Walkthrough&amp;direction=prev&amp;oldid=3271" title="IK Service - Code Walkthrough">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=IK_Service_-_Code_Walkthrough&amp;oldid=3271#column-one">navigation</a>, <a href="index.php?title=IK_Service_-_Code_Walkthrough&amp;oldid=3271#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div style="padding:5px; border:1px solid #ffcc00; background:#FFFDDF; margin-bottom:0.2em; Font-size:140%;"><a href="../IK_Service_Example" title="IK Service Example"><img alt="Back.png" src="images/b/b9/Back.png" width="29" height="20" /></a> <a href="../IK_Service_Example" title="IK Service Example">IK Service Example</a></div>
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>This example demonstrates the usage of the IK service that is available in Baxter. The <code>main()</code> function records the side of the joint on which the IK service is to be called and then invokes the <code>ik_test()</code> function. This is where the rospy node is initialized, default cartesian coordinates are initialized, and the IK service is called.<br />
+<b>Service</b> - "ExternalTools/&lt;<i>side</i>&gt;/PositionKinematicsNode/IKService"<br />
+</p>
+<h2><span class="mw-headline" id="Code_Walkthrough">Code Walkthrough</span></h2>
+<p>Now, let's break down the code
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">33 </span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="lineno">34 </span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="lineno">35 </span>
+<span class="lineno">36 </span><span class="kn">import</span> <span class="nn">rospy</span>
+<span class="lineno">37 </span>
+<span class="lineno">38 </span><span class="kn">from</span> <span class="nn">geometry_msgs.msg</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="lineno">39 </span>    <span class="n">PoseStamped</span><span class="p">,</span>
+<span class="lineno">40 </span>    <span class="n">Pose</span><span class="p">,</span>
+<span class="lineno">41 </span>    <span class="n">Point</span><span class="p">,</span>
+<span class="lineno">42 </span>    <span class="n">Quaternion</span><span class="p">,</span>
+<span class="lineno">43 </span><span class="p">)</span>
+<span class="lineno">44 </span><span class="kn">from</span> <span class="nn">std_msgs.msg</span> <span class="kn">import</span> <span class="n">Header</span>
+<span class="lineno">45 </span>
+<span class="lineno">46 </span><span class="kn">from</span> <span class="nn">baxter_core_msgs.srv</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="lineno">47 </span>    <span class="n">SolvePositionIK</span><span class="p">,</span>
+<span class="lineno">48 </span>    <span class="n">SolvePositionIKRequest</span><span class="p">,</span>
+<span class="lineno">49 </span><span class="p">)</span>
+</pre></div>
+<p>The geometry message types are imported to build the request message for the IK service. The custom request and response message types (<a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/baxter_common/blob/release-1.0.0/baxter_core_msgs/srv/SolvePositionIK.srv">baxter_core_msgs-SolvePositionIK</a>) are imported from the baxter_core_msgs package.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">52 </span><span class="k">def</span> <span class="nf">ik_test</span><span class="p">(</span><span class="n">limb</span><span class="p">):</span>
+<span class="lineno">53 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s2">&quot;rsdk_ik_service_client&quot;</span><span class="p">)</span>
+<span class="lineno">54 </span>    <span class="n">ns</span> <span class="o">=</span> <span class="s2">&quot;ExternalTools/&quot;</span> <span class="o">+</span> <span class="n">limb</span> <span class="o">+</span> <span class="s2">&quot;/PositionKinematicsNode/IKService&quot;</span>
+<span class="lineno">55 </span>    <span class="n">iksvc</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ServiceProxy</span><span class="p">(</span><span class="n">ns</span><span class="p">,</span> <span class="n">SolvePositionIK</span><span class="p">)</span>
+<span class="lineno">56 </span>    <span class="n">ikreq</span> <span class="o">=</span> <span class="n">SolvePositionIKRequest</span><span class="p">()</span>
+<span class="lineno">57 </span>    <span class="n">hdr</span> <span class="o">=</span> <span class="n">Header</span><span class="p">(</span><span class="n">stamp</span><span class="o">=</span><span class="n">rospy</span><span class="o">.</span><span class="n">Time</span><span class="o">.</span><span class="n">now</span><span class="p">(),</span> <span class="n">frame_id</span><span class="o">=</span><span class="s1">&#39;base&#39;</span><span class="p">)</span>
+</pre></div>
+<p>The ros node is initialized. An object for the service call is initialized by passing the service name <code>ns</code> and the Request-Response message type, <code>SolvePositionIK</code>.
+<code>SolvePositionIKRequest</code> is the IK Request message type that is generated at compile time.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">58 </span>    <span class="n">poses</span> <span class="o">=</span> <span class="p">{</span>
+<span class="lineno">59 </span>        <span class="s1">&#39;left&#39;</span><span class="p">:</span> <span class="n">PoseStamped</span><span class="p">(</span>
+<span class="lineno">60 </span>            <span class="n">header</span><span class="o">=</span><span class="n">hdr</span><span class="p">,</span>
+<span class="lineno">61 </span>            <span class="n">pose</span><span class="o">=</span><span class="n">Pose</span><span class="p">(</span>
+<span class="lineno">62 </span>                <span class="n">position</span><span class="o">=</span><span class="n">Point</span><span class="p">(</span>
+<span class="lineno">63 </span>                    <span class="n">x</span><span class="o">=</span><span class="mf">0.657579481614</span><span class="p">,</span>
+<span class="lineno">64 </span>                    <span class="n">y</span><span class="o">=</span><span class="mf">0.851981417433</span><span class="p">,</span>
+<span class="lineno">65 </span>                    <span class="n">z</span><span class="o">=</span><span class="mf">0.0388352386502</span><span class="p">,</span>
+<span class="lineno">66 </span>                <span class="p">),</span>
+<span class="lineno">67 </span>                <span class="n">orientation</span><span class="o">=</span><span class="n">Quaternion</span><span class="p">(</span>
+<span class="lineno">68 </span>                    <span class="n">x</span><span class="o">=-</span><span class="mf">0.366894936773</span><span class="p">,</span>
+<span class="lineno">69 </span>                    <span class="n">y</span><span class="o">=</span><span class="mf">0.885980397775</span><span class="p">,</span>
+<span class="lineno">70 </span>                    <span class="n">z</span><span class="o">=</span><span class="mf">0.108155782462</span><span class="p">,</span>
+<span class="lineno">71 </span>                    <span class="n">w</span><span class="o">=</span><span class="mf">0.262162481772</span><span class="p">,</span>
+<span class="lineno">72 </span>                <span class="p">),</span>
+<span class="lineno">73 </span>            <span class="p">),</span>
+<span class="lineno">74 </span>        <span class="p">),</span>
+<span class="lineno">75 </span>        <span class="s1">&#39;right&#39;</span><span class="p">:</span> <span class="n">PoseStamped</span><span class="p">(</span>
+<span class="lineno">76 </span>            <span class="n">header</span><span class="o">=</span><span class="n">hdr</span><span class="p">,</span>
+<span class="lineno">77 </span>            <span class="n">pose</span><span class="o">=</span><span class="n">Pose</span><span class="p">(</span>
+<span class="lineno">78 </span>                <span class="n">position</span><span class="o">=</span><span class="n">Point</span><span class="p">(</span>
+<span class="lineno">79 </span>                    <span class="n">x</span><span class="o">=</span><span class="mf">0.656982770038</span><span class="p">,</span>
+<span class="lineno">80 </span>                    <span class="n">y</span><span class="o">=-</span><span class="mf">0.852598021641</span><span class="p">,</span>
+<span class="lineno">81 </span>                    <span class="n">z</span><span class="o">=</span><span class="mf">0.0388609422173</span><span class="p">,</span>
+<span class="lineno">82 </span>                <span class="p">),</span>
+<span class="lineno">83 </span>                <span class="n">orientation</span><span class="o">=</span><span class="n">Quaternion</span><span class="p">(</span>
+<span class="lineno">84 </span>                    <span class="n">x</span><span class="o">=</span><span class="mf">0.367048116303</span><span class="p">,</span>
+<span class="lineno">85 </span>                    <span class="n">y</span><span class="o">=</span><span class="mf">0.885911751787</span><span class="p">,</span>
+<span class="lineno">86 </span>                    <span class="n">z</span><span class="o">=-</span><span class="mf">0.108908281936</span><span class="p">,</span>
+<span class="lineno">87 </span>                    <span class="n">w</span><span class="o">=</span><span class="mf">0.261868353356</span><span class="p">,</span>
+<span class="lineno">88 </span>                <span class="p">),</span>
+<span class="lineno">89 </span>            <span class="p">),</span>
+<span class="lineno">90 </span>        <span class="p">),</span>
+<span class="lineno">91 </span>    <span class="p">}</span>
+<span class="lineno">92 </span>
+<span class="lineno">93 </span>    <span class="n">ikreq</span><span class="o">.</span><span class="n">pose_stamp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">poses</span><span class="p">[</span><span class="n">limb</span><span class="p">])</span>
+</pre></div>
+<p>The <code>poses</code> dictionary is populated with hard-coded cartesian coordinates for both the limbs. The last line indicates that the pose of the side of the limb under interest, is copied to the IK request message.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">94 </span>    <span class="k">try</span><span class="p">:</span>
+<span class="lineno">95 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">wait_for_service</span><span class="p">(</span><span class="n">ns</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">)</span>
+<span class="lineno">96 </span>        <span class="n">resp</span> <span class="o">=</span> <span class="n">iksvc</span><span class="p">(</span><span class="n">ikreq</span><span class="p">)</span>
+<span class="lineno">97 </span>    <span class="k">except</span> <span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">ServiceException</span><span class="p">,</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ROSException</span><span class="p">),</span> <span class="n">e</span><span class="p">:</span>
+<span class="lineno">98 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s2">&quot;Service call failed: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">e</span><span class="p">,))</span>
+<span class="lineno">99 </span>        <span class="k">return</span> <span class="mi">1</span>
+</pre></div>
+<p>With a timeout of 5 seconds, the IK service is called along with the IK request message. The resp objects captures the response message which contains the joint positions. It throws an error on timeout.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno"> 94 </span>    <span class="k">if</span> <span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">isValid</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+<span class="lineno"> 95 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;SUCCESS - Valid Joint Solution Found:&quot;</span><span class="p">)</span>
+<span class="lineno"> 96 </span>        <span class="c1"># Format solution into Limb API-compatible dictionary</span>
+<span class="lineno"> 97 </span>        <span class="n">limb_joints</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">joints</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">resp</span><span class="o">.</span><span class="n">joints</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">position</span><span class="p">))</span>
+<span class="lineno"> 98 </span>        <span class="k">print</span> <span class="n">limb_joints</span>
+<span class="lineno"> 99 </span>    <span class="k">else</span><span class="p">:</span>
+<span class="lineno">100 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;INVALID POSE - No Valid Joint Solution Found.&quot;</span><span class="p">)</span>
+<span class="lineno">101 </span>
+<span class="lineno">102 </span>    <span class="k">return</span> <span class="mi">0</span>
+</pre></div>
+<p>The <code>isValid[0]</code> field is a boolean variable that indicates whether a successfull solution for the IK was found or not. The <code>limb_joints</code> is dictionary that holds the joint names and their corresponding position from the response message. This can be passed as a joint command to the position controller to move the arm to the corresponding position.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">111 </span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="lineno">112 </span>    <span class="sd">&quot;&quot;&quot;RSDK Inverse Kinematics Example</span>
+<span class="lineno">113 </span>
+<span class="lineno">114 </span><span class="sd">    A simple example of using the Rethink Inverse Kinematics</span>
+<span class="lineno">115 </span><span class="sd">    Service which returns the joint angles and validity for</span>
+<span class="lineno">116 </span><span class="sd">    a requested Cartesian Pose.</span>
+<span class="lineno">117 </span>
+<span class="lineno">118 </span><span class="sd">    Run this example, passing the *limb* to test, and the</span>
+<span class="lineno">119 </span><span class="sd">    example will call the Service with a sample Cartesian</span>
+<span class="lineno">120 </span><span class="sd">    Pose, pre-defined in the example code, printing the</span>
+<span class="lineno">121 </span><span class="sd">    response of whether a valid joint solution was found,</span>
+<span class="lineno">122 </span><span class="sd">    and if so, the corresponding joint angles.</span>
+<span class="lineno">123 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">124 </span>    <span class="n">arg_fmt</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">RawDescriptionHelpFormatter</span>
+<span class="lineno">125 </span>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">formatter_class</span><span class="o">=</span><span class="n">arg_fmt</span><span class="p">,</span>
+<span class="lineno">126 </span>                                     <span class="n">description</span><span class="o">=</span><span class="n">main</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+<span class="lineno">127 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+<span class="lineno">128 </span>        <span class="s1">&#39;-l&#39;</span><span class="p">,</span> <span class="s1">&#39;--limb&#39;</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">],</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+<span class="lineno">129 </span>        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;the limb to test&quot;</span>
+<span class="lineno">130 </span>    <span class="p">)</span>
+<span class="lineno">131 </span>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">myargv</span><span class="p">()[</span><span class="mi">1</span><span class="p">:])</span>
+</pre></div>
+<p>The main function parses the arguments provided by the user to capture the side of the arm on which the example is to be run.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">133 </span>    <span class="k">return</span> <span class="n">ik_test</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">limb</span><span class="p">)</span>
+<span class="lineno">134 </span>
+<span class="lineno">135 </span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="lineno">136 </span>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</pre></div>
+<p>The <code>ik_test()</code> function is called with the side of the limb as an argument to calculate the IK service as explained above.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815161440
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.042 seconds
+Real time usage: 1.960 seconds
+Preprocessor visited node count: 38/1000000
+Preprocessor generated node count: 190/1000000
+Post‐expand include size: 184/2097152 bytes
+Template argument size: 36/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 15843/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.589      1 Template:Parent_header
+100.00%    0.589      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:450-0!canonical and timestamp 20190815161438 and revision id 3271
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=IK_Service_-_Code_Walkthrough&amp;oldid=3271">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=IK_Service_-_Code_Walkthrough&amp;oldid=3271</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.042","walltime":"1.960","ppvisitednodes":{"value":38,"limit":1000000},"ppgeneratednodes":{"value":190,"limit":1000000},"postexpandincludesize":{"value":184,"limit":2097152},"templateargumentsize":{"value":36,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":15843,"limit":5000000},"timingprofile":["100.00%    0.589      1 Template:Parent_header","100.00%    0.589      1 -total"]},"cachereport":{"timestamp":"20190815161440","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":36});});</script></body></html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Field Service Menu (FSM) - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Field_Service_Menu_(FSM)","wgTitle":"Field Service Menu (FSM)","wgCurRevisionId":1557,"wgRevisionId":1557,"wgArticleId":16,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Field_Service_Menu_(FSM)","wgRelevantArticleId":16,"wgRequestId":"877b9ad598d62ba8fa909262","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Field_Service_Menu_FSM rootpage-Field_Service_Menu_FSM skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=Field+Service+Menu+%28FSM%29&amp;returntoquery=oldid%3D1557">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#">More</a>
+                <ul>
+                <li id="ca-viewsource"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Field_Service_Menu_(FSM)" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">Field Service Menu (FSM)</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                <div class="mw-revision"><div id="mw-revision-info">Revision as of 16:10, 6 March 2018 by <a href="index.php?title=User:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Imcmahon (page does not exist)"><bdi>Imcmahon</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Imcmahon (page does not exist)">talk</a> | <a href="../Special:Contributions/Imcmahon" class="mw-usertoollinks-contribs" title="Special:Contributions/Imcmahon">contribs</a>)</span> <span class="comment">(<a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Quickstart_-_FSM_Activation_.2F_Deactivation">→</a>‎<span dir="auto"><span class="autocomment">Quickstart - FSM Activation / Deactivation</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Field_Service_Menu_(FSM)&amp;diff=prev&amp;oldid=1557" title="Field Service Menu (FSM)">diff</a>) <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Field_Service_Menu_(FSM)&amp;direction=prev&amp;oldid=1557" title="Field Service Menu (FSM)">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="title-block">
+<p><span style="font-size:120%;"><b>The Field Service Menu (FSM) is a pre-boot configuration menu that allows the user to do advanced tasks such as check network interface configuration, change the robot computer's hostname, and run low-level hardware checks.</b></span>
+</p>
+</div>
+<div class="toclimit-2"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Quickstart_-_FSM_Activation_.2F_Deactivation"><span class="tocnumber">2</span> <span class="toctext">Quickstart - FSM Activation / Deactivation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Accessing_the_FSM"><span class="tocnumber">2.1</span> <span class="toctext">Accessing the FSM</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Boot_into_FSM_5...4...3...2..1."><span class="tocnumber">2.1.1</span> <span class="toctext"><b>Boot into FSM 5...4...3...2..1.</b></span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Exiting:_Disabling_the_FSM"><span class="tocnumber">2.1.2</span> <span class="toctext">Exiting: Disabling the FSM</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Menu_Functions"><span class="tocnumber">3</span> <span class="toctext">Menu Functions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Configuration_Menu"><span class="tocnumber">3.1</span> <span class="toctext">Configuration Menu</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Date.2C_Time.2C_Timezone.2C_NTP_Servers"><span class="tocnumber">3.1.1</span> <span class="toctext"><b>Date, Time, Timezone, NTP Servers</b></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Diagnostic_Functions"><span class="tocnumber">4</span> <span class="toctext">Diagnostic Functions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#MFG_Tests"><span class="tocnumber">4.1</span> <span class="toctext">MFG Tests</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Export_Logs_to_USB"><span class="tocnumber">4.2</span> <span class="toctext">Export Logs to USB</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Export_Registration_Data_to_USB"><span class="tocnumber">4.3</span> <span class="toctext">Export Registration Data to USB</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Run_External_Diagnostics"><span class="tocnumber">4.4</span> <span class="toctext">Run External Diagnostics</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Shutdown"><span class="tocnumber">4.5</span> <span class="toctext">Shutdown</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Reboot"><span class="tocnumber">4.6</span> <span class="toctext">Reboot</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557#Serial_numbers"><span class="tocnumber">4.7</span> <span class="toctext">Serial numbers</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="content-block">
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>The primary purpose of the Field Service Menu (FSM) is to give the user access to low-level, computer configuration options on the robot, especially:
+</p>
+<ul><li>Edit Hostname</li>
+<li>Edit Network Configuration
+<ul><li>Set Static IP/DNS</li>
+<li>Set NTP Servers</li>
+<li>Set ROS naming convention</li></ul></li>
+<li>Edit Timezone</li>
+<li>Change Run Mode (Intera v. SDK Mode)</li></ul>
+<p>The FSM also provides the ability to run low-level hardware tests to do light-weight verification of hardware components that sit below the robot application software level.
+</p>
+</div>
+<div class="content-block">
+<h2><span id="Quickstart_-_FSM_Activation_/_Deactivation"></span><span class="mw-headline" id="Quickstart_-_FSM_Activation_.2F_Deactivation">Quickstart - FSM Activation / Deactivation</span></h2>
+<h3><span class="mw-headline" id="Accessing_the_FSM">Accessing the FSM</span></h3>
+<p>The FSM can only be accessed by hitting a specific key combination during robot boot-up:
+</p>
+<ol><li>Turn off Sawyer with the Power button. Wait for complete shutdown (no lights, no noise).</li>
+<li>Plug in a USB keyboard to one of Sawyer's USB ports (on the Controller).</li>
+<li>You will need to hit <code>&lt;Ctrl+F&gt;</code> on the keyboard during the boot-up to trigger the FSM:
+<ul><li>Turn Sawyer back on by hitting the Power button.</li>
+<li>During start up of the robot provide an onscreen counter to user showing the window of time to boot into the FSM. This is when the following Bold Red Text appears in the upper left of the screen:</li></ul></li></ol>
+<h4><span class="mw-headline" id="Boot_into_FSM_5...4...3...2..1."><b>Boot into FSM 5...4...3...2..1.</b></span></h4>
+<ol><li><ul><li>... During this countdown, on your keyboard, start repeatedly hitting the key combination <code>&lt;Ctrl+F&gt;</code>
+<dl><dd><i>(Hit and hold the <code>Ctrl</code> key, press down on the <code>F</code> key, release, press down on the <code>F</code> key again, release both and repeat)</i>.</dd></dl></li></ul></li>
+<li>Repeat this key combination until you see the FSM screen come up:
+<ul><li>If you hit a screen that says "Loading...", you missed your chance.</li></ul></li></ol>
+<p>Use the Up/Down arrow keys to change menu selections, and the Enter key to go into a menu or select an option.
+</p>
+<h4><span class="mw-headline" id="Exiting:_Disabling_the_FSM">Exiting: Disabling the FSM</span></h4>
+<p><b>Important:</b> Once the FSM is activated, you must choose what the next boot sequence will be from the front page of the FSM.
+</p><p>To disable the FSM from reappearing next boot:  
+</p>
+<ol><li>From the front FSM screen, choose Next Boot in: "Intera-SDK" to boot back into the SDK mode.</li></ol>
+<p><b>Important:</b> In version 5.0.4.16 of the Sawyer SDK, the boot into Intera choice will be password protected.  You can only boot into the SDK or the FSM.  
+</p>
+<ol><li>Now, if you press the Reboot button the system will boot into the selected mode.</li></ol>
+<p><br />
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Menu_Functions">Menu Functions</span></h2>
+<p>After the FSM has been activated, the top level of the Field Service Menu provides access to seven sub-menus and shutdown/reboot options.
+</p>
+<h3><span class="mw-headline" id="Configuration_Menu">Configuration Menu</span></h3>
+<p>This menu provides access to Sawyer's hostname, timezone, and network configuration information.  Information here is useful for setting up Sawyer on your <a href="../Networking" title="Networking">Network</a>.  
+</p><p><br />
+</p>
+<ul><li><b>Hostname</b> - Rename your Sawyer (i.e. change robot computer's hostname)
+<dl><dd>Changing the Hostname will also change Sawyer's network identity name.</dd>
+<dd>Upon reboot, Sawyer will then be accessible via the new name followed by 'Hostname.local', rather than by the serial number (default hostname).</dd></dl></li>
+<li><b>IP Type</b> - Change the network addressing method from Dynamic IP to Static IP</li>
+<li><b>ROS Naming Type</b> - Change how the master publishes node locations
+<dl><dd>Options are:</dd></dl>
+<ul><li>ROS_IP</li>
+<li>ROS_HOSTNAME</li>
+<li>ROS_HOSTNAME.local</li></ul>
+<dl><dd>See the <a href="../Networking" title="Networking">Networking</a> page for more information on network configurations.</dd></dl></li></ul>
+<p><i>Tip:</i> Make sure to Save Changes after editing any Configuration options, and then Shutdown or Reboot Sawyer from the FSM main menu to apply the changes.
+</p>
+<h4><span id="Date,_Time,_Timezone,_NTP_Servers"></span><span class="mw-headline" id="Date.2C_Time.2C_Timezone.2C_NTP_Servers"><b>Date, Time, Timezone, NTP Servers</b></span></h4>
+<ul><li><b>Timezone</b> - Set the robot's clock to your local timezone.
+<dl><dd>This will primarily affect the time listed in the log files.</dd></dl></li>
+<li><b><a href="../Time_and_NTP" title="Time and NTP"> NTP Servers</a></b> - Set your pool of NTP servers
+<dl><dd>Configuring this field is essential if Sawyer is not connected to the Internet, and you wish to time-synchronize things like camera sensor data from your workstation to the robot's data.</dd></dl></li></ul>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Diagnostic_Functions">Diagnostic Functions</span></h2>
+<h3><span class="mw-headline" id="MFG_Tests">MFG Tests</span></h3>
+<p>The Tests menu provides a number of low-level hardware tests that can be run to verify the embedded hardware throughout Sawyer.
+</p>
+<ul><li>To run a test, select the test from the menu and follow the on-screen instructions.</li></ul>
+<h3><span class="mw-headline" id="Export_Logs_to_USB">Export Logs to USB</span></h3>
+<ul><li>Exports the current logs to a FAT32-formatted USB connected to the <i>outside USB plug</i> to the Controller.</li></ul>
+<h3><span class="mw-headline" id="Export_Registration_Data_to_USB">Export Registration Data to USB</span></h3>
+<ul><li>Exports the robot registration data to a FAT32 USB connected to the Controller.</li></ul>
+<h3><span class="mw-headline" id="Run_External_Diagnostics">Run External Diagnostics</span></h3>
+<ul><li>Runs Rethink specific external diagnostic tools from a USB.  A customer will be supplied this tests from Rethink if it becomes necessary.</li></ul>
+<h3><span class="mw-headline" id="Shutdown">Shutdown</span></h3>
+<ul><li>Shuts down Sawyer - next boot sequence will be specified through the Next boot in: choice.</li></ul>
+<h3><span class="mw-headline" id="Reboot">Reboot</span></h3>
+<ul><li>Reboots Sawyer - next boot sequence will be specified through the Next boot in: choice.</li></ul>
+<h3><span class="mw-headline" id="Serial_numbers">Serial numbers</span></h3>
+<ul><li>The arm and controller serial numbers can be obtained through the front page of the FSM.</li></ul>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815154853
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.015 seconds
+Real time usage: 0.018 seconds
+Preprocessor visited node count: 78/1000000
+Preprocessor generated node count: 122/1000000
+Post‐expand include size: 37/2097152 bytes
+Template argument size: 1/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.567      1 Template:TOClimit
+100.00%    0.567      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:16-0!canonical and timestamp 20190815154853 and revision id 1557
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557">http://sdk.rethinkrobotics.com/intera/a/index.php?title=Field_Service_Menu_(FSM)&amp;oldid=1557</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.015","walltime":"0.018","ppvisitednodes":{"value":78,"limit":1000000},"ppgeneratednodes":{"value":122,"limit":1000000},"postexpandincludesize":{"value":37,"limit":2097152},"templateargumentsize":{"value":1,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.567      1 Template:TOClimit","100.00%    0.567      1 -total"]},"cachereport":{"timestamp":"20190815154853","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":70});});</script></body></html>

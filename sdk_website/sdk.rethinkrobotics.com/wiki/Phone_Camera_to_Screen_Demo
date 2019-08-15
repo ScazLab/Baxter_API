@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Phone Camera to Screen Demo - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Phone_Camera_to_Screen_Demo","wgTitle":"Phone Camera to Screen Demo","wgCurRevisionId":3304,"wgRevisionId":3304,"wgArticleId":344,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["RobCat"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Phone_Camera_to_Screen_Demo","wgRelevantArticleId":344,"wgRequestId":"cbbdb88453754b37d67852ee","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="a/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Phone_Camera_to_Screen_Demo rootpage-Phone_Camera_to_Screen_Demo skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(a/skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="a/index.php?title=Special:UserLogin&amp;returnto=Phone+Camera+to+Screen+Demo">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Phone Camera to Screen Demo</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="Phone_Camera_to_Screen_Demo#">More</a><ul><li id="ca-viewsource"><a href="a/index.php?title=Phone_Camera_to_Screen_Demo&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="a/index.php?title=Phone_Camera_to_Screen_Demo&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="Phone_Camera_to_Screen_Demo" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="Learning">Learning</a></li>
+                <li id="n-Community"><a href="Community">Community</a></li>
+                <li id="n-Support"><a href="Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="Phone_Camera_to_Screen_Demo#column-one">navigation</a>, <a href="Phone_Camera_to_Screen_Demo#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>This is a pywb Test.
+</p>
+<h2><span id="Publishing_your_Android_webcam_to_Baxter's_screen"></span><span class="mw-headline" id="Publishing_your_Android_webcam_to_Baxter.27s_screen">Publishing your Android webcam to Baxter's screen</span></h2>
+<p>The general idea is to download an app on your phone that grabs your phone's webcam, transforms it into a ROS image message, connects to your ROS master on Baxter, then publishes the compressed image as a ROS topic.  Then you need to grab that compressed image, convert it into a raw_image, and republish it to the screen display topic.
+</p>
+<h2><span class="mw-headline" id="Raw_Steps">Raw Steps</span></h2>
+<ol><li>Install the camera driver on your android.
+<ul><li>Install OpenCV, following the directions here (optional?): <a rel="nofollow" class="external text" href="https://play.google.com/store/apps/details?id=org.opencv.engine&amp;hl=en">OpenCV Manager</a></li>
+<li>Install the app from Google Play: <a rel="nofollow" class="external text" href="https://play.google.com/store/apps/details?id=org.ros.android.android_camera_viewer">android-camera-viewer</a> from JSK Robotics Laboratory</li></ul>
+<dl><dd></dd></dl></li>
+<li>Install the image_transport_plugins on your development machine:
+<dl><dd><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ sudo apt-get install ros-groovy-image-transport-plugins
+</pre></div></dd></dl></li>
+<li>Figure out the ip address of your Baxter (replace &lt;baxter_name&gt; with your <a href="Robot_Hostname" title="Robot Hostname">Robot Hostname</a>).
+<dl><dd><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ avahi-resolve-host-name &lt;baxter_name&gt;.local
+    <span class="m">192</span>.169.33.77
+</pre></div></dd>
+<dd></dd></dl></li>
+<li>Launch your app and enter the ip address in place of the 'localhost' part.
+<dl><dd></dd></dl></li>
+<li>On your dev machine:
+<dl><dd><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    <span class="c1"># start up your init&#39;d environment</span>
+    $ ./baxter.sh <span class="m">192</span>.168.33.77
+    $ rostopic list /camera
+    /camera/camera_info
+    /camera/image/compressed
+    <span class="c1"># start image_viewer with appropriate compression, </span>
+    <span class="c1">#  Note /compressed is a transport of the /camera/image image topic</span>
+    $ rosrun image_view image_view image:<span class="o">=</span>/camera/image compressed <span class="p">&amp;</span>
+</pre></div></dd>
+<dd></dd></dl></li>
+<li>NEXT: use <code>republish</code> to echo your images
+<dl><dd><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ rosrun image_transport republish compressed in:<span class="o">=</span>/camera/image raw out:<span class="o">=</span>/robot/xdisplay
+</pre></div>
+<ul><li><u><i>See Also:</i></u> <a rel="nofollow" class="external free" href="http://www.ros.org/wiki/image_transport#republish">http://www.ros.org/wiki/image_transport#republish</a></li></ul></dd></dl></li></ol>
+<h2><span class="mw-headline" id="Links:">Links:</span></h2>
+<ul><li><a rel="nofollow" class="external free" href="http://www.ros.org/wiki/image_transport">http://www.ros.org/wiki/image_transport</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.ros.org/wiki/image_transport#republish">http://www.ros.org/wiki/image_transport#republish</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.ros.org/wiki/image_view/Troubleshooting">http://www.ros.org/wiki/image_view/Troubleshooting</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.ros.org/wiki/compressed_image_transport">http://www.ros.org/wiki/compressed_image_transport</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815161043
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.020 seconds
+Real time usage: 0.911 seconds
+Preprocessor visited node count: 47/1000000
+Preprocessor generated node count: 96/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1312/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:344-0!canonical and timestamp 20190815161042 and revision id 3304
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="a/index.php?title=Phone_Camera_to_Screen_Demo&amp;oldid=3304">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Phone_Camera_to_Screen_Demo&amp;oldid=3304</a>"</div>
+  <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="a/index.php?title=Category:RobCat&amp;action=edit&amp;redlink=1" class="new" title="Category:RobCat (page does not exist)">RobCat</a></li></ul></div></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="a/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.020","walltime":"0.911","ppvisitednodes":{"value":47,"limit":1000000},"ppgeneratednodes":{"value":96,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1312,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815161043","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":24112});});</script></body></html>

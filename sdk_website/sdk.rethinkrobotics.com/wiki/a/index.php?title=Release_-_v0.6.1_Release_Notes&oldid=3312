@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Release - v0.6.1 Release Notes - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Release_-_v0.6.1_Release_Notes","wgTitle":"Release - v0.6.1 Release Notes","wgCurRevisionId":3312,"wgRevisionId":3312,"wgArticleId":518,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Release_-_v0.6.1_Release_Notes","wgRelevantArticleId":518,"wgRequestId":"90ebd821c461649faba790f3","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Release_-_v0_6_1_Release_Notes rootpage-Release_-_v0_6_1_Release_Notes skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Release+-+v0.6.1+Release+Notes&amp;returntoquery=oldid%3D3312">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Release - v0.6.1 Release Notes</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;oldid=3312#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Release_-_v0.6.1_Release_Notes" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 15:21, 29 July 2014 by <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span> <span class="comment">(Protected &quot;<a href="../Release_-_v0.6.1_Release_Notes" title="Release - v0.6.1 Release Notes">Release - v0.6.1 Release Notes</a>&quot;: Setting Permissions for (almost all) Pages - editable and moveable by all logged in users ([Edit=Allow only autoconfirmed users] (indefinite) [Move=Allow only autoconfirmed users] (indefinite)))</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Release_-_v0.6.1_Release_Notes&amp;diff=prev&amp;oldid=3312" title="Release - v0.6.1 Release Notes">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Release_-_v0.6.1_Release_Notes&amp;direction=prev&amp;oldid=3312" title="Release - v0.6.1 Release Notes">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;oldid=3312#column-one">navigation</a>, <a href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;oldid=3312#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;oldid=3312#Baxter_Research_Robot_SDK_0.6.1_Release_Notes"><span class="tocnumber">1</span> <span class="toctext">Baxter Research Robot SDK 0.6.1 Release Notes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;oldid=3312#Overview"><span class="tocnumber">1.1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;oldid=3312#Update_Instructions"><span class="tocnumber">1.2</span> <span class="toctext">Update Instructions</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;oldid=3312#Additions"><span class="tocnumber">1.3</span> <span class="toctext">Additions</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;oldid=3312#Removals"><span class="tocnumber">1.4</span> <span class="toctext">Removals</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;oldid=3312#Changes"><span class="tocnumber">1.5</span> <span class="toctext">Changes</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;oldid=3312#Fixes"><span class="tocnumber">1.6</span> <span class="toctext">Fixes</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;oldid=3312#Known_Issues"><span class="tocnumber">1.7</span> <span class="toctext">Known Issues</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Baxter_Research_Robot_SDK_0.6.1_Release_Notes">Baxter Research Robot SDK 0.6.1 Release Notes</span></h1>
+<p><b>Release Date: 7/12/2013</b>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>Baxter Research Robot SDK 0.6.1 delivers key upgrades to the SDK experience.  The new joint trajectory playback example allows users to quickly record and playback arm movements on Baxter.  The tuck/untuck arm routine allows for easy transport and movement of Baxter to different locations.
+</p>
+<h2><span class="mw-headline" id="Update_Instructions">Update Instructions</span></h2>
+<p><a href="../Software_Update" title="Software Update"> Software Updates</a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Additions">Additions</span></h2>
+<ul><li>Added tuck/untuck arms routine.</li>
+<li>Added ability to enable/disable sonar sensors.</li>
+<li>Added ability to flip/mirror cameras.</li>
+<li>Added joint trajectory playback example.</li>
+<li>Added generic PID controller.</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Removals">Removals</span></h2>
+<p>None
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Changes">Changes</span></h2>
+<ul><li>New joint trajectory action server implementation in support of MoveIt! and Arm Navigation. Action client now configurable via dynamic_reconfigure. PID controller to track commanded joint trajectory honoring positions/times commanded.</li>
+<li>Updated Baxter interface limb.py API to only support 'full' joint naming (i.e. the joint names specified in the URDF). This is a reflection of the upcoming removal of redundant /robot/limb//joint_states in favor of /robot/joint_states. All examples now reflect this standard usage in elimination of 'short' naming (i.e. elimination of 's1' in favor of 'left_s1').</li>
+<li>Updated URDF. More accurate collision geometries, inertial descriptions, joint damping.</li>
+<li>URDF moved into baxter_description/urdf/.</li>
+<li>Joint trajectory test example updated with more exaggerated motion.</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Fixes">Fixes</span></h2>
+<ul><li>Smoke test hostname is now abiguous to ROS distributions.</li>
+<li>Head camera now flipped/mirrored by default resulting in 'upright' image orientation.</li>
+<li>Head pan tolerance now matches deadband for the joint controller. * * Eliminates timeout for sub-deadband commands.</li>
+<li>Tuned state publish rates to 100Hz in all velocity examples.</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Known_Issues">Known Issues</span></h2>
+<ul><li>Calibration and Tare scripts will not run if there is a joint error related to the head. Joint errors can be found in the robot monitor.</li></ul>
+<p><a rel="nofollow" class="external free" href="https://github.com/RethinkRobotics/sdk-docs/wiki/Tools---robot_monitor">https://github.com/RethinkRobotics/sdk-docs/wiki/Tools---robot_monitor</a>
+</p>
+<ul><li>The ROS_HOSTNAME is always set to ".local", which needs to be resolvable by a client machine (avahi, /etc/hosts or DNS server configuration)</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815161843
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.007 seconds
+Real time usage: 0.010 seconds
+Preprocessor visited node count: 30/1000000
+Preprocessor generated node count: 36/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:518-0!canonical and timestamp 20190815161843 and revision id 3312
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Release_-_v0.6.1_Release_Notes&amp;oldid=3312">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Release_-_v0.6.1_Release_Notes&amp;oldid=3312</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.007","walltime":"0.010","ppvisitednodes":{"value":30,"limit":1000000},"ppgeneratednodes":{"value":36,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815161843","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":54});});</script></body></html>

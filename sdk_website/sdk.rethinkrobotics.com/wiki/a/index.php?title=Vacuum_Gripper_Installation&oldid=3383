@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Vacuum Gripper Installation - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Vacuum_Gripper_Installation","wgTitle":"Vacuum Gripper Installation","wgCurRevisionId":3383,"wgRevisionId":3383,"wgArticleId":453,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Vacuum_Gripper_Installation","wgRelevantArticleId":453,"wgRequestId":"57004b89c78ad8af09dd03f3","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["ext.tabs","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<style type="text/css" id="tabs-dynamic-styles">/*<![CDATA[*/
+/* Dynamically generated tabs styles */
+.tabs-input-1:checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1:checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1:checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+/* The same styles, but with .checked instead of :checked, for browsers that rely on the JavaScript fallback */
+.tabs-input-1.checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1.checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1.checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+.tabs-dropdown .tabs-content,.tabs-dropdown .tabs-container,.tabs-dropdown li,.tabs-dropdown ul,.tabs-dropdown ol {background-color: white}
+/*]]>*/</style>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Vacuum_Gripper_Installation rootpage-Vacuum_Gripper_Installation skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Vacuum+Gripper+Installation&amp;returntoquery=oldid%3D3383">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Vacuum Gripper Installation</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Vacuum_Gripper_Installation&amp;oldid=3383#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Vacuum_Gripper_Installation&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Vacuum_Gripper_Installation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Vacuum_Gripper_Installation" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 15:33, 29 July 2014 by <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span> <span class="comment">(Protected &quot;<a href="../Vacuum_Gripper_Installation" title="Vacuum Gripper Installation">Vacuum Gripper Installation</a>&quot;: Setting Permissions for (almost all) Pages - editable and moveable by all logged in users ([Edit=Allow only autoconfirmed users] (indefinite) [Move=Allow only autoconfirmed users] (indefinite)))</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Vacuum_Gripper_Installation&amp;diff=prev&amp;oldid=3383" title="Vacuum Gripper Installation">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Vacuum_Gripper_Installation&amp;direction=prev&amp;oldid=3383" title="Vacuum Gripper Installation">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Vacuum_Gripper_Installation&amp;oldid=3383#column-one">navigation</a>, <a href="index.php?title=Vacuum_Gripper_Installation&amp;oldid=3383#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><h2><span class="mw-headline" id="Description">Description</span></h2>
+<p><span style="font-size:120%;"><b>This page describes installation of the Vacuum (Suction) Grippers.</b></span>
+</p>
+<h2><span class="mw-headline" id="Required_Hardware">Required Hardware</span></h2>
+<ul><li>3mm Allen (Hex) Wrench</li></ul>
+<h2><span class="mw-headline" id="Vacuum_Gripper_Type">Vacuum Gripper Type</span></h2>
+<p><a href="../File:Vacuum_Gripper_Type_v2.png" class="image"><img alt="Vacuum Gripper Type v2.png" src="images/thumb/e/e3/Vacuum_Gripper_Type_v2.png/200px-Vacuum_Gripper_Type_v2.png" width="200" height="160" srcset="/wiki/a/images/thumb/e/e3/Vacuum_Gripper_Type_v2.png/300px-Vacuum_Gripper_Type_v2.png 1.5x, /wiki/a/images/thumb/e/e3/Vacuum_Gripper_Type_v2.png/400px-Vacuum_Gripper_Type_v2.png 2x" /></a>
+<span style="font-size:180%;"><b>Vacuum Gripper v2</b></span>
+</p><p><br />
+<a href="../File:Vacuum_Gripper_Type_v1.png" class="image"><img alt="Vacuum Gripper Type v1.png" src="images/thumb/8/8b/Vacuum_Gripper_Type_v1.png/200px-Vacuum_Gripper_Type_v1.png" width="200" height="189" srcset="/wiki/a/images/thumb/8/8b/Vacuum_Gripper_Type_v1.png/300px-Vacuum_Gripper_Type_v1.png 1.5x, /wiki/a/images/thumb/8/8b/Vacuum_Gripper_Type_v1.png/400px-Vacuum_Gripper_Type_v1.png 2x" /></a>
+<span style="font-size:180%;"><b>Vacuum Gripper v1 (no longer available)</b></span>
+</p><p><br />
+</p>
+<form id="tabs-inputform" class="tabs tabs-inputform" action="index.php?title=Vacuum_Gripper_Installation&amp;oldid=3383#"></form><div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-1-0" name="tabs-1" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-1-1" name="tabs-1" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-1-1" data-tabpos="1">Vacuum Gripper v2</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-1-2" name="tabs-1" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-1-2" data-tabpos="2">Vacuum Gripper v1</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<h2><span class="mw-headline" id="Installation_File">Installation File</span></h2>
+<p><a href="images/f/fe/Vacuum_Gripper_Starter_Kit_Guide_v2.pdf" class="internal" title="Vacuum Gripper Starter Kit Guide v2.pdf"> <b>PDF:</b> Baxter Vacuum Gripper Guide v2</a>
+</p>
+<h2><span class="mw-headline" id="Step_1:_Mount_Gripper">Step 1: Mount Gripper</span></h2>
+<p>This step describes proper attachment of the suction gripper.
+</p><p><a href="../File:Vacuum_Gripper_Mount_v2.png" class="image"><img alt="Vacuum Gripper Mount v2.png" src="images/thumb/a/ad/Vacuum_Gripper_Mount_v2.png/500px-Vacuum_Gripper_Mount_v2.png" width="500" height="504" srcset="/wiki/a/images/a/ad/Vacuum_Gripper_Mount_v2.png 1.5x" /></a>
+</p><p><br />
+</p>
+<h3><span id="A:_To_install_vacuum_generator,_remove_plug_with_8mm_hex_key_and_in_the_same_port,_screw_in_vacuum_generator,_red_tip_first._Hand_tighten."></span><span class="mw-headline" id="A:_To_install_vacuum_generator.2C_remove_plug_with_8mm_hex_key_and_in_the_same_port.2C_screw_in_vacuum_generator.2C_red_tip_first._Hand_tighten.">A: To install vacuum generator, remove plug with 8mm hex key and in the same port, screw in vacuum generator, red tip first. Hand tighten.</span></h3>
+<h3><span class="mw-headline" id="B:_Hook_Vacuum_Cup_Gripper_onto_two_posts_on_tool_plate">B: Hook Vacuum Cup Gripper onto two posts on tool plate</span></h3>
+<h3><span id="C:_Insert_plug_into_receptacle_until_you_hear_a_“click”"></span><span class="mw-headline" id="C:_Insert_plug_into_receptacle_until_you_hear_a_.E2.80.9Cclick.E2.80.9D">C: Insert plug into receptacle until you hear a “click”</span></h3>
+<h3><span class="mw-headline" id="D:_Tighten_both_screws_with_enclosed_3mm_hex_key">D: Tighten both screws with enclosed 3mm hex key</span></h3>
+<h2><span class="mw-headline" id="Step_2:_Install_Vacuum_Generator">Step 2: Install Vacuum Generator</span></h2>
+<p><a href="../File:Vacuum_Gripper_Wiring_v2.png" class="image"><img alt="Vacuum Gripper Wiring v2.png" src="images/thumb/e/ee/Vacuum_Gripper_Wiring_v2.png/1000px-Vacuum_Gripper_Wiring_v2.png" width="1000" height="334" srcset="/wiki/a/images/e/ee/Vacuum_Gripper_Wiring_v2.png 1.5x" /></a>
+</p>
+<h3><span class="mw-headline" id="1:_Remove_Lower_Front_Panel_using_2_thumb_screws">1: Remove Lower Front Panel using 2 thumb screws</span></h3>
+<h3><span class="mw-headline" id="2:_Squeeze_cap_collar_and_pull_tubing_to_remove_end_caps_from_supply_tube_harness._Remove_zip_tie_around_tubes.">2: Squeeze cap collar and pull tubing to remove end caps from supply tube harness. Remove zip tie around tubes.</span></h3>
+<h3><span id="3:_Insert_supply_tubes_into_the_“P”_ports_of_each_valve"></span><span class="mw-headline" id="3:_Insert_supply_tubes_into_the_.E2.80.9CP.E2.80.9D_ports_of_each_valve">3: Insert supply tubes into the “P” ports of each valve</span></h3>
+<h3><span id="4:_Using_wire_bundle_attached_to_plate,_connect_wires_to_valves_as_shown._Valves_should_be_oriented_&quot;A”_(on_front_of_valve)_down,_larger_valve_to_outside._Right_side_is_shown"></span><span class="mw-headline" id="4:_Using_wire_bundle_attached_to_plate.2C_connect_wires_to_valves_as_shown._Valves_should_be_oriented_.22A.E2.80.9D_.28on_front_of_valve.29_down.2C_larger_valve_to_outside._Right_side_is_shown">4: Using wire bundle attached to plate, connect wires to valves as shown. Valves should be oriented "<b>A</b>” (on front of valve) down, larger valve to outside. Right side is shown</span></h3>
+<h3><span id="5:_Using_2.5_mm_hex_key,_screw_valves_in_place_using_four_M3_x_25mm_screws_provided"></span><span class="mw-headline" id="5:_Using_2.5_mm_hex_key.2C_screw_valves_in_place_using_four_M3_x_25mm_screws_provided">5: Using 2.5 mm hex key, screw valves in place using four M3 x 25mm screws provided</span></h3>
+<h3><span class="mw-headline" id="6:_Place_gray_foam_gasket_on_valve_as_shown">6: Place gray foam gasket on valve as shown</span></h3>
+<h3><span id="7:_On_same_side_as_valve_install,_remove_black_plastic_hole_plug_from_Lower_Front_Panel"></span><span class="mw-headline" id="7:_On_same_side_as_valve_install.2C_remove_black_plastic_hole_plug_from_Lower_Front_Panel">7: On same side as valve install, remove black plastic hole plug from Lower Front Panel</span></h3>
+<h3><span id="8:_After_valves_are_installed,_gently_re-attach_Lower_Front_Panel._Re-install_2_thumb_screws_to_hold_panel_in_place"></span><span class="mw-headline" id="8:_After_valves_are_installed.2C_gently_re-attach_Lower_Front_Panel._Re-install_2_thumb_screws_to_hold_panel_in_place">8: After valves are installed, gently re-attach Lower Front Panel. Re-install 2 thumb screws to hold panel in place</span></h3>
+<p>Determine air supply tubing diameter. Connect tubing to
+rear of robot at connector panel.
+</p>
+<ul><li>For 1/4” tube, insert tubing into adapter.</li></ul>
+<h3><span id="9:_For_6mm_tube,_remove_adapter_then_insert_tubing_into_fitting"></span><span class="mw-headline" id="9:_For_6mm_tube.2C_remove_adapter_then_insert_tubing_into_fitting">9: For 6mm tube, remove adapter then insert tubing into fitting</span></h3>
+<h2><span class="mw-headline" id="Step_3:_Attach_Vacuum_Tubing_to_Arm">Step 3: Attach Vacuum Tubing to Arm</span></h2>
+<p><a href="../File:Vacuum_Gripper_Tubing_v2.png" class="image"><img alt="Vacuum Gripper Tubing v2.png" src="images/thumb/7/7a/Vacuum_Gripper_Tubing_v2.png/800px-Vacuum_Gripper_Tubing_v2.png" width="800" height="423" srcset="/wiki/a/images/thumb/7/7a/Vacuum_Gripper_Tubing_v2.png/1200px-Vacuum_Gripper_Tubing_v2.png 1.5x, /wiki/a/images/7/7a/Vacuum_Gripper_Tubing_v2.png 2x" /></a>
+</p><p><br />
+<span style="font-size:150%;">Note: Rethink Robotics recommends grounding the Gripper to the Pedestal using the provided ESD ground wire, routing it with tubing.</span>
+</p>
+<h3><span class="mw-headline" id="A:_Attach_ground_wire_to_same_side_as_Gripper">A: Attach ground wire to same side as Gripper</span></h3>
+<p>Remove pedestal bolt on selected side. Attach large ring terminal end of wire and toothed washer to pedestal. Hand-
+tighten bolt. Using a 17 mm wrench, TIGHTEN A HALF TURN MORE.
+</p>
+<h3><span class="mw-headline" id="B:_Attach_other_end_of_ground_wire_as_close_as_possible_to_vacuum_cup">B: Attach other end of ground wire as close as possible to vacuum cup</span></h3>
+<p>Use part of your vacuum cup configuration, or a manifold block screw boss as shown. Fasten using M4 screw and toothed washer provided.
+</p><p><br />
+<span style="font-size:150%;">Note: Make sure valves are installed before adding tubing. Check to ensure tubing is on same arm as installed valves.</span>
+</p>
+<h3><span id="1:_Starting_at_the_Gripper,_insert_tubing_into_Gripper_fitting._Push_tubing_into_fitting_firmly."></span><span class="mw-headline" id="1:_Starting_at_the_Gripper.2C_insert_tubing_into_Gripper_fitting._Push_tubing_into_fitting_firmly.">1: Starting at the Gripper, insert tubing into Gripper fitting. Push tubing into fitting firmly.</span></h3>
+<h3><span id="2:_Attach_tubing_(and_optional_wire)_to_each_arm_clip_with_zip_ties,_every_50cm_as_indicated."></span><span class="mw-headline" id="2:_Attach_tubing_.28and_optional_wire.29_to_each_arm_clip_with_zip_ties.2C_every_50cm_as_indicated.">2: Attach tubing (and optional wire) to each arm clip with zip ties, every 50cm as indicated.</span></h3>
+<h3><span class="mw-headline" id="3:_Firmly_tighten_zip_ties_to_fix_tubing_in_place._Do_not_crush_tubing._Trim_zip_ties.">3: Firmly tighten zip ties to fix tubing in place. Do not crush tubing. Trim zip ties.</span></h3>
+<h3><span class="mw-headline" id="4:_Insert_tubing_end_into_valve_port_on_Lower_Front_Panel.">4: Insert tubing end into valve port on Lower Front Panel.</span></h3>
+<p><a href="../File:Connector_panel.png" class="image"><img alt="Connector panel.png" src="images/7/7d/Connector_panel.png" width="300" height="105" /></a>
+</p>
+<h3><span id="Connect_air_supply_to_robot_at_the_connect_panel_(Baxter's_back)"></span><span class="mw-headline" id="Connect_air_supply_to_robot_at_the_connect_panel_.28Baxter.27s_back.29">Connect air supply to robot at the connect panel (Baxter's back)</span></h3>
+<p><b>Important: </b> Air supply should be 60 PSI (min) to 90 PSI (max). Air must be filtered and oil-free.
+</p><p><br />
+</p>
+<h2><span id="Step_5:_Attach_Extensions_(Optional)"></span><span class="mw-headline" id="Step_5:_Attach_Extensions_.28Optional.29">Step 5: Attach Extensions (Optional)</span></h2>
+<p><span style="font-size:150%;">Note: Up to two extensions may be attached to each Vacuum Cup Gripper. </span>
+</p><p><a href="../File:Vacuum_Gripper_Extension_v2.png" class="image"><img alt="Vacuum Gripper Extension v2.png" src="images/thumb/a/ad/Vacuum_Gripper_Extension_v2.png/400px-Vacuum_Gripper_Extension_v2.png" width="400" height="400" srcset="/wiki/a/images/thumb/a/ad/Vacuum_Gripper_Extension_v2.png/600px-Vacuum_Gripper_Extension_v2.png 1.5x, /wiki/a/images/thumb/a/ad/Vacuum_Gripper_Extension_v2.png/800px-Vacuum_Gripper_Extension_v2.png 2x" /></a>
+</p>
+<h3><span class="mw-headline" id="1:_Screw_in_extensions_until_snug">1: Screw in extensions until snug</span></h3>
+<h3><span class="mw-headline" id="A:_No_Extension">A: No Extension</span></h3>
+<h3><span class="mw-headline" id="B:_One_Extension">B: One Extension</span></h3>
+<h3><span class="mw-headline" id="C:_Two_Extensions">C: Two Extensions</span></h3>
+<h2><span class="mw-headline" id="Step_6:_Attach_Vacuum_Cups">Step 6: Attach Vacuum Cups</span></h2>
+<p><a href="../File:Vacuum_Gripper_Cups_v2.png" class="image"><img alt="Vacuum Gripper Cups v2.png" src="images/thumb/a/aa/Vacuum_Gripper_Cups_v2.png/400px-Vacuum_Gripper_Cups_v2.png" width="400" height="400" srcset="/wiki/a/images/thumb/a/aa/Vacuum_Gripper_Cups_v2.png/600px-Vacuum_Gripper_Cups_v2.png 1.5x, /wiki/a/images/thumb/a/aa/Vacuum_Gripper_Cups_v2.png/800px-Vacuum_Gripper_Cups_v2.png 2x" /></a>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="A:_Select_Vacuum_Cup">A: Select Vacuum Cup</span></h3>
+<p>Vacuum Cups should fit entirely on the object surface. Choose the smallest vacuum cup wherever possible. Choose a larger vacuum cup if robot cannot lift the weight of the object.
+</p><p>Note: Baxter can lift a maximum weight of 5 lbs (2.27kg), including weight of gripper which is 0.3 lbs (145 g). Texture, irregular surfaces, items packaged in bags, etc. may require a different vacuum cup selection.
+</p>
+<h3><span class="mw-headline" id="B:_Screw_on_Vacuum_Cup_until_snug">B: Screw on Vacuum Cup until snug</span></h3>
+<h2><span class="mw-headline" id="Linked_Here">Linked Here</span></h2>
+<ul><li><a href="../Baxter_Setup#Step_6:_Unpack.2FInstall_Grippers" title="Baxter Setup"> Baxter Hardware Setup</a> - Baxter Hardware Setup Tutorial</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Related_Pages">Related Pages</span></h2>
+<ul><li><a href="../Electric_Gripper_Installation" title="Electric Gripper Installation"> Baxter Linear Electric Gripper Installation</a> - Instructions for Installing the Linear Electric Grippers.</li></ul>
+</div>
+<div class="tabs-content tabs-content-2">
+<h2><span class="mw-headline" id="Installation_File">Installation File</span></h2>
+<p><a href="images/8/85/VacuumGripperInstallationGuide.pdf" class="internal" title="VacuumGripperInstallationGuide.pdf"> <b>PDF:</b> Baxter Vacuum Gripper Guide v1</a>
+</p>
+<h2><span class="mw-headline" id="Step_1:_Mount_Gripper">Step 1: Mount Gripper</span></h2>
+<p>This step describes proper attachment of the suction gripper.
+</p><p><a href="../File:Vacuum_mounting.png" class="image"><img alt="Vacuum mounting.png" src="images/thumb/b/bb/Vacuum_mounting.png/500px-Vacuum_mounting.png" width="500" height="497" srcset="/wiki/a/images/b/bb/Vacuum_mounting.png 1.5x" /></a>
+</p>
+<h3><span class="mw-headline" id="A:_Hook_Suction_Gripper_onto_two_posts_on_hand">A: Hook Suction Gripper onto two posts on hand</span></h3>
+<h3><span id="B:_Insert_plug_into_receptacle_until_you_hear_a_“click”"></span><span class="mw-headline" id="B:_Insert_plug_into_receptacle_until_you_hear_a_.E2.80.9Cclick.E2.80.9D">B: Insert plug into receptacle until you hear a “click”</span></h3>
+<h3><span class="mw-headline" id="C:_Fasten_Gripper_with_3mm_Hex_and_Screws">C: Fasten Gripper with 3mm Hex and Screws</span></h3>
+<h2><span class="mw-headline" id="Step_2:_Install_Vacuum_Generator">Step 2: Install Vacuum Generator</span></h2>
+<p>Using a 2.5mm hey key, loosen the two screws from the lower front panel.
+</p><p>Remove lower front panel, gently pulling straight out.
+</p><p><a href="../File:Generator_install.png" class="image"><img alt="Generator install.png" src="images/thumb/8/89/Generator_install.png/800px-Generator_install.png" width="800" height="358" srcset="/wiki/a/images/8/89/Generator_install.png 1.5x" /></a>
+</p>
+<h3><span class="mw-headline" id="1:_Plug_wiring_harness_into_socket">1: Plug wiring harness into socket</span></h3>
+<h3><span class="mw-headline" id="2:_Connect_air_in">2: Connect air in</span></h3>
+<p>Remove plug from T-connection tubing.
+</p><p><br />
+<b>Important:</b> Plug must remain in place if no vacuum generator is attached.
+</p><p><br />
+Connect tubing to bottom part of vacuum generator (Air In).
+</p>
+<h3><span class="mw-headline" id="3:_Connect_air_out">3: Connect air out</span></h3>
+<p>Connect tubing exposed coming from the top of the panel to the top port of the Vacuum Generator
+</p>
+<h3><span class="mw-headline" id="4:_Attach_appropriate_control_wires">4: Attach appropriate control wires</span></h3>
+<p><b>Right Vacuum Gripper</b> - plug wires marked <b>SR-R</b> and <b>BR-R</b> into vacuum generator.
+</p><p><b>Left Vacuum Gripper</b> - plug wires marked <b>SR-L</b> and <b>BR-L</b> into vacuum generator.
+</p>
+<h3><span class="mw-headline" id="5:_Fasten_generator_to_base">5: Fasten generator to base</span></h3>
+<p>Using included screws, fasten generator to metal plate on the same side as the corresponding gripper.
+</p>
+<h3><span class="mw-headline" id="6:_Gently_re-secure_front_panel">6: Gently re-secure front panel</span></h3>
+<h2><span class="mw-headline" id="Step_3:_Attach_Vacuum_Tubing_to_Arm">Step 3: Attach Vacuum Tubing to Arm</span></h2>
+<p><a href="../File:Suction_tubing.png" class="image"><img alt="Suction tubing.png" src="images/thumb/5/55/Suction_tubing.png/500px-Suction_tubing.png" width="500" height="275" srcset="/wiki/a/images/thumb/5/55/Suction_tubing.png/750px-Suction_tubing.png 1.5x, /wiki/a/images/thumb/5/55/Suction_tubing.png/1000px-Suction_tubing.png 2x" /></a>
+</p><p>Starting at Gripper <b>[1]</b>, loosely thread the tubing through the arm clips.
+</p><p><br />
+Insert tubing end <b>[6]</b> into the <b>UPPER</b> air inlet. Leave any extra length of tubing between connections <b>[5]</b> and <b>[6]</b>.
+</p><p><br />
+Push tubing into air inlet until it stops.
+</p><p><br />
+Rotate hose so as to not block the hand cameras.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Step_4:_Connect_air_supply_to_robot">Step 4: Connect air supply to robot</span></h2>
+<p>Connect air supply to robot at the connect panel (Baxter's back)
+</p><p><a href="../File:Connector_panel.png" class="image"><img alt="Connector panel.png" src="images/7/7d/Connector_panel.png" width="300" height="105" /></a>
+</p><p><b>Important: </b> Air supply should be 60 PSI (min) to 90 PSI (max). Air must be filtered and oil-free.
+</p><p><br />
+</p>
+<h2><span id="Step_5:_Attach_Extensions_(Optional)"></span><span class="mw-headline" id="Step_5:_Attach_Extensions_.28Optional.29">Step 5: Attach Extensions (Optional)</span></h2>
+<p><b>Note:</b> Up to two extensions may be attached to each Vacuum Cup Gripper
+</p><p>Screw in extensions until snug.
+</p><p><a href="../File:Vacuum_extensions.png" class="image"><img alt="Vacuum extensions.png" src="images/thumb/c/cc/Vacuum_extensions.png/400px-Vacuum_extensions.png" width="400" height="402" srcset="/wiki/a/images/c/cc/Vacuum_extensions.png 1.5x" /></a>
+</p><p><b>A:</b> No Extension
+</p><p><b>B:</b> One Extension
+</p><p><b>C:</b> Two Extensions
+</p>
+<h2><span class="mw-headline" id="Step_6:_Attach_Vacuum_Cups">Step 6: Attach Vacuum Cups</span></h2>
+<p><a href="../File:Vacuum_cups.png" class="image"><img alt="Vacuum cups.png" src="images/thumb/d/dd/Vacuum_cups.png/400px-Vacuum_cups.png" width="400" height="395" srcset="/wiki/a/images/d/dd/Vacuum_cups.png 1.5x" /></a>
+</p><p><b>A:</b> Select vacuum cup according to manipulated object.
+</p><p>Vacuum Cups should fit entirely on the object surface.
+Choose the smallest vacuum cup wherever possible.
+Choose a larger vacuum cup if the robot cannot lift the weight of the object with a smaller one. Textured or irregular surfaces may require a larger vacuum cup.
+</p><p><b>Note:</b> Robot can lift a maximum weight of 5 lbs (2.27kg)
+</p><p><br />
+<b>B:</b> Screw on selected vacuum cup until snug.
+</p>
+<h2><span class="mw-headline" id="Linked_Here">Linked Here</span></h2>
+<ul><li><a href="../Baxter_Setup#Step_6:_Unpack.2FInstall_Grippers" title="Baxter Setup"> Baxter Hardware Setup</a> - Baxter Hardware Setup Tutorial</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Related_Pages">Related Pages</span></h2>
+<ul><li><a href="../Electric_Gripper_Installation" title="Electric Gripper Installation"> Baxter Linear Electric Gripper Installation</a> - Instructions for Installing the Linear Electric Grippers.</li></ul>
+</div>
+</div></div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815161335
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.039 seconds
+Real time usage: 0.041 seconds
+Preprocessor visited node count: 232/1000000
+Preprocessor generated node count: 308/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 24003/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:453-0!canonical and timestamp 20190815161335 and revision id 3383
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Vacuum_Gripper_Installation&amp;oldid=3383">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Vacuum_Gripper_Installation&amp;oldid=3383</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.039","walltime":"0.041","ppvisitednodes":{"value":232,"limit":1000000},"ppgeneratednodes":{"value":308,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":24003,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815161335","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":93});});</script></body></html>

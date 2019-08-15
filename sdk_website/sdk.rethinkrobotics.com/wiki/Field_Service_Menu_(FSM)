@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Field Service Menu (FSM) - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Field_Service_Menu_(FSM)","wgTitle":"Field Service Menu (FSM)","wgCurRevisionId":3246,"wgRevisionId":3246,"wgArticleId":366,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Field_Service_Menu_(FSM)","wgRelevantArticleId":366,"wgRequestId":"1d97137b10396028eae43c81","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="a/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Field_Service_Menu_FSM rootpage-Field_Service_Menu_FSM skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(a/skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="a/index.php?title=Special:UserLogin&amp;returnto=Field+Service+Menu+%2528FSM%2529">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Field Service Menu (FSM)</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="Field_Service_Menu_(FSM)#">More</a><ul><li id="ca-viewsource"><a href="a/index.php?title=Field_Service_Menu_(FSM)&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="a/index.php?title=Field_Service_Menu_(FSM)&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="http://sdk.rethinkrobotics.com/wiki/Field_Service_Menu_(FSM)" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="Learning">Learning</a></li>
+                <li id="n-Community"><a href="Community">Community</a></li>
+                <li id="n-Support"><a href="Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="Field_Service_Menu_(FSM)#column-one">navigation</a>, <a href="Field_Service_Menu_(FSM)#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Field_Service_Menu_(FSM)#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="Field_Service_Menu_(FSM)#Overview"><span class="tocnumber">2</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="Field_Service_Menu_(FSM)#Quickstart_-_FSM_Activation_.2F_Deactivation"><span class="tocnumber">3</span> <span class="toctext">Quickstart - FSM Activation / Deactivation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="Field_Service_Menu_(FSM)#Accessing_the_FSM"><span class="tocnumber">3.1</span> <span class="toctext">Accessing the FSM</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="Field_Service_Menu_(FSM)#Exiting:_Disabling_the_FSM"><span class="tocnumber">3.1.1</span> <span class="toctext">Exiting: Disabling the FSM</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="Field_Service_Menu_(FSM)#Menu_Functions"><span class="tocnumber">4</span> <span class="toctext">Menu Functions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="Field_Service_Menu_(FSM)#Configuration_Menu"><span class="tocnumber">4.1</span> <span class="toctext">Configuration Menu</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="Field_Service_Menu_(FSM)#Date.2C_Time.2C_Timezone.2C_NTP_Servers"><span class="tocnumber">4.1.1</span> <span class="toctext"><b>Date, Time, Timezone, NTP Servers</b></span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="Field_Service_Menu_(FSM)#Applications_Menu"><span class="tocnumber">4.2</span> <span class="toctext">Applications Menu</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="Field_Service_Menu_(FSM)#Tests_Menu"><span class="tocnumber">4.3</span> <span class="toctext">Tests Menu</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="Field_Service_Menu_(FSM)#Exit_Actions"><span class="tocnumber">4.4</span> <span class="toctext">Exit Actions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="Field_Service_Menu_(FSM)#Troubleshooting"><span class="tocnumber">5</span> <span class="toctext">Troubleshooting</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Summary">Summary</span></h2>
+<p>The Field Service Menu (FSM) is a pre-boot configuration menu that allows the user to do advanced tasks such as check network interface configuration, change the robot computer's hostname, and run low-level hardware checks.
+</p><p><img alt="float" src="a/images/3/37/Fsm_config.png" title="float" width="711" height="429" />
+<img alt="align=right" src="a/images/2/2f/Block_spacer.gif" title="align=right" width="1" height="1" />
+</p>
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>The primary purpose of the Field Service Menu (FSM) is to give the user access to low-level, computer configuration options on the robot, especially:
+</p>
+<ul><li>Edit Hostname</li>
+<li>Edit Network Configuration
+<ul><li>Set Static IP/DNS</li>
+<li>Set NTP Servers</li>
+<li>Set ROS naming convention</li></ul></li>
+<li>Edit Timezone</li>
+<li>Change Run Mode (RSDK vs Demo Mode)</li></ul>
+<p>The FSM also provides the ability to run low-level hardware tests to do light-weight verification of hardware components that sit below the robot application software level.
+</p>
+<h2><span id="Quickstart_-_FSM_Activation_/_Deactivation"></span><span class="mw-headline" id="Quickstart_-_FSM_Activation_.2F_Deactivation">Quickstart - FSM Activation / Deactivation</span></h2>
+<h3><span class="mw-headline" id="Accessing_the_FSM">Accessing the FSM</span></h3>
+<p>The FSM can only be accessed by hitting a specific key combination during robot boot-up:
+</p>
+<ol><li>Turn off Baxter with the Power button. Wait for complete shutdown (no lights, no noise).</li>
+<li>Plug in a USB keyboard to Baxter's USB port (on rear).</li>
+<li>You will need to hit <code>&lt;Alt+FF&gt;</code> on the keyboard during the boot-up to trigger the FSM:
+<ul><li>Turn Baxter back on by hitting the Power button.</li>
+<li>Once you see the Rethink Animation ...
+<dl><dd><img alt="align=left" src="a/images/2/2f/SDKloading_s.png" title="align=left" width="341" height="200" /></dd></dl></li>
+<li>... on your keyboard, start repeatedly hitting the key combination <code>&lt;Alt+FF&gt;</code>
+<dl><dd><i>(Hit and hold the <code>Alt</code> key, press down on the <code>F</code> key, release, press down on the <code>F</code> key again, release both and repeat)</i>.</dd></dl></li></ul></li>
+<li>Repeat this key combination until you see the FSM screen come up:
+<dl><dd><img alt="height=200px" src="a/images/5/54/Fsm_top.png" title="height=200px" width="565" height="332" /></dd></dl>
+<ul><li>If you hit a screen that says "Loading...", you missed your chance.</li></ul></li></ol>
+<p>Use the Up/Down arrow keys to change menu selections, and the Enter key to go into a menu or select an option.
+</p>
+<h4><span class="mw-headline" id="Exiting:_Disabling_the_FSM">Exiting: Disabling the FSM</span></h4>
+<p><b>Important:</b> Once the FSM is activated, it will come up every boot thereafter -- unless Disabled before exiting the menu.
+</p><p>To disable the FSM from reappearing next boot:  
+</p>
+<ol><li>Select the 'Disable field service menu' option and hit Enter.
+<dl><dd></dd>
+<dd>You should now see a line near the top saying: <code>On next boot FSM will be disabled</code></dd>
+<dd><img alt="Fsm disabled.png" src="a/images/9/9d/Fsm_disabled.png" width="600" height="265" /></dd></dl></li>
+<li>You can now leave the FSM through any of the normal <a href="http://sdk.rethinkrobotics.com/wiki/Field_Service_Menu_(FSM)#exit-actions" title="Field Service Menu (FSM)">Exit Actions</a>, such as Reboot Robot.</li></ol>
+<h2><span class="mw-headline" id="Menu_Functions">Menu Functions</span></h2>
+<p>After <a href="http://sdk.rethinkrobotics.com/wiki/Field_Service_Menu_(FSM)#accessing-the-fsm" title="Field Service Menu (FSM)">Activating the FSM</a>, the top level of the Field Service Menu provides access to three sub-menus and shutdown/reboot options.
+</p>
+<h3><span class="mw-headline" id="Configuration_Menu">Configuration Menu</span></h3>
+<p>This menu provides access to Baxter's hostname, timezone, and network configuration information.  Information here is useful for setting up Baxter on your <a href="Networking" title="Networking">Network</a>.  
+</p><p><img alt="align=center" src="a/images/3/37/Fsm_config.png" title="align=center" width="711" height="429" />
+</p>
+<ul><li><b>Hostname</b> - Rename your Baxter (i.e. change robot computer's hostname)
+<dl><dd>Changing the Hostname will also change Baxter's network identity name.</dd>
+<dd>Upon reboot, Baxter will then be accessible via the new name followed by '.local', rather than by the serial number (default hostname).  In the case shown in the screenshot, Baxter's new <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Avahi&amp;action=edit&amp;redlink=1" class="new" title="Avahi (page does not exist)">avahi</a> address would be <code>test.local</code>.</dd></dl></li>
+<li><b>Addr Type</b> - Change the network addressing method from DHCP to Custom
+<dl><dd>Toggling this will set <b>Address</b>, <b>Netmask</b>, <b>Gateway</b>, and <b>DNS Server</b> to blank, and enable editing them</dd></dl></li>
+<li><b>ROS Naming</b> - Change how the master publishes node locations
+<dl><dd>Options are:</dd></dl>
+<ul><li>ROS-Hostname</li>
+<li>ROS-Hostname.local</li>
+<li>ROS-IP</li></ul>
+<dl><dd>See the <a href="Networking" title="Networking">Networking</a> page for more information on network configurations.</dd></dl></li>
+<li><b>Delete stored task data</b> is a flag for the Production version of Baxter, and has no impact on the BRR.</li></ul>
+<p><i>Tip:</i> Make sure to Save Changes after editing any Configuration options, and then Shutdown or Reboot Baxter from the FSM main menu to apply the changes.
+</p>
+<h4><span id="Date,_Time,_Timezone,_NTP_Servers"></span><span class="mw-headline" id="Date.2C_Time.2C_Timezone.2C_NTP_Servers"><b>Date, Time, Timezone, NTP Servers</b></span></h4>
+<p><img alt="Fsm ntp.png" src="a/images/c/c1/Fsm_ntp.png" width="730" height="402" />
+</p>
+<ul><li><b>Timezone</b> - Set the robot's clock to your local timezone.
+<dl><dd>This will primarily affect the time listed in the log files.</dd></dl></li>
+<li><b>NTP Servers</b> - Set your pool of NTP servers.</li></ul>
+<h3><span class="mw-headline" id="Applications_Menu">Applications Menu</span></h3>
+<p>The Applications menu launches the RSDK software application from the FSM.  
+</p><p><img alt="Fsm apps.png" src="a/images/1/15/Fsm_apps.png" width="633" height="310" />
+</p>
+<ul><li>The 'Robot GUI' action will launch the xdisplay on Baxter and display the Baxter Research Robot logo.</li>
+<li>The 'RSDK Demo Mode' action will launch the <a href="Demo_Mode" title="Demo Mode">Demo Mode</a></li></ul>
+<h3><span class="mw-headline" id="Tests_Menu">Tests Menu</span></h3>
+<p>The Tests menu provides a number of low-level hardware tests that can be run to verify the embedded hardware throughout Baxter.
+</p><p><img alt="Fsm tests.png" src="a/images/e/e0/Fsm_tests.png" width="773" height="446" />
+</p>
+<ul><li>To run a test, select the test from the menu and follow the on-screen instructions.</li></ul>
+<h3><span class="mw-headline" id="Exit_Actions">Exit Actions</span></h3>
+<ul><li><b>Disable field service menu</b>
+<dl><dd>Select to disable the FSM from appearing at boot-up.</dd>
+<dd><i>Note:</i> By default, accessing the FSM will enable it for future boots.</dd></dl></li>
+<li><b>Reboot Robot</b>
+<dl><dd>Shuts down the robot computer and hardware, then restarts the robot, reflashing the controller boards and configurations if needed.</dd></dl></li>
+<li><b>Shutdown Robot</b>
+<dl><dd>Shuts down the entire robot.  Use to power off the robot, or do a hard-restart of the robot to ensure new configurations or firmware are written to the hardware.</dd></dl></li></ul>
+<p><i>Note: You can also leave the FSM via the Applications menu to go directly to normal RSDK operation.</i>
+</p>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<p>For common issues related to core dumps or files on Baxter, check out the <a href="Contact" title="Contact">Troubleshooting page</a>.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815160803
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.027 seconds
+Real time usage: 0.475 seconds
+Preprocessor visited node count: 46/1000000
+Preprocessor generated node count: 52/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:366-0!canonical and timestamp 20190815160803 and revision id 3246
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="a/index.php?title=Field_Service_Menu_(FSM)&amp;oldid=3246">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Field_Service_Menu_(FSM)&amp;oldid=3246</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="a/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.027","walltime":"0.475","ppvisitednodes":{"value":46,"limit":1000000},"ppgeneratednodes":{"value":52,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815160803","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":559});});</script></body></html>

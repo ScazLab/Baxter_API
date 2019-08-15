@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Workstation Setup - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Workstation_Setup","wgTitle":"Workstation Setup","wgCurRevisionId":4592,"wgRevisionId":0,"wgArticleId":419,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Workstation_Setup","wgRelevantArticleId":419,"wgRequestId":"a35a226e34a0a1226f31d7e3","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["sysop"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Workstation_Setup rootpage-Workstation_Setup skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Workstation+Setup&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Workstation Setup</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Workstation_Setup&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Workstation_Setup&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Workstation_Setup&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Workstation_Setup" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Workstation_Setup" title="Workstation Setup">Workstation Setup</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Workstation_Setup&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Workstation_Setup&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">[[File:BaxterSetupInactive.png|120px|link=Baxter_Setup]][[File:TutorialTransitionArrowActive.png|120px|link=Workstation_Setup]][[File:WorkStationSetupActive.png|120px|link=Workstation_Setup]][[File:TutorialTransitionArrow.png|120px|link=Hello_Baxter]][[File:HelloBaxterInactive.png|120px|link=Hello_Baxter]]
+
+&lt;div class="noautonum toclimit-2">__TOC__&lt;/div>
+
+== Description ==
+&lt;span style="font-size:120%;">'''This tutorial describes the setup of a development workstation.'''&lt;/span>
+
+'''Note:''' '' (Advanced)'' If choosing to download the SDK on your physical Baxter (SSH'd as ruser), please see the [[SSH|SSH page instructions]] for on-robot workspace setup and running code on-board the robot.
+
+== Required Hardware ==
+* 1 Baxter Research Robot
+* 1 Development Workstation (Meeting [[System_requirements | Minimum System Requirements]])
+
+== Step 1: Install Ubuntu ==
+&lt;span style="font-size:115%;">'''Current required version: Ubuntu 14.04'''&lt;/span>
+
+&lt;tabs>
+&lt;tab name="Ubuntu 14.04 for ROS Indigo (Recommended)">
+
+Follow the standard Ubuntu Installation Instructions for 14.04 (Desktop):
+* Download the Installer Image file, by picking the "[http://releases.ubuntu.com/trusty/ Desktop CD]" image appropriate for your machine:
+** 32-bit (Intel x86): http://releases.ubuntu.com/trusty/ubuntu-14.04.5-desktop-i386.iso
+** 64-bit (AMD64): http://releases.ubuntu.com/trusty/ubuntu-14.04.5-desktop-amd64.iso
+&lt;/tab>
+
+&lt;tab name="Ubuntu 12.04 for ROS Hydro / Groovy">
+
+Follow the standard Ubuntu Installation Instructions for 12.04 (Desktop):
+* Download the Installer Image file, by picking the "[http://releases.ubuntu.com/precise/ Desktop CD]" image appropriate for your machine:
+** 32-bit (Intel x86): http://releases.ubuntu.com/precise/ubuntu-12.04.4-desktop-i386.iso
+** 64-bit (AMD64): http://releases.ubuntu.com/precise/ubuntu-12.04.4-desktop-amd64.iso
+
+&lt;/tab>
+
+
+
+&lt;/tabs>
+* Create an Ubuntu LiveUSB installer by burning the installer image onto a USB stick.
+** Windows: http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows
+** Mac OS X: http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx
+** Ubuntu: http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu
+* Follow the Ubuntu Installation Instructions here: https://help.ubuntu.com/community/GraphicalInstall
+
+== Step 2: Install ROS ==
+
+&lt;span style="font-size:115%;">'''Current recommended version: ROS Indigo'''&lt;/span>
+
+&lt;tabs>
+
+&lt;tab name="ROS Indigo (Recommended)">
+
+== Install ROS Indigo ==
+
+=== Configure Ubuntu repositories ===
+Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse." You can follow [https://help.ubuntu.com/community/Repositories/Ubuntu the Ubuntu guide] for instructions on doing this.&lt;br />
+''Likely, they are already configured properly, and you only need to confirm the configuration.''
+
+=== Setup your sources.list ===
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
+&lt;/syntaxhighlight>
+
+=== Setup your keys ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+&lt;/syntaxhighlight>
+
+=== Verify Latest Debians ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get update
+&lt;/syntaxhighlight>
+
+=== Install ROS Indigo Desktop Full ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get install ros-indigo-desktop-full
+&lt;/syntaxhighlight>
+
+'''NOTE:''' You may get a prompt about 'hddtemp' during the installation. You can safely answer 'No'.
+
+=== Initialize rosdep ===
+rosdep enables you to easily install system dependencies for source you want to compile and is required to run some core components in ROS.
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo rosdep init
+$ rosdep update
+&lt;/syntaxhighlight>
+
+=== Install rosinstall ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get install python-rosinstall
+&lt;/syntaxhighlight>
+&lt;/tab>
+&lt;tab name="ROS Hydro">
+
+== Install ROS Hydro ==
+
+'''Important Note:''' Due to being deemed "End of Life", no further updates to Debian packages can be made for Baxter's Hydro ROS packages. The final Baxter release in the Hydro Debian packages for Baxter RSDK 1.1.1. Please consider using ROS Indigo, Long Term Support, instead.
+
+=== Configure Ubuntu repositories ===
+Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse." You can follow [https://help.ubuntu.com/community/Repositories/Ubuntu the Ubuntu guide] for instructions on doing this.&lt;br />
+''Likely, they are already configured properly, and you only need to confirm the configuration.''
+
+=== Setup your sources.list ===
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu precise main" > /etc/apt/sources.list.d/ros-latest.list'
+&lt;/syntaxhighlight>
+
+=== Setup your keys ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+&lt;/syntaxhighlight>
+
+=== Verify Latest Debians ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get update
+&lt;/syntaxhighlight>
+
+=== Install ROS Hydro Desktop Full ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get install ros-hydro-desktop-full
+&lt;/syntaxhighlight>
+
+'''NOTE:''' You may get a prompt about 'hddtemp' during the installation. You can safely answer 'No'.
+
+=== Initialize rosdep ===
+rosdep enables you to easily install system dependencies for source you want to compile and is required to run some core components in ROS.
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo rosdep init
+$ rosdep update
+&lt;/syntaxhighlight>
+
+=== Install rosinstall ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get install python-rosinstall
+&lt;/syntaxhighlight>
+&lt;/tab>
+&lt;tab name="ROS Groovy (RSDK 1.0 Compatible)">
+== Install ROS Groovy ==
+
+'''Important Note:''' Due to being deemed "End of Life", no further updates to Debian packages can be made for Baxter's Groovy ROS packages. The final Baxter release compatible with Groovy is RSDK 1.0.0. Please consider using ROS Indigo, Long Term Support, instead.
+
+=== Configure Ubuntu repositories ===
+Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse." You can follow [https://help.ubuntu.com/community/Repositories/Ubuntu the Ubuntu guide] for instructions on doing this.&lt;br />
+''Likely, they are already configured properly, and you only need to confirm the configuration.''
+
+=== Setup your sources.list ===
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu precise main" > /etc/apt/sources.list.d/ros-latest.list'
+&lt;/syntaxhighlight>
+
+=== Setup your keys ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+&lt;/syntaxhighlight>
+
+=== Verify Latest Debians ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get update
+&lt;/syntaxhighlight>
+
+=== Install ROS Groovy Desktop Full ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get install ros-groovy-desktop-full
+&lt;/syntaxhighlight>
+ 
+'''NOTE:''' You may get a prompt about 'hddtemp' during the installation. You can safely answer 'No'.
+
+=== Initialize rosdep ===
+rosdep enables you to easily install system dependencies for source you want to compile and is required to run some core components in ROS.
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo rosdep init
+$ rosdep update
+&lt;/syntaxhighlight>
+
+=== Install rosinstall ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get install python-rosinstall
+&lt;/syntaxhighlight>
+
+&lt;/tab>
+
+
+&lt;/tabs>
+
+== Step 3: Create Baxter Development Workspace ==
+=== Create ROS Workspace ===
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ mkdir -p ~/ros_ws/src
+# ros_ws (short for ROS Workspace)
+&lt;/syntaxhighlight>
+
+=== Source ROS and Build ===
+&lt;tabs>
+
+&lt;tab name="ROS Indigo (Recommended)">
+=== Source ROS Setup ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ source /opt/ros/indigo/setup.bash
+&lt;/syntaxhighlight>
+=== Build and Install ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ catkin_make
+$ catkin_make install
+&lt;/syntaxhighlight>
+&lt;/tab>
+
+&lt;tab name="ROS Hydro">
+=== Source ROS Setup ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ source /opt/ros/hydro/setup.bash
+&lt;/syntaxhighlight>
+=== Build and Install ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ catkin_make
+$ catkin_make install
+&lt;/syntaxhighlight>
+&lt;/tab>
+
+&lt;tab name="ROS Groovy">
+=== Source ROS Setup ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ source /opt/ros/groovy/setup.bash
+&lt;/syntaxhighlight>
+
+=== Build and Install ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ catkin_make
+$ catkin_make install
+&lt;/syntaxhighlight>
+&lt;/tab>  
+
+
+
+&lt;/tabs>
+
+== Step 4: Install Baxter SDK Dependencies ==
+(This step not required if you are setting up your workstation on Baxter over SSH)
+&lt;tabs>
+&lt;tab name="ROS Indigo (Recommended)">
+=== Install SDK Dependencies ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get update
+$ sudo apt-get install git-core python-argparse python-wstool python-vcstools python-rosdep ros-indigo-control-msgs ros-indigo-joystick-drivers
+&lt;/syntaxhighlight>
+
+&lt;/tab>
+
+&lt;tab name="ROS Hydro">
+=== Install SDK Dependencies ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get update
+$ sudo apt-get install git-core python-argparse python-wstool python-vcstools python-rosdep ros-hydro-control-msgs ros-hydro-joystick-drivers
+&lt;/syntaxhighlight>
+
+&lt;/tab>
+
+&lt;tab name="ROS Groovy">
+=== Install SDK Dependencies ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get update
+$ sudo apt-get install git-core python-argparse python-wstool python-vcstools python-rosdep ros-groovy-control-msgs ros-groovy-joystick-drivers
+&lt;/syntaxhighlight>
+
+&lt;/tab>
+
+&lt;/tabs>
+
+== Step 5: Install Baxter Research Robot SDK ==
+
+&lt;span style="font-size:115%;">'''Current recommended installation: 1.2.0 Source'''&lt;/span>
+
+&lt;tabs>
+
+&lt;tab name="1.2.0 Workstation Source (Recommended)">
+
+=== Install Baxter SDK ===
+
+Using the [http://wiki.ros.org/wstool wstool] workspace tool, we will checkout all required [https://github.com/RethinkRobotics Baxter Github Repositories] into your ROS workspace source directory.
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws/src
+$ wstool init .
+$ wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter/master/baxter_sdk.rosinstall
+$ wstool update
+&lt;/syntaxhighlight>
+
+=== Source ROS Setup ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+'''You must use ROS Indigo to use RSDK 1.2.0. Use command below.'''
+# ROS Indigo
+$ source /opt/ros/indigo/setup.bash
+&lt;/syntaxhighlight>
+
+=== Build and Install ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ catkin_make
+$ catkin_make install
+&lt;/syntaxhighlight>
+&lt;/tab>
+&lt;tab name="1.2.0 On-Robot Source">
+
+=== Install Baxter SDK ===
+Using the [http://wiki.ros.org/wstool wstool] workspace tool, we will checkout all required [https://github.com/RethinkRobotics Baxter Github Repositories] into your ROS workspace source directory.
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws/src
+$ wstool init .
+$ wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter/master/baxter_sdk.rosinstall
+$ wstool update
+&lt;/syntaxhighlight>
+
+=== Source ROS Setup ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+# ROS Indigo
+$ source /opt/ros/indigo/setup.bash
+&lt;/syntaxhighlight>
+
+=== Build and Install ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ catkin_make
+$ catkin_make install
+&lt;/syntaxhighlight>
+&lt;/tab>
+
+&lt;tab name="1.1.1 Indigo Debian">
+=== Install Baxter SDK ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get update
+$ sudo apt-get install ros-indigo-baxter-sdk
+&lt;/syntaxhighlight>
+&lt;/tab>
+
+&lt;tab name="1.1.1 Hydro Debian">
+=== Install Baxter SDK ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get update
+$ sudo apt-get install ros-hydro-baxter-sdk
+&lt;/syntaxhighlight>
+&lt;/tab>
+
+
+&lt;tab name="1.0 (Groovy) Workstation Source">
+
+=== Install Baxter SDK ===
+Using the [http://wiki.ros.org/wstool wstool] workspace tool, we will checkout all required [https://github.com/RethinkRobotics Baxter Github Repositories] into your ROS workspace source directory.
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws/src
+$ wstool init .
+$ wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter/release-1.0.0/baxter_sdk.rosinstall
+$ wstool update
+&lt;/syntaxhighlight>
+
+=== Source ROS Setup ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+# ROS Groovy
+$ source /opt/ros/groovy/setup.bash
+&lt;/syntaxhighlight>
+
+=== Build and Install ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ catkin_make
+$ catkin_make install
+&lt;/syntaxhighlight>
+
+&lt;/tab>
+
+&lt;tab name="1.0 Groovy Debian">
+=== Install Baxter SDK ===
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get update
+$ sudo apt-get install ros-groovy-baxter-sdk
+&lt;/syntaxhighlight>
+&lt;/tab>
+
+
+&lt;/tabs>
+
+== Step 6: Configure Baxter Communication/ROS Workspace ==
+This step describes the configuration and setup of your [http://wiki.ros.org/ROS/EnvironmentVariables ROS environment]. This section assumes an already configured [[Networking | Network Setup]].
+
+&lt;span style="font-size:115%;">'''The current recommended environment setup: Baxter.sh ROS Environment Setup'''&lt;/span>
+
+&lt;tabs>
+&lt;tab name="Baxter.sh ROS Environment Setup (Recommended)">
+
+
+The [[baxter.sh]] script is a convenient script which allows for intuitive modification of the core ROS environment components. This user edited script will allow for the quickest and easiest ROS setup.
+
+Further information and a detailed description is available on the [[baxter.sh]] page.
+
+==== Download the baxter.sh script ====
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ wget https://github.com/RethinkRobotics/baxter/raw/master/baxter.sh
+$ chmod u+x baxter.sh
+&lt;/syntaxhighlight>
+
+==== Customize the baxter.sh script ====
+
+Please edit the baxter.sh shell script making the necessary modifications to describe your development PC.
+
+Using your favorite editor ([https://wiki.gnome.org/Apps/Gedit gedit] used for example)
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ gedit baxter.sh
+&lt;/syntaxhighlight>
+
+==== Edit the 'baxter_hostname' field ====
+Baxter's hostname is defaulted as the robot's serial number.  The serial number can be located on the back of the robot, next to the power button.
+
+Alternatively, you can find your robot's hostname by plugging a USB keyboard into the back of Baxter and pressing Ctrl+Alt+F3.
+&lt;syntaxhighlight lang="bash" enclose="div">
+# Specify Baxter's hostname
+**baxter_hostname="baxter_hostname.local"**
+&lt;/syntaxhighlight>
+
+==== Edit the 'your_ip' field ====
+Modify where 'your_ip' is the IP address of your PC.
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+**your_ip="192.168.XXX.XXX"**
+&lt;/syntaxhighlight>
+
+Useful command for identifying your IP address:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ ifconfig
+# Result will be contained in the 'inet addr' field (Ubuntu) or 'inet' field (Gentoo Robot PC).
+&lt;/syntaxhighlight>
+
+
+
+&lt;div class="toccolours mw-collapsible mw-collapsed">
+Alternatively, you may choose to use the hostname of your development PC rather than the PC's IP address.  For instructions, press Expand on the right.
+&lt;div class="mw-collapsible-content">
+You may edit the 'your_hostname' field (only if not using 'your_ip'):
+&lt;syntaxhighlight lang="bash" enclose="div">
+***your_hostname="my_computer.local***
+&lt;/syntaxhighlight>
+
+'''Important:''' This hostname must be resolvable to Baxter. To test if your hostname is resolvable to Baxter, please visit the development PC [[Hostname Validation]] page.
+
+'''Important:''' Only set either ROS_IP '''*OR*''' ROS_HOSTNAME.
+
+Setting of both ROS_IP and ROS_HOSTNAME will result in ROS_HOSTNAME taking priority, resulting in confusing environment setups. Comment out the unused method using the '#' as leading character.
+
+&lt;/div>
+&lt;/div>
+==== Verify 'ros_version' field ====
+Verify that the the 'ros_version' field matches the ROS version you are running:
+
+This field will default to "indigo"
+&lt;syntaxhighlight lang="bash" enclose="div">
+***ros_version="indigo"***
+&lt;/syntaxhighlight>
+
+==== Save and Close baxter.sh script ====
+Please save and close the baxter.sh script.
+
+==== Initialize your SDK environment ====
+From this point forward, your ROS environment setup should be as simple as sourcing the baxter.sh script from the root of your Catkin workspace:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ . baxter.sh
+&lt;/syntaxhighlight>
+
+
+&lt;/tab>
+&lt;tab name="Standard bashrc ROS Environment Setup">
+It will be necessary to enable communication between the development PC and the robot. This section largely follows [http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment ros.org's Installation and Configuration of ROS Environment page].
+
+To do so, we will edit our [http://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html ~/.bashrc] script which is evoked with new shell instances.
+
+==== Customize your ~/.bashrc ====
+
+Please edit the ~/.bashrc to set the ROS environment variables necessary for communication with Baxter.
+
+Using your favorite editor ([https://wiki.gnome.org/Apps/Gedit gedit] used for example)
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ gedit ~/.bashrc
+&lt;/syntaxhighlight>
+
+At the bottom of your ~/.bashrc script add the following:
+
+==== Source ROS setup.bash ====
+A ROS environment script is packages will all standard ROS installation. This script will set the standard basic ROS environment variables. 
+
+Please add the following to the bottom of your ~/.bashrc script.
+
+If using ROS Indigo:
+&lt;syntaxhighlight lang="bash" enclose="div">
+source /opt/ros/indigo/setup.bash
+&lt;/syntaxhighlight>
+
+If using ROS Hydro:
+&lt;syntaxhighlight lang="bash" enclose="div">
+source /opt/ros/hydro/setup.bash
+&lt;/syntaxhighlight>
+
+If using ROS Groovy:
+&lt;syntaxhighlight lang="bash" enclose="div">
+source /opt/ros/groovy/setup.bash
+&lt;/syntaxhighlight>
+
+==== Set ROS_MASTER_URI ====
+
+[http://wiki.ros.org/ROS/EnvironmentVariables#ROS_MASTER_URI ROS_MASTER_URI] - Allows the development PC to locate the master. This will typically be the hostname of the robot.
+
+Please add the following to the bottom of your ~/.bashrc script.
+&lt;syntaxhighlight lang="bash" enclose="div">
+export ROS_MASTER_URI=http://baxter_hostname:11311
+&lt;/syntaxhighlight>
+Where 'baxter_hostname' is the [[Robot_Hostname hostname of your robot]
+
+==== Set ROS_IP *OR* ROS_HOSTNAME ====
+It will be necessary for other processes to be able to communicate to and from your development PC. For this reason, setting [http://wiki.ros.org/ROS/EnvironmentVariables#ROS_NAMESPACE ROS_IP or ROS_HOSTNAME] advertises your node for networked communication.
+
+Please add the ROS_IP (only if not using ROS_HOSTNAME):
+&lt;syntaxhighlight lang="bash" enclose="div">
+export ROS_IP='192.168.XXX.XXX'
+&lt;/syntaxhighlight>
+Modifying where 'your_ip' is the IP address of your PC.
+
+Useful command for identifying your IP address:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ ifconfig
+# Result will be contained in the 'inet addr' field (Ubuntu) or 'inet' field (Gentoo Robot PC).
+&lt;/syntaxhighlight>
+
+'''Important:''' Only set either ROS_IP '''*OR*''' ROS_HOSTNAME.
+
+Alternatively, you may choose to use the hostname of your development PC. 
+
+Please edit the ROS_HOSTNAME field (only if not using ROS_IP):
+&lt;syntaxhighlight lang="bash" enclose="div">
+export ROS_HOSTNAME='your_hostname'
+&lt;/syntaxhighlight>
+Modifying where 'your_hostname' is the hostname of your PC.
+
+'''Important:''' This hostname must be resolvable to Baxter. To test if your hostname is resolvable to Baxter, please visit the development PC [[Hostname Validation]] page.
+
+==== Save and Close ~/.bashrc ====
+Please save and close your ~/.bashrc
+
+==== Initialize your SDK environment ====
+From this point forward, your ROS environment setup should be preconfigured upon startup of all new terminals (shells). '''Important:''' You will still need to source your development workspace (~/ros_ws/devel/setup.bash) setup script when compiling code from source in your [http://wiki.ros.org/catkin/workspaces Catkin workspace] - following our setup this will be ~/ros_ws.
+
+Please close your current terminal, and reopen a new terminal instance.
+
+&lt;/tab>
+&lt;/tabs>
+
+== Step 7: Verify Environment ==
+
+A useful command for viewing and validating your ROS environment setup is:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ env | grep ROS
+&lt;/syntaxhighlight>
+
+The important fields at this point:  
+
+'''ROS_MASTER_URI''' - This should now contain your robot's hostname.  
+
+'''ROS_IP''' - This should contain your workstation's IP address.
+
+or
+
+'''ROS_HOSTNAME''' - If not using the workstation's IP address, the ROS_HOSTNAME field should contain your PC's hostname.  Otherwise, this field should not be available.
+
+== Video ==
+{{#ev:youtube|2QfP4qY_7_c|500}}
+
+== ''Next Step'' ==
+We will verify your network setup in the next section.
+&lt;span style="font-size:130%;">[[Hello_Baxter | '''Hello Baxter!''']]&lt;/span>
+
+[[File:BaxterSetupInactive.png|120px|link=Baxter_Setup]][[File:TutorialTransitionArrow.png|120px|link=Workstation_Setup]][[File:WorkstationSetupInactive.png|120px|link=Workstation_Setup]][[File:TutorialTransitionArrowActive.png|120px|link=Hello_Baxter]][[File:HelloBaxterActive.png|120px|link=Hello_Baxter]]
+
+== Trouble? ==
+
+Please visit our [[Troubleshooting | '''Troubleshooting Section''']]
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Workstation_Setup" title="Workstation Setup">Workstation Setup</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Workstation_Setup">http://sdk.rethinkrobotics.com/wiki/Workstation_Setup</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":123});});</script></body></html>

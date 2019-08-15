@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>E-STOP and Enable Robot - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"E-STOP_and_Enable_Robot","wgTitle":"E-STOP and Enable Robot","wgCurRevisionId":1138,"wgRevisionId":1138,"wgArticleId":164,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"E-STOP_and_Enable_Robot","wgRelevantArticleId":164,"wgRequestId":"a6ab489dccaa7f152bf7c561","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-E-STOP_and_Enable_Robot rootpage-E-STOP_and_Enable_Robot skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=E-STOP+and+Enable+Robot&amp;returntoquery=oldid%3D1138">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#">More</a>
+                <ul>
+                <li id="ca-viewsource"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../E-STOP_and_Enable_Robot" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">E-STOP and Enable Robot</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                <div class="mw-revision"><div id="mw-revision-info">Revision as of 19:37, 16 January 2017 by <a href="index.php?title=User:Swang&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Swang (page does not exist)"><bdi>Swang</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Swang&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Swang (page does not exist)">talk</a> | <a href="../Special:Contributions/Swang" class="mw-usertoollinks-contribs" title="Special:Contributions/Swang">contribs</a>)</span> <span class="comment">(<a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Enable_Robot">→</a>‎<span dir="auto"><span class="autocomment">Enable Robot</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=E-STOP_and_Enable_Robot&amp;diff=prev&amp;oldid=1138" title="E-STOP and Enable Robot">diff</a>) <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=E-STOP_and_Enable_Robot&amp;direction=prev&amp;oldid=1138" title="E-STOP and Enable Robot">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#column-one">navigation</a>
+                    ,                     <a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="toclimit-2"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Robot_State_and_E-Stop"><span class="tocnumber">1</span> <span class="toctext">Robot State and E-Stop</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Quickstart"><span class="tocnumber">1.1</span> <span class="toctext">Quickstart</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Overview"><span class="tocnumber">1.2</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#EStop_and_State_Message"><span class="tocnumber">1.3</span> <span class="toctext">EStop and State Message</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#EStop_States"><span class="tocnumber">1.3.1</span> <span class="toctext">EStop States</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Enable_Robot"><span class="tocnumber">2</span> <span class="toctext">Enable Robot</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Basic_Usage"><span class="tocnumber">2.1</span> <span class="toctext">Basic Usage</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Functions"><span class="tocnumber">2.2</span> <span class="toctext">Functions</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Robot_State"><span class="tocnumber">2.3</span> <span class="toctext">Robot State</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Enable_Robot_2"><span class="tocnumber">2.4</span> <span class="toctext">Enable Robot</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Disable_Robot"><span class="tocnumber">2.5</span> <span class="toctext">Disable Robot</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Reset"><span class="tocnumber">2.6</span> <span class="toctext">Reset</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Stop"><span class="tocnumber">2.7</span> <span class="toctext">Stop</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Troubleshooting"><span class="tocnumber">2.8</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#Robot_fails_to_enable_or_reset"><span class="tocnumber">2.8.1</span> <span class="toctext">Robot fails to enable or reset</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138#More_Information"><span class="tocnumber">3</span> <span class="toctext">More Information</span></a></li>
+</ul>
+</div>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Robot_State_and_E-Stop">Robot State and E-Stop</span></h1>
+<p>The "Robot State" refers to the state variable that shows whether the robot (motors) are enabled or disabled, if the e-stop is engaged, and if there are any hardware errors.
+</p><p><a href="../File:E_stop.jpg" class="image"><img alt="E stop.jpg" src="images/1/12/E_stop.jpg" width="300" height="225" /></a>
+</p><p>Sawyer's Emergency Stop (E-Stop) button (the image showing above) is a hardware stop which will disallow power to the robot components. The E-Stop should always be available when running advanced control programs as a safety precaution. If the robot ever moves unexpectedly, press the E-Stop to prevent anyone from being hurt, or damaging the Sawyer hardware.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Quickstart">Quickstart</span></h2>
+<p>Use the <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_interface/scripts/enable_robot.py">Enable Robot Script</a> with various arguments to enable the robot or check its current state.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>The "Robot State" refers to the state variable that shows whether the robot (motors) are enabled or disabled, if the e-stop is engaged, and if there are any hardware errors.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="EStop_and_State_Message">EStop and State Message</span></h2>
+<p>Below are various state messages and what they mean and indicate.  The third column tells you the Resolution to follow if having a problem and you see this message.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th scope="col">Message
+</th>
+<th scope="col">EStop State / Error Meaning
+</th>
+<th scope="col">Resolution
+</th></tr>
+<tr>
+<td><code>enabled: False</code></td>
+<td>Robot is disabled; Power to motors is OFF</td>
+<td><a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_interface/scripts/enable_robot.py">Enable Robot Script</a>
+</td></tr>
+<tr>
+<td><code>estop_button: 1</code></td>
+<td>E-Stop button is engaged or loose.</td>
+<td>
+</td></tr>
+<tr>
+<td><code>estop_button: 2</code></td>
+<td>S/W Stop was called.</td>
+<td>
+</td></tr>
+<tr>
+<td><code>estop_button: 3</code></td>
+<td>E-Stop button now disengaged (released), but not reset yet.</td>
+<td>
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="EStop_States">EStop States</span></h3>
+<p>Below is the raw contents of the [<code>intera_core_msgs/AssemblyState</code>][intera_core_msgs-AssemblyState] Message from the <code>/robot/state</code> topic.  The contents explain the meaning of the <code>estop_button</code> and <code>estop_source</code> fields.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosmsg show intera_core_msgs/AssemblyState -r
+bool enabled             <span class="c1"># true if enabled</span>
+bool stopped             <span class="c1"># true if stopped -- e-stop asserted</span>
+bool error               <span class="c1"># true if a component of the assembly has an error</span>
+<span class="c1">#</span>
+<span class="o">=</span> The following are specific to the robot top-level assembly: <span class="o">=</span>
+uint8  estop_button      <span class="c1"># One of the following:</span>
+  uint8   <span class="nv">ESTOP_BUTTON_UNPRESSED</span> <span class="o">=</span> <span class="m">0</span>   <span class="c1"># Robot is not stopped and button is not pressed</span>
+  uint8   <span class="nv">ESTOP_BUTTON_PRESSED</span>   <span class="o">=</span> <span class="m">1</span>
+  uint8   <span class="nv">ESTOP_BUTTON_UNKNOWN</span>   <span class="o">=</span> <span class="m">2</span>   <span class="c1"># STATE_UNKNOWN when estop was asserted by a non-user source</span>
+  uint8   <span class="nv">ESTOP_BUTTON_RELEASED</span>  <span class="o">=</span> <span class="m">3</span>   <span class="c1"># Was pressed, is now known to be released, but robot is still stopped.</span>
+<span class="c1">#</span>
+uint8  estop_source      <span class="c1"># If stopped is true, the source of the e-stop.  One of the following:</span>
+  uint8  <span class="nv">ESTOP_SOURCE_NONE</span>      <span class="o">=</span> <span class="m">0</span>   <span class="c1"># e-stop is not asserted</span>
+  uint8  <span class="nv">ESTOP_SOURCE_USER</span>      <span class="o">=</span> <span class="m">1</span>   <span class="c1"># e-stop source is user input (the red button)</span>
+  uint8  <span class="nv">ESTOP_SOURCE_UNKNOWN</span>   <span class="o">=</span> <span class="m">2</span>   <span class="c1"># e-stop source is unknown</span>
+  uint8  <span class="nv">ESTOP_SOURCE_FAULT</span>     <span class="o">=</span> <span class="m">3</span>   <span class="c1"># MotorController asserted e-stop in response to a joint fault</span>
+  uint8  <span class="nv">ESTOP_SOURCE_BRAIN</span>     <span class="o">=</span> <span class="m">4</span>   <span class="c1"># MotorController asserted e-stop in response to a lapse of the brain heartbeat</span>
+</pre></div>
+<p>This table shows example scenarios of various E-Stop states and the corresponding robot state message that would be published.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th scope="col">Message
+</th>
+<th scope="col">EStop State / Error
+</th>
+<th scope="col">Resolution
+</th></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">enabled</span><span class="p">:</span> <span class="bp">True</span>
+<span class="n">stopped</span><span class="p">:</span> <span class="bp">False</span>
+<span class="n">error</span><span class="p">:</span> <span class="bp">False</span>
+<span class="n">estop_button</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">estop_source</span><span class="p">:</span> <span class="mi">0</span>
+</pre></div>
+</td>
+<td>(Good) Robot is enabled; E-Stop is connected and disengaged.</td>
+<td>
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">enabled</span><span class="p">:</span> <span class="bp">False</span>
+<span class="n">stopped</span><span class="p">:</span> <span class="bp">False</span>
+<span class="n">error</span><span class="p">:</span> <span class="bp">False</span>
+<span class="n">estop_button</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">estop_source</span><span class="p">:</span> <span class="mi">0</span>
+</pre></div>
+</td>
+<td>(Good) EStop connected and not triggered; robot disabled; or robot reset.
+</td>
+<td>Use the <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_interface/scripts/enable_robot.py">Enable Robot Script</a> to enable the robot:<br />
+<pre> <code>$ rosrun intera_interface enable_robot.py -e</code>
+</pre>
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">enabled</span><span class="p">:</span> <span class="bp">False</span>
+<span class="n">stopped</span><span class="p">:</span> <span class="bp">True</span>
+<span class="n">error</span><span class="p">:</span> <span class="bp">True</span>
+<span class="n">estop_button</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">estop_source</span><span class="p">:</span> <span class="mi">1</span>
+</pre></div>
+</td>
+<td>E-Stop is engaged; Or E-Stop has come loose.
+</td>
+<td>Disengage the E-Stop, make sure it is firmly connected to the robot, then reset the robot.
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">enabled</span><span class="p">:</span> <span class="bp">False</span>
+<span class="n">stopped</span><span class="p">:</span> <span class="bp">True</span>
+<span class="n">error</span><span class="p">:</span> <span class="bp">False</span>
+<span class="n">estop_button</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">estop_source</span><span class="p">:</span> <span class="mi">1</span>
+</pre></div>
+</td>
+<td>E-Stop is released (or reconnected), but not reset.
+</td>
+<td>Reset the robot, then try again:<br />
+<pre> <code>$ rosrun intera_interface enable_robot.py -r</code>
+</pre>
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">enabled</span><span class="p">:</span> <span class="bp">False</span>
+<span class="n">stopped</span><span class="p">:</span> <span class="bp">True</span>
+<span class="n">error</span><span class="p">:</span> <span class="bp">True</span>
+<span class="n">estop_button</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">estop_source</span><span class="p">:</span> <span class="mi">1</span>
+</pre></div>
+</td>
+<td>User triggered (Software) E-Stop.
+</td>
+<td>Reset the robot, then try again:<br />
+<pre> <code>$ rosrun intera_interface enable_robot.py -r</code>
+</pre>
+</td></tr></tbody></table>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h1><span class="mw-headline" id="Enable_Robot">Enable Robot</span></h1>
+<p>The enable robot example program will allow you to enable/disable/reset/stop the robot. You can also get the robot's current state.  The robot must be enabled in order to control the motors.
+In order to control Sawyer's arms, the robot must be put in the 'Enabled' state.  Enabling the robot provides power to the joint motors, which are initially in the 'Disabled' state on start-up or after a serious error, such as an E-Stop (Emergency-Stop).  The robot's 'State' can be checked with the enable_robot tool.
+</p><p><b>Note:</b> If an error has occurred, the robot state may need to be reset (<code>-r</code>) before being enabled again.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Basic_Usage">Basic Usage</span></h2>
+<p>To <b>Enable</b> the robot:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_interface enable_robot.py -e
+</pre></div> 
+<p>To <b>Disable</b> the robot:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_interface enable_robot.py -d
+</pre></div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<p>To get help on enable_robot use the <code>-h</code> argument:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_interface enable_robot.py -h
+</pre></div>
+<p>Help screen:
+</p><p>enable_robot.py [ARGUMENTS]
+</p>
+<ul><li>h, --help      show this help message and edit</li>
+<li>s, --state     Print current robot state</li>
+<li>e, --enable    Enable the robot</li>
+<li>d, --disable   Disable the robot</li>
+<li>r, --reset     Reset the robot</li>
+<li>S, --stop      Stop the robot</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Robot_State">Robot State</span></h2>
+<p>To get the current robot state use <code>-s</code>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_interface enable_robot.py -s
+
+enabled: False
+stopped: False
+error: False
+estop_button: <span class="m">0</span>
+estop_source: <span class="m">0</span>
+</pre></div>
+<p>The state output above indicates a normal (all-clear) status, as you would see after power-up.  Once you enable the robot to control the arms, you should see the same status but with <code>enabled: True</code>.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Enable_Robot_2">Enable Robot</span></h2>
+<p>Use <code>-e</code> to enable the robot.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_interface enable_robot.py -e
+</pre></div>
+<p>The robot state <code>enabled</code> field should then switch to True.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Disable_Robot">Disable Robot</span></h2>
+<p>Use <code>-d</code> to disable the robot.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_interface enable_robot.py -d
+</pre></div>
+<p>The robot state <code>enabled</code> field should then switch to False.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Reset">Reset</span></h2>
+<p>Use <code>-r</code> to reset the robot after an error (if the robot state gives <code>error: True</code>).
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_interface enable_robot.py -r
+</pre></div>
+<p>This should clear the <code>error</code> field, setting it back to <code>error: False</code>.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Stop">Stop</span></h2>
+<p>Use <code>-S</code> (capital S) to stop the robot.  This is similar to a "software" E-Stop.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_interface enable_robot.py -S
+</pre></div>
+<p>This will disable the robot and also cause the <code>stopped</code> field and the <code>error</code> field to go True.  You will need to reset the robot before enabling it again.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<h3><span class="mw-headline" id="Robot_fails_to_enable_or_reset">Robot fails to enable or reset</span></h3>
+<p>If your robot "fails to reset" when you run robot enable, the first thing to check is if the E-Stop is engaged:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_interface enable_robot -s
+
+enabled: False
+stopped: True
+error: True
+estop_button: <span class="m">1</span>
+estop_source: <span class="m">1</span>
+</pre></div>
+<p>If the <code>estop_button:</code> field says '<code>1</code>', it means the E-Stop is engaged (from [<code>intera_core_msgs/AssemblyState</code>][intera_core_msgs-AssemblyState] message: <code>uint8 ESTOP_BUTTON_PRESSED=1</code>).  
+Disengage the E-Stop by twisting the red top until it 'pops'-up, then try resetting the robot.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_interface enable_robot -r
+$ rosrun intera_interface enable_robot -e
+</pre></div>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h1><span class="mw-headline" id="More_Information">More Information</span></h1>
+<p>See the <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_interface/scripts/enable_robot.py">Enable Robot Script</a> for more information about the robot's state and dealing with errors.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815154856
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.050 seconds
+Real time usage: 1.307 seconds
+Preprocessor visited node count: 218/1000000
+Preprocessor generated node count: 436/1000000
+Post‐expand include size: 37/2097152 bytes
+Template argument size: 1/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 7157/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.538      1 Template:TOClimit
+100.00%    0.538      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:164-0!canonical and timestamp 20190815154855 and revision id 1138
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138">http://sdk.rethinkrobotics.com/intera/a/index.php?title=E-STOP_and_Enable_Robot&amp;oldid=1138</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.050","walltime":"1.307","ppvisitednodes":{"value":218,"limit":1000000},"ppgeneratednodes":{"value":436,"limit":1000000},"postexpandincludesize":{"value":37,"limit":2097152},"templateargumentsize":{"value":1,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":7157,"limit":5000000},"timingprofile":["100.00%    0.538      1 Template:TOClimit","100.00%    0.538      1 -total"]},"cachereport":{"timestamp":"20190815154856","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":133});});</script></body></html>

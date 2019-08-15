@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Using Joysticks - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Using_Joysticks","wgTitle":"Using Joysticks","wgCurRevisionId":3786,"wgRevisionId":3786,"wgArticleId":305,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Using_Joysticks","wgRelevantArticleId":305,"wgRequestId":"d901cc9ce21be0c170372a98","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["ext.tabs","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="a/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<style type="text/css" id="tabs-dynamic-styles">/*<![CDATA[*/
+/* Dynamically generated tabs styles */
+.tabs-input-1:checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-content-2,
+.tabs-input-3:checked ~ .tabs-container .tabs-content-3,
+.tabs-input-0:checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1:checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-3:checked ~ .tabs-container .tabs-inline.tabs-content-3,
+.tabs-input-0:checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1:checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-3:checked ~ .tabs-container .tabs-block.tabs-content-3,
+.tabs-input-0:checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+/* The same styles, but with .checked instead of :checked, for browsers that rely on the JavaScript fallback */
+.tabs-input-1.checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-content-2,
+.tabs-input-3.checked ~ .tabs-container .tabs-content-3,
+.tabs-input-0.checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1.checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-3.checked ~ .tabs-container .tabs-inline.tabs-content-3,
+.tabs-input-0.checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1.checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-3.checked ~ .tabs-container .tabs-block.tabs-content-3,
+.tabs-input-0.checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+.tabs-dropdown .tabs-content,.tabs-dropdown .tabs-container,.tabs-dropdown li,.tabs-dropdown ul,.tabs-dropdown ol {background-color: white}
+/*]]>*/</style>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Using_Joysticks rootpage-Using_Joysticks skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(a/skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="a/index.php?title=Special:UserLogin&amp;returnto=Using+Joysticks">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Using Joysticks</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="Using_Joysticks#">More</a><ul><li id="ca-viewsource"><a href="a/index.php?title=Using_Joysticks&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="a/index.php?title=Using_Joysticks&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="Using_Joysticks" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="Learning">Learning</a></li>
+                <li id="n-Community"><a href="Community">Community</a></li>
+                <li id="n-Support"><a href="Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="Using_Joysticks#column-one">navigation</a>, <a href="Using_Joysticks#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Using_Joysticks#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="Using_Joysticks#Overview"><span class="tocnumber">2</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="Using_Joysticks#Examples_using_joysticks"><span class="tocnumber">2.1</span> <span class="toctext">Examples using joysticks</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="Using_Joysticks#Running_the_Joystick_Examples"><span class="tocnumber">3</span> <span class="toctext">Running the Joystick Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="Using_Joysticks#Installing_ROS_Joystick_Drivers"><span class="tocnumber">3.1</span> <span class="toctext">Installing ROS Joystick Drivers</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="Using_Joysticks#Running_the_ROS_joystick_publisher"><span class="tocnumber">3.2</span> <span class="toctext">Running the ROS joystick publisher</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="Using_Joysticks#Running_the_RSDK_Joystick_Examples"><span class="tocnumber">3.3</span> <span class="toctext">Running the RSDK Joystick Examples</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="Using_Joysticks#Manual_Start_Method"><span class="tocnumber">3.3.1</span> <span class="toctext">Manual Start Method</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="Using_Joysticks#Alternative_Automatic_Starting_Joystick_Example_Programs"><span class="tocnumber">3.4</span> <span class="toctext">Alternative Automatic Starting Joystick Example Programs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="Using_Joysticks#Alternate_Options"><span class="tocnumber">4</span> <span class="toctext">Alternate Options</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="Using_Joysticks#Specifying_an_input_device"><span class="tocnumber">4.1</span> <span class="toctext">Specifying an input device</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="Using_Joysticks#Using_the_PS3_Joystick"><span class="tocnumber">4.2</span> <span class="toctext">Using the PS3 Joystick</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="Using_Joysticks#Install_ROS_Joystick_drivers"><span class="tocnumber">4.2.1</span> <span class="toctext">Install ROS Joystick drivers</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="Using_Joysticks#Pairing_Controller"><span class="tocnumber">4.2.2</span> <span class="toctext">Pairing Controller</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="Using_Joysticks#Connecting_Bluetooth_Controller_for_Use_.28Each_Session.29"><span class="tocnumber">4.2.3</span> <span class="toctext">Connecting Bluetooth Controller for Use (Each Session)</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="Using_Joysticks#Running_Examples_with_a_PS3_Controller"><span class="tocnumber">4.2.4</span> <span class="toctext">Running Examples with a PS3 Controller</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-17"><a href="Using_Joysticks#Joystick_Button_Mappings"><span class="tocnumber">4.3</span> <span class="toctext">Joystick Button Mappings</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Summary">Summary</span></h2>
+<p>A number of examples in the RSDK use game controllers, or joysticks, to interact with Baxter.  There is also a python utility for handling input devices like joysticks with common methods.
+</p>
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>The ROS package <code>joy</code> makes it easy to use gamepad controllers in ROS programs by publishing the buttons and stick axes on a ROS Topic.  Examples in the RSDK use this package to let users control Baxter with a joystick.
+</p><p>Any joystick controller supported by Linux should be compatible with the ROS <code>joy</code> package.  Running the ROS <code>joy_node</code> publishes the input values on the <code>/joy</code> topic.  The RSDK python examples then use a convenience class to map the array of button and axes values on this topic to a named dictionary.  Every model of controller has a different definition of which button is which, so this class allows us to consistently map inputs to the same variables across brands.  The RSDK examples themselves then use these consistent dictionary names and load the mapping the user indicates in an argument when you start the example.
+</p>
+<h3><span class="mw-headline" id="Examples_using_joysticks">Examples using joysticks</span></h3>
+<p>There are a couple <a href="Example_Programs" class="mw-redirect" title="Example Programs">RSDK examples</a> already setup to use the joysticks to control Baxter.  These can often be run in parallel with other tasks and programs and make it easier to position and coordinate Baxter while using the RSDK.  Joystick examples include:  
+</p>
+<ul><li><a href="Joint_Position_Example" title="Joint Position Example">Joint Position Example</a></li>
+<li><a href="Gripper_Example" title="Gripper Example">Gripper Example</a></li></ul>
+<h2><span class="mw-headline" id="Running_the_Joystick_Examples">Running the Joystick Examples</span></h2>
+<h4><span class="mw-headline" id="Installing_ROS_Joystick_Drivers">Installing ROS Joystick Drivers</span></h4>
+<p>First ensure that the joy drivers are installed. 
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rospack find <span class="nv">joy</span>  
+<span class="o">=</span> /opt/ros/indigo/share/joy <span class="o">=</span>
+</pre></div>
+<p>If not run:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get install ros-indigo-joystick-drivers
+</pre></div>
+<p><i>Substitute the appropriate ROS 'distro' for <code>indigo</code> if you are running other ROS distributions.</i>
+</p>
+<h4><span class="mw-headline" id="Running_the_ROS_joystick_publisher">Running the ROS joystick publisher</span></h4>
+<p>Plug in your joystick and verify the computer can see the input device:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ ls /dev/input/js*
+/dev/input/js0
+</pre></div>
+<p><i>If using a PS3 joystick, see <a href="Using_Joysticks#using-the-ps3-joystick" title="Using Joysticks">Using a PS3 Joystick</a> in order to make the device appear.</i>
+</p><p>From an <a href="RSDK_Shell" title="RSDK Shell">RSDK Shell</a> start the <code>joy_node</code>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun joy joy_node
+</pre></div>
+<p>You should now be able to verify the ROS joystick part is working by echoing the <code>/joy</code> topic and seeing the joystick inputs being published when you use the joystick:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="o">=</span> in an RSDK shell: <span class="o">=</span>
+$ rostopic <span class="nb">echo</span> /joy
+</pre></div>
+<h3><span class="mw-headline" id="Running_the_RSDK_Joystick_Examples">Running the RSDK Joystick Examples</span></h3>
+<h4><span class="mw-headline" id="Manual_Start_Method">Manual Start Method</span></h4>
+<p>For the joystick examples to work, the <code>joy_node</code> driver must be running at the same time as the example.
+</p><p>To manually start examples that use a joystick, you can run the <b>joy_node</b> program (joystick driver) in one terminal and the joint_position <b>example</b> in a second terminal:
+</p><p>1. If you haven't already run the <code>joy_node</code> from the previous step:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun joy joy_node
+</pre></div>
+<p>2. In a <b>second</b> <a href="RSDK_Shell" title="RSDK Shell">RSDK Shell</a>, run the example program and pass it the type of joystick you are using in the <code>&lt;joystick_type&gt;</code> argument (e.g. 'logitech'):
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun joint_position joystick.py &lt;joystick_type&gt;
+</pre></div>
+<p>Where <code>&lt;joystick_type&gt;</code> is 'xbox', 'logitech', or 'ps3'.  
+<i>(If using a ps3, make sure you run the node from the ROS ps3joy package in a separate sudo terminal.  See instructions here: <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/ps3joy/Tutorials/PairingJoystickAndBluetoothDongle">ps3joy</a> )</i>
+</p>
+<h3><span class="mw-headline" id="Alternative_Automatic_Starting_Joystick_Example_Programs">Alternative Automatic Starting Joystick Example Programs</span></h3>
+<p>Examples that offer joystick integration will also include a special start script specifically for starting up the joystick drivers and the example at the same time.  This script is usually called <code>joystart</code>.
+</p><p><i><b>RSDK Beta Version:</b></i> To run the example:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun joint_position joystart &lt;joystick_type&gt;
+</pre></div>
+<p>For the joystick examples to work, the joy_node driver must be running at the same time as the example. Using any one-line command to launch or start a joystick example is actually just using a short-cut to start the two programs at once.
+</p>
+<h2><span class="mw-headline" id="Alternate_Options">Alternate Options</span></h2>
+<h3><span class="mw-headline" id="Specifying_an_input_device">Specifying an input device</span></h3>
+<p>The joystick device used defaults to <code>/dev/input/js0</code>.  If you have multiple input devices connected or want to specify a specific device to use, you can use the following commands.
+</p><p>List current input devices:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ ls /dev/input/js*
+/dev/input/js0  /dev/input/js1
+</pre></div>
+<p>From an <a href="RSDK_Shell" title="RSDK Shell">RSDK Shell</a>, <i>before</i> starting the ROS node, set the <code>joy_node</code> input device ROS Paramater, <code>~/dev</code>, to your desired input device:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosparam <span class="nb">set</span> /joy_node/dev /dev/input/js1
+</pre></div>
+<p>Then start the example with either the Automatic or Manual method:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun joint_position joystart &lt;joystick_type&gt;
+</pre></div>
+<h3><span class="mw-headline" id="Using_the_PS3_Joystick">Using the PS3 Joystick</span></h3>
+<p>The PS3 SIXAXIS or DUALSHOCK3 joysticks require an additional component to run in order to support the bluetooth and special features of the joysticks.  These drivers are thankfully taken care of in the ROS <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/ps3joy">ps3joy</a> package (included in the <code>ros-&lt;distro&gt;-joystick-drivers</code> install).
+</p>
+<h4><span class="mw-headline" id="Install_ROS_Joystick_drivers">Install ROS Joystick drivers</span></h4>
+<form id="tabs-inputform" class="tabs tabs-inputform" action="Using_Joysticks#"></form><div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-1-0" name="tabs-1" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-1-1" name="tabs-1" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-1-1" data-tabpos="1">ROS Indigo</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-1-2" name="tabs-1" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-1-2" data-tabpos="2">ROS Hydro</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-1-3" name="tabs-1" class="tabs-input tabs-input-3" /><label class="tabs-label" for="tabs-input-1-3" data-tabpos="3">ROS Groovy</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get install ros-indigo-joystick-drivers
+</pre></div>
+</div>
+<div class="tabs-content tabs-content-2">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get install ros-hydro-joystick-drivers
+</pre></div>
+</div>
+<div class="tabs-content tabs-content-3">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get install ros-groovy-joystick-drivers
+</pre></div>
+</div>
+</div></div>
+<p>Make sure dependencies are installed:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosdep update
+$ rosdep install ps3joy
+</pre></div>
+<h4><span class="mw-headline" id="Pairing_Controller">Pairing Controller</span></h4>
+<p>Set Controller’s target to this PC’s Bluetooth Address:
+</p>
+<ul><li>Plug PS3 into computer using USB cable.</li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> ~/ros_ws
+$ sudo ./baxter.sh
+$ rosrun ps3joy sixpair
+</pre></div>
+<h4><span id="Connecting_Bluetooth_Controller_for_Use_(Each_Session)"></span><span class="mw-headline" id="Connecting_Bluetooth_Controller_for_Use_.28Each_Session.29">Connecting Bluetooth Controller for Use (Each Session)</span></h4>
+<p>In a background terminal, run joystick connection/driver:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> ~/ros_ws
+$ sudo ./baxter.sh
+$ rosrun ps3joy ps3joy.py
+</pre></div>
+<p>Activate connection:
+</p>
+<ul><li>Press ‘Playstation’ Pairing Button on Controller (unplugged).</li>
+<li>Lights will start flashing rapidly and terminal will say Connection is Activated.</li>
+<li>Leave terminal / program running in background.</li></ul>
+<p>Controller will now show up as /dev/input/js*. Can now be run like normal joystick.
+</p>
+<h4><span class="mw-headline" id="Running_Examples_with_a_PS3_Controller">Running Examples with a PS3 Controller</span></h4>
+<p>Run joystart script for examples like normal, using ‘ps3’ mapping argument, e.g:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> ~/ros_ws
+$ ./baxter.sh
+$ rosrun baxter_examples joint_position_joystick.py -j ps3
+</pre></div>
+<h3><span class="mw-headline" id="Joystick_Button_Mappings">Joystick Button Mappings</span></h3>
+<p>Look at the wiki page for individual examples to see how the buttons are mapped.  Make sure you start the examples with the correct type of joystick selected, as they change per device type.  You can modify or create your own joystick mappings by editing the joystick script via <code>rosed baxter_examples joystick.py</code>.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815160917
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.063 seconds
+Real time usage: 2.922 seconds
+Preprocessor visited node count: 232/1000000
+Preprocessor generated node count: 528/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 2/20
+Unstrip post‐expand size: 4641/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:305-0!canonical and timestamp 20190815160914 and revision id 3786
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="a/index.php?title=Using_Joysticks&amp;oldid=3786">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Using_Joysticks&amp;oldid=3786</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="a/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.063","walltime":"2.922","ppvisitednodes":{"value":232,"limit":1000000},"ppgeneratednodes":{"value":528,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":2,"limit":20},"unstrip-size":{"value":4641,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815160917","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":2984});});</script></body></html>

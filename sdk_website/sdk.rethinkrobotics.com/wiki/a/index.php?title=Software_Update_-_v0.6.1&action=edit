@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Software Update - v0.6.1 - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Software_Update_-_v0.6.1","wgTitle":"Software Update - v0.6.1","wgCurRevisionId":3969,"wgRevisionId":0,"wgArticleId":338,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Software_Update_-_v0.6.1","wgRelevantArticleId":338,"wgRequestId":"2b45e0eef9b4b320165c593e","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Software_Update_-_v0_6_1 rootpage-Software_Update_-_v0_6_1 skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Software+Update+-+v0.6.1&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Software Update - v0.6.1</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Software_Update_-_v0.6.1&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Software_Update_-_v0.6.1&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Software_Update_-_v0.6.1&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Software_Update_-_v0.6.1" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Software_Update_-_v0.6.1" title="Software Update - v0.6.1">Software Update - v0.6.1</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Software_Update_-_v0.6.1&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Software_Update_-_v0.6.1&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">==Update Instructions for Baxter Research Robot: rsdk_0.6.1==
+This document provides instructions on updating the software on your 
+Baxter Research Robot to 'rsdk_0.6.1'.  Note that updating from rsdk_0.6.0 to this update requires the use of an additional Update Primer, 'rsdk_0.6.0_p1'.
+
+===Prerequisites===
+You will need:
+* A Baxter Research Robot
+* USB drive (FAT32 formatted, at least 500MB)
+* Update Files from the [[Rethink FTP]]
+* Development Workstation with RSDK installed
+
+===Instructions===
+==== I. Download Update Files ====
+1. Download the Update files from the Rethink FTP Service - [http://hostedftp.com Hosted~FTP~].  
+Your organization's Point-Of-Contact (POC) will receive an email notice, granting access to the new Update folder, and allowing them to create credentials upon first login.  [''More Info''](#ftp-access)  
+* From the 'Baxter Research Robot 0.6.1 Software' folder:  
+     Download the compressed gzip file: &lt;code>rethink-update-rsdk_0.6.1.tar.gz&lt;/code>
+
+2. Unzip the Update Files  
+&lt;source lang="bash">
+    $ mkdir updates
+    $ tar xvfz rethink-update-rsdk_0.6.1.tar.gz -C updates/
+    $ cd updates
+&lt;/source>
+
+3. Copy all the update files onto a USB flash drive
+* You may use a normal File Browser or any other method to '''copy the files onto a USB drive'''.
+* Make sure the USB flash drive is formatted as a FAT32 partition.
+* The files should all be placed in the top-level directory of the USB drive (i.e. not in a sub-folder).
+&lt;source lang="bash">
+    =on the USB drive =
+    $ ls 
+    rethink-update-0.6.0_p1-obf
+    rethink-update-0.6.0_p1-obf.config
+    rethink-update-0.6.0_p1-obf.config.gpg
+    rethink-update-0.6.1-obf
+    rethink-update-0.6.1-obf.config
+    rethink-update-0.6.1-obf.config.gpg
+&lt;/source>
+* Safely eject the flash drive.
+
+==== II. Setup and Check Version ====
+1.  Turn on Baxter.
+2.  Start an [[RSDK Shell]] on your development workstation.  
+    Make sure to export your ROS_IP or ROS_HOSTNAME.
+&lt;source lang="bash">
+    $ ./init.sh &lt;robot_hostname>
+    $ export ROS_IP=&lt;dev_machine_IP>
+&lt;/source>
+3. Check the Software Version  
+    You can check the [[Software Version]] of your robot using the following command:
+&lt;source lang="bash">
+    $ rosparam get /rethink/software_version
+    0.6.0
+&lt;/source>
+*  If the version says &lt;code>0.6.0&lt;/code> continue with Step III: "Running the Update Primer".  
+       If the version is anything else, you may skip to Step IV.
+
+==== III. Run the Update Primer ====
+If your robot is currently running version 0.6.0 of the RSDK, you will need to first use the additional Update Primer for 0.6.0.  It is called &lt;code>0.6.0_p1&lt;/code> in the update files.
+
+1.  Allow robot to fully boot.&lt;br/>
+2.  Plug the USB drive into the USB port '''on Baxter's torso'''.&lt;br/>
+3.  Wait ~30 seconds for the system to recognize the drive.&lt;br/>
+4.  ''(On Dev Workstation)'' Find the UUID for the Update Primer (Version &lt;code>0.6.0_p1&lt;/code>) using the [[Software Update|Software Update Tool]].&lt;br/>  
+* Use the &lt;code>-l&lt;/code> argument to the &lt;code>update_robot.py&lt;/code> tool to list the available updates Baxter found on the USB drive.
+&lt;source lang="bash">
+    $ rosrun tools update_robot.py -l
+    Version                       UUID
+    0.6.0_p1                      3331cb5e-ea43-11e2-a151-90b11ca35e8f
+    0.6.1                         cfcf7686-ea49-11e2-89d3-90b11ca35e8f
+&lt;/source>
+* Find the UUID for the Version ''''&lt;code>0.6.0_p1&lt;/code>'''' update.  In this case, the UUID is &lt;code>3331cb5e-ea43-11e2-a151-90b11ca35e8f&lt;/code>.
+
+5.  Start the Update, using the &lt;code>0.6.0_p1&lt;/code> Primer Version.
+* Run the &lt;code>update_robot.py&lt;/code> tool again, this time using the &lt;code>-u&lt;/code> argument followed by the '''''UUID''''' found in the last step for Version &lt;code>0.6.0_p1&lt;/code>.
+&lt;source lang="bash">
+    $ rosrun tools update_robot.py -u 3331cb5e-ea43-11e2-a151-90b11ca35e8f
+&lt;/source>
+     This starts the verification and unpacking of the update payload.  The status will be printed out as it goes through the required steps, ending in a notification that the robot system will reboot to finish updating.  
+* The screen will show a bunch of text while this is happening. Once finished, the robot will reboot to the now, primed state, ready for the actual update to a new software version.  Once you see the Baxter Research Robot Text Logo appear again, you may continue to Step IV.
+
+==== IV. Run the Update to Version 0.6.1 ====
+Once your Baxter is primed and ready to be updated to a new software version, you will repeat the same steps as above - except this time using Version &lt;code>0.6.1&lt;/code>:
+
+1.  Allow robot to fully (re)boot.
+2.  Remove the USB drive from Baxter; wait a second; then reinsert the drive in Baxter's USB port to refresh Baxter's USB device listings.
+3.  Wait ~30 seconds for the system to recognize the drive.
+4.  Find the UUID for the Version &lt;code>0.6.1&lt;/code> Update, using the [[Software Update|Software Update Tool]] with the &lt;code>-l&lt;/code> argument.  
+&lt;source lang="bash">
+    $ rosrun tools update_robot.py -l
+    Version                       UUID
+    0.6.0_p1                      f958eb6c-eef5-11e2-a404-90b11ca35e8f
+    0.6.1                         fa8c280a-eef5-11e2-a404-90b11ca35e8f
+&lt;/source>
+    Find the UUID for the Version &lt;code>0.6.1&lt;/code> update.  In this case, the UUID is &lt;code>fa8c280a-eef5-11e2-a404-90b11ca35e8f&lt;/code>. ''(Note: The UUID's change each time the USB is reinserted.)''
+
+5.  Start the Update using the UUID for Version &lt;code>0.6.1&lt;/code>.
+    
+    Run the &lt;code>update_robot.py&lt;/code> tool again, this time using the &lt;code>-u&lt;/code> argument followed by the '''''UUID''''' found in the last step for Version &lt;code>0.6.1&lt;/code>.
+&lt;source lang="bash">
+    $ rosrun tools update_robot.py -u fa8c280a-eef5-11e2-a404-90b11ca35e8f
+&lt;/source>
+    
+    Once again, this starts the verification and unpacking of the update payload.  The status will be printed out to the terminal as it goes through the required steps.  The last step informs the user that the system will now reboot to finish updating.  
+    
+    '''NOTE: During this step, a bunch of text will scroll through on Baxter's screen.'''  This is a good thing and shows that the update is progressing.  Once finished, Baxter reboots to the new software and finalizes the update.
+
+6.  Confirm the New Software Version
+&lt;source lang="bash">
+    $ rosparam get /rethink/software_version
+    0.6.1
+&lt;/source>
+    You should see &lt;code>0.6.1&lt;/code> reported back.  Congratulations, you have updated your Baxter!
+
+
+==== V.  Updating SDK on Workstation (git repo) ====
+Along with updating the software on the robot to version rsdk_0.6.1, you will want to update your Workstation-side SDK software from the git repository to the corresponding v0.6.1.  To do this, follow the instructions for checking out a new tagged version, with tag &lt;code>v0.6.1&lt;/code>:  [[Installing the Research SDK]]
+&lt;source lang="bash">
+    $ cd sdk-examples
+    $ git fetch
+    $ git tag -l
+    $ git checkout v0.6.1
+    $ ./init.sh &lt;Baxter Hostname> [ROS Distro]
+    $ rosmake baxter --pre-clean
+&lt;/source>
+
+== FTP Access ==
+Use the login credentials provided to your organization's Point-Of-Contact (POC). Updates to the Robot Software are distributed via the Rethink FTP Service - [http://hostedftp.com Hosted~FTP~].  Your organization's Point-Of-Contact (POC) will receive an email, notifying them of the new update folder, and allowing them to sign-in using their email address. ''Note: When a new release occurs, POC's will be granted access to the Hosted~FTP~  via their email address.  Credentials are created upon first sign-in.''
+
+
+=== ** Important Note for rsdk-0.6.0 -> 0.6.x updates: ===
+'''IMPORTANT:''' If you are updating ''from'' the rsdk-0.6.0 (Beta1) release to any other release, such as the rsdk-0.6.1 (Beta1-Patch1) release, you will need to first run the '''0.6.0_p1''' Update Primer.  The instructions are the same as doing a normal update, except you will update first to the '0.6.0_p1' primer version, and then do a second update to the actual new version (e.g. 0.6.1):
+
+1.  Download both the &lt;code>0.6.0_p1&lt;/code> update files and the &lt;code>0.6.x&lt;/code> update files from your Rethink FTP account, onto a USB stick.&lt;br/>
+2.  Follow the normal update instructions above, selecting the UUID for the '0.6.0_p1' version in Steps 4 &amp; 5.&lt;br/>
+3.  Allow the update to complete and let the robot automatically reboot itself.  This will prime the robot to be updated to a new version.&lt;br/>
+3.  Remove the USB stick from Baxter; wait a second; then reinsert the drive to refresh Baxter's USB device listings.&lt;br/>
+4.  Again, follow the normal update instructions above, this time choosing the UUID for the new 0.6.x version in Steps 4 &amp; 5.&lt;br/>
+
+You will only have to do this when updating from version 0.6.0.  From 0.6.1 onward, the robot can be directly updated to any other version.  However, if you later "revert" backwards to 0.6.0, you will need to use the primer again on your next update.
+
+== Troubleshooting ==
+For common issues specific to using software update with Baxter, check out the [[Software Update - Troubleshooting|Troubleshooting page]].
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Software_Update_-_v0.6.1" title="Software Update - v0.6.1">Software Update - v0.6.1</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Software_Update_-_v0.6.1">http://sdk.rethinkrobotics.com/wiki/Software_Update_-_v0.6.1</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":35});});</script></body></html>

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Gripper Example - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Gripper_Example","wgTitle":"Gripper Example","wgCurRevisionId":1151,"wgRevisionId":0,"wgArticleId":60,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Gripper_Example","wgRelevantArticleId":60,"wgRequestId":"20b138434560fdbfd9f18673","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Gripper_Example rootpage-Gripper_Example skin-cavendishrr action-edit"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=Gripper+Example&amp;returntoquery=action%3Dedit">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Gripper_Example&amp;action=edit#">More</a>
+                <ul>
+                <li id="ca-viewsource" class="selected"><a href="index.php?title=Gripper_Example&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Gripper_Example&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Gripper_Example" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">View source for Gripper Example</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Gripper_Example&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                ← <a href="../Gripper_Example" title="Gripper Example">Gripper Example</a>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Gripper_Example&amp;action=edit#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Gripper_Example&amp;action=edit#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Intera_SDK:Users&amp;action=edit&amp;redlink=1" class="new" title="Intera SDK:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">&lt;div class="title-block">
+
+&lt;span style="font-size:120%;">'''Use gripper control as an example of controlling Sawyer's gripper.'''&lt;/span>
+
+&lt;/div>
+
+{{TOClimit|limit=2}}
+
+&lt;div class="content-block">
+
+== Overview ==
+
+Uses the keyboard or joystick to control Sawyer's gripper. Position, velocity, holding, and moving force can be controlled and sensed. Both logitech and xbox game controllers are supported. If you would like to follow along with the actual source code for these examples on GitHub, it can be found through [https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/gripper_joystick.py this link for gripper_joystick] and [https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/gripper_keyboard.py this link for gripper_keyboard].
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Usage ==
+
+The robot should always enabled after start, try the command from an [[SDK Shell|SDK terminal session]] if the robot is not enabled:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_interface robot_enable.py
+&lt;/syntaxhighlight>
+
+Start gripper control from an RSDK terminal session:
+
+Gripper keyboard Example:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_examples gripper_keyboard.py
+&lt;/syntaxhighlight>
+
+Gripper Joystick Example:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_examples gripper_joystick.py
+&lt;/syntaxhighlight>
+
+IMPORTANT: You will have to calibrate gripper before using any of the other commands using C/c commands:
+
+Once calibrated, future calibrate commands will not do anything unless you send a 'reboot' first.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Key Bindings ==
+
+Get a list of commands by entering '?'
+
+For gripper keyboard example:
+&lt;syntaxhighlight lang="bash" enclose="div">
+key: description,
+'r': "reboot",
+'c': "calibrate",
+'q': "close",
+'o': "open",
+'+': "set 100% velocity",
+'-': "set 30% velocity",
+'s': "stop",
+'h': "decrease holding force",
+'j': "increase holding force",
+'u': "decrease position",
+'i': "increase position",
+&lt;/syntaxhighlight>
+
+
+For gripper joystick example:
+&lt;syntaxhighlight lang="bash" enclose="div">
+command: description,
+'btnLeft'      : "reboot",
+'btnUp'        : "calibrate",
+'leftTrigger'  : "close",
+'leftTrigger'  : "open (release)",
+'leftBumper'   : "stop",
+'leftStickHorz': "decrease position by step when stick value less than 0, increase position by step when stick value larger than 0",
+'leftStickVert': "decrease holding force by step when stick value less than 0, increase holding force by step when stick value larger than 0",
+'function1' or 'function2': "help"
+&lt;/syntaxhighlight>
+
+
+You can monitor the changes you are making using the following rostopic which you can monitor from a different shell:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rostopic echo /robot/end_effector/right_gripper/command
+&lt;/syntaxhighlight>
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Joystick Control ==
+
+To use the example gripper program using a joystick game controller to control the gripper:
+
+First ensure that joy drivers are installed.
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rospack find joy
+&lt;/syntaxhighlight>
+
+If not run:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get install ros-indigo-joystick-drivers
+&lt;/syntaxhighlight>
+
+To run the example:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ roslaunch intera_examples gripper_joystick.launch joystick:=&lt;joystick_type>
+&lt;/syntaxhighlight>
+
+Where &lt;code>joystick_type&lt;/code> is 'xbox', 'logitech', or 'ps3'. ''(If using a ps3, make sure you run the node from the ROS ps3joy package in a separate sudo terminal.  See instructions here: [http://www.ros.org/wiki/ps3joy/Tutorials/PairingJoystickAndBluetoothDongle ps3joy] )''
+
+'''NOTE:''' This method uses an included ROS launch file to start both the gripper example and joy_node using the roslaunch tool. You can exit the gripper example by hitting any keyboard key, however you will have to &lt;code>ctrl-c&lt;/code> to also cleanup the joy_node.
+
+'''NOTE:''' Don't forget to calibrate gripper first.
+
+'''NOTE:''' The 'joystick left &lt;-> robot right' mappings are not typos; they assume the user is in front of the robot when using the joystick.
+
+[[File:Joystick.jpg|700px]]
+
+{| class="wikitable"
+|-
+! scope="col"|Buttons
+! scope="col"|Action
+|-
+| Function 1 or 2 ''(e.g. Select/Select)'' || Help
+|-
+| Left Button (X)     || right: gripper calibrate      
+|-
+| Top Button (Y)    ||          
+|-
+| Left Trigger ''[PRESS]''    || right: gripper close  
+|-
+| Left Trigger ''[RELEASE]''  || right: gripper open   
+|-
+| Left Bumper               || right: cycle &lt;code>&lt;current joints> +1&lt;/code>   
+|-
+| ''&lt;Any Keyboard key>'' || Quit
+|}
+
+{| class="wikitable"
+|-
+! scope="col"|Stick Axes
+! scope="col"|Action
+|-
+| Left Stick Horizontal    || right:  increase/decrease &lt;code>&lt;current joint 1>&lt;/code> (j0)
+|-
+| Left Stick Vertical    || right:  increase/decrease &lt;code>&lt;current joint 2>&lt;/code> (j1)
+|}
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Gripper Joystick Example Code Walkthrough == 
+
+This example demonstrates the usage of the gripper control via intera interface. The &lt;code>main()&lt;/code> function invokes the &lt;code>map_joystick()&lt;/code> function. It is at this function where the joystick buttons are mapped to individual gripper actions and the commands are executed periodically.
+
+Now, let's break down the code.
+
+&lt;syntaxhighlight lang="python" line start="33" enclose="div">
+import argparse
+
+import rospy
+
+import intera_interface
+import intera_external_devices
+&lt;/syntaxhighlight>
+
+This imports the &lt;code>intera_interface&lt;/code> for accessing the &lt;code>limb&lt;/code> and the &lt;code>gripper&lt;/code> class. The &lt;code>intera_external_devices&lt;/code> is imported to use its &lt;code>getch&lt;/code> function that captures the key presses on the joystick.
+
+&lt;syntaxhighlight lang="python" line start="41" enclose="div">
+def map_joystick(joystick, limb):
+    """
+    maps joystick input to gripper commands
+
+    @param joystick: an instance of a Joystick
+    """
+    print("Getting robot state... ")
+    rs = intera_interface.RobotEnable(CHECK_VERSION)
+    init_state = rs.state()
+    try:
+        gripper = intera_interface.Gripper(limb)
+    except ValueError:
+        rospy.logerr("Could not detect a gripper attached to the robot.")
+        return
+&lt;/syntaxhighlight>
+
+The &lt;code>init_state&lt;/code> variable captures the current state of the robot. The gripper instance class, &lt;code>gripper&lt;/code>, is created, if the gripper is not attached, a logerr message will show up.
+
+&lt;syntaxhighlight lang="python" line start="56" enclose="div">
+    def clean_shutdown():
+        print("\nExiting example...")
+        if not init_state:
+            print("Disabling robot...")
+            rs.disable()
+    rospy.on_shutdown(clean_shutdown)
+&lt;/syntaxhighlight>
+
+On shutdown request, Sawyer's state is sent back to its initial state.
+
+&lt;syntaxhighlight lang="python" line start="63" enclose="div">
+    # decrease position dead_zone
+    gripper.set_dead_zone(2.5)
+
+    # abbreviations
+    jhi = lambda s: joystick.stick_value(s) > 0
+    jlo = lambda s: joystick.stick_value(s) &lt; 0
+    bdn = joystick.button_down
+    bup = joystick.button_up
+&lt;/syntaxhighlight>
+
+Setup the gripper dead zone and joystick abbreviations.
+
+&lt;syntaxhighlight lang="python" line start="72" enclose="div">
+    def print_help(bindings_list):
+        print("Press Ctrl-C to quit.")
+        for bindings in bindings_list:
+            for (test, _cmd, doc) in bindings:
+                if callable(doc):
+                    doc = doc()
+                print("%s: %s" % (str(test[1]), doc))
+&lt;/syntaxhighlight>
+
+The &lt;code>print_help&lt;/code> function print helpful commands and docs.
+
+&lt;syntaxhighlight lang="python" line start="80" enclose="div">
+    def offset_position(offset):
+        current = gripper.get_position()
+        gripper.set_position(current + offset)
+
+    def offset_holding(offset):
+        current = gripper.get_force()
+        gripper.set_holding_force(current + offset)
+&lt;/syntaxhighlight>
+
+Setup gripper position and holding force.
+
+&lt;syntaxhighlight lang="python" line start="88" enclose="div">
+    num_steps = 10.0
+    bindings_list = []
+    bindings = (
+        #(test, command, description)
+        ((bdn, ['btnLeft']), (gripper.reboot, []), "reboot"),
+        ((bdn, ['btnUp']), (gripper.calibrate, []), "calibrate"),
+        ((bdn, ['leftTrigger']), (gripper.close, []), "close"),
+        ((bup, ['leftTrigger']), (gripper.open, []), "open (release)"),
+        ((bdn, ['leftBumper']), (gripper.stop, []), "stop"),
+        ((jlo, ['leftStickHorz']), (offset_position, [-(gripper.MAX_POSITION / num_steps)]),
+                                    "decrease position"),
+        ((jhi, ['leftStickHorz']), (offset_position, [gripper.MAX_POSITION / num_steps]),
+                                     "increase position"),
+        ((jlo, ['leftStickVert']), (offset_holding, [-(gripper.MAX_FORCE / num_steps)]),
+                                    "decrease holding force"),
+        ((jhi, ['leftStickVert']), (offset_holding, [gripper.MAX_FORCE / num_steps]),
+                                    "increase holding force"),
+        ((bdn, ['function1']), (print_help, [bindings_list]), "help"),
+        ((bdn, ['function2']), (print_help, [bindings_list]), "help"),
+    )
+    bindings_list.append(bindings)
+&lt;/syntaxhighlight>
+
+The bindings is a dictionary that holds the set of characters in the joystick and their corresponding gripper functions.
+
+&lt;syntaxhighlight lang="python" line start="110" enclose="div">
+    rospy.loginfo("Enabling robot...")
+    rs.enable()
+    rate = rospy.Rate(100)
+    print_help(bindings_list)
+    print("Press &lt;Start> button for help; Ctrl-C to stop...")
+    while not rospy.is_shutdown():
+        # test each joystick condition and call binding cmd if true
+        for (test, cmd, doc) in bindings:
+            if test[0](*test[1]):
+                cmd[0](*cmd[1])
+                print(doc)
+        rate.sleep()
+    rospy.signal_shutdown("Example finished.")
+&lt;/syntaxhighlight>
+
+The while loop iterates till the &lt;code>Esc&lt;/code> or &lt;code>ctrl-c&lt;/code> is inputted or ros-shutdown signal is given. If &lt;code>Esc&lt;/code> or &lt;code>ctrl-c&lt;/code> is given then shutdown signal is sent.
+
+&lt;syntaxhighlight lang="python" line start="125" enclose="div">
+def main():
+    """RSDK Gripper Example: Joystick Control
+
+    Use a game controller to control the grippers.
+
+    Attach a game controller to your dev machine and run this
+    example along with the ROS joy_node to control gripper
+    using the joysticks and buttons. Be sure to provide
+    the *joystick* type you are using as an argument to setup
+    appropriate key mappings.
+
+    Uses the intera_interface.Gripper class and the helper classes
+    in intera_external_devices.Joystick.
+    """
+    epilog = """
+See help inside the example with the "Start" button for controller
+key bindings.
+    """
+    rp = intera_interface.RobotParams()
+    valid_limbs = rp.get_limb_names()
+    if not valid_limbs:
+        rp.log_message(("Cannot detect any limb parameters on this robot. "
+                        "Exiting."), "ERROR")
+        return
+    arg_fmt = argparse.RawDescriptionHelpFormatter
+    parser = argparse.ArgumentParser(formatter_class=arg_fmt,
+                                     description=main.__doc__,
+                                     epilog=epilog)
+    required = parser.add_argument_group('required arguments')
+    required.add_argument(
+        '-j', '--joystick', required=True, choices=['xbox', 'logitech', 'ps3'],
+        help='specify the type of joystick to use'
+    )
+    parser.add_argument(
+        "-l", "--limb", dest="limb", default=valid_limbs[0],
+        choices=valid_limbs,
+        help="Limb on which to run the gripper joystick example"
+    )
+    args = parser.parse_args(rospy.myargv()[1:])
+&lt;/syntaxhighlight>
+
+Initialized the node and the joystick argument needs to be provided.
+
+&lt;syntaxhighlight lang="python" line start="125" enclose="div">
+    joystick = None
+    if args.joystick == 'xbox':
+        joystick = intera_external_devices.joystick.XboxController()
+    elif args.joystick == 'logitech':
+        joystick = intera_external_devices.joystick.LogitechController()
+    elif args.joystick == 'ps3':
+        joystick = intera_external_devices.joystick.PS3Controller()
+    else:
+        # Should never reach this case with proper argparse usage
+        parser.error("Unsupported joystick type '%s'" % (args.joystick))
+
+    print("Initializing node... ")
+    rospy.init_node("sdk_gripper_joystick")
+
+    map_joystick(joystick, args.limb)
+
+
+if __name__ == '__main__':
+&lt;/syntaxhighlight>
+
+Joystick device selection.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Gripper Keyboard Example Code Walkthrough == 
+
+This example demonstrates the usage of the gripper control via intera interface. The &lt;code>main()&lt;/code> function invokes the &lt;code>map_keyboard()&lt;/code> function. It is at this function where the keyboard keys are mapped to individual gripper actions and the commands are executed periodically.
+
+Now, let's break down the code.
+
+&lt;syntaxhighlight lang="python" line start="33" enclose="div">
+import argparse
+
+import rospy
+
+import intera_interface
+import intera_external_devices
+from intera_interface import CHECK_VERSION
+&lt;/syntaxhighlight>
+
+This imports the &lt;code>intera interface&lt;/code> for accessing the limb and the gripper class. The &lt;code>intera_external_devices&lt;/code> is imported to use its getch function that captures the key presses on the keyboard. The &lt;code>CHECK_VERSION&lt;/code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs.
+
+&lt;syntaxhighlight lang="python" line start="41" enclose="div">
+def map_keyboard(limb):
+    # initialize interfaces
+    print("Getting robot state...")
+    rs = intera_interface.RobotEnable(CHECK_VERSION)
+    init_state = rs.state()
+    try:
+        gripper = intera_interface.Gripper(limb)
+    except ValueError:
+        rospy.logerr("Could not detect a gripper attached to the robot.")
+        return
+&lt;/syntaxhighlight>
+
+The &lt;code>init_state&lt;/code> variable captures the current state of the robot. The &lt;code>Gripper&lt;/code> instance class is created. If no gripper detect, the logerr message will show up.
+
+&lt;syntaxhighlight lang="python" line start="51" enclose="div">
+    def clean_shutdown():
+        if not init_state:
+            print("Disabling robot...")
+            rs.disable()
+        print("Exiting example.")
+    rospy.on_shutdown(clean_shutdown)
+&lt;/syntaxhighlight>
+
+On shutdown request, Sawyer's state is sent back to its initial state.
+
+&lt;syntaxhighlight lang="python" line start="57" enclose="div">
+    def offset_position(offset):
+        current = gripper.get_position()
+        gripper.set_position(current + offset)
+
+    def offset_holding(offset):
+        current = gripper.get_force()
+        gripper.set_holding_force(current + offset)
+&lt;/syntaxhighlight>
+
+Setup gripper position and holding force.
+
+&lt;syntaxhighlight lang="python" line start="65" enclose="div">
+    num_steps = 10.0
+    thirty_percent_velocity = 0.3*(gripper.MAX_VELOCITY - gripper.MIN_VELOCITY) + gripper.MIN_VELOCITY
+    bindings = {
+    #   key: (function, args, description)
+        'r': (gripper.reboot, [], "reboot"),
+        'c': (gripper.calibrate, [], "calibrate"),
+        'q': (gripper.close, [], "close"),
+        'o': (gripper.open, [], "open"),
+        '+': (gripper.set_velocity, [gripper.MAX_VELOCITY], "set 100% velocity"),
+        '-': (gripper.set_velocity, [thirty_percent_velocity], "set 30% velocity"),
+        's': (gripper.stop, [], "stop"),
+        'h': (offset_holding, [-(gripper.MAX_FORCE / num_steps)], "decrease holding force"),
+        'j': (offset_holding, [gripper.MAX_FORCE / num_steps], "increase holding force"),
+        'u': (offset_position, [-(gripper.MAX_POSITION / num_steps)], "decrease position"),
+        'i': (offset_position, [gripper.MAX_POSITION / num_steps], "increase position"),
+    }
+&lt;/syntaxhighlight>
+
+The bindings is a dictionary that holds the set of characters in the keyboard and their corresponding gripper functions.
+
+&lt;syntaxhighlight lang="python" line start="82" enclose="div">
+    done = False
+    rospy.loginfo("Enabling robot...")
+    rs.enable()
+    print("Controlling grippers. Press ? for help, Esc to quit.")
+    while not done and not rospy.is_shutdown():
+        c = intera_external_devices.getch()
+        if c:
+            if c in ['\x1b', '\x03']:
+                done = True
+            elif c in bindings:
+                cmd = bindings[c]
+                cmd[0](*cmd[1])
+                print("command: %s" % (cmd[2],))
+            else:
+                print("key bindings: ")
+                print("  Esc: Quit")
+                print("  ?: Help")
+                for key, val in sorted(bindings.items(),
+                                       key=lambda x: x[1][2]):
+                    print("  %s: %s" % (key, val[2]))
+    # force shutdown call if caught by key handler
+    rospy.signal_shutdown("Example finished.")
+&lt;/syntaxhighlight>
+
+The while loop iterates till the &lt;code>Esc&lt;/code> or &lt;code>Ctrl-c&lt;/code> is inputted or ros-shutdown signal is given. If &lt;code>Esc&lt;/code> or &lt;code>Ctrl-c&lt;/code> is given then shutdown signal is sent.
+
+&lt;syntaxhighlight lang="python" line start="106" enclose="div">
+def main():
+    """RSDK Gripper Example: Keyboard Control
+
+    Use your dev machine's keyboard to control and configure grippers.
+
+    Run this example to command various gripper movements while
+    adjusting gripper parameters, including calibration, velocity,
+    and force. Uses the intera_interface.Gripper class and the
+    helper function, intera_external_devices.getch.
+    """
+    epilog = """
+See help inside the example with the '?' key for key bindings.
+    """
+    rp = intera_interface.RobotParams()
+    valid_limbs = rp.get_limb_names()
+    if not valid_limbs:
+        rp.log_message(("Cannot detect any limb parameters on this robot. "
+                        "Exiting."), "ERROR")
+        return
+    arg_fmt = argparse.RawDescriptionHelpFormatter
+    parser = argparse.ArgumentParser(formatter_class=arg_fmt,
+                                     description=main.__doc__,
+                                     epilog=epilog)
+    parser.add_argument(
+        "-l", "--limb", dest="limb", default=valid_limbs[0],
+        choices=valid_limbs,
+        help="Limb on which to run the gripper keyboard example"
+    )
+    args = parser.parse_args(rospy.myargv()[1:])
+
+    print("Initializing node... ")
+    rospy.init_node("sdk_gripper_keyboard")
+
+    map_keyboard(args.limb)
+
+
+if __name__ == '__main__':
+&lt;/syntaxhighlight>
+
+Initialized the node then call &lt;code>map_keyboard&lt;/code> function.
+
+&lt;/div>
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="http://sdk.rethinkrobotics.com/intera/Template:TOClimit" title="Template:TOClimit">Template:TOClimit</a> (<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Template:TOClimit&amp;action=edit" title="Template:TOClimit">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Gripper_Example" title="Gripper Example">Gripper Example</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Gripper_Example">http://sdk.rethinkrobotics.com/intera/Gripper_Example</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":55});});</script></body></html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Demo Mode - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Demo_Mode_-_Code_Walkthrough","wgTitle":"Demo Mode - Code Walkthrough","wgCurRevisionId":3236,"wgRevisionId":0,"wgArticleId":493,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Demo_Mode_-_Code_Walkthrough","wgRelevantArticleId":493,"wgRequestId":"2000aa10897f28972db5ca0d","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Demo_Mode_-_Code_Walkthrough rootpage-Demo_Mode_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Demo+Mode+-+Code+Walkthrough&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Demo Mode - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Demo_Mode_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Demo_Mode_-_Code_Walkthrough" title="Demo Mode - Code Walkthrough">Demo Mode - Code Walkthrough</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">=Demo Mode - Code Walkthrough=
+The Demo mode represents a simple way of generating and displaying an interactive UI on the Baxter Research robot.
+
+The core of this program is an Image Processing library that converts between PNG, PIL (Python Imaging Library), openCV, and ROS Message formats for images.
+Beyond that is a simple UI structure, with Window and Button classes that uses the aforementioned library, in co-ordination with ros messages from the robot, to generate and display the User Interface.
+
+[[FILE: UI_Documentation_Diagram.png|900px]]
+
+==Image Processing - Displaying the pretty pictures==
+Let's start with the imports
+&lt;syntaxhighlight lang="python" line start="30" enclose="div">
+import cv
+import cv_bridge
+import PIL
+&lt;/syntaxhighlight>
+PIL is used for loading and integrating PNG asset images.
+cv and cv_bridge are used for image manipulation and conversion to ros messages.
+===XDisplay - Put it on the Big Screen===
+As with other functions interacting with Baxter's face, we will need to publish an Image message to the /robot/xdisplay topic to update the screen image.
+
+To that end, our UI Controller, the highest element in the UI system, has a ui.xdisp property containing a publisher to that topic:
+&lt;syntaxhighlight lang="python" line start="54" enclose="div">
+        self.xdisp = rospy.Publisher('/robot/xdisplay', ImageMsg, latch=True)
+&lt;/syntaxhighlight>
+
+Short section, but it had to be done before we go on to the rest of this...
+===PIL to ROS - From humble beginnings===
+Let's start by covering taking a .png image asset and converting it into a Ros Message
+
+The places we do this in the code are pretty spread out, so, for a simple case, let's load a single .png file, and
+&lt;syntaxhighlight lang="python" enclose="div">
+from PIL import Image
+
+from baxter_demo_ui import img_proc
+
+#image_path = "path/to/your/image.png"
+img = Image.open(image_path)
+gen_cv(img)
+gen_msg(img)
+&lt;/syntaxhighlight>
+
+Now, here is the code for gen_cv (in '''img_proc.py''', which converts a single image to from PIL to an openCV image format
+&lt;syntaxhighlight lang="python" line start="54" enclose="div">
+def gen_cv(img):
+    return PIL_to_cv(rgb_to_bgr(img))
+
+def rgb_to_bgr(img):
+    r, g, b = img.split()
+    return PIL.Image.merge('RGB', (b, g, r))
+
+def PIL_to_cv(img):
+    ci = cv.CreateImage((1024, 600), cv.IPL_DEPTH_8U, 3)
+    cv.SetData(ci, img.tostring(), 3072)
+    return ci
+&lt;/syntaxhighlight>
+
+To start, gen_cv takes a PIL image, and converts if from RGB to BGR, the accepted encoding format for publishing to xdisplay.
+We then create an empty cv_mat object and copy the data from the BGR image into that object.
+
+To convert this from a cv_mat image into a ros message, we then have to use the cv_bridge function cv_to_imgmsg:
+
+&lt;syntaxhighlight lang="python" line start="69" enclose="div">
+def cv_to_msg(img):
+    return cv_bridge.CvBridge().cv_to_imgmsg(img, encoding='bgr8')
+&lt;/syntaxhighlight>
+
+With this code, you can take any number of canned images and push them to the screen in your scripts, but this by itself is not terribly useful or modular.
+
+===Anatomy of a Button - Layering images and text in PIL===
+In demo_buttons.py, we generate images for the different buttons available in the UI by combining icons, with an inherent alpha layer, with different button state images and drawing text on top of them.
+
+We generate the images with our gen_image function
+&lt;syntaxhighlight lang="python" line start="122" enclose="div">
+def gen_image(self, btn, icon, offset):
+    img = btn.resize(self._size, Image.ANTIALIAS)
+    if icon != None:
+        img.paste(icon, tuple(offset), icon)
+    return img
+&lt;/syntaxhighlight>
+What this is doing is resizing the button itself, which is a PIL Image object loaded from a .png, to the appropriate size listed in the config, and layering the icon, another PIL image, on top of it at the given offset.
+The reason we call tuple here is just that we are drawing the offset from a json file and it comes in as a list rather than a tuple.
+The addition of the second ''icon'' term specifies the alpha mask for the image.  If the image contains its own alpha layer, then you can simply use the image as its own mask.
+
+To cover the addition of text, we need to look into demo_windows.py for a moment.
+
+We start by importing a few new items from PIL:
+&lt;syntaxhighlight lang="python" line start="32" enclose="div">
+def gen_image(self, btn, icon, offset):
+from PIL import (
+  Image,
+  ImageDraw,
+  ImageFont
+)
+&lt;/syntaxhighlight>
+
+
+Then, when drawing the buttons for our window, we create a draw() instance using ImageDraw.draw()and pass this through to the button's draw function.  This is what we will use to layer the text on the image.
+&lt;syntaxhighlight lang="python" line start="173" enclose="div">
+        tmp = copy(self._bg['img'])
+        d = ImageDraw.draw(tmp)
+        for name, btn in self._buttons.items():
+            if btn.name == sel_btn:
+                if disabled:
+                    state = 'pressed'
+                else:
+                    state = 'selected'
+            else:
+                if disabled:
+                    state = 'disabled'
+                else:
+                    state = 'idle'
+            btn.draw(tmp, d, state)
+&lt;/syntaxhighlight>
+
+
+Now, in the initialization of the Button, we denote a ''font'' parameter, derived from the .ttf for that font. (share_path is a passed argument that just points to the share/ directory of this package)
+&lt;syntaxhighlight lang="python" line start="79" enclose="div">
+        self._font = ImageFont.truetype('%s/Arial.ttf' %
+                                           share_path, 30)
+&lt;/syntaxhighlight>
+
+Finally, in the draw method of the Button class:
+&lt;syntaxhighlight lang="python" line start="135" enclose="div">
+    def draw(self, img, draw, state):
+        tmp = self._imgs[state]
+        img.paste(tmp, self._offset, tmp)
+        self.draw_label(draw)
+&lt;/syntaxhighlight>
+
+&lt;syntaxhighlight lang="python" line start="128" enclose="div">
+    def draw_label(self, draw):
+        label_x = (self._offset[0] + self._size[0] / 2 -
+                   draw.textsize(self._label, self._font)[0] / 2)
+        label_y = self._offset[1] + self._label_y
+        draw.text((label_x, label_y), self._label,
+                  fill='white', font=self._font)
+&lt;/syntaxhighlight>
+Here, we grab the stored button image (with frame and icon) associated with the provided state, and paste it onto the window image, before calling draw_label.
+In draw_label, we simply derive x and y locations for the label and call the ImageDraw.draw object's text() function. 
+'''(Note that self._label is the actual label text)'''
+
+===Anatomy of a Window - Handling of states===
+The function of Windows in this UI is to handle the State of the interface.
+The UI state is stored hierarchically, where the UI controller has a selected_window, which has a selected_button, and a number of Parents.
+
+The Parents are used for 2 things:
+* When a user pressed "Back" on a window, it will attempt to set its parent as the new active window and re-draw.
+* When a window is drawn, it calls the draw() function for all of its parents recursively, and has them draw their "disabled" state to show that they are not the focus, before overlaying its current image to that base.
+
+&lt;syntaxhighlight lang="python" line start="383" enclose="div">
+    def _draw_window(self, img, window, selected=True):
+        if self.windows[window].parent:
+            img = self._draw_window(img,
+                                   window=self.windows[window].parent,
+                                   selected=False)
+        return self.windows[window].draw(img, selected)
+&lt;/syntaxhighlight>
+Selected, here, refers to whether or not the window being drawn is the current active window.
+
+The main visual functionality of the UI comes from changing which window is drawn, in what state.
+
+
+==Interaction - Controlling the pretty pictures through use of buttons and a knob==
+The Demo Mode UI responds to the navigators on both arms, and incorporates the gripper_cuff example, which enables interaction with the cuff and cuff buttons.
+
+We use the baxter_interface and baxter_dataflow signals to connect our UI interaction functions with on_change signals for the Buttons and wheel on the arm navigators.
+&lt;syntaxhighlight lang="python" line start="136" enclose="div">
+        self._navigators = {'left': Navigator('left'),
+                           'right': Navigator('right')}
+
+        self._listeners_connected = False
+        self._connect_listeners()
+&lt;/syntaxhighlight>
+
+
+&lt;syntaxhighlight lang="python" line start="181" enclose="div">
+    def _connect_listeners(self):
+        # Navigator OK Button
+        self._navigators['left'].button0_changed.connect(self._left_ok_pressed)
+        self._navigators['right'].button0_changed.connect(
+            self._right_ok_pressed)
+
+        # Navigator Wheel
+        self._navigators['left'].wheel_changed.connect(self._left_wheel_moved)
+        self._navigators['right'].wheel_changed.connect(
+            self._right_wheel_moved)
+
+        # Navigator Baxter Button
+        self._navigators['left'].button2_changed.connect(self._enable)
+        self._navigators['right'].button2_changed.connect(self._enable)
+
+        # Navigator Back Button
+        self._navigators['left'].button1_changed.connect(self.back)
+        self._navigators['right'].button1_changed.connect(self.back)
+
+        self._listeners_connected = True
+&lt;/syntaxhighlight>
+So now, the buttons and wheel for each arm are attached to these UI functions.
+
+The listener functions for buttons are very simple, and pretty much react when the button state changes to True
+&lt;syntaxhighlight lang="python" line start="440" enclose="div">
+    def back(self, v):
+        if v == True:
+            self.error_state = False
+            if self.active_window.parent:
+                self.kill_examples()
+                self.set_active_window(self.active_window.parent)
+                self.draw()   
+&lt;/syntaxhighlight>
+
+The listener for the navigators is similar, but it responds regardless of what it is changed to, incrementing or decrementing the scroll in the UI depending on the signal received.
+&lt;syntaxhighlight lang="python" line start="394" enclose="div">
+    def _left_wheel_moved(self, v):
+        self._wheel_moved(v, 'left')
+
+    def _right_wheel_moved(self, v):
+        self._wheel_moved(v, 'right')
+
+    def _wheel_moved(self, v, side):
+        if not self._active_example and self._wheel_ok:
+            if v > 0:
+                self.scroll(1)
+            else:
+                self.scroll(-1)
+            self._wheel_ok = False
+            rospy.Timer(rospy.Duration(.01), self._set_wheel_ok, oneshot=True)
+
+    def scroll(self, direction):
+        self.active_window.scroll(direction)
+        self.draw()
+&lt;/syntaxhighlight>
+
+===Important note - Enable Loop and Avoiding E-Stop Craziness===
+When you are in the demo mode, we assume that you want the robot to be enabled, so we have a loop in demo_ui that keeps the robot enabled, and reacts to robot state changes.
+
+&lt;syntaxhighlight lang="python" line start="165" enclose="div">
+        rospy.Timer(rospy.Duration(.5), self._enable)
+&lt;/syntaxhighlight>
+
+The "_enable" function will attempt to enable the robot, and will throw an error screen up if it fails.
+&lt;syntaxhighlight lang="python" line start="468" enclose="div">
+    def _enable(self, v=1):
+        if v == 1 and not self._status.state().enabled:
+            try:
+                self._status.enable()
+            except:
+                self.error_screen('stopped')
+                return False
+            if not self._status.state().enabled:
+                self.error_screen('no_enable')
+                return False
+        self._enable_cuff()
+        return True
+&lt;/syntaxhighlight>
+
+Unfortunately, when the robot is E-Stopped, messages from the sensors will be all messed up, and therefore the listeners we set up for the scroll wheels and buttons will send bad data, and throw errors when they try to call the callback functions.
+
+To fix this issue, we set up another listener to the Estop button, which will disconnect and reconnect the listeners.
+&lt;syntaxhighlight lang="python" line start="143" enclose="div">
+        self._estop_sub = rospy.Subscriber('robot/state', AssemblyState,
+                                           self._estop_callback)
+&lt;/syntaxhighlight>
+
+&lt;syntaxhighlight lang="python" line start="173" enclose="div">
+    def _estop_callback(self, msg):
+        if self._estop_state != msg.stopped:
+            self._estop_state = msg.stopped
+            if msg.stopped and self._listeners_connected:
+                self._disconnect_listeners()
+            elif not msg.stopped and not self._listeners_connected:
+                self._connect_listeners()
+&lt;/syntaxhighlight>
+
+&lt;syntaxhighlight lang="python" line start="202" enclose="div">
+    def _disconnect_listeners(self):
+        # Navigator OK Button
+        self._navigators['left'].button0_changed.disconnect(
+            self._left_ok_pressed)
+        self._navigators['right'].button0_changed.disconnect(
+            self._right_ok_pressed)
+
+        # Navigator Wheel
+        self._navigators['left'].wheel_changed.disconnect(
+            self._left_wheel_moved)
+        self._navigators['right'].wheel_changed.disconnect(
+            self._right_wheel_moved)
+
+        # Navigator Baxter Button
+        self._navigators['left'].button2_changed.disconnect(self._enable)
+        self._navigators['right'].button2_changed.disconnect(self._enable)
+
+        # Navigator Back Button
+        self._navigators['left'].button1_changed.disconnect(self.back)
+        self._navigators['right'].button1_changed.disconnect(self.back)
+
+        self._listeners_connected = False
+&lt;/syntaxhighlight>
+
+==Demo Functions - The Stuff We Do==
+We use a couple of nifty tricks to get the robot to run through our functions when buttons are pressed.  Here I'm going to cover a couple of these nifty tricks.
+===Processes - Make It Do What It Do, CLI-Style===
+There is a class defined in baxter_procs called RosProcess that will allow you to spawn off a command-line process using subprocess.Popen.  This is how we run most of the example programs.
+&lt;syntaxhighlight lang="python" line start="55" enclose="div">
+class RosProcess():
+    def __init__(self, command, quiet=True, get_output=False, shell=True):
+        if shell == True:
+            self.process = Popen(command, shell=True, stdout=None,
+                                        stdin=PIPE, stderr=STDOUT)
+        else:
+            self.process = Popen(command, shell=False, stdout=None,
+                                        stdin=PIPE, stderr=STDOUT)
+        self.quiet = quiet
+        self.get_output = get_output
+
+    def write(self, stdin):
+        self.process.stdin.write(stdin)
+
+    def run(self):
+        stdout, stderr = self.process.communicate()
+        if self.quiet == False:
+            print stdout
+        if self.get_output:
+            return stdout
+        else:
+            return self.process.returncode
+&lt;/syntaxhighlight>
+This is used in demo_functions to run most of the example programs (such as the arm_puppet)
+&lt;syntaxhighlight lang="python" line start="100" enclose="div">
+def puppet(ui, side):
+    proc = RosProcess('rosrun baxter_examples '
+                       'joint_velocity_puppet.py -l %s' % side)
+&lt;/syntaxhighlight>
+
+===Camera Overlay - Live on Baxter's Face!===
+The other nifty thing we do here is, in the camera example, we overlay the output from the cameras onto the current window image.
+&lt;syntaxhighlight lang="python" line start="75" enclose="div">
+def camera_disp(ui, cam_side):
+    def _display(camera, name):
+        for cam in ui.cameras:
+            ui.cameras[cam].close()
+        camera.resolution = (640, 400)
+        camera.open()
+
+    def _cam_to_screen(msg):
+        newMsg = overlay(ui.img, msg, (1024, 600), (205, 140, 640, 400))
+        ui.xdisp.publish(newMsg)
+
+    ui.cam_sub = rospy.Subscriber(
+        'cameras/%s_camera/image' % cam_side,
+        ImageMsg,
+        _cam_to_screen)
+
+    camera = ui.cameras[cam_side]
+    _display(camera, '%s_camera' % cam_side)
+&lt;/syntaxhighlight>
+
+Each "cam" in ui.cameras is a CameraController from baxter_interface, corresponding to one of the physical cameras on baxter.
+This function will close all of the cameras when called in order to ensure that the one we want to view can be opened (as you cannot have all 3 cameras open simultaneously)
+
+The way this function works is by linking a subscriber to the local function _cam_to_screen, which will take the UI's currently published image message and overlay the the current camera image on top of it in a given bounding-box.
+
+The overlay() function lives in img_proc, and will convert the image message back to a cv_mat image, and copy the camera image on top of it.
+&lt;syntaxhighlight lang="python" line start="77" enclose="div">
+def overlay(old_img, new_img, original_size, new_rect):
+    tmp = cv.CreateImage(original_size, cv.IPL_DEPTH_8U, 3)
+    cv.Copy(old_img, tmp)
+    sub = cv.GetSubRect(tmp, new_rect)
+    cv_img = msg_to_cv(new_img)
+    cv.Copy(cv_img, sub)
+    return cv_to_msg(tmp)
+&lt;/syntaxhighlight>
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Demo_Mode_-_Code_Walkthrough" title="Demo Mode - Code Walkthrough">Demo Mode - Code Walkthrough</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Demo_Mode_-_Code_Walkthrough">http://sdk.rethinkrobotics.com/wiki/Demo_Mode_-_Code_Walkthrough</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":35});});</script></body></html>

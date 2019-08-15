@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Arm Joints - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Arm_Joints","wgTitle":"Arm Joints","wgCurRevisionId":918,"wgRevisionId":918,"wgArticleId":141,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Arm_Joints","wgRelevantArticleId":141,"wgRequestId":"8af61101fdf5e0010be2258b","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Arm_Joints rootpage-Arm_Joints skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=Arm+Joints&amp;returntoquery=oldid%3D918">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Arm_Joints&amp;oldid=918#">More</a>
+                <ul>
+                <li id="ca-viewsource"><a href="index.php?title=Arm_Joints&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Arm_Joints&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Arm_Joints" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">Arm Joints</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Arm_Joints&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                <div class="mw-revision"><div id="mw-revision-info">Revision as of 20:44, 4 January 2017 by <a href="index.php?title=User:Swang&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Swang (page does not exist)"><bdi>Swang</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Swang&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Swang (page does not exist)">talk</a> | <a href="../Special:Contributions/Swang" class="mw-usertoollinks-contribs" title="Special:Contributions/Swang">contribs</a>)</span> <span class="comment">(<a href="index.php?title=Arm_Joints&amp;oldid=918#Collision_Avoidance">→</a>‎<span dir="auto"><span class="autocomment">Collision Avoidance</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Arm_Joints&amp;diff=prev&amp;oldid=918" title="Arm Joints">diff</a>) <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Arm_Joints&amp;direction=prev&amp;oldid=918" title="Arm Joints">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Arm_Joints&amp;oldid=918#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Arm_Joints&amp;oldid=918#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="content-block">
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Arm_Joints&amp;oldid=918#Component_IDs"><span class="tocnumber">1</span> <span class="toctext">Component IDs</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="index.php?title=Arm_Joints&amp;oldid=918#Arm_Joint_States"><span class="tocnumber">2</span> <span class="toctext">Arm Joint States</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="index.php?title=Arm_Joints&amp;oldid=918#Arm_Joint_Control"><span class="tocnumber">3</span> <span class="toctext">Arm Joint Control</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="index.php?title=Arm_Joints&amp;oldid=918#Joint_Control_Mode"><span class="tocnumber">3.1</span> <span class="toctext">Joint Control Mode</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="index.php?title=Arm_Joints&amp;oldid=918#Position_Mode"><span class="tocnumber">3.2</span> <span class="toctext">Position Mode</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="index.php?title=Arm_Joints&amp;oldid=918#Velocity_Mode"><span class="tocnumber">3.3</span> <span class="toctext">Velocity Mode</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="index.php?title=Arm_Joints&amp;oldid=918#Torque_Mode"><span class="tocnumber">3.4</span> <span class="toctext">Torque Mode</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="index.php?title=Arm_Joints&amp;oldid=918#Trajectory_Mode"><span class="tocnumber">3.5</span> <span class="toctext">Trajectory Mode</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="index.php?title=Arm_Joints&amp;oldid=918#Joint_Trajectory_Action"><span class="tocnumber">4</span> <span class="toctext">Joint Trajectory Action</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="index.php?title=Arm_Joints&amp;oldid=918#Usage"><span class="tocnumber">5</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="index.php?title=Arm_Joints&amp;oldid=918#Parameters"><span class="tocnumber">6</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="index.php?title=Arm_Joints&amp;oldid=918#Collision_Avoidance"><span class="tocnumber">7</span> <span class="toctext">Collision Avoidance</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Component_IDs">Component IDs</span></h2>
+<p><b>Component IDs:</b><br />
+<code>right_j0</code>, <code>right_j1</code>, <code>right_j2</code>, <code>right_j3</code>, <code>right_j4</code>, <code>right_j5</code>, <code>right_j6</code>  
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Arm_Joint_States">Arm Joint States</span></h2>
+<p><code>/robot/joint_states</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/JointState.html">sensor_msgs-JointState</a>)  
+</p>
+<ul><li><code>name[i]</code>: '&lt;component_id&gt;' of <code>i</code>-th joint in message value arrays.</li>
+<li><code>position[i]</code>: position of joint <code>i</code> rad</li>
+<li><code>velocity[i]</code>: velocity of joint <code>i</code> in rad/s</li>
+<li><code>effort[i]</code>: effort applied in joint <code>i</code> in Nm</li></ul>
+<p>Joint states are published by the <code>robot_state_publisher</code> and are updated with information from the sensors for every cycle.
+</p><p><i>Set Joint State Publishing Rate</i>  <br />
+<code>/robot/joint_state_publish_rate</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/UInt16.html">std_msgs-UInt16</a>)  
+</p>
+<ul><li>The rate at which the joints are published can be controlled by publishing a frequency on this topic.</li>
+<li>Default rate is 100Hz; Maximum is 800Hz.</li></ul>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Arm_Joint_Control">Arm Joint Control</span></h2>
+<p>There are currently four modes for controlling the arms: Joint Position Mode, Joint Velocity Mode, and Joint Torque Mode, and Joint Trajectory Mode.
+</p><p>For Joint Trajectory Mode, a joint trajectory action server has been created in support of timestamped joint position trajectories using the ROS standard <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/joint_trajectory_action">joint trajectory action</a>.
+</p><p>For more information on joint control, see the following <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Example_Programs&amp;action=edit&amp;redlink=1" class="new" title="Example Programs (page does not exist)">movement example programs.</a>
+</p>
+<h3><span class="mw-headline" id="Joint_Control_Mode">Joint Control Mode</span></h3>
+<p>Each arm can be in independent control modes by publishing the desired control mode to the topic for the appropriate arm.
+</p>
+<h3><span class="mw-headline" id="Position_Mode">Position Mode</span></h3>
+<p>The first is Position Mode, in which users publish target joint angles for given joints and the internal controller drives the arm to the published angles.
+</p>
+<h3><span class="mw-headline" id="Velocity_Mode">Velocity Mode</span></h3>
+<p>In Velocity Control Mode, users publish velocities for given joints and the joints will move at the specified velocity.
+</p>
+<h3><span class="mw-headline" id="Torque_Mode">Torque Mode</span></h3>
+<p>'<b><i>Warning:'</i> Advanced Control Mode.</b>  <br />
+In Torque Control Mode, users publish torques for given joints and the joints will move at the specified torque.
+</p>
+<h3><span class="mw-headline" id="Trajectory_Mode">Trajectory Mode</span></h3>
+<p>'<b><i>Warning:'</i> Advanced Control Mode.</b>  
+In Trajectory Control Mode, users publish desired joint positions. Where these commands would typically be modified in traditional 'Position Mode', these commands are passed directly to the Joint Controller Boards (JCBs). The only limitation placed on Trajectory commands is it requires a user-computed Position, Velocity, and Acceleration at each timestamp.
+</p><p><b>Switching Modes</b>  <br />
+<code>/robot/limb/right/joint_command</code> (<a rel="nofollow" class="external text" href="https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/JointCommand.html">intera_core_msgs/JointCommand</a>)  
+</p>
+<ul><li>Mode is set implicitly by specifying the mode in the command message. Publish a <code>JointCommand</code> message to the <code>joint_command</code> topic for a given arm to set the arm into the desired control mode.</li>
+<li>Constants for each mode are defined in the <code>JointCommand</code> message type.</li></ul>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Joint_Trajectory_Action">Joint Trajectory Action</span></h2>
+<p>The Joint Trajectory Action provides an <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/actionlib">ROS action interface</a> for tracking trajectory execution.
+</p><p>The joint trajectory action server provides an action interface for execution of trajectories requested by the client, known as a <i>Goal* request.</i>
+The joint trajectory action server then executes the request trajectory communicating the *Result<i> response. </i>
+</p><p>The actionlib (action server/client interface) package differs from ROS services, simple request/response interface, in that actions allow mid-execution cancellation, they can also provide feedback during execution as to the progress of the Goal request.
+</p><p><i>Joint Trajectory Action Server</i>  <br />
+<code>/robot/limb/right/follow_joint_trajectory/cancel</code><br />
+<code>/robot/limb/right/follow_joint_trajectory/feedback</code><br />
+<code>/robot/limb/right/follow_joint_trajectory/goal</code><br />
+<code>/robot/limb/right/follow_joint_trajectory/result</code><br />
+<code>/robot/limb/right/follow_joint_trajectory/status</code>
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    <span class="c1"># Verify that the robot is enabled:</span>
+    $ rosrun intera_interface enable_robot.py
+    <span class="c1"># Start the joint trajectory action server:</span>
+    $ rosrun intera_interface joint_trajectory_action_server.py
+</pre></div>
+<p>Please see the <a href="../Joint_Trajectory_Playback_Example" title="Joint Trajectory Playback Example">joint trajectory playback example</a> for examples of creating a client of this action server and requesting a joint trajectory.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Parameters">Parameters</span></h2>
+<p>The joint trajectory action server provides a number of parameters which describe it's behavior during the trajectory execution. These were largely designed to follow <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/joint_trajectory_action#ROS_API">these standards.</a>
+</p><p><b>Note:</b> All of these parameters will be initialized on startup of the trajectory_controller.py if they were not previously specified.
+</p>
+<ul><li><code>/rethink_rsdk_joint_trajectory_controller/&lt;joint_name&gt;__kp</code></li></ul>
+<p>The proportional gain with which the joint trajectory controller will track the commanded trajectory for the specified joint.
+</p>
+<ul><li><code>/rethink_rsdk_joint_trajectory_controller/&lt;joint_name&gt;__kd</code></li></ul>
+<p>The derivative gain with which the joint trajectory controller will track the commanded trajectory for the specified joint.
+</p>
+<ul><li><code>/rethink_rsdk_joint_trajectory_controller/&lt;joint_name&gt;__ki</code></li></ul>
+<p>The integral gain with which the joint trajectory controller will track the commanded trajectory for the specified joint.
+</p>
+<ul><li><code>/rethink_rsdk_joint_trajectory_controller/goal_time (double, default: 0.0)</code></li></ul>
+<p>The amount of time (in seconds) that the controller is permitted to be late to the goal. If goal_time has passed and the controller still has not reached the final position (within the parameters described by <code>/rethink_rsdk_joint_trajectory_controller/&lt;joint_name&gt;_goal</code>, then the goal is aborted.
+</p>
+<ul><li><code>/rethink_rsdk_joint_trajectory_controller/&lt;joint&gt;_goal (double, default: -1.0)</code></li></ul>
+<p>The maximum final error for &lt;joint&gt; for the trajectory goal to be considered successful. Negative numbers indicate that there is no constraint. Given in units of joint position (radians). If this constraint is violated, the goal is aborted.
+</p>
+<ul><li><code>/rethink_rsdk_joint_trajectory_controller/trajectory (double, default: -1.0)</code></li></ul>
+<p>The maximum error for &lt;joint&gt; at any point during execution for the trajectory goal to be considered successful. Negative numbers indicate that there is no constraint. Given in units of joint position (radians). If this constraint is violated, the goal is aborted.
+</p><p><i><b>Dynamic Reconfigure GUI</b></i> is suggest for use with ROS Distributions &gt;=Indigo for setting these parameters.
+</p>
+<pre>   # Start the dynamic reconfigure GUI:
+   $ rosrun rqt_reconfigure rqt_reconfigure
+</pre>
+<p>Expand the joint trajectory controller's parameters by choosing <code>rethink_rsdk_joint_trajectory_controller</code> from the left menu. Use the sliders/input fields to specify these parameters dynamically.
+</p><p>Alternatively, these parameters can be set  <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/rosparam#YAML_Format">via a YAML file, command line, or programmatically (rospy, roscpp)</a>.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Collision_Avoidance">Collision Avoidance</span></h2>
+<p><i><b>Warning:</b> RETHINK ROBOTICS DISCLAIMS COMPLIANCE BY THE PRODUCTS WITH ANSI, ISO OR OTHER INDUSTRIAL ROBOT SAFETY STANDARDS. RETHINK’S PRODUCTS INCLUDE CERTAIN SAFETY AND/OR COLLISION DETECTION TECHNOLOGY TO PREVENT POSSIBLE INJURY FROM USE OF THE PRODUCTS. THE USER ACKNOWLEDGES THAT HE/SHE HAS THE ABILITY TO DISABLE CERTAIN SAFETY MECHANISMS INCLUDED IN THE PRODUCTS, AND IF DISABLED BY USER, USER ASSUMES ALL RESPONSIBILITY FOR DAMAGE AND/OR HARM CAUSED BY THE PRODUCTS AND AGREES TO INDEMNIFY RETHINK ROBOTICS FROM ALL LIABILITY RELATING TO SUCH DAMAGE OR HARM.</i>  
+</p><p>In certain situations, collision avoidance (forces applied to the joints to avoid self collision) are undesirable.  
+</p><p><b>Torso Collision Avoidance</b>  <br />
+<code>/robot/limb/right/suppress_collision_avoidance</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/Empty.html">std_msgs-Empty</a>) 
+</p><p>To disable torso self collision avoidance, a std_msgs/Empty message must be published at a rate greater than 5 Hz.
+</p><p>For additional information on joint control, see the <a href="../Joint_Position_Example" title="Joint Position Example">Joint Position Example</a>, <a href="../Head_Movement_Example" title="Head Movement Example">Head Movement Example</a>, and <a href="../MoveIt_Tutorial" title="MoveIt Tutorial">MoveIt! Tutorial</a>.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815155224
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.019 seconds
+Real time usage: 0.164 seconds
+Preprocessor visited node count: 72/1000000
+Preprocessor generated node count: 104/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 375/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:141-0!canonical and timestamp 20190815155224 and revision id 918
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Arm_Joints&amp;oldid=918">http://sdk.rethinkrobotics.com/intera/a/index.php?title=Arm_Joints&amp;oldid=918</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.019","walltime":"0.164","ppvisitednodes":{"value":72,"limit":1000000},"ppgeneratednodes":{"value":104,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":375,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815155224","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":1389});});</script></body></html>

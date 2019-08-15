@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>IK Pick and Place Demo - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"IK_Pick_and_Place_Demo_-_Code_Walkthrough","wgTitle":"IK Pick and Place Demo - Code Walkthrough","wgCurRevisionId":4375,"wgRevisionId":4375,"wgArticleId":815,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"IK_Pick_and_Place_Demo_-_Code_Walkthrough","wgRelevantArticleId":815,"wgRequestId":"bbe4ab6bd96db3f886b5a24a","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="a/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-IK_Pick_and_Place_Demo_-_Code_Walkthrough rootpage-IK_Pick_and_Place_Demo_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(a/skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="a/index.php?title=Special:UserLogin&amp;returnto=IK+Pick+and+Place+Demo+-+Code+Walkthrough">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">IK Pick and Place Demo - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="IK_Pick_and_Place_Demo_-_Code_Walkthrough#">More</a><ul><li id="ca-viewsource"><a href="a/index.php?title=IK_Pick_and_Place_Demo_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="a/index.php?title=IK_Pick_and_Place_Demo_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="IK_Pick_and_Place_Demo_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="Learning">Learning</a></li>
+                <li id="n-Community"><a href="Community">Community</a></li>
+                <li id="n-Support"><a href="Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="IK_Pick_and_Place_Demo_-_Code_Walkthrough#column-one">navigation</a>, <a href="IK_Pick_and_Place_Demo_-_Code_Walkthrough#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div style="padding:5px; border:1px solid #ffcc00; background:#FFFDDF; margin-bottom:0.2em; Font-size:140%;"><a href="IK_Pick_and_Place_Demo" title="IK Pick and Place Demo"><img alt="Back.png" src="a/images/b/b9/Back.png" width="29" height="20" /></a> <a href="IK_Pick_and_Place_Demo" title="IK Pick and Place Demo">IK Pick and Place Demo</a></div>
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>This example demonstrates the usage of spawning objects in Gazebo, and using Inverse Kinematics calls to move the arm in position in order to pick up and block from the table, and place it back on the table.  A list of gripper tip positions are hard-coded in the <code>main()</code> function and these are passed to the <code>PickAndPlace()</code> method. It is here that the joint positions are retrieved from the Inverse Kinematics calls and executed as <code>move_to_joint()</code> commands. <br />
+</p>
+<h2><span class="mw-headline" id="Code_Walkthrough">Code Walkthrough</span></h2>
+<p>Now, let's break down the code.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">33 </span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="lineno">34 </span><span class="kn">import</span> <span class="nn">struct</span>
+<span class="lineno">35 </span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="lineno">36 </span><span class="kn">import</span> <span class="nn">copy</span>
+<span class="lineno">37 </span>
+<span class="lineno">38 </span><span class="kn">import</span> <span class="nn">rospy</span>
+<span class="lineno">39 </span><span class="kn">import</span> <span class="nn">rospkg</span>
+<span class="lineno">40 </span>
+<span class="lineno">41 </span><span class="kn">from</span> <span class="nn">gazebo_msgs.srv</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="lineno">42 </span>    <span class="n">SpawnModel</span><span class="p">,</span>
+<span class="lineno">43 </span>    <span class="n">DeleteModel</span><span class="p">,</span>
+<span class="lineno">44 </span><span class="p">)</span>
+<span class="lineno">45 </span><span class="kn">from</span> <span class="nn">geometry_msgs.msg</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="lineno">46 </span>    <span class="n">PoseStamped</span><span class="p">,</span>
+<span class="lineno">47 </span>    <span class="n">Pose</span><span class="p">,</span>
+<span class="lineno">48 </span>    <span class="n">Point</span><span class="p">,</span>
+<span class="lineno">49 </span>    <span class="n">Quaternion</span><span class="p">,</span>
+<span class="lineno">50 </span><span class="p">)</span>
+<span class="lineno">51 </span><span class="kn">from</span> <span class="nn">std_msgs.msg</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="lineno">52 </span>    <span class="n">Header</span><span class="p">,</span>
+<span class="lineno">53 </span>    <span class="n">Empty</span><span class="p">,</span>
+<span class="lineno">54 </span><span class="p">)</span>
+<span class="lineno">55 </span>
+<span class="lineno">56 </span><span class="kn">from</span> <span class="nn">baxter_core_msgs.srv</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="lineno">57 </span>    <span class="n">SolvePositionIK</span><span class="p">,</span>
+<span class="lineno">58 </span>    <span class="n">SolvePositionIKRequest</span><span class="p">,</span>
+<span class="lineno">59 </span><span class="p">)</span>
+<span class="lineno">60 </span>
+<span class="lineno">61 </span><span class="kn">import</span> <span class="nn">baxter_interface</span>
+</pre></div>
+<p>This imports the baxter interface for accessing the limb and the gripper class.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">63 </span><span class="k">class</span> <span class="nc">PickAndPlace</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="lineno">64 </span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">limb</span><span class="p">,</span> <span class="n">hover_distance</span> <span class="o">=</span> <span class="mf">0.15</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+<span class="lineno">65 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_limb_name</span> <span class="o">=</span> <span class="n">limb</span> <span class="c1"># string</span>
+<span class="lineno">66 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_hover_distance</span> <span class="o">=</span> <span class="n">hover_distance</span> <span class="c1"># in meters</span>
+<span class="lineno">67 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_verbose</span> <span class="o">=</span> <span class="n">verbose</span> <span class="c1"># bool</span>
+<span class="lineno">68 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_limb</span> <span class="o">=</span> <span class="n">baxter_interface</span><span class="o">.</span><span class="n">Limb</span><span class="p">(</span><span class="n">limb</span><span class="p">)</span>
+<span class="lineno">69 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span> <span class="o">=</span> <span class="n">baxter_interface</span><span class="o">.</span><span class="n">Gripper</span><span class="p">(</span><span class="n">limb</span><span class="p">)</span>
+<span class="lineno">70 </span>        <span class="n">ns</span> <span class="o">=</span> <span class="s2">&quot;ExternalTools/&quot;</span> <span class="o">+</span> <span class="n">limb</span> <span class="o">+</span> <span class="s2">&quot;/PositionKinematicsNode/IKService&quot;</span>
+<span class="lineno">71 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_iksvc</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ServiceProxy</span><span class="p">(</span><span class="n">ns</span><span class="p">,</span> <span class="n">SolvePositionIK</span><span class="p">)</span>
+<span class="lineno">72 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">wait_for_service</span><span class="p">(</span><span class="n">ns</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">)</span>
+<span class="lineno">73 </span>        <span class="c1"># verify robot is enabled</span>
+<span class="lineno">74 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Getting robot state... &quot;</span><span class="p">)</span>
+<span class="lineno">75 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_rs</span> <span class="o">=</span> <span class="n">baxter_interface</span><span class="o">.</span><span class="n">RobotEnable</span><span class="p">(</span><span class="n">baxter_interface</span><span class="o">.</span><span class="n">CHECK_VERSION</span><span class="p">)</span>
+<span class="lineno">76 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_init_state</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rs</span><span class="o">.</span><span class="n">state</span><span class="p">()</span><span class="o">.</span><span class="n">enabled</span>
+<span class="lineno">77 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Enabling robot... &quot;</span><span class="p">)</span>
+<span class="lineno">78 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_rs</span><span class="o">.</span><span class="n">enable</span><span class="p">()</span>
+<span class="lineno">79 </span>
+<span class="lineno">80 </span>    <span class="k">def</span> <span class="nf">move_to_start</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start_angles</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<span class="lineno">81 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Moving the {0} arm to start pose...&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_limb_name</span><span class="p">))</span>
+<span class="lineno">82 </span>        <span class="k">if</span> <span class="ow">not</span> <span class="n">start_angles</span><span class="p">:</span>
+<span class="lineno">83 </span>            <span class="n">start_angles</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_joint_names</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">7</span><span class="p">))</span>
+<span class="lineno">84 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_guarded_move_to_joint_position</span><span class="p">(</span><span class="n">start_angles</span><span class="p">)</span>
+<span class="lineno">85 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">gripper_open</span><span class="p">()</span>
+<span class="lineno">86 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="lineno">87 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Running. Ctrl-c to quit&quot;</span><span class="p">)</span>
+</pre></div>
+<p>Action server client for the corresponding limb is created. The existence of action server for the limb is checked with a timeout of 5 seconds. The <code>move_to_start</code> will move the arm to a desired initial pose. If none are supplied, then the start pose is zero angle for every joint.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno"> 89 </span>    <span class="k">def</span> <span class="nf">ik_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pose</span><span class="p">):</span>
+<span class="lineno"> 90 </span>        <span class="n">hdr</span> <span class="o">=</span> <span class="n">Header</span><span class="p">(</span><span class="n">stamp</span><span class="o">=</span><span class="n">rospy</span><span class="o">.</span><span class="n">Time</span><span class="o">.</span><span class="n">now</span><span class="p">(),</span> <span class="n">frame_id</span><span class="o">=</span><span class="s1">&#39;base&#39;</span><span class="p">)</span>
+<span class="lineno"> 91 </span>        <span class="n">ikreq</span> <span class="o">=</span> <span class="n">SolvePositionIKRequest</span><span class="p">()</span>
+<span class="lineno"> 92 </span>        <span class="n">ikreq</span><span class="o">.</span><span class="n">pose_stamp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">PoseStamped</span><span class="p">(</span><span class="n">header</span><span class="o">=</span><span class="n">hdr</span><span class="p">,</span> <span class="n">pose</span><span class="o">=</span><span class="n">pose</span><span class="p">))</span>
+<span class="lineno"> 93 </span>        <span class="k">try</span><span class="p">:</span>
+<span class="lineno"> 94 </span>            <span class="n">resp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_iksvc</span><span class="p">(</span><span class="n">ikreq</span><span class="p">)</span>
+<span class="lineno"> 95 </span>        <span class="k">except</span> <span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">ServiceException</span><span class="p">,</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ROSException</span><span class="p">),</span> <span class="n">e</span><span class="p">:</span>
+<span class="lineno"> 96 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s2">&quot;Service call failed: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">e</span><span class="p">,))</span>
+<span class="lineno"> 97 </span>            <span class="k">return</span> <span class="bp">False</span>
+<span class="lineno"> 98 </span>        <span class="c1"># Check if result valid, and type of seed ultimately used to get solution</span>
+<span class="lineno"> 99 </span>        <span class="c1"># convert rospy&#39;s string representation of uint8[]&#39;s to int&#39;s</span>
+<span class="lineno">100 </span>        <span class="n">resp_seeds</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s1">&#39;&lt;</span><span class="si">%d</span><span class="s1">B&#39;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">result_type</span><span class="p">),</span> <span class="n">resp</span><span class="o">.</span><span class="n">result_type</span><span class="p">)</span>
+<span class="lineno">101 </span>        <span class="n">limb_joints</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="lineno">102 </span>        <span class="k">if</span> <span class="p">(</span><span class="n">resp_seeds</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">resp</span><span class="o">.</span><span class="n">RESULT_INVALID</span><span class="p">):</span>
+<span class="lineno">103 </span>            <span class="n">seed_str</span> <span class="o">=</span> <span class="p">{</span>
+<span class="lineno">104 </span>                        <span class="n">ikreq</span><span class="o">.</span><span class="n">SEED_USER</span><span class="p">:</span> <span class="s1">&#39;User Provided Seed&#39;</span><span class="p">,</span>
+<span class="lineno">105 </span>                        <span class="n">ikreq</span><span class="o">.</span><span class="n">SEED_CURRENT</span><span class="p">:</span> <span class="s1">&#39;Current Joint Angles&#39;</span><span class="p">,</span>
+<span class="lineno">106 </span>                        <span class="n">ikreq</span><span class="o">.</span><span class="n">SEED_NS_MAP</span><span class="p">:</span> <span class="s1">&#39;Nullspace Setpoints&#39;</span><span class="p">,</span>
+<span class="lineno">107 </span>                       <span class="p">}</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">resp_seeds</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;None&#39;</span><span class="p">)</span>
+<span class="lineno">108 </span>            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_verbose</span><span class="p">:</span>
+<span class="lineno">109 </span>                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;IK Solution SUCCESS - Valid Joint Solution Found from Seed Type: {0}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+<span class="lineno">110 </span>                         <span class="p">(</span><span class="n">seed_str</span><span class="p">)))</span>
+<span class="lineno">111 </span>            <span class="c1"># Format solution into Limb API-compatible dictionary</span>
+<span class="lineno">112 </span>            <span class="n">limb_joints</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">joints</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">resp</span><span class="o">.</span><span class="n">joints</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">position</span><span class="p">))</span>
+<span class="lineno">113 </span>            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_verbose</span><span class="p">:</span>
+<span class="lineno">114 </span>                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;IK Joint Solution:</span><span class="se">\n</span><span class="s2">{0}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">limb_joints</span><span class="p">))</span>
+<span class="lineno">115 </span>                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;------------------&quot;</span><span class="p">)</span>
+<span class="lineno">116 </span>        <span class="k">else</span><span class="p">:</span>
+<span class="lineno">117 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s2">&quot;INVALID POSE - No Valid Joint Solution Found.&quot;</span><span class="p">)</span>
+<span class="lineno">118 </span>            <span class="k">return</span> <span class="bp">False</span>
+<span class="lineno">119 </span>        <span class="k">return</span> <span class="n">limb_joints</span>
+</pre></div>
+<p>This method is the essential function for requesting an Inverse Kinematics solution with the desired end effector pose. <code>ik_request()</code> will return the solved joint angles if there was a solution, or <code>false</code> if there was a problem with the IK solver or no solution was found.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">121 </span>    <span class="k">def</span> <span class="nf">_guarded_move_to_joint_position</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">joint_angles</span><span class="p">):</span>
+<span class="lineno">122 </span>        <span class="k">if</span> <span class="n">joint_angles</span><span class="p">:</span>
+<span class="lineno">123 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_limb</span><span class="o">.</span><span class="n">move_to_joint_positions</span><span class="p">(</span><span class="n">joint_angles</span><span class="p">)</span>
+<span class="lineno">124 </span>        <span class="k">else</span><span class="p">:</span>
+<span class="lineno">125 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s2">&quot;No Joint Angles provided for move_to_joint_positions. Staying put.&quot;</span><span class="p">)</span>
+<span class="lineno">126 </span>
+<span class="lineno">127 </span>    <span class="k">def</span> <span class="nf">gripper_open</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno">128 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="lineno">129 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="lineno">130 </span>
+<span class="lineno">131 </span>    <span class="k">def</span> <span class="nf">gripper_close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno">132 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="lineno">133 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="lineno">134 </span>
+<span class="lineno">135 </span>    <span class="k">def</span> <span class="nf">_approach</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pose</span><span class="p">):</span>
+<span class="lineno">136 </span>        <span class="n">approach</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">pose</span><span class="p">)</span>
+<span class="lineno">137 </span>        <span class="c1"># approach with a pose the hover-distance above the requested pose</span>
+<span class="lineno">138 </span>        <span class="n">approach</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">approach</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">z</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hover_distance</span>
+<span class="lineno">139 </span>        <span class="n">joint_angles</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ik_request</span><span class="p">(</span><span class="n">approach</span><span class="p">)</span>
+<span class="lineno">140 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_guarded_move_to_joint_position</span><span class="p">(</span><span class="n">joint_angles</span><span class="p">)</span>
+<span class="lineno">141 </span>
+<span class="lineno">142 </span>    <span class="k">def</span> <span class="nf">_retract</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno">143 </span>        <span class="c1"># retrieve current pose from endpoint</span>
+<span class="lineno">144 </span>        <span class="n">current_pose</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_limb</span><span class="o">.</span><span class="n">endpoint_pose</span><span class="p">()</span>
+<span class="lineno">145 </span>        <span class="n">ik_pose</span> <span class="o">=</span> <span class="n">Pose</span><span class="p">()</span>
+<span class="lineno">146 </span>        <span class="n">ik_pose</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">current_pose</span><span class="p">[</span><span class="s1">&#39;position&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">x</span> 
+<span class="lineno">147 </span>        <span class="n">ik_pose</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">current_pose</span><span class="p">[</span><span class="s1">&#39;position&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">y</span> 
+<span class="lineno">148 </span>        <span class="n">ik_pose</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">current_pose</span><span class="p">[</span><span class="s1">&#39;position&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">z</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hover_distance</span>
+<span class="lineno">149 </span>        <span class="n">ik_pose</span><span class="o">.</span><span class="n">orientation</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">current_pose</span><span class="p">[</span><span class="s1">&#39;orientation&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">x</span> 
+<span class="lineno">150 </span>        <span class="n">ik_pose</span><span class="o">.</span><span class="n">orientation</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">current_pose</span><span class="p">[</span><span class="s1">&#39;orientation&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">y</span> 
+<span class="lineno">151 </span>        <span class="n">ik_pose</span><span class="o">.</span><span class="n">orientation</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">current_pose</span><span class="p">[</span><span class="s1">&#39;orientation&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">z</span> 
+<span class="lineno">152 </span>        <span class="n">ik_pose</span><span class="o">.</span><span class="n">orientation</span><span class="o">.</span><span class="n">w</span> <span class="o">=</span> <span class="n">current_pose</span><span class="p">[</span><span class="s1">&#39;orientation&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">w</span>
+<span class="lineno">153 </span>        <span class="n">joint_angles</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ik_request</span><span class="p">(</span><span class="n">ik_pose</span><span class="p">)</span>
+<span class="lineno">154 </span>        <span class="c1"># servo up from current pose</span>
+<span class="lineno">155 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_guarded_move_to_joint_position</span><span class="p">(</span><span class="n">joint_angles</span><span class="p">)</span>
+<span class="lineno">156 </span>
+<span class="lineno">157 </span>    <span class="k">def</span> <span class="nf">_servo_to_pose</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pose</span><span class="p">):</span>
+<span class="lineno">158 </span>        <span class="c1"># servo down to release</span>
+<span class="lineno">159 </span>        <span class="n">joint_angles</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ik_request</span><span class="p">(</span><span class="n">pose</span><span class="p">)</span>
+<span class="lineno">160 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_guarded_move_to_joint_position</span><span class="p">(</span><span class="n">joint_angles</span><span class="p">)</span>
+<span class="lineno">161 </span>
+<span class="lineno">162 </span>    <span class="k">def</span> <span class="nf">pick</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pose</span><span class="p">):</span>
+<span class="lineno">163 </span>        <span class="c1"># open the gripper</span>
+<span class="lineno">164 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">gripper_open</span><span class="p">()</span>
+<span class="lineno">165 </span>        <span class="c1"># servo above pose</span>
+<span class="lineno">166 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_approach</span><span class="p">(</span><span class="n">pose</span><span class="p">)</span>
+<span class="lineno">167 </span>        <span class="c1"># servo to pose</span>
+<span class="lineno">168 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_servo_to_pose</span><span class="p">(</span><span class="n">pose</span><span class="p">)</span>
+<span class="lineno">169 </span>        <span class="c1"># close gripper</span>
+<span class="lineno">170 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">gripper_close</span><span class="p">()</span>
+<span class="lineno">171 </span>        <span class="c1"># retract to clear object</span>
+<span class="lineno">172 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_retract</span><span class="p">()</span>
+<span class="lineno">173 </span>
+<span class="lineno">174 </span>    <span class="k">def</span> <span class="nf">place</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pose</span><span class="p">):</span>
+<span class="lineno">175 </span>        <span class="c1"># servo above pose</span>
+<span class="lineno">176 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_approach</span><span class="p">(</span><span class="n">pose</span><span class="p">)</span>
+<span class="lineno">177 </span>        <span class="c1"># servo to pose</span>
+<span class="lineno">178 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_servo_to_pose</span><span class="p">(</span><span class="n">pose</span><span class="p">)</span>
+<span class="lineno">179 </span>        <span class="c1"># open the gripper</span>
+<span class="lineno">180 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">gripper_open</span><span class="p">()</span>
+<span class="lineno">181 </span>        <span class="c1"># retract to clear object</span>
+<span class="lineno">182 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_retract</span><span class="p">()</span>
+</pre></div>
+<p>These functions direct Baxter to move into the desired pose by requesting an Inverse Kinematics solution, retrieving the calculated joint angles, and servoing to those positions.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">184 </span><span class="k">def</span> <span class="nf">load_gazebo_models</span><span class="p">(</span><span class="n">table_pose</span><span class="o">=</span><span class="n">Pose</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)),</span>
+<span class="lineno">185 </span>                       <span class="n">table_reference_frame</span><span class="o">=</span><span class="s2">&quot;world&quot;</span><span class="p">,</span>
+<span class="lineno">186 </span>                       <span class="n">block_pose</span><span class="o">=</span><span class="n">Pose</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.6725</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.1265</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mf">0.7825</span><span class="p">)),</span>
+<span class="lineno">187 </span>                       <span class="n">block_reference_frame</span><span class="o">=</span><span class="s2">&quot;world&quot;</span><span class="p">):</span>
+<span class="lineno">188 </span>    <span class="c1"># Get Models&#39; Path</span>
+<span class="lineno">189 </span>    <span class="n">model_path</span> <span class="o">=</span> <span class="n">rospkg</span><span class="o">.</span><span class="n">RosPack</span><span class="p">()</span><span class="o">.</span><span class="n">get_path</span><span class="p">(</span><span class="s1">&#39;baxter_sim_examples&#39;</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;/models/&quot;</span>
+<span class="lineno">190 </span>    <span class="c1"># Load Table SDF</span>
+<span class="lineno">191 </span>    <span class="n">table_xml</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="lineno">192 </span>    <span class="k">with</span> <span class="nb">open</span> <span class="p">(</span><span class="n">model_path</span> <span class="o">+</span> <span class="s2">&quot;cafe_table/model.sdf&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">table_file</span><span class="p">:</span>
+<span class="lineno">193 </span>        <span class="n">table_xml</span><span class="o">=</span><span class="n">table_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="lineno">194 </span>    <span class="c1"># Load Block URDF</span>
+<span class="lineno">195 </span>    <span class="n">block_xml</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="lineno">196 </span>    <span class="k">with</span> <span class="nb">open</span> <span class="p">(</span><span class="n">model_path</span> <span class="o">+</span> <span class="s2">&quot;block/model.urdf&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">block_file</span><span class="p">:</span>
+<span class="lineno">197 </span>        <span class="n">block_xml</span><span class="o">=</span><span class="n">block_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="lineno">198 </span>    <span class="c1"># Spawn Table SDF</span>
+<span class="lineno">199 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">wait_for_service</span><span class="p">(</span><span class="s1">&#39;/gazebo/spawn_sdf_model&#39;</span><span class="p">)</span>
+<span class="lineno">200 </span>    <span class="k">try</span><span class="p">:</span>
+<span class="lineno">201 </span>        <span class="n">spawn_sdf</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ServiceProxy</span><span class="p">(</span><span class="s1">&#39;/gazebo/spawn_sdf_model&#39;</span><span class="p">,</span> <span class="n">SpawnModel</span><span class="p">)</span>
+<span class="lineno">202 </span>        <span class="n">resp_sdf</span> <span class="o">=</span> <span class="n">spawn_sdf</span><span class="p">(</span><span class="s2">&quot;cafe_table&quot;</span><span class="p">,</span> <span class="n">table_xml</span><span class="p">,</span> <span class="s2">&quot;/&quot;</span><span class="p">,</span>
+<span class="lineno">203 </span>                             <span class="n">table_pose</span><span class="p">,</span> <span class="n">table_reference_frame</span><span class="p">)</span>
+<span class="lineno">204 </span>    <span class="k">except</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ServiceException</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+<span class="lineno">205 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s2">&quot;Spawn SDF service call failed: {0}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+<span class="lineno">206 </span>    <span class="c1"># Spawn Block URDF</span>
+<span class="lineno">207 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">wait_for_service</span><span class="p">(</span><span class="s1">&#39;/gazebo/spawn_urdf_model&#39;</span><span class="p">)</span>
+<span class="lineno">208 </span>    <span class="k">try</span><span class="p">:</span>
+<span class="lineno">209 </span>        <span class="n">spawn_urdf</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ServiceProxy</span><span class="p">(</span><span class="s1">&#39;/gazebo/spawn_urdf_model&#39;</span><span class="p">,</span> <span class="n">SpawnModel</span><span class="p">)</span>
+<span class="lineno">210 </span>        <span class="n">resp_urdf</span> <span class="o">=</span> <span class="n">spawn_urdf</span><span class="p">(</span><span class="s2">&quot;block&quot;</span><span class="p">,</span> <span class="n">block_xml</span><span class="p">,</span> <span class="s2">&quot;/&quot;</span><span class="p">,</span>
+<span class="lineno">211 </span>                               <span class="n">block_pose</span><span class="p">,</span> <span class="n">block_reference_frame</span><span class="p">)</span>
+<span class="lineno">212 </span>    <span class="k">except</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ServiceException</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+<span class="lineno">213 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s2">&quot;Spawn URDF service call failed: {0}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+<span class="lineno">214 </span>
+<span class="lineno">215 </span><span class="k">def</span> <span class="nf">delete_gazebo_models</span><span class="p">():</span>
+<span class="lineno">216 </span>    <span class="c1"># This will be called on ROS Exit, deleting Gazebo models</span>
+<span class="lineno">217 </span>    <span class="c1"># Do not wait for the Gazebo Delete Model service, since</span>
+<span class="lineno">218 </span>    <span class="c1"># Gazebo should already be running. If the service is not</span>
+<span class="lineno">219 </span>    <span class="c1"># available since Gazebo has been killed, it is fine to error out</span>
+<span class="lineno">220 </span>    <span class="k">try</span><span class="p">:</span>
+<span class="lineno">221 </span>        <span class="n">delete_model</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ServiceProxy</span><span class="p">(</span><span class="s1">&#39;/gazebo/delete_model&#39;</span><span class="p">,</span> <span class="n">DeleteModel</span><span class="p">)</span>
+<span class="lineno">222 </span>        <span class="n">resp_delete</span> <span class="o">=</span> <span class="n">delete_model</span><span class="p">(</span><span class="s2">&quot;cafe_table&quot;</span><span class="p">)</span>
+<span class="lineno">223 </span>        <span class="n">resp_delete</span> <span class="o">=</span> <span class="n">delete_model</span><span class="p">(</span><span class="s2">&quot;block&quot;</span><span class="p">)</span>
+<span class="lineno">224 </span>    <span class="k">except</span> <span class="n">rospy</span><span class="o">.</span><span class="n">ServiceException</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+<span class="lineno">225 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;Delete Model service call failed: {0}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+</pre></div>
+<p>These functions wrap the service calls for spawning and destroying models in the Gazebo environment. Specifically, the table is spawned with a <code>SDF</code> file and the block with an <code>URDF</code>.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">227 </span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="lineno">228 </span>    <span class="sd">&quot;&quot;&quot;RSDK Inverse Kinematics Pick and Place Example</span>
+<span class="lineno">229 </span><span class="sd">    A Pick and Place example using the Rethink Inverse Kinematics</span>
+<span class="lineno">230 </span><span class="sd">    Service which returns the joint angles a requested Cartesian Pose.</span>
+<span class="lineno">231 </span><span class="sd">    This ROS Service client is used to request both pick and place</span>
+<span class="lineno">232 </span><span class="sd">    poses in the /base frame of the robot.</span>
+<span class="lineno">233 </span><span class="sd">    Note: This is a highly scripted and tuned demo. The object location</span>
+<span class="lineno">234 </span><span class="sd">    is &quot;known&quot; and movement is done completely open loop. It is expected</span>
+<span class="lineno">235 </span><span class="sd">    behavior that Baxter will eventually mis-pick or drop the block. You</span>
+<span class="lineno">236 </span><span class="sd">    can improve on this demo by adding perception and feedback to close</span>
+<span class="lineno">237 </span><span class="sd">    the loop.</span>
+<span class="lineno">238 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">239 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s2">&quot;ik_pick_and_place_demo&quot;</span><span class="p">)</span>
+<span class="lineno">240 </span>    <span class="c1"># Load Gazebo Models via Spawning Services</span>
+<span class="lineno">241 </span>    <span class="c1"># Note that the models reference is the /world frame</span>
+<span class="lineno">242 </span>    <span class="c1"># and the IK operates with respect to the /base frame</span>
+<span class="lineno">243 </span>    <span class="n">load_gazebo_models</span><span class="p">()</span>
+<span class="lineno">244 </span>    <span class="c1"># Remove models from the scene on shutdown</span>
+<span class="lineno">245 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">on_shutdown</span><span class="p">(</span><span class="n">delete_gazebo_models</span><span class="p">)</span>
+<span class="lineno">246 </span>
+<span class="lineno">247 </span>    <span class="c1"># Wait for the All Clear from emulator startup</span>
+<span class="lineno">248 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">wait_for_message</span><span class="p">(</span><span class="s2">&quot;/robot/sim/started&quot;</span><span class="p">,</span> <span class="n">Empty</span><span class="p">)</span>
+<span class="lineno">249 </span>
+<span class="lineno">250 </span>    <span class="n">limb</span> <span class="o">=</span> <span class="s1">&#39;left&#39;</span>
+<span class="lineno">251 </span>    <span class="n">hover_distance</span> <span class="o">=</span> <span class="mf">0.15</span> <span class="c1"># meters</span>
+<span class="lineno">252 </span>    <span class="c1"># Starting Joint angles for left arm</span>
+<span class="lineno">253 </span>    <span class="n">starting_joint_angles</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;left_w0&#39;</span><span class="p">:</span> <span class="mf">0.6699952259595108</span><span class="p">,</span>
+<span class="lineno">254 </span>                             <span class="s1">&#39;left_w1&#39;</span><span class="p">:</span> <span class="mf">1.030009435085784</span><span class="p">,</span>
+<span class="lineno">255 </span>                             <span class="s1">&#39;left_w2&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.4999997247485215</span><span class="p">,</span>
+<span class="lineno">256 </span>                             <span class="s1">&#39;left_e0&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">1.189968899785275</span><span class="p">,</span>
+<span class="lineno">257 </span>                             <span class="s1">&#39;left_e1&#39;</span><span class="p">:</span> <span class="mf">1.9400238130755056</span><span class="p">,</span>
+<span class="lineno">258 </span>                             <span class="s1">&#39;left_s0&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.08000397926829805</span><span class="p">,</span>
+<span class="lineno">259 </span>                             <span class="s1">&#39;left_s1&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.9999781166910306</span><span class="p">}</span>
+<span class="lineno">260 </span>    <span class="n">pnp</span> <span class="o">=</span> <span class="n">PickAndPlace</span><span class="p">(</span><span class="n">limb</span><span class="p">,</span> <span class="n">hover_distance</span><span class="p">)</span>
+<span class="lineno">261 </span>    <span class="c1"># An orientation for gripper fingers to be overhead and parallel to the obj</span>
+<span class="lineno">262 </span>    <span class="n">overhead_orientation</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span>
+<span class="lineno">263 </span>                             <span class="n">x</span><span class="o">=-</span><span class="mf">0.0249590815779</span><span class="p">,</span>
+<span class="lineno">264 </span>                             <span class="n">y</span><span class="o">=</span><span class="mf">0.999649402929</span><span class="p">,</span>
+<span class="lineno">265 </span>                             <span class="n">z</span><span class="o">=</span><span class="mf">0.00737916180073</span><span class="p">,</span>
+<span class="lineno">266 </span>                             <span class="n">w</span><span class="o">=</span><span class="mf">0.00486450832011</span><span class="p">)</span>
+<span class="lineno">267 </span>    <span class="n">block_poses</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<span class="lineno">268 </span>    <span class="c1"># The Pose of the block in its initial location.</span>
+<span class="lineno">269 </span>    <span class="c1"># You may wish to replace these poses with estimates</span>
+<span class="lineno">270 </span>    <span class="c1"># from a perception node.</span>
+<span class="lineno">271 </span>    <span class="n">block_poses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Pose</span><span class="p">(</span>
+<span class="lineno">272 </span>        <span class="n">position</span><span class="o">=</span><span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">z</span><span class="o">=-</span><span class="mf">0.129</span><span class="p">),</span>
+<span class="lineno">273 </span>        <span class="n">orientation</span><span class="o">=</span><span class="n">overhead_orientation</span><span class="p">))</span>
+<span class="lineno">274 </span>    <span class="c1"># Feel free to add additional desired poses for the object.</span>
+<span class="lineno">275 </span>    <span class="c1"># Each additional pose will get its own pick and place.</span>
+<span class="lineno">276 </span>    <span class="n">block_poses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Pose</span><span class="p">(</span>
+<span class="lineno">277 </span>        <span class="n">position</span><span class="o">=</span><span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">z</span><span class="o">=-</span><span class="mf">0.129</span><span class="p">),</span>
+<span class="lineno">278 </span>        <span class="n">orientation</span><span class="o">=</span><span class="n">overhead_orientation</span><span class="p">))</span>
+<span class="lineno">279 </span>    <span class="c1"># Move to the desired starting angles</span>
+<span class="lineno">280 </span>    <span class="n">pnp</span><span class="o">.</span><span class="n">move_to_start</span><span class="p">(</span><span class="n">starting_joint_angles</span><span class="p">)</span>
+<span class="lineno">281 </span>    <span class="n">idx</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno">282 </span>    <span class="k">while</span> <span class="ow">not</span> <span class="n">rospy</span><span class="o">.</span><span class="n">is_shutdown</span><span class="p">():</span>
+<span class="lineno">283 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Picking...&quot;</span><span class="p">)</span>
+<span class="lineno">284 </span>        <span class="n">pnp</span><span class="o">.</span><span class="n">pick</span><span class="p">(</span><span class="n">block_poses</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+<span class="lineno">285 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Placing...&quot;</span><span class="p">)</span>
+<span class="lineno">286 </span>        <span class="n">idx</span> <span class="o">=</span> <span class="p">(</span><span class="n">idx</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">block_poses</span><span class="p">)</span>
+<span class="lineno">287 </span>        <span class="n">pnp</span><span class="o">.</span><span class="n">place</span><span class="p">(</span><span class="n">block_poses</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+<span class="lineno">288 </span>    <span class="k">return</span> <span class="mi">0</span>
+</pre></div>
+<p>The main function instantiates the PickAndPlace class, spawns the models in Gazebo, and creates a list of poses to pick and place from. You can add to this list of poses by creating your own Point. You'll likely want to maintain the frontoparallel orientation of the gripper. Try adding an additional pose at Point(x=0.72, y=0.075, z=-0.129), and see how Baxter now attempts three pick and place locations.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">292 </span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="lineno">293 </span>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</pre></div>
+<p>This is the function that gets executed if this file is executed as a Python script. It simply calls the <code>main()</code> function, then exits when main has finished.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815161759
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.073 seconds
+Real time usage: 1.555 seconds
+Preprocessor visited node count: 37/1000000
+Preprocessor generated node count: 188/1000000
+Post‐expand include size: 192/2097152 bytes
+Template argument size: 44/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 49689/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.585      1 Template:Parent_header
+100.00%    0.585      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:815-0!canonical and timestamp 20190815161757 and revision id 4375
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="a/index.php?title=IK_Pick_and_Place_Demo_-_Code_Walkthrough&amp;oldid=4375">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=IK_Pick_and_Place_Demo_-_Code_Walkthrough&amp;oldid=4375</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="a/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.073","walltime":"1.555","ppvisitednodes":{"value":37,"limit":1000000},"ppgeneratednodes":{"value":188,"limit":1000000},"postexpandincludesize":{"value":192,"limit":2097152},"templateargumentsize":{"value":44,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":49689,"limit":5000000},"timingprofile":["100.00%    0.585      1 Template:Parent_header","100.00%    0.585      1 -total"]},"cachereport":{"timestamp":"20190815161759","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":1698});});</script></body></html>

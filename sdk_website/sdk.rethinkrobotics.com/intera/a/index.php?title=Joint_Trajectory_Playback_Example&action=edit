@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Joint Trajectory Playback Example - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Joint_Trajectory_Playback_Example","wgTitle":"Joint Trajectory Playback Example","wgCurRevisionId":1171,"wgRevisionId":0,"wgArticleId":67,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Joint_Trajectory_Playback_Example","wgRelevantArticleId":67,"wgRequestId":"eb96723588119c9aea961869","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Joint_Trajectory_Playback_Example rootpage-Joint_Trajectory_Playback_Example skin-cavendishrr action-edit"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=Joint+Trajectory+Playback+Example&amp;returntoquery=action%3Dedit">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Joint_Trajectory_Playback_Example&amp;action=edit#">More</a>
+                <ul>
+                <li id="ca-viewsource" class="selected"><a href="index.php?title=Joint_Trajectory_Playback_Example&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Joint_Trajectory_Playback_Example&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Joint_Trajectory_Playback_Example" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">View source for Joint Trajectory Playback Example</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Joint_Trajectory_Playback_Example&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                ← <a href="../Joint_Trajectory_Playback_Example" title="Joint Trajectory Playback Example">Joint Trajectory Playback Example</a>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Joint_Trajectory_Playback_Example&amp;action=edit#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Joint_Trajectory_Playback_Example&amp;action=edit#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Intera_SDK:Users&amp;action=edit&amp;redlink=1" class="new" title="Intera SDK:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">&lt;div class="title-block">
+
+&lt;span style="font-size:120%;">'''Enable the robot joint trajectory interface, parse a file created using the joint position recorder example, and send the resulting joint trajectory to the action server.'''&lt;/span>
+
+&lt;/div>
+
+{{TOClimit|limit=2}}
+
+&lt;div class="content-block">
+
+== Overview ==
+
+A commonly used ROS method for robot arm motion control is the joint trajectory action interface. The trajectory_controller and it's corresponding joint trajectory action server is the intera_interface implementation to support this action interface. This example shows usage for launching the joint trajectory action server, and parsing of a text file describing timestamped joint position goals into a joint trajectory action call to be commanded to the joint trajectory action server.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Introduction ==
+
+This example demonstrates the usage of the &lt;code>Joint Trajectory Action server&lt;/code> to command raw joint position commands. The &lt;code>main()&lt;/code> creates and instance of the Trajectory class and calls the &lt;code>parse_file()&lt;/code> method. This method is responsible for parsing the input file and packing them as Request message for the &lt;code>Joint Trajectory Action server&lt;/code>. The &lt;code>start()&lt;/code> method is then called, which sends the Request messages to the action server. Finally, wait() is then called, which verifies if the trajectory execution was successful. Action Servers - &lt;code>robot/limb/right/follow_joint_trajectory&lt;/code>.
+If you would like to follow along with the actual source code for the example on GitHub, it can be found through [https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/joint_trajectory_file_playback.py this link] for joint trajectory file playback example.
+&lt;br />
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Usage ==
+
+Verify that the robot is enabled from an [[SDK Shell|SDK terminal session]], if the robot is not enabled run:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_interface robot_enable.py
+&lt;/syntaxhighlight>
+
+Record a joint position file using the recorder.py example, ex:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_examples recorder.py -f &lt;position_file_name>
+&lt;/syntaxhighlight>
+
+The recorder is now recording joint positions with corresponding timestamps for robot arm. Move the arms while holding the cuffs. If the position file name exists, the function will overwrite existing file.
+
+NOTE: You can open and close the gripper while recording by using the robot's cuff buttons: Oval(lower) = Close, Circle(Upper) = Open
+
+Start the joint trajectory controller, ex:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_interface joint_trajectory_action_server.py --mode velocity
+&lt;/syntaxhighlight>
+
+In another RSDK terminal session, Run the joint trajectory playback example program, ex:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_examples joint_trajectory_file_playback.py -f &lt;position_file_name>
+&lt;/syntaxhighlight>
+
+The robot arm will then be commanded to repeat the trajectory recorded during the joint position recording. The difference between this example and the joint_position playback example is that the trajectory controller has the ability to honor the velocities (due to the timestamps) to more accurately repeating the recorded trajectory.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Arguments ==
+'''Important Arguments:''' 
+Arguments for joint_trajectory_action_server.py
+
+See the trajectory controller's usage on the command line by passing trajectory_controller.py the -h, help argument:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_interface joint_trajectory_action_server.py -h
+&lt;/syntaxhighlight>
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+Intera SDK Joint Trajectory Controller
+
+    Unlike other robots running ROS, this is not a Motor Controller plugin,
+    but a regular node using the SDK interface.    
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -l {right}, --limb {right}
+                        joint trajectory action server limb (default: right)
+  -r RATE, --rate RATE  trajectory control rate (Hz) (default: 100.0)
+  -m {position_w_id,position,velocity}, --mode {position_w_id,position,velocity}
+                        control mode for trajectory execution (default:
+                        position_w_id)
+
+&lt;/syntaxhighlight>
+
+'''Important Arguments:''' 
+Arguments for joint_trajectory_file_playback.py
+
+See the joint_trajectory_file_playback's usage on the command line by passing joint_trajectory_file_playback.py the -h, help argument:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_interface joint_trajectory_file_playback.py -h
+&lt;/syntaxhighlight>
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+RSDK Joint Trajectory Example: File Playback
+
+    Plays back joint positions honoring timestamps recorded
+    via the joint_recorder example.
+
+    Run the joint_recorder.py example first to create a recording
+    file for use with this example. Then make sure to start the
+    joint_trajectory_action_server before running this example.
+
+    This example will use the joint trajectory action server
+    with velocity control to follow the positions and times of
+    the recorded motion, accurately replicating movement speed
+    necessary to hit each trajectory point on time.
+
+required arguments:
+  -f FILE, --file FILE   path to input file
+optional arguments:
+  -h, --help            show this help message and exit
+  -l LOOPS, --loops LOOPS
+                         number of playback loops. 0=infinite. (default: 1) 
+&lt;/syntaxhighlight>
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Interfaces ==
+
+'''ROS APIs:''' 
+
+See the API Reference page for details: [[API Reference|ROS APIs]]
+&lt;syntaxhighlight lang="bash" enclose="div">
+Joint Trajectory Action Server - /robot/limb/right/follow_joint_trajectory [control_msgs/FollowJointTrajectoryAction]
+&lt;/syntaxhighlight>
+
+'''Intera_interface APIs:''' 
+&lt;syntaxhighlight lang="bash" enclose="div">
+JointTrajectoryActionServer class: joint_trajectory_action_server.py
+&lt;/syntaxhighlight>
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Code Walkthrough ==
+
+Now, let's break down the code.
+
+&lt;syntaxhighlight lang="python" line start="33" enclose="div">
+import argparse
+import operator
+import sys
+import threading
+
+from bisect import bisect
+from copy import copy
+from os import path
+
+import rospy
+
+import actionlib
+
+from control_msgs.msg import (
+    FollowJointTrajectoryAction,
+    FollowJointTrajectoryGoal,
+)
+from trajectory_msgs.msg import (
+    JointTrajectoryPoint,
+)
+
+import intera_interface
+
+from intera_interface import CHECK_VERSION
+&lt;/syntaxhighlight>
+
+This imports the intera_interface for accessing the limb and the gripper class. The &lt;code>actionlib&lt;/code> is imported to use its &lt;code>Action Server&lt;/code> class.The &lt;code>CHECK_VERSION&lt;/code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs.
+
+&lt;syntaxhighlight lang="python" line start="59" enclose="div">
+class Trajectory(object):
+    def __init__(self, limb="right"):
+        #create our action server clients
+        self._limb_client = actionlib.SimpleActionClient(
+            'robot/limb/right/follow_joint_trajectory',
+            FollowJointTrajectoryAction,
+        )
+
+        #verify joint trajectory action servers are available
+        is_server_up = self._limb_client.wait_for_server(rospy.Duration(10.0))
+        if not is_server_up:
+            msg = ("Action server not available."
+                   " Verify action server availability.")
+            rospy.logerr(msg)
+            rospy.signal_shutdown(msg)
+            sys.exit(1)
+&lt;/syntaxhighlight>
+
+Action server clients for the right limb is created. The existence of action server for right limb is checked with a timeout of 10 seconds. If it is not available, a shutdown signal is sent and the program exits.
+
+&lt;syntaxhighlight lang="python" line start="76" enclose="div">
+        #create our goal request
+        self.goal = FollowJointTrajectoryGoal()
+
+        #limb interface - current angles needed for start move
+        self.arm = intera_interface.Limb(limb)
+
+        self.limb = limb
+        self.gripper_name = '_'.join([limb, 'gripper'])
+        #gripper interface - for gripper command playback
+        try:
+            self.gripper = intera_interface.Gripper(limb)
+            self.has_gripper = True
+        except:
+            self.has_gripper = False
+            rospy.loginfo("Did not detect a connected electric gripper.")
+            
+        #flag to signify the arm trajectories have begun executing
+        self._arm_trajectory_started = False
+        #reentrant lock to prevent same-thread lockout
+        self._lock = threading.RLock()
+&lt;/syntaxhighlight>
+
+The request message that will hold the goal position for right limbs' action server is created. The current joint is also captured. If there is a electric gripper connected, the gripper positions will be captured as well.
+
+&lt;syntaxhighlight lang="python" line start="97" enclose="div">
+        # Verify Grippers Have No Errors and are Calibrated
+        if self.has_gripper:
+            if self.gripper.has_error():
+                self.gripper.reboot()
+            if not self.gripper.is_calibrated():
+                self.gripper.calibrate()
+
+            #gripper goal trajectories
+            self.grip = FollowJointTrajectoryGoal()
+
+            #gripper control rate
+            self._gripper_rate = 20.0  # Hz
+
+        # Timing offset to prevent gripper playback before trajectory has started
+        self._slow_move_offset = 0.0
+        self._trajectory_start_offset = rospy.Duration(0.0)
+        self._trajectory_actual_offset = rospy.Duration(0.0)
+
+        #param namespace
+        self._param_ns = '/rsdk_joint_trajectory_action_server/'
+&lt;/syntaxhighlight>
+
+The &lt;code>error()&lt;/code> method returns whether or not the gripper is in an error state. The possible cause of errors might be over/under-voltage, over/under-current, motor faults, etc. The &lt;code>calibrated()&lt;/code> method returns a boolean, true if the gripper is already calibrated. The request message that will hold the goal position for the gripper is created. The namespace is modified and the gripper's control rates is modified.
+
+&lt;syntaxhighlight lang="python" line start="118" enclose="div">
+    def _execute_gripper_commands(self):
+        start_time = rospy.get_time() - self._trajectory_actual_offset.to_sec()
+        grip_cmd = self.grip.trajectory.points
+        pnt_times = [pnt.time_from_start.to_sec() for pnt in grip_cmd]
+        end_time = pnt_times[-1]
+        rate = rospy.Rate(self._gripper_rate)
+        now_from_start = rospy.get_time() - start_time
+        while(now_from_start &lt; end_time + (1.0 / self._gripper_rate) and
+              not rospy.is_shutdown()):
+            idx = bisect(pnt_times, now_from_start) - 1
+            if self.has_gripper:
+                self.gripper.set_position(grip_cmd[idx].positions[0])
+            rate.sleep()
+            now_from_start = rospy.get_time() - start_time
+&lt;/syntaxhighlight>
+
+The grip_cmd variable holds the gripper' position that was parsed from the file. The corresponding time stamps are read into pnt_times variable. idx holds the index of the timestamp from the file, relative to the current one. It is important to note that the velocity at which the Joint Positions was traversed is preserved during the playback. The corresponding gripper's position is then commanded to the action server.
+
+&lt;syntaxhighlight lang="python" line start="133" enclose="div">
+    def _clean_line(self, line, joint_names):
+        """
+        Cleans a single line of recorded joint positions
+
+        @param line: the line described in a list to process
+        @param joint_names: joint name keys
+
+        @return command: returns dictionary {joint: value} of valid commands
+        @return line: returns list of current line values stripped of commas
+        """
+        def try_float(x):
+            try:
+                return float(x)
+            except ValueError:
+                return None
+        #convert the line of strings to a float or None
+        line = [try_float(x) for x in line.rstrip().split(',')]
+        #zip the values with the joint names
+        combined = zip(joint_names[1:], line[1:])
+        #take out any tuples that have a none value
+        cleaned = [x for x in combined if x[1] is not None]
+        #convert it to a dictionary with only valid commands
+        command = dict(cleaned)
+        return (command, line,)
+&lt;/syntaxhighlight>
+
+This &lt;code>try_float()&lt;/code> function replaces the contents of the variable passed with float and none values. Then, a tuple is constructed by zipping the names passed with the values from the variable line. This may contain valid values as well as none values . After removing the none values, a dictionary is constructed. This dictionary is then parsed to create valid Joint commands.
+
+&lt;syntaxhighlight lang="python" line start="158" enclose="div">
+    def _add_point(self, positions, side, time):
+        """
+        Appends trajectory with new point
+
+        @param positions: joint positions
+        @param side: limb to command point
+        @param time: time from start for point in seconds
+        """
+        #creates a point in trajectory with time_from_start and positions
+        point = JointTrajectoryPoint()
+        point.positions = copy(positions)
+        point.time_from_start = rospy.Duration(time)
+        if side == self.limb:
+            self.goal.trajectory.points.append(point)
+        elif self.has_gripper and side == self.gripper_name:
+            self.grip.trajectory.points.append(point)
+&lt;/syntaxhighlight>
+
+This method creates a request message of the &lt;code>JointTrajectoryPoint&lt;/code> type and appends the goal position based on the side of the limb/gripper that is requesting. It compiles a list of Joint Positions as the trajectory.
+
+&lt;syntaxhighlight lang="python" line start="175" enclose="div">
+    def parse_file(self, filename):
+        """
+        Parses input file into FollowJointTrajectoryGoal format
+
+        @param filename: input filename
+        """
+        #open recorded file
+        with open(filename, 'r') as f:
+            lines = f.readlines()
+        #read joint names specified in file
+        joint_names = lines[0].rstrip().split(',')
+        #parse joint names for right limb
+        for name in joint_names:
+            if self.limb == name[:-3]:
+                self.goal.trajectory.joint_names.append(name)
+&lt;/syntaxhighlight>
+
+The lines are split into a list with ',' as the delimiter to extract the joint names. The arm of the current joint, found by stripping the "_&lt;joint>" (last three characters) from the joint_name, is checked and stored.
+
+&lt;syntaxhighlight lang="python" line start="191" enclose="div">
+        def find_start_offset(pos):
+            #create empty lists
+            cur = []
+            cmd = []
+            dflt_vel = []
+            vel_param = self._param_ns + "%s_default_velocity"
+            #for all joints find our current and first commanded position
+            #reading default velocities from the parameter server if specified
+            for name in joint_names:
+                if self.limb == name[:-3]:
+                    cmd.append(pos[name])
+                    cur.append(self.arm.joint_angle(name))
+                    prm = rospy.get_param(vel_param % name, 0.25)
+                    dflt_vel.append(prm)
+            diffs = map(operator.sub, cmd, cur)
+            diffs = map(operator.abs, diffs)
+            #determine the largest time offset necessary across all joints
+            offset = max(map(operator.div, diffs, dflt_vel))
+            return offset
+&lt;/syntaxhighlight>
+
+The first commanded position and the current position for all the joints are captured. The default values that were loaded into the param server are read. The largest time offset necessary across all the joints is calculated.
+
+&lt;syntaxhighlight lang="python" line start="211" enclose="div">
+        for idx, values in enumerate(lines[1:]):
+            #clean each line of file
+            cmd, values = self._clean_line(values, joint_names)
+            #find allowable time offset for move to start position
+            if idx == 0:
+                # Set the initial position to be the current pose.
+                # This ensures we move slowly to the starting point of the
+                # trajectory from the current pose - The user may have moved
+                # arm since recording
+                cur_cmd = [self.arm.joint_angle(jnt) for jnt in self.goal.trajectory.joint_names]
+                self._add_point(cur_cmd, self.limb, 0.0)
+                start_offset = find_start_offset(cmd)
+                # Gripper playback won't start until the starting movement's
+                # duration has passed, and the actual trajectory playback begins
+                self._slow_move_offset = start_offset
+                self._trajectory_start_offset = rospy.Duration(start_offset + values[0])
+            #add a point for this set of commands with recorded time
+            cur_cmd = [cmd[jnt] for jnt in self.goal.trajectory.joint_names]
+            self._add_point(cur_cmd, self.limb, values[0] + start_offset)
+            if self.has_gripper:
+                cur_cmd = [cmd[self.gripper_name]]
+                self._add_point(cur_cmd, self.gripper_name, values[0] + start_offset)
+&lt;/syntaxhighlight>
+
+The non-float values are cleaned and a dictionary of valid Joint Commands is returned in the _clean_line() function as explained above. The time offset for move to start position is also calculated. The parsed set of recorded commands along with their recorded time is added to the goal list as well as gripper's command and time.
+
+&lt;syntaxhighlight lang="python" line start="234" enclose="div">
+    def _feedback(self, data):
+        # Test to see if the actual playback time has exceeded
+        # the move-to-start-pose timing offset
+        if (not self._get_trajectory_flag() and
+              data.actual.time_from_start >= self._trajectory_start_offset):
+            self._set_trajectory_flag(value=True)
+            self._trajectory_actual_offset = data.actual.time_from_start
+&lt;/syntaxhighlight>
+
+Called in start function, test to see if the actual playback time has exceeded the move-to-start-pose timing offset.
+
+&lt;syntaxhighlight lang="python" line start="242" enclose="div">
+    def _set_trajectory_flag(self, value=False):
+        with self._lock:
+            # Assign a value to the flag
+            self._arm_trajectory_started = value
+
+    def _get_trajectory_flag(self):
+        temp_flag = False
+        with self._lock:
+            # Copy to external variable
+            temp_flag = self._arm_trajectory_started
+        return temp_flag
+&lt;/syntaxhighlight>
+
+Assign the value to the trajectory flag function and get the trajectory flag value function.
+
+&lt;syntaxhighlight lang="python" line start="254" enclose="div">
+    def start(self):
+        """
+        Sends FollowJointTrajectoryAction request
+        """
+        self._limb_client.send_goal(self.goal, feedback_cb=self._feedback)
+        # Syncronize playback by waiting for the trajectories to start
+        while not rospy.is_shutdown() and not self._get_trajectory_flag():
+            rospy.sleep(0.05)
+        if self.has_gripper:
+            self._execute_gripper_commands()
+&lt;/syntaxhighlight>
+
+This function sends the FollowJointTrajectoryAction request message which includes the recorded positions and their corresponding time, to the Joint Trajectory Action Server.
+
+&lt;syntaxhighlight lang="python" line start="265" enclose="div">
+    def stop(self):
+        """
+        Preempts trajectory execution by sending cancel goals
+        """
+        if (self._limb_client.gh is not None and
+            self._limb_client.get_state() == actionlib.GoalStatus.ACTIVE):
+            self._limb_client.cancel_goal()
+
+        #delay to allow for terminating handshake
+        rospy.sleep(0.1)
+&lt;/syntaxhighlight>
+
+The Trajectory execution is stopped by sending cancel goals to the Joint trajectory action server.
+
+&lt;syntaxhighlight lang="python" line start="276" enclose="div">
+    def wait(self):
+        """
+        Waits for and verifies trajectory execution result
+        """
+        #create a timeout for our trajectory execution
+        #total time trajectory expected for trajectory execution plus a buffer
+        last_time = self.goal.trajectory.points[-1].time_from_start.to_sec()
+        time_buffer = rospy.get_param(self._param_ns + 'goal_time', 0.0) + 1.5
+        timeout = rospy.Duration(self._slow_move_offset +
+                                 last_time +
+                                 time_buffer)
+
+        finish = self._limb_client.wait_for_result(timeout)
+        result = (self._limb_client.get_result().error_code == 0)
+
+        #verify result
+        if all([finish, result]):
+            return True
+        else:
+            msg = ("Trajectory action failed or did not finish before "
+                   "timeout/interrupt.")
+            rospy.logwarn(msg)
+            return False
+&lt;/syntaxhighlight>
+
+This method waits for the completion of the trajectory execution by Joint trajectory action server.
+
+&lt;syntaxhighlight lang="python" line start="301" enclose="div">
+def main():
+    """RSDK Joint Trajectory Example: File Playback
+
+    Plays back joint positions honoring timestamps recorded
+    via the joint_recorder example.
+
+    Run the joint_recorder.py example first to create a recording
+    file for use with this example. Then make sure to start the
+    joint_trajectory_action_server before running this example.
+
+    This example will use the joint trajectory action server
+    with velocity control to follow the positions and times of
+    the recorded motion, accurately replicating movement speed
+    necessary to hit each trajectory point on time.
+    """
+    epilog = """
+Related examples:
+  joint_recorder.py; joint_position_file_playback.py.
+    """
+    arg_fmt = argparse.RawDescriptionHelpFormatter
+    parser = argparse.ArgumentParser(formatter_class=arg_fmt,
+                                     description=main.__doc__,
+                                     epilog=epilog)
+    parser.add_argument(
+        '-f', '--file', metavar='PATH', required=True,
+        help='path to input file'
+    )
+    parser.add_argument(
+        '-l', '--loops', type=int, default=1,
+        help='number of playback loops. 0=infinite.'
+    )
+    # remove ROS args and filename (sys.arv[0]) for argparse
+    args = parser.parse_args(rospy.myargv()[1:])
+&lt;/syntaxhighlight>
+
+The name source file to read the Joint Position is captured along with the number of times the trajectory has to be looped from the command line.
+
+&lt;syntaxhighlight lang="python" line start="335" enclose="div">
+    print("Initializing node... ")
+    rospy.init_node("sdk_joint_trajectory_file_playback")
+    print("Getting robot state... ")
+    rs = intera_interface.RobotEnable(CHECK_VERSION)
+    print("Enabling robot... ")
+    rs.enable()
+    print("Running. Ctrl-c to quit")
+
+    traj = Trajectory()
+    traj.parse_file(path.expanduser(args.file))
+    #for safe interrupt handling
+    rospy.on_shutdown(traj.stop)
+    result = True
+    loop_cnt = 1
+    loopstr = str(args.loops)
+    if args.loops == 0:
+        args.loops = float('inf')
+        loopstr = "forever"
+    while (result == True and loop_cnt &lt;= args.loops
+           and not rospy.is_shutdown()):
+        print("Playback loop %d of %s" % (loop_cnt, loopstr,))
+        traj.start()
+        result = traj.wait()
+        loop_cnt = loop_cnt + 1
+    print("Exiting - File Playback Complete")
+
+if __name__ == "__main__":
+    main()
+&lt;/syntaxhighlight>
+
+The node is initialized. An instance of the &lt;code>Trajectory&lt;/code> class is created. &lt;code>The parse_file()&lt;/code> method is called to extract the recorded Joint Positions and their corresponding timestamps as explained above. The &lt;code>start()&lt;/code> method is called to send the &lt;code>FollowJointTrajectory&lt;/code> request message to the &lt;code>Joint Trajectory Action server&lt;/code>. This loops for the user specified number of times.
+
+&lt;/div>
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="http://sdk.rethinkrobotics.com/intera/Template:TOClimit" title="Template:TOClimit">Template:TOClimit</a> (<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Template:TOClimit&amp;action=edit" title="Template:TOClimit">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Joint_Trajectory_Playback_Example" title="Joint Trajectory Playback Example">Joint Trajectory Playback Example</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Joint_Trajectory_Playback_Example">http://sdk.rethinkrobotics.com/intera/Joint_Trajectory_Playback_Example</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":45});});</script></body></html>

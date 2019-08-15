@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Baxter Simulator - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Baxter_Simulator","wgTitle":"Baxter Simulator","wgCurRevisionId":4331,"wgRevisionId":4331,"wgArticleId":407,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Baxter_Simulator","wgRelevantArticleId":407,"wgRequestId":"7f68369d2e0c1080757ccc8a","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Baxter_Simulator rootpage-Baxter_Simulator skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Baxter+Simulator&amp;returntoquery=oldid%3D4331">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Baxter Simulator</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Baxter_Simulator&amp;oldid=4331#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Baxter_Simulator&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Baxter_Simulator&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Baxter_Simulator" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 15:28, 23 December 2015 by <a href="index.php?title=User:Bbenoit&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Bbenoit (page does not exist)"><bdi>Bbenoit</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Bbenoit&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Bbenoit (page does not exist)">talk</a> | <a href="../Special:Contributions/Bbenoit" class="mw-usertoollinks-contribs" title="Special:Contributions/Bbenoit">contribs</a>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Baxter_Simulator&amp;diff=prev&amp;oldid=4331" title="Baxter Simulator">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Baxter_Simulator&amp;direction=prev&amp;oldid=4331" title="Baxter Simulator">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Baxter_Simulator&amp;oldid=4331#column-one">navigation</a>, <a href="index.php?title=Baxter_Simulator&amp;oldid=4331#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Baxter_Simulator&amp;oldid=4331#Overview"><span class="tocnumber">1</span> <span class="toctext"><b>Overview</b></span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Baxter_Simulator&amp;oldid=4331#Gazebo"><span class="tocnumber">1.1</span> <span class="toctext"><b>Gazebo</b></span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=Baxter_Simulator&amp;oldid=4331#Baxter_with_Gazebo"><span class="tocnumber">1.2</span> <span class="toctext"><b>Baxter with Gazebo</b></span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="index.php?title=Baxter_Simulator&amp;oldid=4331#FAQs"><span class="tocnumber">2</span> <span class="toctext"><b>FAQs</b></span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview"><b>Overview</b></span></h2>
+<h3><span class="mw-headline" id="Gazebo"><b>Gazebo</b></span></h3>
+<p>Gazebo is a multi-robot simulator in a 3-dimensional world. It comes with advanced plugin interfaces that<br />
+can be used to simulate the sensor feedback and plausible interactions between objects. Robots and other <br />
+objects can be modeled into gazebo using their <a rel="nofollow" class="external text" href="http://gazebosim.org/sdf.html">SDF</a>. Apart from these, there are standard models<br />
+available within gazebo that can be used with custom models. If you would like to dive deeper into the world<br />
+of Gazebo itself, there are tutorials at <a rel="nofollow" class="external text" href="http://gazebosim.org/tutorials?cat=get_started">gazebosim.org</a>.
+</p>
+<h3><span class="mw-headline" id="Baxter_with_Gazebo"><b>Baxter with Gazebo</b></span></h3>
+<p>Baxter is modeled into gazebo using its URDF. Controller plugins like block laser, point laser,<br />
+and cameras are used to simulate the sonar, IR and the cameras on Baxter. The simulator can be <br />
+used in conjunction with the rviz and moveit as with the real robot. The following pages will <br />
+bring you up to speed with Baxter in simulation.
+</p>
+<ul><li><a href="../Simulator_Installation" title="Simulator Installation">Simulator Installation</a></li>
+<li><a href="../Simulator_Architecture" title="Simulator Architecture">Simulator Architecture</a></li>
+<li><a href="../API_Reference#Simulator_API" title="API Reference">Simulator API</a></li>
+<li><a rel="nofollow" class="external text" href="../Examples#Simulator">Simulator Code Examples</a></li>
+<li><a href="../Gripper_Customization" title="Gripper Customization">Gripper Customization</a></li>
+<li><a href="../Gazebo_Troubleshooting" title="Gazebo Troubleshooting">Gazebo Troubleshooting</a></li></ul>
+<p><br />
+<a href="../File:Block_picking_gazebo.png" class="image"><img alt="Block picking gazebo.png" src="images/thumb/9/90/Block_picking_gazebo.png/780px-Block_picking_gazebo.png" width="780" height="480" srcset="/wiki/a/images/thumb/9/90/Block_picking_gazebo.png/1170px-Block_picking_gazebo.png 1.5x, /wiki/a/images/9/90/Block_picking_gazebo.png 2x" /></a> <br />
+<b>Screencap:</b> Above is an image of the IK Pick and Place demo.<br /><br />
+<b>Important:</b> The simulator supports ROS Indigo and Gazebo 2.2 <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/baxter_simulator/tree/master">by default</a>. See <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/baxter_simulator/tree/release-0.8.1">Release 0.8.1</a> for end-of-life ROS Groovy support.<br />
+</p>
+<h2><span class="mw-headline" id="FAQs"><b>FAQs</b></span></h2>
+<p><b>Do I need to learn Gazebo to work with the Baxter simulator?</b><br />
+No, you do not need to learn Gazebo. Basic ROS knowledge should suffice to get you started.<br />
+</p><p><b>Do I need a Baxter robot to use the simulator?</b><br />
+No, the simulator is now part of the Open Source Baxter Research Robot SDK, so a robot is not required (but recommended!).<br />
+</p><p><b>Does this version work with ROS-Hydro?</b><br />
+Currently, Baxter simulator is officially supported only in ROS-Indigo, but you are welcome try Hydro and report your results to the community&#160;:)<br />
+</p><p><b>Is this simulator built using the same SDK software running on the real Baxter?</b><br />
+No, the SDK interfaces were only simulated.<br />
+</p><p><b>I am an advanced user of Gazebo, how can I contribute to the Baxter community</b><br />
+We would love to see the controllers and other features that you have developed for Baxter.<br />
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815161258
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.012 seconds
+Real time usage: 0.037 seconds
+Preprocessor visited node count: 27/1000000
+Preprocessor generated node count: 46/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:407-0!canonical and timestamp 20190815161258 and revision id 4331
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Baxter_Simulator&amp;oldid=4331">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Baxter_Simulator&amp;oldid=4331</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.012","walltime":"0.037","ppvisitednodes":{"value":27,"limit":1000000},"ppgeneratednodes":{"value":46,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815161258","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":35});});</script></body></html>

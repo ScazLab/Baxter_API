@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Joint Trajectory Action Server - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Joint_Trajectory_Action_Server","wgTitle":"Joint Trajectory Action Server","wgCurRevisionId":4572,"wgRevisionId":4572,"wgArticleId":792,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Joint_Trajectory_Action_Server","wgRelevantArticleId":792,"wgRequestId":"cdf16dda049ce2ecc1b17683","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="a/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Joint_Trajectory_Action_Server rootpage-Joint_Trajectory_Action_Server skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(a/skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="a/index.php?title=Special:UserLogin&amp;returnto=Joint+Trajectory+Action+Server">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Joint Trajectory Action Server</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="Joint_Trajectory_Action_Server#">More</a><ul><li id="ca-viewsource"><a href="a/index.php?title=Joint_Trajectory_Action_Server&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="a/index.php?title=Joint_Trajectory_Action_Server&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="Joint_Trajectory_Action_Server" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="Learning">Learning</a></li>
+                <li id="n-Community"><a href="Community">Community</a></li>
+                <li id="n-Support"><a href="Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="Joint_Trajectory_Action_Server#column-one">navigation</a>, <a href="Joint_Trajectory_Action_Server#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Joint_Trajectory_Action_Server#JTAS_Overview"><span class="tocnumber">1</span> <span class="toctext">JTAS Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="Joint_Trajectory_Action_Server#JTAS_Modes"><span class="tocnumber">2</span> <span class="toctext">JTAS Modes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="Joint_Trajectory_Action_Server#Velocity_Mode"><span class="tocnumber">2.1</span> <span class="toctext">Velocity Mode</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="Joint_Trajectory_Action_Server#Position_Mode"><span class="tocnumber">2.2</span> <span class="toctext">Position Mode</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="Joint_Trajectory_Action_Server#Inverse_Dynamics_Feed_Forward_Position_Mode_.28using_Raw_Position_Mode.29"><span class="tocnumber">2.3</span> <span class="toctext">Inverse Dynamics Feed Forward Position Mode (using Raw Position Mode)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="Joint_Trajectory_Action_Server#Trajectory_Splining"><span class="tocnumber">3</span> <span class="toctext">Trajectory Splining</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="JTAS_Overview">JTAS Overview</span></h2>
+<p>Baxter's SDK comes equipped with Joint Trajectory Action Server (JTAS) to facilitate users needing to command either (or both) of Baxter's arms through multiple waypoints. These waypoints are supplied as positions, velocities, and/or accelerations for every joint in Baxter's arms. These waypoints are accompanied by a desired timeframe within which the trajectory must complete. The main benefit of this server is its ability to interpolate between supplied waypoints, command Baxter's joints accordingly, and ensure the trajectory is being followed within a specified tolerance. To read more about JTA Servers in general, please see the ROS Wiki page on <a rel="nofollow" class="external text" href="http://wiki.ros.org/joint_trajectory_action">Joint Trajectory Action</a>. To jump straight to the source code, see the <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/baxter_interface/blob/release-1.1.0/src/joint_trajectory_action/joint_trajectory_action.py">baxter_interface JTAS page</a> on GitHub.
+</p>
+<h2><span class="mw-headline" id="JTAS_Modes">JTAS Modes</span></h2>
+<p>The JTAS has three modes: Velocity, Position, and Raw Position, which are invoked as arguments when calling the action server:<br />
+<b>$</b> <code>rosrun baxter_interface joint_trajectory_action_server.py</code>
+</p>
+<ul><li>Velocity Mode (<code>--mode velocity</code>)<br /></li>
+<li>Position Mode (<code>--mode position</code>)<br /></li>
+<li>Inverse Dynamics Feed Forward Position Mode (default mode)<br /></li></ul>
+<h3><span class="mw-headline" id="Velocity_Mode">Velocity Mode</span></h3>
+<p>This mode executes direct control of trajectories by calculating and commanding the velocities required to move the arm through a set of joint positions at a specified time. The end result is fast, but less accurate movement.
+</p>
+<h3><span class="mw-headline" id="Position_Mode">Position Mode</span></h3>
+<p>This mode allows for simple trajectory execution of position-only trajectories. This mode is significantly more accurate than velocity mode, at a cost of a speed reduction.
+</p>
+<h3><span id="Inverse_Dynamics_Feed_Forward_Position_Mode_(using_Raw_Position_Mode)"></span><span class="mw-headline" id="Inverse_Dynamics_Feed_Forward_Position_Mode_.28using_Raw_Position_Mode.29">Inverse Dynamics Feed Forward Position Mode (using Raw Position Mode)</span></h3>
+<p>This mode can allow for the highest speed movement with the most accuracy. By supplying desired Positions, Velocities, and Accelerations for each joint, you give Baxter to anticipate and correct for the dynamics of its movement by "feeding forward" Velocities and Accelerations to the Motor Controller. This enables Baxter to use both feedback from its spring deflection sensors, and feed forward from dynamics of the anticipated trajectory to accurately execute trajectories.
+</p><p>This mode accepts trajectories with Position, Velocity, and/or Acceleration supplied for each joint. Position is required, but Velocity and Acceleration are optional. Supplying Position alone will give you movement very similar to regular Position mode. If the optional Velocities and Accelerations are supplied, they are splined together with Position, and then commanded over the /robot/inverse_dynamics topic. MoveIt! supplies these three dimensions by default, so it is highly recommended that you use this mode when using that motion planner.
+</p>
+<h2><span class="mw-headline" id="Trajectory_Splining">Trajectory Splining</span></h2>
+<p>In all three modes, sparse points are supplied for each joint, and it is the JTAS' responsibility to interpolate these points in their supplied dimension space into an executable trajectory. This is accomplished through the <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/baxter_interface/blob/release-1.1.0/src/joint_trajectory_action/bezier.py">Bezier Library</a>. Cubic Bezier Splines are calculated for each segment of two points in the trajectory for Position and Velocity and Acceleration (if the latter are supplied). The the tangents of the trajectories must match between segments in all supplied dimensions. Please see this <a rel="nofollow" class="external text" href="http://www.cis.upenn.edu/~cis515/proj1-12.pdf">project description</a> by Professor Jean Gallier for an in depth explanation of these Bezier Curves in 2D. Keep in mind, this work was extended to accommodate three dimensions in case Position, Velocity and Acceleration are all supplied.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815160802
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.006 seconds
+Real time usage: 0.015 seconds
+Preprocessor visited node count: 26/1000000
+Preprocessor generated node count: 36/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:792-0!canonical and timestamp 20190815160802 and revision id 4572
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="a/index.php?title=Joint_Trajectory_Action_Server&amp;oldid=4572">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Joint_Trajectory_Action_Server&amp;oldid=4572</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="a/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.006","walltime":"0.015","ppvisitednodes":{"value":26,"limit":1000000},"ppgeneratednodes":{"value":36,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815160802","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":87});});</script></body></html>

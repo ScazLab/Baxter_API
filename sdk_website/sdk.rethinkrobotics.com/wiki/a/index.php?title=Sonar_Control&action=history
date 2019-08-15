@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Revision history of "Sonar Control" - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Sonar_Control","wgTitle":"Sonar Control","wgCurRevisionId":3357,"wgRevisionId":0,"wgArticleId":327,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"history","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Sonar_Control","wgRelevantArticleId":327,"wgRequestId":"caccabcc05e8c169a18cb4e0","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.action.history.styles":"ready","mediawiki.special.changeslist":"ready","mediawiki.helplink":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.feedlink":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.history","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="http://sdk.rethinkrobotics.com/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.action.history.styles%7Cmediawiki.feedlink%2Chelplink%2CsectionAnchor%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.special.changeslist&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="&quot;Sonar Control&quot; Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;feed=atom&amp;action=history"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Sonar_Control rootpage-Sonar_Control skin-cavendishmw-rethinkrobotics action-history"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Sonar+Control&amp;returntoquery=action%3Dhistory">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Revision history of "Sonar Control"</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Sonar_Control&amp;action=history#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Sonar_Control&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="selected"><a href="index.php?title=Sonar_Control&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Sonar_Control" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:Log&amp;page=Sonar+Control" title="Special:Log">View logs for this page</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Sonar_Control&amp;action=history#column-one">navigation</a>, <a href="index.php?title=Sonar_Control&amp;action=history#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" method="get" id="mw-history-searchform"><fieldset id="mw-history-search">
+<legend>Search for revisions</legend>
+<input type="hidden" value="Sonar_Control" name="title"/>
+<input type="hidden" value="history" name="action"/>
+<label for="year">From year (and earlier):</label> <input id="year" maxlength="4" size="7" type="number" value="2019" name="year"/> <label for="month">From month (and earlier):</label> <select name="month" id="month" class="mw-month-selector"><option value="-1">all</option>
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option></select>&#160;<label for="tagfilter"><a href="http://sdk.rethinkrobotics.com/wiki/Special:Tags" title="Special:Tags">Tag</a> filter:</label>&#160;<input name="tagfilter" size="20" value="" class="mw-tagfilter-input mw-ui-input mw-ui-input-inline" id="tagfilter" />&#160;<input type="submit" value="Show"/>
+</fieldset>
+</form><div class="mw-history-legend">
+<p>Diff selection: Mark the radio boxes of the revisions to compare and hit enter or the button at the bottom.<br/>
+Legend: <strong>(cur)</strong> = difference with latest revision, <strong>(prev)</strong> = difference with preceding revision, <strong>m</strong> = minor edit.
+</p>
+</div>
+<form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="mw-history-compare">
+<input type="hidden" value="Sonar_Control" name="title"/>
+<input type="hidden" value="historysubmit" name="action"/>
+<input type="hidden" value="revision" name="type"/>
+<div><input class="historysubmit mw-history-compareselectedversions-button" title="See the differences between the two selected revisions of this page [v]" accesskey="v" type="submit" value="Compare selected revisions"/>
+</div><ul id="pagehistory">
+<li data-mw-revid="3357"><span class="mw-history-histlinks">(cur | <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;diff=3357&amp;oldid=1375" title="Sonar Control">prev</a>)</span><input type="radio" value="3357" style="visibility:hidden" name="oldid" id="mw-oldid-null" /><input type="radio" value="3357" checked="checked" name="diff" id="mw-diff-3357" /> <a href="index.php?title=Sonar_Control&amp;oldid=3357" class="mw-changeslist-date" title="Sonar Control">15:29, 29 July 2014</a>‎ <span class='history-user'><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span></span>‎ <abbr class="minoredit" title="This is a minor edit">m</abbr> <span class="mw-changeslist-separator">. .</span> <span class="history-size">(2,427 bytes)</span> <span dir="ltr" class="mw-plusminus-null" title="2,427 bytes after change">(0)</span>‎ <span class="mw-changeslist-separator">. .</span>  <span class="comment">(Changed protection level for &quot;<a href="../Sonar_Control" title="Sonar Control">Sonar Control</a>&quot;: Setting Permissions for (almost all) Pages - editable and moveable by all logged in users ([Edit=Allow only autoconfirmed users] (indefinite) [Move=Allow only autoconfirmed users] (indefinite)))</span></li>
+<li data-mw-revid="1375"><span class="mw-history-histlinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;diff=3357&amp;oldid=1375" title="Sonar Control">cur</a> | <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;diff=1375&amp;oldid=680" title="Sonar Control">prev</a>)</span><input type="radio" value="1375" checked="checked" name="oldid" id="mw-oldid-1375" /><input type="radio" value="1375" name="diff" id="mw-diff-1375" /> <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;oldid=1375" class="mw-changeslist-date" title="Sonar Control">19:32, 18 April 2014</a>‎ <span class='history-user'><a href="../User:Roblinsalata" class="mw-userlink" title="User:Roblinsalata"><bdi>Roblinsalata</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Roblinsalata&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Roblinsalata (page does not exist)">talk</a> | <a href="../Special:Contributions/Roblinsalata" class="mw-usertoollinks-contribs" title="Special:Contributions/Roblinsalata">contribs</a>)</span></span>‎ <span class="mw-changeslist-separator">. .</span> <span class="history-size">(2,427 bytes)</span> <span dir="ltr" class="mw-plusminus-pos" title="2,427 bytes after change">(+22)</span>‎</li>
+<li data-mw-revid="680"><span class="mw-history-histlinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;diff=3357&amp;oldid=680" title="Sonar Control">cur</a> | <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;diff=680&amp;oldid=679" title="Sonar Control">prev</a>)</span><input type="radio" value="680" name="oldid" id="mw-oldid-680" /><input type="radio" value="680" name="diff" id="mw-diff-680" /> <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;oldid=680" class="mw-changeslist-date" title="Sonar Control">20:22, 6 March 2014</a>‎ <span class='history-user'><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span></span>‎ <abbr class="minoredit" title="This is a minor edit">m</abbr> <span class="mw-changeslist-separator">. .</span> <span class="history-size">(2,405 bytes)</span> <span dir="ltr" class="mw-plusminus-null" title="2,405 bytes after change">(0)</span>‎ <span class="mw-changeslist-separator">. .</span>  <span class="comment">(Protected &quot;<a href="../Sonar_Control" title="Sonar Control">Sonar Control</a>&quot; ([Edit=Allow only administrators] (indefinite) [Move=Allow only administrators] (indefinite)) [cascading])</span></li>
+<li data-mw-revid="679"><span class="mw-history-histlinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;diff=3357&amp;oldid=679" title="Sonar Control">cur</a> | <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;diff=679&amp;oldid=678" title="Sonar Control">prev</a>)</span><input type="radio" value="679" name="oldid" id="mw-oldid-679" /><input type="radio" value="679" name="diff" id="mw-diff-679" /> <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;oldid=679" class="mw-changeslist-date" title="Sonar Control">20:21, 6 March 2014</a>‎ <span class='history-user'><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span></span>‎ <span class="mw-changeslist-separator">. .</span> <span class="history-size">(2,405 bytes)</span> <span dir="ltr" class="mw-plusminus-neg" title="2,405 bytes after change">(-177)</span>‎ <span class="mw-changeslist-separator">. .</span>  <span class="comment">(<a href="../Sonar_Control#Troubleshooting" title="Sonar Control">→</a>‎<span dir="auto"><span class="autocomment">Troubleshooting</span></span>)</span></li>
+<li data-mw-revid="678"><span class="mw-history-histlinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;diff=3357&amp;oldid=678" title="Sonar Control">cur</a> | <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;diff=678&amp;oldid=677" title="Sonar Control">prev</a>)</span><input type="radio" value="678" name="oldid" id="mw-oldid-678" /><input type="radio" value="678" name="diff" id="mw-diff-678" /> <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;oldid=678" class="mw-changeslist-date" title="Sonar Control">20:20, 6 March 2014</a>‎ <span class='history-user'><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span></span>‎ <span class="mw-changeslist-separator">. .</span> <span class="history-size">(2,582 bytes)</span> <span dir="ltr" class="mw-plusminus-neg" title="2,582 bytes after change">(-20)</span>‎ <span class="mw-changeslist-separator">. .</span>  <span class="comment">(<a href="../Sonar_Control#Functions" title="Sonar Control">→</a>‎<span dir="auto"><span class="autocomment">Functions</span></span>)</span></li>
+<li data-mw-revid="677"><span class="mw-history-histlinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;diff=3357&amp;oldid=677" title="Sonar Control">cur</a> | <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;diff=677&amp;oldid=333" title="Sonar Control">prev</a>)</span><input type="radio" value="677" name="oldid" id="mw-oldid-677" /><input type="radio" value="677" name="diff" id="mw-diff-677" /> <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;oldid=677" class="mw-changeslist-date" title="Sonar Control">20:20, 6 March 2014</a>‎ <span class='history-user'><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span></span>‎ <span class="mw-changeslist-separator">. .</span> <span class="history-size">(2,602 bytes)</span> <span dir="ltr" class="mw-plusminus-neg" title="2,602 bytes after change">(-2)</span>‎ <span class="mw-changeslist-separator">. .</span>  <span class="comment">(<a href="../Sonar_Control#Head_Sonar_Control" title="Sonar Control">→</a>‎<span dir="auto"><span class="autocomment">Head Sonar Control</span></span>)</span></li>
+<li data-mw-revid="333"><span class="mw-history-histlinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;diff=3357&amp;oldid=333" title="Sonar Control">cur</a> | prev)</span><input type="radio" value="333" name="oldid" id="mw-oldid-333" /><input type="radio" value="333" name="diff" id="mw-diff-333" /> <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sonar_Control&amp;oldid=333" class="mw-changeslist-date" title="Sonar Control">16:19, 21 February 2014</a>‎ <span class='history-user'><a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Maintenance_script" class="mw-userlink mw-anonuserlink" title="Special:Contributions/Maintenance script"><bdi>Maintenance script</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Maintenance_script&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Maintenance script (page does not exist)">talk</a>)</span></span>‎ <span class="mw-changeslist-separator">. .</span> <span class="history-size">(2,604 bytes)</span> <strong dir="ltr" class="mw-plusminus-pos" title="2,604 bytes after change">(+2,604)</strong>‎ <span class="mw-changeslist-separator">. .</span>  <span class="comment">(Importing text file)</span></li>
+</ul>
+<div><input class="historysubmit mw-history-compareselectedversions-button" title="See the differences between the two selected revisions of this page [v]" accesskey="v" type="submit" value="Compare selected revisions"/>
+</div></form></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Sonar_Control">http://sdk.rethinkrobotics.com/wiki/Sonar_Control</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":49});});</script></body></html>

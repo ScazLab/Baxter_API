@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Grippers - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Grippers","wgTitle":"Grippers","wgCurRevisionId":4339,"wgRevisionId":4339,"wgArticleId":337,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Grippers","wgRelevantArticleId":337,"wgRequestId":"1956093165dffc85dc4cdc88","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Grippers rootpage-Grippers skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Grippers&amp;returntoquery=oldid%3D4339">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Grippers</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Grippers&amp;oldid=4339#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Grippers&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Grippers&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Grippers" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 21:35, 29 December 2015 by <a href="index.php?title=User:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Imcmahon (page does not exist)"><bdi>Imcmahon</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Imcmahon (page does not exist)">talk</a> | <a href="../Special:Contributions/Imcmahon" class="mw-usertoollinks-contribs" title="Special:Contributions/Imcmahon">contribs</a>)</span> <span class="comment">(<a href="index.php?title=Grippers&amp;oldid=4339#Gripper_URDF_Customization">→</a>‎<span dir="auto"><span class="autocomment">Gripper URDF Customization</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Grippers&amp;diff=prev&amp;oldid=4339" title="Grippers">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Grippers&amp;direction=prev&amp;oldid=4339" title="Grippers">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Grippers&amp;oldid=4339#column-one">navigation</a>, <a href="index.php?title=Grippers&amp;oldid=4339#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table style="padding:5px; border:1px solid #ffcc00; text-align:center; background:#FFFDDF; width:100%; margin-bottom:.5em;">
+<tbody><tr>
+<td><b><a href="../Robot_Components" title="Robot Components"> Robot Components </a>:</b> <a href="../Robot" title="Robot">Robot</a>, <a href="../Arms" title="Arms">Arms</a>, <a class="mw-selflink selflink">Grippers</a>, <a href="../Cameras" title="Cameras">Cameras</a>, <a href="../Head" title="Head">Head</a>, <a href="../Input_and_Output" title="Input and Output"> I/O</a>, <a href="../Screen" title="Screen">Screen</a>
+</td></tr></tbody></table>
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Grippers&amp;oldid=4339#Using_the_Grippers"><span class="tocnumber">1</span> <span class="toctext">Using the Grippers</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Grippers&amp;oldid=4339#Hardware_Overview"><span class="tocnumber">1.1</span> <span class="toctext">Hardware Overview</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=Grippers&amp;oldid=4339#Resources"><span class="tocnumber">1.2</span> <span class="toctext">Resources</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="index.php?title=Grippers&amp;oldid=4339#Gripper_URDF_Customization"><span class="tocnumber">1.2.1</span> <span class="toctext"><b>Gripper URDF Customization</b></span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="index.php?title=Grippers&amp;oldid=4339#ROS_API"><span class="tocnumber">1.2.2</span> <span class="toctext">ROS API</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="index.php?title=Grippers&amp;oldid=4339#Python_API_.28baxter_interface.29"><span class="tocnumber">1.2.3</span> <span class="toctext">Python API (baxter_interface)</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="index.php?title=Grippers&amp;oldid=4339#Examples"><span class="tocnumber">1.2.4</span> <span class="toctext">Examples</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="index.php?title=Grippers&amp;oldid=4339#Electric_Parallel_Gripper_Preventive_Maintenance"><span class="tocnumber">1.3</span> <span class="toctext">Electric Parallel Gripper Preventive Maintenance</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Using_the_Grippers">Using the Grippers</span></h1>
+<h2><span class="mw-headline" id="Hardware_Overview">Hardware Overview</span></h2>
+<ul><li><b>Electric Grippers</b> - The Rethink Electric Gripper is a parallel jaw gripper meant for lifting payloads up to five pounds. The gripper hardware has a 44mm throw and attachment points for a variety of finger configurations. The gripper software supports a wide range of speeds and grip force levels and is fully upgrade-able through Baxter.</li>
+<li><b>Suction Grippers</b> - The Baxter Robot also supports the Rethink Pneumatic Gripper, onto which you can attach either a single vacuum cup or a multi-cup vacuum manifold.</li></ul>
+<h2><span class="mw-headline" id="Resources">Resources</span></h2>
+<h3><span class="mw-headline" id="Gripper_URDF_Customization"><b>Gripper URDF Customization</b></span></h3>
+<ul><li><a href="../Gripper_Customization" title="Gripper Customization">Gripper Customization</a> -- Nearly any electric grippers configurations can be represented in URDF to be seen with Meshes in RViz.<br /> This guild will walk you through the process of editing on-board Baxter URDF with your custom gripper configuration. Additionally,<br /> it is also a guide on methods for customizing your gripper properties (such as mass) or substituting your own custom gripper entirely!</li>
+<li><a href="../URDF_Configuration_Example" title="URDF Configuration Example">URDF Configuration Example</a> - Part of baxter_examples in the SDK. This is an example of a simple ROS node that shows how to add<br /> segment and joint subtrees to the robot's model.</li></ul>
+<h3><span class="mw-headline" id="ROS_API">ROS API</span></h3>
+<p>See the <a href="../API_Reference#grippers" title="API Reference">API Reference Page </a> for information on the ROS Interface to the Grippers.
+</p>
+<h3><span id="Python_API_(baxter_interface)"></span><span class="mw-headline" id="Python_API_.28baxter_interface.29">Python API (<code>baxter_interface</code>)</span></h3>
+<p><a href="../Baxter_Interface#Gripper" title="Baxter Interface">Gripper interface class (<code>gripper.py</code>)</a>
+</p>
+<h3><span class="mw-headline" id="Examples">Examples</span></h3>
+<ul><li><b>Gripper Control</b>
+<ul><li><a href="../Gripper_Example" title="Gripper Example">Gripper Example</a>
+<ul><li>Keyboard Gripper Control -- Move Baxter's arms around with your keyboard</li>
+<li>Joystick Gripper Control -- Move Baxter's arms around with a joystick</li>
+<li>Arm Positions Recording and Playback -- <i>(Run in parallel at anytime)</i> Record Baxter's arm movements live to a file and then playback the motions at anytime.</li></ul></li></ul></li>
+<li><b>Joint Position</b>
+<ul><li><i><a href="../Joint_Position_Example" title="Joint Position Example">Joint Position Example</a></i>
+<ul><li>The Joint Position control examples (keyboard &amp; joystick) also allow you to control the grippers while also controlling the arms.</li></ul></li></ul></li></ul>
+<h2><span class="mw-headline" id="Electric_Parallel_Gripper_Preventive_Maintenance">Electric Parallel Gripper Preventive Maintenance</span></h2>
+<p>If Baxter’s electric parallel gripper jams or starts to make noise, it can be lubricated with the same Lubriplate DS-ES described above (Link <a rel="nofollow" class="external text" href="https://www.lubriplate.com/Online-Store/Garage-Door-Household-Lubricants/DS-ES-Electric-Switch-Lubricant.html">here</a>.)  Follow the instructions below to lubricate the electric gripper.
+</p>
+<ul><li>Remove the gripper from Baxter's arm.</li>
+<li>Remove the two end covers from the gripper using a Torx T8 key.</li></ul>
+<p><a href="../File:Electric_gripper_end_cover.PNG" class="image"><img alt="Electric gripper end cover.PNG" src="images/thumb/8/88/Electric_gripper_end_cover.PNG/500px-Electric_gripper_end_cover.PNG" width="500" height="173" srcset="/wiki/a/images/8/88/Electric_gripper_end_cover.PNG 1.5x" /></a>
+</p>
+<ul><li>Carefully place a small amount of lubricant on the lead screw on both sides of the gripper.</li></ul>
+<p><a href="../File:Electric_gripper_lubricate.PNG" class="image"><img alt="Electric gripper lubricate.PNG" src="images/thumb/a/ac/Electric_gripper_lubricate.PNG/500px-Electric_gripper_lubricate.PNG" width="500" height="252" srcset="/wiki/a/images/a/ac/Electric_gripper_lubricate.PNG 1.5x" /></a>
+</p>
+<ul><li>Install the gripper on Baxter's arm (See [Electric Gripper Installation|here fro instructions).</li>
+<li>Open and close the gripper using Baxter’s Grasp button.</li>
+<li>Replace the two end covers on the gripper.</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815161538
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.013 seconds
+Real time usage: 0.014 seconds
+Preprocessor visited node count: 34/1000000
+Preprocessor generated node count: 46/1000000
+Post‐expand include size: 271/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.424      1 Template:Components-group_header
+100.00%    0.424      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:337-0!canonical and timestamp 20190815161538 and revision id 4339
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Grippers&amp;oldid=4339">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Grippers&amp;oldid=4339</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.013","walltime":"0.014","ppvisitednodes":{"value":34,"limit":1000000},"ppgeneratednodes":{"value":46,"limit":1000000},"postexpandincludesize":{"value":271,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.424      1 Template:Components-group_header","100.00%    0.424      1 -total"]},"cachereport":{"timestamp":"20190815161538","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":54});});</script></body></html>

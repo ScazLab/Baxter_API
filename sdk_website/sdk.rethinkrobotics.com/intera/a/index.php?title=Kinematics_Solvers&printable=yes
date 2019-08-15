@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Kinematics Solvers - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Kinematics_Solvers","wgTitle":"Kinematics Solvers","wgCurRevisionId":1069,"wgRevisionId":1069,"wgArticleId":156,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Kinematics_Solvers","wgRelevantArticleId":156,"wgRequestId":"892d07272c095ef6a1581ca1","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;printable=1&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;printable=1&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,follow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Kinematics_Solvers rootpage-Kinematics_Solvers skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="index.php?title=Special:UserLogin&amp;returnto=Kinematics+Solvers&amp;returntoquery=printable%253Dyes">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Kinematics_Solvers&amp;printable=yes#">More</a>
+                <ul>
+                <li id="ca-viewsource"><a href="index.php?title=Kinematics_Solvers&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Kinematics_Solvers&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Kinematics_Solvers" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">Kinematics Solvers</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Kinematics_Solvers&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Kinematics_Solvers&amp;printable=yes#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Kinematics_Solvers&amp;printable=yes#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="content-block">
+<h2><span class="mw-headline" id="Inverse_Kinematics_Solver_Service">Inverse Kinematics Solver Service</span></h2>
+<p>The robot software provides a simple Position Inverse Kinematics (IK) Solver as a ROS Service.  Specify a desired Cartesian coordinate and orientation for an Endpoint (in world x,y,z space), and the solver will return a set of joint angles that will get the arm there - or return an Invalid state if the pose is unreachable.  An optional seed to start looking for solutions around can be specified as a joint angle configuration.
+</p><p>Note that the service takes an <b>array</b> of requests, and similarly returns an array of results with corresponding indexes. Similarly, optional seeds for each Endpoint request can be provided in a corresponding array of the same size as the requests array. This multiple array structure is a common structure used in ROS and explained in the <a rel="nofollow" class="external text" href="http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html">sensor_msgs/JointState</a> message.
+</p><p><b>SolvePositionIK Service [srv]</b>  <br />
+<code>/ExternalTools/&lt;side&gt;/PositionKinematicsNode/IKService</code> (<a rel="nofollow" class="external text" href="https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/srv/SolvePositionIK.html">intera_core_msgs/SolvePositionIK.srv</a>)
+</p>
+<ul><li><i>Request</i>
+<ul><li><code>pose_stamp</code> (Required) - an array of geometry_msgs/PoseStamped requests, each defining the Cartesian &lt;x,y,z&gt; Position and Quaternion orientation of the <a href="index.php?title=Kinematics_Solvers&amp;printable=yes#Cartesian_Endpoint">Endpoint</a> in the <code>/base</code> TF frame.</li>
+<li>(Optional) <code>seed_angles</code> - an array of joint configuration seeds to start searching for solutions around, corresponding to each request in <code>pose_stamp</code>, where each individual seed is defined as a JointState message with the joint names and positions filled for all the arm Joints (so <code>seed_angles</code> is an array of arrays).</li>
+<li>(Optional) <code>seed_mode</code> - specify the IK solver strategy for what types of seeds to use. By default (<code>SEED_AUTO</code>), the solver will iterate through the different strategies, starting with the user provided seed if it exists, until a solution is found.  However, by explicitly setting the <code>seed_mode</code> to a specific mode, the solver will only return whether it was able to find a solution using that type of seed. The different mode types are defined as constants in the message (default: SEED_AUTO):
+<dl><dd><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    int8 <span class="nv">SEED_AUTO</span>    <span class="o">=</span> <span class="m">0</span>
+    int8 <span class="nv">SEED_USER</span>    <span class="o">=</span> <span class="m">1</span>
+    int8 <span class="nv">SEED_CURRENT</span> <span class="o">=</span> <span class="m">2</span>
+    int8 <span class="nv">SEED_NS_MAP</span>  <span class="o">=</span> <span class="m">3</span>
+
+    int8 seed_mode
+</pre></div></dd></dl></li>
+<li><code>use_nullspace_goal</code> (Required) - for each IK request, tells whether it should use the nullspace goal in bool type.</li>
+<li><code>nullspace_goal</code> - if use null space goal, providing the full set or subset of joint angles, it will be the null space goal. The message type will be sensor_msgs/JointState[].</li>
+<li>(Optional) <code>nullspace_gain</code> - the gain used to bias toward the nullspace goal. Must be [0.0, 1.0], type in float64, if empty, the default gain of 0.4 will be used.</li>
+<li><code>tip_names</code> (Required) - tip name for each pose IK.
+<dl><dd></dd></dl></li></ul></li>
+<li><i>Response</i>
+<ul><li><code>result_type</code> - will be a corresponding array of uint8's, which will be -1 if no valid IK solution was found for the given Endpoint request; it will be -2 if IK solution is in self collision. otherwise, it will be negative and correspond to the type of seed eventually used that gave a valid solution. These values correspond to the constants in the message used to specify <code>seed_mode</code>.</li>
+<li><code>joints</code> will contain joint solutions corresponding to each Endpoint request. Note that you should <b>always</b> check the <code>result_type</code> field to see if a valid joint solution was found, as invalid joint solutions can be returned in this array.</li></ul></li></ul>
+<p>This service allows users to solve for basic IK joint angle solutions or perform workspace validation.  The service will use a number of seeding strategies to find a solution.  These strategies can be specified explicitly or just use the default to find the first solution in the possible methods.  Optionally a Joint configuration can optionally be provided as a seed to the Solver.
+</p><p>Check <a href="../IK_Service_Example" title="IK Service Example">Inverse Kinematics Solver Example</a> for more details.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Forward_Kinematics_Solver_Service">Forward Kinematics Solver Service</span></h2>
+<p>The robot software also provides Forward Position Kinematics (IK) Solver as a ROS Service, joint positions(s) to request Forward-Kinematics joint solutions for <code>sensor_msgs/JointState[]</code> configuration.
+</p>
+<ul><li><i>Request</i>
+<ul><li><code>tip_names</code> (Required) - tip name for each pose FK in string type.</li></ul></li></ul>
+<ul><li><i>Response</i>
+<ul><li><code>pose_stamp</code> - solution(s) per FK call, <code>geometry_msgs/PoseStamped[]</code></li>
+<li><code>isValid</code> - will be a corresponding boolean which will be True if a valid endpoint solution was found for the given joint positions request.</li></ul></li></ul>
+<p>Check <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/fk_service_client.py">Forward Kinematics Solver Example</a> for more details.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815155225
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.011 seconds
+Real time usage: 0.166 seconds
+Preprocessor visited node count: 19/1000000
+Preprocessor generated node count: 38/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 533/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:156-0!canonical and timestamp 20190815155224 and revision id 1069
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Kinematics_Solvers&amp;oldid=1069">http://sdk.rethinkrobotics.com/intera/a/index.php?title=Kinematics_Solvers&amp;oldid=1069</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.011","walltime":"0.166","ppvisitednodes":{"value":19,"limit":1000000},"ppgeneratednodes":{"value":38,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":533,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815155225","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":640});});</script></body></html>

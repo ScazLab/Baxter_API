@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Workstation Setup - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Workstation_Setup","wgTitle":"Workstation Setup","wgCurRevisionId":1578,"wgRevisionId":1578,"wgArticleId":11,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Workstation_Setup","wgRelevantArticleId":11,"wgRequestId":"1dfe880e677f03c5d407b3e3","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["ext.tabs","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<style type="text/css" id="tabs-dynamic-styles">/*<![CDATA[*/
+/* Dynamically generated tabs styles */
+.tabs-input-1:checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1:checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1:checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+/* The same styles, but with .checked instead of :checked, for browsers that rely on the JavaScript fallback */
+.tabs-input-1.checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1.checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1.checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+.tabs-dropdown .tabs-content,.tabs-dropdown .tabs-container,.tabs-dropdown li,.tabs-dropdown ul,.tabs-dropdown ol {background-color: white}
+/*]]>*/</style>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Workstation_Setup rootpage-Workstation_Setup skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=Workstation+Setup&amp;returntoquery=oldid%3D1578">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Workstation_Setup&amp;oldid=1578#">More</a>
+                <ul>
+                <li id="ca-viewsource"><a href="index.php?title=Workstation_Setup&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Workstation_Setup&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Workstation_Setup" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">Workstation Setup</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Workstation_Setup&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                <div class="mw-revision"><div id="mw-revision-info">Revision as of 23:22, 14 August 2018 by <a href="index.php?title=User:Swang&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Swang (page does not exist)"><bdi>Swang</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Swang&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Swang (page does not exist)">talk</a> | <a href="../Special:Contributions/Swang" class="mw-usertoollinks-contribs" title="Special:Contributions/Swang">contribs</a>)</span> <span class="comment">(<a href="index.php?title=Workstation_Setup&amp;oldid=1578#Install_Intera_Robot_SDK">→</a>‎<span dir="auto"><span class="autocomment">Install Intera Robot SDK</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Workstation_Setup&amp;diff=prev&amp;oldid=1578" title="Workstation Setup">diff</a>) <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Workstation_Setup&amp;direction=prev&amp;oldid=1578" title="Workstation Setup">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Workstation_Setup&amp;oldid=1578#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Workstation_Setup&amp;oldid=1578#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="title-block">
+<p><span style="font-size:120%;"><b>This tutorial describes the setup of a development workstation</b></span>
+</p>
+</div>
+<div class="toclimit-2"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Required_Hardware"><span class="tocnumber">1</span> <span class="toctext">Required Hardware</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Workstation_Requirements"><span class="tocnumber">1.1</span> <span class="toctext">Workstation Requirements</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Install_Ubuntu"><span class="tocnumber">2</span> <span class="toctext">Install Ubuntu</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Open_Terminal_App"><span class="tocnumber">3</span> <span class="toctext">Open Terminal App</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Install_ROS"><span class="tocnumber">4</span> <span class="toctext">Install ROS</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Create_Development_Workspace"><span class="tocnumber">5</span> <span class="toctext">Create Development Workspace</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Install_Intera_SDK_Dependencies"><span class="tocnumber">6</span> <span class="toctext">Install Intera SDK Dependencies</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Install_Intera_Robot_SDK"><span class="tocnumber">7</span> <span class="toctext">Install Intera Robot SDK</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Configure_Robot_Communication.2FROS_Workspace"><span class="tocnumber">8</span> <span class="toctext">Configure Robot Communication/ROS Workspace</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#intera.sh_ROS_Environment_Setup"><span class="tocnumber">8.1</span> <span class="toctext">intera.sh ROS Environment Setup</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Copy_the_intera.sh_script"><span class="tocnumber">8.2</span> <span class="toctext">Copy the intera.sh script</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Customize_the_intera.sh_script"><span class="tocnumber">8.3</span> <span class="toctext">Customize the intera.sh script</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Edit_the_.27robot_hostname.27_field"><span class="tocnumber">8.4</span> <span class="toctext">Edit the 'robot_hostname' field</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Edit_the_.27your_ip.27_field"><span class="tocnumber">8.5</span> <span class="toctext">Edit the 'your_ip' field</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Verify_.27ros_version.27_field"><span class="tocnumber">8.6</span> <span class="toctext">Verify 'ros_version' field</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Save_and_Close_intera.sh_script"><span class="tocnumber">8.7</span> <span class="toctext">Save and Close intera.sh script</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Initialize_your_SDK_environment"><span class="tocnumber">8.8</span> <span class="toctext">Initialize your SDK environment</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Verify_Environment"><span class="tocnumber">9</span> <span class="toctext">Verify Environment</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="index.php?title=Workstation_Setup&amp;oldid=1578#Setup_Rviz"><span class="tocnumber">10</span> <span class="toctext">Setup Rviz</span></a></li>
+</ul>
+</div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Required_Hardware">Required Hardware</span></h2>
+<ul><li>Sawyer Robot &amp; Developer Workstation</li></ul>
+<h3><span class="mw-headline" id="Workstation_Requirements">Workstation Requirements</span></h3>
+<ul><li>A development workstation capable of running <b>Ubuntu 16.04 LTS</b> and <b>ROS Kinetic</b> (or <b>Ubuntu 14.04 LTS</b> and <b>ROS Indigo</b>), with the following minimum specifications:
+<ul><li>Intel i5 or above</li>
+<li>4GB Memory or above</li>
+<li>At least 7 GB of free disk space</li>
+<li>Ethernet port</li>
+<li>If any visualization (RViz) or simulation (Gazebo) is required for your application, a <a rel="nofollow" class="external text" href="http://gazebosim.org/tutorials?tut=guided_b1&amp;cat=#Systemrequirements"><b>dedicated NVidia graphics card</b></a> with proprietary NVidia drivers is recommended</li></ul></li></ul>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Install_Ubuntu">Install Ubuntu</span></h2>
+<form id="tabs-inputform" class="tabs tabs-inputform" action="index.php?title=Workstation_Setup&amp;oldid=1578#"></form><div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-1-0" name="tabs-1" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-1-1" name="tabs-1" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-1-1" data-tabpos="1">Ubuntu 16.04 (Recommended)</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-1-2" name="tabs-1" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-1-2" data-tabpos="2">Ubuntu 14.04</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<p>Follow the standard Ubuntu Installation Instructions for <b>16.04</b> (Desktop):
+</p>
+<ul><li>Download the Installer Image file, by picking the "<a rel="nofollow" class="external text" href="http://releases.ubuntu.com/xenial/">Desktop CD</a>" image appropriate for your machine:
+<ul><li><a rel="nofollow" class="external text" href="http://releases.ubuntu.com/xenial/ubuntu-16.04.3-desktop-amd64.iso">64-bit (AMD64) .iso image (recommended)</a> / <a rel="nofollow" class="external text" href="http://releases.ubuntu.com/xenial/ubuntu-16.04.3-desktop-i386.iso">32-bit (Intel x86) .iso image</a></li></ul></li></ul>
+<ul><li>Create an Ubuntu LiveUSB installer by burning the installer image onto a USB stick.
+<ul><li><a rel="nofollow" class="external text" href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows">Windows</a> / <a rel="nofollow" class="external text" href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx">Mac OS X</a> / <a rel="nofollow" class="external text" href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu">Ubuntu</a></li></ul></li>
+<li>Follow the <a rel="nofollow" class="external text" href="https://help.ubuntu.com/community/GraphicalInstall">Ubuntu Installation Instructions</a></li></ul>
+</div>
+<div class="tabs-content tabs-content-2">
+<p>Follow the standard Ubuntu Installation Instructions for <b>14.04</b> (Desktop):
+</p>
+<ul><li>Download the Installer Image file, by picking the "<a rel="nofollow" class="external text" href="http://releases.ubuntu.com/trusty/">Desktop CD</a>" image appropriate for your machine:
+<ul><li><a rel="nofollow" class="external text" href="http://releases.ubuntu.com/trusty/ubuntu-14.04.5-desktop-amd64.iso">64-bit (AMD64) .iso image (recommended)</a> / <a rel="nofollow" class="external text" href="http://releases.ubuntu.com/trusty/ubuntu-14.04.5-desktop-i386.iso">32-bit (Intel x86) .iso image</a></li></ul></li></ul>
+<ul><li>Create an Ubuntu LiveUSB installer by burning the installer image onto a USB stick.
+<ul><li><a rel="nofollow" class="external text" href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows">Windows</a> / <a rel="nofollow" class="external text" href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx">Mac OS X</a> / <a rel="nofollow" class="external text" href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu">Ubuntu</a></li></ul></li>
+<li>Follow the <a rel="nofollow" class="external text" href="https://help.ubuntu.com/community/GraphicalInstall">Ubuntu Installation Instructions</a></li></ul>
+</div>
+</div></div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Open_Terminal_App">Open Terminal App</span></h2>
+<p>Search your computer for the Terminal package, and open it:
+</p><p><a href="../File:Terminal.png" class="image"><img alt="Terminal.png" src="images/thumb/9/9c/Terminal.png/500px-Terminal.png" width="500" height="356" srcset="/intera/a/images/thumb/9/9c/Terminal.png/750px-Terminal.png 1.5x, /intera/a/images/9/9c/Terminal.png 2x" /></a>
+</p><p>The rest of the workstation setup tutorial will take place in by typing commands in this terminal prompt.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Install_ROS">Install ROS</span></h2>
+<div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-2-0" name="tabs-2" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-2-1" name="tabs-2" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-2-1" data-tabpos="1">ROS Kinetic for Ubuntu 16.04 (Recommended)</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-2-2" name="tabs-2" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-2-2" data-tabpos="2">ROS Indigo for Ubuntu 14.04</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<h3><span class="mw-headline" id="Configure_Ubuntu_repositories">Configure Ubuntu repositories</span></h3>
+<p>Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse." You can follow <a rel="nofollow" class="external text" href="https://help.ubuntu.com/community/Repositories/Ubuntu">the Ubuntu guide</a> for instructions on doing this.<br />
+</p><p><i>Likely, they are already configured properly, and you only need to confirm the configuration.</i>
+</p>
+<h3><span class="mw-headline" id="Setup_your_sources.list">Setup your sources.list</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo sh -c <span class="s1">&#39;echo &quot;deb http://packages.ros.org/ros/ubuntu xenial main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list&#39;</span>
+</pre></div>
+<h3><span class="mw-headline" id="Setup_your_keys">Setup your keys</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+</pre></div>
+<h3><span class="mw-headline" id="Update_to_Latest_Software_Lists">Update to Latest Software Lists</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get update
+</pre></div>
+<h3><span class="mw-headline" id="Install_ROS_Kinetic_Desktop_Full">Install ROS Kinetic Desktop Full</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get install ros-kinetic-desktop-full
+</pre></div>
+<h3><span class="mw-headline" id="Initialize_rosdep">Initialize rosdep</span></h3>
+<p>rosdep enables you to easily install system dependencies for source you want to compile and is required to run some core components in ROS.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo rosdep init
+$ rosdep update
+</pre></div>
+<h3><span class="mw-headline" id="Install_rosinstall">Install rosinstall</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get install python-rosinstall
+</pre></div>
+</div>
+<div class="tabs-content tabs-content-2">
+<h3><span class="mw-headline" id="Configure_Ubuntu_repositories">Configure Ubuntu repositories</span></h3>
+<p>Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse." You can follow <a rel="nofollow" class="external text" href="https://help.ubuntu.com/community/Repositories/Ubuntu">the Ubuntu guide</a> for instructions on doing this.<br />
+</p><p><i>Likely, they are already configured properly, and you only need to confirm the configuration.</i>
+</p>
+<h3><span class="mw-headline" id="Setup_your_sources.list">Setup your sources.list</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo sh -c <span class="s1">&#39;echo &quot;deb http://packages.ros.org/ros/ubuntu trusty main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list&#39;</span>
+</pre></div>
+<h3><span class="mw-headline" id="Setup_your_keys">Setup your keys</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+</pre></div>
+<h3><span class="mw-headline" id="Update_to_Latest_Software_Lists">Update to Latest Software Lists</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get update
+</pre></div>
+<h3><span class="mw-headline" id="Install_ROS_Indigo_Desktop_Full">Install ROS Indigo Desktop Full</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get install ros-indigo-desktop-full
+</pre></div>
+<p><b>NOTE:</b> You may get a prompt about 'hddtemp' during the installation. You can safely answer 'No'.
+</p>
+<h3><span class="mw-headline" id="Initialize_rosdep">Initialize rosdep</span></h3>
+<p>rosdep enables you to easily install system dependencies for source you want to compile and is required to run some core components in ROS.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo rosdep init
+$ rosdep update
+</pre></div>
+<h3><span class="mw-headline" id="Install_rosinstall">Install rosinstall</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get install python-rosinstall
+</pre></div>
+</div>
+</div></div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Create_Development_Workspace">Create Development Workspace</span></h2>
+<div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-3-0" name="tabs-3" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-3-1" name="tabs-3" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-3-1" data-tabpos="1">ROS Kinetic for Ubuntu 16.04 (Recommended)</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-3-2" name="tabs-3" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-3-2" data-tabpos="2">ROS Indigo for Ubuntu 14.04</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<h3><span class="mw-headline" id="Create_ROS_Workspace">Create ROS Workspace</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ mkdir -p ~/ros_ws/src
+<span class="c1"># ros_ws (short for ROS Workspace)</span>
+</pre></div>
+<h3><span class="mw-headline" id="Source_ROS_and_Build">Source ROS and Build</span></h3>
+<p><b>ROS Kinetic</b>
+</p>
+<h3><span class="mw-headline" id="Source_ROS_Setup">Source ROS Setup</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">source</span> /opt/ros/kinetic/setup.bash
+</pre></div>
+<h3><span class="mw-headline" id="Build">Build</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> ~/ros_ws
+$ catkin_make
+</pre></div>
+</div>
+<div class="tabs-content tabs-content-2">
+<h3><span class="mw-headline" id="Create_ROS_Workspace">Create ROS Workspace</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ mkdir -p ~/ros_ws/src
+<span class="c1"># ros_ws (short for ROS Workspace)</span>
+</pre></div>
+<h3><span class="mw-headline" id="Source_ROS_and_Build">Source ROS and Build</span></h3>
+<p><b>ROS Indigo (Supported)</b>
+</p>
+<h3><span class="mw-headline" id="Source_ROS_Setup">Source ROS Setup</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">source</span> /opt/ros/indigo/setup.bash
+</pre></div>
+<h3><span class="mw-headline" id="Build">Build</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> ~/ros_ws
+$ catkin_make
+</pre></div>
+</div>
+</div></div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Install_Intera_SDK_Dependencies">Install Intera SDK Dependencies</span></h2>
+<div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-4-0" name="tabs-4" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-4-1" name="tabs-4" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-4-1" data-tabpos="1">ROS Kinetic for Ubuntu 16.04 (Recommended)</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-4-2" name="tabs-4" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-4-2" data-tabpos="2">ROS Indigo for Ubuntu 14.04</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<h3><span class="mw-headline" id="Install_SDK_Dependencies">Install SDK Dependencies</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get update
+$ sudo apt-get install git-core python-argparse python-wstool python-vcstools python-rosdep ros-kinetic-control-msgs ros-kinetic-joystick-drivers ros-kinetic-xacro ros-kinetic-tf2-ros ros-kinetic-rviz ros-kinetic-cv-bridge ros-kinetic-actionlib ros-kinetic-actionlib-msgs ros-kinetic-dynamic-reconfigure ros-kinetic-trajectory-msgs ros-kinetic-rospy-message-converter
+</pre></div>
+</div>
+<div class="tabs-content tabs-content-2">
+<h3><span class="mw-headline" id="Install_SDK_Dependencies">Install SDK Dependencies</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get update
+$ sudo apt-get install git-core python-argparse python-wstool python-vcstools python-rosdep ros-indigo-control-msgs ros-indigo-joystick-drivers ros-indigo-xacro ros-indigo-tf2-ros ros-indigo-rviz ros-indigo-cv-bridge ros-indigo-actionlib ros-indigo-actionlib-msgs ros-indigo-dynamic-reconfigure ros-indigo-trajectory-msgs ros-indigo-rospy-message-converter
+</pre></div>
+</div>
+</div></div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Install_Intera_Robot_SDK">Install Intera Robot SDK</span></h2>
+<div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-5-0" name="tabs-5" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-5-1" name="tabs-5" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-5-1" data-tabpos="1">Intera 5.3 ROS Kinetic for Ubuntu 16.04 (Recommended)</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-5-2" name="tabs-5" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-5-2" data-tabpos="2">Intera 5.3 ROS Indigo for Ubuntu 14.04</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<h3><span class="mw-headline" id="Download_the_SDK_on_your_Workstation">Download the SDK on your Workstation</span></h3>
+<p>Checkout all required Github Repositories into your ROS workspace source directory:
+Use git clone or download the packages directly from Github:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> ~/ros_ws/src
+$ wstool init .
+$ git clone https://github.com/RethinkRobotics/sawyer_robot.git
+$ wstool merge sawyer_robot/sawyer_robot.rosinstall
+$ wstool update
+</pre></div>
+<h3><span class="mw-headline" id="Source_ROS_Setup">Source ROS Setup</span></h3>
+<p>To use ROS Kinetic to use RSDK, use command below:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># ROS Kinetic</span>
+$ <span class="nb">source</span> /opt/ros/kinetic/setup.bash
+</pre></div>
+<h3><span class="mw-headline" id="Build">Build</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> ~/ros_ws
+$ catkin_make
+</pre></div>
+</div>
+<div class="tabs-content tabs-content-2">
+<h3><span class="mw-headline" id="Download_the_SDK_on_your_Workstation">Download the SDK on your Workstation</span></h3>
+<p>Checkout all required Github Repositories into your ROS workspace source directory:
+Use git clone or download the packages directly from Github:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> ~/ros_ws/src
+$ wstool init .
+$ git clone https://github.com/RethinkRobotics/sawyer_robot.git
+$ wstool merge sawyer_robot/sawyer_robot.rosinstall
+$ wstool update
+</pre></div>
+<h3><span class="mw-headline" id="Source_ROS_Setup">Source ROS Setup</span></h3>
+<p>To use ROS Kinetic to use RSDK, use command below:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># ROS Kinetic</span>
+$ <span class="nb">source</span> /opt/ros/indigo/setup.bash
+</pre></div>
+<h3><span class="mw-headline" id="Build">Build</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> ~/ros_ws
+$ catkin_make
+</pre></div>
+</div>
+</div></div>
+</div>
+<div class="content-block">
+<h2><span id="Configure_Robot_Communication/ROS_Workspace"></span><span class="mw-headline" id="Configure_Robot_Communication.2FROS_Workspace">Configure Robot Communication/ROS Workspace</span></h2>
+<p>This step describes the configuration and setup of your <a rel="nofollow" class="external text" href="http://wiki.ros.org/ROS/EnvironmentVariables">ROS environment</a>. This section assumes you have linked your workstation to the robot via Ethernet.<br />
+</p><p><b>Important Note:</b> Connect to the robot via the ethernet port on the outside of the Controller.  Connecting to the ethernet port inside the Controller door will not work (this is a diagnostic port that is only accessible by Rethink Employees).
+</p><p><a href="../File:Ethernet_Port.png" class="image"><img alt="Ethernet Port.png" src="images/e/ec/Ethernet_Port.png" width="892" height="451" /></a>
+</p><p><br />
+See <a href="../Networking" title="Networking"> Network Setup</a> for recommended network configurations.
+</p>
+<h3><span class="mw-headline" id="intera.sh_ROS_Environment_Setup">intera.sh ROS Environment Setup</span></h3>
+<p>The intera.sh script is a convenience script which allows for intuitive modification of the core ROS environment components. This user edited script will allow for the quickest and easiest ROS setup.
+</p><p>Further information and a detailed description is available on the <a href="../SDK_Shell" title="SDK Shell">SDK_Shell</a> page.
+</p>
+<h3><span class="mw-headline" id="Copy_the_intera.sh_script">Copy the intera.sh script</span></h3>
+<p>The intera.sh file already exists in intera_sdk repo, copy the file into your ros workspace.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ cp ~/ros_ws/src/intera_sdk/intera.sh ~/ros_ws
+</pre></div>
+<h3><span class="mw-headline" id="Customize_the_intera.sh_script">Customize the intera.sh script</span></h3>
+<p>Please edit the intera.sh shell script making the necessary modifications to describe your development PC.
+</p><p>Using your favorite editor (<a rel="nofollow" class="external text" href="https://wiki.gnome.org/Apps/Gedit">gedit</a> used for example)
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> ~/ros_ws
+$ gedit intera.sh
+</pre></div>
+<h3><span id="Edit_the_'robot_hostname'_field"></span><span class="mw-headline" id="Edit_the_.27robot_hostname.27_field">Edit the 'robot_hostname' field</span></h3>
+<p>Your robot's hostname is defaulted as the <b>Controller's Serial Number</b> and NOT the Robot's Serial Number. The serial number can be located on the back of the robot's controller box. Unless you intend to modify the default <a href="../Networking" title="Networking">Networking</a> configuration, leave the ".local" suffix on the end of the Controller's Serial Number in the <b>robot_hostname.local</b> field.<br />
+</p>
+<h3><span id="Edit_the_'your_ip'_field"></span><span class="mw-headline" id="Edit_the_.27your_ip.27_field">Edit the 'your_ip' field</span></h3>
+<p>Modify where 'your_ip' is either your computer's hostname or the IP address of your PC. We advise against using WiFi connections between your robot and workstation.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> <span class="nv">your_ip</span><span class="o">=</span><span class="s2">&quot;192.168.XXX.XXX&quot;</span>
+</pre></div>
+<p>Useful command for identifying your IP address:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ ifconfig
+<span class="c1"># Result will be contained in the &#39;inet addr&#39; field (Ubuntu).</span>
+</pre></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<p>Alternatively, you may choose to use the hostname of your development PC rather than the PC's IP address.  For instructions, press Expand on the right.
+</p>
+<div class="mw-collapsible-content">
+<p>You may edit the 'your_hostname' field (only if not using 'your_ip'):
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> <span class="nv">your_hostname</span><span class="o">=</span><span class="s2">&quot;my_computer.local</span>
+</pre></div>
+<p><br />
+<b>Important:</b> This hostname must be resolvable to Sawyer. To test if your hostname is resolvable to Sawyer, please visit the development PC <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Hostname_Validation&amp;action=edit&amp;redlink=1" class="new" title="Hostname Validation (page does not exist)">Hostname Validation</a> page.
+</p><p><b>Important:</b> Only set either ROS_IP <b>*OR*</b> ROS_HOSTNAME.
+</p><p>Setting of both ROS_IP and ROS_HOSTNAME will result in ROS_HOSTNAME taking priority, resulting in confusing environment setups. Comment out the unused method using the '#' as leading character.
+</p>
+</div>
+</div>
+<h3><span id="Verify_'ros_version'_field"></span><span class="mw-headline" id="Verify_.27ros_version.27_field">Verify 'ros_version' field</span></h3>
+<p>Verify that the the 'ros_version' field matches the ROS version you are running:
+</p><p>This field will default to "indigo". To use another ROS version, update:
+</p>
+<div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-6-0" name="tabs-6" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-6-1" name="tabs-6" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-6-1" data-tabpos="1">ROS Kinetic for Ubuntu 16.04 (Recommended)</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-6-2" name="tabs-6" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-6-2" data-tabpos="2">ROS Indigo for Ubuntu 14.04</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> <span class="nv">ros_version</span><span class="o">=</span><span class="s2">&quot;kinetic&quot;</span>
+</pre></div>
+</div>
+<div class="tabs-content tabs-content-2">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> <span class="nv">ros_version</span><span class="o">=</span><span class="s2">&quot;indigo&quot;</span>
+</pre></div>
+</div>
+</div></div>
+<h3><span class="mw-headline" id="Save_and_Close_intera.sh_script">Save and Close intera.sh script</span></h3>
+<p>Please save and close the intera.sh script.
+</p>
+<h3><span class="mw-headline" id="Initialize_your_SDK_environment">Initialize your SDK environment</span></h3>
+<p>From this point forward, your ROS environment setup should be as simple as sourcing the intera.sh script from the root of your Catkin workspace:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> ~/ros_ws
+$ ./intera.sh
+</pre></div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Verify_Environment">Verify Environment</span></h2>
+<p>A useful command for viewing and validating your ROS environment setup is:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ env <span class="p">|</span> grep ROS
+</pre></div>
+<p>The important fields at this point:  
+</p><p><b>ROS_MASTER_URI</b> - This should now contain your robot's hostname.  
+</p><p><b>ROS_IP</b> - This should contain your workstation's IP address.
+</p><p>or
+</p><p><b>ROS_HOSTNAME</b> - If not using the workstation's IP address, the ROS_HOSTNAME field should contain your PC's hostname.  Otherwise, this field should not be available.
+</p><p>Try to get rostopic list from robot by typing following command:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rostopic list
+</pre></div>
+<p>You can see the rostopic list from the command line output similar as following:
+</p><p><a href="../File:Rostopic_list.png" class="image"><img alt="Rostopic list.png" src="images/thumb/3/38/Rostopic_list.png/400px-Rostopic_list.png" width="400" height="239" srcset="/intera/a/images/thumb/3/38/Rostopic_list.png/600px-Rostopic_list.png 1.5x, /intera/a/images/3/38/Rostopic_list.png 2x" /></a>
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Setup_Rviz">Setup Rviz</span></h2>
+<p>We can also setup Rviz to view robot model, start Rviz from a properly initialized environment using:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun rviz rviz
+</pre></div>
+<p>Set the Fixed Frame as <code>/base</code>
+</p><p>Info: The ‘Fixed Frame’ provides a static, base reference for your visualization. Any sensor data that comes in to rviz will be transformed into that reference frame so it can be properly displayed in the virtual world.
+</p><p><a href="../File:Rviz_Fixed_Frame.png" class="image"><img alt="Rviz Fixed Frame.png" src="images/thumb/a/a5/Rviz_Fixed_Frame.png/600px-Rviz_Fixed_Frame.png" width="600" height="437" srcset="/intera/a/images/thumb/a/a5/Rviz_Fixed_Frame.png/900px-Rviz_Fixed_Frame.png 1.5x, /intera/a/images/a/a5/Rviz_Fixed_Frame.png 2x" /></a>
+</p><p>Add robot model into Rviz by clicking add button, then select robot model in the list, press OK to add.
+</p><p><br />
+<a href="../File:Rviz_Add_Model.png" class="image"><img alt="Rviz Add Model.png" src="images/thumb/1/1d/Rviz_Add_Model.png/300px-Rviz_Add_Model.png" width="300" height="413" srcset="/intera/a/images/thumb/1/1d/Rviz_Add_Model.png/450px-Rviz_Add_Model.png 1.5x, /intera/a/images/1/1d/Rviz_Add_Model.png 2x" /></a>
+</p><p><br />
+Now you can visualize your robot on Rivz! Next&#160;: <a href="../Hello_Robot" title="Hello Robot">Hello Robot</a>
+</p><p><br />
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815154805
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.131 seconds
+Real time usage: 5.841 seconds
+Preprocessor visited node count: 579/1000000
+Preprocessor generated node count: 1446/1000000
+Post‐expand include size: 37/2097152 bytes
+Template argument size: 1/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 2/20
+Unstrip post‐expand size: 23707/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.727      1 Template:TOClimit
+100.00%    0.727      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:11-0!canonical and timestamp 20190815154759 and revision id 1578
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Workstation_Setup&amp;oldid=1578">http://sdk.rethinkrobotics.com/intera/a/index.php?title=Workstation_Setup&amp;oldid=1578</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.131","walltime":"5.841","ppvisitednodes":{"value":579,"limit":1000000},"ppgeneratednodes":{"value":1446,"limit":1000000},"postexpandincludesize":{"value":37,"limit":2097152},"templateargumentsize":{"value":1,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":2,"limit":20},"unstrip-size":{"value":23707,"limit":5000000},"timingprofile":["100.00%    0.727      1 Template:TOClimit","100.00%    0.727      1 -total"]},"cachereport":{"timestamp":"20190815154805","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":42});});</script></body></html>

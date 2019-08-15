@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Alternative Mounting - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Alternative_Mounting","wgTitle":"Alternative Mounting","wgCurRevisionId":3197,"wgRevisionId":0,"wgArticleId":444,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Alternative_Mounting","wgRelevantArticleId":444,"wgRequestId":"b637da1a0c7bc6c89dfe59eb","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Alternative_Mounting rootpage-Alternative_Mounting skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Alternative+Mounting&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Alternative Mounting</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Alternative_Mounting&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Alternative_Mounting&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Alternative_Mounting&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Alternative_Mounting" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Alternative_Mounting" title="Alternative Mounting">Alternative Mounting</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Alternative_Mounting&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Alternative_Mounting&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">== Description == 
+&lt;span style="font-size:120%;">'''This page describes mounting Baxter on an alternative surface (non-pedestal).'''&lt;/span>
+
+== Important ==
+Baxter weighs 165 lbs (75 kg)
+
+'''Please use proper precautions when moving Baxter.'''
+
+A Hoist lift rated for at least 250 lbs. is suggested for such lifting.
+
+== Required Hardware ==
+* Drill
+* Drill bit to fit M10 Screw
+* Tape measure
+* Level
+* 4 Hex Head Cap Screws (enclosed)
+* 2 Carabiner Hooks (enclosed)
+* 17mm Wrench
+* 1/2˝ Wrench
+* Tape Measure
+* Flat Head Screwdriver
+* Hoist/lift rated for at least 250 lbs.
+
+== Installation File ==
+[[Media:BaxterInstallationGuide.pdf | '''PDF:''' Baxter Mounting Guide]]
+
+
+== Mounting Dimensions ==
+For alternative surface mounting (non-pedestal)
+
+[[File:Mounting_dimensions.png|500px]]
+
+== Step 1: Create Mounting Location ==
+
+The suggested alternate mounting surface is a 
+solid bench with a flat, level surface, and four 
+sturdy legs, anchoring the bench securely to the 
+floor.
+
+Select mounting position on bench carefully so that 
+robot does not tip.
+
+
+Using above mounting dimensions as referece, drill 4 holes to fit 
+enclosed Hex Head Cap Screws.
+
+If longer screws are needed, use M10 screws.
+
+
+== Step 2: Remove Packaging ==
+Remove outer plastic bag, and foam around head and 
+shoulders.
+
+Leave stretch wrap around arms and arm 
+supports in place until robot is mounted securely.
+
+[[File:Mounting_1.png|500px]]
+
+
+== Step 3: Attach Carabiners ==
+
+Attach the 2 enclosed carabiners hooks to shoulder bolts on the robot, 
+marked with blue tabs.
+
+
+Remove blue tabs after use.
+
+
+== Step 4: Secure to Lift ==
+
+Attach chain hooks from lift to carabiners and secure other 
+ends to lift.
+
+
+== Step 5: Detach Baxter from Crate ==
+
+Using 1/2” wrench, remove 4 bolts and washers from crate at 
+robot base.
+
+
+Throw away bolts with packaging.
+
+
+== Step 6: Lift and Place Baxter ==
+
+Using black metal handles to guide robot, lift robot to 
+mounting surface.
+
+
+Align robot base to bolt holes. 
+
+'''Note:''' It is normal for the robot to tilt forward while hanging on 
+a lift.
+
+[[File:Mounting_3.png|300px]]
+
+
+== Step 7: Secure Baxter to Pedestal ==
+
+Insert 4 enclosed Hex Head Cap Screws into 4 holes at base 
+of robot.
+
+
+Tighten screws finger tight until flush.
+
+
+Using 17mm wrench, '''TIGHTEN A HALF TURN MORE.'''
+
+
+== Step 8: Release Baxter ==
+
+Once robot is secured, release chain hooks from carabiners.
+Remove carabiners from shoulder bolts, and save in “Start 
+Here” box.
+
+
+Remove stretch wrap and arm supports.
+
+
+== Step 9: Level Baxter ==
+
+It is important for Baxter to work in a level environment.
+
+
+Make any necessary adjustments to ensure Baxter is stable. Please use the built-in round level (near electrical/network connectors) for verification.
+
+
+== Linked Here ==
+
+* [[Baxter_Setup#Step_5:_Mounting_Baxter | Baxter Hardware Setup]] - Baxter Hardware Setup Tutorial
+
+
+== Related Pages ==
+
+* [[Pedestal_Mounting | Baxter Pedestal Mounting]] - Instructions for mounting Baxter on the standard mounting pedestal.
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Alternative_Mounting" title="Alternative Mounting">Alternative Mounting</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Alternative_Mounting">http://sdk.rethinkrobotics.com/wiki/Alternative_Mounting</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":75});});</script></body></html>

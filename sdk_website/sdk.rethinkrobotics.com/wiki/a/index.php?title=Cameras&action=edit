@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Cameras - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Cameras","wgTitle":"Cameras","wgCurRevisionId":4079,"wgRevisionId":0,"wgArticleId":355,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Cameras","wgRelevantArticleId":355,"wgRequestId":"b49f6eee66d181e825ae70de","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Cameras rootpage-Cameras skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Cameras&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Cameras</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Cameras&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Cameras&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Cameras&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Cameras" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Cameras" title="Cameras">Cameras</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Cameras&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Cameras&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">{{Template:Components-group header}}
+= Using the Cameras =
+
+== Hardware Overview ==
+
+The Baxter Research Robot has three color cameras; one camera is located in each arm, and a third camera is located on the head, above the display screen. Any two cameras can be operated at a given time; USB system limitations do not allow all three cameras to be operated at once. 
+
+
+'''Important Note for RSDK 1.1 Update:''' As of RSDK 1.1 opening and closing of cameras has changed. Previously all cameras could be powered at the same time, but only two could be opened and operated. Due to 64-bit limitations with the Indigo Baxter's internal USB hub, only two cameras can be powered on at once. This change is taken care of behind the scenes. To accommodate this extra restriction, in RSDK 1.1, closing a camera will also turn power OFF to that camera, and turn power ON to both of Baxter's other cameras. You can turn power OFF to any camera by closing that camera (regardless of whether that camera was actually open or closed previously). Closing another camera is a good way to ensure power is ON on a camera that you are interested in viewing before actually opening it.
+
+
+The cameras in the Baxter research Robot can capture images at the resolutions listed below. Modes labeled “RES_HIGH” are sampled at the camera’s maximum resolution of 1280x800; “RES_LOW” modes decimate imager pixels by 2 in X and Y, for an effective imager resolution of 640x400 with the same field of view. Modes labeled as "windowed" capture a sub-window within the camera's field of view, with programmable X and Y offsets for the sub-window position.
+
+Windowed modes 1 to 5 capture a sub-window at the imager's RES_HIGH resolution; for example, mode 5 provides a 320x200 image that can be located anywhere within the camera's field of view. In contrast, windowed modes 7 to 11 capture a sub-window within the imager's decimated RES_LOW resolution. Thus, mode 9 also provides a 320x200 image that can be located anywhere within the camera's field of view, but in this case, because of pixel decimation the 320x200 image covers a larger portion of the camera field of view, with a lower spatial resolution, than the image in mode 5.
+
+
+{| class='wikitable'
+|-
+| Mode Index
+| Resolution key
+| Imager Width
+| Window width
+| Window height
+| Windowed?
+| Max. Refresh Rate
+|-
+| 0
+| RES_HIGH
+| 1280
+| 1280
+| 800
+| N
+| 14.1 fps
+|-
+| 1
+| RES_HIGH
+| 1280
+| 960
+| 600
+| Y
+| 23.8 fps
+|-
+| 2
+| RES_HIGH
+| 1280
+| 640
+| 400
+| Y
+| 27.8 fps
+|-
+| 3
+| RES_HIGH
+| 1280
+| 480
+| 300
+| Y
+| 27.9 fps
+|-
+| 4
+| RES_HIGH
+| 1280
+| 384
+| 240
+| Y
+| 27.8 fps
+|-
+| 5
+| RES_HIGH
+| 1280
+| 320
+| 200
+| Y
+| 27.9 fps
+|-
+| 6
+| RES_LOW
+| 640
+| 640
+| 400
+| N
+| 47.6 fps
+|-
+| 7
+| RES_LOW
+| 640
+| 480
+| 300
+| Y
+| 55.5 fps
+|-
+| 8
+| RES_LOW
+| 640
+| 384
+| 240
+| Y
+| 55.5 fps
+|-
+| 9
+| RES_LOW
+| 640
+| 320
+| 200
+| Y
+| 55.5 fps
+|-
+| 10
+| RES_LOW
+| 640
+| 240
+| 150
+| Y
+| 55.5 fps
+|-
+| 11
+| RES_LOW
+| 640
+| 192
+| 120
+| Y
+| 55.5 fps
+|}
+
+== General Info / Guide ==
+The three available cameras 'left_hand_camera', 'right_hand_camera', and 'head_camera' are exposed with the ability to adjust parameters describing its operation.
+
+These include the ability to modify:
+* Frame Width and Height to supported operating modes.
+* Frame Rate (fps)
+* Windowing
+* Binning
+* Exposure
+* Gain
+* White Balance
+
+
+'''Important Note:''' Due to limited bandwidth capabilities '''only two''' cameras can be operating simultaneously. Starting a camera while both of the other cameras are in operation will result in an error, and the camera will not open.
+
+'''Important Note:''' Default behavior on Baxter startup is for both of the hand cameras to be in operation at a resolution of 320x200 at a framerate of 25 fps.
+
+'''Supported Frame Size Modes:''' Frame sizes at which the cameras will operate.
+* 1280x800
+* 960x600
+* 640x400
+* 480x300
+* 384x240
+* 320x200
+
+'''When opening a camera at an unsupported frame width and height:'''    
+Using the camera_control.py example - Exit with the ValueError: Invalid Camera mode.    
+Using the baxter_inteface camera.py API - The camera driver will open with the mode closest to the specified frame width and height.    
+Directly using the service calls - The camera driver will open with mode closest to the specified frame width and height.    
+
+== Resources ==
+=== ROS API ===
+See the [[ API Reference#cameras|API Reference Page ]] for information on the ROS Interface to the Cameras.
+
+=== Python API (&lt;code>baxter_interface&lt;/code>) ===
+
+CameraController class: [https://github.com/RethinkRobotics/baxter_interface/blob/release-0.7.0/src/baxter_interface/camera.py camera.py]
+
+=== Examples ===
+'''Input and Output'''
+* [[Camera Control Example|Camera Control Example]]    
+** Demonstrates usage for listing, opening, and closing the available cameras.
+* [[Image_view|View Cameras Example ]]  
+** Use this simple ROS program from the command line to view the image stream from a camera.  The example shows you how to use the 'image_view' tool with the Baxter camera topics.
+
+=== Tools ===
+* [[rviz]] (ROS)
+** The ROS visualizer, rviz, is a great tool for viewing multiple cameras and data streams at once.  You can also use the [[rviz---Baxter-Sensor-Displays#Cameras|Camera Display Type]] to render the view of the (virtual) world from the perspective of one of Baxter's cameras.  
+* [[image_view]] (ROS)  
+** A light-weight image viewer for [http://ros.org/doc/api/sensor_msgs/html/msg/Image.html ROS Images].  Use this tool when you just want a quick, simple method to check the camera view or to save snapshots.
+
+== Advanced Usage ==
+* [[Demo Mode - Code Walkthrough]] - The BRR Demo Mode includes an example that draws images from the cameras and publishes it to the screen.
+
+== See Also ==
+* [[Using the Screen]], [[Head]], [[Input and Output]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="../Template:Components-group_header" title="Template:Components-group header">Template:Components-group header</a> (<a href="index.php?title=Template:Components-group_header&amp;action=edit" title="Template:Components-group header">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Cameras" title="Cameras">Cameras</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Cameras">http://sdk.rethinkrobotics.com/wiki/Cameras</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":36});});</script></body></html>

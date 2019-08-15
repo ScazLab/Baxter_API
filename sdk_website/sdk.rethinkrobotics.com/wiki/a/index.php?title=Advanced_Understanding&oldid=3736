@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Advanced Understanding - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Advanced_Understanding","wgTitle":"Advanced Understanding","wgCurRevisionId":3736,"wgRevisionId":3736,"wgArticleId":573,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Advanced_Understanding","wgRelevantArticleId":573,"wgRequestId":"b4b7ced5a1c61c0c32bb961e","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["sysop"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Advanced_Understanding rootpage-Advanced_Understanding skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Advanced+Understanding&amp;returntoquery=oldid%3D3736">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Advanced Understanding</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Advanced_Understanding&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Advanced_Understanding&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Advanced_Understanding" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 20:52, 23 December 2014 by <a href="index.php?title=User:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Imcmahon (page does not exist)"><bdi>Imcmahon</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Imcmahon (page does not exist)">talk</a> | <a href="../Special:Contributions/Imcmahon" class="mw-usertoollinks-contribs" title="Special:Contributions/Imcmahon">contribs</a>)</span> <span class="comment">(<a href="index.php?title=Advanced_Understanding&amp;oldid=3736#Arm_Control_Systems">→</a>‎<span dir="auto"><span class="autocomment">Arm Control Systems</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Advanced_Understanding&amp;diff=prev&amp;oldid=3736" title="Advanced Understanding">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Advanced_Understanding&amp;direction=prev&amp;oldid=3736" title="Advanced Understanding">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Advanced_Understanding&amp;oldid=3736#column-one">navigation</a>, <a href="index.php?title=Advanced_Understanding&amp;oldid=3736#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table style="padding:5px; border:1px solid #ffcc00; text-align:center; background:#FFFDDF; width:100%; margin-bottom:.5em;">
+<tbody><tr>
+<td><b><a href="../Learning" title="Learning">Learning</a>:</b> <a href="../Foundations" title="Foundations">Foundations</a>, <a class="mw-selflink selflink">Advanced Understanding</a>, <a href="../Tools" title="Tools">Projects and Tools (Do More)</a>, <a href="../Configuration_and_Admin" title="Configuration and Admin">Configuration and Admin</a>
+</td></tr></tbody></table>
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#Conceptual_Overviews"><span class="tocnumber">1</span> <span class="toctext">Conceptual Overviews</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#High-level_Overview"><span class="tocnumber">1.1</span> <span class="toctext">High-level Overview</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#Robot"><span class="tocnumber">2</span> <span class="toctext">Robot</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#Robot_Components"><span class="tocnumber">2.1</span> <span class="toctext">Robot Components</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#Component_Guides_.26_Tasks"><span class="tocnumber">2.2</span> <span class="toctext">Component Guides &amp; Tasks</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#Arm_Control_Systems"><span class="tocnumber">2.3</span> <span class="toctext">Arm Control Systems</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#Software"><span class="tocnumber">3</span> <span class="toctext">Software</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#SDK_Software_.26_Releases"><span class="tocnumber">3.1</span> <span class="toctext">SDK Software &amp; Releases</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#Platform"><span class="tocnumber">4</span> <span class="toctext">Platform</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#System_Services"><span class="tocnumber">4.1</span> <span class="toctext">System Services</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#Reference"><span class="tocnumber">5</span> <span class="toctext">Reference</span></a>
+<ul>
+<li class="toclevel-2"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#Interfaces"><span class="tocnumber">5.1</span> <span class="toctext">Interfaces</span></a></li>
+<li class="toclevel-2"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#Libraries.2C_Tools_Pages"><span class="tocnumber">5.2</span> <span class="toctext">Libraries, Tools Pages</span></a></li>
+<li class="toclevel-2"><a href="index.php?title=Advanced_Understanding&amp;oldid=3736#Hardware_Specs"><span class="tocnumber">5.3</span> <span class="toctext">Hardware Specs</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Conceptual_Overviews">Conceptual Overviews</span></h2>
+<p>The Baxter Research Robot platform consists of robot hardware, software (delivered via the software development kit (SDK)), and a number of communication tools to link like minded researchers (this wiki included!).  A conceptual overview for the basic components to the platform can be found in this section.
+</p>
+<h3><span class="mw-headline" id="High-level_Overview">High-level Overview</span></h3>
+<ul><li><a href="../Baxter_Overview" title="Baxter Overview">Baxter Overview</a></li>
+<li><a href="../Baxter_Research_Software_Developers_Kit_(SDK)" class="mw-redirect" title="Baxter Research Software Developers Kit (SDK)">Baxter Research Software Developers Kit (SDK)</a></li>
+<li><a href="../Python_Interface" class="mw-redirect" title="Python Interface">Python Interface</a></li></ul>
+<h2><span class="mw-headline" id="Robot">Robot</span></h2>
+<p>At it's core, the Baxter Research Robot platform is a robot - Baxter is the star!  This section highlights the hardware features found in Baxter, with specific pages dedicated to all of Baxter's components.
+</p>
+<h3><span class="mw-headline" id="Robot_Components">Robot Components</span></h3>
+<ul><li><a href="../Robot" title="Robot">Robot</a></li>
+<li><a href="../Arms" title="Arms">Arms</a></li>
+<li><a href="../Grippers" title="Grippers">Grippers</a></li>
+<li><a href="../Cameras" title="Cameras">Cameras</a></li>
+<li><a href="../Head" title="Head">Head</a></li>
+<li><a href="../Input_and_Output" title="Input and Output">Input and Output</a></li>
+<li><a href="../Screen" title="Screen">Screen</a></li></ul>
+<h3><span id="Component_Guides_&amp;_Tasks"></span><span class="mw-headline" id="Component_Guides_.26_Tasks">Component Guides &amp; Tasks</span></h3>
+<ul><li><a href="../Robot_State_and_EStop" title="Robot State and EStop">Robot State and EStop</a></li>
+<li><a href="../Sonar_Control" title="Sonar Control">Sonar Control</a></li>
+<li><a href="../URDF" title="URDF"> URDF (Robot Description)</a></li>
+<li><a href="../Gripper_Customization" title="Gripper Customization">Gripper Customization</a></li></ul>
+<h3><span class="mw-headline" id="Arm_Control_Systems">Arm Control Systems</span></h3>
+<ul><li><a href="../Arm_Control_Overview" title="Arm Control Overview">Arm Control Overview</a></li>
+<li><a href="../Arm_Control_Modes" title="Arm Control Modes">Arm Control Modes</a></li>
+<li><a href="../Collision_Avoidance_and_Detection" title="Collision Avoidance and Detection">Collision Avoidance and Detection</a></li>
+<li><a href="../Gravity_Compensation" title="Gravity Compensation">Gravity Compensation</a></li>
+<li><a href="../Zero-G_Mode" title="Zero-G Mode">Zero-G Mode</a></li>
+<li><a href="../Joint_Trajectory_Action_Server" title="Joint Trajectory Action Server">Joint Trajectory Action Server</a></li></ul>
+<h2><span class="mw-headline" id="Software">Software</span></h2>
+<p>New SDK software releases are the quickest and easiest way for us to deliver new features and upgrades to the Baxter platform.  We have been releasing new SDK software on a regular interval since we launched v0.5.2 (alpha) 3/26/13, and will continue to do so for the foreseeable future.  Links to previous releases and our most current release can be found in this section.  
+</p>
+<h4><span id="SDK_Software_&amp;_Releases"></span><span class="mw-headline" id="SDK_Software_.26_Releases">SDK Software &amp; Releases</span></h4>
+<ul><li><a href="../Repository_Layout" title="Repository Layout">Repository Layout</a></li>
+<li><a href="../Releases" title="Releases">Releases</a>
+<ul><li><a href="../Release_Changes" class="mw-redirect" title="Release Changes">Current Version Release Changes</a></li></ul></li></ul>
+<h2><span class="mw-headline" id="Platform">Platform</span></h2>
+<p>There are two ways to get access to Baxter's internal CPU without going through the development workstation, the Field Service Menu, and a Secure Shell.  These methods are described in this section.
+</p>
+<h4><span class="mw-headline" id="System_Services">System Services</span></h4>
+<ul><li><a href="http://sdk.rethinkrobotics.com/wiki/Field_Service_Menu_(FSM)" title="Field Service Menu (FSM)">Field Service Menu (FSM)</a></li>
+<li><a href="../SSH" title="SSH">SSH</a> - (On robot access)</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Reference">Reference</span></h2>
+<p>In the reference section, you will find basic information about the Baxter platform, including interfaces, libraries, and hardware specifications.  This is a great place to familiarize yourself with the platform.
+</p>
+<h4><span class="mw-headline" id="Interfaces">Interfaces</span></h4>
+<ul><li><a href="../API_Reference" title="API Reference">ROS API Reference</a>
+<ul><li><i>ROS Messages &amp; Services</i>
+<ul><li><a rel="nofollow" class="external text" href="http://api.rethinkrobotics.com/baxter_core_msgs/html/index-msg.html">baxter_core_msgs</a> (Msg Docs)</li>
+<li><a rel="nofollow" class="external text" href="http://api.rethinkrobotics.com/baxter_maintenance_msgs/html/index-msg.html">baxter_maintenance_msgs</a> (Msg Docs)</li></ul></li></ul></li>
+<li><a href="../Python_Interface" class="mw-redirect" title="Python Interface">Python API Overview</a>
+<ul><li><a rel="nofollow" class="external text" href="http://api.rethinkrobotics.com/baxter_interface/html/index.html">baxter_interface (Python API Docs)</a></li></ul></li>
+<li><a rel="nofollow" class="external text" href="http://api.rethinkrobotics.com/">Baxter SDK Code API Docs</a></li></ul>
+<h4><span id="Libraries,_Tools_Pages"></span><span class="mw-headline" id="Libraries.2C_Tools_Pages">Libraries, Tools Pages</span></h4>
+<ul><li><a href="../Baxter_Tools" title="Baxter Tools">Baxter Tools (baxter_tools)</a></li>
+<li><a href="../Examples" title="Examples">Baxter Examples (baxter_examples)</a></li></ul>
+<h4><span class="mw-headline" id="Hardware_Specs">Hardware Specs</span></h4>
+<ul><li><a href="../Hardware_Specifications" title="Hardware Specifications">Hardware Specifications</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815160842
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.016 seconds
+Real time usage: 0.337 seconds
+Preprocessor visited node count: 51/1000000
+Preprocessor generated node count: 74/1000000
+Post‐expand include size: 1032/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   99.961      1 -total
+ 98.38%   98.346      1 Template:Learning-group_header
+  1.37%    1.371      1 Reference
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:573-0!canonical and timestamp 20190815160841 and revision id 3736
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Advanced_Understanding&amp;oldid=3736">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Advanced_Understanding&amp;oldid=3736</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.016","walltime":"0.337","ppvisitednodes":{"value":51,"limit":1000000},"ppgeneratednodes":{"value":74,"limit":1000000},"postexpandincludesize":{"value":1032,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%   99.961      1 -total"," 98.38%   98.346      1 Template:Learning-group_header","  1.37%    1.371      1 Reference"]},"cachereport":{"timestamp":"20190815160842","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":1908});});</script></body></html>

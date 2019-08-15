@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Head Action Client - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Head_Action_Client_-_Code_Walkthrough","wgTitle":"Head Action Client - Code Walkthrough","wgCurRevisionId":3849,"wgRevisionId":3849,"wgArticleId":796,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Head_Action_Client_-_Code_Walkthrough","wgRelevantArticleId":796,"wgRequestId":"3afda50e69ebf438c5fd697e","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Head_Action_Client_-_Code_Walkthrough rootpage-Head_Action_Client_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Head+Action+Client+-+Code+Walkthrough&amp;returntoquery=oldid%3D3849">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Head Action Client - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;oldid=3849#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Head_Action_Client_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 00:06, 20 January 2015 by <a href="index.php?title=User:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Imcmahon (page does not exist)"><bdi>Imcmahon</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Imcmahon (page does not exist)">talk</a> | <a href="../Special:Contributions/Imcmahon" class="mw-usertoollinks-contribs" title="Special:Contributions/Imcmahon">contribs</a>)</span> <span class="comment">(<a href="index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;oldid=3849#Code_Walkthrough">→</a>‎<span dir="auto"><span class="autocomment">Code Walkthrough</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;diff=prev&amp;oldid=3849" title="Head Action Client - Code Walkthrough">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;direction=prev&amp;oldid=3849" title="Head Action Client - Code Walkthrough">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;oldid=3849#column-one">navigation</a>, <a href="index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;oldid=3849#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div style="padding:5px; border:1px solid #ffcc00; background:#FFFDDF; margin-bottom:0.2em; Font-size:140%;"><a href="../Head_Action_Client_Example" title="Head Action Client Example"><img alt="Back.png" src="images/b/b9/Back.png" width="29" height="20" /></a> <a href="../Head_Action_Client_Example" title="Head Action Client Example">Head Action Client Example</a></div>
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>This example demonstrates ability to move Baxter's head by panning its head to a preset angle at a given velocity and waiting for the robot to complete its trajectory. The code consists of a <code>main()</code> function that initializes the ros node and creates an instance of the <code>HeadClient</code> class. In the <code>__init__()</code> function, a single joint position goal is created. The <code>command()</code> function is then called, which performs a single head pan at a given velocity before proceeding to the next head joint angle.<br />
+<b>Interfaces</b> -
+</p>
+<div style="column-count:1;-moz-column-count:1;-webkit-column-count:1">
+<ul><li>hc = HeadClient()<br /></li>
+<li>hc.command(position=0.0, velocity=100.0)<br /></li>
+<li>hc.wait()<br /></li></ul>
+</div>
+<h2><span class="mw-headline" id="Code_Walkthrough">Code Walkthrough</span></h2>
+<p>Now, let's break down the code.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">33 </span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="lineno">34 </span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="lineno">35 </span>
+<span class="lineno">36 </span><span class="kn">import</span> <span class="nn">rospy</span>
+<span class="lineno">37 </span>
+<span class="lineno">38 </span><span class="kn">import</span> <span class="nn">actionlib</span>
+<span class="lineno">39 </span>
+<span class="lineno">40 </span><span class="kn">from</span> <span class="nn">control_msgs.msg</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="lineno">41 </span>    <span class="n">SingleJointPositionAction</span><span class="p">,</span>
+<span class="lineno">42 </span>    <span class="n">SingleJointPositionGoal</span><span class="p">,</span>
+<span class="lineno">43 </span><span class="p">)</span>
+<span class="lineno">44 </span>
+<span class="lineno">45 </span><span class="kn">import</span> <span class="nn">baxter_interface</span>
+<span class="lineno">46 </span>
+<span class="lineno">47 </span><span class="kn">from</span> <span class="nn">baxter_interface</span> <span class="kn">import</span> <span class="n">CHECK_VERSION</span>
+</pre></div>
+<p>This imports the actionlib creating a default client to speak with the Head Action Server. The control_msgs provides the messaging action-goal contract between server and client.  The <code>CHECK_VERSION</code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">40 </span><span class="k">class</span> <span class="nc">HeadClient</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="lineno">41 </span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno">42 </span>        <span class="n">ns</span> <span class="o">=</span> <span class="s1">&#39;robot/head/head_action&#39;</span>
+<span class="lineno">43 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_client</span> <span class="o">=</span> <span class="n">actionlib</span><span class="o">.</span><span class="n">SimpleActionClient</span><span class="p">(</span>
+<span class="lineno">44 </span>            <span class="n">ns</span><span class="p">,</span>
+<span class="lineno">45 </span>            <span class="n">SingleJointPositionAction</span>
+<span class="lineno">46 </span>        <span class="p">)</span>
+<span class="lineno">47 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_goal</span> <span class="o">=</span> <span class="n">SingleJointPositionGoal</span><span class="p">()</span>
+<span class="lineno">48 </span>
+<span class="lineno">49 </span>        <span class="c1"># Wait 10 Seconds for the head action server to start or exit</span>
+<span class="lineno">50 </span>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_client</span><span class="o">.</span><span class="n">wait_for_server</span><span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">Duration</span><span class="p">(</span><span class="mf">10.0</span><span class="p">)):</span>
+<span class="lineno">51 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s2">&quot;Exiting - Head Action Server Not Found&quot;</span><span class="p">)</span>
+<span class="lineno">52 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">signal_shutdown</span><span class="p">(</span><span class="s2">&quot;Action Server not found&quot;</span><span class="p">)</span>
+<span class="lineno">53 </span>            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="lineno">54 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</pre></div>
+<p>The <code>_goal</code> is an object of the HeadClient class that stores a single goal position. The <code>_client</code> is created from a <code>SimpleActionClient</code> acting on the namespace <code>robot/head/head_action</code>. The <code>client</code> function <code>wait_for_server</code> attempts to wait for 10 seconds for the Head Action server to come up. If no server is detected, this example will report an error and exit. If you see this error, make sure that your Client example node and Server node are speaking to the same rosmaster.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">65 </span>    <span class="k">def</span> <span class="nf">command</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">position</span><span class="p">,</span> <span class="n">velocity</span><span class="p">):</span>
+<span class="lineno">66 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_goal</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">position</span>
+<span class="lineno">67 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_goal</span><span class="o">.</span><span class="n">max_velocity</span> <span class="o">=</span> <span class="n">velocity</span>
+<span class="lineno">68 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_client</span><span class="o">.</span><span class="n">send_goal</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_goal</span><span class="p">)</span>
+</pre></div>
+<p><code>HeadClient.command()</code> takes as arguments a position and velocity. They are packed into the <code>goal</code> object and sent to the Head Action Server.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">70 </span>    <span class="k">def</span> <span class="nf">stop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno">71 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_client</span><span class="o">.</span><span class="n">cancel_goal</span><span class="p">()</span>
+<span class="lineno">72 </span>
+<span class="lineno">73 </span>    <span class="k">def</span> <span class="nf">wait</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mf">5.0</span><span class="p">):</span>
+<span class="lineno">74 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_client</span><span class="o">.</span><span class="n">wait_for_result</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="n">rospy</span><span class="o">.</span><span class="n">Duration</span><span class="p">(</span><span class="n">timeout</span><span class="p">))</span>
+<span class="lineno">75 </span>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_client</span><span class="o">.</span><span class="n">get_result</span><span class="p">()</span>
+<span class="lineno">76 </span>
+<span class="lineno">77 </span>    <span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno">78 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_goal</span> <span class="o">=</span> <span class="n">SingleJointPositionGoal</span><span class="p">()</span>
+</pre></div>
+<p>The <code>HeadClient.stop()</code> function cancels any current goal (whether or not the trajectory has completed). The <code>HeadClient.wait()</code> function will wait for a result from the server up to a specified amount of time before returning. The <code>HeadClient.clear()</code> function resets the <code>goal</code> member variable with default zero values.
+</p><p><br />
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">80 </span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="lineno">81 </span>    <span class="sd">&quot;&quot;&quot;RSDK Head Example: Action Client</span>
+<span class="lineno">82 </span><span class="sd">    Demonstrates creating a client of the Head Action Server,</span>
+<span class="lineno">83 </span><span class="sd">    which enables sending commands of standard action type</span>
+<span class="lineno">84 </span><span class="sd">    control_msgs/SingleJointPosition.</span>
+<span class="lineno">85 </span><span class="sd">    The example will command the head to a position.</span>
+<span class="lineno">86 </span><span class="sd">    Be sure to start Baxter&#39;s head_action_server before running this example.</span>
+<span class="lineno">87 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">88 </span>    <span class="n">arg_fmt</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">RawDescriptionHelpFormatter</span>
+<span class="lineno">89 </span>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">formatter_class</span><span class="o">=</span><span class="n">arg_fmt</span><span class="p">,</span>
+<span class="lineno">90 </span>                                     <span class="n">description</span><span class="o">=</span><span class="n">main</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+<span class="lineno">91 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">myargv</span><span class="p">()[</span><span class="mi">1</span><span class="p">:])</span>
+</pre></div>
+<p>The beginning of the main function parses any parameters passed into this example when it is invoked from the command line.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno"> 95 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Initializing node... &quot;</span><span class="p">)</span>
+<span class="lineno"> 96 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s2">&quot;rsdk_head_action_client&quot;</span><span class="p">)</span>
+<span class="lineno"> 97 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Getting robot state... &quot;</span><span class="p">)</span>
+<span class="lineno"> 98 </span>    <span class="n">rs</span> <span class="o">=</span> <span class="n">baxter_interface</span><span class="o">.</span><span class="n">RobotEnable</span><span class="p">(</span><span class="n">CHECK_VERSION</span><span class="p">)</span>
+<span class="lineno"> 99 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Enabling robot... &quot;</span><span class="p">)</span>
+<span class="lineno">100 </span>    <span class="n">rs</span><span class="o">.</span><span class="n">enable</span><span class="p">()</span>
+<span class="lineno">101 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Running. Ctrl-c to quit&quot;</span><span class="p">)</span>
+</pre></div>
+<p>Here, the ROS node is initialized - a requirement for your code to communicate over ROS. Additionally, the version of your SDK is checked against the version running on the robot, and the robot is enabled via the standard <code>RobotEnable</code> function from <code>baxter_interface</code>.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">103 </span>    <span class="n">hc</span> <span class="o">=</span> <span class="n">HeadClient</span><span class="p">()</span>
+<span class="lineno">104 </span>    <span class="n">hc</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">velocity</span><span class="o">=</span><span class="mf">100.0</span><span class="p">)</span>
+<span class="lineno">105 </span>    <span class="n">hc</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+<span class="lineno">106 </span>    <span class="n">hc</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="mf">1.57</span><span class="p">,</span> <span class="n">velocity</span><span class="o">=</span><span class="mf">10.0</span><span class="p">)</span>
+<span class="lineno">107 </span>    <span class="n">hc</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+<span class="lineno">108 </span>    <span class="n">hc</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">velocity</span><span class="o">=</span><span class="mf">80.0</span><span class="p">)</span>
+<span class="lineno">109 </span>    <span class="n">hc</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+<span class="lineno">110 </span>    <span class="n">hc</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">position</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">velocity</span><span class="o">=</span><span class="mf">40.0</span><span class="p">)</span>
+<span class="lineno">111 </span>    <span class="n">hc</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+<span class="lineno">112 </span>    <span class="n">hc</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">velocity</span><span class="o">=</span><span class="mf">60.0</span><span class="p">)</span>
+<span class="lineno">113 </span>    <span class="k">print</span> <span class="n">hc</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+<span class="lineno">114 </span>    <span class="k">print</span> <span class="s2">&quot;Exiting - Head Action Test Example Complete&quot;</span>
+<span class="lineno">115 </span>
+<span class="lineno">116 </span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="lineno">117 </span>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+<p>This section of <code>main</code> performs the meat and potatoes of head movement. The <code>HeadClient</code> is created, and a series of commands are presented to the Head Action Server, with waits in between to ensure the goal state is reached before moving onto the next goal.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815161437
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.042 seconds
+Real time usage: 1.609 seconds
+Preprocessor visited node count: 41/1000000
+Preprocessor generated node count: 196/1000000
+Post‐expand include size: 200/2097152 bytes
+Template argument size: 52/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 13918/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.559      1 Template:Parent_header
+100.00%    0.559      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:796-0!canonical and timestamp 20190815161435 and revision id 3849
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;oldid=3849">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;oldid=3849</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.042","walltime":"1.609","ppvisitednodes":{"value":41,"limit":1000000},"ppgeneratednodes":{"value":196,"limit":1000000},"postexpandincludesize":{"value":200,"limit":2097152},"templateargumentsize":{"value":52,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":13918,"limit":5000000},"timingprofile":["100.00%    0.559      1 Template:Parent_header","100.00%    0.559      1 -total"]},"cachereport":{"timestamp":"20190815161437","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":32});});</script></body></html>

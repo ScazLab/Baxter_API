@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Robot - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Robot","wgTitle":"Robot","wgCurRevisionId":3324,"wgRevisionId":3324,"wgArticleId":362,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Robot","wgRelevantArticleId":362,"wgRequestId":"d866f3b6308a2ad9a4beccb0","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Robot rootpage-Robot skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Robot&amp;returntoquery=oldid%3D3324">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Robot</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Robot&amp;oldid=3324#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Robot&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Robot&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Robot" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 15:23, 29 July 2014 by <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span> <span class="comment">(Changed protection level for &quot;<a href="../Robot" title="Robot">Robot</a>&quot;: Setting Permissions for (almost all) Pages - editable and moveable by all logged in users ([Edit=Allow only autoconfirmed users] (indefinite) [Move=Allow only autoconfirmed users] (indefinite)))</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Robot&amp;diff=prev&amp;oldid=3324" title="Robot">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Robot&amp;direction=prev&amp;oldid=3324" title="Robot">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Robot&amp;oldid=3324#column-one">navigation</a>, <a href="index.php?title=Robot&amp;oldid=3324#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table style="padding:5px; border:1px solid #ffcc00; text-align:center; background:#FFFDDF; width:100%; margin-bottom:.5em;">
+<tbody><tr>
+<td><b><a href="../Robot_Components" title="Robot Components"> Robot Components </a>:</b> <a class="mw-selflink selflink">Robot</a>, <a href="../Arms" title="Arms">Arms</a>, <a href="../Grippers" title="Grippers">Grippers</a>, <a href="../Cameras" title="Cameras">Cameras</a>, <a href="../Head" title="Head">Head</a>, <a href="../Input_and_Output" title="Input and Output"> I/O</a>, <a href="../Screen" title="Screen">Screen</a>
+</td></tr></tbody></table>
+<div class="toclimit-3" style="float:left; margin-right:10px; clear:left;"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Robot&amp;oldid=3324#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="index.php?title=Robot&amp;oldid=3324#Power"><span class="tocnumber">2</span> <span class="toctext">Power</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=Robot&amp;oldid=3324#E-Stop"><span class="tocnumber">2.1</span> <span class="toctext">E-Stop</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="index.php?title=Robot&amp;oldid=3324#Robot_Enable.2FDisable"><span class="tocnumber">2.2</span> <span class="toctext">Robot Enable/Disable</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="index.php?title=Robot&amp;oldid=3324#Resources"><span class="tocnumber">3</span> <span class="toctext">Resources</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="index.php?title=Robot&amp;oldid=3324#Hardware_Specs"><span class="tocnumber">3.1</span> <span class="toctext">Hardware Specs</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="index.php?title=Robot&amp;oldid=3324#ROS_API"><span class="tocnumber">3.2</span> <span class="toctext">ROS API</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="index.php?title=Robot&amp;oldid=3324#Python_API_.28baxter_interface.29"><span class="tocnumber">3.3</span> <span class="toctext">Python API (baxter_interface)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="index.php?title=Robot&amp;oldid=3324#RobotEnable_Interface_Class"><span class="tocnumber">3.3.1</span> <span class="toctext">RobotEnable Interface Class</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="index.php?title=Robot&amp;oldid=3324#Tools"><span class="tocnumber">3.3.2</span> <span class="toctext">Tools</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div style="clear:both">
+<h1><span class="mw-headline" id="Summary">Summary</span></h1>
+</div>
+<p>This page is the gathering point for all of the knowledge that applies across all of Baxter's components. These include such things as robot power (requirements, enable/disable, e-stop), and the URDF (Unified Robot Description Format).
+</p><p><br />
+</p>
+<h1><span class="mw-headline" id="Power">Power</span></h1>
+<p>The robot power is an integral part of expected robot performance. Baxter largely defines his robot state in terms of the power state.
+</p>
+<h2><span class="mw-headline" id="E-Stop">E-Stop</span></h2>
+<p>Baxter's Emergency Stop (E-Stop) button is a hardware stop which will disallow power to the robot components.
+</p><p><a href="../File:E_stop.jpg" class="image"><img alt="E stop.jpg" src="images/thumb/1/12/E_stop.jpg/200px-E_stop.jpg" width="200" height="150" srcset="/wiki/a/images/1/12/E_stop.jpg 1.5x" /></a>
+</p><p>The E-Stop should always be available when running advanced control programs as a safety precaution. If the robot ever moves unexpectedly, press the E-Stop to prevent anyone from being hurt, or damaging the Baxter hardware.
+</p>
+<h2><span id="Robot_Enable/Disable"></span><span class="mw-headline" id="Robot_Enable.2FDisable">Robot Enable/Disable</span></h2>
+<p>In order to control Baxter's arms or head, the robot must be entered into the 'Enabled' state. Enabling the robot provides power to the joint motors, which are initially in the 'Disabled' state on start-up or after a serious error, such as an E-Stop (Emergency-Stop).
+</p><p>Robot enabling/disabling can be commanded programmatically using the <a href="../Baxter_interface#Robot_Enable" class="mw-redirect" title="Baxter interface"> baxter_interface's RobotEnable class</a>.
+</p><p>A convenient command line tool is provided for quickly enabling/disabling Baxter. This tool is provided in the baxter_tools package: <a href="../Enable_Robot_Tool" title="Enable Robot Tool">Enable Robot Tool</a>
+</p>
+<h1><span class="mw-headline" id="Resources">Resources</span></h1>
+<h2><span class="mw-headline" id="Hardware_Specs">Hardware Specs</span></h2>
+<p>See the <a href="../Hardware_Specifications" title="Hardware Specifications"> Hardware Specifications</a> page for detailed hardware specs.
+</p>
+<h2><span class="mw-headline" id="ROS_API">ROS API</span></h2>
+<p>See the <a href="../API_Reference" title="API Reference">API Reference Page </a> for information on all ROS Interfaces to the Robot.
+</p>
+<h2><span id="Python_API_(baxter_interface)"></span><span class="mw-headline" id="Python_API_.28baxter_interface.29">Python API (<code>baxter_interface</code>)</span></h2>
+<h3><span class="mw-headline" id="RobotEnable_Interface_Class">RobotEnable Interface Class</span></h3>
+<p>(<code>robot_enable.py</code>) - The python <a href="../Baxter_Interface" title="Baxter Interface"> baxter_interface</a> class for robot enable/disable/state monitoring.  Allows for enabling/disabling/stopping/resetting/state control of the robot hardware.
+</p>
+<h3><span class="mw-headline" id="Tools">Tools</span></h3>
+<ul><li><a href="../Enable_Robot_Example" class="mw-redirect" title="Enable Robot Example">Enable Robot Tool</a></li></ul>
+<p>Enter the robot to/from the enable/disable state. Robot enable is required for Baxter motion control.
+</p>
+<ul><li><a href="../Tuck_Arms_Tool" title="Tuck Arms Tool">Tuck Arms Tool</a></li></ul>
+<p>The tuck arms program will allow you to tuck/untuck Baxter's arms to/from 'shipping pose'.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815161534
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.012 seconds
+Real time usage: 0.013 seconds
+Preprocessor visited node count: 44/1000000
+Preprocessor generated node count: 58/1000000
+Post‐expand include size: 271/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.446      1 Template:Components-group_header
+100.00%    0.446      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:362-0!canonical and timestamp 20190815161534 and revision id 3324
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Robot&amp;oldid=3324">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Robot&amp;oldid=3324</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.012","walltime":"0.013","ppvisitednodes":{"value":44,"limit":1000000},"ppgeneratednodes":{"value":58,"limit":1000000},"postexpandincludesize":{"value":271,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.446      1 Template:Components-group_header","100.00%    0.446      1 -total"]},"cachereport":{"timestamp":"20190815161534","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":61});});</script></body></html>

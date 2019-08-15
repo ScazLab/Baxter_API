@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Arm Control Modes - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Arm_Control_Modes","wgTitle":"Arm Control Modes","wgCurRevisionId":3557,"wgRevisionId":0,"wgArticleId":780,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Arm_Control_Modes","wgRelevantArticleId":780,"wgRequestId":"5dcc84f68cbad08eaeb4671e","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Arm_Control_Modes rootpage-Arm_Control_Modes skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Arm+Control+Modes&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Arm Control Modes</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Arm_Control_Modes&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Arm_Control_Modes&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Arm_Control_Modes&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Arm_Control_Modes" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Arm_Control_Modes" title="Arm Control Modes">Arm Control Modes</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Arm_Control_Modes&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Arm_Control_Modes&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">= Control Modes =
+
+Fundamental to the operation of Baxter via the SDK is a familiarity with the available joint control modes. The joint control modes define the 'modes' in which we can control Baxter's limbs in joint space. These are provided via a ROS message API:([http://api.rethinkrobotics.com/baxter_core_msgs/html/msg/JointCommand.html baxter_core_msgs/JointCommand.msg])
+
+To control the limb, we must publish the [http://api.rethinkrobotics.com/baxter_core_msgs/html/msg/JointCommand.html JointCommand message] on the topic:
+&lt;syntaxhighlight lang="bash" enclose="div">
+robot/limb/&lt;left/right>/joint_command
+&lt;/syntaxhighlight>
+at a rate '''> 5hz''' (by default). The rate at which you must publish your messages is defined on the topic:
+&lt;syntaxhighlight lang="bash" enclose="div">
+/robot/limb/&lt;left/right>/joint_command_timeout
+&lt;/syntaxhighlight>
+of message type [http://docs.ros.org/api/std_msgs/html/msg/Float64.html std_msgs/Float64]
+
+==== Message Definition ====
+The [http://api.rethinkrobotics.com/baxter_core_msgs/html/msg/JointCommand.html JointCommand message] is defined:
+&lt;syntaxhighlight lang="bash" enclose="div">
+int32 mode
+float64[] command
+string[]  names
+
+int32 POSITION_MODE=1
+int32 VELOCITY_MODE=2
+int32 TORQUE_MODE=3
+int32 RAW_POSITION_MODE=4
+&lt;/syntaxhighlight>
+This message is subscribed to by the &lt;code>realtime_loop&lt;/code>.
+
+&lt;code>mode&lt;/code>:
+The &lt;code>mode&lt;/code> is an integer defining the mode in which the commands will be parsed and commanded to the Joint Controller Boards (JCBs). Available modes are contained with the message [&lt;code>POSITION_MODE&lt;/code>, &lt;code>VELOCITY_MODE&lt;/code>, &lt;code>TORQUE_MODE&lt;/code>,&lt;code>RAW_POSITION_MODE&lt;/code>]
+
+&lt;code>command&lt;/code>:
+The &lt;code>command&lt;/code> is the ordered (corresponding to the &lt;code>names&lt;/code> field) command values.
+
+&lt;code>names&lt;/code>:
+The &lt;code>names&lt;/code> is a list of strings containing the joints to command.
+
+== Joint Control Fundamentals ==
+
+When a joint position command is published from the development PC, the '&lt;code>realtime_loop&lt;/code>' process which represents a motor control plugin subscribes to this message. This message is then parsed, and represented in memory based on control mode. 
+
+Depending on the control mode, modifications are made to the input commands. These modifications are typically due to the safety controllers (e.g. arm-to-arm collision avoidance, collision detection, etc.)
+
+A control rate timeout is also enforced at this motor controller layer. This states that if a new '&lt;code>JointCommand&lt;/code>' message is not received within the specified timeout (0.2 seconds, or 5Hz), the robot will 'Timeout'. When the robot 'Times out', the current control mode is exited, reverting back to position control mode where the robot will command (hold) it's current joint angles. The reason for this is safety. For example, if controlling in velocity control mode where you are commanding 1.0 Rad/s to joint S0, and you lose network connectivity (someone kicks your router), the robot could result in dangerous motions. By 'timing out', the robot will be safer, reacting to network timeouts, or incorrect control behavior.
+
+This control rate timeout is configurable:
+&lt;syntaxhighlight lang="bash" enclose="div">
+/robot/limb/&lt;left/right>/joint_command_timeout
+&lt;/syntaxhighlight>
+of message type [http://docs.ros.org/api/std_msgs/html/msg/Float64.html std_msgs/Float64]
+
+== Joint Position Control ==
+
+Joint position control mode is the fundamental, basic control mode for Baxter arm motion. In position control mode, we specify joint angles at which we want the joints to achieve. Typically this will be consist of seven values, a commanded position for each of the seven joints, resulting in a full description of the arm configuration.
+
+JointCommand.msg mode: &lt;code>POSITION_MODE&lt;/code>
+
+This joint command is then subscribed to by Baxter's Motor Controller. The motor controller processes this joint command ensuring safety (collision avoidance and detection) and expected behavior by making the following modifications:
+
+[[File:Joint_Position_Control.png|550px]]
+
+== "Raw" Joint Position Control ==
+
+Raw Joint position control mode was introduced to provide a much more direct position control method. The same basic idea as the standard joint position control mode still holds. However, the joint commands are largely left to the JCBs for execution.
+
+JointCommand.msg mode: &lt;code>RAW_POSITION_MODE&lt;/code>
+
+The 'raw' joint position commands only perform the following modification (typically these additions are none):
+
+[[File:'Raw'_Joint_Position_Control.png|550px]]
+
+'''Warning:''' Advanced Control Mode. As we no longer apply collision avoidance offsets, and allow for very fast motions at the joints velocity limits, this mode can be dangerous. Please use with caution.
+
+== Joint Velocity Control ==
+
+Joint velocity control mode is an advanced control mode. In velocity control mode, we specify joint velocities at which we want the joints to simultaneously achieve. Typically this will be consist of seven values, a commanded velocity for each of the seven joints.
+
+JointCommand.msg mode: &lt;code>VELOCITY_MODE&lt;/code>
+
+This joint command is then subscribed to by Baxter's Motor Controller. The motor controller processes this joint velocity command (applying collision avoidance and detection) and expected behavior by making the following modifications:
+
+[[File:Joint_Velocity_Control.png|550px]]
+
+'''Note:''' When commanding joint velocities, if a commanded velocity to one of the joints will result in a joint position that is beyond the joints limits, no joints will be commanded, as all of the command is considered invalid. Reason we do this; an example of a common control method, using the Jacobian for Cartesian control resulting in joint velocity commands. If a single joint hits its limit, the rest of the joints will still be commanded, resulting in obscure and potentially dangerous motions. We recommend either implementing a joint space potential field or joint limit check before submitting the joint velocity commands.
+
+'''Warning:''' Advanced Control Mode. As we allow for very fast joint velocity up to the joint velocity limits, this mode can be dangerous. Please use with caution.
+
+== Joint Torque Control ==
+
+Joint torque control mode is an advanced control mode. In torque control mode, we specify joint torques at which we want the joints to simultaneously achieve. Typically this will be consist of seven values, a commanded torque for each of the seven joints.
+
+JointCommand.msg mode: &lt;code>TORQUE_MODE&lt;/code>
+
+This joint command is then subscribed to by Baxter's Motor Controller. The motor controller processes this joint torque command and expected behavior by making the following modifications, taking special note of the absence of collision avoidance and detection modules:
+
+[[File:Joint_Torque_Control.png|550px]]
+
+'''Note:''' As shown in the above image, joint torque commands are applied in addition to gravity and spring compensation torques. This default can be disabled by publishing an [http://docs.ros.org/api/std_msgs/html/msg/Empty.html std_msgs/Empty] message on the topic: &lt;code>/robot/limb/right/suppress_gravity_compensation &lt;/code> at a rate > 5Hz.
+
+'''Warning:''' Advanced Control Mode. When commanding in torque control mode, access is granted to the lowest control levels. This puts much responsibility on the control program and can be dangerous. Please use with caution.
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Arm_Control_Modes" title="Arm Control Modes">Arm Control Modes</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Arm_Control_Modes">http://sdk.rethinkrobotics.com/wiki/Arm_Control_Modes</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":46});});</script></body></html>

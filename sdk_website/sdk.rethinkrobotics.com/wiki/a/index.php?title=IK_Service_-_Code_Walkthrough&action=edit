@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for IK Service - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"IK_Service_-_Code_Walkthrough","wgTitle":"IK Service - Code Walkthrough","wgCurRevisionId":3271,"wgRevisionId":0,"wgArticleId":450,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"IK_Service_-_Code_Walkthrough","wgRelevantArticleId":450,"wgRequestId":"e12737fa6e3a23a4dc54de30","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-IK_Service_-_Code_Walkthrough rootpage-IK_Service_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=IK+Service+-+Code+Walkthrough&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for IK Service - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=IK_Service_-_Code_Walkthrough&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=IK_Service_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=IK_Service_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../IK_Service_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../IK_Service_-_Code_Walkthrough" title="IK Service - Code Walkthrough">IK Service - Code Walkthrough</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=IK_Service_-_Code_Walkthrough&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=IK_Service_-_Code_Walkthrough&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">{{Template:Parent header|parent=IK Service Example}}
+== Introduction ==
+This example demonstrates the usage of the IK service that is available in Baxter. The &lt;code>main()&lt;/code> function records the side of the joint on which the IK service is to be called and then invokes the &lt;code>ik_test()&lt;/code> function. This is where the rospy node is initialized, default cartesian coordinates are initialized, and the IK service is called.&lt;br />
+'''Service''' - "ExternalTools/&lt;''side''>/PositionKinematicsNode/IKService"&lt;br />
+
+== Code Walkthrough ==
+Now, let's break down the code
+&lt;syntaxhighlight lang="python" line start="33" enclose="div">
+import argparse
+import sys
+
+import rospy
+
+from geometry_msgs.msg import (
+    PoseStamped,
+    Pose,
+    Point,
+    Quaternion,
+)
+from std_msgs.msg import Header
+
+from baxter_core_msgs.srv import (
+    SolvePositionIK,
+    SolvePositionIKRequest,
+)
+&lt;/syntaxhighlight>
+The geometry message types are imported to build the request message for the IK service. The custom request and response message types ([https://github.com/RethinkRobotics/baxter_common/blob/release-1.0.0/baxter_core_msgs/srv/SolvePositionIK.srv baxter_core_msgs-SolvePositionIK]) are imported from the baxter_core_msgs package.
+
+&lt;syntaxhighlight lang="python" line start="52" enclose="div">
+def ik_test(limb):
+    rospy.init_node("rsdk_ik_service_client")
+    ns = "ExternalTools/" + limb + "/PositionKinematicsNode/IKService"
+    iksvc = rospy.ServiceProxy(ns, SolvePositionIK)
+    ikreq = SolvePositionIKRequest()
+    hdr = Header(stamp=rospy.Time.now(), frame_id='base')
+&lt;/syntaxhighlight>
+The ros node is initialized. An object for the service call is initialized by passing the service name &lt;code>ns&lt;/code> and the Request-Response message type, &lt;code>SolvePositionIK&lt;/code>.
+&lt;code>SolvePositionIKRequest&lt;/code> is the IK Request message type that is generated at compile time.
+
+&lt;syntaxhighlight lang="python" line start="58" enclose="div">
+    poses = {
+        'left': PoseStamped(
+            header=hdr,
+            pose=Pose(
+                position=Point(
+                    x=0.657579481614,
+                    y=0.851981417433,
+                    z=0.0388352386502,
+                ),
+                orientation=Quaternion(
+                    x=-0.366894936773,
+                    y=0.885980397775,
+                    z=0.108155782462,
+                    w=0.262162481772,
+                ),
+            ),
+        ),
+        'right': PoseStamped(
+            header=hdr,
+            pose=Pose(
+                position=Point(
+                    x=0.656982770038,
+                    y=-0.852598021641,
+                    z=0.0388609422173,
+                ),
+                orientation=Quaternion(
+                    x=0.367048116303,
+                    y=0.885911751787,
+                    z=-0.108908281936,
+                    w=0.261868353356,
+                ),
+            ),
+        ),
+    }
+
+    ikreq.pose_stamp.append(poses[limb])
+&lt;/syntaxhighlight>
+The &lt;code>poses&lt;/code> dictionary is populated with hard-coded cartesian coordinates for both the limbs. The last line indicates that the pose of the side of the limb under interest, is copied to the IK request message.
+
+&lt;syntaxhighlight lang="python" line start="94" enclose="div">
+    try:
+        rospy.wait_for_service(ns, 5.0)
+        resp = iksvc(ikreq)
+    except (rospy.ServiceException, rospy.ROSException), e:
+        rospy.logerr("Service call failed: %s" % (e,))
+        return 1
+&lt;/syntaxhighlight>
+With a timeout of 5 seconds, the IK service is called along with the IK request message. The resp objects captures the response message which contains the joint positions. It throws an error on timeout.
+&lt;syntaxhighlight lang="python" line start="94" enclose="div">
+    if (resp.isValid[0]):
+        print("SUCCESS - Valid Joint Solution Found:")
+        # Format solution into Limb API-compatible dictionary
+        limb_joints = dict(zip(resp.joints[0].name, resp.joints[0].position))
+        print limb_joints
+    else:
+        print("INVALID POSE - No Valid Joint Solution Found.")
+
+    return 0
+&lt;/syntaxhighlight>
+The &lt;code>isValid[0]&lt;/code> field is a boolean variable that indicates whether a successfull solution for the IK was found or not. The &lt;code>limb_joints&lt;/code> is dictionary that holds the joint names and their corresponding position from the response message. This can be passed as a joint command to the position controller to move the arm to the corresponding position.
+&lt;syntaxhighlight lang="python" line start="111" enclose="div">
+def main():
+    """RSDK Inverse Kinematics Example
+
+    A simple example of using the Rethink Inverse Kinematics
+    Service which returns the joint angles and validity for
+    a requested Cartesian Pose.
+
+    Run this example, passing the *limb* to test, and the
+    example will call the Service with a sample Cartesian
+    Pose, pre-defined in the example code, printing the
+    response of whether a valid joint solution was found,
+    and if so, the corresponding joint angles.
+    """
+    arg_fmt = argparse.RawDescriptionHelpFormatter
+    parser = argparse.ArgumentParser(formatter_class=arg_fmt,
+                                     description=main.__doc__)
+    parser.add_argument(
+        '-l', '--limb', choices=['left', 'right'], required=True,
+        help="the limb to test"
+    )
+    args = parser.parse_args(rospy.myargv()[1:])
+&lt;/syntaxhighlight>
+The main function parses the arguments provided by the user to capture the side of the arm on which the example is to be run.
+&lt;syntaxhighlight lang="python" line start="133" enclose="div">
+    return ik_test(args.limb)
+
+if __name__ == '__main__':
+    sys.exit(main())
+&lt;/syntaxhighlight>
+The &lt;code>ik_test()&lt;/code> function is called with the side of the limb as an argument to calculate the IK service as explained above.
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="../Template:Parent_header" title="Template:Parent header">Template:Parent header</a> (<a href="index.php?title=Template:Parent_header&amp;action=edit" title="Template:Parent header">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../IK_Service_-_Code_Walkthrough" title="IK Service - Code Walkthrough">IK Service - Code Walkthrough</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../IK_Service_-_Code_Walkthrough">http://sdk.rethinkrobotics.com/wiki/IK_Service_-_Code_Walkthrough</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":89});});</script></body></html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>MoveIt Tutorial - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"MoveIt_Tutorial","wgTitle":"MoveIt Tutorial","wgCurRevisionId":4599,"wgRevisionId":4599,"wgArticleId":371,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"MoveIt_Tutorial","wgRelevantArticleId":371,"wgRequestId":"b03cbf3ed7d6367129c47cb9","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","ext.embedVideo.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["ext.tabs","ext.embedVideo","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.embedVideo.styles%257Cext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<style type="text/css" id="tabs-dynamic-styles">/*<![CDATA[*/
+/* Dynamically generated tabs styles */
+.tabs-input-1:checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1:checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1:checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+/* The same styles, but with .checked instead of :checked, for browsers that rely on the JavaScript fallback */
+.tabs-input-1.checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1.checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1.checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+.tabs-dropdown .tabs-content,.tabs-dropdown .tabs-container,.tabs-dropdown li,.tabs-dropdown ul,.tabs-dropdown ol {background-color: white}
+/*]]>*/</style>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-MoveIt_Tutorial rootpage-MoveIt_Tutorial skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=MoveIt+Tutorial&amp;returntoquery=oldid%3D4599">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">MoveIt Tutorial</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=MoveIt_Tutorial&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=MoveIt_Tutorial&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../MoveIt_Tutorial" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 18:08, 29 December 2017 by <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Hanzhao&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Hanzhao (page does not exist)"><bdi>Hanzhao</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Hanzhao&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Hanzhao (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Hanzhao" class="mw-usertoollinks-contribs" title="Special:Contributions/Hanzhao">contribs</a>)</span> <span class="comment">(<a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Programmatic_interaction_for_planning">→</a>‎<span dir="auto"><span class="autocomment">Programmatic interaction for planning: </span> fix MoveIt! API link</span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=MoveIt_Tutorial&amp;diff=prev&amp;oldid=4599" title="MoveIt Tutorial">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=MoveIt_Tutorial&amp;direction=prev&amp;oldid=4599" title="MoveIt Tutorial">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#column-one">navigation</a>, <a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><a href="../File:Moveit_logo.png" class="image" title="MoveIt! Logo"><img alt="MoveIt! Logo" src="images/6/66/Moveit_logo.png" width="342" height="96" /></a><br />
+<b><a rel="nofollow" class="external text" href="http://moveit.ros.org/">MoveIt! Please visit the MoveIt! homepage for more information</a></b>
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Installation.2FPrerequisites"><span class="tocnumber">2</span> <span class="toctext">Installation/Prerequisites</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Overview"><span class="tocnumber">3</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Baxter_Planning_Groups"><span class="tocnumber">3.1</span> <span class="toctext">Baxter Planning Groups</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Video"><span class="tocnumber">4</span> <span class="toctext">Video</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Tutorial"><span class="tocnumber">5</span> <span class="toctext">Tutorial</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Executing_a_simple_motion_plan"><span class="tocnumber">5.1</span> <span class="toctext">Executing a simple motion plan</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Introducing_an_environment_representation_for_planning"><span class="tocnumber">5.2</span> <span class="toctext">Introducing an environment representation for planning</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Programmatic_interaction_for_planning"><span class="tocnumber">5.3</span> <span class="toctext">Programmatic interaction for planning</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Using_Depth_Sensors_with_Baxter_and_MoveIt.21"><span class="tocnumber">6</span> <span class="toctext">Using Depth Sensors with Baxter and MoveIt!</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#IKFast"><span class="tocnumber">7</span> <span class="toctext">IKFast</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Using_Baxter.27s_MoveIt.21_IKFast_plugins"><span class="tocnumber">7.1</span> <span class="toctext">Using Baxter's MoveIt! IKFast plugins</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Interfaces"><span class="tocnumber">8</span> <span class="toctext">Interfaces</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#ROS_APIs"><span class="tocnumber">8.1</span> <span class="toctext">ROS APIs</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#baxter_interface_APIs"><span class="tocnumber">8.2</span> <span class="toctext">baxter_interface APIs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Related_Examples.2FTutorials"><span class="tocnumber">9</span> <span class="toctext">Related Examples/Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Troubleshooting"><span class="tocnumber">10</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#The_arm_is_not_executing_the_trajectory"><span class="tocnumber">10.1</span> <span class="toctext">The arm is not executing the trajectory</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#Arm_not_executing_plan.3B_.22Unable_to_identify_any_set_of_controllers.22"><span class="tocnumber">10.2</span> <span class="toctext">Arm not executing plan; "Unable to identify any set of controllers"</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Summary">Summary</span></h2>
+<p>This tutorial describes how to use the Baxter Research Robot with MoveIt! the standard ROS motion planning framework.
+</p>
+<h2><span id="Installation/Prerequisites"></span><span class="mw-headline" id="Installation.2FPrerequisites">Installation/Prerequisites</span></h2>
+<p><b>This tutorial requires a ROS distribution &gt;= Groovy</b>
+</p><p>Check out the Baxter MoveIt configuration package into your <a rel="nofollow" class="external text" href="http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment">ROS workspace</a> (follow Catkin or rosbuild tab instructions accordingly)]
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ <span class="nb">cd</span> ~/ros_ws/src
+    $ git clone https://github.com/ros-planning/moveit_robots.git
+</pre></div>
+<p>The follow debian packages are required for using MoveIt! with Baxter
+</p>
+<form id="tabs-inputform" class="tabs tabs-inputform" action="index.php?title=MoveIt_Tutorial&amp;oldid=4599#"></form><div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-1-0" name="tabs-1" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-1-1" name="tabs-1" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-1-1" data-tabpos="1">ROS Indigo (Recommended)</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-1-2" name="tabs-1" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-1-2" data-tabpos="2">ROS Groovy</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    <span class="o">=</span> Make sure to update your <span class="nv">sources</span> <span class="o">=</span>
+    $ sudo apt-get <span class="nv">update</span>
+    <span class="o">=</span> Install MoveIt! <span class="o">=</span>
+    $ sudo apt-get install ros-indigo-moveit-full
+</pre></div>
+</div>
+<div class="tabs-content tabs-content-2">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    <span class="o">=</span> Make sure to update your <span class="nv">sources</span> <span class="o">=</span>
+    $ sudo apt-get <span class="nv">update</span>
+    <span class="o">=</span> Install MoveIt! <span class="o">=</span>
+    $ sudo apt-get install ros-groovy-moveit-full
+</pre></div>
+</div>
+</div></div>
+<p>Run <code>catkin_make</code> to make the new additions to your ROS workspace
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ <span class="nb">cd</span> ~/ros_ws/
+    $ ./baxter.sh
+    $ catkin_make
+</pre></div>
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>MoveIt! motion planning framework provides capabilities including Kinematics (IK, FK, Jacobian), Motion Planning (OMPL, SBPL, CHOMP) integrated as MoveIt! plugins, Environment Representation (robot representation, environment representation, collision checking, contraint evaluation), execution using move_groups, benchmarking, warehouse database for storage (scenes, robot states, motion plans), a C++/Python API and more!
+</p><p>Baxter now supports using MoveIt! through the addition of the configurable <a href="../API_Reference#joint-trajectory-action" title="API Reference">joint trajectory action server</a>, and hosting of the necessary MoveIt! configuration files on <a rel="nofollow" class="external text" href="https://github.com/ros-planning/moveit_robots">ros_planning/moveit_robots</a>.
+</p><p>This tutorial will focus on the MoveIt! Rviz plugin as an introduction to some of the capabilities of MoveIt!
+</p>
+<h4><span class="mw-headline" id="Baxter_Planning_Groups">Baxter Planning Groups</span></h4>
+<p>Describes the joints considered during motion planning. These are specified in the SRDF for Baxter. Baxter's SRDF includes planning groups, additional collision checking information, and default configurations. These groups are generated dynamically via Xacro
+</p><p><i><b>Planning Groups</b></i>
+</p>
+<ul><li><b>both_arms</b>
+<ul><li><b>left_arm</b></li>
+<li><b>right_arm</b></li></ul></li>
+<li><b>left_arm</b>
+<ul><li><b>chain</b> base -&gt; left_gripper
+<ul><li>left_s0</li>
+<li>left_s1</li>
+<li>left_e0</li>
+<li>left_e1</li>
+<li>left_w0</li>
+<li>left_w1</li>
+<li>left_w2</li>
+<li>left_hand</li>
+<li>left_endpoint</li></ul></li></ul></li>
+<li><b>right_arm</b>
+<ul><li><b>chain</b> base -&gt; right_gripper
+<ul><li>right_s0</li>
+<li>right_s1</li>
+<li>right_e0</li>
+<li>right_e1</li>
+<li>right_w0</li>
+<li>right_w1</li>
+<li>right_w2</li>
+<li>right_hand</li>
+<li>right_endpoint</li></ul></li></ul></li>
+<li><b>left_hand</b>
+<ul><li>left_gripper</li></ul></li>
+<li><b>right_hand</b>
+<ul><li>right_gripper</li></ul></li></ul>
+<p>The SRDF is generated dynamically at runtime and then loaded to the param server under <code>robot_semantic_description</code>. You can view the top level SRDF Xacro file at any time:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ rosed baxter_moveit_config baxter.srdf.xacro
+</pre></div>
+<h2><span class="mw-headline" id="Video">Video</span></h2>
+<div class="embedvideo autoResize" style=""><div class="embedvideowrap" style="width: 500px;"><iframe src="http://www.youtube.com/embed/1Zdkwym42P4?" width="500" height="281" frameborder="0" allowfullscreen="true"></iframe></div></div>
+<h2><span class="mw-headline" id="Tutorial">Tutorial</span></h2>
+<p>Verify that the robot is enabled from an <a href="../RSDK_Shell" title="RSDK Shell">RSDK terminal session</a>, ex:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ rosrun baxter_tools enable_robot.py -e
+</pre></div>
+<p>Start the joint trajectory controller, ex:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> $ rosrun baxter_interface joint_trajectory_action_server.py
+</pre></div>
+<p>In another <a href="../RSDK_Shell" title="RSDK Shell">RSDK terminal session</a>, Launch the <a rel="nofollow" class="external text" href="http://moveit.ros.org/wiki/PR2/Rviz_Plugin/Quick_Start">rviz MoveIt! plugin</a>, ex:
+</p>
+<div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-2-0" name="tabs-2" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-2-1" name="tabs-2" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-2-1" data-tabpos="1">With Electric Gripper(s)</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-2-2" name="tabs-2" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-2-2" data-tabpos="2">Without Electric Grippers</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<p>If you have the Rethink Electric grippers plugged into your robot, use the following to bringup MoveIt:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ roslaunch baxter_moveit_config baxter_grippers.launch
+</pre></div>
+<p>This version will add the gripper linkages to the collision shapes. If you only have one gripper plugged in, you can always disable the missing gripper collision shape, by launching with arg <code>&lt;side&gt;_electric_gripper:=false</code>. For example:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ roslaunch baxter_moveit_config baxter_grippers.launch right_electric_gripper:<span class="o">=</span><span class="nb">false</span>
+</pre></div>
+<p>will only give you collision shapes for the left electric gripper. By default both grippers' collision shapes are enabled.
+</p>
+</div>
+<div class="tabs-content tabs-content-2">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ roslaunch baxter_moveit_config demo_baxter.launch
+</pre></div>
+<p>This version will not add electric grippers collision shapes, and MoveIt may not give a valid trajectory if you have electric grippers plugged in.
+</p>
+</div>
+</div></div>
+<p><i><b>Note:</b>* Do not launch <code>baxter_moveit_config demo_sim.launch</code> with the ROS_MASTER_URI set to the robot (ie. using the robot's ros master) as this starts a new joint_state_publisher/robot_state_publisher causing the robot's internal joint_state_publisher/robot_state_publisher be preempted, essentially ceasing Baxter's ability to move the arms until reboot. </i>
+</p><p>The Rviz gui will then open showing Baxter with <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/interactive_markers">interactive markers</a>:<br />
+<a href="../File:Baxter_moveit_start.png" class="image" title="Baxter MoveIt rviz start"><img alt="Baxter MoveIt rviz start" src="images/e/e3/Baxter_moveit_start.png" width="700" height="385" /></a>
+</p>
+<h4><span class="mw-headline" id="Executing_a_simple_motion_plan">Executing a simple motion plan</span></h4>
+<p>You will see the goal state for the motion planning, shown for each plan group in Orange.
+</p><p>You can then move Baxter's arms to a planning goal by clicking and dragging the arrows (Cartesian) and rings (orientation) of the interactive markers. Kinematic/collision checking is happening simultaneously and will not allow self collisions (links will turn red), or goal states out of the reachable workspace (inability to drag and endpoint/gripper will turn red). <br />
+</p><p><a href="../File:Baxter_moveit_2.png" class="image" title="Baxter MoveIt rviz interact"><img alt="Baxter MoveIt rviz interact" src="images/9/99/Baxter_moveit_2.png" width="700" height="385" /></a>
+</p><p>With a valid goal state, and assuming that the robot is in a valid start state, you are now ready to plan and execute a trajectory from your start state to the goal state.
+</p><p>In the bottom left you will the motion planning frame with a tabbed interface to access different tools of the MoveIt! Rviz visualizer. 
+</p><p>Please select the <i>Planning</i> tab in this frame. <br />
+</p><p><a href="../File:Baxter_moveit_tabs_planning.png" class="image" title="MoveIt planning tab"><img alt="MoveIt planning tab" src="images/2/2a/Baxter_moveit_tabs_planning.png" width="676" height="376" /></a>
+</p><p>Click the <i>Plan_ tab under the <b>Commands</b> field to plan a trajectory from your start state to the goal. You will see this solution executed in Rviz. When you are happy with the planned trajectory, click _Execute</i> to run this trajectory on the robot.
+</p><p>Alternatively, if you would like to immediately execute the first plan from your current position to the goal position use the <i>Plan and Execute</i> button.
+</p><p>Another useful field in the <i>Planning_ tab is <b>Query</b>. You can specify here _Select Start State_ choosing <code>&lt;current&gt;</code>, <code>&lt;random&gt;</code>, and <code>&lt;same as goal&gt;</code>, choosing these options with the _Update_ button. Also, You may _Select Goal State</i> by clicking that button. Here again you can choose <code>&lt;current&gt;</code>, <code>&lt;random&gt;</code>, and <code>&lt;same as goal&gt;</code> for the Goal State.
+</p><p><b>Note:</b> It is dangerous to plan from a start state other than your current joint positions. Please update the <i>Select Start State_ option under the <b>Query</b> field to reflect your current position before planning. This can be done by clicking the _Select Start State:_ text, from the drop down menu select <code>&lt;current&gt;</code>, click _Update</i> to complete this step. You will now be planning from your current position as the start state.
+</p><p>After trajectory execution you will see Baxter has achieved your specified Goal. <br />
+<a href="../File:Baxter_moveit_done.png" class="image" title="MoveIt planning done"><img alt="MoveIt planning done" src="images/7/7d/Baxter_moveit_done.png" width="700" height="384" /></a>
+</p>
+<h4><span class="mw-headline" id="Introducing_an_environment_representation_for_planning">Introducing an environment representation for planning</span></h4>
+<p>Select the <i>Scene Object</i> tab from the Motion Planning frame.
+</p><p><a href="../File:Baxter_moveit_tabs_scene_objects.png" class="image" title="MoveIt planning scene object tab"><img alt="MoveIt planning scene object tab" src="images/a/a3/Baxter_moveit_tabs_scene_objects.png" width="674" height="382" /></a>
+</p><p>We will now create a scene object in a text file to be imported into our environment.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> $ roscd baxter_moveit_config
+ $ mkdir baxter_scenes
+ $ gedit baxter_scenes/baxter_pillar.scene
+</pre></div>
+<p>Copy in the following scene describing a pillar
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> pillar
+ * pillar
+ <span class="m">1</span>
+ box
+ <span class="m">0</span>.2 <span class="m">0</span>.2 <span class="m">1</span>
+ <span class="m">0</span>.6 <span class="m">0</span>.15 <span class="m">0</span>
+ <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">1</span>
+ <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span>
+ .
+</pre></div>
+<p>Save and exit.
+</p><p>You can now import this scene from the <b>Scene Geometry</b> field selecting <i>Import From Text</i>
+</p><p>Navigating to select <code>baxter_moveit_config/baxter_scenes/baxter_pillar.scene</code>
+</p><p>After opening this scene you will now see the pillar inserted into your environment.
+</p><p><a href="../File:Baxter_moveit_pillar.png" class="image" title="Baxter MoveIt Pillar"><img alt="Baxter MoveIt Pillar" src="images/9/95/Baxter_moveit_pillar.png" width="700" height="386" /></a>
+</p><p><b>Important:</b> You must publish your current scene so that MoveIt! knows that it will need to plan around your modified environment. Do so by selecting the <i>Context_ tab from the Motion Planning frame. Under this tab you must click the _Publish Current Scene</i> Button under the <b>Planning Library</b> field.
+</p><p><a href="../File:Baxter_moveit_tabs_context.png" class="image" title="MoveIt Context Tab"><img alt="MoveIt Context Tab" src="images/5/59/Baxter_moveit_tabs_context.png" width="677" height="383" /></a>
+</p><p>Similar to our previous planning we can now drag our interactive markers moving the goal state to a location on the opposite side of the pillar.
+</p><p><a href="../File:Baxter_moveit_pillar_plan.png" class="image" title="MoveIt Context Tab"><img alt="MoveIt Context Tab" src="images/1/1e/Baxter_moveit_pillar_plan.png" width="700" height="385" /></a>
+</p><p>Selecting the <i>Planning</i> tab in the motion planning frame you can now plan a new trajectory that will avoid collision with your environment object (the pillar). The shell in which you launched demo_baxter.launch will provide information regarding which planner will be used, how long it took to find a solution, path simplification/smoothing time, and more. This will also display if your planner was unsuccessful in finding an allowable solution. This is often caused by collision with the environment during testing of the execution or invalid start/goal states. In very constrained or difficult motions, you may have to plan several times to find an acceptable solution for execution. 
+</p><p>Upon execution the robot will avoid this 'virtual' object tracking the commanded trajectory.
+</p><p><a href="../File:Baxter_moveit_pillar_done.png" class="image" title="Baxter Pillar Done"><img alt="Baxter Pillar Done" src="images/0/00/Baxter_moveit_pillar_done.png" width="700" height="383" /></a>
+</p><p><br />
+That's it, you have successfully commanded Baxter using MoveIt!
+</p>
+<h4><span class="mw-headline" id="Programmatic_interaction_for_planning">Programmatic interaction for planning</span></h4>
+<p>There is much more information, tutorials, API documentation and more on <a rel="nofollow" class="external text" href="http://moveit.ros.org">moveit.ros.org</a>.
+</p><p><a rel="nofollow" class="external text" href="http://moveit.ros.org/wiki/MoveGroup_Interface_tutorial">MoveIt! C++ Example</a>
+<a rel="nofollow" class="external text" href="http://docs.ros.org/indigo/api/pr2_moveit_tutorials/html/planning/src/doc/move_group_interface_tutorial.html">C++ Example</a>
+</p><p><br />
+<a rel="nofollow" class="external text" href="http://moveit.ros.org/wiki/MoveIt_Commander">MoveIt! Python - MoveIt Commander</a>
+<a rel="nofollow" class="external text" href="http://docs.ros.org/indigo/api/pr2_moveit_tutorials/html/planning/scripts/doc/move_group_python_interface_tutorial.html">Python Example</a>
+</p><p><a rel="nofollow" class="external text" href="http://moveit.ros.org/code-api/">MoveIt! API</a>
+</p>
+<h2><span id="Using_Depth_Sensors_with_Baxter_and_MoveIt!"></span><span class="mw-headline" id="Using_Depth_Sensors_with_Baxter_and_MoveIt.21">Using Depth Sensors with Baxter and MoveIt!</span></h2>
+<p>Please see the page on <a rel="nofollow" class="external text" href="../Kinect_basics">Depth Sensor Setup and MoveIt Integration</a>
+</p>
+<h2><span class="mw-headline" id="IKFast">IKFast</span></h2>
+<p><a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#ikfast_IKFast">#ikfast IKFast</a> provides analytical closed-form solutions for manipulator inverse kinematics. Part of the <a rel="nofollow" class="external text" href="http://openrave.org/">OpenRAVE</a> robot architecture/software framework, IKFast has been used to provide closed-form solutions for Baxter's inverse kinematics.
+</p><p>Advantages include <b>order of magnitude</b> faster IK solutions and the ability explore the manipulator's null space!
+</p>
+<h4><span id="Using_Baxter's_MoveIt!_IKFast_plugins"></span><span class="mw-headline" id="Using_Baxter.27s_MoveIt.21_IKFast_plugins">Using Baxter's MoveIt! IKFast plugins</span></h4>
+<p>In the baxter_moveit_config package - modify the kinematics.yaml file to specify the use of the IKFast plugins.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> rosed baxter_moveit_config kinematics.yaml
+</pre></div>
+<p>You can now uncomment the use of the IKFastKinematicsPlugin, commenting out the default KDL solver.
+</p><p>The result should look like so:
+<code>
+</code></p><code><pre> left_arm:
+ # kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
+ # uncomment to use ikfast kinematics plugin
+ kinematics_solver: baxter_left_arm_kinematics/IKFastKinematicsPlugin
+ kinematics_solver_attempts: 3
+ kinematics_solver_search_resolution: 0.005
+ kinematics_solver_timeout: 0.005
+ right_arm:
+ # kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
+ # uncomment to use ikfast kinematics plugin
+ kinematics_solver: baxter_right_arm_kinematics/IKFastKinematicsPlugin
+ kinematics_solver_attempts: 3
+ kinematics_solver_search_resolution: 0.005
+ kinematics_solver_timeout: 0.005
+</pre></code><code></code><p><code></code>
+</p><p>You will now need to recompile and install the IKFast plugins.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>   catkin_make
+   catkin_make install --pkg baxter_ikfast_right_arm_plugin
+   catkin_make install --pkg baxter_ikfast_left_arm_plugin
+</pre></div>
+<p>That's it! MoveIt! will now be using IKFast as it's kinematics solver!
+</p><p>Please try it out following the <a href="../MoveIt_Tutorial#tutorial" title="MoveIt Tutorial">above tutorial</a>.
+</p>
+<h2><span class="mw-headline" id="Interfaces">Interfaces</span></h2>
+<h3><span class="mw-headline" id="ROS_APIs">ROS APIs</span></h3>
+<p><i>See the <a href="../API_Reference#arm-joints" title="API Reference">API Reference</a> page for details.</i>  
+</p>
+<ul><li>Joint Trajectory Action Server - /robot/limb/right/follow_joint_trajectory [control_msgs/FollowJointTrajectoryAction]</li>
+<li>Joint Trajectory Action Server - /robot/limb/left/follow_joint_trajectory [control_msgs/FollowJointTrajectoryAction]</li></ul>
+<h3><span class="mw-headline" id="baxter_interface_APIs">baxter_interface APIs</span></h3>
+<ul><li>JointTrajectoryActionServer class: <code>joint_trajectory_action_server.py</code></li></ul>
+<h2><span id="Related_Examples/Tutorials"></span><span class="mw-headline" id="Related_Examples.2FTutorials">Related Examples/Tutorials</span></h2>
+<ul><li><a href="../Simple_Joint_trajectory_example" title="Simple Joint trajectory example">Simple Joint Trajectory Example</a></li>
+<li><a href="../Joint_Trajectory_Playback_Example" title="Joint Trajectory Playback Example">Joint Trajectory Playback Example</a></li></ul>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<h3><span class="mw-headline" id="The_arm_is_not_executing_the_trajectory">The arm is not executing the trajectory</span></h3>
+<p>Verify that the robot is enabled:
+</p><p><code>rosrun tools enable_robot.py -e</code>
+</p><p>Verify that the trajectory controller has been started:
+</p><p><code>rosrun baxter_interface joint_trajectory_action_server.py</code>
+</p>
+<h3><span id="Arm_not_executing_plan;_&quot;Unable_to_identify_any_set_of_controllers&quot;"></span><span class="mw-headline" id="Arm_not_executing_plan.3B_.22Unable_to_identify_any_set_of_controllers.22">Arm not executing plan; "Unable to identify any set of controllers"</span></h3>
+<p><i>Problem Description:</i> 
+</p>
+<blockquote>
+<p> Pressed plan, solution was found and a trajectory execution service request was recieved after which I got the error:<br />
+ Unable to identify any set of controllers that can actuate the specified joints: [left_e0 left_e1 left_s0 left_s1 left_w0 left_w1 left_w2 right_e0 right_e1 right_s0 right_s1 right_w0 right_w1 right_w2 ]<br />
+ After which nothing occurred.<br />
+</p>
+</blockquote>
+<p>If you see the following warning error in the terminal output when roslaunch-ing demo_baxter.launch:  <br />
+<code>
+[FATAL] [1372432489.342541284]: Parameter '~moveit_controller_manager' not specified. This is needed to identify the plugin to use for interacting with controllers. No paths can be executed.
+</code><br />
+This indicates you need to make sure you have the appropriate controller manager plugins installed.  Make sure to follow the Baxter MoveIt! <a href="index.php?title=MoveIt_Tutorial&amp;oldid=4599#installation.2Fprerequisites">Installation</a> instructions and install the required debian packages for both moveit-full and any required plugins.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815161515
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.083 seconds
+Real time usage: 2.355 seconds
+Preprocessor visited node count: 222/1000000
+Preprocessor generated node count: 552/1000000
+Post‐expand include size: 27/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 2/20
+Unstrip post‐expand size: 6305/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:371-0!canonical and timestamp 20190815161512 and revision id 4599
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=MoveIt_Tutorial&amp;oldid=4599">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=MoveIt_Tutorial&amp;oldid=4599</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.083","walltime":"2.355","ppvisitednodes":{"value":222,"limit":1000000},"ppgeneratednodes":{"value":552,"limit":1000000},"postexpandincludesize":{"value":27,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":2,"limit":20},"unstrip-size":{"value":6305,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815161515","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":33});});</script></body></html>

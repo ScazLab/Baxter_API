@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Baxter Setup - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Baxter_Setup","wgTitle":"Baxter Setup","wgCurRevisionId":3504,"wgRevisionId":0,"wgArticleId":420,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Baxter_Setup","wgRelevantArticleId":420,"wgRequestId":"6328b649d933f359c8486709","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["sysop"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Baxter_Setup rootpage-Baxter_Setup skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Baxter+Setup&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Baxter Setup</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Baxter_Setup&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Baxter_Setup&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Baxter_Setup&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Baxter_Setup" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Baxter_Setup" title="Baxter Setup">Baxter Setup</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Baxter_Setup&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Baxter_Setup&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">[[File:BaxterSetupActive.png|120px|link=Baxter_Setup]][[File:TutorialTransitionArrow.png|120px|link=Workstation_Setup]][[File:WorkstationSetupInactive.png|120px|link=Workstation_Setup]][[File:TutorialTransitionArrow.png|120px|link=Hello_Baxter]][[File:HelloBaxterInactive.png|120px|link=Hello_Baxter]]
+
+&lt;div class="noautonum toclimit-2">__TOC__&lt;/div>
+
+== Description ==
+&lt;span style="font-size:120%;">'''This tutorial describes the physical setup of a Baxter Research Robot and any purchased accessories.'''&lt;/span>
+
+== Required Hardware ==
+* Baxter Research Robot
+* Pallet jack
+* 1/2-in wrench
+* 17-mm wrench
+* 27-mm wrench (pedestal only)
+* Flat-head screwdriver
+
+=== Optional Hardware ===
+* Electric Parallel Gripper Kit (EPG)
+* Vacuum Gripper Kit (VG)
+* Mobile pedestal
+* #3-Metric Allen (hex) wrench for gripper installation ''(provided)''
+* Hoist/lift (with chain) capable of lifting 165 lb
+
+== Step 1: Confirm Hardware ==
+
+Please confirm all parts ordered are include in the shipment, and all packaging is intact.
+
+== Step 2: Choose Appropriate Workspace ==
+
+It is important to choose an appropriate location for Baxter to reside where he can fully stretch his arms without collision.
+
+Please see Baxter's reachable workspace documentation: [[Workspace_Guidelines | Baxter's workspace guidelines]] for help choosing a location.
+
+== Step 3: Unpack Contents == 
+
+Move the boxes by pallet jack into the workspace area, and unpack there; or if you 
+purchased a pedestal, and the path from the receiving dock to the Baxter workspace is flat 
+(no thresholds, etc.), you may prefer to unpack Baxter at the shipping dock, mount it onto 
+the pedestal, and roll it to the work location. 
+
+'''Note:''' The pedestal weighs 134 lb, and Baxter weighs 165 lb. Follow proper lift guidelines 
+and restrictions for these weights.
+
+
+Retain all packing material for any future service needs.
+
+== Step 4: Pedestal Setup ==
+
+'''(Optional)''' Applicable if using the standard Baxter pedestal.
+
+
+Please follow the [[Pedestal_Installation | pedestal installation guide]] which provides instructions for unpacking, choosing a pedestal height, and assembly.
+
+== Step 5: Mounting Baxter ==
+
+
+'''Pedestal:''' If mounting Baxter on a pedestal, please follow the [[Pedestal_Mounting | mounting Baxter on a pedestal instructions]]
+
+
+'''Alternative Surface:''' If mounting Baxter on another surface, please follow the [[Alternative_Mounting | mounting Baxter on an alternative surface]]
+
+== Step 6: Unpack/Install Grippers ==
+
+Unpack gripper boxes (if using) and follow the provided instructions to physically and electrically mount grippers to the tool plate on Baxter.
+
+
+'''Electric Parallel Grippers: ''' [[Electric Gripper Installation]]
+
+
+'''Vacuum (Suction) Grippers:''' [[Vacuum Gripper Installation]]
+
+== Step 7: Connect E-Stop/Power ==
+
+[[File:Connect_panel_bare.png|300px]]
+
+
+Plug E-Stop into connector on robot waist ('''I/O''' Port). Use flat head screwdriver to fasten.
+
+'''Important:''' E-Stop MUST be plugged into robot for robot to work.
+
+
+Plug Baxter into 120V outlet.
+
+
+Manage cords using cable channel and snap cable cover in place.
+
+== Step 8: Power On ==
+
+Congratulations! You have now set up your Baxter Research Robot Hardware.
+
+
+Please power on the robot by pressing the power button on Baxter's back panel.  You'll know that Baxter is fully booted when you see the green "halo" lights on Baxter's head and the Baxter Research Robot Logo and Text on the screen:
+
+[[File:SDKresearch.png|260px]]
+
+
+'''Note:''' At this point Baxter's arms will be in a 'tucked' position. We will show you how to untuck them safely later on in the setup process.  You will not be able to command the arms until they are untucked.
+
+
+== Video ==
+{{#ev:youtube|aghVlWMVQ4I|500}}
+
+== Next Step ==
+
+&lt;span style="font-size:130%;">[[Workstation_Setup | '''Workstation Setup''']]&lt;/span>
+
+[[File:BaxterSetupInactive.png|120px|link=Baxter_Setup]][[File:TutorialTransitionArrowActive.png|120px|link=Workstation_Setup]][[File:WorkStationSetupActive.png|120px|link=Workstation_Setup]][[File:TutorialTransitionArrow.png|120px|link=Hello_Baxter]][[File:HelloBaxterInactive.png|120px|link=Hello_Baxter]]
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Baxter_Setup" title="Baxter Setup">Baxter Setup</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Baxter_Setup">http://sdk.rethinkrobotics.com/wiki/Baxter_Setup</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":72});});</script></body></html>

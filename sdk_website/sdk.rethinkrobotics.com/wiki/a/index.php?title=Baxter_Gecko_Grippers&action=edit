@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Baxter Gecko Grippers - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Baxter_Gecko_Grippers","wgTitle":"Baxter Gecko Grippers","wgCurRevisionId":4565,"wgRevisionId":0,"wgArticleId":833,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Baxter_Gecko_Grippers","wgRelevantArticleId":833,"wgRequestId":"ea21d9b7eeb5b1b354f55ca5","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Baxter_Gecko_Grippers rootpage-Baxter_Gecko_Grippers skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Baxter+Gecko+Grippers&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Baxter Gecko Grippers</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Baxter_Gecko_Grippers&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Baxter_Gecko_Grippers&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Baxter_Gecko_Grippers&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Baxter_Gecko_Grippers" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Baxter_Gecko_Grippers" title="Baxter Gecko Grippers">Baxter Gecko Grippers</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Baxter_Gecko_Grippers&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Baxter_Gecko_Grippers&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">== Summary ==
+
+A mechanical interface was designed, built and tested to allow a Baxter to use synthetic gecko skin grippers. Several programs were written in which the Baxter locates colors and shapes and manipulates objects using both electric parallel grippers and gecko grippers.
+
+This project was undertaken during the summer of 2015 at NASA's Jet Propulsion Lab (JPL), as part of Caltech's Summer Undergraduate Research Fellowship (SURF) program. 
+
+== Background ==
+
+Gecko grippers are a type of on-off adhesive modeled after gecko feet, which have a vast array of tiny mushroom-tipped hairs or wedges that conform easily to smooth surfaces and stick via van der Waals forces when a shear force is applied to deform the wedges. They are being adapted to a variety of applications at JPL: http://www.nasa.gov/mission_pages/station/research/experiments/2324.html
+
+The way standard gecko grippers work is by having two pads pull against each other. First, lateral springs are tensioned by squeezing the two pads together. Then the gripper is applied lightly (&lt; 2 lbs force) to a surface and the tension on the springs released, causing the two pads to pull in opposition to each other. This deforms the wedges, exposing more area to the surface and allowing the pad to stick. To release the gripper, the springs are re-tensioned, relaxing the wedges and allowing the pads to peel off the surface.
+
+== Mechanical Design ==
+
+{| cellspacing="5" cellpadding="2"
+|- style="vertical-align:bottom;"
+| [[File:GeckoGripper_CAD.png | 500px | CAD of integrated gecko gripper.]]
+| [[File:GeckoGripper_gripper-photo.jpg | 500px | Photograph of integrated gecko gripper.]] 
+|}
+
+To allow a Baxter to use gecko adhesives, the gripper above was designed, fabricated, and installed on a Baxter robot. The design is as simple as possible, adapting the linear actuators in Baxter’s electric parallel gripper to adjust the spacing of two square acrylic tiles surfaced with gecko adhesive. The adhesive is the natively sticky variety, which means that the tiny silicone wedges that allow it to stick are capped with miniscule feet. The effect is that the adhesive will stick to any smooth, flat surface when applied with a small normal force, although it won’t achieve its full strength until a shear force is applied.
+
+{| cellspacing="5" cellpadding="2"
+|- style="vertical-align:bottom;"
+| [[File:GeckoGripper_primed.png | Gripper primed.]]
+| [[File:GeckoGripper_gripping.png | Gripper gripping.]] 
+| [[File:GeckoGripper_release.png | Gripper released.]] 
+|}
+
+The gripper primes itself by extending aluminum bars until the yellow string between the two tiles is horizontal but the springs outside the tiles are unextended. In this state, it brings the gecko adhesive-coated tiles into contact with the target surface and applies normal force through four foam pads mounted to the upper, orange plate (the foam allows for imperfections in the angle of approach and distributes the force more evenly). To grip, it brings the aluminum bars in fully and raises the gripper, at which point the weight of the target object is supported through the vertical, green string in the center, pulling the tiles (through their yellow strings) together and upward at a 20° angle (empirically determined to be ideal). To release, it extends the aluminum bars out past their primed position. The springs stretch and the diagonal, green strings are pulled taut, peeling the tiles up and away from the target surface.
+
+The gripper was designed to mount non-destructively to the commercially available electric parallel gripper.
+
+[[File:GeckoGripper_detached.jpg | 500px | Gecko gripper detached from Baxter, displaying its mounting.]]
+
+As shown above, this was accomplished by inserting an acrylic plate between the commercial gripper and Baxter’s wrist. The extra distance was accounted for by replacing the two shoulder screws over which the gripper slots with longer ones and using correspondingly longer screws to attach the gripper. Two ABS rings then cradle the gripper, secured to the acrylic base plate to prevent rotation. A final acrylic plate is the mount site for the gecko tiles. Other than switching hardware, the commercial gripper was not altered at all.
+
+== CAD ==
+
+https://grabcad.com/library/gecko-gripper-integration-for-baxter-robot-hand-1
+
+== Demonstrations ==
+
+===== Box Fetch =====
+
+Baxter recognizes and retrieves a specially marked box.
+
+{{#ev:youtube | Qoyrm6iCzUw | 500}}
+
+===== Gecko Fetch =====
+
+Similar to Box Fetch, with the distinction that Baxter is now using a gecko gripper. Instead of picking up the box, it retrieves a square of glass placed on top of the box. (Video shows only dead reckoning with gecko grippers, not the image recognition.)
+
+{{#ev:youtube | V4NByMzG5co | 500}}
+
+===== Gecko Colors =====
+
+Baxter locates a red square and a blue square in its view field. First it travels to the blue square and saves the location data. Then it travels to the red square, picks up a square of glass from inside it, returns to the remembered location of the blue square, and deposits the glass.
+
+{{#ev:youtube | lCHtLcfaJks | 500}}
+
+===== Gecko Assembly =====
+
+Baxter assembles a stack of nine glass squares into an image of the Starship Enterprise.
+
+{{#ev:youtube | udVD6zp4w9k | 500}}
+
+== Code ==
+
+https://github.com/destrygomorphous/baxter
+
+== Extensions ==
+
+* A simple industrial application would be using Baxter gecko grippers to pick and place smooth, flat objects where they are already used in factories for pick and place of objects that are easier to manipulate. 
+
+* Using techniques already demonstrated but not implemented together, Baxter could be programmed to recognize an object shown to it, find and retrieve that object, and then wait for a new target, all in the same program without the need for operator intervention. 
+
+* With a little more work, force control could be integrated into Baxter’s programming, allowing it to judge with greater accuracy the motion required to successfully grip an object. This would decrease the time necessary to acquire an object and mitigate the lateral motion induced in objects resting on smooth surfaces.
+
+== Attribution ==
+
+The research was carried out, in part, at the Jet Propulsion Laboratory, California Institute of Technology, under a contract with the National Aeronautics and Space Administration.
+
+Copyright 2015 California Institute of Technology. Government sponsorship acknowledged.
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Baxter_Gecko_Grippers" title="Baxter Gecko Grippers">Baxter Gecko Grippers</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Baxter_Gecko_Grippers">http://sdk.rethinkrobotics.com/wiki/Baxter_Gecko_Grippers</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":70});});</script></body></html>

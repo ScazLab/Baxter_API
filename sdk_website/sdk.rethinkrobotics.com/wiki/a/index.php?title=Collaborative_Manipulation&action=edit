@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Collaborative Manipulation - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Collaborative_Manipulation","wgTitle":"Collaborative Manipulation","wgCurRevisionId":3524,"wgRevisionId":0,"wgArticleId":755,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Collaborative_Manipulation","wgRelevantArticleId":755,"wgRequestId":"7fa0ca417c964f472a6162da","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Collaborative_Manipulation rootpage-Collaborative_Manipulation skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Collaborative+Manipulation&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Collaborative Manipulation</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Collaborative_Manipulation&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Collaborative_Manipulation&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Collaborative_Manipulation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Collaborative_Manipulation" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Collaborative_Manipulation" title="Collaborative Manipulation">Collaborative Manipulation</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Collaborative_Manipulation&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Collaborative_Manipulation&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">
+
+== SUMMARY ==
+
+* Version 1.0 of the Baxter Cooperative and Kinematics Tracking 
+
+The Baxter Cooperative and Kinematics Tracking project is based on the cooperative dual task space (CDTS) [1-4] for cooperative manipulation among multiple robotic arms. The project is implemented as a ROS package which works with the Baxter Research Robot from Rethink Robotics. Besides offering simple kinematic control of each individual arm, the package adds a kinematic tracking capability, where one of the Baxter arms tracks the pose of the other arm so that it maintains the original relative pose between the end-effectors. 
+
+===== Future Development =====
+
+This is the first version of the Baxter Cooperative and Kinematics Tracking package. Additional features based on the results on unit dual quaternion control for manipulators and on the cooperative dual task space, such as defining CDTS absolute/relative pose (as well as translation/orientation/distance) between arms, flexible control capabilities and human-robot relative pose controller, will be incorporated in future versions.
+
+
+== VIDEOS ==
+
+{{#ev:youtube|dfHxFMADD3k}}
+
+''The video illustrates the Baxter Cooperative and Kinematics Tracking package.''
+
+== OVERVIEW ==
+
+===== Unit dual quaternion representation =====
+
+The dual quaternion algebra describes rigid body motion algebraically in a similar way that quaternions represent rotations in three-dimensional space. A unit quaternion '''r''' = cos(&amp;theta;/2) + sin(&amp;theta;/2)'''n''' represents a rotation with angle &amp;theta; around the axis '''n'''. 
+A rigid motion in is represented by the unit dual quaternion element '''&lt;u>x&lt;/u>''' = '''r''' + &amp;epsilon;(1/2)'''pr''', where '''r''' is a unit quaternion that represents the rotation, '''p''' is a pure quaternion that represents the translation, and &amp;epsilon; is the nilpotent Clifford unit; that is, &amp;epsilon;≠0 but &amp;epsilon;*&amp;epsilon; = 0.
+
+As a sequence of rigid motions can be represented by a sequence of unit dual quaternion multiplications, the description of the Baxter end-effector pose, that is, position and orientation for each arm, can be derived by a series of unit dual quaternion multiplications. The unit dual quaternion '''&lt;u>x&lt;/u>'''i+1 is a function of the current joint value and represents the rigid transformation between the extremities of link i and i+1 from each Baxter arm. The forward kinematics relates the configuration of all joints to the configuration '''&lt;u>x&lt;/u>''' of the end-effector; that is, '''&lt;u>x&lt;/u>''' := '''&lt;u>x&lt;/u>'''1...*'''&lt;u>x&lt;/u>'''7
+
+===== Cooperative dual task space =====
+
+Cooperative manipulation enables a broad set of practical applications that would be restricted [[File:figueredo_adorno_cooperative_dual_task_space.png|frame|Cooperative dual task-space representation: the absolute and relative dual poses '''&lt;u>x&lt;/u>'''a and '''&lt;u>x&lt;/u>'''r, respectively]] in a single manipulator framework, such as lifting heavy and/or large payload, complex assembly, and different tasks in an unstructured environment. The Baxter Robot as a two-arm manipulator can naturally take advantage of this feature. Nonetheless, the integration of two or more arms in a complex real robot system context is not trivial and adds significant complexity.
+
+To cope with such complexities, the project relies on the cooperative dual task space (CDTS) [1-4] which provides a compact and easy to derive representation of the cooperative elements without representation singularities and without decoupling orientation and translation dynamics. The figure on the right illustrates the CDTS for two-arms manipulation. The relative dual position determines the configuration of the left end-effector with respect to the right one, whereas the absolute dual position corresponds to a frame located between the end-effectors. 
+
+
+===== Baxter Tracking Controller =====
+
+The Baxter Cooperative and Kinematics Tracking package implements a tracking capability where one of the arms tracks the kinematics and the pose of the other. For this purpose, one of the Baxter arms shall be automatically controlled by a ROS node, and will move so that the same initial pose (distance and orientation) is maintained between the end-effectors. This feature is completely different from simply copying the joint vector from one to other, as the algorithm relies on the end-effector pose from each arm regardless from their joint configuration. 
+This feature allows advanced remote control from arm to the other (initial poses may differ as the user wishes), cooperative tracking, cooperative lifting and assembly of complex shaped payloads, among others. 
+
+
+== TUTORIAL == 
+
+==== Running Demo ====
+
+Please before starting, verify that the Baxter Robot is enabled, and that the grippers and that the joint trajectory action server had been initialized
+    $ rosrun baxter_tools enable_robot.py -e;
+    $ rosrun baxter_interface joint_trajectory_action_server.py 2>&amp;1 &amp;
+
+To start the Baxter Cooperative and Kinematics Tracking, just run the baxter_dq_control node from the dq_robotics package 
+    $ rosrun dq_robotics baxter_dq_control
+
+To control the grippers using the button cuffs located in the Baxter arms, we recommend the use of the node gripper_cuff_control from the baxter_examples. This allows an easy an interesting interface with the grippers during the cooperative manipulation 
+    $ rosrun baxter_examples gripper_cuff_control.py 
+
+==== Enabling Tracking Control ====
+
+It is very simple to start the Baxter Tracking Controller. First, the user must define an original pose for both arms. Please note the end-effectors configuration since that is the original relative pose.
+
+Now, the only thing the user must do is to press the itb button in one of the arms, as shown in the Figure below. The Baxter arm will be automatically controlled as to maintain the same relative pose between both arms end-effectors. In this sense, as you move one of the end-effectors, the other arm will track the kinematics and the pose of the end-effector configuration in order to hold that original relative pose.
+
+To disable the tracking mode, just press the same itb button. Then both arms will be idle in gravity compensation mode.
+
+==== ROS Services and Topics ====
+
+The Baxter Cooperative and Kinematics Tracking also provides the user with specific ROS Services in order to allow more advanced tasks. Basically, the user can input three different services: idle mode, which yields in a gravity compensation mode for the arms, the tracking mode which implements the same Baxter Tracking Controller described above, and the set point controller, which allows the user to in put particular pose configuration for the arms 
+    $ rosservice call /baxter_dqcontrol/set_control/idle
+    $ rosservice call /baxter_dqcontrol/set_control/point
+    $ rosservice call /baxter_dqcontrol/set_control/track
+	
+In the later mode, the user can use the following topics to input the desired pose for the end-effector of the Baxter arms
+    $ rostopic pub /baxter_dqcontrol/left(right)/control/pose              (Type: geometry_msgs/Pose) 
+    $ rostopic pub /baxter_dqcontrol/left(right)/control/position          (Type: geometry_msgs/Point)
+    $ rostopic pub /baxter_dqcontrol/left(right)/control/add_translation   (Type: geometry_msgs/Point)
+
+The last topic allows the user to add a translation setpoint to the current position. This is useful when the user is interested in relative position control instead of controlling the absolute pose. 
+
+Moreover, the user can also subscribe to the topics ''pose'' and ''error_info'', which returns the end-effector current pose for each Baxter arm (geometry_msgs/Pose) and the control error given the desired setpoint (or track objective) 
+    $ rostopic echo /baxter_dqcontrol/left(right)/pose
+    $ rostopic echo /baxter_dqcontrol/left(right)/error_info
+
+== INSTALLATION/PREREQUISITES == 
+
+It uses the Baxter SDK 1.0 and above, but has only been tested on version 1.0. 
+    $ roscd; cd ../src/  
+    $ git clone -b baxter_iros_subm https://gitlab.com/figueredo/ros_dqrobotics.git
+    $ roscd
+    $ cd ..
+    $ catkin_make --pkg dq_robotics
+
+The Baxter Cooperative and Kinematics Tracking has been developed and tested on 32 and 64 bit Linux systems running ROS Hydro --- it uses catkin builder --- but could be easily adapted for previous versions using rosbuild. 
+
+
+
+&lt;pre style="color: blue">That's it! I hope you enjoy it!&lt;/pre>
+
+== References ==
+* [1] Figueredo, L.F.C. and Adorno B.V., "Switching Strategy for Flexible Task Execution using the Cooperative Dual Task Space Framework", in Proceedings of 2014 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2014. (Accepted for publication)
+* [2] L.F.C. Figueredo, B.V. Adorno, J.Y. Ishihara, and G.A. Borges, "Robust kinematic control of manipulator robots using dual quaternion representation",  in Proceedings of 2013 IEEE International Conference on Robotics and Automation (ICRA), 2013.
+* [3] Adorno, B. V., Two-arm manipulation: from manipulators to enhanced human-robot collaboration [Contribution à la manipulation à deux bras : des manipulateurs à la collaboration homme-robot], Université Montpellier 2, Montpellier, France, 2011.
+* [4] Adorno, B. V., A. P. L. Bó, and P. Fraisse. 2014. “Kinematic Modeling and Control for Human-Robot Cooperation Considering Different Interaction Roles.” Robotica (Feb. 28):1–18. doi:10.1017/S0263574714000356.
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Collaborative_Manipulation" title="Collaborative Manipulation">Collaborative Manipulation</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Collaborative_Manipulation">http://sdk.rethinkrobotics.com/wiki/Collaborative_Manipulation</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":44});});</script></body></html>

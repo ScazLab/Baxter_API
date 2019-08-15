@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Worked Example Visual Servoing - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Worked_Example_Visual_Servoing","wgTitle":"Worked Example Visual Servoing","wgCurRevisionId":3395,"wgRevisionId":0,"wgArticleId":672,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Worked_Example_Visual_Servoing","wgRelevantArticleId":672,"wgRequestId":"7332a543cd1942c230c84599","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Worked_Example_Visual_Servoing rootpage-Worked_Example_Visual_Servoing skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Worked+Example+Visual+Servoing&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Worked Example Visual Servoing</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Worked_Example_Visual_Servoing&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Worked_Example_Visual_Servoing&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Worked_Example_Visual_Servoing&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Worked_Example_Visual_Servoing" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Worked_Example_Visual_Servoing" title="Worked Example Visual Servoing">Worked Example Visual Servoing</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Worked_Example_Visual_Servoing&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Worked_Example_Visual_Servoing&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">
+
+== WIP ==
+This page is under construction
+----
+----
+
+== Active Robots Undergraduate Teaching Resources | Worked Example | Visual Servoing, Pick and Place ==
+* Developed by: [[User:Activerobots#Vyvyan_Pugh | Vyvyan Pugh]]  - Senior Programmer, [http://www.active-robots.com/ Active Robots]
+* Wikified by: [[User:Activerobots#Horatio_Coles-Abell | Horatio Coles-Abell]]  - Cybernetics Engineer, [http://www.active-robots.com/ Active Robots]
+
+This entry forms part of the conversion of Active Robots Undergraduate Teaching Resources for the Baxter Research Robot from their current PDF form to entries on this wiki. 
+Feedback from Lecturers/Teachers/Researchers/Users is welcome and can be submitted to [[User:Activerobots | Active Robots]].
+
+This entry is a worked example for Undergraduate study, it is constructed and simplified for an intended target audience of '''1st-2nd year undergraduates''' [Robotics/Engineering/Computer Science etc.] in a lab exercise environment. As such the code is written in a simplified manner which aims for readability and understanding, over, efficiency or elegance.
+
+== Video ==
+{{#ev:youtube|d-a82DYlaIE|500|left}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+== Summary ==
+This worked example will focus on:
+*Visual Servoing.
+**Camera -- End-effector -- Workspace | relationship and calibration.
+**Visual Object Recognition.
+**Pick target selection.
+Techniques that are used but not focused on:
+*Inverse Kinematics
+**IK poses are used to move the arm in the workspace, in-depth knowledge of IK is not required.
+
+== Task ==
+
+Place a selection of scattered golf balls from the table into a segmented tray.
+
+*Utilise Image Analysis and Visual Servoing to detect and locate golf balls on a table.
+*Use Image Analysis and Visual Servoing to detect and locate the destination.
+*Use Basic planning to choose a ball and plan a grip.
+*Use Inverse Kinematics to position the arm, Pick and Place the golf balls.
+
+== Prerequisites ==
+*Baxter Research Robot [Firmware >= v0.7.0]
+*Workstation [RSDK >= v0.7.0]
+*1x Rethink Robotics Electric Parallel Gripper
+*Table
+*Golf Balls
+*Segmented Tray [4x3]
+
+For this example we will use the Left arm (Baxter's Left) and further positional instructions will be based on this. It is entirely possible to modify the parameters of this example to utilise the Right arm.
+
+Attach the Electric Parallel Gripper to Baxter's Left arm and fit the 'short', 'narrow' fingers in position '2', with flat rubber fingertips added.
+----
+----
+
+== Camera - Workspace Relationship ==
+The positions of the golf balls and segmented tray must be found with sufficient accuracy for the arm to pick up the golf balls and place them in the segmented tray. Analysing Baxter's hand camera images will give the angles from the camera to the balls and the tray. If the distance of the arm to the table is known and the pose of the arm is known the objects position relative to Baxter can be determined.
+
+Once a golf ball's position is known the arm can be used to pick up the the ball and place it in the segmented tray.
+
+These workspace coordinates are in relation to Baxter's Base Reference Frame, this is a Cartesian coordinate system in metres that is used by Baxter's Forward and Inverse Kinematics Solvers to relate the pose of Baxter's limbs to the workspace.
+
+== Camera Calibration Factor ==
+In order to use Baxter's camera to find the position of an object it is necessary to know the distance from the camera to an object and the width of a pixel at that distance. The following experiment was performed to find a camera calibration factor: The width of a pixel at one metre.
+
+The image alone can only give the angle of an image point: 
+
+[[File:Active_golf_1.jpg]]
+
+A target was prepared consisting of 24 2cm squares spaced 4cm apart in a 6 by 4 grid. This was placed at varying distances from a camera and the images analysed to find the centre of each square in pixel units.
+
+Each image was converted to a grey scale image. An intensity threshold value used to convert the grey scale image to a black and white image and any black areas touching the image removed. An area threshold was used to remove small black areas in the centre of the image to leave what should be the target squares. The squares were converted to grey as centre of each target square was found and the centres marked with a circular disk to produce the image below:
+
+Analysis of the results gave a camera calibration factor of 2.5mm per pixel at 1 metre.
+
+[[File:Active_golf_2.jpg]]
+
+== Image pixel to Workspace coordinate conversion ==
+
+All arm movements can be performed with Baxter's arm pointing vertically down at the table. This simplifies the conversion of image pixel coordinates to Baxter workspace coordinates.
+
+Knowing the pose of Baxter's arm, the camera calibration factor and the height above the table pixel values can be converted to Baxter coordinates (relative to the gripper pinch point) using the following formula:
+
+
+&lt;span style="font-size:150%;">'''B = (Pp – Cp) * cc * d + Bp + Go'''&lt;/span>
+
+
+where:
+*B = Baxter coordinates	
+*Pp = pixel coordinates	
+*Cp = centre pixel coordinates
+*Bp = Baxter pose
+*Go = gripper offset
+*cc = camera calibration factor
+*d = distance from table
+
+
+Lines '''201 to 207 CHECK''' convert an image pixel's coordinates to Baxter workspace coordinates.
+
+The inverse function can be used to convert Baxter coordinates to pixel coordinates ('''lines 194 to 200 CHECK''').
+
+This technique can be improved to allow for any angle that the camera is looking at the table.
+
+'''d''' is found using the infra red range sensor on Baxter's wrist. A calibration program was written to find the distance of the table from a known pose (looking down over the table). This should be used with a clear table as objects on the table can give a misleading value. This setup program should be used prior to running the example. The setup.dat file can be manually edited if needed.
+
+== Locating the Segmented Tray in the workspace ==
+
+If Baxter's arm is placed over the region of the table where the segmented tray is expected to be it's arm camera should produce an image of the segmented tray. The tray is expected to be on the same side as the arm used (in this case the Left [remember, Baxter's Left])
+
+This image can then be analysed to find the segmented tray's coordinates in the workspace.
+
+Lines '''150 to 193 CHECK''' are subroutines that handle parameter setting, opening and closing of the cameras. 
+
+Lines '''280 to 311 CHECK''' handle subscription to the cameras.
+
+The [http://docs.opencv.org/doc/tutorials/imgproc/imgtrans/canny_detector/canny_detector.html Canny Edge Detector] is a simple technique to find the edges of objects where there is a high contrast between the objects and the background. We are using the [http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#canny/ OpenCV implementation]. The Canny image of this camera feed is shown below.
+
+[[File:Active_golf_3.jpg]][[File:Active_golf_4.jpg]]
+
+The Canny image show some bounded regions, notable some golf balls and the segmented tray. Note that one of the gripper fingers obscures part of the tray. As the segmented tray is the largest bounded region if the bounded regions can be isolated and the largest area selected the outline of the tray will have been found.
+
+To find the bounded regions the outer region of the Canny image is flood filled with white pixels (lines 257 to 279) and the areas of the remaining bounded regions calculated. All small areas and all but the largest bounded region are flooded with white pixels (lines 227 to 256). If there is a large bounded area left it is assumed to represent the segmented tray.
+
+If there is no bounded area, the arm position is dithered '''(Lines 524 to 530) CHECK''' and a new image evaluated. Upon finding a bounded area the centre of the area is found through averaging the pixel coordinates and the arm is moved towards the centre of this area. This is performed iteratively until the displacement is below a threshold value. This improves the accuracy of the calculated tray position. The camera has a clear view of the tray so the gripper does not obscure part of the tray and the camera calibration is more accurate in the centre of the image.
+
+[[File:Active_golf_5.jpg]][[File:Active_golf_6.jpg]]
+
+canny_it ('''lines 531 to 564 CHECK''') control the search for the tray and calls itself repeatedly until the centre of the tray has been found to within the required tolerance.
+
+[[File:Active_golf_7.jpg]]
+
+== Evaluating Tray Orientation and Interpolating 'Place' Locations ==
+
+A good indication of the position of the bottom left corner of the egg tray is given by the left most pixel in the bounded area and the position of the bottom right corner is given by the lowest pixel in the bounded area (lines 612 to 639). The coordinates of the two corners and the coordinates of the centre of the tray can be used to calculate the position of the other two corners (lines 653 to 665) and the orientation of the tray (lines 567 to 578).
+
+Given two corners '''C1''' and '''C2''' and the centre '''M''' of a rectangle the other two corners are given by the vector equations:
+
+*'''C3 = 2 * M – C1'''
+*'''C4 = 2 * M – C2'''
+
+
+The segmented tray can hold 12 golf balls, in a 3x4 pattern. The lengths of the sides of the tray will give the orientation of the tray ('''lines 567 to 578 CHECK'''):
+
+*If '''(C1 – C2).(C1 – C2) > (C2 – C3).(C2 – C3)''' then '''C1 -> C2''' is the long side.
+*If '''(C1 – C2).(C1 – C2) &lt; (C2 – C3).(C2 – C3)''' then '''C2 -> C3''' is the long side.
+
+
+If '''C1 -> C2''' is the long side the egg places are given by ('''lines 579 to 598 CHECK'''):
+*'''C1 + (2 * i – 1) * V1 + (2 * j – 1) * V2'''
+
+where:
+*'''V1 = (C2 – C1) / 8		i = {1, 2, 3, 4}'''
+*'''V2 = (C3 – C2) / 6		j = {1, 2, 3}'''
+
+[[File:Active_golf_8.jpg]]
+
+== Locating the Golf Balls ==
+
+The golf balls are round so the [http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#houghcircles Hough circles] algorithm is a suitable technique for locating them. The Hough circles algorithm looks for potential circles in gray scale intensity gradient images. For each pixel in the image and a range of radii it considers each pixel that lies on the radius and if sufficient pixels are of high intensity claims a circle.
+
+If one of Baxter's arms is placed over the golf balls the camera image should show the golf balls. Applying Hough circles to this image to find circles of roughly the right size to indicate the presence of golf balls and superimposing the circles on the original image shows the positions of some of the golf balls ('''lines 380 to 425 CHECK''').
+
+Selecting the left most ball in the image as the next candidate to transfer to the egg tray helps to avoid selecting balls that have already been transferred to the egg tray and should select a ball on the edge of the cluster ('''lines 328 to 337 CHECK''').
+
+[[File:Active_golf_9.jpg]]
+
+Moving the arm over the selected ball and applying Hough circles to the new image may find a better candidate ball.
+
+The Hough circles algorithm finds most if not all of the golf balls in the image. The minimum and maximum radius parameters were adjusted to try and maximise the number of balls found and reduce the number of false readings. False readings could occur when:
+*The camera view strayed over the edge of the table.
+*The algorithm found balls in the tray.
+*The algorithm detected circles in the structure of the tray.
+
+An exclusion zone was added to the golf ball selection routine to help prevent golf balls and artifacts in the egg tray from being considered for selection. Calculating the egg tray exclusion zone in pixels from the egg tray position in Baxter coordinates was prone to error. A simple exclusion of all centres within a band on the right side of the image proved more successful. Both exclusion techniques were used ('''lines 404 to 414 and 372 to 378 CHECK''').
+
+Occasionally there was indecision about which ball to select. Baxter would select one ball and move towards it. Then it would decide that another ball should be selected and move towards that ball. Once close to the second ball it would decide that the first ball should be selected. In this way it would hunt backwards and forwards between the two balls. This was caused be the two balls having similar left right coordinates and their calculated centres shifting slightly with a change in viewing angle. This indecision was avoided by changing the selection criteria to ('''lines 338 to 344 CHECK'''):
+
+*If the left most ball is significantly to the left of the others balls select the left most ball .
+*Otherwise if the left most ball is below the second most left ball select the right most ball .
+*Otherwise select the second most left ball.
+
+Baxter's arm is iteratively moved over the selected ball and the image analysed until the arm is above the selected ball to within a given tolerance.
+
+== 'Picking' the Golf Balls ==
+
+Locating a golf ball to transfer to the tray leaves Baxter's arm above the golf ball. The displacement needed to lower the arm over is easily calculated.
+
+With a few widely spaced golf balls on the table picking up a golf ball presents no problems. However with 12 balls on the table it is likely that one of the gripper arms will touch another ball and knock it sideways. This is only a problem if a golf ball is moved out of the field of view or Baxter's reach.
+
+There are a number of possible remedies:
+
+*Slow down Baxter's arm movements, especially when close to the golf balls.
+*Analyse the neighbourhood of the selected golf ball and rotate the gripper to the best angle to minimise disruption of neighbouring balls.
+
+Baxter's arm movements were slowed from half speed to one tenth speed when moving to and from the table to pick up a ball.
+
+The angle between the selected ball and it's nearest neighbour was calculated and the grippers set at a right angle to this angle when picking up the selected ball ('''lines 345 to 371 CHECK'''). It was found that if the grippers are rotating as the arm descends they are more likely to hit a neighbouring golf ball as the arm descends than if they are rotated before picking up a golf ball.
+
+Further improvements in the gripper angle could be achieved by considering all neighbours within a radius of the selected ball and finding the best compromise angle for the gripper.
+
+Rotating the gripper and moving slowly results in minimal disturbance of neighbouring golf balls. Having gripped a golf ball the ball is lifted vertically and transferred to a position a little above the next free space in the tray and dropped.
+
+== Final Thoughts ==
+
+This example should have given you a basic understanding of how you can link image inputs with actuation in the workspace and some basic techniques that can be used to achieve this. As previously stated this example is intentionally simplified for undergraduate lab session use and many aspects of this solution can be improved. 
+
+== Code ==
+
+https://www.active-robots.com/fileuploader/download/download/?d=0&amp;file=custom%2Fupload%2FFile-1406558985.zip
+
+== Installation ==
+
+Create a package 'activerobots'
+
+ cd ~/ros_ws/src
+ catkin_create_pkg activerobots
+
+Create src directory
+
+ cd ~/ros_ws/src/activerobots
+ mkdir src
+
+Unzip the archive into the src directory
+
+Give execute permissions
+
+ cd ~/ros_ws/src/activerobots/src
+ chmod +x golf.py
+ chmod +x golf_setup.py
+
+== Use ==
+
+[[RSDK_Shell | Initialise a ROS terminal:]]
+ cd ~/ros_ws; ./baxter.sh
+Run the setup program with a clear table to evaluate the height of your worksurface
+ rosrun activerobots golf_setup.py
+Run the main program
+ rosrun activerobots golf.py
+
+== License / Disclaimer ==
+
+Licensed for Educational use only.
+
+Copyright (c) 2013-2014, Active Robots Ltd
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+3. Neither the name of Active Robots nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+== WIP ==
+This page is under construction
+----
+----
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Worked_Example_Visual_Servoing" title="Worked Example Visual Servoing">Worked Example Visual Servoing</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Worked_Example_Visual_Servoing">http://sdk.rethinkrobotics.com/wiki/Worked_Example_Visual_Servoing</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":34});});</script></body></html>

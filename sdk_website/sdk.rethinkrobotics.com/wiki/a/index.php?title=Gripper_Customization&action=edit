@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Gripper Customization - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Gripper_Customization","wgTitle":"Gripper Customization","wgCurRevisionId":4535,"wgRevisionId":0,"wgArticleId":585,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Gripper_Customization","wgRelevantArticleId":585,"wgRequestId":"f8836d93beb1419fe825f2e8","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Gripper_Customization rootpage-Gripper_Customization skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Gripper+Customization&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Gripper Customization</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Gripper_Customization&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Gripper_Customization&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Gripper_Customization&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Gripper_Customization" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Gripper_Customization" title="Gripper Customization">Gripper Customization</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Gripper_Customization&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Gripper_Customization&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">=Gripper Customization=
+The single largest change in RSDK 1.2.0 is the ability to add joints and linkages to Baxter's [URDF](http://wiki.ros.org/urdf) at runtime. 
+
+==Mutable Robot State Publisher==
+To have a modifiable robot_description parameter at '''runtime''', we have forked the ROS [http://wiki.ros.org/robot_state_publisher robot state publisher] into
+the [https://github.com/RethinkRobotics/mutable_robot_state_publisher mutable_robot_state_publisher] or MRSP. The MRSP gives you the ability to, at runtime, update the robot_description parameter by passing a URDF Fragment of the relevant piece of URDF that you want to add or modify. The MRSP uses a ROS Topic interface on the '''/robot/urdf''' topic, using the [https://github.com/RethinkRobotics/baxter_common/blob/master/baxter_core_msgs/msg/URDFConfiguration.msg baxter_core_msgs/URDFConfiguration] message. &lt;br/>
+In order to preserve the core pieces of the robot's robot_description, a new parameter was added into the mix, the '''robot_base_description'''. The robot_base_description contains the core pieces of robot that cannot be removed or modified. The robot_base_description is loaded as the MRSP node is started (when the robot boots), and is thereafter immutable.  
+    Interface:
+        topic: /robot/urdf
+        message type: [https://github.com/RethinkRobotics/baxter_common/blob/master/baxter_core_msgs/msg/URDFConfiguration.msg baxter_core_msgs/URDFConfiguration.msg]
+Here you can see a comparison between the '''robot_base_description''' and '''robot_description''' parameters onboard the robot:
+
+&lt;gallery mode=packed  widths="500px" heights="500px">
+File:Robot_base_description2.png|The URDF in the '''robot_base_description''' Parameter. These links and joints are '''immutable'''.
+File:Robot_description2.png|The URDF in the '''robot_description''' Parameter. Every link and joint beyond those the robot_base_description '''can''' be modified ('''mutable'''). You can even add arbitrary new linkages and joints of your own!
+&lt;/gallery>
+
+=== Where does the robot_base_description end? ===
+For Baxter, the '''left_hand''' and '''right_hand''' links are the end of '''robot_base_description''', and they are the parent links that you will want to attach to when designing end effector mount points for custom end effectors. If you desire to replace the end effector completely, '''&lt;side>_gripper_base''' needs to be the name of your top-level joint in your added URDF fragment. 
+
+Similarly, the '''torso''' link is the end of the base of the robot. To replace the pedestal with your own, you will need to name your fragment's top-level joint '''pedestal_fixed'''.&lt;br/>
+With that said, you can attach new trees of joints and links to any link that currently exists on the robot.
+
+=== URDFConfiguration Message ===
+    [https://github.com/RethinkRobotics/baxter_common/blob/master/baxter_core_msgs/msg/URDFConfiguration.msg baxter_core_msgs/URDFConfiguration.msg]
+Let's see an example of this in action. We will start simple. Let's replace Baxter's pedestal with a block:
+First, download my &lt;strike>beautifully&lt;/strike> hastily constructed [https://gist.githubusercontent.com/rethink-imcmahon/7781e0b72eeb1ee6100d/raw/62652ef098dcff4e99c8dfd962b3f6d7887dc944/block.yaml block URDF Fragment yaml]:
+&lt;code syntax='xml'>
+    time:
+      secs: 1449703751
+      nsecs: 232993
+    link: 'torso'
+    joint: 'pedestal_fixed'
+    urdf: '&lt;robot name="pedestal">
+      &lt;link name="block">
+        &lt;inertial>
+          &lt;origin xyz="0.0 0.0 0.0" />
+          &lt;mass value="40" />
+          &lt;inertia  ixx="0.5" ixy="0.0"  ixz="0.0"  iyy="0.5"  iyz="0.0"  izz="0.5" />
+        &lt;/inertial>
+        &lt;visual>
+          &lt;origin xyz="0.0 0.0 0.0"/>
+          &lt;geometry>
+            &lt;box size="0.5 0.5 0.5" />
+          &lt;/geometry>
+          &lt;material name="holidaygreen">
+             &lt;color rgba="0.0 1 0 1" />
+          &lt;/material>
+        &lt;/visual>
+        &lt;collision>
+          &lt;origin xyz="0.0 0.0 0.0"/>
+          &lt;geometry>
+            &lt;box size="0.5 0.5 0.5" />
+          &lt;/geometry>
+        &lt;/collision>
+      &lt;/link>
+      &lt;joint name="pedestal_fixed" type="fixed">
+          &lt;origin rpy="0 0 0" xyz="0.0 0.0 -0.32"/>
+          &lt;parent link="torso"/>
+          &lt;child link="block"/>
+      &lt;/joint>
+    &lt;/robot>'
+&lt;/code>
+Let's go over the fields in this fragment before we go further.
+
+'''time:'''&lt;br/>
+This field is used as the unique identifier to signal to the MRSP that a "new" change has occurred. If the time stamp here is less than the timestamp of the last change, the MRSP will ignore this request entirely. If you are populating this field within your code, you can use [http://wiki.ros.org/roscpp/Overview/Time ROS Time].&lt;br/>
+'''link:'''&lt;br/>
+This is the parent link which you want your fragment to attach to. This link ''must'' be a valid link in the robot's current URDF. Because we are replacing the pedestal, this needs to be the '''torso''' link.&lt;br/>
+'''joint:'''&lt;br/>
+This is the top level joint which will attach to the parent link specified above. This link '''must''' exist in the next URDF fragment field.&lt;br/>
+'''urdf:'''&lt;br/>
+Finally, A URDF! This URDF fragment must start and end with the &lt;robot> tags to be considered valid URDF. Here, we are just adding a fixed joint and block link. However, you can add arbitrarily complex valid URDF XML in this section. Keep in mind, you are responsible for publishing any '''revolute''' or '''prismatic''' joints that you add here to Baxter's '''/robot/joint_states''' topic. Otherwise RViz will show any downstream linkages as grey and at the center of the robot's torso (indicating the robot state publisher cannot give valid transforms for these links).
+
+=== URDF Replacing Example ===
+Ok, back to our YAML file. First, we need to update the time inside of the YAML with your current time (you're existing in the future!).&lt;br/>
+You can get your computer's current time with this bash command:&lt;br/> 
+&lt;code>
+    $ date +'secs:%s   nsecs:%N'
+&lt;/code>
+Now, we need to publish the URDFConfiguration message to the '''/robot/urdf''' topic. From a '''baxter.sh''' shell:
+    $ rostopic pub -l /robot/urdf baxter_core_msgs/URDFConfiguration -f block.yaml
+Now, to view our masterpiece in RViz:
+    $ rosrun rviz rviz
+&lt;gallery mode=packed  widths="500px" heights="500px">
+File:Baxter_block.png | The '''robot_description''' was updated with our bright green block
+&lt;/gallery>
+To revert Baxter back to normal, download this yaml:
+&lt;code syntax="bash">
+    $ wget https://gist.githubusercontent.com/rethink-imcmahon/ef8aca16e3f3a0020826/raw/d1507ce5262ec197c7a31411c7925b266a3f0aa2/pedestal.yaml
+    // update the timestamp inside the yaml with the outputs of $ date +'secs:%s   nsecs:%N'
+    $ rostopic pub -l /robot/urdf baxter_core_msgs/URDFConfiguration -f pedestal.yaml
+&lt;/code>
+
+==Endpoints==
+In addition to modifying the robot's URDF, the mutable_robot_state_publisher maintains the robot's kinematic chains. These are chains of joints which allow the robot to do advanced motion planning. The end of this chain is denoted as the "endpoint" of the robot. In Baxter's specific case, there are two of these chains, one for each arm:
+
+Chain 1) from '''/base -> /left_gripper'''. The transform can be viewed either via TF:&lt;br/>
+    &lt;code>$ rosrun tf tf_echo /base /left_gripper&lt;br/>
+    At time 1454447728.488&lt;br/>
+    - Translation: [0.547, 0.166, 0.179]&lt;br/>
+    - Rotation: in Quaternion [0.129, 0.991, -0.030, -0.009]&lt;br/>
+                in RPY (radian) [-3.079, -0.009, 2.883]&lt;br/>
+                in RPY (degree) [-176.421, -0.525, 165.197]&lt;br/>
+    &lt;/code> &lt;br/>
+or by echoing the '''endpoint_state''' topic straight from the robot:&lt;br/>
+    &lt;code synatax=bash>
+    $ rostopic echo -n 1 /robot/limb/left/endpoint_state
+    header: 
+      seq: 225575615
+      stamp: 
+        secs: 1454448022
+        nsecs: 509830220
+      frame_id: ''
+    pose: 
+      position: 
+        x: 0.546928461115
+        y: 0.16673052608
+        z: 0.17892916178
+      orientation: 
+        x: 0.12768790851
+        y: 0.991310445483
+        z: -0.0304320539757
+        w: -0.00856088709305
+    twist: 
+      linear: 
+        x: -0.016083629389
+        y: -0.00160906701015
+        z: -0.00548363789644
+      angular: 
+        x: -0.00792128042619
+        y: 0.0393447730243
+        z: -0.0123524196563
+    wrench: 
+      force: 
+        x: -4.87127971649
+        y: 5.12292146683
+        z: 1.91428875923
+      torque: 
+        x: -2.10366725922
+        y: -1.22839438915
+        z: -0.276583731174
+    ---
+
+&lt;/code>&lt;br/>
+and Chain 2) from '''/base -> /right_gripper'''. The transform can be viewed either via TF:&lt;br/>
+    &lt;code>$ rosrun tf tf_echo /base /right_gripper
+    &lt;/code>&lt;br/>
+or by echoing the '''endpoint_state''' topic straight from the robot:&lt;br/>
+    &lt;code synatax=bash>
+    $ rostopic echo -n 1 /robot/limb/right/endpoint_state
+    &lt;/code>&lt;br/>
+&lt;br/>
+==End Effectors and Endpoint Location==
+There is an "end_effector" ROS node running onboard Baxter which detects when different end effectors are plugged &amp; unplugged. This node uses the same URDFConfiguration message above to load the "default" configuration for each end effector. In these defaults the &lt;side>_gripper_base (mutable link) is co-located with &lt;side>_hand (immutable link). The '''&lt;side>_gripper''' frames will translate in the Z direction depending on the connected end effector (see below). Although '''&lt;side>_gripper''' frame is mutable and moveable, it '''must''' exist
+for Baxter's kinematic chains to work properly. Otherwise, should you remove '''&lt;side>_gripper''' entirely, you will find Baxter's Inverse Kinematic ROS Service calls failing rather quickly.
+
+&lt;gallery mode=packed  widths="300px" heights="300px">
+File:Passive_left_gripper.png | '''Passive''' end effector. &lt;side>_gripper is co-located with &lt;side>_hand frame
+File:Left_gripper_suction.png | '''Suction''' end effector. &lt;side>_gripper is a 5cm translation along the Z axis of &lt;side>_hand.
+Electric_gripper_tf_update.png | '''Electric''' end effector. &lt;side>_gripper is calculated to be at the fingertip location.
+&lt;/gallery>
+
+
+===How exactly have the &lt;side>_gripper endpoints changed?===
+Prior to RSDK 1.2, 
+====Passive Gripper====
+{| class="wikitable"
+| 1.1.1 and prior
+| 1.2.0
+|-
+| 
+  &lt;robot name="left_null_gripper_old">
+      &lt;link name="left_gripper_base">
+          &lt;inertial>
+              &lt;origin xyz="0 0 0" rpy="0 -0 0" />
+              &lt;mass value="0" />
+              &lt;inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+          &lt;/inertial>
+      &lt;/link>
+      &lt;link name="left_gripper">
+          &lt;inertial>
+              &lt;origin xyz="0 0 0" rpy="0 -0 0" />
+              &lt;mass value="0.0001" />
+              &lt;inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08" />
+          &lt;/inertial>
+      &lt;/link>
+      &lt;joint name="left_gripper_base" type="fixed">
+          &lt;origin xyz="0 0 0" rpy="0 -0 0" />
+          &lt;parent link="left_hand" />
+          &lt;child link="left_gripper_base" />
+      &lt;/joint>
+      &lt;joint name="left_endpoint" type="fixed">
+          &lt;span style="background:#F08080">&lt;origin xyz="0 0 0.025" rpy="0 -0 0" />&lt;/span>
+          &lt;parent link="left_gripper_base" />
+          &lt;child link="left_gripper" />
+      &lt;/joint>
+ &lt;/robot>
+| 
+  &lt;robot name="left_null_gripper">
+      &lt;link name="left_gripper_base">
+        &lt;inertial>
+          &lt;origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
+          &lt;mass value="0.0001"/>
+          &lt;inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08"/>
+        &lt;/inertial>
+      &lt;/link>
+      &lt;link name="left_gripper">
+        &lt;inertial>
+          &lt;origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
+          &lt;mass value="0.0001"/>
+          &lt;inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08"/>
+        &lt;/inertial>
+      &lt;/link>
+      &lt;joint name="left_gripper_base" type="fixed">
+        &lt;origin rpy="0 0 0" xyz="0 0 0"/>
+        &lt;parent link="left_hand"/>
+        &lt;child link="left_gripper_base"/>
+      &lt;/joint>
+      &lt;joint name="left_endpoint" type="fixed">
+        &lt;span style="background:#32CD32">&lt;origin rpy="0 0 0" xyz="0 0 0"/>&lt;/span>
+        &lt;parent link="left_gripper_base"/>
+        &lt;child link="left_gripper"/>
+      &lt;/joint>
+    &lt;/robot>
+|}
+
+====Suction Gripper====
+{| class="wikitable"
+| 1.1.1 and prior
+| 1.2.0
+|-
+| 
+  &lt;robot name="left_vacuum_gripper_old">
+      &lt;link name="left_gripper_base">
+          &lt;inertial>
+             &lt;span style="background:#F08080"> &lt;mass value="0.0475" />
+              &lt;origin xyz="-0.0005 0 0.009" rpy="0 -0 0" />
+              &lt;inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />&lt;/span>
+          &lt;/inertial>
+      &lt;/link>
+      &lt;link name="left_gripper">
+          &lt;inertial>
+              &lt;mass value="0.0001" />
+              &lt;origin xyz="0 0 0" rpy="0 -0 0" />
+              &lt;inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08" />
+          &lt;/inertial>
+      &lt;/link>
+      &lt;joint name="left_gripper_base" type="fixed">
+          &lt;origin xyz="0 0 0" rpy="0 -0 0" />
+          &lt;parent link="left_hand" />
+          &lt;child link="left_gripper_base" />
+      &lt;/joint>
+      &lt;joint name="left_endpoint" type="fixed">
+          &lt;span style="background:#F08080">&lt;origin xyz="0 0 0" rpy="0 -0 0" />&lt;/span>
+          &lt;parent link="left_gripper_base" />
+          &lt;child link="left_gripper" />
+      &lt;/joint>
+ &lt;/robot>
+| 
+  &lt;robot name="left_vacuum_gripper">
+    &lt;link name="left_gripper_base">
+  &lt;span style="background:#32CD32">    &lt;collision>
+        &lt;origin rpy="0 3.14159265359 3.14159265359" xyz="0.0 0.0 0.04"/>
+        &lt;geometry>
+          &lt;cylinder length="0.08" radius="0.02"/>
+        &lt;/geometry>
+        &lt;material name="darkred">
+          &lt;color rgba=".5 .1 .1 1"/>
+        &lt;/material>
+      &lt;/collision>
+      &lt;inertial>
+        &lt;origin rpy="0 3.14159265359 3.14159265359" xyz="0.0 0.0 0.0"/>
+        &lt;mass value="0.3"/>
+        &lt;inertia ixx="2e-08" ixy="0" ixz="0" iyy="3e-08" iyz="0" izz="2e-08"/>
+      &lt;/inertial>&lt;/span>
+    &lt;/link>
+    &lt;link name="left_gripper">
+      &lt;inertial>
+        &lt;origin rpy="0 0 0" xyz="0 0 0"/>
+        &lt;mass value="0.0001"/>
+        &lt;inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0.0"/>
+      &lt;/inertial>
+    &lt;/link>
+    &lt;joint name="left_gripper_base" type="fixed">
+      &lt;origin rpy="0 0 0" xyz="0 0 0.0"/>
+      &lt;parent link="left_hand"/>
+      &lt;child link="left_gripper_base"/>
+    &lt;/joint>
+    &lt;joint name="left_endpoint" type="fixed">
+      &lt;span style="background:#32CD32">&lt;origin rpy="0 0 0" xyz="0 0 0.08"/> &lt;/span>
+      &lt;parent link="left_gripper_base"/>
+      &lt;child link="left_gripper"/>
+    &lt;/joint>
+  &lt;/robot>
+|}
+
+====Electric Gripper====
+{| class="wikitable"
+| 1.1.1 and prior
+| 1.2.0
+|-
+| 
+  &lt;robot name="left_electric_gripper_old">
+      &lt;link name="left_gripper_base">
+          &lt;inertial>
+              &lt;span style="background:#F08080">&lt;origin xyz="0.0014 0 0.024" rpy="0 -0 0" />
+              &lt;mass value="0.28" />
+              &lt;inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />&lt;/span>
+          &lt;/inertial>
+      &lt;/link>
+      &lt;link name="left_gripper">
+          &lt;inertial>
+              &lt;origin xyz="0 0 0" rpy="0 -0 0" />
+              &lt;mass value="0.0001" />
+              &lt;inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08" />
+          &lt;/inertial>
+      &lt;/link>
+      &lt;joint name="left_gripper_base" type="fixed">
+          &lt;span style="background:#F08080">&lt;origin xyz="0 0 0" rpy="0 -0 0" />&lt;/span>
+          &lt;parent link="left_hand" />
+          &lt;child link="left_gripper_base" />
+      &lt;/joint>
+      &lt;joint name="left_endpoint" type="fixed">
+          &lt;span style="background:#F08080">&lt;origin xyz="0 0 0.045" rpy="0 -0 0" />&lt;/span>
+          &lt;parent link="left_gripper_base" />
+          &lt;child link="left_gripper" />
+      &lt;/joint>
+ &lt;/robot>
+| 
+  &lt;robot name="left_electric_gripper">
+    &lt;link name="left_gripper_base">
+      &lt;span style="background:#32CD32">&lt;collision>
+        &lt;origin rpy="-1.57079632679 3.14159265359 0" xyz="0.0 0.0 0"/>
+        &lt;geometry>
+          &lt;cylinder length="0.1" radius="0.029"/>
+        &lt;/geometry>
+        &lt;material name="darkred">
+          &lt;color rgba=".5 .1 .1 1"/>
+        &lt;/material>
+      &lt;/collision>&lt;/span>
+      &lt;span style="background:#32CD32">&lt;inertial>
+        &lt;origin rpy="-1.57079632679 3.14159265359 0" xyz="0.0 0.0 0.0"/>
+        &lt;mass value="0.3"/>
+        &lt;inertia ixx="2e-08" ixy="0" ixz="0" iyy="3e-08" iyz="0" izz="2e-08"/>
+      &lt;/inertial>&lt;/span>
+    &lt;/link>
+    &lt;link name="left_gripper">
+      &lt;inertial>
+        &lt;origin rpy="0 0 0" xyz="0 0 0"/>
+        &lt;mass value="0.0001"/>
+        &lt;inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0.0"/>
+      &lt;/inertial>
+    &lt;/link>
+    &lt;joint name="left_gripper_base" type="fixed">
+      &lt;span style="background:#32CD32">&lt;origin rpy="0 0 0" xyz="0 0 0.025"/>&lt;/span>
+      &lt;parent link="left_hand"/>
+      &lt;child link="left_gripper_base"/>
+    &lt;/joint>
+    &lt;joint name="left_endpoint" type="fixed">
+      &lt;span style="background:#32CD32">&lt;origin rpy="0 0 0" xyz="0 0 0.1327"/>&lt;/span>
+      &lt;parent link="left_gripper_base"/>
+      &lt;child link="left_gripper"/>
+    &lt;/joint>
+  
+  &lt;/robot>
+|}
+
+===Modifying the Electric Gripper and Endpoint===
+
+= Mass Modifications =
+
+== Gripper and Object Mass ==
+The user is allowed to set an expected mass for grippers as well as for grasped objects.  This involves copying in a portion of a urdf pertaining to those properties.  The previous section shows the user how to modify the end effector URDF. The end effector frames can change according to your specific usage, so we create two "fixed" frames that will allow the user to add additional mass to the gripper (that was not specified in their URDF) and account for object mass when it is grasped. These two frames are in parallel to the &lt;side>_gripper_base and &lt;side>_gripper end effector frames. They are: &lt;br/>
+'''&lt;side>_gripper_mass''': for any additional mass not accounted for in the URDF&lt;br/>
+'''&lt;side>_gripper_object''': for object mass. This is only accounted for when the robot is "grasping" an object.&lt;br/>
+=== Gripper ID's ===
+Since this is an "end effector" configuration, the user needs to supply the robot with the expected "id" of the gripper:&lt;br/>
+'''Legacy Gripper ID''' (only incredibly old Rethink-electric grippers): &lt;code>65664&lt;/code>&lt;br/>
+'''Rethink Electric Gripper Id''':&lt;code>65538&lt;/code>&lt;br/>
+'''Rethink Suction Cup Gripper Id''':&lt;code>65537&lt;/code>&lt;br/>
+'''No gripper, or custom gripper Id''':&lt;code>131073&lt;/code>&lt;br/>
+
+=== Gripper Mass ===
+The command for setting the mass for a given gripper is:
+&lt;source lang="bash">
+    $ rostopic pub -1 /robot/end_effector/&lt;limb>_gripper/command baxter_core_msgs/EndEffectorCommand '{ id : &lt;gripper_id>,  command : "configure", args : "{ \"urdf\":{ \"name\": \"&lt;limb>_gripper_mass\",  \"link\": [ { \"name\": \"&lt;limb>_hand\" }, { \"name\": \"&lt;limb>_gripper_mass\", \"inertial\": { \"mass\": { \"value\": &lt;mass: in kg> }, \"origin\": { \"xyz\": [0.0014, 0.0, 0.074] } } } ] }}"}'
+&lt;/source>
+The maximum mass you should set here is 2.27 (~5 lbs)
+For example, to set the mass of the right gripper to 2.27 kilograms:
+&lt;source lang="bash">
+    $ rostopic pub -1 /robot/end_effector/right_gripper/command baxter_core_msgs/EndEffectorCommand '{ id : 131073,  command : "configure", args : "{ \"urdf\":{ \"name\": \"right_gripper_mass\",  \"link\": [ { \"name\": \"right_hand\" }, { \"name\": \"right_gripper_mass\", \"inertial\": { \"mass\": { \"value\": 2.27 }, \"origin\": { \"xyz\": [0.0014, 0.0, 0.074] } } } ] }}"}'
+&lt;/source>
+and to set it to zero:
+&lt;source lang="bash">
+    $ rostopic pub -1 /robot/end_effector/right_gripper/command baxter_core_msgs/EndEffectorCommand '{ id : 131073,  command : "configure", args : "{ \"urdf\":{ \"name\": \"right_gripper_mass\",  \"link\": [ { \"name\": \"right_hand\" }, { \"name\": \"right_gripper_mass\", \"inertial\": { \"mass\": { \"value\": 0 }, \"origin\": { \"xyz\": [0.0014, 0.0, 0.074] } } } ] }}"}'
+&lt;/source>
+
+=== Gripped Object mass ===
+This will set the expected weight of a '''grasped object''' and will '''only be noticeable when the updated arm is currently grasping''' an object.  Once again, the maximum mass that should be set is 2.27 kilograms (~5 lbs).
+
+To set the mass of a gripped object:
+&lt;source lang="bash">
+    $ rostopic pub -1 /robot/end_effector/&lt;limb>_gripper/command baxter_core_msgs/EndEffectorCommand '{ id : &lt;gripper_id>,  command : "configure", args : "{ \"object\":{ \"name\": \"&lt;limb>_object_mass\", \"inertial\": { \"mass\": { \"value\": &lt;mass: in kg> }, \"origin\": { \"xyz\": [0.0, 0.0, 0.0] }, \"inertia\": { \"ixx\": 0.0, \"ixy\": 0.0, \"ixz\": 0.0, \"iyy\": 0.0, \"iyz\": 0.0, \"izz\": 0.0 } } } }}"}'
+&lt;/source>
+For example, to set the mass of a picked object to 2.27 kilograms:
+&lt;source lang="bash">
+    $ rostopic pub -1 /robot/end_effector/right_gripper/command baxter_core_msgs/EndEffectorCommand '{ id : 131073,  command : "configure", args : "{ \"object\":{ \"name\": \"right_object_mass\", \"inertial\": { \"mass\": { \"value\": 2.27 }, \"origin\": { \"xyz\": [0.0, 0.0, 0.0] }, \"inertia\": { \"ixx\": 0.0, \"ixy\": 0.0, \"ixz\": 0.0, \"iyy\": 0.0, \"iyz\": 0.0, \"izz\": 0.0 } } } }}"}'
+&lt;/source>
+and to set it back to 0:
+&lt;source lang="bash">
+    $ rostopic pub -1 /robot/end_effector/right_gripper/command baxter_core_msgs/EndEffectorCommand '{ id : 131073,  command : "configure", args : "{ \"object\":{ \"name\": \"right_object_mass\", \"inertial\": { \"mass\": { \"value\": 0.00 }, \"origin\": { \"xyz\": [0.0, 0.0, 0.0] }, \"inertia\": { \"ixx\": 0.0, \"ixy\": 0.0, \"ixz\": 0.0, \"iyy\": 0.0, \"iyz\": 0.0, \"izz\": 0.0 } } } }}"}'
+&lt;/source>
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Gripper_Customization" title="Gripper Customization">Gripper Customization</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Gripper_Customization">http://sdk.rethinkrobotics.com/wiki/Gripper_Customization</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":106});});</script></body></html>

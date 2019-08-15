@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tools - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tools","wgTitle":"Tools","wgCurRevisionId":4086,"wgRevisionId":4086,"wgArticleId":358,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tools","wgRelevantArticleId":358,"wgRequestId":"88f8b8260963372f3de2735f","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["sysop"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tools rootpage-Tools skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Tools&amp;returntoquery=oldid%3D4086">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Tools</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Tools&amp;oldid=4086#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Tools&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Tools&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Tools" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 18:49, 17 June 2015 by <a href="index.php?title=User:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Imcmahon (page does not exist)"><bdi>Imcmahon</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Imcmahon (page does not exist)">talk</a> | <a href="../Special:Contributions/Imcmahon" class="mw-usertoollinks-contribs" title="Special:Contributions/Imcmahon">contribs</a>)</span> <span class="comment">(<a href="index.php?title=Tools&amp;oldid=4086#Motion_Planning">→</a>‎<span dir="auto"><span class="autocomment">Motion Planning</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Tools&amp;diff=prev&amp;oldid=4086" title="Tools">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Tools&amp;direction=prev&amp;oldid=4086" title="Tools">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Tools&amp;oldid=4086#column-one">navigation</a>, <a href="index.php?title=Tools&amp;oldid=4086#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table style="padding:5px; border:1px solid #ffcc00; text-align:center; background:#FFFDDF; width:100%; margin-bottom:.5em;">
+<tbody><tr>
+<td><b><a href="../Learning" title="Learning">Learning</a>:</b> <a href="../Foundations" title="Foundations">Foundations</a>, <a href="../Advanced_Understanding" title="Advanced Understanding">Advanced Understanding</a>, <a class="mw-selflink selflink">Projects and Tools (Do More)</a>, <a href="../Configuration_and_Admin" title="Configuration and Admin">Configuration and Admin</a>
+</td></tr></tbody></table>
+<div class="toclimit-3" style="float:left; margin-right:10px; clear:left;"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Tools&amp;oldid=4086#Standard_Operational_Tools"><span class="tocnumber">1</span> <span class="toctext">Standard Operational Tools</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Tools&amp;oldid=4086#Enable_Robot_.28enable_robot.py.29"><span class="tocnumber">1.1</span> <span class="toctext">Enable Robot (enable_robot.py)</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=Tools&amp;oldid=4086#Camera_Control_Robot_.28camera_control.py.29"><span class="tocnumber">1.2</span> <span class="toctext">Camera Control Robot (camera_control.py)</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="index.php?title=Tools&amp;oldid=4086#Tuck_Arms_Tool_.28tuck_arms.py.29"><span class="tocnumber">1.3</span> <span class="toctext">Tuck Arms Tool (tuck_arms.py)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="index.php?title=Tools&amp;oldid=4086#Supported_External_Tools"><span class="tocnumber">2</span> <span class="toctext">Supported External Tools</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="index.php?title=Tools&amp;oldid=4086#Motion_Planning"><span class="tocnumber">2.1</span> <span class="toctext">Motion Planning</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="index.php?title=Tools&amp;oldid=4086#MoveIt.21"><span class="tocnumber">2.1.1</span> <span class="toctext">MoveIt!</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="index.php?title=Tools&amp;oldid=4086#MoveIt_Tutorial"><span class="tocnumber">2.1.2</span> <span class="toctext">MoveIt Tutorial</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="index.php?title=Tools&amp;oldid=4086#Custom_IKFast_for_your_Baxter"><span class="tocnumber">2.1.3</span> <span class="toctext">Custom IKFast for your Baxter</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="index.php?title=Tools&amp;oldid=4086#Simulation"><span class="tocnumber">2.2</span> <span class="toctext">Simulation</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="index.php?title=Tools&amp;oldid=4086#Gazebo"><span class="tocnumber">2.2.1</span> <span class="toctext">Gazebo</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="index.php?title=Tools&amp;oldid=4086#Baxter_Gazebo_Simulation"><span class="tocnumber">2.2.2</span> <span class="toctext">Baxter Gazebo Simulation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="index.php?title=Tools&amp;oldid=4086#Web_Tools"><span class="tocnumber">2.3</span> <span class="toctext">Web Tools</span></a>
+<ul>
+<li class="toclevel-3 tocsection-14"><a href="index.php?title=Tools&amp;oldid=4086#Rosbridge"><span class="tocnumber">2.3.1</span> <span class="toctext">Rosbridge</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="index.php?title=Tools&amp;oldid=4086#Using_Standard_ROS_Tools_with_Baxter"><span class="tocnumber">3</span> <span class="toctext">Using Standard ROS Tools with Baxter</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="index.php?title=Tools&amp;oldid=4086#Visualization"><span class="tocnumber">3.1</span> <span class="toctext">Visualization</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="index.php?title=Tools&amp;oldid=4086#rviz"><span class="tocnumber">3.1.1</span> <span class="toctext">rviz</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="index.php?title=Tools&amp;oldid=4086#Using_rviz_with_Baxter"><span class="tocnumber">3.1.2</span> <span class="toctext">Using rviz with Baxter</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="index.php?title=Tools&amp;oldid=4086#image_view"><span class="tocnumber">3.1.3</span> <span class="toctext">image_view</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-20"><a href="index.php?title=Tools&amp;oldid=4086#Robot_Status.2FMonitor"><span class="tocnumber">3.2</span> <span class="toctext">Robot Status/Monitor</span></a>
+<ul>
+<li class="toclevel-3 tocsection-21"><a href="index.php?title=Tools&amp;oldid=4086#ROS_rqt_console"><span class="tocnumber">3.2.1</span> <span class="toctext">ROS rqt_console</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="index.php?title=Tools&amp;oldid=4086#ROS_robot_monitor"><span class="tocnumber">3.2.2</span> <span class="toctext">ROS robot_monitor</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-23"><a href="index.php?title=Tools&amp;oldid=4086#Resources"><span class="tocnumber">4</span> <span class="toctext">Resources</span></a>
+<ul>
+<li class="toclevel-2 tocsection-24"><a href="index.php?title=Tools&amp;oldid=4086#Using_Joysticks"><span class="tocnumber">4.1</span> <span class="toctext">Using Joysticks</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="index.php?title=Tools&amp;oldid=4086#Kinect_basics"><span class="tocnumber">4.2</span> <span class="toctext">Kinect basics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="index.php?title=Tools&amp;oldid=4086#Links_to_Useful_ROS_Tools"><span class="tocnumber">5</span> <span class="toctext">Links to Useful ROS Tools</span></a>
+<ul>
+<li class="toclevel-2 tocsection-27"><a href="index.php?title=Tools&amp;oldid=4086#rqt_bag"><span class="tocnumber">5.1</span> <span class="toctext">rqt_bag</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="index.php?title=Tools&amp;oldid=4086#rqt_plot"><span class="tocnumber">5.2</span> <span class="toctext">rqt_plot</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p><span style="font-size:125%;">
+This page contains all of the Baxter Tools necessary for standard operation (enabling the robot, controlling the cameras, etc.) as well as support for external tools (MoveIt! motion planning framework, Gazebo simulation, etc.).
+</span>
+</p>
+<div style="clear:both">
+<h1><span class="mw-headline" id="Standard_Operational_Tools">Standard Operational Tools</span></h1>
+</div>
+<p>This section describes tools for everyday use with Baxter. These tools are provided in the <code> baxter_tools </code> package, and are largely convenient, common usage, executable tools created using the <code> baxter_interface </code>.
+</p>
+<h4><span id="Enable_Robot_(enable_robot.py)"></span><span class="mw-headline" id="Enable_Robot_.28enable_robot.py.29"><a href="../Enable_Robot_Tool" title="Enable Robot Tool"> Enable Robot (enable_robot.py)</a></span></h4>
+<p>A fundamental tool when working with Baxter, the enable_robot tool, allows for enabling/disabling/resetting/stopping the robot. Baxter must be enabled in order to actively command any of the motors.
+</p>
+<h4><span id="Camera_Control_Robot_(camera_control.py)"></span><span class="mw-headline" id="Camera_Control_Robot_.28camera_control.py.29"><a href="../Camera_Control_Tool" title="Camera Control Tool"> Camera Control Robot (camera_control.py)</a></span></h4>
+<p>A tool for use of Baxter's cameras, camera_control.py, allows for listing, opening, closing, resetting and changing resolution.
+</p>
+<h4><span id="Tuck_Arms_Tool_(tuck_arms.py)"></span><span class="mw-headline" id="Tuck_Arms_Tool_.28tuck_arms.py.29"><a href="../Tuck_Arms_Tool" title="Tuck Arms Tool"> Tuck Arms Tool (tuck_arms.py)</a></span></h4>
+<p>A tools for tucking and untucking Baxter's arms. Useful when unpacking Baxter, moving locations, shipping, etc.
+</p>
+<h1><span class="mw-headline" id="Supported_External_Tools">Supported External Tools</span></h1>
+<p>This section describes advanced tools external to Baxter for which Rethink has created specific implementations to support.
+</p>
+<h2><span class="mw-headline" id="Motion_Planning">Motion Planning</span></h2>
+<h4><span id="MoveIt!"></span><span class="mw-headline" id="MoveIt.21">MoveIt!</span></h4>
+<p><a href="../MoveIt_Tutorial" title="MoveIt Tutorial"><img alt="Moveit logo.png" src="images/thumb/6/66/Moveit_logo.png/200px-Moveit_logo.png" width="200" height="56" srcset="/wiki/a/images/thumb/6/66/Moveit_logo.png/300px-Moveit_logo.png 1.5x, /wiki/a/images/6/66/Moveit_logo.png 2x" /></a>
+</p>
+<h4><span class="mw-headline" id="MoveIt_Tutorial"><a href="../MoveIt_Tutorial" title="MoveIt Tutorial">MoveIt Tutorial</a></span></h4>
+<p><a rel="nofollow" class="external text" href="http://moveit.ros.org/">MoveIt!</a> is the standard and state of the art ROS motion planning framework. MoveIt! supports the latest in motion planning, manipulation, perception, collision checking, visualization and more..
+</p>
+<h4><span class="mw-headline" id="Custom_IKFast_for_your_Baxter"><a href="../Custom_IKFast_for_your_Baxter" title="Custom IKFast for your Baxter">Custom IKFast for your Baxter</a></span></h4>
+<p>Every Baxter's URDF is slightly different. This tutorial shows you how to generate IKFast for use with <a rel="nofollow" class="external text" href="http://moveit.ros.org/wiki/Kinematics/IKFast">MoveIt</a> specific to your Baxter. For additional background and information on the algorithm behind IKFast, please see <a rel="nofollow" class="external text" href="http://www.programmingvision.com/rosen_diankov_thesis.pdf">Rosen Diankov's Doctoral thesis</a>.
+</p>
+<h2><span class="mw-headline" id="Simulation">Simulation</span></h2>
+<h4><span class="mw-headline" id="Gazebo">Gazebo</span></h4>
+<p><a href="../Using_Gazebo_and_Baxter" title="Using Gazebo and Baxter"><img alt="Gazebo horz.png" src="images/thumb/3/3f/Gazebo_horz.png/200px-Gazebo_horz.png" width="200" height="48" srcset="/wiki/a/images/thumb/3/3f/Gazebo_horz.png/300px-Gazebo_horz.png 1.5x, /wiki/a/images/3/3f/Gazebo_horz.png 2x" /></a>
+</p>
+<h4><span class="mw-headline" id="Baxter_Gazebo_Simulation"><a href="../Using_Gazebo_and_Baxter" class="mw-redirect" title="Using Gazebo and Baxter"> Baxter Gazebo Simulation</a></span></h4>
+<ul><li><a href="../Simulator_Installation" title="Simulator Installation"> Baxter Gazebo Installation</a></li>
+<li><a href="../API_Reference#tab.3DSimulator_API" title="API Reference"> Baxter Gazebo API</a></li>
+<li><a href="../Simulator_Architecture" title="Simulator Architecture"> Baxter Gazebo Architecture</a></li></ul>
+<p><a rel="nofollow" class="external text" href="http://gazebosim.org/">Gazebo</a> is a "robot simulation tool that offers the ability to accurately and efficiently simulate populations of robots in complex indoor and outdoor environments. At your fingertips is a robust physics engine, high-quality graphics, and convenient programmatic and graphical interfaces. Best of all, Gazebo is free with a vibrant community."
+</p>
+<h2><span class="mw-headline" id="Web_Tools">Web Tools</span></h2>
+<h4><span class="mw-headline" id="Rosbridge"><a href="../Rosbridge" title="Rosbridge">Rosbridge</a></span></h4>
+<p>The Baxter Research Robot runs rosbridge nodes automatically, which enables users to interface with the robot directly via the rosbridge JSON APIs without needing a ROS installed platform.
+</p>
+<h1><span class="mw-headline" id="Using_Standard_ROS_Tools_with_Baxter">Using Standard ROS Tools with Baxter</span></h1>
+<p>One aspect of ROS, and the large, active community is the creation and support of useful development tools. This section largely describes these tools and their usage with Baxter.
+</p>
+<h2><span class="mw-headline" id="Visualization">Visualization</span></h2>
+<h4><span class="mw-headline" id="rviz">rviz</span></h4>
+<p><a href="../File:Rviz_2014.png" class="image"><img alt="Rviz 2014.png" src="images/thumb/c/c2/Rviz_2014.png/150px-Rviz_2014.png" width="150" height="110" srcset="/wiki/a/images/thumb/c/c2/Rviz_2014.png/225px-Rviz_2014.png 1.5x, /wiki/a/images/c/c2/Rviz_2014.png 2x" /></a>
+</p>
+<h4><span class="mw-headline" id="Using_rviz_with_Baxter"><a href="../Rviz" title="Rviz"> Using rviz with Baxter</a></span></h4>
+<p><a rel="nofollow" class="external text" href="http://wiki.ros.org/rviz">rviz (ROS visualization)</a> is a 3D visualizer for displaying sensor data and state information from ROS. Using rviz, you can visualize Baxter's current configuration on a virtual model of the robot. You can also display live representations of sensor values coming over ROS Topics including camera data, infrared distance measurements, sonar data, and more.
+</p>
+<h4><span class="mw-headline" id="image_view"><a href="../Image_view" title="Image view">image_view</a></span></h4>
+<p><a rel="nofollow" class="external text" href="http://wiki.ros.org/image_view">ROS image_view</a>
+A simple visualizer for ROS image topics. Useful for viewing Baxter's cameras.
+</p>
+<h2><span id="Robot_Status/Monitor"></span><span class="mw-headline" id="Robot_Status.2FMonitor">Robot Status/Monitor</span></h2>
+<h4><span class="mw-headline" id="ROS_rqt_console"><a href="../Rqt_console" title="Rqt console"> ROS rqt_console</a></span></h4>
+<p>ROS GUI tool for displaying ROS logging (INFO/WARN/ERROR/DEBUG message).
+</p>
+<h4><span class="mw-headline" id="ROS_robot_monitor"><a href="../Robot_monitor" title="Robot monitor"> ROS robot_monitor</a></span></h4>
+<p>ROS GUI Tool which uses the <code>diagnostic_aggregator</code> node to filter and display robot diagnostics.  This tools is primarily used for diagnosing Baxter hardware problems.
+</p>
+<h1><span class="mw-headline" id="Resources">Resources</span></h1>
+<h4><span class="mw-headline" id="Using_Joysticks"><a href="../Using_Joysticks" title="Using Joysticks">Using Joysticks</a></span></h4>
+<p>Guide for configuring and connecting with supported joysticks (ps3, xbox, logitech) for use in ROS and with the SDK (example programs).
+</p>
+<h4><span class="mw-headline" id="Kinect_basics"><a href="../Kinect_basics" title="Kinect basics">Kinect basics</a></span></h4>
+<p>Connect a Kinect camera to the SDK dev workstation, and start using the output for your project.
+</p>
+<h1><span class="mw-headline" id="Links_to_Useful_ROS_Tools">Links to Useful ROS Tools</span></h1>
+<p>There are a number of other standard ROS tools useful for development/debugging.
+</p>
+<h4><span class="mw-headline" id="rqt_bag"><a rel="nofollow" class="external text" href="http://wiki.ros.org/rqt_bag">rqt_bag</a></span></h4>
+<p>Record, view, and playback ROS topics (<a rel="nofollow" class="external text" href="http://wiki.ros.org/rqt_plot?distro=hydro#Run_from_commandline">Command-line reference</a>). Useful debugging tool.
+</p>
+<h4><span class="mw-headline" id="rqt_plot"><a rel="nofollow" class="external text" href="http://wiki.ros.org/rqt_plot">rqt_plot</a></span></h4>
+<p>GUI plugin for plotting. Plot ROS message data against a number of backends.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815160920
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.023 seconds
+Real time usage: 0.025 seconds
+Preprocessor visited node count: 117/1000000
+Preprocessor generated node count: 132/1000000
+Post‐expand include size: 259/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.369      1 Template:Learning-group_header
+100.00%    0.369      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:358-0!canonical and timestamp 20190815160920 and revision id 4086
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Tools&amp;oldid=4086">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Tools&amp;oldid=4086</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.023","walltime":"0.025","ppvisitednodes":{"value":117,"limit":1000000},"ppgeneratednodes":{"value":132,"limit":1000000},"postexpandincludesize":{"value":259,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.369      1 Template:Learning-group_header","100.00%    0.369      1 -total"]},"cachereport":{"timestamp":"20190815160920","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":74});});</script></body></html>

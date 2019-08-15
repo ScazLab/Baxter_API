@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Core Dump Manager - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Core_Dump_Manager","wgTitle":"Core Dump Manager","wgCurRevisionId":3231,"wgRevisionId":0,"wgArticleId":324,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Core_Dump_Manager","wgRelevantArticleId":324,"wgRequestId":"62680aac07b09e92562d099a","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Core_Dump_Manager rootpage-Core_Dump_Manager skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Core+Dump+Manager&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Core Dump Manager</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Core_Dump_Manager&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Core_Dump_Manager&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Core_Dump_Manager&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Core_Dump_Manager" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Core_Dump_Manager" title="Core Dump Manager">Core Dump Manager</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Core_Dump_Manager&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Core_Dump_Manager&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">== Summary ==
+Use the Core Manager services to remove old core dump files from your robot's harddrive.
+
+== Overview ==
+When a program crashes, it may create a [http://en.wikipedia.org/wiki/Core_dump core dump] file to record the state of the machine at the time of the crash.  This should not happen very often, as it is usually a sign of an unexpected behavior or error in the system.  In the event a core dump does occur on Baxter, these files are stored in the &lt;code>/sys-log/cores/&lt;/code> directory in Baxter's [[FTP Log Files|FTP Logs Server]].
+
+During normal operation, there should be no need to worry about these files.  However, if a user does get core dumps and wishes to delete the sometimes large files, the RSDK provides two tools for doing so in the form of ROS Services.  The first service returns a list of core dump file names if any exist currently on the robot.  The second service takes one of these file names as an argument and removes (deletes) the core dump file off the robot.
+
+== Quickstart ==
+List existing core dumps:
+&lt;source lang="bash">
+$ rosservice call /core_mgr/ls 
+cores: ['core-filename-111', 'core-filename-222']
+&lt;/source>
+Delete specified core dump:
+&lt;source lang="bash">
+$ rosservice call /core_mgr/rm 'core-filename-111'
+err: 0
+err_str: ''
+&lt;/source>
+
+== Usage ==
+Remove core dump files with the Core Manager in two steps:
+
+1.  ''Get the File Name''  
+* Use the '''List Cores''' ROS Service to check for any core files on the robot and get a list of file names.
+2.  ''Call the Delete Service''  
+* Once you have the name of a core file you don't want any more, you can use the second Core Manager service, '''Remove Cores''', to delete the file off the robot.
+
+You can call the two [http://www.ros.org/wiki/Services ROS Services] from the command-line using the standard [http://www.ros.org/wiki/rosservice rosservice] tool, e.g:  &lt;code>$ rosservice call &lt;service_name> [arguments]&lt;/code>.  The service Type will show you the arguments (if any) and the format of the return values.
+
+'''''Tip:''' You can also easily identify core dumps using the [[FTP Log Files|Baxter FTP Server]], looking under the &lt;code>/sys-log/cores&lt;/code> directory.''
+
+=== List Cores Service ===
+Call this service to return a list of core dump files currently on Baxter.  There are no arguments and the file names are returned as an array of strings.
+
+* '''ROS Service Name:'''  &lt;code>/core_mgr/ls&lt;/code>  
+* '''ROS Service Type:'''  [&lt;code>baxter_maintenance_msgs/LSCores&lt;/code>][baxter_maintenance_msgs-LSCores]      
+*: &lt;source lang="bash">
+    $ rosservice call /core_mgr/ls 
+&lt;/source>
+*: ''Returns:''
+*: &lt;source lang="bash">
+    cores: ['&lt;core-file-name-1>', '&lt;core-file-name-2>', ... '&lt;core-file-name-3>']
+&lt;/source>
+
+The List Cores service will return an empty array if there are no core dumps currently on the robot.
+
+=== Remove Cores Service ===
+Call this service with the name of the core dump file you wish to remove and it will delete the file off Baxter's harddrive.  From the command line, the file name string can be given as an argument with or without quotes.
+
+* '''ROS Service Name:'''  &lt;code>/core_mgr/rm&lt;/code>  
+* '''ROS Service Type:'''  [&lt;code>baxter_maintenance_msgs/RMCores&lt;/code>][baxter_maintenance_msgs-RMCores]
+*: &lt;source lang="bash">
+    $ rosservice call /core_mgr/rm &lt;core-file-name>
+&lt;/source>
+*: ''Returns:''
+*: &lt;source lang="bash">
+    = No error =
+    err: 0
+    err_str: ''
+    
+    = Error =
+    err: &lt;error_number>
+    err_str: '&lt;error_string>'
+&lt;/source>
+
+Upon a successful delete, the '''Remove Cores''' service will return with 0 in the &lt;code>err&lt;/code> field.  If &lt;code>err&lt;/code> is a non-zero value, an error occurred while attempting to remove the file and further information for the error code can be found in the &lt;code>err_str&lt;/code> field.
+
+=== Examples ===
+List and remove a single core dump:
+&lt;source lang="bash">
+$ rosservice call /core_mgr/ls 
+cores: ['core-cameras_publisher-5699-1366048394', 'core-cameras_publisher-445-1366045831']
+$ rosservice call /core_mgr/rm core-cameras_publisher-5699-1366048394
+err: 0
+err_str: ''
+$ rosservice call /core_mgr/ls
+cores: ['core-cameras_publisher-445-1366045831']
+&lt;/source>
+
+Attempt to remove a non-existant core dump and fail:
+&lt;source lang="bash">
+$ rosservice call /core_mgr/ls
+cores: ['core-cameras_publisher-445-1366045831']
+$ rosservice call /core_mgr/rm core-cameras_publisher-5699-1366048394
+err: 2
+err_str: [Errno 2] No such file or directory: '/var/log/cores/core-cameras_publisher-5699-1366048394'
+&lt;/source>
+
+== Documentation ==
+=== View Core Files on FTP Server ===
+By looking on Baxter's FTP server, you can navigate to the 'sys-logs' >> 'cores' directory to see any current core dumps.  This view will additionally show you the size and (robot) time when the files were created.  Normally the directory will be empty; this is a good thing.
+
+[[File:core_mgr-ftp-scrshot.png|align=center]]
+
+== Troubleshooting ==
+For common issues related to core dumps or files on Baxter, check out the [[Contact|Troubleshooting page]].
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Core_Dump_Manager" title="Core Dump Manager">Core Dump Manager</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Core_Dump_Manager">http://sdk.rethinkrobotics.com/wiki/Core_Dump_Manager</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":34});});</script></body></html>

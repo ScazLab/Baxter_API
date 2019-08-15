@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Wobbler - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Wobbler_-_Code_Walkthrough","wgTitle":"Wobbler - Code Walkthrough","wgCurRevisionId":3771,"wgRevisionId":0,"wgArticleId":470,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Wobbler_-_Code_Walkthrough","wgRelevantArticleId":470,"wgRequestId":"83bd92d65abe5b5634f91037","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Wobbler_-_Code_Walkthrough rootpage-Wobbler_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Wobbler+-+Code+Walkthrough&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Wobbler - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Wobbler_-_Code_Walkthrough&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Wobbler_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Wobbler_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Wobbler_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Wobbler_-_Code_Walkthrough" title="Wobbler - Code Walkthrough">Wobbler - Code Walkthrough</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Wobbler_-_Code_Walkthrough&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Wobbler_-_Code_Walkthrough&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">{{Template:Parent header|parent=Wobbler Example}}
+== Introduction ==
+This example demonstrates the usage of the velocity controller to control baxter's limbs using the velocity commands. The code consists of a &lt;code>main()&lt;/code> function that initializes the ros node and creates an instance of the &lt;code>Wobbler&lt;/code> class. In its &lt;code>__init__()&lt;/code> function, instances for the left and right limb class are created. The &lt;code>wobble&lt;/code> method is called which in turn calls the &lt;code>set_neutral&lt;/code> method that sets the limbs to a predefined neutral position. The &lt;code>wobble()&lt;/code> method is primarily responsible for calculating the torques necessary for the harmonic motion of the joints. Terminating the example would invoke the &lt;code>clean_shutdown()&lt;/code> method where the limbs are sent back to the neutral mode and the original state of the robot is restored.&lt;br/>
+'''Interfaces- '''
+&lt;div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
+* Limb.joint_names()
+* Limb.exit_control_mode()
+* Limb.move_to_neutral()
+* Limb.set_joint_velocities(&lt;''double''>)
+&lt;/div>
+
+== Code Walkthrough ==
+Now, let's break down the code
+&lt;syntaxhighlight lang="python" line start="30" enclose="div">
+import argparse
+import math
+import random
+
+import rospy
+
+from std_msgs.msg import (
+    UInt16,
+)
+
+import baxter_interface
+
+from baxter_interface import CHECK_VERSION
+&lt;/syntaxhighlight>
+
+This imports the baxter interface for accessing the head class. The &lt;code>CHECK_VERSION&lt;/code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs.
+
+&lt;syntaxhighlight lang="python" line start="45" enclose="div">
+class Wobbler(object):
+
+    def __init__(self):
+        """
+        'Wobbles' both arms by commanding joint velocities sinusoidally.
+        """
+        self._pub_rate = rospy.Publisher('robot/joint_state_publish_rate',
+                                         UInt16, queue_size=10)
+        self._left_arm = baxter_interface.limb.Limb("left")
+        self._right_arm = baxter_interface.limb.Limb("right")
+        self._left_joint_names = self._left_arm.joint_names()
+        self._right_joint_names = self._right_arm.joint_names()
+&lt;/syntaxhighlight>
+
+The &lt;code>_pub_rate&lt;/code> publisher sets the frequency at which the joint commands are updated. Two instances of the limb class are created for each of the limbs. The &lt;code>joint_names()&lt;/code> method returns an array of strings that hold the names of each of the joints in that limb.
+
+&lt;syntaxhighlight lang="python" line start="58" enclose="div">
+        print("Getting robot state... ")
+        self._rs = baxter_interface.RobotEnable(CHECK_VERSION)
+        self._init_state = self._rs.state().enabled
+        print("Enabling robot... ")
+        self._rs.enable()
+
+        # set joint state publishing to 100Hz
+        self._pub_rate.publish(100)
+&lt;/syntaxhighlight>
+
+&lt;code>baxter_interface.RobotEnable(CHECK_VERSION)&lt;/code> checks if the sdk version updated in the settings is the same as the sdk version loaded on the param server of the Robot and creates an object &lt;code>_rs&lt;/code>  of the &lt;code>RobotEnable&lt;/code> class. The next line sets the &lt;code>_init_state&lt;/code> of the robot to its current state. The &lt;code>enable()&lt;/code> performs the actual enabling of the robot. It is important to note that the robot should be in enabled state before attempting to move its joints. The joint state publishing rate is set to be at 100 Hz.
+
+&lt;syntaxhighlight lang="python" line start="67" enclose="div">
+    def _reset_control_modes(self):
+        rate = rospy.Rate(100)
+        for _ in xrange(100):
+            if rospy.is_shutdown():
+                return False
+            self._left_arm.exit_control_mode()
+            self._right_arm.exit_control_mode()
+            self._pub_rate.publish(100)
+            rate.sleep()
+        return True
+&lt;/syntaxhighlight>
+The &lt;code>exit_control_mode()&lt;/code> method switches the control from advanced control modes like velocity and torque control to the position control mode. In this example, it would be switching from velocity control mode to position control mode
+
+&lt;syntaxhighlight lang="python" line start="78" enclose="div">
+    def set_neutral(self):
+        """
+        Sets both arms back into a neutral pose.
+        """
+        print("Moving to neutral pose...")
+        self._left_arm.move_to_neutral()
+        self._right_arm.move_to_neutral()
+&lt;/syntaxhighlight>
+The &lt;code>move_to_neutral()&lt;/code> method moves the set of joints in that limb to a predefined position referred to as its neutral position. This employs the PID position controller to move the joints to that position.
+
+&lt;syntaxhighlight lang="python" line start="86" enclose="div">
+    def clean_shutdown(self):
+        print("\nExiting example...")
+        #return to normal
+        self._reset_control_modes()
+        self.set_neutral()
+        if not self._init_state:
+            print("Disabling robot...")
+            self._rs.disable()
+        return True
+&lt;/syntaxhighlight>
+
+The &lt;code>_reset_control_modes()&lt;/code> method and the &lt;code>set_neutral()&lt;/code> method switches from velocity control mode to the position control mode and sets the limbs to a neutral position, as explained above. It checks if the robot was initially in disabled state before running the example and sends it back to that state if so.
+
+&lt;syntaxhighlight lang="python" line start="96" enclose="div">
+    def wobble(self):
+        self.set_neutral()
+        """
+        Performs the wobbling of both arms.
+        """
+        rate = rospy.Rate(100)
+        start = rospy.Time.now()
+&lt;/syntaxhighlight>
+The &lt;code>wobble()&lt;/code> method is called to perform the actual wobbling of the limbs. The hands are first set to their neutral position.
+
+&lt;syntaxhighlight lang="python" line start="104" enclose="div">
+        def make_v_func():
+            """
+            returns a randomly parameterized cosine function to control a
+            specific joint.
+            """
+            period_factor = random.uniform(0.3, 0.5)
+            amplitude_factor = random.uniform(0.1, 0.2)
+
+            def v_func(elapsed):
+                w = period_factor * elapsed.to_sec()
+                return amplitude_factor * math.cos(w * 2 * math.pi)
+            return v_func
+
+        v_funcs = [make_v_func() for _ in self._right_joint_names]
+&lt;/syntaxhighlight>
+
+In Line # 117, &lt;code>make_v_func()&lt;/code> is called for the number of joint_names in right limb. The left or right limb can be used for this purpose, since both the limbs have an equal number of joints.
+The period and amplitude are random values generated for each joint. &lt;code>return v_func()&lt;/code> indicates that a handle of the method &lt;code>v_func()&lt;/code> is generated for this particular joint with the &lt;code>period_factor&lt;/code> and &lt;code>amplitude_factor&lt;/code> holding the generated random values. Similarly for each joint, a handle of the &lt;code>v_func()&lt;/code> method is created with a constant and random amplitude and period values. This is done to make sure that the amplitude and frequency is same for each joint, till the end of the program. Then, the cosine function is calculated for each joint based on the formula&lt;br />
+ x=a*cos(2*pi*f*t)
+    where t refers to the time elapsed from the start.
+          a refers to the amplitude
+          f refers to the frequency
+
+&lt;syntaxhighlight lang="python" line start="119" enclose="div">
+        def make_cmd(joint_names, elapsed):
+            return dict([(joint, v_funcs[i](elapsed))
+                         for i, joint in enumerate(joint_names)])
+&lt;/syntaxhighlight>
+
+&lt;code>v_funcs&lt;/code> is a list that holds the velocity commands for all the joints in the same order. For each of the joints in the particular limb, the corresponding velcoity command is stored in a dictionary.
+
+&lt;syntaxhighlight lang="python" line start="124" enclose="div">
+        print("Wobbling. Press Ctrl-C to stop...")
+        while not rospy.is_shutdown():
+            self._pub_rate.publish(100)
+            elapsed = rospy.Time.now() - start
+            cmd = make_cmd(self._left_joint_names, elapsed)
+            self._left_arm.set_joint_velocities(cmd)
+            cmd = make_cmd(self._right_joint_names, elapsed)
+            self._right_arm.set_joint_velocities(cmd)
+            rate.sleep()
+&lt;/syntaxhighlight>
+
+At 100 Hz, the velocity commands for the limbs are continuously calculated. &lt;code>set_joint_velcoties()&lt;/code> publishes the velocity command as joint command with the mode as 2 to indicate that the commands are to be sent to the velocity controller.
+
+&lt;syntaxhighlight lang="python" line start="134" enclose="div">
+def main():
+    """RSDK Joint Velocity Example: Wobbler
+
+    Commands joint velocities of randomly parameterized cosine waves
+    to each joint. Demonstrates Joint Velocity Control Mode.
+    """
+    arg_fmt = argparse.RawDescriptionHelpFormatter
+    parser = argparse.ArgumentParser(formatter_class=arg_fmt,
+                                     description=main.__doc__)
+    parser.parse_args(rospy.myargv()[1:])
+
+    print("Initializing node... ")
+    rospy.init_node("rsdk_joint_velocity_wobbler")
+
+    wobbler = Wobbler()
+&lt;/syntaxhighlight>
+
+The &lt;code>main&lt;/code> captures the side of limb on which the user wishes to run the example.
+An instance of the &lt;code>Wobbler&lt;/code> class is created for each of the limbs.
+
+&lt;syntaxhighlight lang="python" line start=148" enclose="div">
+    wobbler = Wobbler()
+    rospy.on_shutdown(wobbler.clean_shutdown)
+    wobbler.wobble()
+
+    print("Done.")
+
+if __name__ == '__main__':
+    main()
+&lt;/syntaxhighlight>
+
+The &lt;code>wobble()&lt;/code> method is called to perform the actual wobbling as discussed above.
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="../Template:Parent_header" title="Template:Parent header">Template:Parent header</a> (<a href="index.php?title=Template:Parent_header&amp;action=edit" title="Template:Parent header">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Wobbler_-_Code_Walkthrough" title="Wobbler - Code Walkthrough">Wobbler - Code Walkthrough</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Wobbler_-_Code_Walkthrough">http://sdk.rethinkrobotics.com/wiki/Wobbler_-_Code_Walkthrough</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":44});});</script></body></html>

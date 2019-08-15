@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Release - v0.7.0 Release Notes - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Release_-_v0.7.0_Release_Notes","wgTitle":"Release - v0.7.0 Release Notes","wgCurRevisionId":3316,"wgRevisionId":0,"wgArticleId":516,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Release_-_v0.7.0_Release_Notes","wgRelevantArticleId":516,"wgRequestId":"135b21d0a5761757710e8b08","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Release_-_v0_7_0_Release_Notes rootpage-Release_-_v0_7_0_Release_Notes skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Release+-+v0.7.0+Release+Notes&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Release - v0.7.0 Release Notes</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Release_-_v0.7.0_Release_Notes&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Release_-_v0.7.0_Release_Notes&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Release_-_v0.7.0_Release_Notes&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Release_-_v0.7.0_Release_Notes" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Release_-_v0.7.0_Release_Notes" title="Release - v0.7.0 Release Notes">Release - v0.7.0 Release Notes</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Release_-_v0.7.0_Release_Notes&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Release_-_v0.7.0_Release_Notes&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">
+
+
+= Baxter Research Robot SDK 0.7.0 Release Notes =
+
+
+'''Release Date: 11/21/2013'''
+
+
+== Overview ==
+
+
+Baxter Research Robot SDK 0.7.0 is our first major upgrade to the SDK.  In addition to velocity and position, researchers can now control joint torques, allowing for complete joint control.  We are also supporting joint level Gazebo control, allowing users to simulate basic arm movements in Baxter.  With v0.7.0 Baxter Research Robot SDK is now publicly available, allowing for a true open source experience.
+
+== Update Instructions ==
+
+
+[[Software_Update | Software Updates]]
+
+
+
+== Major Updates ==
+
+
+* Now publicly available!
+* Joint torque control
+* Gazebo Support
+* Joint position accuracy improvements (factor of 10)
+* ROS Groovy on robot
+* ROS Topic/Message cleanup allowing for direct robot communication (no '/sdk' proxy, decreased latency)
+* Catkinization of SDK
+* SDK reorganization into standalone metapackages, multiple repositories
+* Ability to set speeds of joint position command execution
+* Ability to specify gripper/object mass for custom grippers
+
+
+== Additions ==
+
+
+* Joint torque control
+* Gazebo Support
+* Ability to set speeds of joint position command execution
+* Ability to specify gripper/object mass for custom grippers
+* Introduction of baxter_core_msgs and baxter_maintenance_msgs (formerly baxter_msgs)
+* Convenient catkin environment initialization script baxter.sh (formerly init.sh)
+* ROS/network configuration display in tty3 of the robot
+* Gripper Cuff control example
+* Ability to reset cameras (re-enumerate if not listed at startup)
+* Gripper Action Server and example program
+* Gripper control in joint trajectory playback example
+* Gripper cuff control in joint recorder
+* Ability to disable arm-to-arm collision avoidance
+* Ability to disable cuff zero-g interaction
+* Ability to disable gravity compensation
+* Launch files for action server/joystick examples
+* Boot animation
+* rosbags of /diagnostics in FTP Logs
+* All (rosrun) examples now include -h (help) argument/description
+
+
+== Removals ==
+
+* baxter_msgs (now baxter_core_msgs, baxter_maintenance_msgs)
+* rosbuild support
+* joystart scripts (now replaced with roslaunch files)
+* init.sh (now replaced with baxter.sh for catkin environments)
+
+
+== Changes ==
+
+* ROS Groovy on robot
+* Joint position accuracy improvements (factor of 10)
+* ROS Topic/Message cleanup allowing for direct robot communication (no '/sdk' proxy, decreased latency)
+* SDK reorganization into standalone metapackages
+* Catkin/Bloom standard package reorganization
+* Limb joint commands now single message - reflected in limb interface
+* Major gripper rewrite to support more advanced usage and future custom grippers
+* ROS logging cleanup for console, diagnostics use.
+* More explicit error messages
+* Improved verbosity/standardization of help output
+* DigitalIO state_changed signal/slot and read-only state property (no longer callable)
+
+
+== Fixes ==
+
+
+* Tuck arm improvements to handle ctrl-c and partial tucks
+
+
+== Known Issues ==
+
+None
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Release_-_v0.7.0_Release_Notes" title="Release - v0.7.0 Release Notes">Release - v0.7.0 Release Notes</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Release_-_v0.7.0_Release_Notes">http://sdk.rethinkrobotics.com/wiki/Release_-_v0.7.0_Release_Notes</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":82});});</script></body></html>

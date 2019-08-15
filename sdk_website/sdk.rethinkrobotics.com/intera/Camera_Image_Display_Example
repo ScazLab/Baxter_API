@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Camera Image Display Example - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Camera_Image_Display_Example","wgTitle":"Camera Image Display Example","wgCurRevisionId":1150,"wgRevisionId":1150,"wgArticleId":59,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Camera_Image_Display_Example","wgRelevantArticleId":59,"wgRequestId":"e888255181b92cfa0d4552e3","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="a/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="a/opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Camera_Image_Display_Example rootpage-Camera_Image_Display_Example skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(a/skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="a/index.php?title=Special:UserLogin&amp;returnto=Camera+Image+Display+Example">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="Camera_Image_Display_Example#">More</a>
+                <ul>
+                <li id="ca-viewsource"><a href="a/index.php?title=Camera_Image_Display_Example&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="a/index.php?title=Camera_Image_Display_Example&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="Camera_Image_Display_Example" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">Camera Image Display Example</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="a/index.php?title=Camera_Image_Display_Example&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="Camera_Image_Display_Example#column-one">navigation</a>
+                    ,                     <a href="Camera_Image_Display_Example#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="toclimit-2"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Camera_Image_Display_Example#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="Camera_Image_Display_Example#Usage"><span class="tocnumber">2</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="Camera_Image_Display_Example#Arguments"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="Camera_Image_Display_Example#View_Image_Results"><span class="tocnumber">4</span> <span class="toctext">View Image Results</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="Camera_Image_Display_Example#Code_Walkthrough"><span class="tocnumber">5</span> <span class="toctext">Code Walkthrough</span></a></li>
+</ul>
+</div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>The camera display example demonstrates the display of cameras on Sawyer robot. The user can choose to display unrectified image or not, as well as the Canny edge detection image.
+If you would like to follow along with the actual source code for the example on GitHub, it can be found through <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/camera_display.py">this link</a> for camera image display example.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<p>Start the camera display example program, you can specify the camera name (right_hand_camera or head_camera), use of the raw image (unrectified) topic or use of streaming the Canny edge detection image. The default camera name is "head_camera". The camera image will be rectified image without Canny edge detection by default.
+</p><p>Run the example as following command:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_examples camera_display.py
+</pre></div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Arguments">Arguments</span></h2>
+<p><b>Important Arguments:</b>  
+</p><p><code> -c </code> or <code> --camera </code>: Choose camera name for display
+</p><p><code> -r </code> or <code> --raw </code>: Use the "raw" (unrectified) image streaming topic (default is rectified)
+</p><p><code> -e </code> or <code> --edge </code>: Apply the Canny edge detection algorithm to streamed image
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>usage: camera_display.py <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>-c <span class="o">{</span>head_camera,right_hand_camera<span class="o">}]</span> <span class="o">[</span>-r<span class="o">]</span> <span class="o">[</span>-e<span class="o">]</span>
+
+Camera Display Example
+    
+
+optional arguments:
+  -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+  -c <span class="o">{</span>head_camera,right_hand_camera<span class="o">}</span>, --camera <span class="o">{</span>head_camera,right_hand_camera<span class="o">}</span>
+                        Setup Camera Name <span class="k">for</span> Camera Display
+  -r, --raw             Specify use of the raw image <span class="o">(</span>unrectified<span class="o">)</span> topic
+  -e, --edge            Streaming the Canny edge detection image
+</pre></div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="View_Image_Results">View Image Results</span></h2>
+<p>Here listed sample image results by using the <code>right_hand_camera</code> on robot arm.
+</p><p><a href="File:Chairsmall_nr.png" class="image"><img alt="Chairsmall nr.png" src="a/images/thumb/c/c8/Chairsmall_nr.png/700px-Chairsmall_nr.png" width="700" height="398" srcset="/intera/a/images/thumb/c/c8/Chairsmall_nr.png/1050px-Chairsmall_nr.png 1.5x, /intera/a/images/thumb/c/c8/Chairsmall_nr.png/1400px-Chairsmall_nr.png 2x" /></a> <a href="File:Chairsmall.png" class="image"><img alt="Chairsmall.png" src="a/images/thumb/8/86/Chairsmall.png/700px-Chairsmall.png" width="700" height="398" srcset="/intera/a/images/thumb/8/86/Chairsmall.png/1050px-Chairsmall.png 1.5x, /intera/a/images/thumb/8/86/Chairsmall.png/1400px-Chairsmall.png 2x" /></a> 
+</p><p>The first image shows the original camera image, with typical lens distortio. The second image uses the <a rel="nofollow" class="external text" href="http://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html">OpenCV camera calibration parameters</a> to rectify the image, making it undistorted. In our example, by default, streaming the rectified image instead of raw image unless you specify raw image by adding argument <code>-r</code> or <code>--raw</code>.
+</p><p><a href="File:Chairsmall_edge_nr.png" class="image"><img alt="Chairsmall edge nr.png" src="a/images/thumb/6/60/Chairsmall_edge_nr.png/700px-Chairsmall_edge_nr.png" width="700" height="398" srcset="/intera/a/images/thumb/6/60/Chairsmall_edge_nr.png/1050px-Chairsmall_edge_nr.png 1.5x, /intera/a/images/thumb/6/60/Chairsmall_edge_nr.png/1400px-Chairsmall_edge_nr.png 2x" /></a> <a href="File:Chairsmall_edge.png" class="image"><img alt="Chairsmall edge.png" src="a/images/thumb/f/f6/Chairsmall_edge.png/700px-Chairsmall_edge.png" width="700" height="398" srcset="/intera/a/images/thumb/f/f6/Chairsmall_edge.png/1050px-Chairsmall_edge.png 1.5x, /intera/a/images/thumb/f/f6/Chairsmall_edge.png/1400px-Chairsmall_edge.png 2x" /></a> 
+</p><p>The images above are streaming the Canny edge detection image, the first one showing raw image with Canny edge detection, the second one showing rectified image. 
+</p><p><br />
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Code_Walkthrough">Code Walkthrough</span></h2>
+<p>Now, let's break down the code.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">30 </span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="lineno">31 </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="lineno">32 </span>
+<span class="lineno">33 </span><span class="kn">import</span> <span class="nn">cv2</span>
+<span class="lineno">34 </span><span class="kn">from</span> <span class="nn">cv_bridge</span> <span class="kn">import</span> <span class="n">CvBridge</span><span class="p">,</span> <span class="n">CvBridgeError</span>
+<span class="lineno">35 </span>
+<span class="lineno">36 </span><span class="kn">import</span> <span class="nn">rospy</span>
+<span class="lineno">37 </span><span class="kn">import</span> <span class="nn">intera_interface</span>
+</pre></div>
+<p>This imports the intera interface for accessing the camera class.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">39 </span><span class="k">def</span> <span class="nf">show_image_callback</span><span class="p">(</span><span class="n">img_data</span><span class="p">,</span> <span class="p">(</span><span class="n">edge_detection</span><span class="p">,</span> <span class="n">window_name</span><span class="p">)):</span>
+<span class="lineno">40 </span>    <span class="sd">&quot;&quot;&quot;The callback function to show image by using CvBridge and cv</span>
+<span class="lineno">41 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">42 </span>    <span class="n">bridge</span> <span class="o">=</span> <span class="n">CvBridge</span><span class="p">()</span>
+<span class="lineno">43 </span>    <span class="k">try</span><span class="p">:</span>
+<span class="lineno">44 </span>        <span class="n">cv_image</span> <span class="o">=</span> <span class="n">bridge</span><span class="o">.</span><span class="n">imgmsg_to_cv2</span><span class="p">(</span><span class="n">img_data</span><span class="p">,</span> <span class="s2">&quot;bgr8&quot;</span><span class="p">)</span>
+<span class="lineno">45 </span>    <span class="k">except</span> <span class="n">CvBridgeError</span><span class="p">,</span> <span class="n">err</span><span class="p">:</span>
+<span class="lineno">46 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
+<span class="lineno">47 </span>        <span class="k">return</span>
+<span class="lineno">48 </span>    <span class="k">if</span> <span class="n">edge_detection</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+<span class="lineno">49 </span>        <span class="n">gray</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">cv_image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+<span class="lineno">50 </span>        <span class="n">blurred</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">gray</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+<span class="lineno">51 </span>        <span class="c1"># customize the second and the third argument, minVal and maxVal</span>
+<span class="lineno">52 </span>        <span class="c1"># in function cv2.Canny if needed</span>
+<span class="lineno">53 </span>        <span class="n">get_edge</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">Canny</span><span class="p">(</span><span class="n">blurred</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="lineno">54 </span>        <span class="n">cv_image</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">([</span><span class="n">get_edge</span><span class="p">])</span>
+<span class="lineno">55 </span>    <span class="n">edge_str</span> <span class="o">=</span> <span class="s2">&quot;(Edge Detection)&quot;</span> <span class="k">if</span> <span class="n">edge_detection</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span>
+<span class="lineno">56 </span>    <span class="n">cv_win_name</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">window_name</span><span class="p">,</span> <span class="n">edge_str</span><span class="p">])</span>
+<span class="lineno">57 </span>    <span class="n">cv2</span><span class="o">.</span><span class="n">namedWindow</span><span class="p">(</span><span class="n">cv_win_name</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="lineno">58 </span>    <span class="c1"># refresh the image on the screen</span>
+<span class="lineno">59 </span>    <span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">cv_win_name</span><span class="p">,</span> <span class="n">cv_image</span><span class="p">)</span>
+<span class="lineno">60 </span><span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+<p>An instance of the CvBridge, <code>bridge</code> is created. Convert the image message to <code>cv2</code>.
+If the user choose to show image edge detection, the function will convert <code>cv_image</code> to black/white image and blur the image by using <code>GaussianBlur</code> then get the image edge by implementing the <code>Canny</code> method.
+Note: the image will always refresh so close the image window will not shutdown the image window.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">62 </span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="lineno">63 </span>    <span class="sd">&quot;&quot;&quot;Camera Display Example</span>
+<span class="lineno">64 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">65 </span>    <span class="n">rp</span> <span class="o">=</span> <span class="n">intera_interface</span><span class="o">.</span><span class="n">RobotParams</span><span class="p">()</span>
+<span class="lineno">66 </span>    <span class="n">valid_cameras</span> <span class="o">=</span> <span class="n">rp</span><span class="o">.</span><span class="n">get_camera_names</span><span class="p">()</span>
+<span class="lineno">67 </span>    <span class="k">if</span> <span class="ow">not</span> <span class="n">valid_cameras</span><span class="p">:</span>
+<span class="lineno">68 </span>        <span class="n">rp</span><span class="o">.</span><span class="n">log_message</span><span class="p">((</span><span class="s2">&quot;Cannot detect any camera_config&quot;</span>
+<span class="lineno">69 </span>            <span class="s2">&quot; parameters on this robot. Exiting.&quot;</span><span class="p">),</span> <span class="s2">&quot;ERROR&quot;</span><span class="p">)</span>
+<span class="lineno">70 </span>        <span class="k">return</span>
+<span class="lineno">71 </span>    <span class="n">arg_fmt</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">RawDescriptionHelpFormatter</span>
+<span class="lineno">72 </span>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">formatter_class</span><span class="o">=</span><span class="n">arg_fmt</span><span class="p">,</span>
+<span class="lineno">73 </span>                                     <span class="n">description</span><span class="o">=</span><span class="n">main</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+<span class="lineno">74 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+<span class="lineno">75 </span>        <span class="s1">&#39;-c&#39;</span><span class="p">,</span> <span class="s1">&#39;--camera&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;head_camera&quot;</span><span class="p">,</span>
+<span class="lineno">76 </span>        <span class="n">choices</span><span class="o">=</span><span class="n">valid_cameras</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Setup Camera Name for Camera Display&#39;</span><span class="p">)</span>
+<span class="lineno">77 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+<span class="lineno">78 </span>        <span class="s1">&#39;-r&#39;</span><span class="p">,</span> <span class="s1">&#39;--raw&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span> 
+<span class="lineno">79 </span>        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Specify use of the raw image (unrectified) topic&#39;</span><span class="p">)</span>
+<span class="lineno">80 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+<span class="lineno">81 </span>        <span class="s1">&#39;-e&#39;</span><span class="p">,</span> <span class="s1">&#39;--edge&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span>
+<span class="lineno">82 </span>        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Streaming the Canny edge detection image&#39;</span><span class="p">)</span>
+<span class="lineno">83 </span>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+</pre></div>
+<p>Three optional arguments <code>camera</code>, <code>raw</code> and <code>edge</code> are captured from the command line arguments.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno"> 85 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Initializing node... &quot;</span><span class="p">)</span>
+<span class="lineno"> 86 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s1">&#39;camera_display&#39;</span><span class="p">,</span> <span class="n">anonymous</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="lineno"> 87 </span>    <span class="n">camera</span> <span class="o">=</span> <span class="n">intera_interface</span><span class="o">.</span><span class="n">Cameras</span><span class="p">()</span>
+<span class="lineno"> 88 </span>    <span class="k">if</span> <span class="ow">not</span> <span class="n">camera</span><span class="o">.</span><span class="n">verify_camera_exists</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">camera</span><span class="p">):</span>
+<span class="lineno"> 89 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s2">&quot;Invalid camera name, exiting the example.&quot;</span><span class="p">)</span>
+<span class="lineno"> 90 </span>        <span class="k">return</span>
+<span class="lineno"> 91 </span>    <span class="n">camera</span><span class="o">.</span><span class="n">start_streaming</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">camera</span><span class="p">)</span>
+<span class="lineno"> 92 </span>    <span class="n">rectify_image</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">args</span><span class="o">.</span><span class="n">raw</span>
+<span class="lineno"> 93 </span>    <span class="n">use_canny_edge</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">edge</span>
+<span class="lineno"> 94 </span>    <span class="n">camera</span><span class="o">.</span><span class="n">set_callback</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">camera</span><span class="p">,</span> <span class="n">show_image_callback</span><span class="p">,</span>
+<span class="lineno"> 95 </span>        <span class="n">rectify_image</span><span class="o">=</span><span class="n">rectify_image</span><span class="p">,</span> <span class="n">callback_args</span><span class="o">=</span><span class="p">(</span><span class="n">use_canny_edge</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">camera</span><span class="p">))</span>
+<span class="lineno"> 96 </span>
+<span class="lineno"> 97 </span>    <span class="k">def</span> <span class="nf">clean_shutdown</span><span class="p">():</span>
+<span class="lineno"> 98 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Shutting down camera_display node.&quot;</span><span class="p">)</span>
+<span class="lineno"> 99 </span>        <span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+<span class="lineno">100 </span>
+<span class="lineno">101 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">on_shutdown</span><span class="p">(</span><span class="n">clean_shutdown</span><span class="p">)</span>
+<span class="lineno">102 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;Camera_display node running. Ctrl-c to quit&quot;</span><span class="p">)</span>
+<span class="lineno">103 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">spin</span><span class="p">()</span>
+<span class="lineno">104 </span>
+<span class="lineno">105 </span>
+<span class="lineno">106 </span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="lineno">107 </span><span class="n">main</span><span class="p">()</span>
+</pre></div>
+<p>The node is initialized and an instance of the <code>camera</code> class is created. After verified the camera name, the camera start streaming, the callback function being set, the callback function <code>show_image_callback</code> will be called.
+Press <code>Ctrl-C</code> to quit the example.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815154922
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.049 seconds
+Real time usage: 1.332 seconds
+Preprocessor visited node count: 62/1000000
+Preprocessor generated node count: 196/1000000
+Post‐expand include size: 37/2097152 bytes
+Template argument size: 1/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 15820/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.601      1 Template:TOClimit
+100.00%    0.601      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:59-0!canonical and timestamp 20190815154920 and revision id 1150
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="a/index.php?title=Camera_Image_Display_Example&amp;oldid=1150">http://sdk.rethinkrobotics.com/intera/a/index.php?title=Camera_Image_Display_Example&amp;oldid=1150</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="a/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.049","walltime":"1.332","ppvisitednodes":{"value":62,"limit":1000000},"ppgeneratednodes":{"value":196,"limit":1000000},"postexpandincludesize":{"value":37,"limit":2097152},"templateargumentsize":{"value":1,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":15820,"limit":5000000},"timingprofile":["100.00%    0.601      1 Template:TOClimit","100.00%    0.601      1 -total"]},"cachereport":{"timestamp":"20190815154922","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":2274});});</script></body></html>

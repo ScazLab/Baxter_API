@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Custom IKFast for your Baxter - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Custom_IKFast_for_your_Baxter","wgTitle":"Custom IKFast for your Baxter","wgCurRevisionId":4198,"wgRevisionId":4198,"wgArticleId":809,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Custom_IKFast_for_your_Baxter","wgRelevantArticleId":809,"wgRequestId":"d8a69705ed5b18c944b01473","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Custom_IKFast_for_your_Baxter rootpage-Custom_IKFast_for_your_Baxter skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Custom+IKFast+for+your+Baxter&amp;returntoquery=oldid%3D4198">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Custom IKFast for your Baxter</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Custom_IKFast_for_your_Baxter" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 16:50, 8 September 2015 by <a href="index.php?title=User:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Imcmahon (page does not exist)"><bdi>Imcmahon</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Imcmahon (page does not exist)">talk</a> | <a href="../Special:Contributions/Imcmahon" class="mw-usertoollinks-contribs" title="Special:Contributions/Imcmahon">contribs</a>)</span> <span class="comment">(<a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#Modify_Simplified_URDFs_with_your_robot.27s_joints">→</a>‎<span dir="auto"><span class="autocomment">Modify Simplified URDFs with your robot&#039;s joints</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Custom_IKFast_for_your_Baxter&amp;diff=prev&amp;oldid=4198" title="Custom IKFast for your Baxter">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Custom_IKFast_for_your_Baxter&amp;direction=prev&amp;oldid=4198" title="Custom IKFast for your Baxter">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#column-one">navigation</a>, <a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#What_is_IKFast.3F"><span class="tocnumber">1.1</span> <span class="toctext">What is IKFast?</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#Using_Baxter.27s_MoveIt.21_IKFast_plugins"><span class="tocnumber">1.2</span> <span class="toctext">Using Baxter's MoveIt! IKFast plugins</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#Generating_Custom_IKFast_for_Baxter"><span class="tocnumber">2</span> <span class="toctext">Generating Custom IKFast for Baxter</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#Install_OpenRAVE"><span class="tocnumber">2.1</span> <span class="toctext">Install OpenRAVE</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#Clone_the_baxter_custom_ikfast_Repository"><span class="tocnumber">2.2</span> <span class="toctext">Clone the baxter_custom_ikfast Repository</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#Extracting_the_Mount_Joint_Transform"><span class="tocnumber">2.3</span> <span class="toctext">Extracting the Mount Joint Transform</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#Modify_Simplified_URDFs_with_your_robot.27s_joints"><span class="tocnumber">2.4</span> <span class="toctext">Modify Simplified URDFs with your robot's joints</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#Create_DAEs_for_Each_Arm"><span class="tocnumber">2.5</span> <span class="toctext">Create DAEs for Each Arm</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#Rounding_DAEs_for_Each_Arm"><span class="tocnumber">2.6</span> <span class="toctext">Rounding DAEs for Each Arm</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#Choose_IK_Type"><span class="tocnumber">2.7</span> <span class="toctext">Choose IK Type</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#Generate_the_IKFast_Solver"><span class="tocnumber">2.8</span> <span class="toctext">Generate the IKFast Solver</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#Testing_with_the_IKFastDemo"><span class="tocnumber">2.9</span> <span class="toctext">Testing with the IKFastDemo</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>Every Baxter's URDF is slightly different. This tutorial will show you how to generate IKFast for use with <a rel="nofollow" class="external text" href="http://moveit.ros.org/wiki/Kinematics/IKFast">MoveIt</a> specific to your Baxter. This is a fairly involved process, requiring many steps. For additional background information on the algorithm behind IKFast, please see <a rel="nofollow" class="external text" href="http://www.programmingvision.com/rosen_diankov_thesis.pdf">Rosen Diankov's Doctoral thesis</a>. Another really good tutorial for generating IKFast for generic (non-Baxter) robots can be found on MoveIt's website: <a rel="nofollow" class="external free" href="http://moveit.ros.org/wiki/Kinematics/IKFast">http://moveit.ros.org/wiki/Kinematics/IKFast</a>
+</p>
+<h3><span id="What_is_IKFast?"></span><span class="mw-headline" id="What_is_IKFast.3F">What is IKFast?</span></h3>
+<p><a href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198#ikfast_IKFast">#ikfast IKFast</a> provides analytical closed-form solutions for manipulator inverse kinematics. Part of the <a rel="nofollow" class="external text" href="http://openrave.org/">OpenRAVE</a> robot architecture/software framework, IKFast has been used to provide closed-form solutions for Baxter's inverse kinematics. Advantages include <b>order of magnitude</b> faster IK solutions and the ability explore the manipulator's null space!
+</p>
+<h3><span id="Using_Baxter's_MoveIt!_IKFast_plugins"></span><span class="mw-headline" id="Using_Baxter.27s_MoveIt.21_IKFast_plugins">Using Baxter's MoveIt! IKFast plugins</span></h3>
+<p>Please see <a href="../MoveIt_Tutorial#IKFast" title="MoveIt Tutorial">MoveIt_Tutorial#IKFast</a> for the exact commands required to enable IKFast in your baxter_moveit_config package.
+</p>
+<h2><span class="mw-headline" id="Generating_Custom_IKFast_for_Baxter">Generating Custom IKFast for Baxter</span></h2>
+<h3><span class="mw-headline" id="Install_OpenRAVE">Install OpenRAVE</span></h3>
+<p>As of this writing, the <a rel="nofollow" class="external text" href="http://www.openrave.org/docs/latest_stable/install/#install">instructions for adding the openrave PPA and installing openrave debians</a> does not work on Ubuntu Trusty since the <a rel="nofollow" class="external text" href="https://launchpad.net/~openrave/+archive/ubuntu/release">latest release was created in 2012 for Precise</a>. That leaves building from source as the only option. Please clone the <a rel="nofollow" class="external text" href="https://github.com/rdiankov/openrave">OpenRAVE repo</a> and follow <a rel="nofollow" class="external text" href="http://www.openrave.org/docs/latest_stable/coreapihtml/installation_linux.html#Building_OpenRAVE">this tutorial for building from source</a>:<br />
+</p>
+<pre> <code>git clone --branch latest_stable <a rel="nofollow" class="external free" href="https://github.com/rdiankov/openrave.git">https://github.com/rdiankov/openrave.git</a></code>
+</pre>
+<p>If you encounter any issues in building this repo, please let the developers know in the <a rel="nofollow" class="external text" href="https://github.com/rdiankov/openrave/issues">issues tab of their repo</a>.
+</p>
+<h3><span class="mw-headline" id="Clone_the_baxter_custom_ikfast_Repository">Clone the baxter_custom_ikfast Repository</span></h3>
+<p>To create IKFast for Baxter, we need to break him down into her individual arms. For this tutorial, we split Baxter into left and right arm URDFs and then removed any link/joint not in the kinematic chain between the base and end-effector. The result of this is a simple little repository on GitHub with these split URDFs in their generic form. Clone the <code>baxter_custom_ikfast</code> repo anywhere, but make sure you are inside a <a href="../RSDK_Shell" title="RSDK Shell"> initialized baxter.sh shell</a> for commands later on.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ git clone https://github.com/RethinkRobotics/baxter_custom_ikfast.git
+</pre></div>
+<p>Navigate inside this cloned folder for the rest of this tutorial:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> custom_baxter_ikfast
+</pre></div>
+<h3><span class="mw-headline" id="Extracting_the_Mount_Joint_Transform">Extracting the Mount Joint Transform</span></h3>
+<p>The left and right arm mount joint's in Baxter's torso are hand-welded at manufacture time. These joints are carefully measured and the transforms are stored in your Baxter's torso joint board. Fortunately, we can see the transforms in your robot's URDF located in the /robot_description parameter on the param server. After a fresh boot (to ensure the custom URDF has not been overwritten), from a <a href="../RSDK_Shell" title="RSDK Shell"> properly initialized</a> Baxter environment, export the URDF from the <code>/robot_description</code> parameter on the ROS parameter server where it is stored, to a file of your choice (ex: <code>baxter_urdf.xml</code>):
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosparam get -p /robot_description <span class="p">|</span> tail -n +2 &gt; baxter_urdf.xml
+</pre></div>
+<p>The <code>-p</code> outputs the parameter using pretty print.  The output urdf is piped through the <code>tail</code> command first to remove a dummy first line - an artifact of the pretty print.  
+</p><p><br />
+</p><p>Open <code>baxter_urdf.xml</code> in your favorite text editor, and search for <code>torso_arm_mount</code> to which are the <b>only joints</b> that differ from Baxter to Baxter. This is an example of what you should expect if the robot description contains Baxter's custom joints:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nt">&lt;joint</span> <span class="na">name=</span><span class="s">&quot;left_torso_arm_mount&quot;</span> <span class="na">type=</span><span class="s">&quot;fixed&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;origin</span> <span class="na">xyz=</span><span class="s">&quot;0.0229088 0.220982 0.106714&quot;</span> <span class="na">rpy=</span><span class="s">&quot;-0.0179406 0.0117677 0.786034&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;axis</span> <span class="na">xyz=</span><span class="s">&quot;0 0 0&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;parent</span> <span class="na">link=</span><span class="s">&quot;torso&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;child</span> <span class="na">link=</span><span class="s">&quot;left_arm_mount&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/joint&gt;</span>
+</pre></div>
+<p>and
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nt">&lt;joint</span> <span class="na">name=</span><span class="s">&quot;right_torso_arm_mount&quot;</span> <span class="na">type=</span><span class="s">&quot;fixed&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;origin</span> <span class="na">xyz=</span><span class="s">&quot;0.0245182 -0.218624 0.10866&quot;</span> <span class="na">rpy=</span><span class="s">&quot;-0.00321838 -0.00564277 -0.78571&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;axis</span> <span class="na">xyz=</span><span class="s">&quot;0 0 0&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;parent</span> <span class="na">link=</span><span class="s">&quot;torso&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;child</span> <span class="na">link=</span><span class="s">&quot;right_arm_mount&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/joint&gt;</span>
+</pre></div>
+<ul><li><b>Note:</b> Save <b>just the origin</b> transform snippits of URDF for the next step. Be sure to avoid copying the <b>parent link</b> value <b>torso</b> as IKFast optimizes it out due to it being an identity transform and replaces it with <b>base</b>.</li></ul>
+<p><br />
+</p>
+<ul><li><b>Note:</b> If you see the following joint values, then you are using the <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/baxter_common/blob/master/baxter_description/urdf/baxter.urdf">generic URDF</a> provided in <code>baxter_description</code> of the SDK. This can happen if the generic URDF is loaded to the param server via a <code>roslaunch</code> script (such as the one with MoveIt). Reboot your robot to clear the <code>robot_description</code> and try again:</li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    <span class="nt">&lt;joint</span> <span class="na">name=</span><span class="s">&quot;left_torso_arm_mount&quot;</span> <span class="na">type=</span><span class="s">&quot;fixed&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;origin</span> <span class="na">rpy=</span><span class="s">&quot;0 0 0.7854&quot;</span> <span class="na">xyz=</span><span class="s">&quot;0.024645 0.219645 0.118588&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;parent</span> <span class="na">link=</span><span class="s">&quot;torso&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;child</span> <span class="na">link=</span><span class="s">&quot;left_arm_mount&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/joint&gt;</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    <span class="nt">&lt;joint</span> <span class="na">name=</span><span class="s">&quot;right_torso_arm_mount&quot;</span> <span class="na">type=</span><span class="s">&quot;fixed&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;origin</span> <span class="na">rpy=</span><span class="s">&quot;0 0 -0.7854&quot;</span> <span class="na">xyz=</span><span class="s">&quot;0.024645 -0.219645 0.118588&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;parent</span> <span class="na">link=</span><span class="s">&quot;torso&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;child</span> <span class="na">link=</span><span class="s">&quot;right_arm_mount&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/joint&gt;</span>
+</pre></div>
+<h3><span id="Modify_Simplified_URDFs_with_your_robot's_joints"></span><span class="mw-headline" id="Modify_Simplified_URDFs_with_your_robot.27s_joints">Modify Simplified URDFs with your robot's joints</span></h3>
+<p>The <code>baxter_arm.accurate.&lt;side&gt;.urdf</code> was extracted from Baxter's original urdf to separate out the left and right arms. Inside the <code>baxter_custom_ikfast</code> folder, edit both <code>baxter_arm.accurate.&lt;side&gt;.urdf</code>'s with your favorite text editor:<br />
+Replace the <b>origin</b> tag with your copied transform values inside the <b>&lt;side&gt;_torso_arm_mount</b> joints:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>  &lt;joint <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;left_torso_arm_mount&quot;</span> <span class="nv">type</span><span class="o">=</span><span class="s2">&quot;fixed&quot;</span>&gt;
+    &lt;origin <span class="nv">rpy</span><span class="o">=</span><span class="s2">&quot;0 0 0.7854&quot;</span> <span class="nv">xyz</span><span class="o">=</span><span class="s2">&quot;0.024645 0.219645 0.118588&quot;</span>/&gt;
+    &lt;parent <span class="nv">link</span><span class="o">=</span><span class="s2">&quot;base&quot;</span>/&gt;
+    &lt;child <span class="nv">link</span><span class="o">=</span><span class="s2">&quot;left_arm_mount&quot;</span>/&gt;
+  &lt;/joint&gt;
+</pre></div>
+<p>Save, quit, and repeat for the other arm's urdf.
+</p>
+<h3><span class="mw-headline" id="Create_DAEs_for_Each_Arm">Create DAEs for Each Arm</span></h3>
+<p>Create our DAEs for each arm:<br />
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>sudo apt-get install ros-indigo-robot-model
+</pre></div>
+<ul><li><b>Note:</b> Please use the a simplified version of the urdf to only contain each manipulators links/joints modified with your robot's arm mount joint extracted above <br /></li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>rosrun collada_urdf urdf_to_collada baxter_arm.accurate.right.urdf baxter_arm.right.dae
+</pre></div>
+<ul><li><b>Note:</b> The resulting DAE also needs some tuning - specifically the rotational portions of the description. <br />Specifically, we will need to round values logically (ie. 119.9999999999999 to 120.0) This will be addressed in the next step.</li></ul>
+<p><br />
+Please take note of the link indices using the following command:
+</p>
+<pre>$ openrave0.9-robot.py baxter_arm.right.dae --info links
+name                 index parents             
+-----------------------------------------------
+base                 0                         
+right_arm_mount      1     base                
+right_upper_shoulder 2     right_arm_mount     
+right_lower_shoulder 3     right_upper_shoulder
+right_upper_elbow    4     right_lower_shoulder
+right_lower_elbow    5     right_upper_elbow   
+right_upper_forearm  6     right_lower_elbow   
+right_lower_forearm  7     right_upper_forearm 
+right_wrist          8     right_lower_forearm 
+right_hand           9     right_wrist         
+right_gripper        10    right_hand          
+-----------------------------------------------
+name                 index parents   
+</pre>
+<p>Likewise with the joints:
+</p>
+<pre>$ openrave0.9-robot.py baxter_arm.right.dae --info joints
+name                  joint_index dof_index parent_link          child_link           mimic
+-------------------------------------------------------------------------------------------
+right_s0              0           0         right_arm_mount      right_upper_shoulder      
+right_s1              1           1         right_upper_shoulder right_lower_shoulder      
+right_e0              2           2         right_lower_shoulder right_upper_elbow         
+right_e1              3           3         right_upper_elbow    right_lower_elbow         
+right_w0              4           4         right_lower_elbow    right_upper_forearm       
+right_w1              5           5         right_upper_forearm  right_lower_forearm       
+right_w2              6           6         right_lower_forearm  right_wrist               
+right_torso_arm_mount -1          -1        base                 right_arm_mount           
+right_hand            -1          -1        right_wrist          right_hand                
+right_endpoint        -1          -1        right_hand           right_gripper             
+-------------------------------------------------------------------------------------------
+name                  joint_index dof_index parent_link          child_link           mimic
+</pre>
+<h3><span class="mw-headline" id="Rounding_DAEs_for_Each_Arm">Rounding DAEs for Each Arm</span></h3>
+<p>The openrave solver takes a lot longer to calculate solutions with many decimal points inside the numbers of the DAE files. To remedy this, download moveit_ikfast:<br />
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ sudo apt-get install ros-indigo-moveit-ikfast
+</pre></div>
+<p>Let's round the numbers to five decimal points:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun moveit_ikfast round_collada_numbers.py baxter_arm.right.dae baxter_arm.right.rounded.dae <span class="m">5</span>
+</pre></div>
+<h3><span class="mw-headline" id="Choose_IK_Type">Choose IK Type</span></h3>
+<p>Choose your IK Type (ex: Transform6D, Rotation3d, Translation3D, etc.)<br />
+<a rel="nofollow" class="external free" href="http://openrave.org/docs/latest_stable/openravepy/ikfast/#ik-types">http://openrave.org/docs/latest_stable/openravepy/ikfast/#ik-types</a><br />
+For most applications it makes sense to use transform6D - Baxter's end effector reaches desired 6D transformation<br />
+</p>
+<h3><span class="mw-headline" id="Generate_the_IKFast_Solver">Generate the IKFast Solver</span></h3>
+<p>Building the solver using the collada mesh, chosen iktype, base, and end effector links created and found in the previous steps.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ python /path_to_openrave/openrave/python/ikfast.py --robot<span class="o">=</span>baxter_arm.right.rounded.dae --iktype<span class="o">=</span>transform6d --baselink<span class="o">=</span><span class="m">1</span> --eelink<span class="o">=</span><span class="m">10</span> --freeindex<span class="o">=</span><span class="m">5</span> --savefile<span class="o">=</span>baxter_right_arm_ikfast_solver.cpp
+</pre></div>
+<p>Completion time should be ~24 minutes.
+<br />
+This library is what exists inside the official <a rel="nofollow" class="external text" href="https://github.com/ros-planning/moveit_robots/blob/master/baxter/baxter_ikfast_right_arm_plugin/src/baxter_right_arm_ikfast_solver.cpp">moveit_robots/baxter_ikfast_&lt;side&gt;_arm_plugin package</a>. <br />
+Simply drop this cpp file in there, rebuild your catkin workspace, and enable IKFast as explained in <a href="../MoveIt_Tutorial#IKFast" title="MoveIt Tutorial">MoveIt_Tutorial#IKFast</a>.
+<br /><br />
+Congrats! You've created a custom IKFast for your Baxter!<br />
+</p>
+<h3><span class="mw-headline" id="Testing_with_the_IKFastDemo">Testing with the IKFastDemo</span></h3>
+<p>If you'd like to explore IKFast a bit further, you can compile the source code into an executable
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ g++ -lstdc++ -o  baxter_right_ik baxter_right_arm_ikfast_solver.cpp -llapack
+</pre></div>
+<p><br />
+And finally, to go even further by testing out the ikfastdemo, first download it from the kaist-ros-pkg with wget:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ wget http://kaist-ros-pkg.googlecode.com/svn/trunk/arm_kinematics_tools/src/ikfastdemo/ikfastdemo.cpp
+</pre></div> 
+<p>Then edit the <code>ikfastdemo.cpp</code> source file in your favorite text editor. <br />
+Modify the following lines at the top of the file:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#define IK_VERSION 61</span>
+<span class="cp">#include</span> <span class="cpf">&quot;baxter_right_arm_ikfast_solver.cpp&quot;</span><span class="cp"></span>
+</pre></div>
+<p>Then compile your IKFastDemo:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ g++ ikfastdemo.cpp -lstdc++ -llapack -o compute -lrt
+</pre></div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815160857
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.065 seconds
+Real time usage: 10.619 seconds
+Preprocessor visited node count: 197/1000000
+Preprocessor generated node count: 436/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 9823/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:809-0!canonical and timestamp 20190815160847 and revision id 4198
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Custom_IKFast_for_your_Baxter&amp;oldid=4198</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.065","walltime":"10.619","ppvisitednodes":{"value":197,"limit":1000000},"ppgeneratednodes":{"value":436,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":9823,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815160857","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":51});});</script></body></html>

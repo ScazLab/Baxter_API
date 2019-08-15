@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Foundations - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Foundations","wgTitle":"Foundations","wgCurRevisionId":3816,"wgRevisionId":3816,"wgArticleId":572,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Foundations","wgRelevantArticleId":572,"wgRequestId":"ce33a97c197acee3a64b9c2c","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["sysop"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Foundations rootpage-Foundations skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Foundations&amp;returntoquery=oldid%3D3816">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Foundations</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Foundations&amp;oldid=3816#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Foundations&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Foundations&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Foundations" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 23:05, 7 January 2015 by <a href="index.php?title=User:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Imcmahon (page does not exist)"><bdi>Imcmahon</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Imcmahon (page does not exist)">talk</a> | <a href="../Special:Contributions/Imcmahon" class="mw-usertoollinks-contribs" title="Special:Contributions/Imcmahon">contribs</a>)</span> <span class="comment">(<a href="index.php?title=Foundations&amp;oldid=3816#Running_Example_Research_SDK_Programs">→</a>‎<span dir="auto"><span class="autocomment">Running Example Research SDK Programs</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Foundations&amp;diff=prev&amp;oldid=3816" title="Foundations">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Foundations&amp;direction=prev&amp;oldid=3816" title="Foundations">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Foundations&amp;oldid=3816#column-one">navigation</a>, <a href="index.php?title=Foundations&amp;oldid=3816#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table style="padding:5px; border:1px solid #ffcc00; text-align:center; background:#FFFDDF; width:100%; margin-bottom:.5em;">
+<tbody><tr>
+<td><b><a href="../Learning" title="Learning">Learning</a>:</b> <a class="mw-selflink selflink">Foundations</a>, <a href="../Advanced_Understanding" title="Advanced Understanding">Advanced Understanding</a>, <a href="../Tools" title="Tools">Projects and Tools (Do More)</a>, <a href="../Configuration_and_Admin" title="Configuration and Admin">Configuration and Admin</a>
+</td></tr></tbody></table>
+<p>This page will introduce you to the foundations of the Baxter SDK and teach you all the basics you need to know to start using and writing programs for your Baxter Research Robot.
+</p>
+<div class="toclimit-3"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Foundations&amp;oldid=3816#First_Steps"><span class="tocnumber">1</span> <span class="toctext">First Steps</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Foundations&amp;oldid=3816#Overviews"><span class="tocnumber">1.1</span> <span class="toctext">Overviews</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=Foundations&amp;oldid=3816#SDK_Examples"><span class="tocnumber">1.2</span> <span class="toctext">SDK Examples</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="index.php?title=Foundations&amp;oldid=3816#Running_Example_Research_SDK_Programs"><span class="tocnumber">1.2.1</span> <span class="toctext">Running Example Research SDK Programs</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="index.php?title=Foundations&amp;oldid=3816#Writing_Programs"><span class="tocnumber">2</span> <span class="toctext">Writing Programs</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="index.php?title=Foundations&amp;oldid=3816#SDK_Foundations_.28Interfaces.29"><span class="tocnumber">2.1</span> <span class="toctext">SDK Foundations (Interfaces)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="index.php?title=Foundations&amp;oldid=3816#ROS_Interface"><span class="tocnumber">2.1.1</span> <span class="toctext">ROS Interface</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="index.php?title=Foundations&amp;oldid=3816#Python_Interface"><span class="tocnumber">2.1.2</span> <span class="toctext">Python Interface</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="index.php?title=Foundations&amp;oldid=3816#Robot_Hardware_Foundations"><span class="tocnumber">2.2</span> <span class="toctext">Robot Hardware Foundations</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="index.php?title=Foundations&amp;oldid=3816#Working_with_Baxter"><span class="tocnumber">3</span> <span class="toctext">Working with Baxter</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="index.php?title=Foundations&amp;oldid=3816#Baxter_SDK_Tools"><span class="tocnumber">3.1</span> <span class="toctext">Baxter SDK Tools</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="index.php?title=Foundations&amp;oldid=3816#See_Also:"><span class="tocnumber">3.1.1</span> <span class="toctext"><i>See Also:</i></span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="index.php?title=Foundations&amp;oldid=3816#Development_Environment_Basics"><span class="tocnumber">3.2</span> <span class="toctext">Development Environment Basics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="index.php?title=Foundations&amp;oldid=3816#Resources"><span class="tocnumber">4</span> <span class="toctext">Resources</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="index.php?title=Foundations&amp;oldid=3816#SDK_Ecosystem_and_the_Baxter_Research_Community"><span class="tocnumber">4.1</span> <span class="toctext">SDK Ecosystem and the Baxter Research Community</span></a>
+<ul>
+<li class="toclevel-3 tocsection-16"><a href="index.php?title=Foundations&amp;oldid=3816#Community.2C_Resources.2C_SDK_Ecosystem"><span class="tocnumber">4.1.1</span> <span class="toctext">Community, Resources, SDK Ecosystem</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-17"><a href="index.php?title=Foundations&amp;oldid=3816#Learning_Resources"><span class="tocnumber">4.2</span> <span class="toctext">Learning Resources</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<h1><span class="mw-headline" id="First_Steps">First Steps</span></h1>
+<p>If you are a new user of Baxter and the SDK, we highly recommend running through the <a href="../Hello_Baxter" title="Hello Baxter">Hello, Baxter! Tutorial</a> - which will get you and your Baxter moving in no time.  It is also a great confirmation that your Workstation and Environment are configured properly and that you are ready to go.
+</p>
+<h2><span class="mw-headline" id="Overviews">Overviews</span></h2>
+<p>Before you get too far, you might be interested in getting a more conceptual introduction to the SDK, check out the <a href="../Baxter_Research_Robot_Software_Developers_Kit_(SDK)" title="Baxter Research Robot Software Developers Kit (SDK)">High-Level Overview</a> of the SDK.  This guide will give a brief summary of what the SDK is and the various parts of the system that make up the Baxter Research Robot platform.
+</p>
+<h2><span class="mw-headline" id="SDK_Examples">SDK Examples</span></h2>
+<p>Because it's always more fun to get your hands dirty, the <a href="../Example_Programs" class="mw-redirect" title="Example Programs">SDK Example Programs</a> are designed to demonstrate using the various interfaces and features of Baxter.  These example programs are often more complex and by following the <i>Usage Guide</i> on an Example Page, you can try out some of Baxter's functionality.  Each example also has a corresponding <i>Code Walkthrough</i> that will take you through the program and explain how we use the interfaces.
+</p>
+<h3><span class="mw-headline" id="Running_Example_Research_SDK_Programs"><a href="../Example_Programs" class="mw-redirect" title="Example Programs"> Running Example Research SDK Programs</a></span></h3>
+<p>Learn how to start your environment and run any of the SDK Examples below:
+</p>
+<div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
+<ul><li><a href="../Display_Image_Example" title="Display Image Example">Display Image Example</a></li>
+<li><a href="../Gripper_Example" title="Gripper Example">Gripper Example</a></li>
+<li><a href="../Gripper_Cuff_Control_Example" title="Gripper Cuff Control Example">Gripper Cuff Control Example</a></li>
+<li><a href="../Head_Movement_Example" title="Head Movement Example">Head Movement Example</a></li>
+<li><a href="../Head_Action_Client_Example" title="Head Action Client Example">(New!) Head Action Client Example</a></li>
+<li><a href="../IK_Service_Example" title="IK Service Example">IK Service Example</a></li>
+<li><a href="../Input_Output_Example" title="Input Output Example">Input Output Example</a></li>
+<li><a href="../Joint_Position_Example" title="Joint Position Example">Joint Position Example</a></li>
+<li><a href="../Joint_Torque_Springs_Example" title="Joint Torque Springs Example">Joint Torque Springs Example</a></li>
+<li><a href="../Joint_Trajectory_Playback_Example" title="Joint Trajectory Playback Example">Joint Trajectory Playback Example</a></li>
+<li><a href="../Puppet_Example" title="Puppet Example">Puppet Example</a></li>
+<li><a href="../Wobbler_Example" title="Wobbler Example">Wobbler Example</a></li>
+<li><a href="../Simple_Joint_trajectory_example" title="Simple Joint trajectory example">Simple Joint Trajectory Example</a></li></ul>
+</div>
+<h1><span class="mw-headline" id="Writing_Programs">Writing Programs</span></h1>
+<p>At the core of the SDK are the interfaces provided to control and access all of the Baxter Research Robot's motors and sensors.  These sections describe the hardware components of the robot and the foundation API layers upon which the SDK - and your programs - are built. These sections describe the <i>Components of the Robot</i>, and the <i>Interfaces</i> to control them. 
+</p>
+<h2><span id="SDK_Foundations_(Interfaces)"></span><span class="mw-headline" id="SDK_Foundations_.28Interfaces.29">SDK Foundations (Interfaces)</span></h2>
+<p>The SDK provides interfaces that control the robot hardware layer via the Robot Operating System (ROS) to any other computers on the robot's network.  By using the ROS network layer API, any client library or program that can "speak ROS" can control the robot directly.  For a deeper understanding of the SDK System architecture see:
+</p>
+<ul><li><a href="../Baxter_Research_Robot_Software_Developers_Kit_(SDK)" title="Baxter Research Robot Software Developers Kit (SDK)">SDK System Overview</a></li></ul>
+<p>By using the foundation ROS interface layer, the robot can be controlled and programmed in any Programming Language that supports ROS.  This has led to a number of user-created interface libraries in different languages.  In addition, the Python Baxter Interface provides a Python Class-based interface library, which wraps many of the ROS interfaces in Python Classes.
+</p>
+<h3><span class="mw-headline" id="ROS_Interface">ROS Interface</span></h3>
+<p>The ROS Interface is the foundation upon which all interaction with the Baxter Research Robot passes through and all other interface layers are built upon.  The ROS layer is accessible over the network via any of the standard <a rel="nofollow" class="external text" href="http://wiki.ros.org/Client%20Libraries">ROS Client Libraries</a> such as <a rel="nofollow" class="external text" href="http://wiki.ros.org/rospy">rospy (Python)</a> or <a rel="nofollow" class="external text" href="http://wiki.ros.org/roscpp">roscpp (C++)</a>.
+</p>
+<ul><li><dl><dt><a href="../API_Reference" title="API Reference">ROS API Reference</a></dt>
+<dd>The ROS API describes the base interface layer for direct access from the command line or any language.</dd></dl></li></ul>
+<h3><span class="mw-headline" id="Python_Interface">Python Interface</span></h3>
+<p>The Baxter SDK also offers a Python API via the <code>baxter_interface</code> module.  This module wraps the ROS Interfaces in component-based Python Classes.  The SDK Examples are written using this library in order to demonstrate how to use the robot interfaces.
+</p>
+<ul><li><dl><dt><a href="../Baxter_Interface" title="Baxter Interface">Baxter Interface Overview</a></dt>
+<dd>Gives a basic introduction to each class and component in the Python interface library 'baxter_interface'.</dd></dl></li></ul>
+<ul><li><dl><dt><a rel="nofollow" class="external text" href="http://api.rethinkrobotics.com">Code API</a></dt>
+<dd>View the generated Python Code API docs for the baxter_interface module.</dd></dl></li></ul>
+<h2><span class="mw-headline" id="Robot_Hardware_Foundations">Robot Hardware Foundations</span></h2>
+<p>To learn more about what sensors and motors are on the robot and how to use them, see:
+</p>
+<ul><li><a href="../Robot_Components" title="Robot Components">Component Pages</a></li></ul>
+<h1><span class="mw-headline" id="Working_with_Baxter">Working with Baxter</span></h1>
+<p>Now that you have your <a href="../Baxter_Setup" title="Baxter Setup">robot all set up</a> and you've <a href="../Workstation_Setup" title="Workstation Setup">installed the Baxter SDK on your workstation</a> and <a href="../Workstation_Setup#Step_5:_Configure_Baxter_Communication.2FROS_Workspace" title="Workstation Setup">setup your ROS workspace environment</a>, you will want to know more about working with the robot and using the workspace and tools to develop your own programs and research.
+</p>
+<h2><span class="mw-headline" id="Baxter_SDK_Tools">Baxter SDK Tools</span></h2>
+<p>The <a href="../Baxter_Tools" title="Baxter Tools">Baxter Tools</a> package contains helpful, command-line programs for working with Baxter on a day-to-day basis and also for executing robot maintenance and update tasks.
+</p>
+<ul><li><i>Daily Operation</i>
+<ul><li><a href="../Enable_Robot_Tool" title="Enable Robot Tool">Enable Robot Tool</a>
+<dl><dd>This is the most fundamental tool when working with Baxter. Enables and Disables power to the motors on the robot, which enables <a href="../Control_Systems" title="Control Systems">Zero-G</a> Mode and control of the motors. Takes commands for Enabling/Disabling/Resetting/Stopping the robot, and also checking the Error and E-Stop states of the robot. <b>Baxter must be enabled in order to command any of the motors (except the grippers).</b></dd></dl></li>
+<li><a href="../Camera_Control_Tool" title="Camera Control Tool">Camera Control Tool</a>
+<dl><dd>Useful for controlling which cameras are on and their settings. You can list and control which cameras are open (publishing images) and the resolutions using this tool. The program also demonstrates using the camera settings Python Interface.</dd></dl></li>
+<li><a href="../Tuck_Arms_Tool" title="Tuck Arms Tool">Tuck Arms Tool</a>
+<dl><dd>Tuck arms is a simple convenience script for moving the arms to the untucked "Ready Pose" (in front of the robot), from the tucked "Shipping Pose".  It also demonstrates disabling the collision avoidance force-fields, which blocks the robot arms from moving when in Shipping Pose.</dd></dl></li></ul></li>
+<li><i>Maintenance</i>
+<ul><li><a href="../Software_Update" title="Software Update">Software Update</a>
+<dl><dd>Update the robot software to new releases using this tool.</dd></dl></li>
+<li><a href="../Arm_Calibration" title="Arm Calibration">Arm Calibration</a>
+<dl><dd>The 'Calibrate' and 'Tare' tools will perform routine calibration procedures for sensors and torque models of the arm.</dd></dl></li></ul></li></ul>
+<h4><span class="mw-headline" id="See_Also:"><i>See Also:</i></span></h4>
+<ul><li><a href="../Tools" title="Tools">Tools</a>
+<dl><dd>Useful External Tools and Interfaces for development and interacting with Baxter. This includes the <a href="../MoveIt_Tutorial" title="MoveIt Tutorial">MoveIt! Tutorial for Baxter</a> and the <a href="../Baxter_Simulator" title="Baxter Simulator">Baxter Gazebo Simulator</a>.</dd></dl></li></ul>
+<h2><span class="mw-headline" id="Development_Environment_Basics">Development Environment Basics</span></h2>
+<p>Throughout the Wiki, Tutorials, and SDK, we refer to the "RSDK Shell" and your "ROS Workspace" or "Environment".  These are simple environment concepts and configurations that are useful to have a basic understanding of when using the Baxter SDK and ROS.
+</p>
+<ul><li><dl><dt>ROS Workspace</dt>
+<dd>Your "ROS Workspace" (also called a "<a rel="nofollow" class="external text" href="http://wiki.ros.org/catkin/workspaces">Catkin Workspace</a>" in the ROS world), is the <b><code>~/ros_ws/</code></b> directory you setup in the <a href="../Getting_Started" title="Getting Started">Getting Started Tutorials</a>. Inside the <code>src/</code> sub-directory, you can create or checkout source code as ROS Packages (such as the baxter sdk packages), which you can then compile and link against via the <code>devel/</code> or <code>install/</code> sub-directories.</dd></dl></li></ul>
+<ul><li><dl><dt><a href="../RSDK_Shell" title="RSDK Shell">RSDK Shell</a></dt>
+<dd>The <a href="../RSDK_Shell" title="RSDK Shell">RSDK Shell</a> is a term we use to refer to a session in a <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Shell_(computing)">shell</a>, or Terminal, with the ROS Environment Variables properly configured to point to your ROS Workspace, the Baxter Robot, and your computer's ROS ID.</dd>
+<dd>The <b><code><a href="../Baxter.sh" class="mw-redirect" title="Baxter.sh">baxter.sh</a></code></b> file is the script you setup to take care of configuring all that for you.</dd>
+<dd><br /></dd>
+<dd>You need to be in a proper RSDK Shell before you use most of the ROS tools or run any of the SDK examples or programs. Therefore you should run the <code>./baxter.sh</code> script at the start of each Terminal session.  All the script does is start a convenient "sub-shell" that fills in the necessary Environment Variables as you configured.</dd></dl></li></ul>
+<ul><li><dl><dt>Environment Variables</dt>
+<dd>The <a rel="nofollow" class="external text" href="http://wiki.ros.org/ROS/EnvironmentVariables">ROS Environment Variables</a> have three important functions:
+<ol><li>Identifying your Baxter and Workstation on the ROS Network, based on your <a href="../Networking" title="Networking">Network Configuration</a>.</li>
+<li>Pointing to the path of the ROS Packages, tools, and programs, when you use rosrun (execute programs).</li>
+<li>Linking to the libraries and workspaces when compiling source code.</li></ol></dd></dl></li></ul>
+<p><br />
+If you are new to the ROS world, it is highly recommended you take the time to go through the Beginner Level <a rel="nofollow" class="external text" href="http://wiki.ros.org/ROS/Tutorials#Core_ROS_Tutorials">Core ROS Tutorials</a>. My personal recommendation is to at least do:
+</p>
+<ul><li>The first few Configure through 'Understanding ROS' tutorials - <i>(<b>Remember:</b> we use <code>~/ros_ws/</code> instead of <code>~/catkin_ws/</code> but they are exactly the same)</i>.</li>
+<li>Also, the '<a rel="nofollow" class="external text" href="http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29">Writing a Simple Publisher and Subscriber</a>' tutorials can be pretty useful when it comes to writing your first ROS program for the ROS newbie.</li></ul>
+<h1><span class="mw-headline" id="Resources">Resources</span></h1>
+<h2><span class="mw-headline" id="SDK_Ecosystem_and_the_Baxter_Research_Community">SDK Ecosystem and the Baxter Research Community</span></h2>
+<h4><span id="Community,_Resources,_SDK_Ecosystem"></span><span class="mw-headline" id="Community.2C_Resources.2C_SDK_Ecosystem">Community, Resources, SDK Ecosystem</span></h4>
+<ul><li><a rel="nofollow" class="external text" href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users">Baxter Research Community Forum</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics">RethinkRobotics Github Organization (https://github.com/RethinkRobotics)</a><br /></li>
+<li><b><a href="../Community" title="Community">Wiki Community Pages</a>:</b>
+<ul><li><a href="../Research" title="Research">Research</a></li>
+<li><a href="../Customer_Videos" title="Customer Videos">Customer Videos</a></li>
+<li><a href="../Showcase" title="Showcase">Showcase - Baxter Projects, Tools, Tricks &amp; Tips</a></li>
+<li><a href="../People" title="People">People</a></li></ul></li></ul>
+<h2><span class="mw-headline" id="Learning_Resources">Learning Resources</span></h2>
+<ul><li><a href="../Video_Tutorials" title="Video Tutorials">Video Tutorials</a></li>
+<li><a href="../Reference" title="Reference">Reference</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815160702
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.023 seconds
+Real time usage: 0.033 seconds
+Preprocessor visited node count: 74/1000000
+Preprocessor generated node count: 90/1000000
+Post‐expand include size: 259/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.472      1 Template:Learning-group_header
+100.00%    0.472      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:572-0!canonical and timestamp 20190815160702 and revision id 3816
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Foundations&amp;oldid=3816">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Foundations&amp;oldid=3816</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.023","walltime":"0.033","ppvisitednodes":{"value":74,"limit":1000000},"ppgeneratednodes":{"value":90,"limit":1000000},"postexpandincludesize":{"value":259,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.472      1 Template:Learning-group_header","100.00%    0.472      1 -total"]},"cachereport":{"timestamp":"20190815160702","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":33});});</script></body></html>

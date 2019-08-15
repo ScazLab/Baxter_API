@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for New Feature Documentation for 0.7.0 - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"New_Feature_Documentation_for_0.7.0","wgTitle":"New Feature Documentation for 0.7.0","wgCurRevisionId":3299,"wgRevisionId":0,"wgArticleId":376,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"New_Feature_Documentation_for_0.7.0","wgRelevantArticleId":376,"wgRequestId":"cbb0d87270d4a6df6b4f1681","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-New_Feature_Documentation_for_0_7_0 rootpage-New_Feature_Documentation_for_0_7_0 skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=New+Feature+Documentation+for+0.7.0&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for New Feature Documentation for 0.7.0</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=New_Feature_Documentation_for_0.7.0&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=New_Feature_Documentation_for_0.7.0&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=New_Feature_Documentation_for_0.7.0&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../New_Feature_Documentation_for_0.7.0" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../New_Feature_Documentation_for_0.7.0" title="New Feature Documentation for 0.7.0">New Feature Documentation for 0.7.0</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=New_Feature_Documentation_for_0.7.0&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=New_Feature_Documentation_for_0.7.0&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">This page is a quick overview of some of the new features in the RSDK v0.7.0 release.  Documentation for these features will be incorporated in the main wiki as we smoothly transition from previous version documentation.
+
+== Joint Position Movement Speed ==
+Baxter has a parameter that allows the user to control the movement speed of joint position commands on a given arm.  This parameter is set as a ratio from 0-1.0, with a default of 0.3.  The command for changing this ratio on a given limb is as follows:
+&lt;source lang="bash">
+    $ rostopic pub /robot/limb/&lt;limb>/set_speed_ratio std_msgs/Float64 &lt;speed ratio>
+&lt;/source>
+
+== Gripper and Object Mass ==
+The BRR allows the user to set an expected mass for grippers as well as for grasped objects.  This involves copying in a portion of a urdf pertaining to those properties.  
+=== Gripper Mass ===
+The command for setting the mass for a given gripper is:
+&lt;source lang="bash">
+    $ rostopic pub -1 /robot/end_effector/&lt;limb>_gripper/command baxter_core_msgs/EndEffectorCommand '{ id : 65664,  command : "configure", args : "{ \"urdf\":{ \"name\": \"&lt;limb>_custom_gripper\",  \"link\": [ { \"name\": \"&lt;limb>_hand\" }, { \"name\": \"&lt;limb>_gripper_base\", \"inertial\": { \"mass\": { \"value\": &lt;mass: in kg> }, \"origin\": { \"xyz\": [0.0014, 0.0, 0.074] } } } ] }}"}'
+&lt;/source>
+The maximum mass you should set here is 2.27 (~5 lbs)
+For example, to set the mass of the right gripper to 2.27 kilograms:
+&lt;source lang="bash">
+    $ rostopic pub -1 /robot/end_effector/right_gripper/command baxter_core_msgs/EndEffectorCommand '{ id : 65664,  command : "configure", args : "{ \"urdf\":{ \"name\": \"right_custom_gripper\",  \"link\": [ { \"name\": \"right_hand\" }, { \"name\": \"right_gripper_base\", \"inertial\": { \"mass\": { \"value\": 2.27 }, \"origin\": { \"xyz\": [0.0014, 0.0, 0.074] } } } ] }}"}'
+&lt;/source>
+and to set it to zero:
+&lt;source lang="bash">
+    $ rostopic pub -1 /robot/end_effector/right_gripper/command baxter_core_msgs/EndEffectorCommand '{ id : 65664,  command : "configure", args : "{ \"urdf\":{ \"name\": \"right_custom_gripper\",  \"link\": [ { \"name\": \"right_hand\" }, { \"name\": \"right_gripper_base\", \"inertial\": { \"mass\": { \"value\": 0 }, \"origin\": { \"xyz\": [0.0014, 0.0, 0.074] } } } ] }}"}'
+&lt;/source>
+
+=== Gripped Object mass ===
+This will set the expected weight of a grasped object and will only be noticeable when the updated arm is currently grasping an object.  Once again, the maximum mass that should be set is 2.27 kilograms (~5 lbs).
+
+To set the mass of a gripped object:
+&lt;source lang="bash">
+    $ rostopic pub -1 /robot/end_effector/&lt;limb>_gripper/command baxter_core_msgs/EndEffectorCommand '{ id : 65664,  command : "configure", args : "{ \"object\":{ \"name\": \"&lt;limb>_gripper\", \"inertial\": { \"mass\": { \"value\": &lt;mass: in kg> }, \"origin\": { \"xyz\": [0.0, 0.0, 0.0] }, \"inertia\": { \"ixx\": 0.0, \"ixy\": 0.0, \"ixz\": 0.0, \"iyy\": 0.0, \"iyz\": 0.0, \"izz\": 0.0 } } } }}"}'
+&lt;/source>
+For example, to set the mass of a picked object to 2.27 kilograms:
+&lt;source lang="bash">
+    $ rostopic pub -1 /robot/end_effector/right_gripper/command baxter_core_msgs/EndEffectorCommand '{ id : 65664,  command : "configure", args : "{ \"object\":{ \"name\": \"right_gripper\", \"inertial\": { \"mass\": { \"value\": 2.27 }, \"origin\": { \"xyz\": [0.0, 0.0, 0.0] }, \"inertia\": { \"ixx\": 0.0, \"ixy\": 0.0, \"ixz\": 0.0, \"iyy\": 0.0, \"iyz\": 0.0, \"izz\": 0.0 } } } }}"}'
+&lt;/source>
+and to set it back to 0:
+&lt;source lang="bash">
+    $ rostopic pub -1 /robot/end_effector/right_gripper/command baxter_core_msgs/EndEffectorCommand '{ id : 65664,  command : "configure", args : "{ \"object\":{ \"name\": \"right_gripper\", \"inertial\": { \"mass\": { \"value\": 0.00 }, \"origin\": { \"xyz\": [0.0, 0.0, 0.0] }, \"inertia\": { \"ixx\": 0.0, \"ixy\": 0.0, \"ixz\": 0.0, \"iyy\": 0.0, \"iyz\": 0.0, \"izz\": 0.0 } } } }}"}'
+&lt;/source>
+
+= Network Configuration Information =
+The BRR has a utility for verifying the network configuration on the robot by switching to TTY3 on (attach a keyboard and press Ctrl+Alt+F3).  The output should look like this:
+[[File:tty3.png|tty3 display]]
+
+= Disable Gravity Compensation =
+To disable the gravity compensation on a given arm, you need to publish an empty message at greater than 5hz to the following topic:
+&lt;source lang="bash">
+    /robot/limb/&lt;limb>/suppress_gravity_compensation
+&lt;/source>
+The command to suppress gravity compensation on the left arm would be:
+&lt;source lang="bash">
+    $ rostopic pub /robot/limb/left/suppress_gravity_compensation std_msgs/Empty -r 10
+&lt;/source>
+The gravity compensation will stay suppressed as long as this is being published
+
+= Disable Collision Avoidance =
+To disable the collision avoidance on a given arm, you need to publish an empty message at greater than 5hz to the following topic:
+&lt;source lang="bash">
+    /robot/limb/&lt;limb>/suppress_collision_avoidance
+&lt;/source>
+The command to suppress collision avoidance on the left arm would be:
+&lt;source lang="bash">
+    $ rostopic pub /robot/limb/left/suppress_collision_avoidance std_msgs/Empty -r 10
+&lt;/source>
+The collision avoidance will stay suppressed as long as this is being published
+
+= Kinect Basics =
+== Install openni for kinect connectivity ==
+&lt;source lang="bash">
+    $ sudo apt-get install ros-groovy-openni-camera ros-groovy-openni-launch
+    $ rospack profile
+&lt;/source>
+You may need to reboot the robot to correctly install the camera drivers.
+To start publishing the kinect camera, run the openni_launch file:
+&lt;source lang="bash">
+    $ roslaunch openni_launch openni.launch
+&lt;/source>
+You can now publish a static tf transform for the kinect connected to a frame on the robot like so:
+&lt;source lang="bash">
+    $ rosrun tf static_transform_publisher &lt;x> &lt;y> &lt;z> &lt;qx> &lt;qy> &lt;qz> &lt;qw> &lt;parent frame> /camera_link 50
+&lt;/source>
+If you launch rviz and add a camera linked to /camera/rgb/image_color and add a TF obect, deselecting Show Names and Show Axes, you should be able to see the output from the kinect with an icon indicating its relative position to the robot
+Using the transform:
+&lt;source lang="bash">
+    $ rosrun tf static_transform_publisher 1 0 0 .1 0 0 0 /torso /camera_link 50
+&lt;/source>
+[[File:kinect_tf.png|Kinect TF example]]
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../New_Feature_Documentation_for_0.7.0" title="New Feature Documentation for 0.7.0">New Feature Documentation for 0.7.0</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../New_Feature_Documentation_for_0.7.0">http://sdk.rethinkrobotics.com/wiki/New_Feature_Documentation_for_0.7.0</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":54});});</script></body></html>

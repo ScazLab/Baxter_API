@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for FTP Log Files - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"FTP_Log_Files","wgTitle":"FTP Log Files","wgCurRevisionId":3250,"wgRevisionId":0,"wgArticleId":346,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"FTP_Log_Files","wgRelevantArticleId":346,"wgRequestId":"ab54a3b063fb6c12a7e2a547","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-FTP_Log_Files rootpage-FTP_Log_Files skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=FTP+Log+Files&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for FTP Log Files</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=FTP_Log_Files&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=FTP_Log_Files&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=FTP_Log_Files&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../FTP_Log_Files" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../FTP_Log_Files" title="FTP Log Files">FTP Log Files</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=FTP_Log_Files&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=FTP_Log_Files&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">= Use FTP to View Baxter Log Files =
+== Summary ==
+Using a simple FTP folder, you can get and view log files off of Baxter for help when debugging.
+
+* [[FTP Log Files#overview|Overview]]
+* [[FTP Log Files#usage|Usage]]
+* [[FTP Log Files#log-files|Log Files]]
+* [[FTP Log Files#relevant-log-files|Relevant Files]]
+* [[FTP Log Files##inaccessible-files|Inaccessible Files]]
+
+[[File:ftp_main.png|frame]]
+
+== Overview ==
+Baxter stores logs of the processes it runs in log files on-board the robot.  These log files can contain useful information for debugging a robot-side issue with your RSDK Baxter.  Users can access the log files on the robot via FTP.  Inside the FTP directory there are Baxter-specific log files from the robotics software on the robot, and standard Linux system log files from the computer inside.
+
+== Usage ==
+Connect to Baxter's FTP at the robot's IP address, or using the avahi &lt;code>"hostname.local"&lt;/code> format.  
+
+==== View in Browser ====
+For example, for quick viewing in a compatible browser (Windows File Explorer, Chrome, or Firefox), if your robot's name was &lt;code>011401P0007&lt;/code> you would go to: &lt;code>ftp://011401P0007.local&lt;/code>, or use the IP address directly, like &lt;code>ftp://192.168.0.33&lt;/code>.
+
+==== Grab and Zip All Logs ====
+The &lt;code>wget&lt;/code> tool is an easy way to grab all the log files and zip them up (say, for sharing when debugging a problem).  For example, if your Baxter's name is &lt;code>011401P0007&lt;/code> ...
+&lt;source lang="bash">
+# Get all log files (recursively) from Baxter's ftp server
+$ wget -r ftp://011401P0007.local/
+
+# Create a gzipped tar archive of logs directory
+$ tar cvzf ftp_logs.tar.gz 011401P0007.local/
+&lt;/source>
+
+==== Use FTP program ====
+Alternatively, use a command line FTP program (see [[SSH] for account details):
+&lt;source lang="bash">
+$ sftp ruser@011401P0007.local
+  Password: 
+  Connected to 011401P0007.local.
+sftp> cd /var/ftp
+sftp> ls
+  hlr-log  rosbags  sys-log
+sftp> get -r ./
+&lt;/source>
+
+Or with the base ftp program:
+Alternatively, use a command line FTP program:
+&lt;source lang="bash">
+$ ftp -n 011401P0007.local
+  Connected to 011401P0007.local.
+  220 (vsFTPd 3.0.2)
+ftp> user anonymous
+  230 Login successful.
+  Remote system type is UNIX.
+  Using binary mode to transfer files.
+ftp> ls
+  200 PORT command successful. Consider using PASV.
+  150 Here comes the directory listing.
+  drwxrwxr-x    5 9999     9999         4096 May 27 15:54 hlr-log
+  drwxrwxr-x    2 9999     9999         4096 Jun 04 12:46 rosbags
+  drwxr-xr-x    8 0        0            4096 Jun 03 14:55 sys-log
+  226 Directory send OK.
+&lt;/source>
+
+== Log Files ==
+There are two directories of log files.  In the 'hlr-log' directory you will find 'rethink.log', which contains useful log output from the robotic software running on Baxter.
+
+Inside the 'sys-log' directory, you will find standard Linux system logs such as start-up scripts 'rc.log'.
+
+'''Note:''' There are some files and directories in the 'sys-log' folder that are not accessible.  These files will typically give errors of "The file is not a directory" or "Insufficient permissions".  The content of these files is either included in other accessible files, or are not relevant for users.
+
+''Sample Log Files:''
+&lt;pre>
+./
+|-- hlr-log
+|   |-- EndEffectorUpdater.log
+|   |-- eth-jfiload.log
+|   |-- eth-jfiload.log.1.gz
+|   |-- hlr
+|   |   |-- 2a6faef2-977b-11e2-b03d-90b11c94fb4e
+|   |   |   |-- master.log
+|   |   |   |-- roslaunch-tuftsBaxter-4160.log
+|   |   |   |-- rosout-1-stdout.log
+|   |   |   `-- rosout.log
+|   |   |-- plugin_manager_18590_1364456637330.log
+|   |   |-- plugin_manager_20566_1364456643780.log
+|   |   |-- rethink_repeaters.log
+|   |   `-- xdisplay.log
+|   |-- rethink.log
+|   |-- robot_config.log
+|   |-- robot_config.status
+|   `-- root
+`-- sys-log
+    |-- Xorg.0.log
+    |-- auth.log
+    |-- daemon.log
+    |-- kernel.log
+    |-- messages.log
+    |-- overcfg
+    |   `-- overcfg-20130326-155114.log
+    |-- portage
+    |-- rc.log
+    |-- syslog.log
+    `-- user.log
+&lt;/pre>
+
+=== Relevant Log Files ===
+* hlr-log/
+* '''&lt;code>rethink.log&lt;/code>''' - Your primary source for Baxter's ROS-related errors. (Includes rosout logs).
+* hlr/
+** &lt;code>rethink_repeaters.log&lt;/code> - Logs from the proxy node for internal Rethink Baxter messages (baxter_msgs).
+** ''basic start-up output from various on-robot ROS nodes''
+** ''directories of rosmaster, roslaunch session logs''
+* sys-log/
+* '''&lt;code>rc.log&lt;/code>'''  - Startup information; good for diagnosing problems during boot-up.
+* &lt;code>daemon.log&lt;/code>
+* &lt;code>kernel.log&lt;/code>
+* &lt;code>messages.log&lt;/code>
+* &lt;code>syslog.log&lt;/code>
+
+=== Inaccessible Files ===
+Here are some of the irrelevant files you may run into:  
+* 'The file is not a directory': elog, sandbox
+* 'Insufficient permissions': dmesg, emerge.log, emerge-fetch.log, vsftpd.log
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../FTP_Log_Files" title="FTP Log Files">FTP Log Files</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../FTP_Log_Files">http://sdk.rethinkrobotics.com/wiki/FTP_Log_Files</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":36});});</script></body></html>

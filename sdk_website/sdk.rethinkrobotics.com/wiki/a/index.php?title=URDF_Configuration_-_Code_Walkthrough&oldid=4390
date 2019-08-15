@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>URDF Configuration - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"URDF_Configuration_-_Code_Walkthrough","wgTitle":"URDF Configuration - Code Walkthrough","wgCurRevisionId":4390,"wgRevisionId":4390,"wgArticleId":823,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"URDF_Configuration_-_Code_Walkthrough","wgRelevantArticleId":823,"wgRequestId":"29e8eb9ba9db613ac479c5f2","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-URDF_Configuration_-_Code_Walkthrough rootpage-URDF_Configuration_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=URDF+Configuration+-+Code+Walkthrough&amp;returntoquery=oldid%3D4390">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">URDF Configuration - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;oldid=4390#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../URDF_Configuration_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 22:36, 30 December 2015 by <a href="index.php?title=User:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Imcmahon (page does not exist)"><bdi>Imcmahon</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Imcmahon (page does not exist)">talk</a> | <a href="../Special:Contributions/Imcmahon" class="mw-usertoollinks-contribs" title="Special:Contributions/Imcmahon">contribs</a>)</span> <span class="comment">(<a href="index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;oldid=4390#Code_Walkthrough">→</a>‎<span dir="auto"><span class="autocomment">Code Walkthrough</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;diff=prev&amp;oldid=4390" title="URDF Configuration - Code Walkthrough">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;direction=prev&amp;oldid=4390" title="URDF Configuration - Code Walkthrough">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;oldid=4390#column-one">navigation</a>, <a href="index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;oldid=4390#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>This program demonstrates the usage how to construct a URDF Configuration message in Python, to be sent into Baxter's <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/mutable_robot_state_publisher">Mutable Robot State Publisher</a> (MRSP).<br />
+The MRSP will then update the onboard URDF to add your desired new Joint-Link tree fragment. You can view a Xacro that can be used to create such a segment tree on GitHub:
+<br /> <a rel="nofollow" class="external free" href="https://github.com/RethinkRobotics/baxter_common/blob/master/baxter_description/urdf/left_end_effector.urdf.xacro">https://github.com/RethinkRobotics/baxter_common/blob/master/baxter_description/urdf/left_end_effector.urdf.xacro</a><br />
+</p>
+<h2><span class="mw-headline" id="Code_Walkthrough">Code Walkthrough</span></h2>
+<p>Now, let's break down the code.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">30 </span><span class="kn">import</span> <span class="nn">os</span>
+<span class="lineno">31 </span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="lineno">32 </span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="lineno">33 </span>
+<span class="lineno">34 </span><span class="kn">import</span> <span class="nn">rospy</span>
+<span class="lineno">35 </span><span class="kn">import</span> <span class="nn">xacro_jade</span>
+<span class="lineno">36 </span>
+<span class="lineno">37 </span><span class="kn">from</span> <span class="nn">baxter_core_msgs.msg</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="lineno">38 </span>    <span class="n">URDFConfiguration</span><span class="p">,</span>
+<span class="lineno">39 </span><span class="p">)</span>
+</pre></div>
+<p>The standard Python libraries of <code>os, sys, argparse</code> are imported here. We also import <code>xacro_jade</code> to utilize some of the wonderful new features that have been backported to Xacro ROS Indigo from Xacro ROS Jade python API's. See <a rel="nofollow" class="external free" href="https://github.com/ros/xacro/pull/117">https://github.com/ros/xacro/pull/117</a> for more details on Xacro Jade backporting.<br />
+As for the actual message itself, we need to import the <code>URDFConfiguration</code> message for constructing the message to notify the Mutable Robot State Publisher that a URDF change has occurred.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">41 </span><span class="k">def</span> <span class="nf">xacro_parse</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<span class="lineno">42 </span>    <span class="n">doc</span> <span class="o">=</span> <span class="n">xacro_jade</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+<span class="lineno">43 </span>    <span class="n">xacro_jade</span><span class="o">.</span><span class="n">process_doc</span><span class="p">(</span><span class="n">doc</span><span class="p">,</span> <span class="n">in_order</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="lineno">44 </span>    <span class="k">return</span> <span class="n">doc</span><span class="o">.</span><span class="n">toprettyxml</span><span class="p">(</span><span class="n">indent</span><span class="o">=</span><span class="s1">&#39;  &#39;</span><span class="p">)</span>
+</pre></div>
+<p>Here, we are using the xacro_jade in_order functionality, to ensure our URDF is constructed in the order the Xacro files are included.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">46 </span><span class="k">def</span> <span class="nf">send_urdf</span><span class="p">(</span><span class="n">parent_link</span><span class="p">,</span> <span class="n">root_joint</span><span class="p">,</span> <span class="n">urdf_filename</span><span class="p">):</span>
+<span class="lineno">47 </span>    <span class="sd">&quot;&quot;&quot;</span>
+<span class="lineno">48 </span><span class="sd">    Send the URDF Fragment located at the specified path to</span>
+<span class="lineno">49 </span><span class="sd">    modify the electric gripper on Baxter.</span>
+<span class="lineno">50 </span><span class="sd">    @param parent_link: parent link to attach the URDF fragment to</span>
+<span class="lineno">51 </span><span class="sd">                        (usually &lt;side&gt;_hand)</span>
+<span class="lineno">52 </span><span class="sd">    @param root_joint: root link of the URDF fragment (usually &lt;side&gt;_gripper_base)</span>
+<span class="lineno">53 </span><span class="sd">    @param urdf_filename: path to the urdf XML file to load into xacro and send</span>
+<span class="lineno">54 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">55 </span>    <span class="n">msg</span> <span class="o">=</span> <span class="n">URDFConfiguration</span><span class="p">()</span>
+<span class="lineno">56 </span>    <span class="c1"># The updating the time parameter tells</span>
+<span class="lineno">57 </span>    <span class="c1"># the robot that this is a new configuration.</span>
+<span class="lineno">58 </span>    <span class="c1"># Only update the time when an updated internal</span>
+<span class="lineno">59 </span>    <span class="c1"># model is required. Do not continuously update</span>
+<span class="lineno">60 </span>    <span class="c1"># the time parameter.</span>
+<span class="lineno">61 </span>    <span class="n">msg</span><span class="o">.</span><span class="n">time</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Time</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="lineno">62 </span>    <span class="c1"># link to attach this urdf to onboard the robot</span>
+<span class="lineno">63 </span>    <span class="n">msg</span><span class="o">.</span><span class="n">link</span> <span class="o">=</span> <span class="n">parent_link</span>
+<span class="lineno">64 </span>    <span class="c1"># root linkage in your URDF Fragment</span>
+<span class="lineno">65 </span>    <span class="n">msg</span><span class="o">.</span><span class="n">joint</span> <span class="o">=</span> <span class="n">root_joint</span>
+<span class="lineno">66 </span>    <span class="n">msg</span><span class="o">.</span><span class="n">urdf</span> <span class="o">=</span> <span class="n">xacro_parse</span><span class="p">(</span><span class="n">urdf_filename</span><span class="p">)</span>
+<span class="lineno">67 </span>    <span class="n">pub</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Publisher</span><span class="p">(</span><span class="s1">&#39;/robot/urdf&#39;</span><span class="p">,</span> <span class="n">URDFConfiguration</span><span class="p">,</span> <span class="n">queue_size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="lineno">68 </span>    <span class="n">rate</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Rate</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="c1"># 5hz</span>
+<span class="lineno">69 </span>    <span class="k">while</span> <span class="ow">not</span> <span class="n">rospy</span><span class="o">.</span><span class="n">is_shutdown</span><span class="p">():</span>
+<span class="lineno">70 </span>        <span class="c1"># Only one publish is necessary, but here we</span>
+<span class="lineno">71 </span>        <span class="c1"># will continue to publish until ctrl+c is invoked</span>
+<span class="lineno">72 </span>        <span class="n">pub</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="lineno">73 </span>        <span class="n">rate</span><span class="o">.</span><span class="n">sleep</span><span class="p">()</span>
+</pre></div>
+<p>Here the URDFConfiguration message is constructed. It's composed of four parts:
+</p>
+<ul><li>time: Time at which URDF was updated. <br />This is time is used to notify the robot that a change has taken place. You if you publish several messages at the same time using the same link and joint, no update will occur. If the time is incremented (as clock time tends to do by itself&#160;:), the Mutable Robot State Publisher will continually update the robot (quite a bad thing). So simply update the time field only when the URDF fragment has changed.</li>
+<li>link: Link that is in the <b>already existing</b> URDF in the robot's robot_description parameter which you would like to attach your fragment to.</li>
+<li>joint: The joint's name inside of your URDF fragment which should be used to attach your fragment to the specified link field above.</li>
+<li>urdf: The URDF Fragment Tree where you can describe your new end effector or camera. <br /> Note: If you have any moving (revolute, prismatic) joints in this fragment, you must separately publish joint states for them on the <code>/robot/joint_states</code> topic.</li></ul>
+<p>Here we publish the message at 5 Hz, taking special care not to update the time field, which would trigger continuous updates, since only one change is desired.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno"> 76 </span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="lineno"> 77 </span>    <span class="sd">&quot;&quot;&quot;RSDK URDF Fragment Example:</span>
+<span class="lineno"> 78 </span><span class="sd">    This example shows a proof of concept for</span>
+<span class="lineno"> 79 </span><span class="sd">    adding your URDF fragment to the robot&#39;s</span>
+<span class="lineno"> 80 </span><span class="sd">    onboard URDF (which is currently in use).</span>
+<span class="lineno"> 81 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno"> 82 </span>    <span class="n">arg_fmt</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">RawDescriptionHelpFormatter</span>
+<span class="lineno"> 83 </span>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">formatter_class</span><span class="o">=</span><span class="n">arg_fmt</span><span class="p">,</span>
+<span class="lineno"> 84 </span>                                     <span class="n">description</span><span class="o">=</span><span class="n">main</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+<span class="lineno"> 85 </span>    <span class="n">required</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">add_argument_group</span><span class="p">(</span><span class="s1">&#39;required arguments&#39;</span><span class="p">)</span>
+<span class="lineno"> 86 </span>    <span class="n">required</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+<span class="lineno"> 87 </span>        <span class="s1">&#39;-f&#39;</span><span class="p">,</span> <span class="s1">&#39;--file&#39;</span><span class="p">,</span> <span class="n">metavar</span><span class="o">=</span><span class="s1">&#39;PATH&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+<span class="lineno"> 88 </span>        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Path to URDF file to send&#39;</span>
+<span class="lineno"> 89 </span>    <span class="p">)</span>
+<span class="lineno"> 90 </span>    <span class="n">required</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+<span class="lineno"> 91 </span>        <span class="s1">&#39;-l&#39;</span><span class="p">,</span> <span class="s1">&#39;--link&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;left_hand&quot;</span><span class="p">,</span>
+<span class="lineno"> 92 </span>        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;URDF Link already to attach fragment to (usually &lt;left/right&gt;_hand)&#39;</span>
+<span class="lineno"> 93 </span>    <span class="p">)</span>
+<span class="lineno"> 94 </span>    <span class="n">required</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+<span class="lineno"> 95 </span>        <span class="s1">&#39;-j&#39;</span><span class="p">,</span> <span class="s1">&#39;--joint&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;left_gripper_base&quot;</span><span class="p">,</span>
+<span class="lineno"> 96 </span>        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Root joint for fragment (usually &lt;left/right&gt;_gripper_base)&#39;</span>
+<span class="lineno"> 97 </span>    <span class="p">)</span>
+<span class="lineno"> 98 </span>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">myargv</span><span class="p">()[</span><span class="mi">1</span><span class="p">:])</span>
+<span class="lineno"> 99 </span>
+<span class="lineno">100 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s1">&#39;rsdk_configure_urdf&#39;</span><span class="p">,</span> <span class="n">anonymous</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="lineno">101 </span>
+<span class="lineno">102 </span>    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">access</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">file</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">R_OK</span><span class="p">):</span>
+<span class="lineno">103 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s2">&quot;Cannot read file at &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">file</span><span class="p">,))</span>
+<span class="lineno">104 </span>        <span class="k">return</span> <span class="mi">1</span>
+<span class="lineno">105 </span>    <span class="n">send_urdf</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">link</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">joint</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">file</span><span class="p">)</span>
+<span class="lineno">106 </span>    <span class="k">return</span> <span class="mi">0</span>
+</pre></div>
+<p>This function simply takes in the parameters, substitutes defaults when necessary, reads the desired Xacro file, and calls the <code>send_urdf</code> function with those parameters.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">108 </span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="lineno">109 </span>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</pre></div>
+<p>Typical python main function called when this file is executed as a script.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815161756
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.030 seconds
+Real time usage: 1.061 seconds
+Preprocessor visited node count: 22/1000000
+Preprocessor generated node count: 114/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 13521/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:823-0!canonical and timestamp 20190815161755 and revision id 4390
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;oldid=4390">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;oldid=4390</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.030","walltime":"1.061","ppvisitednodes":{"value":22,"limit":1000000},"ppgeneratednodes":{"value":114,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":13521,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815161756","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":113});});</script></body></html>

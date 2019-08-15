@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Software Update - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Software_Update","wgTitle":"Software Update","wgCurRevisionId":1278,"wgRevisionId":1278,"wgArticleId":94,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Software_Update","wgRelevantArticleId":94,"wgRequestId":"0ea1ea81b52d294b7bf9a37e","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;printable=1&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;printable=1&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,follow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Software_Update rootpage-Software_Update skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="index.php?title=Special:UserLogin&amp;returnto=Software+Update&amp;returntoquery=printable%253Dyes">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Software_Update&amp;printable=yes#">More</a>
+                <ul>
+                <li id="ca-viewsource"><a href="index.php?title=Software_Update&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Software_Update&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Software_Update" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">Software Update</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Software_Update&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Software_Update&amp;printable=yes#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Software_Update&amp;printable=yes#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="toclimit-3"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Software_Update&amp;printable=yes#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="index.php?title=Software_Update&amp;printable=yes#Requirements"><span class="tocnumber">2</span> <span class="toctext">Requirements</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="index.php?title=Software_Update&amp;printable=yes#Procedure"><span class="tocnumber">3</span> <span class="toctext">Procedure</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="index.php?title=Software_Update&amp;printable=yes#1._Boot_Into_the_Field_Service_Menu_.28FSM.29"><span class="tocnumber">3.1</span> <span class="toctext">1. Boot Into the Field Service Menu (FSM)</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="index.php?title=Software_Update&amp;printable=yes#2._Reboot_Into_Intera"><span class="tocnumber">3.2</span> <span class="toctext">2. Reboot Into Intera</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="index.php?title=Software_Update&amp;printable=yes#3._Update_the_Robot_Using_the_Intera_UI"><span class="tocnumber">3.3</span> <span class="toctext">3. Update the Robot Using the Intera UI</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="index.php?title=Software_Update&amp;printable=yes#4._Switch_Back_to_SDK_Mode"><span class="tocnumber">3.4</span> <span class="toctext">4. Switch Back to SDK Mode</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div> 
+<div class="content-block">
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>The procedure below describes the process required to update the software on a <b>Sawyer SDK Robot that is currently running in SDK mode</b>. <br /> <b>Note:</b> The instructions below are only related to the Sawyer robot.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Requirements">Requirements</span></h2>
+<ul><li>USB Keyboard</li>
+<li><a rel="nofollow" class="external text" href="http://rethinkrobotics.interaforum.com/files/file/3-intera-51-software-update/">Intera Updater zip file containing the update <b>.pkg</b> and <b>.sig</b> files, unzipped</a></li>
+<li>FAT 32 Formatted USB with Intera Updater <b>.pkg</b> and <b>.sig</b> saved at the Top Level</li>
+<li>Sawyer Robot Running SDK 5.0.4. If you are upgrading an Intera 3.3.7 Sawyer, please see follow the <a href="../Upgrade_Sawyer_to_Intera_SDK" title="Upgrade Sawyer to Intera SDK">Upgrade Sawyer to Intera SDK</a> tutorial instead.</li></ul>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Procedure">Procedure</span></h2>
+<h3><span id="1._Boot_Into_the_Field_Service_Menu_(FSM)"></span><span class="mw-headline" id="1._Boot_Into_the_Field_Service_Menu_.28FSM.29">1. Boot Into the Field Service Menu (FSM)</span></h3>
+<ol>
+<li>Connect a USB keyboard into the robot controller.</li>
+<li>Shut down the robot by pressing the power button on the controller.  After the robot has completely powered down (fan stopped, screen back light is off), wait for 5 seconds and press the power button again to reboot the robot.</li>
+<li>On the keyboard, start pressing <b>CTRL+F</b> continuously until the FSM menu appears on the robot screen.</li>
+<dl><dd>Tip: Look for the screen below when rebooting.  When the text <b>Preparing to boot Intera…<i> appears on the upper left of the screen, pressing </i></b><i>CTRL+F'</i> will bring you right into the FSM.</dd></dl>
+<p><a href="../File:Bootface.png" class="image"><img alt="Bootface.png" src="images/thumb/0/00/Bootface.png/400px-Bootface.png" width="400" height="234" srcset="/intera/a/images/thumb/0/00/Bootface.png/600px-Bootface.png 1.5x, /intera/a/images/thumb/0/00/Bootface.png/800px-Bootface.png 2x" /></a>
+</p>
+<li>When successful, the Main Menu of the FSM will appear, see the screen below for reference.</li>
+<p><a href="../File:Fsmsdk.png" class="image"><img alt="Fsmsdk.png" src="images/thumb/3/33/Fsmsdk.png/400px-Fsmsdk.png" width="400" height="242" srcset="/intera/a/images/thumb/3/33/Fsmsdk.png/600px-Fsmsdk.png 1.5x, /intera/a/images/3/33/Fsmsdk.png 2x" /></a>
+</p>
+</ol>
+<h3><span class="mw-headline" id="2._Reboot_Into_Intera">2. Reboot Into Intera</span></h3>
+<ol>
+<li>Using the arrow keys on the keyboard, navigate down to highlight the check box for <b>“Next boot in: Intera”</b>.</li>
+<li>When this selection is highlighted press Enter to check this box.</li>
+<dl><dd><b>Note:</b> If the currently installed version of software is 5.0.4 and the robot is being updated to 5.1, a prompt requesting a password will appear.  The password is "reywas17990".  After entering the password, tab to "Yes" and press enter.</dd></dl>
+<p><a href="../File:Mainmenu.png" class="image"><img alt="Mainmenu.png" src="images/thumb/2/25/Mainmenu.png/400px-Mainmenu.png" width="400" height="231" srcset="/intera/a/images/thumb/2/25/Mainmenu.png/600px-Mainmenu.png 1.5x, /intera/a/images/2/25/Mainmenu.png 2x" /></a>
+</p>
+<li>The Main Menu will again appear on the screen.  Using the arrow keys on the keyboard, go to and select "Reboot".</li>
+<li>Press "Yes" to confirm the reboot.</li>
+</ol>
+<h3><span class="mw-headline" id="3._Update_the_Robot_Using_the_Intera_UI">3. Update the Robot Using the Intera UI</span></h3>
+<ol>
+<li>When the robot finished booting, press the Navigator Wheel to automatically home the robot.</li>
+<li>Insert the USB drive with the updater into an empty USB port on the controller.</li>
+<li>Press the Rethink Button on the Navigator to show the circle menu.  See the image below for reference.</li>
+<p><a href="../File:Circle_Menu-System.png" class="image"><img alt="Circle Menu-System.png" src="images/thumb/6/68/Circle_Menu-System.png/400px-Circle_Menu-System.png" width="400" height="234" srcset="/intera/a/images/6/68/Circle_Menu-System.png 1.5x" /></a>
+</p>
+<li>Using the Navigator Wheel, scroll to and select System by pressing the Navigator Wheel.</li>
+<li>On the next menu, scroll to and select "Upgrade Software".</li>
+<p><a href="../File:Upgrade_Software.png" class="image"><img alt="Upgrade Software.png" src="images/thumb/5/5e/Upgrade_Software.png/400px-Upgrade_Software.png" width="400" height="233" srcset="/intera/a/images/5/5e/Upgrade_Software.png 1.5x" /></a>
+</p>
+<li>From the list that appears, scroll to and select the version to which the robot will be updated.</li>
+<p><a href="../File:Upgrade_Software_List.png" class="image"><img alt="Upgrade Software List.png" src="images/thumb/6/6b/Upgrade_Software_List.png/400px-Upgrade_Software_List.png" width="400" height="233" srcset="/intera/a/images/6/6b/Upgrade_Software_List.png 1.5x" /></a>
+</p>
+<li>A confirmation window will appear, select "Update" to confirm and start the software upgrade.</li>
+<li>The update process will start and the robot will automatically reboot during this time.  Once the update is complete and the robot has rebooted, home the robot automatically to open Intera.</li>
+</ol>
+<h3><span class="mw-headline" id="4._Switch_Back_to_SDK_Mode">4. Switch Back to SDK Mode</span></h3>
+<ol>
+<li>Shut down the robot and boot into the FSM using the instructions detailed in Step 1.</li>
+<li>Once in the FSM, use the arrow keys on the keyboard to select "Intera-SDK".  See the image below for reference.</li>
+<p><a href="../File:Fsmsdk.png" class="image"><img alt="Fsmsdk.png" src="images/thumb/3/33/Fsmsdk.png/400px-Fsmsdk.png" width="400" height="242" srcset="/intera/a/images/thumb/3/33/Fsmsdk.png/600px-Fsmsdk.png 1.5x, /intera/a/images/3/33/Fsmsdk.png 2x" /></a>
+</p>
+<li>A prompt will appear asking the user to read the <a href="../General_disclaimer" title="General disclaimer">General Disclaimer</a>.  After reading through the disclaimer, tab to and select "Yes".</li>
+<p><a href="../File:Fsmsdk1.png" class="image"><img alt="Fsmsdk1.png" src="images/thumb/a/a5/Fsmsdk1.png/400px-Fsmsdk1.png" width="400" height="379" srcset="/intera/a/images/thumb/a/a5/Fsmsdk1.png/600px-Fsmsdk1.png 1.5x, /intera/a/images/a/a5/Fsmsdk1.png 2x" /></a>
+</p>
+<li>Move to and select "Reboot".</li>
+<li>The robot will shut down and boot directly into the Intera-SDK.</li>
+<ol>
+</ol></ol></div>
+<!-- 
+NewPP limit report
+Cached time: 20190815154855
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.022 seconds
+Real time usage: 0.236 seconds
+Preprocessor visited node count: 38/1000000
+Preprocessor generated node count: 80/1000000
+Post‐expand include size: 37/2097152 bytes
+Template argument size: 1/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.529      1 Template:TOClimit
+100.00%    0.529      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:94-0!canonical and timestamp 20190815154854 and revision id 1278
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Software_Update&amp;oldid=1278">http://sdk.rethinkrobotics.com/intera/a/index.php?title=Software_Update&amp;oldid=1278</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.022","walltime":"0.236","ppvisitednodes":{"value":38,"limit":1000000},"ppgeneratednodes":{"value":80,"limit":1000000},"postexpandincludesize":{"value":37,"limit":2097152},"templateargumentsize":{"value":1,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.529      1 Template:TOClimit","100.00%    0.529      1 -total"]},"cachereport":{"timestamp":"20190815154855","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":40});});</script></body></html>

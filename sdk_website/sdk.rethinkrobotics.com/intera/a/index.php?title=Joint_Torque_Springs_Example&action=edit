@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Joint Torque Springs Example - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Joint_Torque_Springs_Example","wgTitle":"Joint Torque Springs Example","wgCurRevisionId":1172,"wgRevisionId":0,"wgArticleId":66,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Joint_Torque_Springs_Example","wgRelevantArticleId":66,"wgRequestId":"ef3337a45468b157ecce30e2","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Joint_Torque_Springs_Example rootpage-Joint_Torque_Springs_Example skin-cavendishrr action-edit"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=Joint+Torque+Springs+Example&amp;returntoquery=action%3Dedit">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Joint_Torque_Springs_Example&amp;action=edit#">More</a>
+                <ul>
+                <li id="ca-viewsource" class="selected"><a href="index.php?title=Joint_Torque_Springs_Example&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Joint_Torque_Springs_Example&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Joint_Torque_Springs_Example" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">View source for Joint Torque Springs Example</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Joint_Torque_Springs_Example&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                ← <a href="../Joint_Torque_Springs_Example" title="Joint Torque Springs Example">Joint Torque Springs Example</a>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Joint_Torque_Springs_Example&amp;action=edit#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Joint_Torque_Springs_Example&amp;action=edit#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Intera_SDK:Users&amp;action=edit&amp;redlink=1" class="new" title="Intera SDK:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">&lt;div class="title-block">
+
+&lt;span style="font-size:120%;">'''This example shows joint torque control usage. After moving to neutral, the robot will enter torque control mode, applying torques representing virtual springs holding the joints to their start position. The example calculates and applies torques linearly relative to offset from the start position creating the illusion that springs of configurable stiffness are attached to each joint.'''&lt;/span>
+
+&lt;/div>
+
+{{TOClimit|limit=2}}
+
+&lt;div class="content-block">
+
+== Introduction ==
+
+The Joint Torque Springs Example demonstrates the usage of torque controller to apply torque commands to robot's joints. In the &lt;code>main()&lt;/code> function, the dynamic reconfigure from server is initialized and passed to an object of the &lt;code>JointSprings&lt;/code> class. On initialization, the object creates an instance of the &lt;code>limb&lt;/code> class for the particular side that is passed, and captures the default spring and damping constants from the dynamic reconfigure server. The &lt;code>main()&lt;/code> function calls the method, &lt;code>move_to_neutral()&lt;/code> to send the limbs to a neutral position. Then, &lt;code>the attach_spring()&lt;/code> method captures the initial joint angles of the limb and calls the &lt;code>update_forces()&lt;/code> method which calculates the necessary torques based on Hooke's law and publishes them as joint commands.
+
+'''Interfaces - '''
+&lt;div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
+* Limb.set_joint_torques()
+* Limb.move_to_neutral()
+* Limb.joint_angles()
+* Limb.joint_velocities()
+* Limb.set_command_timeout()
+* Limb.exit_control_mode()
+&lt;/div>
+
+If you would like to follow along with the actual source code for the example on GitHub, it can be found through [https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/joint_torque_springs.py this link] for joint torque spring example.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Usage ==
+
+Start the joint torque springs example from an RSDK terminal session using:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_examples joint_torque_springs.py
+&lt;/syntaxhighlight>
+
+Messages will appear after start:
+&lt;syntaxhighlight lang="bash" enclose="div">
+Initializing node...
+Getting robot state...
+Enabling robot...
+Running. Ctrl-c to quit
+&lt;/syntaxhighlight>
+
+The robot will move to neutral pose first, when done moving to neutral pose, you can interact with the robot by grabbing, pushing, and rotating each joint to feel the torques applied that represent the virtual springs attached.
+
+Pressing &lt;code> Control-C &lt;/code> at any time will stop torque mode and exit the example.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Arguments ==
+
+'''Important Arguments:'''  
+
+&lt;code> -l &lt;/code> or &lt;code> --limb &lt;/code>: The robot arm name (default="right")
+
+See the joint torque spring's available arguments on the command line by passing joint_torque_springs.py the &lt;code>-h&lt;/code>, help argument:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_examples joint_torque_springs.py -h
+&lt;/syntaxhighlight>
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+usage: joint_torque_springs.py [-h] [-l LIMB]
+
+RSDK Joint Torque Example: Joint Springs
+
+    Moves the default limb to a neutral location and enters
+    torque control mode, attaching virtual springs (Hooke.s Law)
+    to each joint maintaining the start position.
+
+    Run this example and interact by grabbing, pushing, and rotating
+    each joint to feel the torques applied that represent the
+    virtual springs attached. You can adjust the spring
+    constant and damping coefficient for each joint using
+    dynamic_reconfigure.
+    
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -l LIMB, --limb LIMB
+                        limb on which to attach joint springs
+&lt;/syntaxhighlight>
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Code Walkthrough ==
+
+Now, let's break down the code.
+
+&lt;syntaxhighlight lang="python" line start="33" enclose="div">
+import argparse
+import importlib
+
+import rospy
+from dynamic_reconfigure.server import (
+    Server,
+)
+from std_msgs.msg import (
+    Empty,
+)
+
+import intera_interface
+from intera_interface import CHECK_VERSION
+&lt;/syntaxhighlight>
+
+This imports the intera interface for accessing the limb class. The &lt;code>CHECK_VERSION&lt;/code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs.
+
+&lt;syntaxhighlight lang="python" line start="43" enclose="div">
+class JointSprings(object):
+    """
+    Virtual Joint Springs class for torque example.
+
+    @param limb: limb on which to run joint springs example
+    @param reconfig_server: dynamic reconfigure server
+
+    JointSprings class contains methods for the joint torque example allowing
+    moving the limb to a neutral location, entering torque mode, and attaching
+    virtual springs.
+    """
+    def __init__(self, reconfig_server, limb = "right"):
+        self._dyn = reconfig_server
+
+        # control parameters
+        self._rate = 1000.0  # Hz
+        self._missed_cmds = 20.0  # Missed cycles before triggering timeout
+
+        # create our limb instance
+        self._limb = intera_interface.Limb(limb)
+
+        # initialize parameters
+        self._springs = dict()
+        self._damping = dict()
+        self._start_angles = dict()
+&lt;/syntaxhighlight>
+
+The &lt;code>JointSprings&lt;/code> class object is initialized by passing the side of the limb under interest, an object of the reconfigure server that holds the default spring and damping constants for the limb. These default values can be modified at runtime through the dynamic reconfigure server.
+
+&lt;syntaxhighlight lang="python" line start="69" enclose="div">
+        # create cuff disable publisher
+        cuff_ns = 'robot/limb/' + limb + '/suppress_cuff_interaction'
+        self._pub_cuff_disable = rospy.Publisher(cuff_ns, Empty, queue_size=1)
+
+        # verify robot is enabled
+        print("Getting robot state... ")
+        self._rs = intera_interface.RobotEnable(CHECK_VERSION)
+        self._init_state = self._rs.state().enabled
+        print("Enabling robot... ")
+        self._rs.enable()
+        print("Running. Ctrl-c to quit")
+&lt;/syntaxhighlight>
+
+The zero gravity mode can be enabled by pressing the cuff and so it is important to disable the cuff. A publisher for the cuff interaction suppress topic is created. It is also important to note that the robot should be enabled before trying to manipulate its joints. So, the robot is checked if it is enabled and if not, it is enabled. The initial state of the variable is recorded in &lt;code>_init_state&lt;/code> variable. This is to ensure that the robot is sent back to that state once the example program ends.
+
+&lt;syntaxhighlight lang="python" line start="81" enclose="div">
+    def _update_parameters(self):
+        for joint in self._limb.joint_names():
+            self._springs[joint] = self._dyn.config[joint[-2:] + '_spring_stiffness']
+            self._damping[joint] = self._dyn.config[joint[-2:] + '_damping_coefficient']
+&lt;/syntaxhighlight>
+
+The &lt;code>_update_parameters()&lt;/code> method captures the dynamically entered user's input for the spring and damping constants through the dynamic reconfigure server.
+
+&lt;syntaxhighlight lang="python" line start="86" enclose="div">
+    def _update_forces(self):
+        """
+        Calculates the current angular difference between the start position
+        and the current joint positions applying the joint torque spring forces
+        as defined on the dynamic reconfigure server.
+        """
+        # get latest spring constants
+        self._update_parameters()
+
+        # disable cuff interaction
+        self._pub_cuff_disable.publish()
+&lt;/syntaxhighlight>
+
+The cuff interaction is disabled as long as the example runs and each time the forces are updated, the &lt;code>_pub_cuff_disable&lt;/code> publisher publishes an empty message.
+
+&lt;syntaxhighlight lang="python" line start="98" enclose="div">
+        # create our command dict
+        cmd = dict()
+        # record current angles/velocities
+        cur_pos = self._limb.joint_angles()
+        cur_vel = self._limb.joint_velocities()
+        # calculate current forces
+        for joint in self._start_angles.keys():
+            # spring portion
+            cmd[joint] = self._springs[joint] * (self._start_angles[joint] -
+                                                   cur_pos[joint])
+            # damping portion
+            cmd[joint] -= self._damping[joint] * cur_vel[joint]
+        # command new joint torques
+        self._limb.set_joint_torques(cmd)
+&lt;/syntaxhighlight>
+
+Hooke's law is applied to calculate the necessary torques to be applied on each joints. The updated spring and damping constants are used in the calculation. The &lt;code>set_joint_torques()&lt;/code> method of the limb interface publishes the set of joint torques and their corresponding names with the mode as 3 to the topic &lt;code>robot/limb/right/joint_command &lt;/code>. The mode indicates that the joint commands are to be passed to the torque controller.
+
+&lt;syntaxhighlight lang="python" line start="113" enclose="div">
+    def move_to_neutral(self):
+        """
+        Moves the limb to neutral location.
+        """
+        self._limb.move_to_neutral()
+&lt;/syntaxhighlight>
+
+The &lt;code>move_to_neutral()&lt;/code> method of the limb interface, moves all the joints to their neutral pose. This method employs the position controller to send the joints to a pre-defined neutral position.
+
+&lt;syntaxhighlight lang="python" line start="119" enclose="div">
+    def attach_springs(self):
+        """
+        Switches to joint torque mode and attached joint springs to current
+        joint positions.
+        """
+        # record initial joint angles
+        self._start_angles = self._limb.joint_angles()
+
+        # set control rate
+        control_rate = rospy.Rate(self._rate)
+
+        # for safety purposes, set the control rate command timeout.
+        # if the specified number of command cycles are missed, the robot
+        # will timeout and disable
+        self._limb.set_command_timeout((1.0 / self._rate) * self._missed_cmds)
+
+        # loop at specified rate commanding new joint torques
+        while not rospy.is_shutdown():
+            if not self._rs.state().enabled:
+                rospy.logerr("Joint torque example failed to meet "
+                             "specified control rate timeout.")
+                break
+            self._update_forces()
+            control_rate.sleep()
+&lt;/syntaxhighlight>
+
+The start angles recorded here are used by the &lt;code>_update_forces&lt;/code> method to determine the dx, which is the displacement caused from the starting position of the joints. The &lt;code>_update_forces&lt;/code> method is invoked at 1000Hz, which performs the spring motion as explained above.
+
+&lt;syntaxhighlight lang="python" line start="144" enclose="div">
+    def clean_shutdown(self):
+        """
+        Switches out of joint torque mode to exit cleanly
+        """
+        print("\nExiting example...")
+        self._limb.exit_control_mode()
+        if not self._init_state and self._rs.state().enabled:
+            print("Disabling robot...")
+            self._rs.disable()
+&lt;/syntaxhighlight>
+
+The method &lt;code>exit_control_mode()&lt;/code> of the limb interface switches to position controller mode from torque/velocity controller and saves the current joint angles as the current joint position. Finally, it checks if the robot was initially disabled and if so disables it.
+
+&lt;syntaxhighlight lang="python" line start="155" enclose="div">
+def main():
+    """RSDK Joint Torque Example: Joint Springs
+
+    Moves the default limb to a neutral location and enters
+    torque control mode, attaching virtual springs (Hooke's Law)
+    to each joint maintaining the start position.
+
+    Run this example and interact by grabbing, pushing, and rotating
+    each joint to feel the torques applied that represent the
+    virtual springs attached. You can adjust the spring
+    constant and damping coefficient for each joint using
+    dynamic_reconfigure.
+    """
+    # Querying the parameter server to determine Robot model and limb name(s)
+    rp = intera_interface.RobotParams()
+    valid_limbs = rp.get_limb_names()
+    if not valid_limbs:
+        rp.log_message(("Cannot detect any limb parameters on this robot. "
+                        "Exiting."), "ERROR")
+    robot_name = intera_interface.RobotParams().get_robot_name().lower().capitalize()
+    # Parsing Input Arguments
+    arg_fmt = argparse.ArgumentDefaultsHelpFormatter
+    parser = argparse.ArgumentParser(formatter_class=arg_fmt)
+    parser.add_argument(
+        "-l", "--limb", dest="limb", default=valid_limbs[0],
+        choices=valid_limbs,
+        help='limb on which to attach joint springs'
+        )
+    args = parser.parse_args(rospy.myargv()[1:])
+    # Grabbing Robot-specific parameters for Dynamic Reconfigure
+    config_name = ''.join([robot_name,"JointSpringsExampleConfig"])
+    config_module = "intera_examples.cfg"
+    cfg = importlib.import_module('.'.join([config_module,config_name]))
+    # Starting node connection to ROS
+    print("Initializing node... ")
+    rospy.init_node("sdk_joint_torque_springs_{0}".format(args.limb))
+    dynamic_cfg_srv = Server(cfg, lambda config, level: config)
+    js = JointSprings(dynamic_cfg_srv, limb=args.limb)
+    # register shutdown callback
+    rospy.on_shutdown(js.clean_shutdown)
+    js.move_to_neutral()
+    js.attach_springs()
+
+
+if __name__ == "__main__":
+    main()
+&lt;/syntaxhighlight>
+
+The rospy node is initialized and then an instance of the dynamic reconfigure is created. As indicated above, this supplies the default and runtime, spring and dynamic constants. In custom programs this can be avoided by assigning spring and damping constants directly in the code.
+
+&lt;/div>
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="http://sdk.rethinkrobotics.com/intera/Template:TOClimit" title="Template:TOClimit">Template:TOClimit</a> (<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Template:TOClimit&amp;action=edit" title="Template:TOClimit">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Joint_Torque_Springs_Example" title="Joint Torque Springs Example">Joint Torque Springs Example</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Joint_Torque_Springs_Example">http://sdk.rethinkrobotics.com/intera/Joint_Torque_Springs_Example</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":67});});</script></body></html>

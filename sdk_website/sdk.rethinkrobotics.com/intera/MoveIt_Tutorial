@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>MoveIt Tutorial - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"MoveIt_Tutorial","wgTitle":"MoveIt Tutorial","wgCurRevisionId":1307,"wgRevisionId":1307,"wgArticleId":97,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"MoveIt_Tutorial","wgRelevantArticleId":97,"wgRequestId":"f0e8fbbef4ac29b8680466db","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["ext.tabs","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="a/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="a/opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<style type="text/css" id="tabs-dynamic-styles">/*<![CDATA[*/
+/* Dynamically generated tabs styles */
+.tabs-input-1:checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1:checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1:checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+/* The same styles, but with .checked instead of :checked, for browsers that rely on the JavaScript fallback */
+.tabs-input-1.checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1.checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1.checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+.tabs-dropdown .tabs-content,.tabs-dropdown .tabs-container,.tabs-dropdown li,.tabs-dropdown ul,.tabs-dropdown ol {background-color: white}
+/*]]>*/</style>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-MoveIt_Tutorial rootpage-MoveIt_Tutorial skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(a/skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="a/index.php?title=Special:UserLogin&amp;returnto=MoveIt+Tutorial">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="MoveIt_Tutorial#">More</a>
+                <ul>
+                <li id="ca-viewsource"><a href="a/index.php?title=MoveIt_Tutorial&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="a/index.php?title=MoveIt_Tutorial&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="MoveIt_Tutorial" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">MoveIt Tutorial</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="a/index.php?title=MoveIt_Tutorial&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="MoveIt_Tutorial#column-one">navigation</a>
+                    ,                     <a href="MoveIt_Tutorial#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="title-block">
+<p><span style="font-size:120%;"><b>This tutorial describes how to use Sawyer with MoveIt! the standard ROS motion planning framework.</b></span>
+</p>
+</div>
+<div class="content-block">
+<p><a href="File:Moveit_logo.png" class="image" title="MoveIt! Logo"><img alt="MoveIt! Logo" src="a/images/6/66/Moveit_logo.png" width="342" height="96" /></a><br />
+</p><p><b><a rel="nofollow" class="external text" href="http://moveit.ros.org/">MoveIt! Please visit the MoveIt! homepage for more information</a></b>
+</p>
+</div>
+<div class="toclimit-2"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="MoveIt_Tutorial#Installation.2FPrerequisites"><span class="tocnumber">1</span> <span class="toctext">Installation/Prerequisites</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="MoveIt_Tutorial#Installing_MoveIt"><span class="tocnumber">1.1</span> <span class="toctext">Installing MoveIt</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="MoveIt_Tutorial#Installing_and_building_Sawyer_MoveIt_Repo"><span class="tocnumber">1.2</span> <span class="toctext">Installing and building Sawyer MoveIt Repo</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="MoveIt_Tutorial#Overview"><span class="tocnumber">2</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="MoveIt_Tutorial#Sawyer_Planning_Groups"><span class="tocnumber">2.1</span> <span class="toctext">Sawyer Planning Groups</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="MoveIt_Tutorial#Video"><span class="tocnumber">3</span> <span class="toctext">Video</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="MoveIt_Tutorial#Tutorial"><span class="tocnumber">4</span> <span class="toctext">Tutorial</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="MoveIt_Tutorial#Executing_a_simple_motion_plan"><span class="tocnumber">4.1</span> <span class="toctext">Executing a simple motion plan</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="MoveIt_Tutorial#Introducing_an_environment_representation_for_planning"><span class="tocnumber">4.2</span> <span class="toctext">Introducing an environment representation for planning</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="MoveIt_Tutorial#Programmatic_interaction_for_planning"><span class="tocnumber">4.2.1</span> <span class="toctext">Programmatic interaction for planning</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="MoveIt_Tutorial#Interfaces"><span class="tocnumber">5</span> <span class="toctext">Interfaces</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="MoveIt_Tutorial#ROS_APIs"><span class="tocnumber">5.1</span> <span class="toctext">ROS APIs</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="MoveIt_Tutorial#intera_interface_APIs"><span class="tocnumber">5.2</span> <span class="toctext">intera_interface APIs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="MoveIt_Tutorial#Related_Examples.2FTutorials"><span class="tocnumber">6</span> <span class="toctext">Related Examples/Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="MoveIt_Tutorial#Troubleshooting"><span class="tocnumber">7</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="MoveIt_Tutorial#The_arm_is_not_executing_the_trajectory"><span class="tocnumber">7.1</span> <span class="toctext">The arm is not executing the trajectory</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="MoveIt_Tutorial#Arm_not_executing_plan.3B_.22Unable_to_identify_any_set_of_controllers.22"><span class="tocnumber">7.2</span> <span class="toctext">Arm not executing plan; "Unable to identify any set of controllers"</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="content-block">
+<h1><span id="Installation/Prerequisites"></span><span class="mw-headline" id="Installation.2FPrerequisites">Installation/Prerequisites</span></h1>
+<h2><span class="mw-headline" id="Installing_MoveIt">Installing MoveIt</span></h2>
+<form id="tabs-inputform" class="tabs tabs-inputform" action="MoveIt_Tutorial#"></form><div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-1-0" name="tabs-1" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-1-1" name="tabs-1" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-1-1" data-tabpos="1">ROS Kinetic</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-1-2" name="tabs-1" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-1-2" data-tabpos="2">ROS Indigo</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    <span class="o">=</span> Make sure to update your <span class="nv">sources</span> <span class="o">=</span>
+    $ sudo apt-get <span class="nv">update</span>
+    <span class="o">=</span> Install MoveIt! <span class="o">=</span>
+    $ sudo apt-get install ros-kinetic-moveit
+</pre></div>
+</div>
+<div class="tabs-content tabs-content-2">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    <span class="o">=</span> Make sure to update your <span class="nv">sources</span> <span class="o">=</span>
+    $ sudo apt-get <span class="nv">update</span>
+    <span class="o">=</span> Install MoveIt! <span class="o">=</span>
+    $ sudo apt-get install ros-indigo-moveit
+</pre></div>
+</div>
+</div></div>
+<h2><span class="mw-headline" id="Installing_and_building_Sawyer_MoveIt_Repo">Installing and building Sawyer MoveIt Repo</span></h2>
+<p>Run <code>catkin_make</code> to make the new Sawyer MoveIt! additions to your ROS workspace
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ <span class="nb">cd</span> ~/ros_ws/
+    $ ./intera.sh
+    $ <span class="nb">cd</span> ~/ros_ws/src
+    $ wstool merge https://raw.githubusercontent.com/RethinkRobotics/sawyer_moveit/master/sawyer_moveit.rosinstall
+    $ wstool update
+    $ <span class="nb">cd</span> ~/ros_ws/
+    $ catkin_make
+</pre></div>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Overview">Overview</span></h1>
+<p>MoveIt! motion planning framework provides capabilities including Kinematics (IK, FK, Jacobian), Motion Planning (OMPL, SBPL, CHOMP) integrated as MoveIt! plugins, Environment Representation (robot representation, environment representation, collision checking, contraint evaluation), execution using move_groups, benchmarking, warehouse database for storage (scenes, robot states, motion plans), a C++/Python API and more!
+</p><p>Sawyer now supports using MoveIt! through the addition of the configurable <a href="API_Reference#joint-trajectory-action" title="API Reference">joint trajectory action server</a>, and hosting of the necessary MoveIt! configuration files on <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/sawyer_moveit">RethinkRobotics/sawyer_moveit</a>.
+</p><p>This tutorial will focus on the MoveIt! Rviz plugin as an introduction to some of the capabilities of MoveIt!
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Sawyer_Planning_Groups">Sawyer Planning Groups</span></h2>
+<p>Describes the joints considered during motion planning. These are specified in the SRDF for Sawyer. Sawyer's SRDF includes planning groups, additional collision checking information, and default configurations. These groups are generated dynamically via Xacro
+</p><p><i><b>Planning Group</b></i>
+</p>
+<ul><li><b>right_arm</b>
+<ul><li><b>chain</b> base -&gt; right_gripper
+<ul><li>right_j0</li>
+<li>right_j1</li>
+<li>right_j2</li>
+<li>right_j3</li>
+<li>right_j4</li>
+<li>right_j5</li>
+<li>right_j6</li>
+<li>right_hand</li>
+<li>right_gripper</li></ul></li></ul></li>
+<li><b>right_hand</b>
+<ul><li>right_hand</li>
+<li>right_gripper</li></ul></li></ul>
+<p>The SRDF is generated dynamically at runtime and then loaded to the param server under <code>robot_semantic_description</code>. You can view the top level SRDF Xacro file under sawyer_moveit_config/config/sawyer.srdf.xacro
+</p><p><br />
+</p>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Video">Video</span></h1>
+<p>Coming Soon!
+</p>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Tutorial">Tutorial</span></h1>
+<p>Verify that the robot is enabled from an <a href="SDK_Shell" title="SDK Shell">SDK terminal session</a>, ex:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ rosrun intera_interface enable_robot.py -e
+</pre></div>
+<p>Start the joint trajectory controller, ex:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> $ rosrun intera_interface joint_trajectory_action_server.py
+</pre></div>
+<p>In another <a href="SDK_Shell" title="SDK Shell">SDK terminal session</a>, Launch the <a rel="nofollow" class="external text" href="http://moveit.ros.org/documentation/plugins">rviz MoveIt! plugin</a>, ex:
+</p>
+<div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-2-0" name="tabs-2" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-2-1" name="tabs-2" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-2-1" data-tabpos="1">Without Electric Grippers</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-2-2" name="tabs-2" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-2-2" data-tabpos="2">With Electric Gripper(s)</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<p>If you do not have a gripper plugged into the robot, use the following to bringup MoveIt:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ roslaunch sawyer_moveit_config sawyer_moveit.launch
+</pre></div>
+<p>This version will not add electric grippers collision shapes, and MoveIt may not give a valid trajectory if you have electric grippers plugged in.
+</p>
+</div>
+<div class="tabs-content tabs-content-2">
+<p>If you have the Rethink Electric grippers plugged into your robot, use the following to bringup MoveIt:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ roslaunch sawyer_moveit_config sawyer_moveit.launch electric_gripper:<span class="o">=</span><span class="nb">true</span>
+</pre></div>
+<p>This version will add the gripper linkages to the collision shapes.
+</p>
+</div>
+</div></div>
+<p><br />
+The Rviz gui will then open showing Sawyer with <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/interactive_markers">interactive markers</a>:<br />
+</p><p><a href="File:Sawyer_moveit_start_1.png" class="image"><img alt="Sawyer moveit start 1.png" src="a/images/thumb/9/94/Sawyer_moveit_start_1.png/800px-Sawyer_moveit_start_1.png" width="800" height="455" srcset="/intera/a/images/thumb/9/94/Sawyer_moveit_start_1.png/1200px-Sawyer_moveit_start_1.png 1.5x, /intera/a/images/thumb/9/94/Sawyer_moveit_start_1.png/1600px-Sawyer_moveit_start_1.png 2x" /></a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Executing_a_simple_motion_plan">Executing a simple motion plan</span></h2>
+<p>You will see the goal state for the motion planning, shown for each plan group in Orange.
+</p><p>You can then move Sawyer's arms to a planning goal by clicking and dragging the arrows (Cartesian) and rings (orientation) of the interactive markers. Kinematic/collision checking is happening simultaneously and will not allow self collisions (links will turn red), or goal states out of the reachable workspace (inability to drag and endpoint/gripper will turn red). <br />
+</p><p><a href="File:Sawyer_moveit_2_1.png" class="image"><img alt="Sawyer moveit 2 1.png" src="a/images/thumb/f/f9/Sawyer_moveit_2_1.png/800px-Sawyer_moveit_2_1.png" width="800" height="455" srcset="/intera/a/images/thumb/f/f9/Sawyer_moveit_2_1.png/1200px-Sawyer_moveit_2_1.png 1.5x, /intera/a/images/thumb/f/f9/Sawyer_moveit_2_1.png/1600px-Sawyer_moveit_2_1.png 2x" /></a>
+</p><p>With a valid goal state, and assuming that the robot is in a valid start state, you are now ready to plan and execute a trajectory from your start state to the goal state.
+</p><p>In the bottom left you will the motion planning frame with a tabbed interface to access different tools of the MoveIt! Rviz visualizer. 
+</p><p>Please select the <i>Planning</i> tab in this frame. <br />
+</p><p><a href="File:Sawyer_moveit_tabs_planning.png" class="image"><img alt="Sawyer moveit tabs planning.png" src="a/images/thumb/a/a2/Sawyer_moveit_tabs_planning.png/600px-Sawyer_moveit_tabs_planning.png" width="600" height="347" srcset="/intera/a/images/a/a2/Sawyer_moveit_tabs_planning.png 1.5x" /></a>
+</p><p>Click the <i>Plan</i> tab under the <i>Commands</i> field to plan a trajectory from your start state to the goal. You will see this solution executed in Rviz. When you are happy with the planned trajectory, click <i>Execute</i> to run this trajectory on the robot.
+</p><p>Alternatively, if you would like to immediately execute the first plan from your current position to the goal position use the <i>Plan and Execute</i> button.
+</p><p>Another useful field in the <i>Planning</i> tab is <i>Query</i>. You can specify here _Select Start State_ choosing <code>&lt;current&gt;</code>, <code>&lt;random&gt;</code>, and <code>&lt;same as goal&gt;</code>, choosing these options with the _Update_ button. Also, You may <i>Select Goal State</i> by clicking that button. Here again you can choose <code>&lt;current&gt;</code>, <code>&lt;random&gt;</code>, and <code>&lt;same as goal&gt;</code> for the Goal State.
+</p><p><b>Note:</b> It is dangerous to plan from a start state other than your current joint positions. Please update the <i>Select Start State_ option under the <b>Query</b> field to reflect your current position before planning. This can be done by clicking the _Select Start State:_ text, from the drop down menu select <code>&lt;current&gt;</code>, click </i>Update<i> to complete this step. You will now be planning from your current position as the start state.</i>
+</p><p>After trajectory execution you will see Sawyer has achieved your specified Goal. <br />
+</p><p><a href="File:Sawyer_moveit_done_1.png" class="image"><img alt="Sawyer moveit done 1.png" src="a/images/thumb/1/1b/Sawyer_moveit_done_1.png/800px-Sawyer_moveit_done_1.png" width="800" height="455" srcset="/intera/a/images/thumb/1/1b/Sawyer_moveit_done_1.png/1200px-Sawyer_moveit_done_1.png 1.5x, /intera/a/images/thumb/1/1b/Sawyer_moveit_done_1.png/1600px-Sawyer_moveit_done_1.png 2x" /></a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Introducing_an_environment_representation_for_planning">Introducing an environment representation for planning</span></h2>
+<p>Select the <i>Scene Object</i> tab from the Motion Planning frame.
+</p><p><a href="File:Sawyer_moveit_tabs_scene_objects.png" class="image"><img alt="Sawyer moveit tabs scene objects.png" src="a/images/thumb/f/f2/Sawyer_moveit_tabs_scene_objects.png/600px-Sawyer_moveit_tabs_scene_objects.png" width="600" height="347" srcset="/intera/a/images/f/f2/Sawyer_moveit_tabs_scene_objects.png 1.5x" /></a>
+</p><p>We will now create a scene object in a text file to be imported into our environment.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> $ roscd sawyer_moveit_config
+ $ mkdir sawyer_scenes
+ $ gedit sawyer_scenes/sawyer_pillar.scene
+</pre></div>
+<p>Copy in the following scene describing a pillar
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> pillar
+ * pillar
+ <span class="m">1</span>
+ box
+ <span class="m">0</span>.2 <span class="m">0</span>.2 <span class="m">1</span>
+ <span class="m">0</span>.6 <span class="m">0</span>.15 <span class="m">0</span>
+ <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">1</span>
+ <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span>
+ .
+</pre></div>
+<p>Save and exit.
+</p><p>You can now import this scene from the <b>Scene Geometry</b> field selecting <i>Import From Text</i>
+</p><p><a href="File:Sawyer_moveit_tabs_context.png" class="image"><img alt="Sawyer moveit tabs context.png" src="a/images/thumb/4/4b/Sawyer_moveit_tabs_context.png/600px-Sawyer_moveit_tabs_context.png" width="600" height="370" srcset="/intera/a/images/4/4b/Sawyer_moveit_tabs_context.png 1.5x" /></a>
+</p><p>Navigating to select <code>sawyer_moveit_config/sawyer_scenes/sawyer_pillar.scene</code>
+</p><p>After opening this scene you will now see the pillar inserted into your environment.
+</p><p><a href="File:Sawyer_moveit_pillar.png" class="image"><img alt="Sawyer moveit pillar.png" src="a/images/thumb/7/77/Sawyer_moveit_pillar.png/800px-Sawyer_moveit_pillar.png" width="800" height="462" srcset="/intera/a/images/thumb/7/77/Sawyer_moveit_pillar.png/1200px-Sawyer_moveit_pillar.png 1.5x, /intera/a/images/thumb/7/77/Sawyer_moveit_pillar.png/1600px-Sawyer_moveit_pillar.png 2x" /></a>
+</p><p><b>Important:</b> You must publish your current scene so that MoveIt! knows that it will need to plan around your modified environment. Do so by selecting the <i>Context_ tab from the Motion Planning frame. Under this tab you must click the _Publish Current Scene</i> Button under the <b>Planning Library</b> field.
+</p><p><a href="File:Sawyer_moveit_pubscene.png" class="image"><img alt="Sawyer moveit pubscene.png" src="a/images/thumb/9/9d/Sawyer_moveit_pubscene.png/600px-Sawyer_moveit_pubscene.png" width="600" height="373" srcset="/intera/a/images/9/9d/Sawyer_moveit_pubscene.png 1.5x" /></a>
+</p><p>Similar to our previous planning we can now drag our interactive markers moving the goal state to a location on the opposite side of the pillar.
+</p><p><a href="File:Sawyer_moveit_pillar_plan.png" class="image"><img alt="Sawyer moveit pillar plan.png" src="a/images/thumb/e/e6/Sawyer_moveit_pillar_plan.png/800px-Sawyer_moveit_pillar_plan.png" width="800" height="462" srcset="/intera/a/images/thumb/e/e6/Sawyer_moveit_pillar_plan.png/1200px-Sawyer_moveit_pillar_plan.png 1.5x, /intera/a/images/thumb/e/e6/Sawyer_moveit_pillar_plan.png/1600px-Sawyer_moveit_pillar_plan.png 2x" /></a>
+</p><p>Selecting the <i>Planning</i> tab in the motion planning frame you can now plan a new trajectory that will avoid collision with your environment object (the pillar). The shell in which you launched sawyer_moveit.launch will provide information regarding which planner will be used, how long it took to find a solution, path simplification/smoothing time, and more. This will also display if your planner was unsuccessful in finding an allowable solution. This is often caused by collision with the environment during testing of the execution or invalid start/goal states. In very constrained or difficult motions, you may have to plan several times to find an acceptable solution for execution. 
+</p><p>Upon execution the robot will avoid this 'virtual' object tracking the commanded trajectory.
+</p><p><a href="File:Sawyer_moveit_pillar_done.png" class="image"><img alt="Sawyer moveit pillar done.png" src="a/images/thumb/4/4f/Sawyer_moveit_pillar_done.png/800px-Sawyer_moveit_pillar_done.png" width="800" height="462" srcset="/intera/a/images/thumb/4/4f/Sawyer_moveit_pillar_done.png/1200px-Sawyer_moveit_pillar_done.png 1.5x, /intera/a/images/thumb/4/4f/Sawyer_moveit_pillar_done.png/1600px-Sawyer_moveit_pillar_done.png 2x" /></a>
+</p><p>That's it, you have successfully commanded Sawyer using MoveIt!
+</p>
+<h3><span class="mw-headline" id="Programmatic_interaction_for_planning">Programmatic interaction for planning</span></h3>
+<p>There is much more information, tutorials, API documentation and more on <a rel="nofollow" class="external text" href="http://docs.ros.org/kinetic/api/moveit_tutorials/html/">moveit.ros.org</a>.
+</p><p><a rel="nofollow" class="external text" href="http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/pr2_tutorials/planning/src/doc/move_group_interface_tutorial.html">C++ Tutorial</a>
+</p><p><a rel="nofollow" class="external text" href="http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/pr2_tutorials/planning/scripts/doc/move_group_python_interface_tutorial.html">Python Tutorial</a>
+</p><p><a rel="nofollow" class="external text" href="http://moveit.ros.org/code-api/">MoveIt! Code API</a>
+</p>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Interfaces">Interfaces</span></h1>
+<h2><span class="mw-headline" id="ROS_APIs">ROS APIs</span></h2>
+<p><i>See the <a href="API_Reference#arm-joints" title="API Reference">API Reference</a> page for details.</i>  
+</p>
+<ul><li>Joint Trajectory Action Server - /robot/limb/right/follow_joint_trajectory [control_msgs/FollowJointTrajectoryAction]</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="intera_interface_APIs">intera_interface APIs</span></h2>
+<ul><li>JointTrajectoryActionServer class: <code>joint_trajectory_action_server.py</code></li></ul>
+<p>Also see the <a rel="nofollow" class="external text" href="https://rethinkrobotics.github.io/intera_sdk_docs/">Full intera_interface API docs for more details</a>
+</p>
+</div>
+<div class="content-block">
+<h1><span id="Related_Examples/Tutorials"></span><span class="mw-headline" id="Related_Examples.2FTutorials">Related Examples/Tutorials</span></h1>
+<ul><li><a href="Joint_Trajectory_Playback_Example" title="Joint Trajectory Playback Example">Joint Trajectory Playback Example</a></li></ul>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h1>
+<h2><span class="mw-headline" id="The_arm_is_not_executing_the_trajectory">The arm is not executing the trajectory</span></h2>
+<p>Verify that the robot is enabled:
+</p><p><code>rosrun intera_interface enable_robot.py -e</code>
+</p><p>Verify that the trajectory controller has been started:
+</p><p><code>rosrun intera_interface trajectory_controller.py</code>
+</p><p><br />
+</p>
+<h2><span id="Arm_not_executing_plan;_&quot;Unable_to_identify_any_set_of_controllers&quot;"></span><span class="mw-headline" id="Arm_not_executing_plan.3B_.22Unable_to_identify_any_set_of_controllers.22">Arm not executing plan; "Unable to identify any set of controllers"</span></h2>
+<p><i>Problem Description:</i> 
+</p>
+<blockquote>
+<p> Pressed plan, solution was found and a trajectory execution service request was recieved after which I got the error:<br />
+ Unable to identify any set of controllers that can actuate the specified joints: [right_j0 right_j1 right_j2 right_j3 right_j4 right_j5 right_j6 ]<br />
+ After which nothing occurred.<br />
+</p>
+</blockquote>
+<p>If you see the following warning error in the terminal output when roslaunch-ing sawyer_moveit.launch:  <br />
+<code>
+[FATAL] [1372432489.342541284]: Parameter '~moveit_controller_manager' not specified. This is needed to identify the plugin to use for interacting with controllers. No paths can be executed.
+</code><br />
+This indicates you need to make sure you have the appropriate controller manager plugins installed.  Make sure to follow the Sawyer MoveIt! <a href="MoveIt_Tutorial#installation.2Fprerequisites">Installation</a> instructions and install the required Debian packages for both moveit-full and any required plugins.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815154917
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.041 seconds
+Real time usage: 0.046 seconds
+Preprocessor visited node count: 193/1000000
+Preprocessor generated node count: 490/1000000
+Post‐expand include size: 37/2097152 bytes
+Template argument size: 1/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 2/20
+Unstrip post‐expand size: 4975/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.528      1 Template:TOClimit
+100.00%    0.528      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:97-0!canonical and timestamp 20190815154917 and revision id 1307
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="a/index.php?title=MoveIt_Tutorial&amp;oldid=1307">http://sdk.rethinkrobotics.com/intera/a/index.php?title=MoveIt_Tutorial&amp;oldid=1307</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="a/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.041","walltime":"0.046","ppvisitednodes":{"value":193,"limit":1000000},"ppgeneratednodes":{"value":490,"limit":1000000},"postexpandincludesize":{"value":37,"limit":2097152},"templateargumentsize":{"value":1,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":2,"limit":20},"unstrip-size":{"value":4975,"limit":5000000},"timingprofile":["100.00%    0.528      1 Template:TOClimit","100.00%    0.528      1 -total"]},"cachereport":{"timestamp":"20190815154917","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":92});});</script></body></html>

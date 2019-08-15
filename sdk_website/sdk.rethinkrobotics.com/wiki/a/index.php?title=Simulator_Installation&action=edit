@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Simulator Installation - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Simulator_Installation","wgTitle":"Simulator Installation","wgCurRevisionId":4601,"wgRevisionId":0,"wgArticleId":408,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Simulator_Installation","wgRelevantArticleId":408,"wgRequestId":"cdd27c207320d5b9742f3781","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Simulator_Installation rootpage-Simulator_Installation skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Simulator+Installation&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Simulator Installation</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Simulator_Installation&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Simulator_Installation&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Simulator_Installation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Simulator_Installation" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Simulator_Installation" title="Simulator Installation">Simulator Installation</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Simulator_Installation&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Simulator_Installation&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">{{Template:Parent header|parent=Baxter Simulator}}
+== Prerequisites ==
+*Make sure you have followed the [http://sdk.rethinkrobotics.com/wiki/Workstation_Setup workstation setup tutorial] before beginning this section
+*Ensure the following software packages are installed:
+
+
+&lt;tabs>
+&lt;tab name="ROS Indigo (Recommended)">
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get install gazebo2 ros-indigo-qt-build ros-indigo-driver-common ros-indigo-gazebo-ros-control ros-indigo-gazebo-ros-pkgs ros-indigo-ros-control ros-indigo-control-toolbox ros-indigo-realtime-tools ros-indigo-ros-controllers ros-indigo-xacro python-wstool ros-indigo-tf-conversions ros-indigo-kdl-parser
+&lt;/syntaxhighlight>
+&lt;/tab>
+&lt;tab name="ROS Kinetic">
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get install gazebo7 ros-kinetic-qt-build ros-kinetic-gazebo-ros-control ros-kinetic-gazebo-ros-pkgs ros-kinetic-ros-control ros-kinetic-control-toolbox ros-kinetic-realtime-tools ros-kinetic-ros-controllers ros-kinetic-xacro python-wstool ros-kinetic-tf-conversions ros-kinetic-kdl-parser
+&lt;/syntaxhighlight>
+&lt;/tab>
+&lt;tab name="ROS Groovy">
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu precise main" > /etc/apt/sources.list.d/gazebo-latest.list'
+$ wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
+$ sudo apt-get update
+$ sudo apt-get install python-wstool python-rosdep ros-groovy-pcl-conversions ros-groovy-control-msgs ros-groovy-cmake-modules ros-groovy-qt-build ros-groovy-moveit-full ros-groovy-driver-common ros-groovy-image-common ros-groovy-rostest gazebo 
+&lt;/syntaxhighlight>
+&lt;/tab>
+&lt;/tabs>
+
+== Baxter Simulator Installation ==
+&lt;tabs>
+&lt;tab name="ROS Indigo (Recommended)">
+*From your catkin workspace where the SDK resides, use wstool to install and update:
+==== Install baxter_simulator ====
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws/src
+$ wstool init .
+$ wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter_simulator/master/baxter_simulator.rosinstall
+$ wstool update
+&lt;/syntaxhighlight>
+'''IMPORTANT:''' Make sure all simulator repositories update to their proper branch.
+==== Build Source ====
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ source /opt/ros/indigo/setup.bash
+$ cd ~/ros_ws
+$ catkin_make
+&lt;/syntaxhighlight>
+*Use baxter.sh - it has a special hook for sim:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cp src/baxter/baxter.sh .
+&lt;/syntaxhighlight>
+==== Edit baxter.sh ====
+* Edit the following values in &lt;code>baxter.sh&lt;/code>:
+** &lt;code>your_ip value&lt;/code>
+** &lt;code>ros_version&lt;/code>
+&lt;/tab>
+&lt;tab name="ROS Kinetic">
+*From your catkin workspace where the SDK resides, use wstool to install and update:
+==== Install baxter_simulator ====
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws/src
+$ wstool init .
+$ wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter_simulator/kinetic-devel/baxter_simulator.rosinstall
+$ wstool update
+&lt;/syntaxhighlight>
+'''IMPORTANT:''' Make sure all simulator repositories update to their proper branch.
+==== Build Source ====
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ source /opt/ros/kinetic/setup.bash
+$ cd ~/ros_ws
+$ catkin_make
+&lt;/syntaxhighlight>
+*Use baxter.sh - it has a special hook for sim:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cp src/baxter/baxter.sh .
+&lt;/syntaxhighlight>
+==== Edit baxter.sh ====
+* Edit the following values in &lt;code>baxter.sh&lt;/code>:
+** &lt;code>your_ip value&lt;/code>
+** &lt;code>ros_version&lt;/code>
+&lt;/tab>
+&lt;tab name="ROS Indigo apt-get">
+* First, make sure you have installed ros-indigo-desktop-full: http://wiki.ros.org/indigo/Installation/Ubuntu
+==== Install baxter_simulator ====
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ sudo apt-get install ros-indigo-baxter-simulator
+&lt;/syntaxhighlight>
+*Use baxter.sh - it has a special hook for sim:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ wget https://raw.githubusercontent.com/RethinkRobotics/baxter/master/baxter.sh
+&lt;/syntaxhighlight>
+==== Edit baxter.sh ====
+* Edit the following values in &lt;code>baxter.sh&lt;/code>:
+** &lt;code>your_ip value&lt;/code>
+** &lt;code>ros_version&lt;/code>
+&lt;/tab>
+&lt;tab name="ROS Groovy">
+*From your catkin workspace where the SDK resides, use wstool to install and update:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws/src
+$ wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter_simulator/release-0.8.1/baxter_simulator.rosinstall 
+$ cd ~/ros_ws/src
+$ wstool init .
+$ wstool merge baxter_simulator/baxter_simulator.rosinstall
+$ wstool update
+&lt;/syntaxhighlight>
+'''IMPORTANT:''' Make sure all simulator repositories update to their proper branch.
+*Build
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ source /opt/ros/groovy/setup.bash
+$ cd ~/ros_ws
+$ catkin_make
+$ catkin_make install
+&lt;/syntaxhighlight>
+*Use baxter.sh - it has a special hook for sim:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cp src/baxter/baxter.sh .
+&lt;/syntaxhighlight>
+* Edit the your_ip value in baxter.sh
+&lt;/tab>
+
+&lt;/tabs>
+=== Simulation ===
+*Run the baxter shell script with sim specified:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ ./baxter.sh sim
+&lt;/syntaxhighlight>
+*Start simulation with controllers:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ roslaunch baxter_gazebo baxter_world.launch
+&lt;/syntaxhighlight>
+
+You should wait for the following three lines before the simulator is truly running:
+ [ INFO] [1400513321.531488283, 34.216000000]: Simulator is loaded and started successfully
+ [ INFO] [1400513321.535040726, 34.219000000]: Robot is disabled
+ [ INFO] [1400513321.535125386, 34.220000000]: Gravity compensation was turned off
+By default the robot would be in disabled state. To enable, run the [[Enable_Robot_Tool|enable_robot]] script from the baxter_tools package. To start and switch the controllers, use the JointCommand topic as [[API_Reference#Arm_Joints_Control_2|documented in the Baxter SDK]].
+*Optional: Test/tune the velocity controllers or position controllers using a RQT dashboard GUI. Make sure you are in the right joint command mode when using these:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ roslaunch baxter_sim_hardware baxter_sdk_position_rqt.launch
+&lt;/syntaxhighlight>
+or
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ roslaunch baxter_sim_hardware baxter_sdk_velocity_rqt.launch
+&lt;/syntaxhighlight>
+
+== Smoke Test ==
+Check if the simulator was installed and launched successfully by typing the following commands:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosnode list
+&lt;/syntaxhighlight>
+This should list the nodes as [[Simulator_Architecture#Ros Nodes|here]].
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rostopic list
+&lt;/syntaxhighlight>
+This should list the topics as [[Simulator_Architecture#Ros Topics|here]].
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rostopic echo /robot/state
+&lt;/syntaxhighlight>
+By default, the following messages should be displayed at 100 HZ.
+&lt;syntaxhighlight lang="bash" enclose="div">
+enabled: False
+stopped: False
+error: False
+estop_button: 0
+estop_source: 0
+---
+&lt;/syntaxhighlight>
+
+== Run SDK Examples ==
+*Start Wobbler example:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ ./baxter.sh sim
+$ rosrun baxter_examples joint_velocity_wobbler.py
+&lt;/syntaxhighlight>
+*Start keyboard joint position example:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ ./baxter.sh sim
+$ rosrun baxter_examples joint_position_keyboard.py
+&lt;/syntaxhighlight>
+For additional information on the interfaces that are implemented with this release, visit the [[API_Reference#tab=Simulator_API|Simulator API]] page.
+
+==Troubleshooting==
+*'''Please refer to the troubleshooting page [[Gazebo Troubleshooting]] '''
+
+----
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="../Template:Parent_header" title="Template:Parent header">Template:Parent header</a> (<a href="index.php?title=Template:Parent_header&amp;action=edit" title="Template:Parent header">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Simulator_Installation" title="Simulator Installation">Simulator Installation</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Simulator_Installation">http://sdk.rethinkrobotics.com/wiki/Simulator_Installation</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":39});});</script></body></html>

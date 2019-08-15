@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for URDF Configuration - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"URDF_Configuration_-_Code_Walkthrough","wgTitle":"URDF Configuration - Code Walkthrough","wgCurRevisionId":4390,"wgRevisionId":0,"wgArticleId":823,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"URDF_Configuration_-_Code_Walkthrough","wgRelevantArticleId":823,"wgRequestId":"2d91b15697ceb449d6028bd6","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-URDF_Configuration_-_Code_Walkthrough rootpage-URDF_Configuration_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=URDF+Configuration+-+Code+Walkthrough&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for URDF Configuration - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../URDF_Configuration_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../URDF_Configuration_-_Code_Walkthrough" title="URDF Configuration - Code Walkthrough">URDF Configuration - Code Walkthrough</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=URDF_Configuration_-_Code_Walkthrough&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">== Introduction ==
+
+This program demonstrates the usage how to construct a URDF Configuration message in Python, to be sent into Baxter's [https://github.com/RethinkRobotics/mutable_robot_state_publisher Mutable Robot State Publisher] (MRSP).&lt;br/>
+The MRSP will then update the onboard URDF to add your desired new Joint-Link tree fragment. You can view a Xacro that can be used to create such a segment tree on GitHub:
+&lt;br/> https://github.com/RethinkRobotics/baxter_common/blob/master/baxter_description/urdf/left_end_effector.urdf.xacro&lt;br />
+
+== Code Walkthrough ==
+
+Now, let's break down the code.
+
+&lt;syntaxhighlight lang="python" line start="30" enclose="div">
+import os
+import sys
+import argparse
+
+import rospy
+import xacro_jade
+
+from baxter_core_msgs.msg import (
+    URDFConfiguration,
+)
+&lt;/syntaxhighlight>
+
+The standard Python libraries of &lt;code>os, sys, argparse&lt;/code> are imported here. We also import &lt;code>xacro_jade&lt;/code> to utilize some of the wonderful new features that have been backported to Xacro ROS Indigo from Xacro ROS Jade python API's. See https://github.com/ros/xacro/pull/117 for more details on Xacro Jade backporting.&lt;br/>
+As for the actual message itself, we need to import the &lt;code>URDFConfiguration&lt;/code> message for constructing the message to notify the Mutable Robot State Publisher that a URDF change has occurred.
+
+&lt;syntaxhighlight lang="python" line start="41" enclose="div">
+def xacro_parse(filename):
+    doc = xacro_jade.parse(None, filename)
+    xacro_jade.process_doc(doc, in_order=True)
+    return doc.toprettyxml(indent='  ')
+&lt;/syntaxhighlight>
+
+Here, we are using the xacro_jade in_order functionality, to ensure our URDF is constructed in the order the Xacro files are included.
+
+&lt;syntaxhighlight lang="python" line start="46" enclose="div">
+def send_urdf(parent_link, root_joint, urdf_filename):
+    """
+    Send the URDF Fragment located at the specified path to
+    modify the electric gripper on Baxter.
+    @param parent_link: parent link to attach the URDF fragment to
+                        (usually &lt;side>_hand)
+    @param root_joint: root link of the URDF fragment (usually &lt;side>_gripper_base)
+    @param urdf_filename: path to the urdf XML file to load into xacro and send
+    """
+    msg = URDFConfiguration()
+    # The updating the time parameter tells
+    # the robot that this is a new configuration.
+    # Only update the time when an updated internal
+    # model is required. Do not continuously update
+    # the time parameter.
+    msg.time = rospy.Time.now()
+    # link to attach this urdf to onboard the robot
+    msg.link = parent_link
+    # root linkage in your URDF Fragment
+    msg.joint = root_joint
+    msg.urdf = xacro_parse(urdf_filename)
+    pub = rospy.Publisher('/robot/urdf', URDFConfiguration, queue_size=10)
+    rate = rospy.Rate(5) # 5hz
+    while not rospy.is_shutdown():
+        # Only one publish is necessary, but here we
+        # will continue to publish until ctrl+c is invoked
+        pub.publish(msg)
+        rate.sleep()
+&lt;/syntaxhighlight>
+
+Here the URDFConfiguration message is constructed. It's composed of four parts:
+* time: Time at which URDF was updated. &lt;br/>This is time is used to notify the robot that a change has taken place. You if you publish several messages at the same time using the same link and joint, no update will occur. If the time is incremented (as clock time tends to do by itself :), the Mutable Robot State Publisher will continually update the robot (quite a bad thing). So simply update the time field only when the URDF fragment has changed.
+* link: Link that is in the '''already existing''' URDF in the robot's robot_description parameter which you would like to attach your fragment to.
+* joint: The joint's name inside of your URDF fragment which should be used to attach your fragment to the specified link field above.
+* urdf: The URDF Fragment Tree where you can describe your new end effector or camera. &lt;br/> Note: If you have any moving (revolute, prismatic) joints in this fragment, you must separately publish joint states for them on the &lt;code>/robot/joint_states&lt;/code> topic.
+
+Here we publish the message at 5 Hz, taking special care not to update the time field, which would trigger continuous updates, since only one change is desired.
+
+&lt;syntaxhighlight lang="python" line start="76" enclose="div">
+def main():
+    """RSDK URDF Fragment Example:
+    This example shows a proof of concept for
+    adding your URDF fragment to the robot's
+    onboard URDF (which is currently in use).
+    """
+    arg_fmt = argparse.RawDescriptionHelpFormatter
+    parser = argparse.ArgumentParser(formatter_class=arg_fmt,
+                                     description=main.__doc__)
+    required = parser.add_argument_group('required arguments')
+    required.add_argument(
+        '-f', '--file', metavar='PATH', required=True,
+        help='Path to URDF file to send'
+    )
+    required.add_argument(
+        '-l', '--link', required=False, default="left_hand",
+        help='URDF Link already to attach fragment to (usually &lt;left/right>_hand)'
+    )
+    required.add_argument(
+        '-j', '--joint', required=False, default="left_gripper_base",
+        help='Root joint for fragment (usually &lt;left/right>_gripper_base)'
+    )
+    args = parser.parse_args(rospy.myargv()[1:])
+
+    rospy.init_node('rsdk_configure_urdf', anonymous=True)
+
+    if not os.access(args.file, os.R_OK):
+        rospy.logerr("Cannot read file at '%s'" % (args.file,))
+        return 1
+    send_urdf(args.link, args.joint, args.file)
+    return 0
+&lt;/syntaxhighlight>
+
+This function simply takes in the parameters, substitutes defaults when necessary, reads the desired Xacro file, and calls the &lt;code>send_urdf&lt;/code> function with those parameters.
+
+&lt;syntaxhighlight lang="python" line start="108" enclose="div">
+
+if __name__ == '__main__':
+    sys.exit(main())
+&lt;/syntaxhighlight>
+
+Typical python main function called when this file is executed as a script.
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../URDF_Configuration_-_Code_Walkthrough" title="URDF Configuration - Code Walkthrough">URDF Configuration - Code Walkthrough</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../URDF_Configuration_-_Code_Walkthrough">http://sdk.rethinkrobotics.com/wiki/URDF_Configuration_-_Code_Walkthrough</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":160});});</script></body></html>

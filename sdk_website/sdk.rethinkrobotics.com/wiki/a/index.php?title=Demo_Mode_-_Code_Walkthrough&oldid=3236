@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Demo Mode - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Demo_Mode_-_Code_Walkthrough","wgTitle":"Demo Mode - Code Walkthrough","wgCurRevisionId":3236,"wgRevisionId":3236,"wgArticleId":493,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Demo_Mode_-_Code_Walkthrough","wgRelevantArticleId":493,"wgRequestId":"0e79538e60bbe1719ed880c5","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Demo_Mode_-_Code_Walkthrough rootpage-Demo_Mode_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Demo+Mode+-+Code+Walkthrough&amp;returntoquery=oldid%3D3236">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Demo Mode - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Demo_Mode_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 15:08, 29 July 2014 by <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span> <span class="comment">(Protected &quot;<a href="../Demo_Mode_-_Code_Walkthrough" title="Demo Mode - Code Walkthrough">Demo Mode - Code Walkthrough</a>&quot;: Setting Permissions for (almost all) Pages - editable and moveable by all logged in users ([Edit=Allow only autoconfirmed users] (indefinite) [Move=Allow only autoconfirmed users] (indefinite)))</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Demo_Mode_-_Code_Walkthrough&amp;diff=prev&amp;oldid=3236" title="Demo Mode - Code Walkthrough">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Demo_Mode_-_Code_Walkthrough&amp;direction=prev&amp;oldid=3236" title="Demo Mode - Code Walkthrough">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#column-one">navigation</a>, <a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#Demo_Mode_-_Code_Walkthrough"><span class="tocnumber">1</span> <span class="toctext">Demo Mode - Code Walkthrough</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#Image_Processing_-_Displaying_the_pretty_pictures"><span class="tocnumber">1.1</span> <span class="toctext">Image Processing - Displaying the pretty pictures</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#XDisplay_-_Put_it_on_the_Big_Screen"><span class="tocnumber">1.1.1</span> <span class="toctext">XDisplay - Put it on the Big Screen</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#PIL_to_ROS_-_From_humble_beginnings"><span class="tocnumber">1.1.2</span> <span class="toctext">PIL to ROS - From humble beginnings</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#Anatomy_of_a_Button_-_Layering_images_and_text_in_PIL"><span class="tocnumber">1.1.3</span> <span class="toctext">Anatomy of a Button - Layering images and text in PIL</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#Anatomy_of_a_Window_-_Handling_of_states"><span class="tocnumber">1.1.4</span> <span class="toctext">Anatomy of a Window - Handling of states</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-7"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#Interaction_-_Controlling_the_pretty_pictures_through_use_of_buttons_and_a_knob"><span class="tocnumber">1.2</span> <span class="toctext">Interaction - Controlling the pretty pictures through use of buttons and a knob</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#Important_note_-_Enable_Loop_and_Avoiding_E-Stop_Craziness"><span class="tocnumber">1.2.1</span> <span class="toctext">Important note - Enable Loop and Avoiding E-Stop Craziness</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#Demo_Functions_-_The_Stuff_We_Do"><span class="tocnumber">1.3</span> <span class="toctext">Demo Functions - The Stuff We Do</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#Processes_-_Make_It_Do_What_It_Do.2C_CLI-Style"><span class="tocnumber">1.3.1</span> <span class="toctext">Processes - Make It Do What It Do, CLI-Style</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236#Camera_Overlay_-_Live_on_Baxter.27s_Face.21"><span class="tocnumber">1.3.2</span> <span class="toctext">Camera Overlay - Live on Baxter's Face!</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Demo_Mode_-_Code_Walkthrough">Demo Mode - Code Walkthrough</span></h1>
+<p>The Demo mode represents a simple way of generating and displaying an interactive UI on the Baxter Research robot.
+</p><p>The core of this program is an Image Processing library that converts between PNG, PIL (Python Imaging Library), openCV, and ROS Message formats for images.
+Beyond that is a simple UI structure, with Window and Button classes that uses the aforementioned library, in co-ordination with ros messages from the robot, to generate and display the User Interface.
+</p><p><a href="../File:UI_Documentation_Diagram.png" class="image"><img alt="UI Documentation Diagram.png" src="images/thumb/2/22/UI_Documentation_Diagram.png/900px-UI_Documentation_Diagram.png" width="900" height="285" srcset="/wiki/a/images/2/22/UI_Documentation_Diagram.png 1.5x" /></a>
+</p>
+<h2><span class="mw-headline" id="Image_Processing_-_Displaying_the_pretty_pictures">Image Processing - Displaying the pretty pictures</span></h2>
+<p>Let's start with the imports
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">30 </span><span class="kn">import</span> <span class="nn">cv</span>
+<span class="lineno">31 </span><span class="kn">import</span> <span class="nn">cv_bridge</span>
+<span class="lineno">32 </span><span class="kn">import</span> <span class="nn">PIL</span>
+</pre></div>
+<p>PIL is used for loading and integrating PNG asset images.
+cv and cv_bridge are used for image manipulation and conversion to ros messages.
+</p>
+<h3><span class="mw-headline" id="XDisplay_-_Put_it_on_the_Big_Screen">XDisplay - Put it on the Big Screen</span></h3>
+<p>As with other functions interacting with Baxter's face, we will need to publish an Image message to the /robot/xdisplay topic to update the screen image.
+</p><p>To that end, our UI Controller, the highest element in the UI system, has a ui.xdisp property containing a publisher to that topic:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">54 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">xdisp</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Publisher</span><span class="p">(</span><span class="s1">&#39;/robot/xdisplay&#39;</span><span class="p">,</span> <span class="n">ImageMsg</span><span class="p">,</span> <span class="n">latch</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+<p>Short section, but it had to be done before we go on to the rest of this...
+</p>
+<h3><span class="mw-headline" id="PIL_to_ROS_-_From_humble_beginnings">PIL to ROS - From humble beginnings</span></h3>
+<p>Let's start by covering taking a .png image asset and converting it into a Ros Message
+</p><p>The places we do this in the code are pretty spread out, so, for a simple case, let's load a single .png file, and
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="kn">from</span> <span class="nn">baxter_demo_ui</span> <span class="kn">import</span> <span class="n">img_proc</span>
+
+<span class="c1">#image_path = &quot;path/to/your/image.png&quot;</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>
+<span class="n">gen_cv</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="n">gen_msg</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+</pre></div>
+<p>Now, here is the code for gen_cv (in <b>img_proc.py</b>, which converts a single image to from PIL to an openCV image format
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">54 </span><span class="k">def</span> <span class="nf">gen_cv</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
+<span class="lineno">55 </span>    <span class="k">return</span> <span class="n">PIL_to_cv</span><span class="p">(</span><span class="n">rgb_to_bgr</span><span class="p">(</span><span class="n">img</span><span class="p">))</span>
+<span class="lineno">56 </span>
+<span class="lineno">57 </span><span class="k">def</span> <span class="nf">rgb_to_bgr</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
+<span class="lineno">58 </span>    <span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="lineno">59 </span>    <span class="k">return</span> <span class="n">PIL</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">r</span><span class="p">))</span>
+<span class="lineno">60 </span>
+<span class="lineno">61 </span><span class="k">def</span> <span class="nf">PIL_to_cv</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
+<span class="lineno">62 </span>    <span class="n">ci</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">CreateImage</span><span class="p">((</span><span class="mi">1024</span><span class="p">,</span> <span class="mi">600</span><span class="p">),</span> <span class="n">cv</span><span class="o">.</span><span class="n">IPL_DEPTH_8U</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="lineno">63 </span>    <span class="n">cv</span><span class="o">.</span><span class="n">SetData</span><span class="p">(</span><span class="n">ci</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">tostring</span><span class="p">(),</span> <span class="mi">3072</span><span class="p">)</span>
+<span class="lineno">64 </span>    <span class="k">return</span> <span class="n">ci</span>
+</pre></div>
+<p>To start, gen_cv takes a PIL image, and converts if from RGB to BGR, the accepted encoding format for publishing to xdisplay.
+We then create an empty cv_mat object and copy the data from the BGR image into that object.
+</p><p>To convert this from a cv_mat image into a ros message, we then have to use the cv_bridge function cv_to_imgmsg:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">69 </span><span class="k">def</span> <span class="nf">cv_to_msg</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
+<span class="lineno">70 </span>    <span class="k">return</span> <span class="n">cv_bridge</span><span class="o">.</span><span class="n">CvBridge</span><span class="p">()</span><span class="o">.</span><span class="n">cv_to_imgmsg</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;bgr8&#39;</span><span class="p">)</span>
+</pre></div>
+<p>With this code, you can take any number of canned images and push them to the screen in your scripts, but this by itself is not terribly useful or modular.
+</p>
+<h3><span class="mw-headline" id="Anatomy_of_a_Button_-_Layering_images_and_text_in_PIL">Anatomy of a Button - Layering images and text in PIL</span></h3>
+<p>In demo_buttons.py, we generate images for the different buttons available in the UI by combining icons, with an inherent alpha layer, with different button state images and drawing text on top of them.
+</p><p>We generate the images with our gen_image function
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">122 </span><span class="k">def</span> <span class="nf">gen_image</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">btn</span><span class="p">,</span> <span class="n">icon</span><span class="p">,</span> <span class="n">offset</span><span class="p">):</span>
+<span class="lineno">123 </span>    <span class="n">img</span> <span class="o">=</span> <span class="n">btn</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_size</span><span class="p">,</span> <span class="n">Image</span><span class="o">.</span><span class="n">ANTIALIAS</span><span class="p">)</span>
+<span class="lineno">124 </span>    <span class="k">if</span> <span class="n">icon</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+<span class="lineno">125 </span>        <span class="n">img</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">icon</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">offset</span><span class="p">),</span> <span class="n">icon</span><span class="p">)</span>
+<span class="lineno">126 </span>    <span class="k">return</span> <span class="n">img</span>
+</pre></div>
+<p>What this is doing is resizing the button itself, which is a PIL Image object loaded from a .png, to the appropriate size listed in the config, and layering the icon, another PIL image, on top of it at the given offset.
+The reason we call tuple here is just that we are drawing the offset from a json file and it comes in as a list rather than a tuple.
+The addition of the second <i>icon</i> term specifies the alpha mask for the image.  If the image contains its own alpha layer, then you can simply use the image as its own mask.
+</p><p>To cover the addition of text, we need to look into demo_windows.py for a moment.
+</p><p>We start by importing a few new items from PIL:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">32 </span><span class="k">def</span> <span class="nf">gen_image</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">btn</span><span class="p">,</span> <span class="n">icon</span><span class="p">,</span> <span class="n">offset</span><span class="p">):</span>
+<span class="lineno">33 </span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="lineno">34 </span>  <span class="n">Image</span><span class="p">,</span>
+<span class="lineno">35 </span>  <span class="n">ImageDraw</span><span class="p">,</span>
+<span class="lineno">36 </span>  <span class="n">ImageFont</span>
+<span class="lineno">37 </span><span class="p">)</span>
+</pre></div>
+<p><br />
+Then, when drawing the buttons for our window, we create a draw() instance using ImageDraw.draw()and pass this through to the button's draw function.  This is what we will use to layer the text on the image.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">173 </span>        <span class="n">tmp</span> <span class="o">=</span> <span class="n">copy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_bg</span><span class="p">[</span><span class="s1">&#39;img&#39;</span><span class="p">])</span>
+<span class="lineno">174 </span>        <span class="n">d</span> <span class="o">=</span> <span class="n">ImageDraw</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span>
+<span class="lineno">175 </span>        <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">btn</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_buttons</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<span class="lineno">176 </span>            <span class="k">if</span> <span class="n">btn</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">sel_btn</span><span class="p">:</span>
+<span class="lineno">177 </span>                <span class="k">if</span> <span class="n">disabled</span><span class="p">:</span>
+<span class="lineno">178 </span>                    <span class="n">state</span> <span class="o">=</span> <span class="s1">&#39;pressed&#39;</span>
+<span class="lineno">179 </span>                <span class="k">else</span><span class="p">:</span>
+<span class="lineno">180 </span>                    <span class="n">state</span> <span class="o">=</span> <span class="s1">&#39;selected&#39;</span>
+<span class="lineno">181 </span>            <span class="k">else</span><span class="p">:</span>
+<span class="lineno">182 </span>                <span class="k">if</span> <span class="n">disabled</span><span class="p">:</span>
+<span class="lineno">183 </span>                    <span class="n">state</span> <span class="o">=</span> <span class="s1">&#39;disabled&#39;</span>
+<span class="lineno">184 </span>                <span class="k">else</span><span class="p">:</span>
+<span class="lineno">185 </span>                    <span class="n">state</span> <span class="o">=</span> <span class="s1">&#39;idle&#39;</span>
+<span class="lineno">186 </span>            <span class="n">btn</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+</pre></div>
+<p><br />
+Now, in the initialization of the Button, we denote a <i>font</i> parameter, derived from the .ttf for that font. (share_path is a passed argument that just points to the share/ directory of this package)
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">79 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_font</span> <span class="o">=</span> <span class="n">ImageFont</span><span class="o">.</span><span class="n">truetype</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">/Arial.ttf&#39;</span> <span class="o">%</span>
+<span class="lineno">80 </span>                                           <span class="n">share_path</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+</pre></div>
+<p>Finally, in the draw method of the Button class:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">135 </span>    <span class="k">def</span> <span class="nf">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="n">draw</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
+<span class="lineno">136 </span>        <span class="n">tmp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_imgs</span><span class="p">[</span><span class="n">state</span><span class="p">]</span>
+<span class="lineno">137 </span>        <span class="n">img</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_offset</span><span class="p">,</span> <span class="n">tmp</span><span class="p">)</span>
+<span class="lineno">138 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">draw_label</span><span class="p">(</span><span class="n">draw</span><span class="p">)</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">128 </span>    <span class="k">def</span> <span class="nf">draw_label</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">draw</span><span class="p">):</span>
+<span class="lineno">129 </span>        <span class="n">label_x</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_offset</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_size</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">-</span>
+<span class="lineno">130 </span>                   <span class="n">draw</span><span class="o">.</span><span class="n">textsize</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_label</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_font</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="lineno">131 </span>        <span class="n">label_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_offset</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_label_y</span>
+<span class="lineno">132 </span>        <span class="n">draw</span><span class="o">.</span><span class="n">text</span><span class="p">((</span><span class="n">label_x</span><span class="p">,</span> <span class="n">label_y</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_label</span><span class="p">,</span>
+<span class="lineno">133 </span>                  <span class="n">fill</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_font</span><span class="p">)</span>
+</pre></div>
+<p>Here, we grab the stored button image (with frame and icon) associated with the provided state, and paste it onto the window image, before calling draw_label.
+In draw_label, we simply derive x and y locations for the label and call the ImageDraw.draw object's text() function. 
+<b>(Note that self._label is the actual label text)</b>
+</p>
+<h3><span class="mw-headline" id="Anatomy_of_a_Window_-_Handling_of_states">Anatomy of a Window - Handling of states</span></h3>
+<p>The function of Windows in this UI is to handle the State of the interface.
+The UI state is stored hierarchically, where the UI controller has a selected_window, which has a selected_button, and a number of Parents.
+</p><p>The Parents are used for 2 things:
+</p>
+<ul><li>When a user pressed "Back" on a window, it will attempt to set its parent as the new active window and re-draw.</li>
+<li>When a window is drawn, it calls the draw() function for all of its parents recursively, and has them draw their "disabled" state to show that they are not the focus, before overlaying its current image to that base.</li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">383 </span>    <span class="k">def</span> <span class="nf">_draw_window</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="n">window</span><span class="p">,</span> <span class="n">selected</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+<span class="lineno">384 </span>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">windows</span><span class="p">[</span><span class="n">window</span><span class="p">]</span><span class="o">.</span><span class="n">parent</span><span class="p">:</span>
+<span class="lineno">385 </span>            <span class="n">img</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_draw_window</span><span class="p">(</span><span class="n">img</span><span class="p">,</span>
+<span class="lineno">386 </span>                                   <span class="n">window</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">windows</span><span class="p">[</span><span class="n">window</span><span class="p">]</span><span class="o">.</span><span class="n">parent</span><span class="p">,</span>
+<span class="lineno">387 </span>                                   <span class="n">selected</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="lineno">388 </span>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">windows</span><span class="p">[</span><span class="n">window</span><span class="p">]</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">selected</span><span class="p">)</span>
+</pre></div>
+<p>Selected, here, refers to whether or not the window being drawn is the current active window.
+</p><p>The main visual functionality of the UI comes from changing which window is drawn, in what state.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Interaction_-_Controlling_the_pretty_pictures_through_use_of_buttons_and_a_knob">Interaction - Controlling the pretty pictures through use of buttons and a knob</span></h2>
+<p>The Demo Mode UI responds to the navigators on both arms, and incorporates the gripper_cuff example, which enables interaction with the cuff and cuff buttons.
+</p><p>We use the baxter_interface and baxter_dataflow signals to connect our UI interaction functions with on_change signals for the Buttons and wheel on the arm navigators.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">136 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;left&#39;</span><span class="p">:</span> <span class="n">Navigator</span><span class="p">(</span><span class="s1">&#39;left&#39;</span><span class="p">),</span>
+<span class="lineno">137 </span>                           <span class="s1">&#39;right&#39;</span><span class="p">:</span> <span class="n">Navigator</span><span class="p">(</span><span class="s1">&#39;right&#39;</span><span class="p">)}</span>
+<span class="lineno">138 </span>
+<span class="lineno">139 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_listeners_connected</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="lineno">140 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_connect_listeners</span><span class="p">()</span>
+</pre></div>
+<p><br />
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">181 </span>    <span class="k">def</span> <span class="nf">_connect_listeners</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno">182 </span>        <span class="c1"># Navigator OK Button</span>
+<span class="lineno">183 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">button0_changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_left_ok_pressed</span><span class="p">)</span>
+<span class="lineno">184 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">button0_changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+<span class="lineno">185 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_right_ok_pressed</span><span class="p">)</span>
+<span class="lineno">186 </span>
+<span class="lineno">187 </span>        <span class="c1"># Navigator Wheel</span>
+<span class="lineno">188 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">wheel_changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_left_wheel_moved</span><span class="p">)</span>
+<span class="lineno">189 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">wheel_changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+<span class="lineno">190 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_right_wheel_moved</span><span class="p">)</span>
+<span class="lineno">191 </span>
+<span class="lineno">192 </span>        <span class="c1"># Navigator Baxter Button</span>
+<span class="lineno">193 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">button2_changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_enable</span><span class="p">)</span>
+<span class="lineno">194 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">button2_changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_enable</span><span class="p">)</span>
+<span class="lineno">195 </span>
+<span class="lineno">196 </span>        <span class="c1"># Navigator Back Button</span>
+<span class="lineno">197 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">button1_changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">back</span><span class="p">)</span>
+<span class="lineno">198 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">button1_changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">back</span><span class="p">)</span>
+<span class="lineno">199 </span>
+<span class="lineno">200 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_listeners_connected</span> <span class="o">=</span> <span class="bp">True</span>
+</pre></div>
+<p>So now, the buttons and wheel for each arm are attached to these UI functions.
+</p><p>The listener functions for buttons are very simple, and pretty much react when the button state changes to True
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">440 </span>    <span class="k">def</span> <span class="nf">back</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+<span class="lineno">441 </span>        <span class="k">if</span> <span class="n">v</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+<span class="lineno">442 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">error_state</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="lineno">443 </span>            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">active_window</span><span class="o">.</span><span class="n">parent</span><span class="p">:</span>
+<span class="lineno">444 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">kill_examples</span><span class="p">()</span>
+<span class="lineno">445 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">set_active_window</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">active_window</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+<span class="lineno">446 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+</pre></div>
+<p>The listener for the navigators is similar, but it responds regardless of what it is changed to, incrementing or decrementing the scroll in the UI depending on the signal received.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">394 </span>    <span class="k">def</span> <span class="nf">_left_wheel_moved</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+<span class="lineno">395 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_wheel_moved</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="s1">&#39;left&#39;</span><span class="p">)</span>
+<span class="lineno">396 </span>
+<span class="lineno">397 </span>    <span class="k">def</span> <span class="nf">_right_wheel_moved</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+<span class="lineno">398 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_wheel_moved</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<span class="lineno">399 </span>
+<span class="lineno">400 </span>    <span class="k">def</span> <span class="nf">_wheel_moved</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">side</span><span class="p">):</span>
+<span class="lineno">401 </span>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_active_example</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wheel_ok</span><span class="p">:</span>
+<span class="lineno">402 </span>            <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="lineno">403 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="lineno">404 </span>            <span class="k">else</span><span class="p">:</span>
+<span class="lineno">405 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="lineno">406 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_wheel_ok</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="lineno">407 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">Timer</span><span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">Duration</span><span class="p">(</span><span class="o">.</span><span class="mo">01</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_set_wheel_ok</span><span class="p">,</span> <span class="n">oneshot</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="lineno">408 </span>
+<span class="lineno">409 </span>    <span class="k">def</span> <span class="nf">scroll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">direction</span><span class="p">):</span>
+<span class="lineno">410 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">active_window</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">direction</span><span class="p">)</span>
+<span class="lineno">411 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+</pre></div>
+<h3><span class="mw-headline" id="Important_note_-_Enable_Loop_and_Avoiding_E-Stop_Craziness">Important note - Enable Loop and Avoiding E-Stop Craziness</span></h3>
+<p>When you are in the demo mode, we assume that you want the robot to be enabled, so we have a loop in demo_ui that keeps the robot enabled, and reacts to robot state changes.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">165 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">Timer</span><span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">Duration</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enable</span><span class="p">)</span>
+</pre></div>
+<p>The "_enable" function will attempt to enable the robot, and will throw an error screen up if it fails.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">468 </span>    <span class="k">def</span> <span class="nf">_enable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="lineno">469 </span>        <span class="k">if</span> <span class="n">v</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_status</span><span class="o">.</span><span class="n">state</span><span class="p">()</span><span class="o">.</span><span class="n">enabled</span><span class="p">:</span>
+<span class="lineno">470 </span>            <span class="k">try</span><span class="p">:</span>
+<span class="lineno">471 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">_status</span><span class="o">.</span><span class="n">enable</span><span class="p">()</span>
+<span class="lineno">472 </span>            <span class="k">except</span><span class="p">:</span>
+<span class="lineno">473 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">error_screen</span><span class="p">(</span><span class="s1">&#39;stopped&#39;</span><span class="p">)</span>
+<span class="lineno">474 </span>                <span class="k">return</span> <span class="bp">False</span>
+<span class="lineno">475 </span>            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_status</span><span class="o">.</span><span class="n">state</span><span class="p">()</span><span class="o">.</span><span class="n">enabled</span><span class="p">:</span>
+<span class="lineno">476 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">error_screen</span><span class="p">(</span><span class="s1">&#39;no_enable&#39;</span><span class="p">)</span>
+<span class="lineno">477 </span>                <span class="k">return</span> <span class="bp">False</span>
+<span class="lineno">478 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_enable_cuff</span><span class="p">()</span>
+<span class="lineno">479 </span>        <span class="k">return</span> <span class="bp">True</span>
+</pre></div>
+<p>Unfortunately, when the robot is E-Stopped, messages from the sensors will be all messed up, and therefore the listeners we set up for the scroll wheels and buttons will send bad data, and throw errors when they try to call the callback functions.
+</p><p>To fix this issue, we set up another listener to the Estop button, which will disconnect and reconnect the listeners.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">143 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_estop_sub</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Subscriber</span><span class="p">(</span><span class="s1">&#39;robot/state&#39;</span><span class="p">,</span> <span class="n">AssemblyState</span><span class="p">,</span>
+<span class="lineno">144 </span>                                           <span class="bp">self</span><span class="o">.</span><span class="n">_estop_callback</span><span class="p">)</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">173 </span>    <span class="k">def</span> <span class="nf">_estop_callback</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">):</span>
+<span class="lineno">174 </span>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_estop_state</span> <span class="o">!=</span> <span class="n">msg</span><span class="o">.</span><span class="n">stopped</span><span class="p">:</span>
+<span class="lineno">175 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_estop_state</span> <span class="o">=</span> <span class="n">msg</span><span class="o">.</span><span class="n">stopped</span>
+<span class="lineno">176 </span>            <span class="k">if</span> <span class="n">msg</span><span class="o">.</span><span class="n">stopped</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_listeners_connected</span><span class="p">:</span>
+<span class="lineno">177 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">_disconnect_listeners</span><span class="p">()</span>
+<span class="lineno">178 </span>            <span class="k">elif</span> <span class="ow">not</span> <span class="n">msg</span><span class="o">.</span><span class="n">stopped</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_listeners_connected</span><span class="p">:</span>
+<span class="lineno">179 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">_connect_listeners</span><span class="p">()</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">202 </span>    <span class="k">def</span> <span class="nf">_disconnect_listeners</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno">203 </span>        <span class="c1"># Navigator OK Button</span>
+<span class="lineno">204 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">button0_changed</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span>
+<span class="lineno">205 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_left_ok_pressed</span><span class="p">)</span>
+<span class="lineno">206 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">button0_changed</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span>
+<span class="lineno">207 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_right_ok_pressed</span><span class="p">)</span>
+<span class="lineno">208 </span>
+<span class="lineno">209 </span>        <span class="c1"># Navigator Wheel</span>
+<span class="lineno">210 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">wheel_changed</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span>
+<span class="lineno">211 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_left_wheel_moved</span><span class="p">)</span>
+<span class="lineno">212 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">wheel_changed</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span>
+<span class="lineno">213 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_right_wheel_moved</span><span class="p">)</span>
+<span class="lineno">214 </span>
+<span class="lineno">215 </span>        <span class="c1"># Navigator Baxter Button</span>
+<span class="lineno">216 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">button2_changed</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_enable</span><span class="p">)</span>
+<span class="lineno">217 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">button2_changed</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_enable</span><span class="p">)</span>
+<span class="lineno">218 </span>
+<span class="lineno">219 </span>        <span class="c1"># Navigator Back Button</span>
+<span class="lineno">220 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">button1_changed</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">back</span><span class="p">)</span>
+<span class="lineno">221 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigators</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">button1_changed</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">back</span><span class="p">)</span>
+<span class="lineno">222 </span>
+<span class="lineno">223 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_listeners_connected</span> <span class="o">=</span> <span class="bp">False</span>
+</pre></div>
+<h2><span class="mw-headline" id="Demo_Functions_-_The_Stuff_We_Do">Demo Functions - The Stuff We Do</span></h2>
+<p>We use a couple of nifty tricks to get the robot to run through our functions when buttons are pressed.  Here I'm going to cover a couple of these nifty tricks.
+</p>
+<h3><span id="Processes_-_Make_It_Do_What_It_Do,_CLI-Style"></span><span class="mw-headline" id="Processes_-_Make_It_Do_What_It_Do.2C_CLI-Style">Processes - Make It Do What It Do, CLI-Style</span></h3>
+<p>There is a class defined in baxter_procs called RosProcess that will allow you to spawn off a command-line process using subprocess.Popen.  This is how we run most of the example programs.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">55 </span><span class="k">class</span> <span class="nc">RosProcess</span><span class="p">():</span>
+<span class="lineno">56 </span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">command</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">get_output</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+<span class="lineno">57 </span>        <span class="k">if</span> <span class="n">shell</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+<span class="lineno">58 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">process</span> <span class="o">=</span> <span class="n">Popen</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+<span class="lineno">59 </span>                                        <span class="n">stdin</span><span class="o">=</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stderr</span><span class="o">=</span><span class="n">STDOUT</span><span class="p">)</span>
+<span class="lineno">60 </span>        <span class="k">else</span><span class="p">:</span>
+<span class="lineno">61 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">process</span> <span class="o">=</span> <span class="n">Popen</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+<span class="lineno">62 </span>                                        <span class="n">stdin</span><span class="o">=</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stderr</span><span class="o">=</span><span class="n">STDOUT</span><span class="p">)</span>
+<span class="lineno">63 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">quiet</span> <span class="o">=</span> <span class="n">quiet</span>
+<span class="lineno">64 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">get_output</span> <span class="o">=</span> <span class="n">get_output</span>
+<span class="lineno">65 </span>
+<span class="lineno">66 </span>    <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stdin</span><span class="p">):</span>
+<span class="lineno">67 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">stdin</span><span class="p">)</span>
+<span class="lineno">68 </span>
+<span class="lineno">69 </span>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno">70 </span>        <span class="n">stdout</span><span class="p">,</span> <span class="n">stderr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="o">.</span><span class="n">communicate</span><span class="p">()</span>
+<span class="lineno">71 </span>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">quiet</span> <span class="o">==</span> <span class="bp">False</span><span class="p">:</span>
+<span class="lineno">72 </span>            <span class="k">print</span> <span class="n">stdout</span>
+<span class="lineno">73 </span>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_output</span><span class="p">:</span>
+<span class="lineno">74 </span>            <span class="k">return</span> <span class="n">stdout</span>
+<span class="lineno">75 </span>        <span class="k">else</span><span class="p">:</span>
+<span class="lineno">76 </span>            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="o">.</span><span class="n">returncode</span>
+</pre></div>
+<p>This is used in demo_functions to run most of the example programs (such as the arm_puppet)
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">100 </span><span class="k">def</span> <span class="nf">puppet</span><span class="p">(</span><span class="n">ui</span><span class="p">,</span> <span class="n">side</span><span class="p">):</span>
+<span class="lineno">101 </span>    <span class="n">proc</span> <span class="o">=</span> <span class="n">RosProcess</span><span class="p">(</span><span class="s1">&#39;rosrun baxter_examples &#39;</span>
+<span class="lineno">102 </span>                       <span class="s1">&#39;joint_velocity_puppet.py -l </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">side</span><span class="p">)</span>
+</pre></div>
+<h3><span id="Camera_Overlay_-_Live_on_Baxter's_Face!"></span><span class="mw-headline" id="Camera_Overlay_-_Live_on_Baxter.27s_Face.21">Camera Overlay - Live on Baxter's Face!</span></h3>
+<p>The other nifty thing we do here is, in the camera example, we overlay the output from the cameras onto the current window image.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">75 </span><span class="k">def</span> <span class="nf">camera_disp</span><span class="p">(</span><span class="n">ui</span><span class="p">,</span> <span class="n">cam_side</span><span class="p">):</span>
+<span class="lineno">76 </span>    <span class="k">def</span> <span class="nf">_display</span><span class="p">(</span><span class="n">camera</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<span class="lineno">77 </span>        <span class="k">for</span> <span class="n">cam</span> <span class="ow">in</span> <span class="n">ui</span><span class="o">.</span><span class="n">cameras</span><span class="p">:</span>
+<span class="lineno">78 </span>            <span class="n">ui</span><span class="o">.</span><span class="n">cameras</span><span class="p">[</span><span class="n">cam</span><span class="p">]</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="lineno">79 </span>        <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+<span class="lineno">80 </span>        <span class="n">camera</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="lineno">81 </span>
+<span class="lineno">82 </span>    <span class="k">def</span> <span class="nf">_cam_to_screen</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+<span class="lineno">83 </span>        <span class="n">newMsg</span> <span class="o">=</span> <span class="n">overlay</span><span class="p">(</span><span class="n">ui</span><span class="o">.</span><span class="n">img</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="p">(</span><span class="mi">1024</span><span class="p">,</span> <span class="mi">600</span><span class="p">),</span> <span class="p">(</span><span class="mi">205</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">640</span><span class="p">,</span> <span class="mi">400</span><span class="p">))</span>
+<span class="lineno">84 </span>        <span class="n">ui</span><span class="o">.</span><span class="n">xdisp</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="n">newMsg</span><span class="p">)</span>
+<span class="lineno">85 </span>
+<span class="lineno">86 </span>    <span class="n">ui</span><span class="o">.</span><span class="n">cam_sub</span> <span class="o">=</span> <span class="n">rospy</span><span class="o">.</span><span class="n">Subscriber</span><span class="p">(</span>
+<span class="lineno">87 </span>        <span class="s1">&#39;cameras/</span><span class="si">%s</span><span class="s1">_camera/image&#39;</span> <span class="o">%</span> <span class="n">cam_side</span><span class="p">,</span>
+<span class="lineno">88 </span>        <span class="n">ImageMsg</span><span class="p">,</span>
+<span class="lineno">89 </span>        <span class="n">_cam_to_screen</span><span class="p">)</span>
+<span class="lineno">90 </span>
+<span class="lineno">91 </span>    <span class="n">camera</span> <span class="o">=</span> <span class="n">ui</span><span class="o">.</span><span class="n">cameras</span><span class="p">[</span><span class="n">cam_side</span><span class="p">]</span>
+<span class="lineno">92 </span>    <span class="n">_display</span><span class="p">(</span><span class="n">camera</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">_camera&#39;</span> <span class="o">%</span> <span class="n">cam_side</span><span class="p">)</span>
+</pre></div>
+<p>Each "cam" in ui.cameras is a CameraController from baxter_interface, corresponding to one of the physical cameras on baxter.
+This function will close all of the cameras when called in order to ensure that the one we want to view can be opened (as you cannot have all 3 cameras open simultaneously)
+</p><p>The way this function works is by linking a subscriber to the local function _cam_to_screen, which will take the UI's currently published image message and overlay the the current camera image on top of it in a given bounding-box.
+</p><p>The overlay() function lives in img_proc, and will convert the image message back to a cv_mat image, and copy the camera image on top of it.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">77 </span><span class="k">def</span> <span class="nf">overlay</span><span class="p">(</span><span class="n">old_img</span><span class="p">,</span> <span class="n">new_img</span><span class="p">,</span> <span class="n">original_size</span><span class="p">,</span> <span class="n">new_rect</span><span class="p">):</span>
+<span class="lineno">78 </span>    <span class="n">tmp</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">CreateImage</span><span class="p">(</span><span class="n">original_size</span><span class="p">,</span> <span class="n">cv</span><span class="o">.</span><span class="n">IPL_DEPTH_8U</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="lineno">79 </span>    <span class="n">cv</span><span class="o">.</span><span class="n">Copy</span><span class="p">(</span><span class="n">old_img</span><span class="p">,</span> <span class="n">tmp</span><span class="p">)</span>
+<span class="lineno">80 </span>    <span class="n">sub</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">GetSubRect</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="n">new_rect</span><span class="p">)</span>
+<span class="lineno">81 </span>    <span class="n">cv_img</span> <span class="o">=</span> <span class="n">msg_to_cv</span><span class="p">(</span><span class="n">new_img</span><span class="p">)</span>
+<span class="lineno">82 </span>    <span class="n">cv</span><span class="o">.</span><span class="n">Copy</span><span class="p">(</span><span class="n">cv_img</span><span class="p">,</span> <span class="n">sub</span><span class="p">)</span>
+<span class="lineno">83 </span>    <span class="k">return</span> <span class="n">cv_to_msg</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span>
+</pre></div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815161248
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.121 seconds
+Real time usage: 5.240 seconds
+Preprocessor visited node count: 255/1000000
+Preprocessor generated node count: 548/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 50190/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:493-0!canonical and timestamp 20190815161243 and revision id 3236
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Demo_Mode_-_Code_Walkthrough&amp;oldid=3236</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.121","walltime":"5.240","ppvisitednodes":{"value":255,"limit":1000000},"ppgeneratednodes":{"value":548,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":50190,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815161248","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":34});});</script></body></html>

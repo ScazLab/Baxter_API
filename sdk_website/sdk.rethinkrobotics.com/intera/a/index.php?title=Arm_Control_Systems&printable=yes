@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Arm Control Systems - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Arm_Control_Systems","wgTitle":"Arm Control Systems","wgCurRevisionId":1579,"wgRevisionId":1579,"wgArticleId":150,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Arm_Control_Systems","wgRelevantArticleId":150,"wgRequestId":"831c6c31ea7f957a672c3494","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.page.gallery.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.page.gallery.styles%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;printable=1&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;printable=1&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,follow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Arm_Control_Systems rootpage-Arm_Control_Systems skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="index.php?title=Special:UserLogin&amp;returnto=Arm+Control+Systems&amp;returntoquery=printable%253Dyes">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#">More</a>
+                <ul>
+                <li id="ca-viewsource"><a href="index.php?title=Arm_Control_Systems&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Arm_Control_Systems&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Arm_Control_Systems" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">Arm Control Systems</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Arm_Control_Systems&amp;printable=yes#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Arm_Control_Systems&amp;printable=yes#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="toclimit-2"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Control_Overview"><span class="tocnumber">1</span> <span class="toctext">Control Overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Joint_Command_Overview"><span class="tocnumber">1.1</span> <span class="toctext">Joint Command Overview</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Motion_Controller_Interface_Overview"><span class="tocnumber">1.2</span> <span class="toctext">Motion Controller Interface Overview</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#RealTime_Motor_Controller"><span class="tocnumber">1.3</span> <span class="toctext">RealTime Motor Controller</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Joint_Control_Modes"><span class="tocnumber">2</span> <span class="toctext">Joint Control Modes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Message_Definition"><span class="tocnumber">2.1</span> <span class="toctext">Message Definition</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Joint_Control_Fundamentals"><span class="tocnumber">2.2</span> <span class="toctext">Joint Control Fundamentals</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Joint_Position_Control"><span class="tocnumber">2.3</span> <span class="toctext">Joint Position Control</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Joint_Trajectory-Position_Control"><span class="tocnumber">2.4</span> <span class="toctext">Joint Trajectory-Position Control</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Joint_Velocity_Control"><span class="tocnumber">2.5</span> <span class="toctext">Joint Velocity Control</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Joint_Torque_Control"><span class="tocnumber">2.6</span> <span class="toctext">Joint Torque Control</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Joint_Command_Timing"><span class="tocnumber">2.7</span> <span class="toctext">Joint Command Timing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Motion_Controller_Interface"><span class="tocnumber">3</span> <span class="toctext">Motion Controller Interface</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#ROS_Action_Server"><span class="tocnumber">3.1</span> <span class="toctext">ROS Action Server</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Trajectory_Interpolation:_Joint_vs._Cartesian"><span class="tocnumber">3.2</span> <span class="toctext">Trajectory Interpolation:  Joint vs. Cartesian</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Possible_Errors"><span class="tocnumber">3.3</span> <span class="toctext">Possible Errors</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Trajectory_Message"><span class="tocnumber">3.4</span> <span class="toctext">Trajectory Message</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Motion_Trajectory"><span class="tocnumber">3.5</span> <span class="toctext">Motion Trajectory</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Motion_Waypoint"><span class="tocnumber">3.6</span> <span class="toctext">Motion Waypoint</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Motion_Waypoint_Options"><span class="tocnumber">3.7</span> <span class="toctext">Motion Waypoint Options</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Interaction_Options"><span class="tocnumber">3.8</span> <span class="toctext">Interaction Options</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Interaction_Control_Mode"><span class="tocnumber">4</span> <span class="toctext">Interaction Control Mode</span></a>
+<ul>
+<li class="toclevel-2 tocsection-23"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Impedance_Control_Concept"><span class="tocnumber">4.1</span> <span class="toctext">Impedance Control Concept</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Force_Control_Concept"><span class="tocnumber">4.2</span> <span class="toctext">Force Control Concept</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Interaction_Control_Overview"><span class="tocnumber">4.3</span> <span class="toctext">Interaction Control Overview</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Interaction_Control_Command"><span class="tocnumber">4.4</span> <span class="toctext">Interaction Control Command</span></a>
+<ul>
+<li class="toclevel-3 tocsection-27"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Message_Definition_2"><span class="tocnumber">4.4.1</span> <span class="toctext">Message Definition</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-28"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Joint_Trajectory_Action_Server"><span class="tocnumber">5</span> <span class="toctext">Joint Trajectory Action Server</span></a>
+<ul>
+<li class="toclevel-2 tocsection-29"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#JTAS_Modes"><span class="tocnumber">5.1</span> <span class="toctext">JTAS Modes</span></a>
+<ul>
+<li class="toclevel-3 tocsection-30"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Velocity_Mode"><span class="tocnumber">5.1.1</span> <span class="toctext">Velocity Mode</span></a></li>
+<li class="toclevel-3 tocsection-31"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Position_Mode"><span class="tocnumber">5.1.2</span> <span class="toctext">Position Mode</span></a></li>
+<li class="toclevel-3 tocsection-32"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Inverse_Dynamics_Feed_Forward_Position_Mode_.28using_Joint_Trajectory_Position_Mode.29"><span class="tocnumber">5.1.3</span> <span class="toctext">Inverse Dynamics Feed Forward Position Mode (using Joint Trajectory Position Mode)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-33"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Collision_Avoidance"><span class="tocnumber">6</span> <span class="toctext">Collision Avoidance</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Collision_Detection"><span class="tocnumber">7</span> <span class="toctext">Collision Detection</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Gravity_Compensation_Torques"><span class="tocnumber">8</span> <span class="toctext">Gravity Compensation Torques</span></a></li>
+<li class="toclevel-1 tocsection-36"><a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Zero-G_mode"><span class="tocnumber">9</span> <span class="toctext">Zero-G mode</span></a></li>
+</ul>
+</div>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Control_Overview">Control Overview</span></h1>
+<p>There are two primary workflows for moving the arm via the SDK. The first workflow sends high frequency joint commands to the realtime motor controller via one of four control modes. 
+The second workflow is the <a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Motion_Controller_Interface"> motion interface</a>, introduced in the Intera 5.2 software release, which sends trajectory planning request to the Motion Controller to generate and execute a smooth trajectory between waypoints.
+</p><p>An additional new feature in Intera 5.2 is the <a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Interaction_Control_Mode"> interaction control mode</a>, which can implement either an impedance controller or force controller at the endpoint of the arm. Interaction control mode can be used by itself, or used in conjunction with the motion interface to generate compliant behavior along a trajectory.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Joint_Command_Overview">Joint Command Overview</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:422px;"><a href="../File:SDK_Interface_Drawing_Workflow_1.png" class="image"><img alt="SDK Interface Drawing Workflow 1.png" src="images/thumb/8/88/SDK_Interface_Drawing_Workflow_1.png/420px-SDK_Interface_Drawing_Workflow_1.png" width="420" height="292" class="thumbimage" srcset="/intera/a/images/thumb/8/88/SDK_Interface_Drawing_Workflow_1.png/630px-SDK_Interface_Drawing_Workflow_1.png 1.5x, /intera/a/images/8/88/SDK_Interface_Drawing_Workflow_1.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../File:SDK_Interface_Drawing_Workflow_1.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p>Moving the arm through joint commands is appropriate for users who either plan their own motion trajectories or want fine level control of the arm. In this workflow, the user is responsible for planning the arm's trajectory and timing, often via a <a href="../MoveIt_Tutorial" title="MoveIt Tutorial"> MoveIt! planner</a> or a customer arm controller.
+</p><p>When using joint commands, the arm control flows through on four layers of operation:<br />
+</p><p>1) User Code running via workstation (Python Joint Control or Joint Trajectory Action Server or your custom interface)<br />
+2) Joint Control Listeners via ROS topic (on Sawyer's internal Ubuntu Linux PC)<br />
+3) RealTime Motor Control Loop (the highest priority process on Sawyer's internal Ubuntu Linux PC)<br />
+4) Joint Control Boards (microcontrollers attached to each arm joint)<br />
+</p><p>The bottom three layers (2-4) are not accessible for user modification because they run on the robot itself and its microcontrollers. Sawyer does have four joint control modes for the user to choose from at the top level: <a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Joint_Position_Control"> position</a>, <a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Joint_Trajectory-Position_Control"> trajectory</a>, <a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Joint_Velocity_Control"> velocity</a>, and <a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Joint_Torque_Control"> torque</a> control. Each controller has a subset of Motor Controller Plugins associated with them. 
+By default, all the joint control publishers and subscribers provided by the Sawyer SDK run at <code>100Hz</code>, but can be run up to a rate of <code>800Hz</code> reliably. See the links for more detailed explanations.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Motion_Controller_Interface_Overview">Motion Controller Interface Overview</span></h2>
+<p><b>New in Intera 5.2!</b>
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:422px;"><a href="../File:SDK_Interface_Drawing_Workflow_2.png" class="image"><img alt="SDK Interface Drawing Workflow 2.png" src="images/thumb/b/bc/SDK_Interface_Drawing_Workflow_2.png/420px-SDK_Interface_Drawing_Workflow_2.png" width="420" height="292" class="thumbimage" srcset="/intera/a/images/thumb/b/bc/SDK_Interface_Drawing_Workflow_2.png/630px-SDK_Interface_Drawing_Workflow_2.png 1.5x, /intera/a/images/b/bc/SDK_Interface_Drawing_Workflow_2.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../File:SDK_Interface_Drawing_Workflow_2.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p>Users who want basic motions without generating their own trajectories should use the Motion Controller interface. The motion controller interface is a ROS action server that allows the SDK access to built-in trajectory generation and motion control features between widely spaced waypoints. Smooth trajectories can be created in either joint mode (move quickly between waypoints) or cartesian mode (end-effector moves along straight lines). Interaction control parameters can be included with the options for each waypoint to allow for compliant behavior along a trajectory. Note that the Motion Controller will not allow trajectories that result in self collision. However, it does not know about end-effector collision shapes or obstacles in the environment, so these are not considered when running the collision check.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="RealTime_Motor_Controller">RealTime Motor Controller</span></h2>
+<p>The RealTime Motor Control loop runs on the robot and executes over the course of <code>1ms</code>, and approximately <code>700us</code> of this loop is used on average. Occasionally you may find an overrun of the RealTime loop around <code>100us</code>. This overrun usually does not propagate forward to other cycles because the next loop will likely take <code>700us</code>. To verify this you can look at the diagnostics messages via "rostopic echo /diagnostics", and look for the "Realtime Control Loop".
+</p><p>The RealTime Motor Controller has plugins that run simultaneously with joint commands. These are Collision Avoidance, Collision Detection and Gravity Compensation. On top of these plugins, when Sawyer's cuff pressure sensor is activated, Zero-G Mode enables, allowing the arm to be passively back driven. Upon releasing the cuff, the motor controller returns to the controller it was using previously. For more detailed log information, either view the log messages in the <a rel="nofollow" class="external text" href="http://wiki.ros.org/rqt_console">rqt_console</a>, by filtering for the <code>realtime_loop</code> node, or see the <code>realtime_loop-stdout.log</code> export for more details.
+</p>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Joint_Control_Modes">Joint Control Modes</span></h1>
+<p>Fundamental to the operation of Sawyer via the SDK is a familiarity with the available joint control modes. The joint control modes define the 'modes' in which we can control Sawyer's limb in joint space. These are provided via a ROS message API:(<a rel="nofollow" class="external text" href="https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/JointCommand.html">intera_core_msgs/JointCommand.msg</a>)
+</p><p>To control the limb, we must publish the <a rel="nofollow" class="external text" href="https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/JointCommand.html">JointCommand message</a> on the topic:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>robot/limb/right/joint_command
+</pre></div>
+<p>at a rate <b>&gt; 5hz</b> (by default). The rate at which you must publish your messages is defined on the topic:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>/robot/limb/right/joint_command_timeout
+</pre></div>
+<p>of message type <a rel="nofollow" class="external text" href="http://docs.ros.org/api/std_msgs/html/msg/Float64.html">std_msgs/Float64</a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Message_Definition">Message Definition</span></h2>
+<p>The <a rel="nofollow" class="external text" href="https://rethinkrobotics.github.io/intera_sdk_docs/5.0.4/intera_core_msgs/html/msg/JointCommand.html">JointCommand message</a> is defined:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>Header header
+
+int32 mode             <span class="c1"># Mode in which to command arm</span>
+
+string<span class="o">[]</span>  names        <span class="c1"># Joint names order for command</span>
+
+<span class="c1"># Fields of commands indexed according to the Joint names vector.</span>
+<span class="c1"># Command fields required for a desired mode are listed in the comments</span>
+float64<span class="o">[]</span> position     <span class="c1"># (radians)       Required for POSITION_MODE and TRAJECTORY_MODE</span>
+float64<span class="o">[]</span> velocity     <span class="c1"># (radians/sec)   Required for VELOCITY_MODE and TRAJECTORY_MODE</span>
+float64<span class="o">[]</span> acceleration <span class="c1"># (radians/sec^2) Required for                   TRAJECTORY_MODE</span>
+float64<span class="o">[]</span> effort       <span class="c1"># (newton-meters) Required for TORQUE_MODE</span>
+
+<span class="c1"># Modes available to command arm</span>
+int32 <span class="nv">POSITION_MODE</span><span class="o">=</span><span class="m">1</span>
+int32 <span class="nv">VELOCITY_MODE</span><span class="o">=</span><span class="m">2</span>
+int32 <span class="nv">TORQUE_MODE</span><span class="o">=</span><span class="m">3</span>
+int32 <span class="nv">TRAJECTORY_MODE</span><span class="o">=</span><span class="m">4</span>
+</pre></div>
+<p>This message is subscribed to by the <code>realtime_loop</code>.
+</p><p><code>mode</code>:
+The <code>mode</code> is an integer defining the mode in which the commands will be parsed and commanded to the Joint Controller Boards (JCBs). Available modes are contained with the message [<code>POSITION_MODE</code>, <code>VELOCITY_MODE</code>, <code>TORQUE_MODE</code>, <code>TRAJECTORY_MODE</code>]
+</p><p><code>command field</code>:
+The <code>command</code> is the ordered (corresponding to the <code>names</code> field) command values.
+</p><p><code>names</code>:
+The <code>names</code> is a list of strings containing the joints to command.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Joint_Control_Fundamentals">Joint Control Fundamentals</span></h2>
+<p>The '<code>realtime_loop</code>' process subscribes to joint position commands published from the development workstation. Modifications, based on control mode, can be made to the input commands. These modifications are typically due to the safety controllers (e.g. arm-to-arm collision avoidance, collision detection, etc.)
+</p><p>A control rate timeout is also enforced at this motor controller layer. If a new '<code>JointCommand</code>' message is not received within the specified timeout (default of 0.2 seconds, or 5Hz), the robot will 'Timeout'. When the robot 'Times out', the current control mode is exited, reverting back to position control mode where the robot will command (hold) it's current joint angles. This timeout can prevent dangerous motions due to network issues (e.g. someone kicks your router).
+</p><p>This control rate timeout is configurable:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>/robot/limb/right/joint_command_timeout
+</pre></div>
+<p>of message type <a rel="nofollow" class="external text" href="http://docs.ros.org/api/std_msgs/html/msg/Float64.html">std_msgs/Float64</a>
+</p>
+<h2><span class="mw-headline" id="Joint_Position_Control">Joint Position Control</span></h2>
+<p><b>Depreciated for Intera 5.2 and beyond: use the Motion Controller Interface instead.</b>
+</p><p>Joint position control mode is a simple control mode for Sawyer arm motion. In position control mode, we specify joint angles at which we want the joints to achieve. Typically this will be consist of seven values, a commanded position for each of the seven joints, resulting in a full description of the arm configuration. This control mode can result in jerky-motions and should generally be avoided.
+</p><p>JointCommand.msg mode: <code>POSITION_MODE</code>
+</p><p>This joint command is then subscribed to by Sawyer's Motor Controller. The motor controller processes this joint command ensuring safety (collision avoidance and detection) and expected behavior by making the following modifications:
+</p><p><a href="../File:Joint_Position_Control.png" class="image"><img alt="Joint Position Control.png" src="images/thumb/8/88/Joint_Position_Control.png/550px-Joint_Position_Control.png" width="550" height="528" srcset="/intera/a/images/thumb/8/88/Joint_Position_Control.png/825px-Joint_Position_Control.png 1.5x, /intera/a/images/8/88/Joint_Position_Control.png 2x" /></a>
+</p>
+<h2><span class="mw-headline" id="Joint_Trajectory-Position_Control">Joint Trajectory-Position Control</span></h2>
+<p>Joint Trajectory-Position Control mode provides the most direct way for the robot to follow a time-based reference trajectory. 
+The user must supply position, velocity, and acceleration in each command, which results in a far smoother motion than the Joint Position Control mode. 
+The Realtime loop will attempt to move to the desired joint angles position, with the desired joint velocity. 
+The joint accelerations (along with commanded position and velocity) are used to extrapolate between successive commands and to generate feed-forward torque terms to improve the dynamic trajectory tracking performance.
+</p><p>JointCommand.msg mode: <code>TRAJECTORY_MODE</code>
+</p><p>The Joint Trajectory-Position commands only perform the following modification (typically these additions are none):
+</p><p><a href="../File:'Raw'_Joint_Position_Control.png" class="image"><img alt="&#39;Raw&#39; Joint Position Control.png" src="images/thumb/8/8a/'Raw'_Joint_Position_Control.png/550px-'Raw'_Joint_Position_Control.png" width="550" height="325" srcset="/intera/a/images/thumb/8/8a/%27Raw%27_Joint_Position_Control.png/825px-%27Raw%27_Joint_Position_Control.png 1.5x, /intera/a/images/8/8a/%27Raw%27_Joint_Position_Control.png 2x" /></a>
+</p><p><b>Warning:</b> Advanced Control Mode. As this mode does not have Collision Avoidance offsets, and allows for very fast motions at the joints velocity limits, this mode can be dangerous. Please use with caution.
+</p>
+<h2><span class="mw-headline" id="Joint_Velocity_Control">Joint Velocity Control</span></h2>
+<p>Joint velocity control mode is an advanced control mode. In velocity control mode, we specify joint velocities at which we want the joints to simultaneously achieve. Typically this will be consist of seven commanded joint velocities.
+</p><p>JointCommand.msg mode: <code>VELOCITY_MODE</code>
+</p><p>This joint command is then subscribed to by Sawyer's Motor Controller. The motor controller processes this joint velocity command (applying collision avoidance and detection) and expected behavior by making the following modifications:
+</p><p><a href="../File:Joint_Velocity_Control.png" class="image"><img alt="Joint Velocity Control.png" src="images/thumb/e/e3/Joint_Velocity_Control.png/550px-Joint_Velocity_Control.png" width="550" height="467" srcset="/intera/a/images/thumb/e/e3/Joint_Velocity_Control.png/825px-Joint_Velocity_Control.png 1.5x, /intera/a/images/e/e3/Joint_Velocity_Control.png 2x" /></a>
+</p><p><b>Note:</b> We recommend either implementing a joint space potential field or joint limit (position and velocity) check before submitting the joint velocity commands.
+</p><p><b>Warning:</b> Advanced Control Mode. As we allow for very fast joint velocity up to the joint velocity limits, this mode can be dangerous. Please use with caution.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Joint_Torque_Control">Joint Torque Control</span></h2>
+<p>Joint torque control mode is an advanced control mode. In torque control mode, we specify joint torques which we want the joints to simultaneously achieve. Typically this will be consist of seven values, a commanded torque for each of the seven joints.
+</p><p>JointCommand.msg mode: <code>TORQUE_MODE</code>
+</p><p>This joint command is then subscribed to by Sawyer's Motor Controller. The motor controller processes this joint torque command and expected behavior by making the following modifications, note that collision avoidance torques are still active to avoid self collisions:
+</p><p><a href="../File:Joint_Torque_Control.png" class="image"><img alt="Joint Torque Control.png" src="images/thumb/e/e4/Joint_Torque_Control.png/550px-Joint_Torque_Control.png" width="550" height="467" srcset="/intera/a/images/e/e4/Joint_Torque_Control.png 1.5x" /></a>
+</p><p><b>Note:</b> As shown in the above image, joint torque commands are applied in addition to gravity torques. This default can be disabled by publishing an <a rel="nofollow" class="external text" href="http://docs.ros.org/api/std_msgs/html/msg/Empty.html">std_msgs/Empty</a> message on the topic: <code>/robot/limb/right/suppress_gravity_compensation </code> at a rate &gt; 5Hz.
+</p><p><b>Warning:</b> Advanced Control Mode. When commanding in torque control mode, access is granted to the lowest control levels. This puts much responsibility on the control program and can be dangerous. Please use with caution.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Joint_Command_Timing">Joint Command Timing</span></h2>
+<p>Start to finish, a joint is commanded from the user's python code. This message flows over the ROS network and is picked up by the Joint Control Listeners which store the command for it to be retrieved asynchronously by the RealTime Motor Control Loop once per <code>1ms</code> (<code>1KHz</code>). The command is then sent to the Joint Control Boards (JCB) and executed within the same <code>1ms</code> timeslot. On the next <code>1ms</code> cycle, the joint position and spring deflection sensor are read and transferred back to the Joint Control Publisher. The result is read over the ROS network by the user's code. The total timing looks approximately as follows:<br />
+</p><p><code>1.6ms</code> for the Command to publish over ROS to the Joint Controller over rostopic (via network)<br />
+<code>1ms</code> for the Joint Controller Listener to command the Motor Controller (MC), running an async real time loop of 1KHz<br />
+<code>1ms</code> for the MC to transfer to the Joint Control Board (JCB) and evaluate the command<br />
+<code>1ms</code> for the JCB to read the updated status and give a response to the MC<br />
+<code>1ms</code> for the MC to report back to the Joint Controller Publisher<br />
+<code>1.6ms</code> for the Joint Controller to publishing the State back over rostopic (via network)<br /> 
+________<br />
+<code>~ 7.2ms</code> total round trip ROS User Publisher to ROS user Subscriber<br /> 
+</p>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Motion_Controller_Interface">Motion Controller Interface</span></h1>
+<p>The motion controller interface allows the SDK access to built-in trajectory generation and motion control features in Sawyer. The python <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_sdk/tree/development/intera_interface/src/intera_motion_interface">intera motion interface</a> provides a set of classes used to construct <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_common/tree/development/intera_motion_msgs">intera motion messages</a> as well as an ROS action client which communicates with the Motion Controller on the robot controller. The Motion Controller will then generate and run a motion plan from that trajectory message.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="ROS_Action_Server">ROS Action Server</span></h2>
+<p>The Motion Controller has a <a rel="nofollow" class="external text" href="http://wiki.ros.org/actionlib">ROS Action server</a> on the topic:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>/motion/motion_command
+</pre></div>
+<p>The goal message has a string command which can be either "start" or "stop" along with a <code>intera_motion_msgs/Trajectory</code> message to define the desired motion. The <code>intera_motion_msgs/MotionStatus</code> provides feedback during the trajectory which includes the <code>motion_status</code> along with the <code>current_trajectory</code> and <code>current_waypoint ids</code>. A result message is returned after either a successful or failed trajectory completion; it includes a boolean <code>result</code> and string <code>errorID</code> if needed. Trajectories will stop if a collision is detected by the robot or the robot is disabled.
+</p><p>The Motion Controller will generate a trajectory through all of the waypoints starting at the current joint configuration and stopping at the last waypoint. The planner will avoid stopping at the middle waypoints when possible. If a new trajectory is sent before the current one is finished, then the current motion will stop. 
+The new trajectory will be generated starting from the current joint positions (where the arm stopped moving). 
+The trajectory interpolation type can be set to either Joint or Cartesian; mixed trajectory interpolation types are not allowed.
+</p><p>Before executing a planned motion, the Motion Controller first sub-samples the path to check for self collisions (not including external obstacles or end effector collision shapes). If a planned collision is found, the Motion Controller will return a PLANNED_MOTION_COLLISION error in the result message. To disable collision checking, publish an empty message at greater than 5 Hz to the topic <code>/robot/limb/right/suppress_collision_avoidance</code>.
+</p><p><b>New in Intera 5.3:</b> When the motion controller receives a stop command while running a motion it will now perform a smooth path-following stop over 300 milliseconds.
+</p>
+<h2><span class="mw-headline" id="Trajectory_Interpolation:_Joint_vs._Cartesian">Trajectory Interpolation:  Joint vs. Cartesian</span></h2>
+<p>The motion controller supports two basic methods for interpolation between waypoints: JOINT mode and CARTESIAN mode. Joint mode should generally be preferred to Cartesian mode, as it results in motion that is faster and smoother than Cartesian mode.
+</p><p><b>JOINT MODE:</b> For trajectories with joint interpolation, the motion controller will generate a fast and smooth path between waypoints. It may or may not stop at intermediate waypoints, and the path is generally non-linear in joint space (unless there is a single waypoint). 
+</p><p><b>CARTESIAN MODE:</b> The motion planning for Cartesian trajectories occurs in two steps:
+1) A trajectory is generated in cartesian space that moves linearly (position + orientation) between each waypoint. If the blending radius option is enabled, then the planner will allow these linear paths to be connected with circular arcs and the motion will not stop as it passes near each waypoint.
+2) An inverse-kinematics solver is used to compute the joint angles to move the endpoint along the reference trajectory. If joint angle are provided along with the Cartesian poses in the waypoints, the joint angles will be used to bias the IK solutions along each trajectory segment. Note that the active_endpoint must be consistent for all waypoints within a trajectory.
+</p>
+<h2><span class="mw-headline" id="Possible_Errors">Possible Errors</span></h2>
+<p>Here is a list of possible errors which could be returned from the Motion Controller action server in the result message. For more detailed information from a reported error, either view the log messages in the <a rel="nofollow" class="external text" href="http://wiki.ros.org/rqt_console">rqt_console</a>, by filtering for the <code>motion_controller</code> node, or see the <code>motion_controller-stdout.log</code> export for more details.
+</p>
+<dl><dt>INVALID_TRAJECTORY_MESSAGE&#160;</dt>
+<dd>The trajectory message was either missing necessary parameters or the parameters were inconsistent</dd>
+<dt>FAILED_TO_PARAMETERIZE&#160;</dt>
+<dd>A valid joint trajectory spline could not be generated</dd>
+<dt>PLANNED_MOTION_COLLISION&#160;</dt>
+<dd>Prior to moving, a self-collision was found along the planned trajectory</dd>
+<dt>ENDPOINT_DOES_NOT_EXIST&#160;</dt>
+<dd>For a Cartesian trajectory, the endpoint string was not found in the current URDF</dd>
+<dt>CARTESIAN_INTERPOLATION_FAILED&#160;</dt>
+<dd>A valid Cartesian trajectory could not be generate or there was an Inverse Kinemaics solution could not be found</dd>
+<dt>PLANNED_JOINT_ACCEL_LIMIT&#160;</dt>
+<dd>The generated Cartesian trajectory would violate joint limits. Try reducing the Cartesian speeds and accelerations.</dd>
+<dt>FINAL_POSE_NOT_WITHIN_TOLERANCE&#160;</dt>
+<dd>The trajectory finished, but the joints did not settle within the desired joint tolerance</dd>
+<dt>CONTROLLER_NOT_FOLLOWING&#160;</dt>
+<dd>The trajectory was stopped because either the arm detected a collision or the arm was disabled</dd>
+<dt>ZERO_G_ACTIVATED_DURING_TRAJECTORY&#160;</dt>
+<dd>The trajectory was stopped because zero-g was activated mid-motion</dd></dl>
+<h2><span class="mw-headline" id="Trajectory_Message">Trajectory Message</span></h2>
+<p>A <code>intera_motion_msgs/Trajectory</code> message is used to specify a trajectory for Sawyer. It contains a sequence of waypoints that the trajectory should pass through, as well as the interpolation type, kinematic constraints, and interaction parameters. The Motion Controller always appends the current arm configuration to the beginning of the trajectory. Generally the trajectory message is created using the <code>MotionTrajectory</code> class, but advanced users might choose to create it directly. A trajectory message can be sent to the motion controller using either the <code>MotionTrajectory</code> class (preferred method) or the <code>MotionControllerActionClient</code> class (advanced users).
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Motion_Trajectory">Motion Trajectory</span></h2>
+<p>The <code>MotionTrajectory</code> class is used as a utility to create and send <code>intera_motion_msgs/Trajectory</code> messages. The simplest way to use it is to call the <code>append_waypoint()</code> to build up a sequence of waypoints and then call <code>send_trajectory()</code> to plan and execute the a trajectory that passes through the waypoints. The <code>MotionWaypoint</code>, <code>MotionWaypointOptions</code>, and <code>InteractionOptions</code> classes are all utilities that help with the construction of trajectories.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Motion_Waypoint">Motion Waypoint</span></h2>
+<p>The <code>MotionWaypoint</code> class is used as utility to create <code>intera_motion_msgs/Waypoint</code> messages. It can be directly passed to the <code>append_waypoint()</code> method of a <code>MotionTrajectory</code>, or you can use the <code>to_msg()</code> method to directly use the ROS message format. All unspecified parameters are set to reasonable default values.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Motion_Waypoint_Options">Motion Waypoint Options</span></h2>
+<p>The <code>MotionWaypointOptions</code> class is used as utility to create <code>intera_motion_msgs/WaypointOptions</code> messages.
+A <code>MotionWaypointOptions</code> object can be passed to <code>MotionWaypoint.set_waypoint_options()</code>, or you can use the <code>to_msg()</code> method to directly use the ROS message format. All unspecified parameters are set to reasonable default values.
+</p><p>For joint trajectories, you can specify the <code>label</code>, <code>max_joint_speed_ratio</code>, <code>joint_tolerances</code>, and <code>max_joint_accel</code> per joint. 
+</p><p>For Cartesian trajectories, you can specify the <code>max_linear_speed</code>, <code>max_linear_accel</code>, <code>max_rotational_speed</code>, and <code>max_rotational_accel</code>. The <code>corner_distance</code> parameter can be set to a non-zero value for continuous Cartesian motion; this parameter is the distance from the waypoint to where the curve starts while blending from one straight line segment to the next.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Interaction_Options">Interaction Options</span></h2>
+<p>The <code>InteractionOptions</code> class is used as a utility to create <code>intera_core_msgs/InteractionControlCommand</code> messages. Use the <code>to_msg()</code> method to extract the ROS message for use in populating an <code>intera_motion_msgs/TrajectoryOptions</code> message. All unspecified parameters are set to reasonable default values.
+</p>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Interaction_Control_Mode">Interaction Control Mode</span></h1>
+<p><b>New in Intera 5.2!</b>
+</p><p>Interaction control mode is an advanced control mode where either impedance control or force control is performed at the endpoint. Sawyer's seven joints allows movements in the arm without affecting the endpoint pose, which corresponds to nullspace motion. So, stiffness control in the nullspace can be performed independent of the endpoint control. The following figure illustrates the interaction control at the endpoint as well as the nullspace. 
+</p><p><a href="../File:Impedance_Control_Concept_Sketch.png" class="image"><img alt="Impedance Control Concept Sketch.png" src="images/d/d1/Impedance_Control_Concept_Sketch.png" width="450" height="253" /></a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Impedance_Control_Concept">Impedance Control Concept</span></h2>
+<p>In general, impedance control models the dynamic behavior of the endpoint of the arm as a mass-spring-damper system. The endpoint's spring-damper equation, with the spring constant K and damping constant D, (in the x-axis) is defined as:
+</p><p><a href="../File:ImpedanceControlEquationRevised1.png" class="image"><img alt="ImpedanceControlEquationRevised1.png" src="images/thumb/9/90/ImpedanceControlEquationRevised1.png/400px-ImpedanceControlEquationRevised1.png" width="400" height="25" srcset="/intera/a/images/thumb/9/90/ImpedanceControlEquationRevised1.png/600px-ImpedanceControlEquationRevised1.png 1.5x, /intera/a/images/thumb/9/90/ImpedanceControlEquationRevised1.png/800px-ImpedanceControlEquationRevised1.png 2x" /></a>
+</p><p>Additionally, nullspace stiffness control torques can be computed as:
+</p><p><a href="../File:ImpedanceControlEquationRevised2.png" class="image"><img alt="ImpedanceControlEquationRevised2.png" src="images/thumb/d/df/ImpedanceControlEquationRevised2.png/300px-ImpedanceControlEquationRevised2.png" width="300" height="24" srcset="/intera/a/images/thumb/d/df/ImpedanceControlEquationRevised2.png/450px-ImpedanceControlEquationRevised2.png 1.5x, /intera/a/images/thumb/d/df/ImpedanceControlEquationRevised2.png/600px-ImpedanceControlEquationRevised2.png 2x" /></a>
+</p><p>Using the above equation, in each of the six Cartesian axes, desired interaction forces can be computed from desired and actual endpoint velocities and pose. The computed force can then be used to compute desired joint torques as
+</p><p><a href="../File:ImpedanceControlEquationRevised3.png" class="image"><img alt="ImpedanceControlEquationRevised3.png" src="images/thumb/6/6b/ImpedanceControlEquationRevised3.png/230px-ImpedanceControlEquationRevised3.png" width="230" height="29" srcset="/intera/a/images/thumb/6/6b/ImpedanceControlEquationRevised3.png/345px-ImpedanceControlEquationRevised3.png 1.5x, /intera/a/images/thumb/6/6b/ImpedanceControlEquationRevised3.png/460px-ImpedanceControlEquationRevised3.png 2x" /></a>
+</p><p>The magnitude of this impedance force linearly increases as the actual position goes away from the desired position. If the end-effector is blocked somehow, then the applied force could become very large which could lead to very high applied forces and dangerous motions. To prevent this, we provide <code>IMPEDANCE_WITH_FORCE_LIMIT_MODE</code> which limits the impedance force to a specified limit where the applied force during interaction can be ensured to be below the limit. 
+</p><p>For rotational stiffness control, a similar control law is constructed based on the orientation error represented by quaternions. By default, the maximum amount of orientation error is limited by a virtual wall, but this limit can be disabled by setting  <code>rotations_for_constrained_zeroG</code> to <code>True</code>. 
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Force_Control_Concept">Force Control Concept</span></h2>
+<p>In force control, the desired force can be specified in each of the Cartesian axes. The units are Newtons for the first three translational directions and Newton-meters the last three rotational directions. 
+</p><p>Force control should be used only during contact because applying force in free space could generate high acceleration at the endpoint, which can be dangerous. For safety reasons, a damping control force is added by default to limit the velocity during the force control, and it can be disabled by setting <code>disable_damping_in_force_control</code> to <code>True</code>. 
+</p><p>Also, the force control does not have a range of motion limit, which means that the end-effector will move as long as the joints do not reach their limits if done in free space. If it is desired to limit the amount of change in position and orientation during force control, <code>FORCE_WITH_MOTION_LIMIT_MODE</code> can be used. Note that this mode is experimental at this point, and the SDK interface provides no parameters to specify its motion limits. Currently the limits are set to <code>0.12 [m]</code> and <code>0.2618 [rad]</code>.
+</p>
+<h2><span class="mw-headline" id="Interaction_Control_Overview">Interaction Control Overview</span></h2>
+<p>In interaction control mode, the user can publish interaction parameters along with joint angles from which the endpoint pose is computed. The Interaction Controller subscribes to the interaction control command. The Interaction Controller generates interaction torques and can make the following modifications to account for gravity and to avoid self collisions:
+</p><p><a href="../File:Diagram_Interaction_Controller_Revised.png" class="image"><img alt="Diagram Interaction Controller Revised.png" src="images/thumb/0/0e/Diagram_Interaction_Controller_Revised.png/600px-Diagram_Interaction_Controller_Revised.png" width="600" height="515" srcset="/intera/a/images/0/0e/Diagram_Interaction_Controller_Revised.png 1.5x" /></a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Interaction_Control_Command">Interaction Control Command</span></h2>
+<p>In order to use interaction control mode, we must publish the <a rel="nofollow" class="external text" href="https://rethinkrobotics.github.io/intera_sdk_docs/5.2.1/intera_core_msgs/html/msg/InteractionControlCommand.html">InteractionControlCommand message</a> on the topic:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>/robot/limb/right/interaction_control_command
+</pre></div>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Message_Definition_2">Message Definition</span></h3>
+<p>The Interaction Control Command message is defined:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Message sets the interaction (impedance/force) control on or off</span>
+<span class="c1"># It also contains desired cartesian stiffness K, damping D, and force values</span>
+
+Header header
+bool      interaction_control_active
+
+<span class="c1">## Mode Selection Parameters</span>
+<span class="c1"># The possible interaction control modes are:</span>
+<span class="c1"># Impedance mode: implements desired endpoint stiffness and damping.</span>
+uint8 <span class="nv">IMPEDANCE_MODE</span><span class="o">=</span><span class="m">1</span>
+<span class="c1"># Force mode: applies force/torque in the specified dimensions.</span>
+uint8 <span class="nv">FORCE_MODE</span><span class="o">=</span><span class="m">2</span>
+<span class="c1"># Impedance with force limit: impedance control while ensuring the commanded</span>
+<span class="c1"># forces/torques do not exceed force_command.</span>
+uint8 <span class="nv">IMPEDANCE_WITH_FORCE_LIMIT_MODE</span><span class="o">=</span><span class="m">3</span>
+<span class="c1"># Force with motion bounds: force control while ensuring the current</span>
+<span class="c1"># pose/velocities do not exceed forceMotionThreshold (currenetly defined in yaml)</span>
+uint8 <span class="nv">FORCE_WITH_MOTION_LIMIT_MODE</span><span class="o">=</span><span class="m">4</span>
+
+<span class="c1"># Specifies the interaction control mode for each Cartesian dimension (6)</span>
+uint8<span class="o">[]</span> interaction_control_mode
+
+<span class="c1"># All 6 values in force and impedance parameter vectors have to be filled,</span>
+<span class="c1"># If a control mode is not used in a Cartesian dimension,</span>
+<span class="c1"># the corresponding parameters will be ignored.</span>
+
+<span class="c1">## Cartesian Impedance Control Parameters</span>
+<span class="c1"># Stiffness units are (N/m) for first 3 and (Nm/rad) for second 3 values</span>
+float64<span class="o">[]</span> K_impedance
+<span class="c1"># Force certain directions to have maximum possible impedance for a given pose</span>
+bool<span class="o">[]</span> max_impedance
+<span class="c1"># Damping units are (Ns/m) for first 3 and (Nms/rad) for the second 3 values</span>
+float64<span class="o">[]</span> D_impedance
+<span class="c1"># Joint Nullspace stiffness units are in (Nm/rad) (length == number of joints)</span>
+float64<span class="o">[]</span> K_nullspace
+
+<span class="c1">## Parameters for force control or impedance control with force limit</span>
+<span class="c1"># If in force mode, this is the vector of desired forces/torques</span>
+<span class="c1"># to be regulated in (N) and (Nm)</span>
+<span class="c1"># If in impedance with force limit mode, this vector specifies the</span>
+<span class="c1"># magnitude of forces/torques (N and Nm) that the command will not exceed.</span>
+float64<span class="o">[]</span> force_command
+
+<span class="c1">## Desired frame</span>
+geometry_msgs/Pose interaction_frame
+string endpoint_name
+<span class="c1"># True if impedance and force commands are defined in endpoint frame</span>
+bool in_endpoint_frame
+
+<span class="c1"># Set to true to disable damping during force control. Damping is used</span>
+<span class="c1"># to slow down robot motion during force control in free space.</span>
+<span class="c1"># Option included for SDK users to disable damping in force control</span>
+bool disable_damping_in_force_control
+
+<span class="c1"># Set to true to disable reference resetting. Reference resetting is</span>
+<span class="c1"># used when interaction parameters change, in order to avoid jumps/jerks.</span>
+<span class="c1"># Option included for SDK users to disable reference resetting if the</span>
+<span class="c1"># intention is to change interaction parameters.</span>
+bool disable_reference_resetting
+
+<span class="c1">## Parameters for Constrained Zero-G Behaviors</span>
+<span class="c1"># Allow for arbitrary rotational displacements from the current orientation</span>
+<span class="c1"># for constrained zero-G. Setting &#39;rotations_for_constrained_zeroG = True&#39;</span>
+<span class="c1"># will disable the rotational stiffness field which limits rotational</span>
+<span class="c1"># displacements to +/- 82.5 degree.</span>
+<span class="c1"># NOTE: it will be only enabled for a stationary reference orientation</span>
+bool rotations_for_constrained_zeroG
+</pre></div>
+<p>This message is subscribed to by the <code>realtime_loop</code> or can be included in the trajectory options sent to the Motion Controller.
+</p><p><code>interaction_control_active</code>:
+The <code>interaction_control_active</code> is a boolean to activate (<code>True</code>) or deactivate (<code>False</code>) interaction control mode. When it is set to <code>False</code>, the arm will be in position mode. 
+</p><p><code>interaction_control_mode</code>:
+The <code>interaction_control_mode</code> is an integer defining the internal mode in interaction control mode. Available modes are contained with the message [<code>IMPEDANCE_MODE</code>, <code>FORCE_MODE</code>, <code>IMPEDANCE_WITH_FORCE_LIMIT_MODE</code>, <code>FORCE_WITH_MOTION_LIMIT_MODE</code>]
+</p><p><code>K_impedance</code>:
+The <code>K_impedance</code> is a list of desired stiffness values for 6 Cartesian axes (translational directions along x, y, and z axes followed by rotational directions about x, y, and z axes of the reference frame). Each of them must be equal or greater than zero, and they will be capped to their maximum values (<code>1300[N/m]</code> and <code>30[Nm/rad]</code>, respectively) if exceeded.
+</p><p><code>max_impedance</code>:
+The <code>max_impedance</code> is a list of booleans for 6 Cartesian axes. For directions whose values are set to <code>True</code>, a maximum stiffness value will be computed and used for the current joint configuration, regardless of the values of <code>K_impedance</code>. The maximum stiffness values are somewhere between <code>1300[N/m]</code> and <code>3000[N/m]</code> and <code>30[Nm/rad]]</code> and <code>300[Nm/rad]</code> for translational and rotational directions, respectively.
+</p><p><code>D_impedance</code>:
+The <code>D_impedance</code> is a list of desired damping values for 6 Cartesian axes. If unspecified, default values are used, which are scaled according to stiffness values. The default damping values are <code>8[Ns/m]</code> and <code>2[Nms/rad]</code> for tranlational and rotational directions, respectively.
+</p><p><code>K_nullspace</code>:
+The <code>K_nullspace</code> is a list of desired nullspace stiffness values for all 7 joints. Each of them must be equal or greater than zero, and they will be capped to their maximum values (<code>10[Nm/rad]</code>) if exceeded.
+</p><p><code>force_command</code>:
+The <code>force_command</code> is a list of desired force values for 6 Cartesian axes. Each of them will be capped to their maximum values (<code>50[N]</code> and <code>5[Nm]</code> for translational and rotational directions, respectively) if exceeded.
+</p><p><code>interaction_frame</code>:
+The <code>interaction_frame</code> is a <code>geometry_msgs/Pose</code> that specifies the position and orientation of the reference frame with respect to which the interaction control behaviors are defined. 
+</p><p><code>endpoint_name</code>:
+The <code>endpoint_name</code> is a string that specifies the name of the endpoint frame at which the interaction control behaviors are defined. Note that currently this field is not allowed to be modified, and it is always set to <code>right_hand</code> by default.
+</p><p><code>in_endpoint_frame</code>:
+The <code>in_endpoint_frame</code> is a boolean, which can be used to set the endpoint frame (i.e., TCP frame) as the reference frame of interaction control behaviors if set to <code>True</code>; Base frame will be used if set to <code>False</code>. 
+</p><p><code>disable_reference_resetting</code>:
+The <code>disable_reference_resetting</code> is a boolean. To avoid jumps/jerks in the event of a change in interaction parameters, the interaction controller resets the reference position to the actual position. This feature can be disabled by setting the variable <code>disable_reference_resetting</code> to True. 
+</p>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Joint_Trajectory_Action_Server">Joint Trajectory Action Server</span></h1>
+<p>If not using the Motion Controller, Sawyer's SDK comes equipped with Joint Trajectory Action Server (JTAS) to facilitate users commanding Sawyer's arm through multiple waypoints. These waypoints are supplied as joint positions, velocities, and/or accelerations, accompanied by a desired trajectory timing. The main benefit of this server is its ability to interpolate between supplied waypoints, command Sawyer's joints accordingly, and ensure the trajectory is being followed within a specified tolerance. To read more about JTA Servers in general, please see the ROS Wiki page on <a rel="nofollow" class="external text" href="http://wiki.ros.org/joint_trajectory_action">Joint Trajectory Action</a>. To jump straight to the source code, see the <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_interface/src/joint_trajectory_action/joint_trajectory_action.py">intera_interface JTAS page</a> on GitHub.
+</p>
+<h2><span class="mw-headline" id="JTAS_Modes">JTAS Modes</span></h2>
+<p>The JTAS has three modes which are invoked as arguments when calling the action server:<br />
+<b>$</b> <code>rosrun intera_interface joint_trajectory_action_server.py</code>
+</p>
+<ul><li>Velocity Mode (<code>--mode velocity</code>)<br /></li>
+<li>Position Mode (<code>--mode position</code>)<br /></li>
+<li>Inverse Dynamics Feed Forward Position Mode (default mode)<br /></li></ul>
+<h3><span class="mw-headline" id="Velocity_Mode">Velocity Mode</span></h3>
+<p>This mode executes direct control of trajectories by calculating and commanding the velocities required to move the arm through a set of joint positions at a specified time. The end result is fast, but less accurate movement.
+</p>
+<h3><span class="mw-headline" id="Position_Mode">Position Mode</span></h3>
+<p>This mode allows for simple trajectory execution of position-only trajectories. This mode is significantly more accurate than velocity mode, at a cost of a speed 
+reduction.
+</p><p><b>Note:</b> in Intera 5.2 and beyond, we strongly recommend using the <a href="index.php?title=Arm_Control_Systems&amp;printable=yes#Motion_Controller_Interface"> motion interface</a>, instead of Position Mode, for smoother arm motions.
+</p>
+<h3><span id="Inverse_Dynamics_Feed_Forward_Position_Mode_(using_Joint_Trajectory_Position_Mode)"></span><span class="mw-headline" id="Inverse_Dynamics_Feed_Forward_Position_Mode_.28using_Joint_Trajectory_Position_Mode.29">Inverse Dynamics Feed Forward Position Mode (using Joint Trajectory Position Mode)</span></h3>
+<p>This mode allows the highest speed movement with the most accuracy. By supplying desired joint positions, velocities, and accelerations, Sawyer can anticipate and correct for the dynamics of its movement by calculating "feeding forward" torques in the Motor Controller to accurately execute trajectories.
+</p><p>This mode accepts trajectories with Position, Velocity, and/or Acceleration supplied for each joint. <a rel="nofollow" class="external text" href="http://moveit.ros.org/">MoveIt!</a> supplies these three dimensions by default, so it is highly recommended that you use this mode when using motion planners from MoveIt.
+</p>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Collision_Avoidance">Collision Avoidance</span></h1>
+<p>There are a two levels of collision avoidance models used for Sawyer: tight shapes and collision avoidance shapes. The collision blocks can be visualized in RVIZ by setting the Planned Path field under MotionPlanning and enabling the field Collision Enabled. (Enabling the Collision Enabled field for the RobotModel will also work.)
+</p>
+<ul class="gallery mw-gallery-nolines" style="max-width: 978px;_width: 978px;">
+	<li class="gallerycaption">Tight collision shapes</li>
+		<li class="gallerybox" style="width: 485px"><div style="width: 485px">
+			<div class="thumb" style="width: 480px;"><div style="margin:0px auto;"><a href="../File:Collision_tight_shapes_view2.png" class="image"><img alt="Collision tight shapes view2.png" src="images/thumb/1/13/Collision_tight_shapes_view2.png/480px-Collision_tight_shapes_view2.png" width="480" height="349" srcset="/intera/a/images/thumb/1/13/Collision_tight_shapes_view2.png/720px-Collision_tight_shapes_view2.png 1.5x, /intera/a/images/thumb/1/13/Collision_tight_shapes_view2.png/960px-Collision_tight_shapes_view2.png 2x" /></a></div></div>
+			<div class="gallerytext">
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 485px"><div style="width: 485px">
+			<div class="thumb" style="width: 480px;"><div style="margin:0px auto;"><a href="../File:Collision_tight_shapes_view3.png" class="image"><img alt="Collision tight shapes view3.png" src="images/thumb/a/a0/Collision_tight_shapes_view3.png/480px-Collision_tight_shapes_view3.png" width="480" height="349" srcset="/intera/a/images/thumb/a/a0/Collision_tight_shapes_view3.png/720px-Collision_tight_shapes_view3.png 1.5x, /intera/a/images/thumb/a/a0/Collision_tight_shapes_view3.png/960px-Collision_tight_shapes_view3.png 2x" /></a></div></div>
+			<div class="gallerytext">
+			</div>
+		</div></li>
+</ul>
+<p>In default (tight) collision model, shown in the figure above, each of Sawyer's link has its own collision shape slightly larger than the size of that link. The urdf for this model is published in the rosparam <code>/robot_description</code>. This model is used by the Motion Controller to check for self collisions along the trajectory prior to motion. This model can also be used by MoveIt! or other external motion planners.
+</p><p>In addition to the arm collision shapes show in the images, collision boxes are added around the base of the pedestal and around the controller box attached to the pedestal. These shapes can be used by external motion planners, but are not used by the Motion Controller or collision avoidance. 
+</p>
+<ul class="gallery mw-gallery-nolines" style="max-width: 978px;_width: 978px;">
+	<li class="gallerycaption">Collision Avoidance shapes</li>
+		<li class="gallerybox" style="width: 485px"><div style="width: 485px">
+			<div class="thumb" style="width: 480px;"><div style="margin:0px auto;"><a href="../File:Collision_avoidance_shapes_view2.png" class="image"><img alt="Collision avoidance shapes view2.png" src="images/thumb/f/fa/Collision_avoidance_shapes_view2.png/480px-Collision_avoidance_shapes_view2.png" width="480" height="349" srcset="/intera/a/images/thumb/f/fa/Collision_avoidance_shapes_view2.png/720px-Collision_avoidance_shapes_view2.png 1.5x, /intera/a/images/thumb/f/fa/Collision_avoidance_shapes_view2.png/960px-Collision_avoidance_shapes_view2.png 2x" /></a></div></div>
+			<div class="gallerytext">
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 485px"><div style="width: 485px">
+			<div class="thumb" style="width: 480px;"><div style="margin:0px auto;"><a href="../File:Collision_avoidance_shapes_view3.png" class="image"><img alt="Collision avoidance shapes view3.png" src="images/thumb/e/e1/Collision_avoidance_shapes_view3.png/480px-Collision_avoidance_shapes_view3.png" width="480" height="349" srcset="/intera/a/images/thumb/e/e1/Collision_avoidance_shapes_view3.png/720px-Collision_avoidance_shapes_view3.png 1.5x, /intera/a/images/thumb/e/e1/Collision_avoidance_shapes_view3.png/960px-Collision_avoidance_shapes_view3.png 2x" /></a></div></div>
+			<div class="gallerytext">
+			</div>
+		</div></li>
+</ul>
+<p>The larger collision avoidance shapes are published in the rosparam <code>/robot/armnav_robot_description</code>. When these block comes into contact with each other, collision avoidance model is triggered. The collision avoidance torques are calculated proportional to the overlapping distance between shapes. Certain collision shape pairs, such as adjacent links, are not used for collision avoidance.
+</p><p>To disable the collision avoidance, publish an empty message at greater than 5 Hz to the topic, <code>/robot/limb/right/suppress_collision_avoidance</code>. The collision avoidance will stay suppressed as long as this is being published.
+</p><p>For eg, the command to suppress collision avoidance for Sawyer would be:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rostopic pub /robot/limb/right/suppress_collision_avoidance std_msgs/Empty -r <span class="m">10</span>
+</pre></div>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Collision_Detection">Collision Detection</span></h1>
+<p>There is three types of collisions detected by the robot: impact, squish, and hand over-wrench. 
+</p><p><code>Impact</code> is detected when a sudden change in torque is sensed across any of the joint. This can be related to a scenario in which a moving robot collides with a human. Here, the sudden change in torque is sensed during the impact and the robot comes to a stop for half a second before attempting to move again. 
+</p><p><code>Squish</code> is detected when joint tries to press against a stationary object. For instance, when a robot arm tries to push a wall, the torque applied across the joint increases and it immediately stops when the difference between measured and expected joint torque is greater than a threshold. Squish detection remains active as long as something is pushing on the arm.
+</p><p><code>Hand Over-wrench</code> is detected when the forces and torques at the robot's hand is excessive. The arm is likely to detect a squish, if active, before an hand over-wrench detection. The arm will stop after a hand over-wrench detection and will not move for half a second.
+</p><p><b>Warning:</b> For trajectories being sent directly by SDK users, you are responsible to stop sending motion commands. Otherwise, there could be large jumps in the arm motion after the collision detection is finished. The Motion Controller and Joint Action Services already do this. 
+</p><p>The rethink log records these information.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="o">[</span><span class="m">2017</span>-01-12T14:31:32.807793-0500<span class="o">]</span> <span class="o">[</span>WARN<span class="o">]</span> <span class="o">(</span>/collision/right/joint_collision_estimator_right,JointCollisionEstimator.cpp:746<span class="o">)</span> <span class="p">|</span> impact: <span class="m">0</span>.885333 &gt; <span class="m">0</span>.750000, largest contributor: right_j2, with value: <span class="m">0</span>.480856
+</pre></div>
+<p>This log information indicates that an impact was detected when the torque applied across the right_j2 joint is greater than 0.75 Nm.
+Similarly the corresponding message logged for squish is
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="o">[</span><span class="m">2017</span>-01-12T14:28:20.933828-0500<span class="o">]</span> <span class="o">[</span>WARN<span class="o">]</span> <span class="o">(</span>/collision/right/joint_collision_estimator_right,JointCollisionEstimator.cpp:773<span class="o">)</span> <span class="p">|</span> squish on joint right_j1 - <span class="m">20</span>.110 &gt; <span class="m">20</span>.000
+</pre></div>
+<p>These collision information can also be viewed in rqt_console. The images below show the impact and squish logged in rqt_console.
+</p><p><a href="../File:Impact.png" class="image"><img alt="Impact.png" src="images/thumb/e/ef/Impact.png/720px-Impact.png" width="720" height="401" srcset="/intera/a/images/thumb/e/ef/Impact.png/1080px-Impact.png 1.5x, /intera/a/images/thumb/e/ef/Impact.png/1440px-Impact.png 2x" /></a>
+</p><p><a href="../File:Squish.png" class="image"><img alt="Squish.png" src="images/thumb/6/61/Squish.png/720px-Squish.png" width="720" height="401" srcset="/intera/a/images/thumb/6/61/Squish.png/1080px-Squish.png 1.5x, /intera/a/images/thumb/6/61/Squish.png/1440px-Squish.png 2x" /></a>
+</p><p><br />
+To disable the collision detection (squish and impact), publish an empty message at greater than 5 Hz to the topic <code>/robot/limb/right/suppress_contact_safety</code>. The squish and impact detection will stay suppressed as long as this is being published.
+</p><p>For eg, the command to suppress collision detection for Sawyer would be:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rostopic pub /robot/limb/right/suppress_contact_safety std_msgs/Empty -r <span class="m">10</span>
+</pre></div>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Gravity_Compensation_Torques">Gravity Compensation Torques</span></h1>
+<p>In order to oppose the effect of gravitational force acting across Sawyer's arm, gravity compensation torques have to be applied across that arm. The built-in gravity compensating model uses <a rel="nofollow" class="external text" href="http://www.orocos.org/kdl">KDL</a> for calculating the gravity compensation torques. In addition, inertial feed-forward and interaction torques are calculated depending on which controller is active. These torques are applied before sending joint commands to the Joint Control Boards.
+</p><p>The gravity compensation torques are available via the topic <code>robot/limb/right/gravity_compensation_torques</code> of message type <code>intera_core_msgs/SEAJointState</code>
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rostopic <span class="nb">echo</span> robot/limb/right/gravity_compensation_torques
+</pre></div>
+<p>In order to disable the gravity compensation torques, an empty message should be published to the topic <code>/robot/limb/right/suppress_gravity_compensation</code> at greater than 5 Hz.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rostopic pub -r <span class="m">10</span> /robot/limb/right/suppress_gravity_compensation std_msgs/Empty
+</pre></div>
+<p><br />
+The fields of the Gravity Compensation Torques message: 
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>commanded_position: Commanded Position from RealTime Loop
+
+commanded_velocity: Commanded Velocity from RealTime Loop
+
+commanded_effort: Commanded Effort from RealTime Loop. In torque control mode this will be the torques you commanded. 
+                  In position control mode this is the integral effort applied achieving the goal positions.
+
+actual_position: Measured Position from RealTime Loop
+
+actual_velocity: Measured Velocity from RealTime Loop
+
+actual_effort: Measured Effort from RealTime Loop via the Spring Deflection Sensors in each Series Elastic Actuator
+
+gravity_model_effort: Gravity Compensation Torques Commanded (includes the inertial feed forward torques when applicable)
+
+gravity_only: Torque required to hold the arm against gravity returned by KDL if the arm was stationary
+
+interaction_torque: Torque produced by the Interaction Controller plugin
+
+hysteresis_model_effort: Spring Compensation Torques Commanded. [Not applicable to Sawyer]
+
+crosstalk_model_effort: Joint Crosstalk Compensation. [Not applicable to Sawyer]
+
+hystState: A variable used in calculating the hysteresis model. [Not applicable to Sawyer]
+</pre></div>
+</div>
+<div class="content-block">
+<h1><span class="mw-headline" id="Zero-G_mode">Zero-G mode</span></h1>
+<p>Zero-G mode allows the user to free move the arm. In this mode, the joint position controllers are disabled while the gravity compensation torques are still active to reduce the gravitational forces on the arm. 
+</p><p>The Zero-G mode can be enabled by grasping the cuff over its groove or pressing the circle button on the navigators,
+</p><p><a href="../File:Sawyer_Training_Cuff.png" class="image"><img alt="Sawyer Training Cuff.png" src="images/thumb/f/f4/Sawyer_Training_Cuff.png/500px-Sawyer_Training_Cuff.png" width="500" height="315" srcset="/intera/a/images/f/f4/Sawyer_Training_Cuff.png 1.5x" /></a> <a href="../File:SDK_Navigator.png" class="image"><img alt="SDK Navigator.png" src="images/thumb/2/2d/SDK_Navigator.png/500px-SDK_Navigator.png" width="500" height="322" srcset="/intera/a/images/thumb/2/2d/SDK_Navigator.png/750px-SDK_Navigator.png 1.5x, /intera/a/images/2/2d/SDK_Navigator.png 2x" /></a>
+</p><p><b>Note:</b> The estimated gravitational torques depends on the accuracy on the arm's kinematic model, link mass properties, and torque sensing. Because the estimated torques are not perfect, the arm may drift if the cuff is not firmly held while zero-g mode is active. If there is a strong pull, try running the <a href="../Arm_Calibration" title="Arm Calibration">arm  calibration routine</a>.
+</p><p>Unlike the gravity compensation model, the Zero-G mode cannot be directly disabled. The cuff interaction has to be disabled in order to disable the Zero-G. Publishing an empty message to the topic <code>/robot/limb/right/suppress_cuff_interaction</code> at greater than 5Hz, disabled the cuff interaction.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>rostopic pub -r <span class="m">10</span> /robot/limb/right/suppress_cuff_interaction std_msgs/Empty
+</pre></div>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815154912
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.068 seconds
+Real time usage: 0.284 seconds
+Preprocessor visited node count: 325/1000000
+Preprocessor generated node count: 584/1000000
+Post‐expand include size: 37/2097152 bytes
+Template argument size: 1/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 13375/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    8.448      1 Template:TOClimit
+100.00%    8.448      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:150-0!canonical and timestamp 20190815154911 and revision id 1579
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Arm_Control_Systems&amp;oldid=1579">http://sdk.rethinkrobotics.com/intera/a/index.php?title=Arm_Control_Systems&amp;oldid=1579</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.068","walltime":"0.284","ppvisitednodes":{"value":325,"limit":1000000},"ppgeneratednodes":{"value":584,"limit":1000000},"postexpandincludesize":{"value":37,"limit":2097152},"templateargumentsize":{"value":1,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":13375,"limit":5000000},"timingprofile":["100.00%    8.448      1 Template:TOClimit","100.00%    8.448      1 -total"]},"cachereport":{"timestamp":"20190815154912","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":74});});</script></body></html>

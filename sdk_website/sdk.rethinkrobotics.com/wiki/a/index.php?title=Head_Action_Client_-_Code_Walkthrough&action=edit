@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Head Action Client - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Head_Action_Client_-_Code_Walkthrough","wgTitle":"Head Action Client - Code Walkthrough","wgCurRevisionId":3849,"wgRevisionId":0,"wgArticleId":796,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Head_Action_Client_-_Code_Walkthrough","wgRelevantArticleId":796,"wgRequestId":"9e946e92add5a1a9e3599f1c","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Head_Action_Client_-_Code_Walkthrough rootpage-Head_Action_Client_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Head+Action+Client+-+Code+Walkthrough&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Head Action Client - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Head_Action_Client_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Head_Action_Client_-_Code_Walkthrough" title="Head Action Client - Code Walkthrough">Head Action Client - Code Walkthrough</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Head_Action_Client_-_Code_Walkthrough&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">{{Template:Parent header|parent=Head Action Client Example}}
+== Introduction ==
+
+This example demonstrates ability to move Baxter's head by panning its head to a preset angle at a given velocity and waiting for the robot to complete its trajectory. The code consists of a &lt;code>main()&lt;/code> function that initializes the ros node and creates an instance of the &lt;code>HeadClient&lt;/code> class. In the &lt;code>__init__()&lt;/code> function, a single joint position goal is created. The &lt;code>command()&lt;/code> function is then called, which performs a single head pan at a given velocity before proceeding to the next head joint angle.&lt;br />
+'''Interfaces''' -
+&lt;div style="column-count:1;-moz-column-count:1;-webkit-column-count:1">
+* hc = HeadClient()&lt;br />
+* hc.command(position=0.0, velocity=100.0)&lt;br />
+* hc.wait()&lt;br />
+&lt;/div>
+
+== Code Walkthrough ==
+Now, let's break down the code.
+&lt;syntaxhighlight lang="python" line start="33" enclose="div">
+import sys
+import argparse
+
+import rospy
+
+import actionlib
+
+from control_msgs.msg import (
+    SingleJointPositionAction,
+    SingleJointPositionGoal,
+)
+
+import baxter_interface
+
+from baxter_interface import CHECK_VERSION
+&lt;/syntaxhighlight>
+
+This imports the actionlib creating a default client to speak with the Head Action Server. The control_msgs provides the messaging action-goal contract between server and client.  The &lt;code>CHECK_VERSION&lt;/code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs.
+
+&lt;syntaxhighlight lang="python" line start="40" enclose="div">
+class HeadClient(object):
+    def __init__(self):
+        ns = 'robot/head/head_action'
+        self._client = actionlib.SimpleActionClient(
+            ns,
+            SingleJointPositionAction
+        )
+        self._goal = SingleJointPositionGoal()
+
+        # Wait 10 Seconds for the head action server to start or exit
+        if not self._client.wait_for_server(rospy.Duration(10.0)):
+            rospy.logerr("Exiting - Head Action Server Not Found")
+            rospy.signal_shutdown("Action Server not found")
+            sys.exit(1)
+        self.clear()
+&lt;/syntaxhighlight>
+
+The &lt;code>_goal&lt;/code> is an object of the HeadClient class that stores a single goal position. The &lt;code>_client&lt;/code> is created from a &lt;code>SimpleActionClient&lt;/code> acting on the namespace &lt;code>robot/head/head_action&lt;/code>. The &lt;code>client&lt;/code> function &lt;code>wait_for_server&lt;/code> attempts to wait for 10 seconds for the Head Action server to come up. If no server is detected, this example will report an error and exit. If you see this error, make sure that your Client example node and Server node are speaking to the same rosmaster.
+
+&lt;syntaxhighlight lang="python" line start="65" enclose="div">
+    def command(self, position, velocity):
+        self._goal.position = position
+        self._goal.max_velocity = velocity
+        self._client.send_goal(self._goal)
+&lt;/syntaxhighlight>
+
+&lt;code>HeadClient.command()&lt;/code> takes as arguments a position and velocity. They are packed into the &lt;code>goal&lt;/code> object and sent to the Head Action Server.
+
+&lt;syntaxhighlight lang="python" line start="70" enclose="div">
+    def stop(self):
+        self._client.cancel_goal()
+
+    def wait(self, timeout=5.0):
+        self._client.wait_for_result(timeout=rospy.Duration(timeout))
+        return self._client.get_result()
+
+    def clear(self):
+        self._goal = SingleJointPositionGoal()
+&lt;/syntaxhighlight>
+
+The &lt;code>HeadClient.stop()&lt;/code> function cancels any current goal (whether or not the trajectory has completed). The &lt;code>HeadClient.wait()&lt;/code> function will wait for a result from the server up to a specified amount of time before returning. The &lt;code>HeadClient.clear()&lt;/code> function resets the &lt;code>goal&lt;/code> member variable with default zero values.
+
+
+&lt;syntaxhighlight lang="python" line start="80" enclose="div">
+def main():
+    """RSDK Head Example: Action Client
+    Demonstrates creating a client of the Head Action Server,
+    which enables sending commands of standard action type
+    control_msgs/SingleJointPosition.
+    The example will command the head to a position.
+    Be sure to start Baxter's head_action_server before running this example.
+    """
+    arg_fmt = argparse.RawDescriptionHelpFormatter
+    parser = argparse.ArgumentParser(formatter_class=arg_fmt,
+                                     description=main.__doc__)
+    parser.parse_args(rospy.myargv()[1:])
+&lt;/syntaxhighlight>
+The beginning of the main function parses any parameters passed into this example when it is invoked from the command line.
+
+&lt;syntaxhighlight lang="python" line start="95" enclose="div">
+    print("Initializing node... ")
+    rospy.init_node("rsdk_head_action_client")
+    print("Getting robot state... ")
+    rs = baxter_interface.RobotEnable(CHECK_VERSION)
+    print("Enabling robot... ")
+    rs.enable()
+    print("Running. Ctrl-c to quit")
+&lt;/syntaxhighlight>
+
+Here, the ROS node is initialized - a requirement for your code to communicate over ROS. Additionally, the version of your SDK is checked against the version running on the robot, and the robot is enabled via the standard &lt;code>RobotEnable&lt;/code> function from &lt;code>baxter_interface&lt;/code>.
+
+&lt;syntaxhighlight lang="python" line start="103" enclose="div">
+    hc = HeadClient()
+    hc.command(position=0.0, velocity=100.0)
+    hc.wait()
+    hc.command(position=1.57, velocity=10.0)
+    hc.wait()
+    hc.command(position=0.0, velocity=80.0)
+    hc.wait()
+    hc.command(position=-1.0, velocity=40.0)
+    hc.wait()
+    hc.command(position=0.0, velocity=60.0)
+    print hc.wait()
+    print "Exiting - Head Action Test Example Complete"
+
+if __name__ == "__main__":
+    main()
+&lt;/syntaxhighlight>
+
+This section of &lt;code>main&lt;/code> performs the meat and potatoes of head movement. The &lt;code>HeadClient&lt;/code> is created, and a series of commands are presented to the Head Action Server, with waits in between to ensure the goal state is reached before moving onto the next goal.
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="../Template:Parent_header" title="Template:Parent header">Template:Parent header</a> (<a href="index.php?title=Template:Parent_header&amp;action=edit" title="Template:Parent header">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Head_Action_Client_-_Code_Walkthrough" title="Head Action Client - Code Walkthrough">Head Action Client - Code Walkthrough</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Head_Action_Client_-_Code_Walkthrough">http://sdk.rethinkrobotics.com/wiki/Head_Action_Client_-_Code_Walkthrough</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":36});});</script></body></html>

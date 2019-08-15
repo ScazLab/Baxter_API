@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tuck Arms Tool - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tuck_Arms_Tool","wgTitle":"Tuck Arms Tool","wgCurRevisionId":3369,"wgRevisionId":3369,"wgArticleId":365,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tuck_Arms_Tool","wgRelevantArticleId":365,"wgRequestId":"79ed8674571d9ef1c5689a7a","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tuck_Arms_Tool rootpage-Tuck_Arms_Tool skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Tuck+Arms+Tool&amp;returntoquery=oldid%3D3369">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Tuck Arms Tool</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Tuck_Arms_Tool&amp;oldid=3369#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Tuck_Arms_Tool&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Tuck_Arms_Tool&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Tuck_Arms_Tool" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 15:31, 29 July 2014 by <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span> <span class="comment">(Changed protection level for &quot;<a href="../Tuck_Arms_Tool" title="Tuck Arms Tool">Tuck Arms Tool</a>&quot;: Setting Permissions for (almost all) Pages - editable and moveable by all logged in users ([Edit=Allow only autoconfirmed users] (indefinite) [Move=Allow only autoconfirmed users] (indefinite)))</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Tuck_Arms_Tool&amp;diff=prev&amp;oldid=3369" title="Tuck Arms Tool">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Tuck_Arms_Tool&amp;direction=prev&amp;oldid=3369" title="Tuck Arms Tool">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Tuck_Arms_Tool&amp;oldid=3369#column-one">navigation</a>, <a href="index.php?title=Tuck_Arms_Tool&amp;oldid=3369#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Tuck_Arms_Tool&amp;oldid=3369#Tuck_Arms_Example"><span class="tocnumber">1</span> <span class="toctext">Tuck Arms Example</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Tuck_Arms_Tool&amp;oldid=3369#Basic_Usage"><span class="tocnumber">1.1</span> <span class="toctext">Basic Usage</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=Tuck_Arms_Tool&amp;oldid=3369#Overview"><span class="tocnumber">1.2</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="index.php?title=Tuck_Arms_Tool&amp;oldid=3369#Functions"><span class="tocnumber">1.3</span> <span class="toctext">Functions</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="index.php?title=Tuck_Arms_Tool&amp;oldid=3369#Tuck_Arms"><span class="tocnumber">1.3.1</span> <span class="toctext">Tuck Arms</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="index.php?title=Tuck_Arms_Tool&amp;oldid=3369#Untuck_Arms"><span class="tocnumber">1.3.2</span> <span class="toctext">Untuck Arms</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-7"><a href="index.php?title=Tuck_Arms_Tool&amp;oldid=3369#Troubleshooting"><span class="tocnumber">1.4</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="index.php?title=Tuck_Arms_Tool&amp;oldid=3369#Robot_reports_a_timeout_error_on_untuck_or_tuck_command."><span class="tocnumber">1.4.1</span> <span class="toctext">Robot reports a timeout error on untuck or tuck command.</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="index.php?title=Tuck_Arms_Tool&amp;oldid=3369#Robot_reports_failure_to_reset_error_on_untuck_or_tuck_command."><span class="tocnumber">1.4.2</span> <span class="toctext">Robot reports failure to reset error on untuck or tuck command.</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Tuck_Arms_Example">Tuck Arms Example</span></h1>
+<p>The tuck arms example program will allow you to tuck/untuck Baxter's arms to/from 'shipping pose'.
+</p>
+<h2><span class="mw-headline" id="Basic_Usage">Basic Usage</span></h2>
+<p>To <b>Untuck</b> the robot's arms:
+</p>
+<pre>   $ rosrun baxter_tools tuck_arms.py -u
+</pre>
+<p>To <b>Tuck</b> the robot's arms:
+</p>
+<pre>   $ rosrun baxter_tools tuck_arms.py -t
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>The pose that Baxter is shipping in is referred to as 'shipping pose'. This tool is particularly useful for the initial unpacking of Baxter. This tools is also useful for subsequent movements of Baxter (ie. moving Baxter through doorways etc.) as this is the most compact form for Baxter's transportation.
+</p><p><a href="../File:Tuck_Untuck.png" class="image" title="Tuck/Untuck_Arms.png"><img alt="Tuck/Untuck_Arms.png" src="images/1/11/Tuck_Untuck.png" width="749" height="326" /></a>
+</p><p><b>Important Note:</b> Please make sure no other control programs are running as this tools disables collision avoidance.
+</p>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<p>To get help on tuck_arms use the <code>-h</code> argument:
+</p>
+<pre>   $ rosrun baxter_tools tuck_arms.py -h
+</pre>
+<p>Help screen:
+</p>
+<pre>   tuck_arms.py [ARGUMENTS]
+</pre>
+<ul><li>h, --help      show this help message and exit</li>
+<li>t, --tuck      tuck arms</li>
+<li>u, --untuck    untuck arms</li></ul>
+<h4><span class="mw-headline" id="Tuck_Arms">Tuck Arms</span></h4>
+<p>Use <code>-t</code> to tuck Baxter's arms.
+</p>
+<pre>   $ rosrun baxter_tools tuck_arms.py -t
+</pre>
+<p>If not already in 'tucked' position, the robot will come to a neutral pose, disable collision avoidance and tuck the arms into the 'tucked' position, disabling on completion.
+</p>
+<h4><span class="mw-headline" id="Untuck_Arms">Untuck Arms</span></h4>
+<p>Use <code>-u</code> to untuck Baxter's arms.
+</p>
+<pre>   $ rosrun baxter_tools tuck_arms.py -u
+</pre>
+<p>If Baxter is in the 'tucked' position, collision avoidance will be disabled, and the arms will move into the 'untucked' pose where the robot will remain enabled. If Baxter is not tucked at program start, collision avoidance will remain enabled, and Baxter will move to the 'untucked' position.
+</p>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<h4><span class="mw-headline" id="Robot_reports_a_timeout_error_on_untuck_or_tuck_command.">Robot reports a timeout error on untuck or tuck command.</span></h4>
+<p>Make sure that your network connection is configured allowing you to make commands to the robot:<a href="../Connecting_and_Testing_the_Development_Workstation" title="Connecting and Testing the Development Workstation">Connecting and Testing the Development Workstation</a>
+</p><p>In particular that your ROS_HOSTNAME is resolvable to the robot, or alternatively setting your ROS_IP to your current ip address (make sure that your ROS_HOSTNAME is <b>not</b> set when using this approach):
+</p><p><a rel="nofollow" class="external free" href="http://www.ros.org/wiki/ROS/NetworkSetup#Name_resolution">http://www.ros.org/wiki/ROS/NetworkSetup#Name_resolution</a>
+</p>
+<h4><span class="mw-headline" id="Robot_reports_failure_to_reset_error_on_untuck_or_tuck_command.">Robot reports failure to reset error on untuck or tuck command.</span></h4>
+<p>If your robot "fails to reset" when you running untuck/tuck arms example, the first thing to check is if the E-Stop is engaged:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun baxter_tools enable_robot -s
+enabled: False
+stopped: True
+error: True
+estop_button: <span class="m">1</span>
+estop_source: <span class="m">1</span>
+</pre></div>
+<p>If the <code>estop_button:</code> field says '<code>1</code>', it means the E-Stop is engaged (from [<code>baxter_core_msgs/AssemblyState</code>][baxter_core_msgs-AssemblyState] message: <code>uint8 ESTOP_BUTTON_PRESSED=1</code>).  
+Disengage the E-Stop by twisting the red top until it 'pops'-up, then try resetting the robot.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun baxter_tools enable_robot -r
+</pre></div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815161515
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.018 seconds
+Real time usage: 0.368 seconds
+Preprocessor visited node count: 40/1000000
+Preprocessor generated node count: 80/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 453/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:365-0!canonical and timestamp 20190815161515 and revision id 3369
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Tuck_Arms_Tool&amp;oldid=3369">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Tuck_Arms_Tool&amp;oldid=3369</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.018","walltime":"0.368","ppvisitednodes":{"value":40,"limit":1000000},"ppgeneratednodes":{"value":80,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":453,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815161515","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":33});});</script></body></html>

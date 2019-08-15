@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Development Workstation Setup Instructions - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Development_Workstation_Setup_Instructions","wgTitle":"Development Workstation Setup Instructions","wgCurRevisionId":3237,"wgRevisionId":0,"wgArticleId":389,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Development_Workstation_Setup_Instructions","wgRelevantArticleId":389,"wgRequestId":"29e3132fccc77bd54d07fdb6","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Development_Workstation_Setup_Instructions rootpage-Development_Workstation_Setup_Instructions skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Development+Workstation+Setup+Instructions&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Development Workstation Setup Instructions</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Development_Workstation_Setup_Instructions&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Development_Workstation_Setup_Instructions&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Development_Workstation_Setup_Instructions&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Development_Workstation_Setup_Instructions" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Development_Workstation_Setup_Instructions" title="Development Workstation Setup Instructions">Development Workstation Setup Instructions</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Development_Workstation_Setup_Instructions&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Development_Workstation_Setup_Instructions&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">=== Prerequisites ===
+
+* A developer workstation meeting the [[System requirements|minimum system requirements]] is available for use.
+
+=== Outcome of this step ===
+
+* Development workstation running stock ROS Groovy  
+
+== Ubuntu 12.04 - ROS Groovy - Installation Steps ==
+
+=== 1. Install Ubuntu ===
+Install Ubuntu 12.04 LTS. You can find the appropriate image &lt;a href="http://releases.ubuntu.com/precise/">here&lt;/a>.
+
+=== 2. Install ROS ===
+Install ROS Groovy for Ubuntu 12.04. Detailed instructions may be found [http://www.ros.org/wiki/groovy/Installation/Ubuntu here].  Following is a short list of what you need to do to get ready for the Baxter Research SDK.
+
+* Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse." You can follow the Ubuntu guide [https://help.ubuntu.com/community/Repositories/Ubuntu here] for instructions on doing this.  
+    '''''Note:''' Your installation of Ubuntu likely may be pre-configured to allow these repositories. You can skip this step if the above Ubuntu repositories are already included in your &lt;code>/etc/apt/sources.list&lt;/code> file ("allowed" sources start with 'deb' and no '#', and end with the names above).''
+
+* Add the ROS repositories to your sources.list  
+&lt;source lang="bash">
+    $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu precise main" > /etc/apt/sources.list.d/ros-latest.list'  
+&lt;/source>
+
+* Set up your keys  
+&lt;source lang="bash">
+    $ wget http://packages.ros.org/ros.key -O - | sudo apt-key add -  
+&lt;/source>
+
+* Make sure you have re-indexed the ROS.org server
+&lt;source lang="bash">
+    $ sudo apt-get update  
+&lt;/source>
+
+* Install ROS Groovy:  
+    Choose the " '''Desktop-Full''' Install (Recommended)" variant of ROS Groovy -- this includes ROS, rqt gui tools, rviz, robot-generic libraries, 2D/3D simulators, navigation and 2D/3D perception  
+&lt;source lang="bash">
+    $ sudo apt-get install ros-groovy-desktop-full
+&lt;/source>
+
+* Install 3rd-Party libraries:  
+    Install additional ROS packages:
+&lt;source lang="bash">
+    $ sudo apt-get install ros-groovy-control ros-groovy-joystick-drivers
+&lt;/source>
+
+    If argparse is not installed on the development workstation, install it with the following command:  
+&lt;source lang="bash">
+    $ sudo apt-get install python-argparse
+&lt;/source>
+
+* Initialize rosdep (ROS system dependency tool)  
+&lt;source lang="bash">
+    $ sudo rosdep init 
+    $ rosdep update  
+&lt;/source>
+
+* ''(Optional)'' Set up the ROS environment so that the ROS environment variables are automatically added to your bash session every time a new shell is launched  
+&lt;source lang="bash">
+    $ echo "source /opt/ros/groovy/setup.bash" >> ~/.bashrc 
+    $ . ~/.bashrc  
+&lt;/source>
+
+
+    ''Note:'' If you have more than one ROS distribution installed, &lt;code>~/.bashrc&lt;/code> must only source the &lt;code>setup.bash&lt;/code> for the version you are currently using.  
+    
+    To change your current environment (e.g. substituting &lt;code>&lt;ros-distro>&lt;/code>=&lt;code>groovy&lt;/code>):  
+&lt;source lang="bash">
+    $ source /opt/ros/&lt;ros-distro>/setup.bash
+&lt;/source>
+
+== Next Steps ==
+
+[[Setting up github]]
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Development_Workstation_Setup_Instructions" title="Development Workstation Setup Instructions">Development Workstation Setup Instructions</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Development_Workstation_Setup_Instructions">http://sdk.rethinkrobotics.com/wiki/Development_Workstation_Setup_Instructions</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":33});});</script></body></html>

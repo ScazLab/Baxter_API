@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Hello Baxter - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Hello_Baxter","wgTitle":"Hello Baxter","wgCurRevisionId":3776,"wgRevisionId":3776,"wgArticleId":421,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Hello_Baxter","wgRelevantArticleId":421,"wgRequestId":"4b46550a7b3cb777ec022f81","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["sysop"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["ext.tabs","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<style type="text/css" id="tabs-dynamic-styles">/*<![CDATA[*/
+/* Dynamically generated tabs styles */
+.tabs-input-1:checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-content-2,
+.tabs-input-3:checked ~ .tabs-container .tabs-content-3,
+.tabs-input-0:checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1:checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-3:checked ~ .tabs-container .tabs-inline.tabs-content-3,
+.tabs-input-0:checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1:checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-3:checked ~ .tabs-container .tabs-block.tabs-content-3,
+.tabs-input-0:checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+/* The same styles, but with .checked instead of :checked, for browsers that rely on the JavaScript fallback */
+.tabs-input-1.checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-content-2,
+.tabs-input-3.checked ~ .tabs-container .tabs-content-3,
+.tabs-input-0.checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1.checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-3.checked ~ .tabs-container .tabs-inline.tabs-content-3,
+.tabs-input-0.checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1.checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-3.checked ~ .tabs-container .tabs-block.tabs-content-3,
+.tabs-input-0.checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+.tabs-dropdown .tabs-content,.tabs-dropdown .tabs-container,.tabs-dropdown li,.tabs-dropdown ul,.tabs-dropdown ol {background-color: white}
+/*]]>*/</style>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Hello_Baxter rootpage-Hello_Baxter skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Hello+Baxter&amp;returntoquery=oldid%3D3776">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Hello Baxter</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Hello_Baxter&amp;oldid=3776#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Hello_Baxter&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Hello_Baxter&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Hello_Baxter" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 21:41, 7 January 2015 by <a href="index.php?title=User:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Imcmahon (page does not exist)"><bdi>Imcmahon</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Imcmahon (page does not exist)">talk</a> | <a href="../Special:Contributions/Imcmahon" class="mw-usertoollinks-contribs" title="Special:Contributions/Imcmahon">contribs</a>)</span> <span class="comment">(<a href="index.php?title=Hello_Baxter&amp;oldid=3776#Step_1:_Setup_ROS_Environment">→</a>‎<span dir="auto"><span class="autocomment">Step 1: Setup ROS Environment</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Hello_Baxter&amp;diff=prev&amp;oldid=3776" title="Hello Baxter">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Hello_Baxter&amp;direction=prev&amp;oldid=3776" title="Hello Baxter">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Hello_Baxter&amp;oldid=3776#column-one">navigation</a>, <a href="index.php?title=Hello_Baxter&amp;oldid=3776#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><a href="../Baxter_Setup" title="Baxter Setup"><img alt="BaxterSetupInactive.png" src="images/thumb/1/17/BaxterSetupInactive.png/120px-BaxterSetupInactive.png" width="120" height="75" srcset="/wiki/a/images/thumb/1/17/BaxterSetupInactive.png/180px-BaxterSetupInactive.png 1.5x, /wiki/a/images/thumb/1/17/BaxterSetupInactive.png/240px-BaxterSetupInactive.png 2x" /></a><a href="../Workstation_Setup" title="Workstation Setup"><img alt="TutorialTransitionArrow.png" src="images/thumb/3/3a/TutorialTransitionArrow.png/120px-TutorialTransitionArrow.png" width="120" height="137" srcset="/wiki/a/images/thumb/3/3a/TutorialTransitionArrow.png/180px-TutorialTransitionArrow.png 1.5x, /wiki/a/images/thumb/3/3a/TutorialTransitionArrow.png/240px-TutorialTransitionArrow.png 2x" /></a><a href="../Workstation_Setup" title="Workstation Setup"><img alt="WorkstationSetupInactive.png" src="images/thumb/0/0d/WorkstationSetupInactive.png/120px-WorkstationSetupInactive.png" width="120" height="75" srcset="/wiki/a/images/thumb/0/0d/WorkstationSetupInactive.png/180px-WorkstationSetupInactive.png 1.5x, /wiki/a/images/thumb/0/0d/WorkstationSetupInactive.png/240px-WorkstationSetupInactive.png 2x" /></a><a href="../Hello_Baxter" title="Hello Baxter"><img alt="TutorialTransitionArrowActive.png" src="images/thumb/d/d8/TutorialTransitionArrowActive.png/120px-TutorialTransitionArrowActive.png" width="120" height="137" srcset="/wiki/a/images/thumb/d/d8/TutorialTransitionArrowActive.png/180px-TutorialTransitionArrowActive.png 1.5x, /wiki/a/images/thumb/d/d8/TutorialTransitionArrowActive.png/240px-TutorialTransitionArrowActive.png 2x" /></a><a href="../Hello_Baxter" title="Hello Baxter"><img alt="HelloBaxterActive.png" src="images/thumb/6/68/HelloBaxterActive.png/120px-HelloBaxterActive.png" width="120" height="75" srcset="/wiki/a/images/thumb/6/68/HelloBaxterActive.png/180px-HelloBaxterActive.png 1.5x, /wiki/a/images/thumb/6/68/HelloBaxterActive.png/240px-HelloBaxterActive.png 2x" /></a>
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#Required_Hardware"><span class="tocnumber">2</span> <span class="toctext">Required Hardware</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#Step_1:_Setup_ROS_Environment"><span class="tocnumber">3</span> <span class="toctext">Step 1: Setup ROS Environment</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#Source_ROS_Environment_Setup_Script"><span class="tocnumber">3.1</span> <span class="toctext">Source ROS Environment Setup Script</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#Step_2:_Verify_ROS_Connectivity"><span class="tocnumber">4</span> <span class="toctext">Step 2: Verify ROS Connectivity</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#Verify_ROS_Master_Ping"><span class="tocnumber">4.1</span> <span class="toctext">Verify ROS Master Ping</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#View_Available_ROS_Topics"><span class="tocnumber">4.2</span> <span class="toctext">View Available ROS Topics</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#Verify_Development_Workstation_Ping"><span class="tocnumber">4.3</span> <span class="toctext">Verify Development Workstation Ping</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#Echo_a_ROS_Topic"><span class="tocnumber">4.4</span> <span class="toctext">Echo a ROS Topic</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#Step_3:_Enable_the_Robot"><span class="tocnumber">5</span> <span class="toctext">Step 3: Enable the Robot</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#Step_4:_Run_an_Example_Program"><span class="tocnumber">6</span> <span class="toctext">Step 4: Run an Example Program</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#Step_5:_Interactively_Program_Baxter"><span class="tocnumber">7</span> <span class="toctext">Step 5: Interactively Program Baxter</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#Next_Steps"><span class="tocnumber">8</span> <span class="toctext">Next Steps</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="index.php?title=Hello_Baxter&amp;oldid=3776#Trouble.3F"><span class="tocnumber">9</span> <span class="toctext">Trouble?</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<p><span style="font-size:120%;"><b>You've set up your Baxter and Development PC. This tutorial will show you how to communicate with Baxter, moving the arms, and allowing him to say "Hello!" to your lab.</b></span>
+</p>
+<h2><span class="mw-headline" id="Required_Hardware">Required Hardware</span></h2>
+<ul><li>1 Baxter Research Robot (SKU 30679)</li>
+<li>1 Development Workstation (Meeting <a href="../System_requirements" title="System requirements"> Minimum System Requirements</a>)</li></ul>
+<h2><span class="mw-headline" id="Step_1:_Setup_ROS_Environment">Step 1: Setup ROS Environment</span></h2>
+<p>Upon compilation of our <a rel="nofollow" class="external text" href="http://wiki.ros.org/catkin/workspaces">catkin workspace</a>, the generated <code>devel</code> folder in the root of our catkin workspace will contain a setup script which informs the ROS environment of our compiled catkin workspace and the packages therein. The root of the catkin workspace that we created is located at <code>~/ros_ws</code>.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Move to root of our catkin workspace</span>
+$ <span class="nb">cd</span> ~/ros_ws
+</pre></div>
+<p>If the <code>devel</code> folder is not available in the root of your catkin_ws, your catkin/ROS workspace (~/ros_ws) is not yet compiled:
+</p>
+<form id="tabs-inputform" class="tabs tabs-inputform" action="index.php?title=Hello_Baxter&amp;oldid=3776#"></form><div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-1-0" name="tabs-1" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-1-1" name="tabs-1" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-1-1" data-tabpos="1">ROS Indigo</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-1-2" name="tabs-1" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-1-2" data-tabpos="2">ROS Hydro</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-1-3" name="tabs-1" class="tabs-input tabs-input-3" /><label class="tabs-label" for="tabs-input-1-3" data-tabpos="3">ROS Groovy</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">source</span> /opt/ros/indigo/setup.bash
+$ catkin_make
+</pre></div>
+</div>
+<div class="tabs-content tabs-content-2">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">source</span> /opt/ros/hydro/setup.bash
+$ catkin_make
+</pre></div>
+</div>
+<div class="tabs-content tabs-content-3">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">source</span> /opt/ros/groovy/setup.bash
+$ catkin_make
+</pre></div>
+</div>
+</div></div>
+<h3><span class="mw-headline" id="Source_ROS_Environment_Setup_Script">Source ROS Environment Setup Script</span></h3>
+<div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-2-0" name="tabs-2" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-2-1" name="tabs-2" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-2-1" data-tabpos="1">Baxter.sh ROS Environment Setup</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-2-2" name="tabs-2" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-2-2" data-tabpos="2">Standard bashrc ROS Environment Setup</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Source baxter.sh script</span>
+$ . baxter.sh
+</pre></div>
+</div>
+<div class="tabs-content tabs-content-2">
+<p>Your ROS environment should be preconfigured upon terminal startup.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Source our generated ROS workspace setup script</span>
+$ <span class="nb">source</span> devel/setup.bash
+</pre></div>
+</div>
+</div></div>
+<h2><span class="mw-headline" id="Step_2:_Verify_ROS_Connectivity">Step 2: Verify ROS Connectivity</span></h2>
+<p>In this step, we will verify communication to and from Baxter and our development workstation.
+</p>
+<h3><span class="mw-headline" id="Verify_ROS_Master_Ping">Verify ROS Master Ping</span></h3>
+<p>The development workstation must be able to resolve the <a rel="nofollow" class="external text" href="http://wiki.ros.org/Master">ROS Master</a> (running on Baxter). This is defined by the ROS_MASTER_URI which has been set. This ROS_MASTER_URI is typically the <a href="../Robot_Hostname" title="Robot Hostname"> ROBOT_HOSTNAME</a> configured (your <a href="../Serial_Number" title="Serial Number"> robot serial number</a> by default).
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Identify the ROS Master location</span>
+$ env <span class="p">|</span> grep ROS_MASTER_URI
+</pre></div>
+<p>The result (example):
+<code>ROS_MASTER_URI=<a rel="nofollow" class="external free" href="http://011303P0017.local:11311">http://011303P0017.local:11311</a></code>
+<code>011303P0017.local</code> in this case is the location of our ROS Master. The development PC must be able to resolve and communicate with this Master.
+</p><p>Verify ability ping our ROS Master:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ ping &lt;our ROS Master&gt;
+<span class="c1"># Example</span>
+$ ping 011303P0017.local
+</pre></div>
+<h3><span class="mw-headline" id="View_Available_ROS_Topics">View Available ROS Topics</span></h3>
+<p>Now that we have identified our ROS Master is available on our network, lets view the available <a rel="nofollow" class="external text" href="http://wiki.ros.org/rostopic">rostopics</a>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rostopic list
+</pre></div>
+<h3><span class="mw-headline" id="Verify_Development_Workstation_Ping">Verify Development Workstation Ping</span></h3>
+<p>We have verified communication from the development pc to Baxter. Now we will SSH to Baxter and verify communication from Baxter to the development PC.
+</p><p>Baxter must be able to resolve ROS_IP or ROS_HOSTNAME (only one should be set) which has been set.
+</p><p>Identify your ROS_IP or ROS_HOSTNAME set (<a href="../Workstation_Setup#Step_4:_Configure_Baxter_Communication.2FROS_Workspace" title="Workstation Setup"> ROS_IP was previously recommended</a>):
+</p>
+<div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-3-0" name="tabs-3" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-3-1" name="tabs-3" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-3-1" data-tabpos="1">ROS_IP</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-3-2" name="tabs-3" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-3-2" data-tabpos="2">ROS_HOSTNAME</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Identify your ROS_IP</span>
+$ env <span class="p">|</span> grep ROS_IP
+</pre></div>
+<p>The result (example):
+<code>ROS_IP=192.168.101.99</code>
+</p><p><code>192.168.101.99</code> in this case is the IP address which must be resolvable to Baxter and all other ROS processes.
+</p>
+</div>
+<div class="tabs-content tabs-content-2">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Identify your ROS_HOSTNAME</span>
+$ env <span class="p">|</span> grep ROS_HOSTNAME
+</pre></div>
+<p>The result (example):
+<code>ROS_HOSTNAME=yoda</code>
+</p><p><code>yoda</code> in this case is the Hostname which must be resolvable to Baxter and all other ROS processes.
+</p>
+</div>
+</div></div>
+<p>We will now SSH to Baxter and verify the ability to communicate with this development PC. For SSH access, please use the ROS Master (ROBOT_HOSTNAME) identified above. 
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ ssh ruser@&lt;our ROS Master&gt;
+
+<span class="c1"># Password: rethink</span>
+
+<span class="c1"># Example:</span>
+$ ssh ruser@011303P0017.local
+
+<span class="c1"># Now that we have SSH&#39;d into the robot, verify that we are able to ping back to the development PC</span>
+ruser@p99 ~ $ ping &lt;ROS_IP/ROS_HOSTNAME&gt;
+
+<span class="c1"># Examples:</span>
+<span class="c1"># ROS_IP</span>
+ruser@p99 ~ $ ping <span class="m">192</span>.168.101.99
+<span class="c1"># ROS_HOSTNAME</span>
+ruser@p99 ~ $ ping yoda
+</pre></div>
+<p>We can now exit our SSH session on the robot:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>ruser@p99 ~ $ <span class="nb">exit</span>
+</pre></div>
+<h3><span class="mw-headline" id="Echo_a_ROS_Topic">Echo a ROS Topic</span></h3>
+<p>Now that we have seen the available <a rel="nofollow" class="external text" href="http://wiki.ros.org/rostopic">rostopics</a>, and have verified communication to and from Baxter and our development PC, we can connect to and echo the contents being published to a chosen topic:
+</p><p>Double check that our workspace is still configured correctly:
+</p>
+<div class="tabs tabs-tabbox"><input type="radio" form="tabs-inputform" id="tabs-input-4-0" name="tabs-4" class="tabs-input tabs-input-0" checked="" /><input type="radio" form="tabs-inputform" id="tabs-input-4-1" name="tabs-4" class="tabs-input tabs-input-1" /><label class="tabs-label" for="tabs-input-4-1" data-tabpos="1">Baxter.sh ROS Environment Setup</label><wbr /><input type="radio" form="tabs-inputform" id="tabs-input-4-2" name="tabs-4" class="tabs-input tabs-input-2" /><label class="tabs-label" for="tabs-input-4-2" data-tabpos="2">Standard bashrc ROS Environment Setup</label><wbr /><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> ~/ros_ws
+$ . baxter.sh
+</pre></div>
+</div>
+<div class="tabs-content tabs-content-2">
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ <span class="nb">cd</span> ~/ros_ws
+$ <span class="nb">source</span> devel/setup.bash
+</pre></div>
+</div>
+</div></div>
+<p>Echo Baxter's <a rel="nofollow" class="external text" href="http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html">joint_states</a>
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rostopic <span class="nb">echo</span> /robot/joint_states
+</pre></div>
+<p>You should see a continuous stream of Baxter's joint names with measured positions, velocities and torques.
+</p><p>All is well! You have successfully setup communication between your development PC and Baxter.
+</p>
+<h2><span class="mw-headline" id="Step_3:_Enable_the_Robot">Step 3: Enable the Robot</span></h2>
+<p>A fundamental tool for use when working with Baxter, the enable_robot tool, provided in the baxter_tools SDK package, allows for enabling/disabling/resetting/stopping the robot. Baxter must be enabled in order to actively command any of the motors.
+</p><p>Enable the robot:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun baxter_tools enable_robot.py -e
+</pre></div>
+<p>Baxter will now be enabled. The joints will be powered, and Baxter will hold his current joint positions with in a position control loop.
+</p><p>Grabbing Baxter's cuff:
+</p><p><a href="../File:Cuff_grasp.png" class="image"><img alt="Cuff grasp.png" src="images/1/1f/Cuff_grasp.png" width="148" height="108" /></a>
+</p><p>Enters Baxter's arms into "Zero-G" mode. The position control loop will be released with solely gravity compensation enabled. This allows for intuitive hand-over-hand guidance of the limbs throughout the workspace.
+</p>
+<h2><span class="mw-headline" id="Step_4:_Run_an_Example_Program">Step 4: Run an Example Program</span></h2>
+<p>A number of Baxter <a href="../Example_Programs" class="mw-redirect" title="Example Programs"> example programs</a> are provided which use the baxter_interface package which contains Python modules for Baxter Research Robot development.
+</p><p>Run an example program:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun baxter_examples joint_velocity_wobbler.py
+</pre></div>
+<p>This example will simply move the arms to a neutral position, enter into velocity control mode, moving each joint through a random sinusoidal motion. More about this example on the <a href="../Wobbler_Example" title="Wobbler Example"> Joint Velocity Wobbler Example Page</a>.
+</p>
+<h2><span class="mw-headline" id="Step_5:_Interactively_Program_Baxter">Step 5: Interactively Program Baxter</span></h2>
+<p>Time to program Baxter! We will now use an interactive <a rel="nofollow" class="external text" href="https://docs.python.org/2/tutorial/interpreter.html#interactive-mode">Python Shell</a> to programmatically move the arms.
+</p><p>Make sure Baxter is enabled:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun baxter_tools enable_robot.py -e
+</pre></div>
+<p>Start an Interactive Python Shell:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ python
+
+<span class="c1"># Import the necessary Python modules</span>
+
+<span class="c1"># rospy - ROS Python API</span>
+&gt;&gt;&gt; import rospy
+
+<span class="c1"># baxter_interface - Baxter Python API</span>
+&gt;&gt;&gt; import baxter_interface
+
+<span class="c1"># initialize our ROS node, registering it with the Master</span>
+&gt;&gt;&gt; rospy.init_node<span class="o">(</span><span class="s1">&#39;Hello_Baxter&#39;</span><span class="o">)</span>
+
+<span class="c1"># create an instance of baxter_interface&#39;s Limb class</span>
+&gt;&gt;&gt; <span class="nv">limb</span> <span class="o">=</span> baxter_interface.Limb<span class="o">(</span><span class="s1">&#39;right&#39;</span><span class="o">)</span>
+
+<span class="c1"># get the right limb&#39;s current joint angles</span>
+&gt;&gt;&gt; <span class="nv">angles</span> <span class="o">=</span> limb.joint_angles<span class="o">()</span>
+
+<span class="c1"># print the current joint angles</span>
+&gt;&gt;&gt; print angles
+
+<span class="c1"># reassign new joint angles (all zeros) which we will later command to the limb</span>
+&gt;&gt;&gt; angles<span class="o">[</span><span class="s1">&#39;right_s0&#39;</span><span class="o">]=</span><span class="m">0</span>.0
+&gt;&gt;&gt; angles<span class="o">[</span><span class="s1">&#39;right_s1&#39;</span><span class="o">]=</span><span class="m">0</span>.0
+&gt;&gt;&gt; angles<span class="o">[</span><span class="s1">&#39;right_e0&#39;</span><span class="o">]=</span><span class="m">0</span>.0
+&gt;&gt;&gt; angles<span class="o">[</span><span class="s1">&#39;right_e1&#39;</span><span class="o">]=</span><span class="m">0</span>.0
+&gt;&gt;&gt; angles<span class="o">[</span><span class="s1">&#39;right_w0&#39;</span><span class="o">]=</span><span class="m">0</span>.0
+&gt;&gt;&gt; angles<span class="o">[</span><span class="s1">&#39;right_w1&#39;</span><span class="o">]=</span><span class="m">0</span>.0
+&gt;&gt;&gt; angles<span class="o">[</span><span class="s1">&#39;right_w2&#39;</span><span class="o">]=</span><span class="m">0</span>.0
+
+<span class="c1"># print the joint angle command</span>
+&gt;&gt;&gt; print angles
+
+<span class="c1"># move the right arm to those joint angles</span>
+&gt;&gt;&gt; limb.move_to_joint_positions<span class="o">(</span>angles<span class="o">)</span>
+
+<span class="c1"># Baxter wants to say hello, let&#39;s wave the arm</span>
+
+<span class="c1"># store the first wave position </span>
+&gt;&gt;&gt; <span class="nv">wave_1</span> <span class="o">=</span> <span class="o">{</span><span class="s1">&#39;right_s0&#39;</span>: -0.459, <span class="s1">&#39;right_s1&#39;</span>: -0.202, <span class="s1">&#39;right_e0&#39;</span>: <span class="m">1</span>.807, <span class="s1">&#39;right_e1&#39;</span>: <span class="m">1</span>.714, <span class="s1">&#39;right_w0&#39;</span>: -0.906, <span class="s1">&#39;right_w1&#39;</span>: -1.545, <span class="s1">&#39;right_w2&#39;</span>: -0.276<span class="o">}</span>
+
+<span class="c1"># store the second wave position</span>
+&gt;&gt;&gt; <span class="nv">wave_2</span> <span class="o">=</span> <span class="o">{</span><span class="s1">&#39;right_s0&#39;</span>: -0.395, <span class="s1">&#39;right_s1&#39;</span>: -0.202, <span class="s1">&#39;right_e0&#39;</span>: <span class="m">1</span>.831, <span class="s1">&#39;right_e1&#39;</span>: <span class="m">1</span>.981, <span class="s1">&#39;right_w0&#39;</span>: -1.979, <span class="s1">&#39;right_w1&#39;</span>: -1.100, <span class="s1">&#39;right_w2&#39;</span>: -0.448<span class="o">}</span>
+
+<span class="c1"># wave three times</span>
+&gt;&gt;&gt; <span class="k">for</span> _move in range<span class="o">(</span><span class="m">3</span><span class="o">)</span>:
+...     limb.move_to_joint_positions<span class="o">(</span>wave_1<span class="o">)</span>
+...     limb.move_to_joint_positions<span class="o">(</span>wave_2<span class="o">)</span>
+
+
+<span class="c1"># quit</span>
+&gt;&gt;&gt; quit<span class="o">()</span>
+</pre></div>
+<p><br />
+<b>Congratulations! You have successfully completed the installation tutorials!</b>
+</p>
+<h2><span class="mw-headline" id="Next_Steps">Next Steps</span></h2>
+<p><b>You've done it!</b> Now that you've successfully completed the installation guide, there is much more to learn.
+</p><p>Places to start:
+<a href="../Learning" title="Learning"> <b>Learning Area</b></a> - main stop for digging in deeper.
+</p><p><br />
+</p>
+<h2><span id="Trouble?"></span><span class="mw-headline" id="Trouble.3F">Trouble?</span></h2>
+<p>Please visit our <a href="../Troubleshooting" title="Troubleshooting"> <b>Troubleshooting Section</b></a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815160604
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.065 seconds
+Real time usage: 2.441 seconds
+Preprocessor visited node count: 258/1000000
+Preprocessor generated node count: 774/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 2/20
+Unstrip post‐expand size: 12602/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:421-0!canonical and timestamp 20190815160601 and revision id 3776
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Hello_Baxter&amp;oldid=3776">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Hello_Baxter&amp;oldid=3776</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.065","walltime":"2.441","ppvisitednodes":{"value":258,"limit":1000000},"ppgeneratednodes":{"value":774,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":2,"limit":20},"unstrip-size":{"value":12602,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815160604","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":118});});</script></body></html>

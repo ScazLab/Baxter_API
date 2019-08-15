@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Learning - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Learning","wgTitle":"Learning","wgCurRevisionId":3177,"wgRevisionId":3177,"wgArticleId":479,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Learning","wgRelevantArticleId":479,"wgRequestId":"0201bc9383e142b5be26a3c8","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["sysop"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Learning rootpage-Learning skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Learning&amp;returntoquery=oldid%3D3177">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Learning</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Learning&amp;oldid=3177#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Learning&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Learning&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Learning" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 14:01, 29 July 2014 by <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sdkuser (page does not exist)"><bdi>Sdkuser</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sdkuser&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sdkuser (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sdkuser" class="mw-usertoollinks-contribs" title="Special:Contributions/Sdkuser">contribs</a>)</span> <span class="comment">(Protected &quot;<a href="../Learning" title="Learning">Learning</a>&quot;: Testing protection bot settings on one page ([Edit=Allow only autoconfirmed users] (indefinite) [Move=Allow only administrators] (indefinite)))</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Learning&amp;diff=prev&amp;oldid=3177" title="Learning">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Learning&amp;direction=prev&amp;oldid=3177" title="Learning">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Learning&amp;oldid=3177#column-one">navigation</a>, <a href="index.php?title=Learning&amp;oldid=3177#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="wikitable" style="background-color:#ffffff;">
+
+<tbody><tr style="vertical-align:middle;">
+<th style="height:50px; width:100px; font-size:200%; text-align:center;"><a href="../Foundations" title="Foundations">Foundations</a>
+</th>
+<th style="height:50px; width:100px; font-size:200%; text-align:center;;"><a href="../Advanced_Understanding" title="Advanced Understanding">Advanced Understanding</a>
+</th>
+<th style="height:50px; width:100px; font-size:200%; text-align:center;;"><a href="../Tools" title="Tools">Tools</a>
+</th>
+<th style="height:50px; width:100px; font-size:200%; text-align:center;;"><a href="../Configuration_and_Admin" title="Configuration and Admin"> Configuration/Admin</a>
+</th></tr>
+<tr style="vertical-align:middle;">
+<td style="height:200px; width:200px; font-size:200%; text-align:center;"><a href="../Foundations" title="Foundations"><img alt="Icon Book.png" src="images/e/ea/Icon_Book.png" width="200" height="200" /></a>
+</td>
+<td style="height:200px; width:200px; font-size:200%; text-align:center;"><a href="../Advanced_Understanding" title="Advanced Understanding"><img alt="Icon GradCap.png" src="images/7/70/Icon_GradCap.png" width="200" height="200" /></a>
+</td>
+<td style="height:200px; width:200px; font-size:200%; text-align:center;;"><a href="../Tools" title="Tools"><img alt="Icon Tools.png" src="images/4/4d/Icon_Tools.png" width="200" height="200" /></a>
+</td>
+<td style="height:200px; width:200px; font-size:200%; text-align:center;;"><a href="../Configuration_and_Admin" title="Configuration and Admin"><img alt="Icon Gear.png" src="images/8/87/Icon_Gear.png" width="200" height="200" /></a>
+</td></tr>
+<tr style="vertical-align:middle;">
+<td style="height:50px; width:400px; font-size:150%; text-align:center;;"><b>SDK Foundation</b>
+</td>
+<td style="height:50px; width:400px; font-size:150%; text-align:center;;"><b>Further Understanding &amp; Advanced Concepts</b>
+</td>
+<td style="height:50px; width:400px; font-size:150%; text-align:center;;"><b>External Tools</b>
+</td>
+<td style="height:50px; width:400px; font-size:150%; text-align:center;;"><b>Setup, System Admin &amp; Maintenance</b>
+</td></tr>
+<tr style="vertical-align:middle;">
+<td style="height:50px; width:400px; font-size:150%; text-align:center;;"><a href="../Foundations#First_Steps" title="Foundations"> First Steps</a><br /><a href="../Foundations#Writing_Programs" title="Foundations"> Writing Programs</a><br /><a href="../Foundations#Robot_Foundations" title="Foundations"> Robot Foundations</a><br /><a href="../Foundations#Resources" title="Foundations"> Resources</a>
+</td>
+<td style="height:50px; width:400px; font-size:150%; text-align:center;;"><a href="../Advanced_Understanding#Conceptual_Overviews_.28Concepts.29" title="Advanced Understanding"> Conceptual Overview</a><br /><a href="../Advanced_Understanding#Robot" title="Advanced Understanding"> Baxter Platform</a><br /><a href="../Advanced_Understanding#Concepts_.2F_Advanced" title="Advanced Understanding"> Advanced Concepts</a>
+</td>
+<td style="height:50px; width:400px; font-size:150%; text-align:center;;"><a href="../Tools#Standard_Operational_Tools" title="Tools"> Operational Tools</a><br /><a href="../Tools#Supported_External_Tools" title="Tools"> External Tools</a><br /><a href="../Tools#Using_Standard_ROS_Tools_with_Baxter" title="Tools"> Supported ROS Tools</a><br /><a href="../Tools#Resources" title="Tools"> Resources</a><br /><a href="../Tools#Links_to_Useful_ROS_Tools" title="Tools"> ROS Tools Links</a>
+</td>
+<td style="height:50px; width:400px; font-size:150%; text-align:center;;"><a href="../Configuration_and_Admin#Robot_Configuration" title="Configuration and Admin"> Robot Configuration</a><br /><a href="../Configuration_and_Admin#Software_Updates" title="Configuration and Admin"> Software Updates</a><br /><a href="../Configuration_and_Admin#Maintenance.2FDebug_Tools" title="Configuration and Admin"> Maintenance/Debug Tools</a><br /><a href="../Configuration_and_Admin#Admin_Resources" title="Configuration and Admin">Resources</a><br /><a href="../Configuration_and_Admin#System_Info" title="Configuration and Admin"> System Info</a>
+</td></tr></tbody></table>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815153356
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.014 seconds
+Real time usage: 0.018 seconds
+Preprocessor visited node count: 1/1000000
+Preprocessor generated node count: 4/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 1/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:479-0!canonical and timestamp 20190815153356 and revision id 3177
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Learning&amp;oldid=3177">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Learning&amp;oldid=3177</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.014","walltime":"0.018","ppvisitednodes":{"value":1,"limit":1000000},"ppgeneratednodes":{"value":4,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":1,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815153356","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":36});});</script></body></html>

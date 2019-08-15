@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Rviz - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Rviz","wgTitle":"Rviz","wgCurRevisionId":3780,"wgRevisionId":0,"wgArticleId":310,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Rviz","wgRelevantArticleId":310,"wgRequestId":"b856073305b3ad2e0a91c1ac","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Rviz rootpage-Rviz skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Rviz&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Rviz</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Rviz&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Rviz&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Rviz&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Rviz" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Rviz" title="Rviz">Rviz</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Rviz&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Rviz&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">[[File:rviz_2014.png]]
+&lt;div class="toclimit-2" style="float:left; margin-right:10px; clear:left;">__TOC__&lt;/div>
+
+&lt;div style="clear:both">
+= Overview =
+&lt;/div>
+
+
+&lt;span style="font-size:125%;">
+[http://wiki.ros.org/rviz rviz (ROS visualization)] is a 3D visualizer for displaying sensor data and state information from ROS.  Using rviz, you can visualize Baxter's current configuration on a virtual model of the robot.  You can also display live representations of sensor values coming over ROS Topics including camera data, infrared distance measurements, sonar data, and more.
+&lt;/span>
+
+= Installation =
+&lt;tabs>
+&lt;tab name="ROS Indigo">
+&lt;source lang="bash">
+$ sudo apt-get update
+$ sudo apt-get install ros-indigo-rviz
+&lt;/source>
+&lt;/tab>
+&lt;tab name="ROS Hydro">
+&lt;source lang="bash">
+$ sudo apt-get update
+$ sudo apt-get install ros-hydro-rviz
+&lt;/source>
+&lt;/tab>
+&lt;tab name="ROS Groovy">
+&lt;source lang="bash">
+$ sudo apt-get update
+$ sudo apt-get install ros-groovy-rviz
+&lt;/source>
+&lt;/tab>
+&lt;/tabs>
+
+= Usage =
+Start rviz from a [[RSDK_Shell | properly initialized environment]] using:
+&lt;source lang="bash">
+$ rosrun rviz rviz
+&lt;/source>
+
+
+----
+
+----
+
+
+Use a 'Fixed Frame' of &lt;code>/world&lt;/code>.
+
+''Info:'' The ‘Fixed Frame’ provides a static, base reference for your visualization.  Any sensor data that comes in to rviz will be transformed into that reference frame so it can be properly displayed in the virtual world.
+
+== Robot Visualization ==
+
+[[File:Rviz.png]]
+
+==== Add a Robot Model Display ====
+
+Select the ‘Add’ button under the Displays sidebar. In the Dialog that pops up, scroll to ‘Robot Model’ (under the ‘Builtin’ category), and then hit ‘OK’ to add a visual representation of the robot’s current pose.
+
+'''Note:''' By default, all the parameters should be set correctly but just in case check the following:
+* Robot Description:  &lt;code>robot_description&lt;/code>. &lt;code>robot_description&lt;/code> is the name of the ros parameter where the URDF is stored on parameter server.  (this stores the description of what links and joints are on the robot, and where they connect)
+
+* TF Prefix:  (blank). Change this if you have a tf tree under a different namespace.  For example, if you are publishing the robot’s intended pose under the  ‘/reference/____’ prefix; or if you have multiple robots, each with their own trees: ‘/baxter1/___’ , ‘/baxter2/___’.
+
+* Links: The links show the current transform of the robot’s links (i.e. where each link is actually positioned right now). (Optional) Test movement to see the virtual Baxter update
+
+== Adding a Simple Sensor ==
+
+==== Add a Range Display for an IR sensor ====
+
+* Add a new ‘Range’ display type, by clicking the ‘Add’ button and finding it under the ‘Builtin’ types.
+* Find the ‘Topic’ field under your new Range display, and use the ‘...’ button to open a new window with available Range topics currently being published.
+* Select the topic for the left IR sensor, which is under &lt;code>/robot/range/left_hand_range&lt;/code>, and hit ‘OK’.
+
+= Baxter Sensors for Visualization =
+
+==== Cameras ====
+* Topic Name: &lt;code>/cameras/${side}_hand_camera/image&lt;/code>
+* Left Hand: &lt;code>/cameras/left_hand_camera/image&lt;/code>
+* Right Hand: &lt;code>/cameras/right_hand_camera/image&lt;/code>
+* Display Type: Image
+
+==== Joint States ====
+''via Robot Model''  
+* Topic Name:  &lt;code>/robot/joint_states&lt;/code>
+* Display Type: Robot Model
+* Recommended Options:
+* Robot Description: &lt;code>robot_description&lt;/code>
+
+''via TF''  
+* Topic Name:  &lt;code>/tf&lt;/code>
+* Display Type:  TF
+* Recommended Options:
+* Disable all links starting with prefix /reference/`
+
+==== Sonar (Head) ====
+* Topic Name:  &lt;code>/robot/head/sonar/sonar/state&lt;/code>
+* Display Type: PointCloud
+* Recommended Options:
+* Color Transformer:  Intensity
+* Channel Name:  Distance
+
+==== IR Range Sensors (Hands) ====
+* Topic Name:  &lt;code>/robot/range/${side}_hand_range&lt;/code>
+* Display Type:  Range
+
+
+= Troubleshooting =
+For more information about rviz, see the original documentation for the tool at the [http://ros.org/wiki/rviz ROS wiki]:
+
+rviz uses Display Types to visualize different types of ROS messages.  This list shows available ROS topics and corresponding Display Types for sensors on Baxter. 
+
+Questions when using standard ROS tools are largely asked/responded to on [http://answers.ros.org/questions/ ROS Answers]
+
+==== Segmentation Fault ====
+
+Segmentation faults often point to incorrect graphics library configuration, or misconfigured rviz setups.
+
+'''Clean up rviz configuration'''
+This low-impact check will reset your rviz configuration:
+&lt;source lang="bash">
+$ rm ~/.rviz/*
+&lt;/source>
+
+==== Model is White/Grayed out ====
+
+Make sure you are receiving all necessary ROS topics and parameters.
+&lt;source lang="bash">
+$ rostopic echo /robot/joint_states
+&lt;/source>
+
+If unable to echo &lt;code>/robot/joint_states&lt;/code>, please see the [[Troubleshooting#Network_configuration_issues network configuration troubleshooting guide]]
+
+==== Flickering Flickering in rviz 3D and camera views ====
+This can occur with some graphics drivers (depends on computer and monitor)
+
+'''Solution:''' Unset the &lt;code>LIBGL_ALWAYS_INDIRECT&lt;/code> environment variable.  
+Right before starting rviz (or any gui program), check if the environment variable &lt;code>LIBGL_ALWAYS_INDIRECT&lt;/code> is set.  
+&lt;source lang="bash">
+$ env | grep LIBGL_ALWAYS_INDIRECT
+LIBGL_ALWAYS_INDIRECT=1
+&lt;/source>
+If so, unset the variable, then you can run rviz normally.
+&lt;source lang="bash">
+$ unset LIBGL_ALWAYS_INDIRECT
+&lt;/source>
+
+==== Graphics context not supported (i.e. trying to run rviz in VM) ====
+* (Ogre can’t make GL context) 
+
+==== Global: Fixed Frame is broken on start  (set to /map by default) ====
+
+==== Global: Fixed Frame is empty, as is drop-down ====
+* Try putting in an intentionally bad frame for Fixed Frame, then look under .Global Status at the error for it.  It will hopefully tell you that Fixed Frame is broken and your frame is bad, and then you will hopefully be able to click on the drop-down and see all the available frames. 
+
+==== When you try to Add >> Display Types, the list is empty ====
+Delete rviz configuration,
+
+&lt;source lang="bash">
+$ rm ~/.rviz/*
+&lt;/source>
+
+When restarting, verify origin frame is set to &lt;code>/world&lt;/code>
+
+==== RViz in VMWare ====
+
+* after making sure that my VM was using hardware acceleration, had mesa-utils installed (wasn’t by default, then I could run glxinfo, and glxgears; important information is glxinfo | grep direct --> giving: “direct rendering: Yes”), then I had to change the RTT Preferred Mode from PBuffer to Copy, by instead running rviz like this:  &lt;code>$ OGRE_RTT_MODE=”Copy” rosrun rviz rviz &amp;&lt;/code>
+* it would work intermittently (maybe not crash 1 out of 6 times)
+* Problem: The problem started with an error (when trying to run rviz) of:
+*:&lt;source lang="bash"> [ros - http://ptwo1:11311] rsdkuser@ubuntu:~/dev/ros_ws$ [ INFO] [1357935356.117148281]: rviz revision number 1.6.7 
+ [ INFO] [1357935356.117316987]: ogre_tools revision number 1.6.3 
+ [ INFO] [1357935356.117330449]: compiled against OGRE version 1.7.3 (Cthugha) 
+ [ INFO] [1357935356.449287289]: Loading general config from [/home/rsdkuser/.rviz/config] 
+ [ INFO] [1357935356.449722678]: Loading display config from [/home/rsdkuser/.rviz/display_config] 
+ [ INFO] [1357935356.511535673]: RTT Preferred Mode is PBuffer. 
+ [ERROR] [1357935356.513657284]: Caught exception while loading: OGRE EXCEPTION(3:RenderingAPIException): Unable to create a suitable GLXContext in GLXContext::GLXContext at /tmp/buildd/ros-electric-visualization-common-1.6.3/debian/ros-electric-visualization-common/opt/ros/electric/stacks/visualization_common/ogre/build/ogre_src_v1-7-3/RenderSystems/GL/src/GLX/OgreGLXContext.cpp (line 61) 
+&lt;/source>
+* Solution: mesa was not installed completely
+** trying to run glxinfo failed, because it wasn’t installed; told me to install mesa-utils
+** ran: $ sudo apt-get install mesa-utils
+** now glxinfo works, can run $ glxinfo | grep version to see version info:
+** can also run glxgears. (not sure if I may have been able to before too)
+*** Problem: Still getting same error on rviz start though
+* Solution: Found out people get that error when LIBGL_ALWAYS_INDIRECT=”1” is set.
+** Also found that that is a compviz error!  It is set when you open a terminal using Ctrl+Alt+T!!!
+** unset it, and the red exception error went away
+**** Problem: rviz still won’t start up but crashes intermittently with either an X Error of ‘BadDrawable (invalid Pixmap or Window parameter)’, or just Seg Faults.
+* Solution: Found out this is a known intermittent problem by looking at the rviz troubleshooting page.  By setting the OGRE_RTT_MODE environment variable from “PBuffer” to “Copy” or “FBO”, can get it to work intermittently.
+** Resource page:  http://www.ros.org/wiki/rviz/Troubleshooting
+** so, to start rviz I run:  &lt;code>$ OGRE_RTT_MODE=”Copy” rosrun rviz rviz &amp;&lt;/code>
+** .. and it will work intermittently, though the rendering is a little wonky.
+
+==== Flickering 3D View ====
+* make sure you have unset LIBGL_ALWAYS_INDIRECT
+
+==== 3D Hardware Acceleration ====
+*. Installing/uninstalling graphics drivers
+*. VM / capability
+*. glxinfo
+
+==== Bypassing Hardware Acceleration ====
+* In the event you cannot get Hardware Acceleration to work, you can try setting rviz up to only use software rendering:
+&lt;source lang="bash">
+        $ unset LIBGL_ALWAYS_INDIRECT
+        $ export LIBGL_ALWAYS_SOFTWARE=1
+        $ rosrun rviz rviz &amp;
+&lt;/source>
+* If this still doesn't work, try additionally running with the alternative values for the &lt;code>OGRE_RTT_MODE&lt;/code> variable (see #6), e.g:  
+&lt;source lang="bash">
+        $ OGRE_RTT_MODE=Copy rosrun rviz rviz &amp;
+&lt;/source>
+
+----
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Rviz" title="Rviz">Rviz</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Rviz">http://sdk.rethinkrobotics.com/wiki/Rviz</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":33});});</script></body></html>

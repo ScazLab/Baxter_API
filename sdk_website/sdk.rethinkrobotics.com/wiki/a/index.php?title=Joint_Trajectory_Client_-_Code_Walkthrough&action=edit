@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Joint Trajectory Client - Code Walkthrough - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Joint_Trajectory_Client_-_Code_Walkthrough","wgTitle":"Joint Trajectory Client - Code Walkthrough","wgCurRevisionId":3823,"wgRevisionId":0,"wgArticleId":512,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Joint_Trajectory_Client_-_Code_Walkthrough","wgRelevantArticleId":512,"wgRequestId":"9ac5724525fddd942fa4cab9","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Joint_Trajectory_Client_-_Code_Walkthrough rootpage-Joint_Trajectory_Client_-_Code_Walkthrough skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Joint+Trajectory+Client+-+Code+Walkthrough&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Joint Trajectory Client - Code Walkthrough</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Joint_Trajectory_Client_-_Code_Walkthrough&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Joint_Trajectory_Client_-_Code_Walkthrough&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Joint_Trajectory_Client_-_Code_Walkthrough&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Joint_Trajectory_Client_-_Code_Walkthrough" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Joint_Trajectory_Client_-_Code_Walkthrough" title="Joint Trajectory Client - Code Walkthrough">Joint Trajectory Client - Code Walkthrough</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Joint_Trajectory_Client_-_Code_Walkthrough&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Joint_Trajectory_Client_-_Code_Walkthrough&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">{{Template:Parent header|parent=Simple Joint trajectory example}}
+== Introduction ==
+
+This example demonstrates the usage of the Joint Trajectory Action server that performs a smooth trajectory motion, by sending manipulated joint positions to it. A set of Joint positions are hard-coded in the &lt;code>main()&lt;/code> function and these are passed to the &lt;code>start()&lt;/code> method. It is here that the joint positions are sent to the joint trajectory action server.&lt;br />
+'''Action Servers -''' robot/limb/left/follow_joint_trajectory, robot/limb/right/follow_joint_trajectory.
+
+== Code Walkthrough ==
+
+Now, let's break down the code.
+
+&lt;syntaxhighlight lang="python" line start="33" enclose="div">
+import argparse
+import sys
+
+from copy import copy
+
+import rospy
+
+import actionlib
+
+from control_msgs.msg import (
+    FollowJointTrajectoryAction,
+    FollowJointTrajectoryGoal,
+)
+from trajectory_msgs.msg import (
+    JointTrajectoryPoint,
+)
+
+import baxter_interface
+
+from baxter_interface import CHECK_VERSION
+&lt;/syntaxhighlight>
+
+This imports the baxter interface for accessing the limb and the gripper class. The &lt;code>actionlib&lt;/code> is imported to use its &lt;code>Action Server&lt;/code> class.The &lt;code>CHECK_VERSION&lt;/code> is imported to check if the software running on the robot would be compatible with this local version. It is not necessary to check the version in custom programs.
+
+&lt;syntaxhighlight lang="python" line start="55" enclose="div">
+class Trajectory(object):
+    def __init__(self, limb):
+        ns = 'robot/limb/' + limb + '/'
+        self._client = actionlib.SimpleActionClient(
+            ns + "follow_joint_trajectory",
+            FollowJointTrajectoryAction,
+        )
+        self._goal = FollowJointTrajectoryGoal()
+        server_up = self._client.wait_for_server(timeout=rospy.Duration(10.0))
+        if not server_up:
+            rospy.logerr("Timed out waiting for Joint Trajectory"
+                         " Action Server to connect. Start the action server"
+                         " before running example.")
+            rospy.signal_shutdown("Timed out waiting for Action Server")
+            sys.exit(1)
+        self.clear(limb)
+&lt;/syntaxhighlight>
+
+Action server client for the corresponding limb is created. The existence of action server for the limb is checked with a timeout of 10 seconds. If they are not available, a shutdown signal is sent and the program exits.
+
+&lt;syntaxhighlight lang="python" line start="72" enclose="div">
+    def add_point(self, positions, time):
+        point = JointTrajectoryPoint()
+        point.positions = copy(positions)
+        point.time_from_start = rospy.Duration(time)
+        self._goal.trajectory.points.append(point)
+&lt;/syntaxhighlight>
+
+This method creates a request message of the &lt;code>JointTrajectoryPoint&lt;/code> type and appends the goal position based on the side of the limb/gripper that is requesting. It compiles a list of joint positions.
+
+&lt;syntaxhighlight lang="python" line start="78" enclose="div">
+    def start(self):
+        self._goal.trajectory.header.stamp = rospy.Time.now()
+        self._client.send_goal(self._goal)
+&lt;/syntaxhighlight>
+
+The request message is sent to the &lt;code>joint trajectory action server&lt;/code> to start the execution of the trajectory.
+
+&lt;syntaxhighlight lang="python" line start="82" enclose="div">
+    def stop(self):
+        self._client.cancel_goal()
+&lt;/syntaxhighlight>
+
+The trajectory execution is stopped by sending cancel goals to the &lt;code>joint trajectory action server&lt;/code>.
+
+&lt;syntaxhighlight lang="python" line start="85" enclose="div">
+    def wait(self, timeout=15.0):
+        self._client.wait_for_result(timeout=rospy.Duration(timeout))
+&lt;/syntaxhighlight>
+
+This method waits for the completion of the trajectory execution by &lt;code>joint trajectory action server&lt;/code>.
+
+&lt;syntaxhighlight lang="python" line start="82" enclose="div">
+    def result(self):
+        return self._client.get_result()
+&lt;/syntaxhighlight>
+
+The feedback from the &lt;code>joint trajectory action server&lt;/code> can be retrieved using this method. This method is not used in this example. However, the user may modify the code and use this method to retrieve feedback messages like the errors, from the action server.
+
+&lt;syntaxhighlight lang="python" line start="91" enclose="div">
+    def clear(self, limb):
+        self._goal = FollowJointTrajectoryGoal()
+        self._goal.trajectory.joint_names = [limb + '_' + joint for joint in \
+            ['s0', 's1', 'e0', 'e1', 'w0', 'w1', 'w2']]
+&lt;/syntaxhighlight>
+
+The joint names field in the &lt;code>_goal&lt;/code> message is populated with the joint names in the corresponding limb.
+
+&lt;syntaxhighlight lang="python" line start="97" enclose="div">
+def main():
+    """RSDK Joint Trajectory Example: Simple Action Client
+
+    Creates a client of the Joint Trajectory Action Server
+    to send commands of standard action type,
+    control_msgs/FollowJointTrajectoryAction.
+
+    Make sure to start the joint_trajectory_action_server.py
+    first. Then run this example on a specified limb to
+    command a short series of trajectory points for the arm
+    to follow.
+    """
+    arg_fmt = argparse.RawDescriptionHelpFormatter
+    parser = argparse.ArgumentParser(formatter_class=arg_fmt,
+                                     description=main.__doc__)
+    required = parser.add_argument_group('required arguments')
+    required.add_argument(
+        '-l', '--limb', required=True, choices=['left', 'right'],
+        help='send joint trajectory to which limb'
+    )
+    args = parser.parse_args(rospy.myargv()[1:])
+    limb = args.limb
+&lt;/syntaxhighlight>
+
+The side of the limb on which the example is to be executed is parsed from the command line arguments.
+
+&lt;syntaxhighlight lang="python" line start="132" enclose="div">
+    traj = Trajectory(limb)
+    rospy.on_shutdown(traj.stop)
+    # Command Current Joint Positions first
+    limb_interface = baxter_interface.limb.Limb(limb)
+    current_angles = [limb_interface.joint_angle(joint) for joint in limb_interface.joint_names()]
+    traj.add_point(current_angles, 0.0)
+
+    # Command Current Joint Positions first
+    limb_interface = baxter_interface.limb.Limb(limb)
+    current_angles = [limb_interface.joint_angle(joint) for joint in limb_interface.joint_names()]
+    traj.add_point(current_angles, 0.0)
+
+    p1 = positions[limb]
+    traj.add_point(p1, 7.0)
+    traj.add_point([x * 0.75 for x in p1], 9.0)
+    traj.add_point([x * 1.25 for x in p1], 12.0)
+    traj.start()
+    traj.wait(15.0)
+    print("Exiting - Joint Trajectory Action Test Complete")
+
+if __name__ == "__main__":
+    main()
+&lt;/syntaxhighlight>
+
+The joint positions to be passed to the action server are hard coded and then the &lt;code>start()&lt;/code> method is called as explained above.
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="../Template:Parent_header" title="Template:Parent header">Template:Parent header</a> (<a href="index.php?title=Template:Parent_header&amp;action=edit" title="Template:Parent header">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Joint_Trajectory_Client_-_Code_Walkthrough" title="Joint Trajectory Client - Code Walkthrough">Joint Trajectory Client - Code Walkthrough</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Joint_Trajectory_Client_-_Code_Walkthrough">http://sdk.rethinkrobotics.com/wiki/Joint_Trajectory_Client_-_Code_Walkthrough</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":36});});</script></body></html>

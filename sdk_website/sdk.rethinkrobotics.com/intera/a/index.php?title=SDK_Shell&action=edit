@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for SDK Shell - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"SDK_Shell","wgTitle":"SDK Shell","wgCurRevisionId":1303,"wgRevisionId":0,"wgArticleId":36,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"SDK_Shell","wgRelevantArticleId":36,"wgRequestId":"e81d978bc09f61ff6927de9e","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-SDK_Shell rootpage-SDK_Shell skin-cavendishrr action-edit"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=SDK+Shell&amp;returntoquery=action%3Dedit">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=SDK_Shell&amp;action=edit#">More</a>
+                <ul>
+                <li id="ca-viewsource" class="selected"><a href="index.php?title=SDK_Shell&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=SDK_Shell&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../SDK_Shell" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">View source for SDK Shell</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=SDK_Shell&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                ← <a href="../SDK_Shell" title="SDK Shell">SDK Shell</a>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=SDK_Shell&amp;action=edit#column-one">navigation</a>
+                    ,                     <a href="index.php?title=SDK_Shell&amp;action=edit#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Intera_SDK:Users&amp;action=edit&amp;redlink=1" class="new" title="Intera SDK:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">__NOTOC__
+&lt;div class="title-block">
+
+&lt;span style="font-size:120%;">'''This tutorial describes the configuration of the ROS environment on your developer workstation'''&lt;/span>
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Overview ==
+
+To communicate with and command your robot, we must establish the connection between your development PC and the robot. Assuming proper [[Networking | network setup]], the SDK shell refers to the a configuration of your [http://wiki.ros.org/ROS/EnvironmentVariables ROS environment] which points your PC to the [http://wiki.ros.org/Master ROS Master], while registering your IP or Hostname allowing other processes to find you.
+
+
+The SDK provides a convenient script, &lt;code> intera.sh &lt;/code>, which helps foster the quickest and easiest ROS environment setup to get communicating with Sawyer. This script should have been installed/configured during [[Workstation_Setup | Workstation Setup Tutorial]], and the [[Hello Robot | Hello Robot! Tutorial]].
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Quick Environment Setup Via intera.sh ==
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ ./intera.sh
+&lt;/syntaxhighlight>
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Detailed Description/Setup ==
+
+=== intera.sh ROS Environment Setup ===
+
+The intera.sh script is a convenient script allowing users to get their ROS environment setup quickly. It should allow for intuitive modification of the core components to get communicating with Sawyer setup quickly. It creates a heredoc which verifies all environment variables expected are provided, with a handy sim argument for local configurations (useful for simulation), and local argument (useful when SSH'd into Sawyer with no need to communicate to external, off-robot processes). This subshell created has the custom prompt modifications (with color) for quick visual checks as well.
+
+=== Checkout Convenient intera.sh script ===
+
+Copy the intera.sh file from intera_sdk repo to ros workspace.
+
+=== Customize the intera.sh script ===
+
+Please edit the intera.sh shell script making the necessary modifications to describe your development PC.
+
+Using your favorite editor ([https://wiki.gnome.org/Apps/Gedit gedit] used for example)
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ gedit intera.sh
+&lt;/syntaxhighlight>
+
+=== Edit the 'robot_hostname' field ===
+
+Please edit the 'robot_hostname' field:
+&lt;syntaxhighlight lang="bash" enclose="div">
+# Specify robot's hostname
+**robot_hostname="robot_hostname"**
+&lt;/syntaxhighlight>
+Modifying where 'robot_hostname' is the [Robot_Hostname hostname of your robot]
+
+=== Edit 'your_ip' OR 'your_hostname' field ===
+
+Please edit the 'your_ip' field (only if not using 'your_hostname'):
+&lt;syntaxhighlight lang="bash" enclose="div">
+**your_ip="192.168.XXX.XXX"**
+&lt;/syntaxhighlight>
+Modifying where 'your_ip' is the IP address of your PC.
+
+Useful command for identifying your IP address:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ ifconfig
+# Result will be contained in the 'inet addr' field (Ubuntu) or 'inet' field (Gentoo Robot PC).
+&lt;/syntaxhighlight>
+
+'''Important:''' Only set either ROS_IP '''*OR*''' ROS_HOSTNAME.
+
+Setting of both ROS_IP and ROS_HOSTNAME will result in ROS_HOSTNAME taking priority, resulting in confusing environment setups. Comment out the unused method using the '#' as leading character.
+
+Alternatively, you may choose to use the hostname of your development PC. 
+
+Please edit the 'your_hostname' field (only if not using 'your_ip'):
+&lt;syntaxhighlight lang="bash" enclose="div">
+***your_hostname="my_computer***
+&lt;/syntaxhighlight>
+Modifying where 'your_hostname' is the hostname of your PC.
+
+'''Important:''' This hostname must be resolvable to the robot. To test if your hostname is resolvable to Sawyer, please visit the development PC [[Networking]] page.
+
+=== Edit 'ros_version' field ===
+
+Please edit the 'ros_version' field:
+&lt;syntaxhighlight lang="bash" enclose="div">
+***ros_version="indigo"***
+&lt;/syntaxhighlight>
+Modifying where 'ros_version' is the your chosen ROS release.
+
+=== Save and Close intera.sh script ===
+
+Please save and close the intera.sh script.
+
+=== Initialize your SDK environment ===
+
+From this point forward, your ROS environment setup should be as simple as running the intera.sh script from the root of your Catkin workspace:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ ./intera.sh
+&lt;/syntaxhighlight>
+
+You will see that your current shell prompt will be prefixed with:
+&lt;syntaxhighlight lang="bash" enclose="div">
+    [intera - http://&lt;robot_hostname>:11311]username@machine$
+&lt;/syntaxhighlight>
+This allows you to quickly view if your shell is configured for intera communication or not, and to which robot you are currently addressing (&lt;code>&lt;robot_hostname>&lt;/code>)
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Verify SDK Shell ==
+
+=== Test ability to ping robot. ===
+
+Ping what you have previously set as your &lt;code>robot_hostname&lt;/code>.
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ ping &lt;robot_hostname>
+# ex.
+$ ping 011304P0026
+&lt;/syntaxhighlight>
+
+If unable to ping the robot visit [[Connecting and Testing the Development Workstation|this page]].
+
+=== The robot should always enabled ===
+
+Sawyer should always enabled, if the robot is not enabled, try to enabled the robot use the following command:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_interface enable_robot.py -e
+&lt;/syntaxhighlight>
+
+If unsuccessful in enabling the robot, please follow the instructions below. This is typically due to a ROS_HOSTNAME being set which is not resolvable to Sawyer. Please unset your ROS_HOSTNAME, instead using your ROS_IP. Make sure this is reflected permanently in your &lt;code> intera.sh &lt;/code> script.
+
+=== Timeout observed when trying to enable the robot. ===
+
+Assuming that you are able to &lt;code>$rostopic echo /rosout&lt;/code> during [[Connecting and Testing the Development Workstation#steps-for-connecting-to-sawyer|these prerequisite instructions]]. This error is a sign of the inability to make '''commands''' to the robot. This is due to your ROS_HOSTNAME/ROS_IP being set incorrectly.
+
+View the ROS_ENVIRONMENT set for your current shell.
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ env | grep ROS
+&lt;/syntaxhighlight>
+Verify that '''***EITHER***''' the ROS_HOSTNAME or ROS_IP is set for your development workstation.
+
+If unsuccessful and the ROS_HOSTNAME is set, please unset this variable and use ROS_IP.
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ unset ROS_HOSTNAME
+$ export ROS_IP=&lt;your_development_workstation_ip>
+&lt;/syntaxhighlight>
+
+Note: You can always view your current development workstation IP address using
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ ifconfig
+&lt;/syntaxhighlight>
+
+If unsuccessful and the ROS_IP is set, verify that this is describes '''your''' ip address and not the '''robot''' ip address.
+&lt;syntaxhighlight lang="bash" enclose="div">
+# Verify ROS_HOSTNAME is unset
+$ unset ROS_HOSTNAME
+# Take note of your IP address
+$ ifconfig
+# Export this as your ROS_IP
+$ export ROS_IP=&lt;your_development_workstation_ip>
+&lt;/syntaxhighlight>
+
+&lt;/div>
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../SDK_Shell" title="SDK Shell">SDK Shell</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../SDK_Shell">http://sdk.rethinkrobotics.com/intera/SDK_Shell</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":82});});</script></body></html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Simulator Architecture - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Simulator_Architecture","wgTitle":"Simulator Architecture","wgCurRevisionId":4295,"wgRevisionId":0,"wgArticleId":410,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Simulator_Architecture","wgRelevantArticleId":410,"wgRequestId":"b043228d6a66de8486da2d89","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Simulator_Architecture rootpage-Simulator_Architecture skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Simulator+Architecture&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Simulator Architecture</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Simulator_Architecture&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Simulator_Architecture&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Simulator_Architecture&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Simulator_Architecture" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Simulator_Architecture" title="Simulator Architecture">Simulator Architecture</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Simulator_Architecture&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Simulator_Architecture&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">{{Template:Parent header|parent=Baxter Simulator}}
+==Package Description==
+===baxter_sim_hardware===
+This package controls the functionalities of the simulator and acts as an interface between the user and the simulator.
+This package has one node&lt;br />
+*'''/baxter_emulator'''
+**This node subscribes to the topics &lt;code>robot/set_super_enable&lt;/code>, &lt;code>robot/set_super_stop&lt;/code>, &lt;code>robot/set_super_reset&lt;/code> and enables/disables the controllers accordingly.
+**It also subscribes to the laser messages, wraps and publishes them as IR range and Sonar point cloud messages, accordingly.
+**It activates the head_nod state upon its command and toggles it in 1 second. Also it monitors the change in head_pan and publishes if the head is panning.
+**The digital_io light states are published based on the command received.
+**Upon gazebo startup, this node reads the RSDK image and loads it on Baxter's display.
+**This node also invokes the gravity calculation function at the arm_kinematics library (Package: baxter_sim_kinematics) to calculate the gravity comp torques at 100 Hz.
+**Once this node has completely finished loading, it will publish a latched &lt;code>std_msgs/Empty&lt;/code> message to &lt;code>/robot/sim/started&lt;/code> to alert all nodes that the robot will now function
+
+===baxter_sim_io===
+This package is responsible for the qt plugin that constitute the Naviagtor of the simulator.
+It has a UI file in which holds the QT buttons for the navigator. This package also listens to the qt events and records the data
+This has one node&lt;br />
+*'''/baxter_sim_io'''
+**This node is responsible for publishing the variables which are updated based on the users input.
+
+===baxter_sim_kinematics===
+This package caluculates the IK, FK and Gravity Compensation torques.
+It has two nodes, one for each limb&lt;br />
+*'''/baxter_sim_kinematics_left'''
+**This node holds the service call for the IK for the left arm. It unwraps the message and adds a seed to it before calling the IK function from the arm_kinematics library.
+**It calculates the endpoint state of the left arm joints (FK) at 100 HZ by subscribing to the &lt;code>robot/joint_states&lt;/code> topic.&lt;br />
+*'''/baxter_sim_kinematics_right'''
+**This node holds the service call for the IK for the right arm. It unwraps the message and adds a seed to it before calling the IK function from the arm_kinematics library.
+**It calculates the endpoint state of the right arm joints (FK) at 100 HZ by subscribing to the &lt;code>robot/joint_states&lt;/code> topic.
+This package has a library&lt;br />
+*'''arm_kinematics'''
+**This library calcualtes the IK, FK for both the left and right arm.
+**The gravity compensation is calculated here and the resulting joint torques are shared (via ROS Service call &lt;code>gazebo/set_link_properties&lt;/code> with Gazebo). These commands are then writing the torque commands to the simulator.
+
+===baxter_sim_controllers===
+This package constitutes the controller plugins for Baxter. It is also responsible for loading the controller information into the parameter server which is then used by gazebo.
+This has four plugins
+*'''baxter_effort_controller'''
+**This plugin instantiates a publisher for each of the individual joint effort controllers in an arm.
+**It unwraps the Joint command message and passes them to the appropriate controller which is then forwarded to the ros control(joint_effort_controller) and written as torque commands to gazebo
+*'''baxter_position_controller'''
+**This plugin instantiates a publisher for each of the individual joint position controllers in an arm.
+**It unwraps the Joint command message and passes them to the appropriate controller which is then forwarded to the ros controllers(joint_position_controller) where pid control is implemented before they are converted as torque commands and passed to gazebo.
+*'''baxter_velocity_controller'''
+**This plugin instantiates a publisher for each of the individual joint velocity controllers in an arm.
+**It unwraps the Joint command message and passes them to the appropriate controller which is then forwarded to the ros controllers(joint_velocity_controller) where pid control is implemented before they are converted as torque commands and passed to gazebo.
+*'''baxter_head_controller'''
+**This plugin instantiates a publisher for the head joint position controller.
+**It unwraps the Joint command message and passes them to the head joint position controller which is then forwarded to the ros controllers(joint_position_controller) where pid control is implemented before they are converted as torque commands and passed to gazebo.
+*'''baxter_gripper_controller'''
+**This plugin instantiates a publisher for the electric gripper joint position controller.
+**One of these controllers is instantiated for each of left and right electric grippers if you do not set &lt;code>&lt;side>_electric_gripper:=false&lt;/code> in the &lt;code>baxter_gazebo/launch/baxter_world.launch&lt;/code> ROS launch file. "true" is set by default.
+
+===baxter_gazebo===
+This package holds the world models that can be loaded into gazebo. It also contains a controller plugin that regulates the messages passed between controllers.
+The default gazebo control plugin is overloaded as,
+*'''baxter_gazebo_ros_control_plugin'''
+**This plugin subscribes to the &lt;code>robot/state&lt;/code> topic on initialization and checks if the state is enabled/disabled, based on which it starts/stops the controllers.
+**It also switches the controllers based on the mode, received in the joint command, and passes the messages to those controllers.
+
+===baxter_sim_examples===
+FIXME: This package holds the world models that can be loaded into gazebo. It also contains a controller plugin that regulates the messages passed between controllers.
+The default gazebo control plugin is overloaded as,
+*'''baxter_gazebo_ros_control_plugin'''
+**This plugin subscribes to the &lt;code>robot/state&lt;/code> topic on initialization and checks if the state is enabled/disabled, based on which it starts/stops the controllers.
+**It also switches the controllers based on the mode, received in the joint command, and passes the messages to those controllers.
+
+==Program Flow==
+===System Architecture===
+[[File:Sim flowchart.png|1024x480px]]&lt;br />&lt;br />
+
+==Processes==
+===Process 1===
+[[File:P1.png|1024x480px]]&lt;br />&lt;br />
+This process is responsible for passing the user commands to the appropriate joints in the various modes.&lt;br />
+The steps involved are,
+*The baxter_emulator node waits for the enable command from the user/programs and updates the &lt;code>robot/state&lt;/code> topic accordingly.
+*The baxter_gazebo_ros_control plugin waits for the enable command to start the head controller, and then switches the appropriate controller (position, velocity or effort) based on the mode from the JointCommand message. At any point of time, if the topic &lt;code>robot/state&lt;/code> receives disable command, it stops all the controllers.
+*At baxter_sim_controllers package, the controller which was switched would read the JointCommand message and unwrap the message before passing them to the individual joint controllers.
+*The individual joint_controllers at the ros_controller would implement a PID control (no PID control for effort controllers) on the messages and would convert them as torque commands.
+*The torque commands to the individual joints are written to a shared location at ros_control.
+*The default_robot_hw_sim reads the torque commands from the shared memory and sums them with the gravity compesnation torquees before it passes them to the appropriate joints in gazebo.
+
+===Process 2===
+[[File:P2.png|1024x480px]]&lt;br />
+This process is responsible for the gravity compensation torques' calculation. &lt;br />
+The steps involved are,
+*The baxter_emulator node calls the gravity_compensation function at 100 Hz and passes the current &lt;code>robot/joint_states&lt;/code> message.
+*The arm_kinematics library calculates the gravity compensation torques for the current state of the robot using KDL. It shares the gravity compensation torques with Gazebo in a by ROS Service call &lt;code>gazebo_msgs/SetLinkProperties.srv&lt;/code>.This updates the gravity compensation torques as 0 when the robot is in disabled state.
+*Gazebo sums the gravity compensation torques with the torques from the controllers and passes them to the appropriate joints in simulation.
+&lt;br />
+''Process 1 and Process 2 share the gravity compensation torques.''
+
+===Process 3===
+[[File:Kinematicslibrary.png|1024x480px]]&lt;br />
+This process calculates the Forward Kinematics (endpoint state) and Inverse Kinematics for the simulated Baxter.&lt;br />
+The steps involved are,
+*The baxter emulator creates two nodes named as baxter_sim_kinematics_left and baxter_sim_kinematics_right, for each of the arm. It passes the joint states at 100 Hz.
+*The kinematics nodes are subscribed to the &lt;code>robot/joint_states&lt;/code> and they calculate the endpoint state by using the KDL function defined in the arm_kinematics library. The endpoint state is published at 100 Hz to the topic &lt;code>robot/limb/&lt;side>/endpoint_state&lt;/code>.
+*In addition the nodes also define the IK service. They unwrap the service requests and appends the seed (current joint state) to them before calling the KDL function from the arm_kinematics library.
+
+==Ros Nodes==
+# /baxter_emulator
+# /baxter_sim_io
+# /baxter_sim_kinematics_left
+# /baxter_sim_kinematics_right
+# /gazebo
+# /gazebo_client
+# /robot/controller_spawner
+# /robot/controller_spawner_stopped
+# /robot/left_gripper_controller_spawner_stopped
+# /robot/right_gripper_controller_spawner_stopped
+# /robot_state_publisher
+# /rosout
+
+==Ros Topics==
+# /cameras/head_camera/camera_info
+# /cameras/head_camera/image
+# /cameras/head_camera/image/compressed
+# /cameras/head_camera/image/compressed/parameter_descriptions
+# /cameras/head_camera/image/compressed/parameter_updates
+# /cameras/head_camera/image/compressedDepth
+# /cameras/head_camera/image/compressedDepth/parameter_descriptions
+# /cameras/head_camera/image/compressedDepth/parameter_updates
+# /cameras/head_camera/image/theora
+# /cameras/head_camera/image/theora/parameter_descriptions
+# /cameras/head_camera/image/theora/parameter_updates
+# /cameras/head_camera/parameter_descriptions
+# /cameras/head_camera/parameter_updates
+# /cameras/left_hand_camera/camera_info
+# /cameras/left_hand_camera/image
+# /cameras/left_hand_camera/image/compressed
+# /cameras/left_hand_camera/image/compressed/parameter_descriptions
+# /cameras/left_hand_camera/image/compressed/parameter_updates
+# /cameras/left_hand_camera/image/compressedDepth
+# /cameras/left_hand_camera/image/compressedDepth/parameter_descriptions
+# /cameras/left_hand_camera/image/compressedDepth/parameter_updates
+# /cameras/left_hand_camera/image/theora
+# /cameras/left_hand_camera/image/theora/parameter_descriptions
+# /cameras/left_hand_camera/image/theora/parameter_updates
+# /cameras/left_hand_camera/parameter_descriptions
+# /cameras/left_hand_camera/parameter_updates
+# /cameras/right_hand_camera/camera_info
+# /cameras/right_hand_camera/image
+# /cameras/right_hand_camera/image/compressed
+# /cameras/right_hand_camera/image/compressed/parameter_descriptions
+# /cameras/right_hand_camera/image/compressed/parameter_updates
+# /cameras/right_hand_camera/image/compressedDepth
+# /cameras/right_hand_camera/image/compressedDepth/parameter_descriptions
+# /cameras/right_hand_camera/image/compressedDepth/parameter_updates
+# /cameras/right_hand_camera/image/theora
+# /cameras/right_hand_camera/image/theora/parameter_descriptions
+# /cameras/right_hand_camera/image/theora/parameter_updates
+# /cameras/right_hand_camera/parameter_descriptions
+# /cameras/right_hand_camera/parameter_updates
+# /clock
+# /gazebo/link_states
+# /gazebo/model_states
+# /gazebo/parameter_descriptions
+# /gazebo/parameter_updates
+# /gazebo/set_link_state
+# /gazebo/set_model_state
+# /robot/analog_io/left_hand_range/state
+# /robot/analog_io/left_hand_range/value_uint32
+# /robot/analog_io/right_hand_range/state
+# /robot/analog_io/right_hand_range/value_uint32
+# /robot/digital_io/command
+# /robot/digital_io/left_inner_light/state
+# /robot/digital_io/left_lower_button/state
+# /robot/digital_io/left_lower_cuff/state
+# /robot/digital_io/left_outer_light/state
+# /robot/digital_io/left_shoulder_button/state
+# /robot/digital_io/left_upper_button/state
+# /robot/digital_io/right_inner_light/state
+# /robot/digital_io/right_lower_button/state
+# /robot/digital_io/right_lower_cuff/state
+# /robot/digital_io/right_outer_light/state
+# /robot/digital_io/right_shoulder_button/state
+# /robot/digital_io/right_upper_button/state
+# /robot/digital_io/torso_left_inner_light/state
+# /robot/digital_io/torso_left_outer_light/state
+# /robot/digital_io/torso_right_inner_light/state
+# /robot/digital_io/torso_right_outer_light/state
+# /robot/end_effector/left_gripper/command
+# /robot/end_effector/left_gripper/properties
+# /robot/end_effector/left_gripper/state
+# /robot/end_effector/right_gripper/command
+# /robot/end_effector/right_gripper/properties
+# /robot/end_effector/right_gripper/state
+# /robot/head/command_head_nod
+# /robot/head/command_head_pan
+# /robot/head/head_state
+# /robot/head_position_controller/joints/head_controller/command
+# /robot/head_position_controller/joints/head_controller/pid/parameter_descriptions
+# /robot/head_position_controller/joints/head_controller/pid/parameter_updates
+# /robot/head_position_controller/joints/head_controller/state
+# /robot/joint_states
+# /robot/left_gripper_controller/joints/l_gripper_l_finger_controller/command
+# /robot/left_gripper_controller/joints/l_gripper_l_finger_controller/pid/parameter_descriptions
+# /robot/left_gripper_controller/joints/l_gripper_l_finger_controller/pid/parameter_updates
+# /robot/left_gripper_controller/joints/l_gripper_l_finger_controller/state
+# /robot/left_gripper_controller/joints/l_gripper_r_finger_controller/command
+# /robot/left_gripper_controller/joints/l_gripper_r_finger_controller/pid/parameter_descriptions
+# /robot/left_gripper_controller/joints/l_gripper_r_finger_controller/pid/parameter_updates
+# /robot/left_gripper_controller/joints/l_gripper_r_finger_controller/state
+# /robot/left_joint_effort_controller/joints/left_e0_controller/command
+# /robot/left_joint_effort_controller/joints/left_e1_controller/command
+# /robot/left_joint_effort_controller/joints/left_s0_controller/command
+# /robot/left_joint_effort_controller/joints/left_s1_controller/command
+# /robot/left_joint_effort_controller/joints/left_w0_controller/command
+# /robot/left_joint_effort_controller/joints/left_w1_controller/command
+# /robot/left_joint_effort_controller/joints/left_w2_controller/command
+# /robot/left_joint_position_controller/joints/left_e0_controller/command
+# /robot/left_joint_position_controller/joints/left_e0_controller/pid/parameter_descriptions
+# /robot/left_joint_position_controller/joints/left_e0_controller/pid/parameter_updates
+# /robot/left_joint_position_controller/joints/left_e0_controller/state
+# /robot/left_joint_position_controller/joints/left_e1_controller/command
+# /robot/left_joint_position_controller/joints/left_e1_controller/pid/parameter_descriptions
+# /robot/left_joint_position_controller/joints/left_e1_controller/pid/parameter_updates
+# /robot/left_joint_position_controller/joints/left_e1_controller/state
+# /robot/left_joint_position_controller/joints/left_s0_controller/command
+# /robot/left_joint_position_controller/joints/left_s0_controller/pid/parameter_descriptions
+# /robot/left_joint_position_controller/joints/left_s0_controller/pid/parameter_updates
+# /robot/left_joint_position_controller/joints/left_s0_controller/state
+# /robot/left_joint_position_controller/joints/left_s1_controller/command
+# /robot/left_joint_position_controller/joints/left_s1_controller/pid/parameter_descriptions
+# /robot/left_joint_position_controller/joints/left_s1_controller/pid/parameter_updates
+# /robot/left_joint_position_controller/joints/left_s1_controller/state
+# /robot/left_joint_position_controller/joints/left_w0_controller/command
+# /robot/left_joint_position_controller/joints/left_w0_controller/pid/parameter_descriptions
+# /robot/left_joint_position_controller/joints/left_w0_controller/pid/parameter_updates
+# /robot/left_joint_position_controller/joints/left_w0_controller/state
+# /robot/left_joint_position_controller/joints/left_w1_controller/command
+# /robot/left_joint_position_controller/joints/left_w1_controller/pid/parameter_descriptions
+# /robot/left_joint_position_controller/joints/left_w1_controller/pid/parameter_updates
+# /robot/left_joint_position_controller/joints/left_w1_controller/state
+# /robot/left_joint_position_controller/joints/left_w2_controller/command
+# /robot/left_joint_position_controller/joints/left_w2_controller/pid/parameter_descriptions
+# /robot/left_joint_position_controller/joints/left_w2_controller/pid/parameter_updates
+# /robot/left_joint_position_controller/joints/left_w2_controller/state
+# /robot/left_joint_velocity_controller/joints/left_e0_controller/command
+# /robot/left_joint_velocity_controller/joints/left_e0_controller/pid/parameter_descriptions
+# /robot/left_joint_velocity_controller/joints/left_e0_controller/pid/parameter_updates
+# /robot/left_joint_velocity_controller/joints/left_e0_controller/state
+# /robot/left_joint_velocity_controller/joints/left_e1_controller/command
+# /robot/left_joint_velocity_controller/joints/left_e1_controller/pid/parameter_descriptions
+# /robot/left_joint_velocity_controller/joints/left_e1_controller/pid/parameter_updates
+# /robot/left_joint_velocity_controller/joints/left_e1_controller/state
+# /robot/left_joint_velocity_controller/joints/left_s0_controller/command
+# /robot/left_joint_velocity_controller/joints/left_s0_controller/pid/parameter_descriptions
+# /robot/left_joint_velocity_controller/joints/left_s0_controller/pid/parameter_updates
+# /robot/left_joint_velocity_controller/joints/left_s0_controller/state
+# /robot/left_joint_velocity_controller/joints/left_s1_controller/command
+# /robot/left_joint_velocity_controller/joints/left_s1_controller/pid/parameter_descriptions
+# /robot/left_joint_velocity_controller/joints/left_s1_controller/pid/parameter_updates
+# /robot/left_joint_velocity_controller/joints/left_s1_controller/state
+# /robot/left_joint_velocity_controller/joints/left_w0_controller/command
+# /robot/left_joint_velocity_controller/joints/left_w0_controller/pid/parameter_descriptions
+# /robot/left_joint_velocity_controller/joints/left_w0_controller/pid/parameter_updates
+# /robot/left_joint_velocity_controller/joints/left_w0_controller/state
+# /robot/left_joint_velocity_controller/joints/left_w1_controller/command
+# /robot/left_joint_velocity_controller/joints/left_w1_controller/pid/parameter_descriptions
+# /robot/left_joint_velocity_controller/joints/left_w1_controller/pid/parameter_updates
+# /robot/left_joint_velocity_controller/joints/left_w1_controller/state
+# /robot/left_joint_velocity_controller/joints/left_w2_controller/command
+# /robot/left_joint_velocity_controller/joints/left_w2_controller/pid/parameter_descriptions
+# /robot/left_joint_velocity_controller/joints/left_w2_controller/pid/parameter_updates
+# /robot/left_joint_velocity_controller/joints/left_w2_controller/state
+# /robot/limb/left/endpoint_state
+# /robot/limb/left/gravity_compensation_torques
+# /robot/limb/left/joint_command
+# /robot/limb/right/endpoint_state
+# /robot/limb/right/gravity_compensation_torques
+# /robot/limb/right/joint_command
+# /robot/navigators/left_navigator/state
+# /robot/navigators/right_navigator/state
+# /robot/navigators/torso_left_navigator/state
+# /robot/navigators/torso_right_navigator/state
+# /robot/range/left_hand_range/state
+# /robot/range/right_hand_range/state
+# /robot/right_gripper_controller/joints/r_gripper_l_finger_controller/command
+# /robot/right_gripper_controller/joints/r_gripper_l_finger_controller/pid/parameter_descriptions
+# /robot/right_gripper_controller/joints/r_gripper_l_finger_controller/pid/parameter_updates
+# /robot/right_gripper_controller/joints/r_gripper_l_finger_controller/state
+# /robot/right_gripper_controller/joints/r_gripper_r_finger_controller/command
+# /robot/right_gripper_controller/joints/r_gripper_r_finger_controller/pid/parameter_descriptions
+# /robot/right_gripper_controller/joints/r_gripper_r_finger_controller/pid/parameter_updates
+# /robot/right_gripper_controller/joints/r_gripper_r_finger_controller/state
+# /robot/right_joint_effort_controller/joints/right_e0_controller/command
+# /robot/right_joint_effort_controller/joints/right_e1_controller/command
+# /robot/right_joint_effort_controller/joints/right_s0_controller/command
+# /robot/right_joint_effort_controller/joints/right_s1_controller/command
+# /robot/right_joint_effort_controller/joints/right_w0_controller/command
+# /robot/right_joint_effort_controller/joints/right_w1_controller/command
+# /robot/right_joint_effort_controller/joints/right_w2_controller/command
+# /robot/right_joint_position_controller/joints/right_e0_controller/command
+# /robot/right_joint_position_controller/joints/right_e0_controller/pid/parameter_descriptions
+# /robot/right_joint_position_controller/joints/right_e0_controller/pid/parameter_updates
+# /robot/right_joint_position_controller/joints/right_e0_controller/state
+# /robot/right_joint_position_controller/joints/right_e1_controller/command
+# /robot/right_joint_position_controller/joints/right_e1_controller/pid/parameter_descriptions
+# /robot/right_joint_position_controller/joints/right_e1_controller/pid/parameter_updates
+# /robot/right_joint_position_controller/joints/right_e1_controller/state
+# /robot/right_joint_position_controller/joints/right_s0_controller/command
+# /robot/right_joint_position_controller/joints/right_s0_controller/pid/parameter_descriptions
+# /robot/right_joint_position_controller/joints/right_s0_controller/pid/parameter_updates
+# /robot/right_joint_position_controller/joints/right_s0_controller/state
+# /robot/right_joint_position_controller/joints/right_s1_controller/command
+# /robot/right_joint_position_controller/joints/right_s1_controller/pid/parameter_descriptions
+# /robot/right_joint_position_controller/joints/right_s1_controller/pid/parameter_updates
+# /robot/right_joint_position_controller/joints/right_s1_controller/state
+# /robot/right_joint_position_controller/joints/right_w0_controller/command
+# /robot/right_joint_position_controller/joints/right_w0_controller/pid/parameter_descriptions
+# /robot/right_joint_position_controller/joints/right_w0_controller/pid/parameter_updates
+# /robot/right_joint_position_controller/joints/right_w0_controller/state
+# /robot/right_joint_position_controller/joints/right_w1_controller/command
+# /robot/right_joint_position_controller/joints/right_w1_controller/pid/parameter_descriptions
+# /robot/right_joint_position_controller/joints/right_w1_controller/pid/parameter_updates
+# /robot/right_joint_position_controller/joints/right_w1_controller/state
+# /robot/right_joint_position_controller/joints/right_w2_controller/command
+# /robot/right_joint_position_controller/joints/right_w2_controller/pid/parameter_descriptions
+# /robot/right_joint_position_controller/joints/right_w2_controller/pid/parameter_updates
+# /robot/right_joint_position_controller/joints/right_w2_controller/state
+# /robot/right_joint_velocity_controller/joints/right_e0_controller/command
+# /robot/right_joint_velocity_controller/joints/right_e0_controller/pid/parameter_descriptions
+# /robot/right_joint_velocity_controller/joints/right_e0_controller/pid/parameter_updates
+# /robot/right_joint_velocity_controller/joints/right_e0_controller/state
+# /robot/right_joint_velocity_controller/joints/right_e1_controller/command
+# /robot/right_joint_velocity_controller/joints/right_e1_controller/pid/parameter_descriptions
+# /robot/right_joint_velocity_controller/joints/right_e1_controller/pid/parameter_updates
+# /robot/right_joint_velocity_controller/joints/right_e1_controller/state
+# /robot/right_joint_velocity_controller/joints/right_s0_controller/command
+# /robot/right_joint_velocity_controller/joints/right_s0_controller/pid/parameter_descriptions
+# /robot/right_joint_velocity_controller/joints/right_s0_controller/pid/parameter_updates
+# /robot/right_joint_velocity_controller/joints/right_s0_controller/state
+# /robot/right_joint_velocity_controller/joints/right_s1_controller/command
+# /robot/right_joint_velocity_controller/joints/right_s1_controller/pid/parameter_descriptions
+# /robot/right_joint_velocity_controller/joints/right_s1_controller/pid/parameter_updates
+# /robot/right_joint_velocity_controller/joints/right_s1_controller/state
+# /robot/right_joint_velocity_controller/joints/right_w0_controller/command
+# /robot/right_joint_velocity_controller/joints/right_w0_controller/pid/parameter_descriptions
+# /robot/right_joint_velocity_controller/joints/right_w0_controller/pid/parameter_updates
+# /robot/right_joint_velocity_controller/joints/right_w0_controller/state
+# /robot/right_joint_velocity_controller/joints/right_w1_controller/command
+# /robot/right_joint_velocity_controller/joints/right_w1_controller/pid/parameter_descriptions
+# /robot/right_joint_velocity_controller/joints/right_w1_controller/pid/parameter_updates
+# /robot/right_joint_velocity_controller/joints/right_w1_controller/state
+# /robot/right_joint_velocity_controller/joints/right_w2_controller/command
+# /robot/right_joint_velocity_controller/joints/right_w2_controller/pid/parameter_descriptions
+# /robot/right_joint_velocity_controller/joints/right_w2_controller/pid/parameter_updates
+# /robot/right_joint_velocity_controller/joints/right_w2_controller/state
+# /robot/set_super_enable
+# /robot/set_super_reset
+# /robot/set_super_stop
+# /robot/sim/started
+# /robot/sonar/head_sonar/state
+# /robot/state
+# /robot/xdisplay
+# /robot/xdisplay/compressed
+# /robot/xdisplay/compressed/parameter_descriptions
+# /robot/xdisplay/compressed/parameter_updates
+# /robot/xdisplay/compressedDepth
+# /robot/xdisplay/compressedDepth/parameter_descriptions
+# /robot/xdisplay/compressedDepth/parameter_updates
+# /robot/xdisplay/theora
+# /robot/xdisplay/theora/parameter_descriptions
+# /robot/xdisplay/theora/parameter_updates
+# /rosout
+# /rosout_agg
+# /sim/laserscan/left_hand_range/state
+# /sim/laserscan/right_hand_range/state
+# /tf
+# /tf_static
+&lt;br />&lt;br />
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="../Template:Parent_header" title="Template:Parent header">Template:Parent header</a> (<a href="index.php?title=Template:Parent_header&amp;action=edit" title="Template:Parent header">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Simulator_Architecture" title="Simulator Architecture">Simulator Architecture</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Simulator_Architecture">http://sdk.rethinkrobotics.com/wiki/Simulator_Architecture</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":65});});</script></body></html>

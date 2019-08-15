@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Configuration and Admin - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Configuration_and_Admin","wgTitle":"Configuration and Admin","wgCurRevisionId":3978,"wgRevisionId":3978,"wgArticleId":504,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Configuration_and_Admin","wgRelevantArticleId":504,"wgRequestId":"71571c76c211ea5341b364ad","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["sysop"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Configuration_and_Admin rootpage-Configuration_and_Admin skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Configuration+and+Admin&amp;returntoquery=oldid%3D3978">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Configuration and Admin</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Configuration_and_Admin&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Configuration_and_Admin&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Configuration_and_Admin" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 15:47, 20 March 2015 by <a href="index.php?title=User:Premillard&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Premillard (page does not exist)"><bdi>Premillard</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Premillard&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Premillard (page does not exist)">talk</a> | <a href="../Special:Contributions/Premillard" class="mw-usertoollinks-contribs" title="Special:Contributions/Premillard">contribs</a>)</span> <span class="comment">(<a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Software_Update_v1.1.0_.28Coming_Soon.29">→</a>‎<span dir="auto"><span class="autocomment">Software Update v1.1.0 (Coming Soon)</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Configuration_and_Admin&amp;diff=prev&amp;oldid=3978" title="Configuration and Admin">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Configuration_and_Admin&amp;direction=prev&amp;oldid=3978" title="Configuration and Admin">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#column-one">navigation</a>, <a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table style="padding:5px; border:1px solid #ffcc00; text-align:center; background:#FFFDDF; width:100%; margin-bottom:.5em;">
+<tbody><tr>
+<td><b><a href="../Learning" title="Learning">Learning</a>:</b> <a href="../Foundations" title="Foundations">Foundations</a>, <a href="../Advanced_Understanding" title="Advanced Understanding">Advanced Understanding</a>, <a href="../Tools" title="Tools">Projects and Tools (Do More)</a>, <a class="mw-selflink selflink">Configuration and Admin</a>
+</td></tr></tbody></table>
+<div class="toclimit-3" style="float:left; margin-right:10px; clear:left;"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Robot_Configuration"><span class="tocnumber">1</span> <span class="toctext">Robot Configuration</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Hardware_Installation.2FSetup"><span class="tocnumber">1.1</span> <span class="toctext">Hardware Installation/Setup</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Robot_Workspace.2FReachability_Guidelines"><span class="tocnumber">1.1.1</span> <span class="toctext">Robot Workspace/Reachability Guidelines</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Pedestal_Installation_Guide"><span class="tocnumber">1.1.2</span> <span class="toctext">Pedestal Installation Guide</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Baxter_Pedestal_Mounting_Guide"><span class="tocnumber">1.1.3</span> <span class="toctext">Baxter Pedestal Mounting Guide</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Baxter_Alternative_Surface_Mounting_Guide"><span class="tocnumber">1.1.4</span> <span class="toctext">Baxter Alternative Surface Mounting Guide</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Electric_Gripper_Installation_Guide"><span class="tocnumber">1.1.5</span> <span class="toctext">Electric Gripper Installation Guide</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Vacuum_.28Suction.29_Gripper_Installation_Guide"><span class="tocnumber">1.1.6</span> <span class="toctext">Vacuum (Suction) Gripper Installation Guide</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Powering_Baxter_Down"><span class="tocnumber">1.1.7</span> <span class="toctext">Powering Baxter Down</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Robot_Network_Configuration"><span class="tocnumber">1.2</span> <span class="toctext">Robot Network Configuration</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#General_Networking_Guide"><span class="tocnumber">1.2.1</span> <span class="toctext">General Networking Guide</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Field_Service_Menu_.28FSM.29_Guide"><span class="tocnumber">1.2.2</span> <span class="toctext">Field Service Menu (FSM) Guide</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Network_Info_Display_.28TTY3.29"><span class="tocnumber">1.2.3</span> <span class="toctext">Network Info Display (TTY3)</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Robot_Hostname"><span class="tocnumber">1.2.4</span> <span class="toctext">Robot Hostname</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Time_and_NTP_.28Robot_Time.29_Configuration_Guide"><span class="tocnumber">1.2.5</span> <span class="toctext">Time and NTP (Robot Time) Configuration Guide</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Software_Updates"><span class="tocnumber">2</span> <span class="toctext">Software Updates</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Version_Tools"><span class="tocnumber">2.1</span> <span class="toctext">Version Tools</span></a>
+<ul>
+<li class="toclevel-3 tocsection-18"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#List_of_Releases"><span class="tocnumber">2.1.1</span> <span class="toctext">List of Releases</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Software_Version_Check.2FValidation_Guide"><span class="tocnumber">2.1.2</span> <span class="toctext">Software Version Check/Validation Guide</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-20"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Baxter_Software_Update_Instructions"><span class="tocnumber">2.2</span> <span class="toctext">Baxter Software Update Instructions</span></a>
+<ul>
+<li class="toclevel-3 tocsection-21"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Baxter_Robot_Software_Update_Guide"><span class="tocnumber">2.2.1</span> <span class="toctext">Baxter Robot Software Update Guide</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Baxter_Gripper_Software_Update_Guide"><span class="tocnumber">2.2.2</span> <span class="toctext">Baxter Gripper Software Update Guide</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Software_Update_Troubleshooting_Guide"><span class="tocnumber">2.2.3</span> <span class="toctext">Software Update Troubleshooting Guide</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-24"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Available_Software_Versions"><span class="tocnumber">2.3</span> <span class="toctext">Available Software Versions</span></a>
+<ul>
+<li class="toclevel-3 tocsection-25"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Software_Update_v1.1.0_.28Recommended.29"><span class="tocnumber">2.3.1</span> <span class="toctext">Software Update v1.1.0 (Recommended)</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Software_Update_v1.0.0"><span class="tocnumber">2.3.2</span> <span class="toctext">Software Update v1.0.0</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Software_Update_v0.7.0"><span class="tocnumber">2.3.3</span> <span class="toctext">Software Update v0.7.0</span></a></li>
+<li class="toclevel-3 tocsection-28"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Software_Update_v0.6.2"><span class="tocnumber">2.3.4</span> <span class="toctext">Software Update v0.6.2</span></a></li>
+<li class="toclevel-3 tocsection-29"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Software_Update_v0.6.1"><span class="tocnumber">2.3.5</span> <span class="toctext">Software Update v0.6.1</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-30"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Maintenance.2FDebug_Tools"><span class="tocnumber">3</span> <span class="toctext">Maintenance/Debug Tools</span></a>
+<ul>
+<li class="toclevel-2 tocsection-31"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Arm_Calibration_and_Tare_Guide"><span class="tocnumber">3.1</span> <span class="toctext">Arm Calibration and Tare Guide</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Access_Robot_FTP_Log_Files_Guide"><span class="tocnumber">3.2</span> <span class="toctext">Access Robot FTP Log Files Guide</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Robot_Core_Dump_Manager"><span class="tocnumber">3.3</span> <span class="toctext">Robot Core Dump Manager</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-34"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Admin_Resources"><span class="tocnumber">4</span> <span class="toctext">Admin Resources</span></a>
+<ul>
+<li class="toclevel-2 tocsection-35"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#SDK_Shared_Resources_Folder_.28Rethink_FTP.29"><span class="tocnumber">4.1</span> <span class="toctext">SDK Shared Resources Folder (Rethink FTP)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-36"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#System_Info"><span class="tocnumber">5</span> <span class="toctext">System Info</span></a>
+<ul>
+<li class="toclevel-2 tocsection-37"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Robot_Serial_Number"><span class="tocnumber">5.1</span> <span class="toctext">Robot Serial Number</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="index.php?title=Configuration_and_Admin&amp;oldid=3978#Robot_Software_Versions"><span class="tocnumber">5.2</span> <span class="toctext">Robot Software Versions</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p><span style="font-size:125%;">
+This page will introduce you to all things 'Baxter Admin', from hardware setup, to network configuration, to maintenance routines, to software upgrades.
+</span>
+</p>
+<div class="toclimit-3" style="float:left; margin-right:10px; clear:left;"></div>
+<div style="clear:both">
+<h1><span class="mw-headline" id="Robot_Configuration">Robot Configuration</span></h1>
+</div>
+<p>This section describes the necessary robot configuration as maintained by a robot admin.
+</p>
+<h2><span id="Hardware_Installation/Setup"></span><span class="mw-headline" id="Hardware_Installation.2FSetup">Hardware Installation/Setup</span></h2>
+<p>The Baxter Hardware Installation is largely described in the <a href="../Baxter_Setup" title="Baxter Setup"> Baxter Hardware Setup Guide</a>.
+</p>
+<h4><span id="Robot_Workspace/Reachability_Guidelines"></span><span class="mw-headline" id="Robot_Workspace.2FReachability_Guidelines"><a href="../Workspace_Guidelines" title="Workspace Guidelines"> Robot Workspace/Reachability Guidelines</a></span></h4>
+<h4><span class="mw-headline" id="Pedestal_Installation_Guide"><a href="../Pedestal_Installation" title="Pedestal Installation"> Pedestal Installation Guide</a></span></h4>
+<h4><span class="mw-headline" id="Baxter_Pedestal_Mounting_Guide"><a href="../Pedestal_Mounting" title="Pedestal Mounting"> Baxter Pedestal Mounting Guide</a></span></h4>
+<h4><span class="mw-headline" id="Baxter_Alternative_Surface_Mounting_Guide"><a href="../Alternative_Mounting" title="Alternative Mounting"> Baxter Alternative Surface Mounting Guide</a></span></h4>
+<h4><span class="mw-headline" id="Electric_Gripper_Installation_Guide"><a href="../Electric_Gripper_Installation" title="Electric Gripper Installation"> Electric Gripper Installation Guide</a></span></h4>
+<h4><span id="Vacuum_(Suction)_Gripper_Installation_Guide"></span><span class="mw-headline" id="Vacuum_.28Suction.29_Gripper_Installation_Guide"><a href="../Vacuum_Gripper_Installation" title="Vacuum Gripper Installation"> Vacuum (Suction) Gripper Installation Guide</a></span></h4>
+<h4><span class="mw-headline" id="Powering_Baxter_Down"><a href="../Baxter_Power_Down" title="Baxter Power Down"> Powering Baxter Down</a></span></h4>
+<h2><span class="mw-headline" id="Robot_Network_Configuration">Robot Network Configuration</span></h2>
+<p>Configuring Baxter's networking is a fundamental responsibility of the administrator. A number of resources are provided which should ease this process immensely.
+</p><p>The Field Service Menu (FSM), accessing the system display screen (TTY3) to view network properties, and leveraging SSH access to the robot will prove to be the most useful resources for this portion of the robot setup.
+</p>
+<h4><span class="mw-headline" id="General_Networking_Guide"><a href="../Networking" title="Networking"> General Networking Guide</a></span></h4>
+<h4><span id="Field_Service_Menu_(FSM)_Guide"></span><span class="mw-headline" id="Field_Service_Menu_.28FSM.29_Guide"><a href="../FSM" class="mw-redirect" title="FSM"> Field Service Menu (FSM) Guide</a></span></h4>
+<h4><span id="Network_Info_Display_(TTY3)"></span><span class="mw-headline" id="Network_Info_Display_.28TTY3.29"><a href="../Virtual_Terminals#TTY3_-_Network_Info_Display" title="Virtual Terminals"> Network Info Display (TTY3)</a></span></h4>
+<h4><span class="mw-headline" id="Robot_Hostname"><a href="../Robot_Hostname" title="Robot Hostname"> Robot Hostname</a></span></h4>
+<h4><span id="Time_and_NTP_(Robot_Time)_Configuration_Guide"></span><span class="mw-headline" id="Time_and_NTP_.28Robot_Time.29_Configuration_Guide"><a href="../Time_and_NTP" title="Time and NTP"> Time and NTP (Robot Time) Configuration Guide</a></span></h4>
+<h1><span class="mw-headline" id="Software_Updates">Software Updates</span></h1>
+<p>Regular software updates are provided to all Baxter Research Robot customers. Updates will be announced here on the wiki, through emails to the POCs (Point of Contacts) for each robot, and by announcement on the <a rel="nofollow" class="external text" href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users">forum</a>.
+</p><p>Latest Available/Recommended Software: <b>SDK 1.1.0</b>
+</p>
+<h3><span class="mw-headline" id="Version_Tools">Version Tools</span></h3>
+<hr />
+<h4><span class="mw-headline" id="List_of_Releases"><a href="../Releases" title="Releases">List of Releases</a></span></h4>
+<h4><span id="Software_Version_Check/Validation_Guide"></span><span class="mw-headline" id="Software_Version_Check.2FValidation_Guide"><a href="../Software_Version" title="Software Version"> Software Version Check/Validation Guide</a></span></h4>
+<h3><span class="mw-headline" id="Baxter_Software_Update_Instructions">Baxter Software Update Instructions</span></h3>
+<hr />
+<h4><span class="mw-headline" id="Baxter_Robot_Software_Update_Guide"><a href="../Software_Update" title="Software Update"> Baxter Robot Software Update Guide</a></span></h4>
+<h4><span class="mw-headline" id="Baxter_Gripper_Software_Update_Guide"><a href="../Software_Version#Gripper_Firmware_Version" title="Software Version"> Baxter Gripper Software Update Guide</a></span></h4>
+<h4><span class="mw-headline" id="Software_Update_Troubleshooting_Guide"><a href="../Software_Update_-_Troubleshooting" title="Software Update - Troubleshooting"> Software Update Troubleshooting Guide</a></span></h4>
+<h3><span class="mw-headline" id="Available_Software_Versions">Available Software Versions</span></h3>
+<hr />
+<h4><span id="Software_Update_v1.1.0_(Recommended)"></span><span class="mw-headline" id="Software_Update_v1.1.0_.28Recommended.29"><a href="../Software_Update_-_v1.1.0" title="Software Update - v1.1.0"> Software Update v1.1.0 (Recommended)</a></span></h4>
+<h4><span class="mw-headline" id="Software_Update_v1.0.0"><a href="../Software_Update_-_v1.0.0" title="Software Update - v1.0.0"> Software Update v1.0.0 </a></span></h4>
+<h4><span class="mw-headline" id="Software_Update_v0.7.0"><a href="../Software_Update_-_v0.7.0" title="Software Update - v0.7.0"> Software Update v0.7.0</a></span></h4>
+<h4><span class="mw-headline" id="Software_Update_v0.6.2"><a href="../Software_Update_-_v0.6.2" title="Software Update - v0.6.2"> Software Update v0.6.2</a></span></h4>
+<h4><span class="mw-headline" id="Software_Update_v0.6.1"><a href="../Software_Update_-_v0.6.1" title="Software Update - v0.6.1"> Software Update v0.6.1</a></span></h4>
+<h1><span id="Maintenance/Debug_Tools"></span><span class="mw-headline" id="Maintenance.2FDebug_Tools">Maintenance/Debug Tools</span></h1>
+<p>This section describes standard maintenance routines for Baxter as well as tools for further debugging if something were to go wrong.
+</p>
+<h4><span class="mw-headline" id="Arm_Calibration_and_Tare_Guide"><a href="../Arm_Calibration" title="Arm Calibration"> Arm Calibration and Tare Guide</a></span></h4>
+<h4><span class="mw-headline" id="Access_Robot_FTP_Log_Files_Guide"><a href="../FTP_Log_Files" title="FTP Log Files"> Access Robot FTP Log Files Guide</a></span></h4>
+<h4><span class="mw-headline" id="Robot_Core_Dump_Manager"><a href="../Core_Dump_Manager" title="Core Dump Manager"> Robot Core Dump Manager</a></span></h4>
+<h1><span class="mw-headline" id="Admin_Resources">Admin Resources</span></h1>
+<p>This section contains links to non-public resources
+</p>
+<h4><span id="SDK_Shared_Resources_Folder_(Rethink_FTP)"></span><span class="mw-headline" id="SDK_Shared_Resources_Folder_.28Rethink_FTP.29"><a href="../Rethink_FTP" title="Rethink FTP"> SDK Shared Resources Folder (Rethink FTP)</a></span></h4>
+<h1><span class="mw-headline" id="System_Info">System Info</span></h1>
+<p>This section describes general informaton that describes your hardware/software.
+</p>
+<h4><span class="mw-headline" id="Robot_Serial_Number"><a href="../Serial_Number" title="Serial Number"> Robot Serial Number</a></span></h4>
+<h4><span class="mw-headline" id="Robot_Software_Versions"><a href="../Software_Version" title="Software Version"> Robot Software Versions</a></span></h4>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815161021
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.022 seconds
+Real time usage: 0.072 seconds
+Preprocessor visited node count: 158/1000000
+Preprocessor generated node count: 174/1000000
+Post‐expand include size: 259/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.458      1 Template:Learning-group_header
+100.00%    0.458      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:504-0!canonical and timestamp 20190815161021 and revision id 3978
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Configuration_and_Admin&amp;oldid=3978">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Configuration_and_Admin&amp;oldid=3978</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.022","walltime":"0.072","ppvisitednodes":{"value":158,"limit":1000000},"ppgeneratednodes":{"value":174,"limit":1000000},"postexpandincludesize":{"value":259,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.458      1 Template:Learning-group_header","100.00%    0.458      1 -total"]},"cachereport":{"timestamp":"20190815161021","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":169});});</script></body></html>

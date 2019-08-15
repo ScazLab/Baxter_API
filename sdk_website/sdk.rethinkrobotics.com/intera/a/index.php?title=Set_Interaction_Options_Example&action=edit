@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Set Interaction Options Example - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Set_Interaction_Options_Example","wgTitle":"Set Interaction Options Example","wgCurRevisionId":1356,"wgRevisionId":0,"wgArticleId":189,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Set_Interaction_Options_Example","wgRelevantArticleId":189,"wgRequestId":"49f436c5a3759d8be59598d5","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Set_Interaction_Options_Example rootpage-Set_Interaction_Options_Example skin-cavendishrr action-edit"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=Set+Interaction+Options+Example&amp;returntoquery=action%3Dedit">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Set_Interaction_Options_Example&amp;action=edit#">More</a>
+                <ul>
+                <li id="ca-viewsource" class="selected"><a href="index.php?title=Set_Interaction_Options_Example&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Set_Interaction_Options_Example&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Set_Interaction_Options_Example" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">View source for Set Interaction Options Example</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Set_Interaction_Options_Example&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                ← <a href="../Set_Interaction_Options_Example" title="Set Interaction Options Example">Set Interaction Options Example</a>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Set_Interaction_Options_Example&amp;action=edit#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Set_Interaction_Options_Example&amp;action=edit#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Intera_SDK:Users&amp;action=edit&amp;redlink=1" class="new" title="Intera SDK:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">&lt;div class="title-block">
+
+&lt;span style="font-size:120%;">'''This example shows interaction control usage by set the desired interaction control options in the current configuration. Note that the arm is not commanded to move but it will have the specified interaction control behavior.'''&lt;/span>
+
+&lt;/div>
+
+{{TOClimit|limit=2}}
+
+&lt;div class="content-block">
+
+== Introduction ==
+
+'''NEW functionality in the SDK/Intera 5.2 Update!'''&lt;br/>
+This interaction option setting example demonstrates how to use interaction control mode to generate a desired interaction behavior in the current arm configuration. 
+
+If you would like to follow along with the actual source code for the example on GitHub, it can be found through [https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/set_interaction_options.py this link] for joint torque spring example.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Usage ==
+
+Start the interaction option setting example from an RSDK terminal session using:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_examples set_interaction_options.py
+&lt;/syntaxhighlight>
+
+A default interaction control command message will be printed out after start:
+&lt;syntaxhighlight lang="bash" enclose="div">
+[INFO] [WallTime: 1511299000.977577] header: 
+  seq: 1
+  stamp: 
+    secs: 1511299000
+    nsecs: 977231979
+  frame_id: base
+interaction_control_active: True
+K_impedance: [1300.0, 1300.0, 1300.0, 30.0, 30.0, 30.0]
+max_impedance: [True, True, True, True, True, True]
+D_impedance: []
+K_nullspace: [5.0, 10.0, 5.0, 10.0, 5.0, 10.0, 5.0]
+force_command: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+interaction_frame: 
+  position: 
+    x: 0
+    y: 0
+    z: 0
+  orientation: 
+    x: 0
+    y: 0
+    z: 0
+    w: 1
+endpoint_name: right_hand
+in_endpoint_frame: False
+disable_damping_in_force_control: False
+disable_reference_resetting: False
+&lt;/syntaxhighlight>
+
+The interaction control command message will be published at 10Hz by default. 
+
+Pressing &lt;code> Control-C &lt;/code> at any time will stop publishing the command message and exit the example.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Arguments ==
+
+See the available arguments on the command line by passing set_interaction_options.py the &lt;code>-h&lt;/code>, help argument:
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_examples set_interaction_options.py -h
+&lt;/syntaxhighlight>
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+usage: set_interaction_options.py [-h] [-s {0,1}]
+                                  [-k K_IMPEDANCE [K_IMPEDANCE ...]]
+                                  [-m {0,1} [{0,1} ...]]
+                                  [-md {1,2,3,4} [{1,2,3,4} ...]]
+                                  [-fr INTERACTION_FRAME [INTERACTION_FRAME ...]]
+                                  [-ef] [-en ENDPOINT_NAME]
+                                  [-f FORCE_COMMAND [FORCE_COMMAND ...]]
+                                  [-kn K_NULLSPACE [K_NULLSPACE ...]] [-dd]
+                                  [-dr] [-rc] [-r RATE]
+
+    Set the desired interaction control options in the current configuration.
+    Note that the arm is not commanded to move but it will have the specified
+    interaction control behavior. If publish rate is 0 where the interaction
+    control command is only published once, after entering and exiting zero-G,
+    the arm will return to normal position mode. Also, regardless of the publish
+    rate, the zero-G behavior will not be affected by this. The future motion
+    commands need to be sent with interaction parameters if we want to keep
+    interaction control behaviors during the trajectory execution; otherwise,
+    the arm will move in position mode during the motion even if this script
+    is still running.
+
+    Call using:
+    $ rosrun intera_examples set_interaction_options.py  [arguments: see below]
+
+    -s 1
+    --> Set interaction active to True (0 for False) in the current configuration
+
+    -k 500.0 500.0 500.0 10.0 10.0 10.0
+    --> Set K_impedance to [500.0 500.0 500.0 10.0 10.0 10.0] in the current configuration
+
+    -m 1 1 0 1 1 1
+    --> Set max_impedance to [True True False True True True] in the current configuration
+
+    -md 1 1 2 1 1 1
+    --> Set interaction_control_mode to [impedance, impedance, force, impedance, impedance, impedance]
+        in the current configuration (1: impedance, 2: force, 3: impedance w/ force limit,
+        4: force w/ motion limit)
+
+    -fr 0.1 0.2 0.3 1 0 0 0
+    --> Set the pose of the interaction_frame -- position: (0.1, 0.2, 0.3) and orientation (1, 0, 0, 0)
+
+    -ef
+    --> Set in_endpoint_frame to True in the current configuration (use TCP frame as reference frame)
+
+    -f 0.0 0.0 30.0 0.0 0.0 0.0
+    --> Set force_command to [0.0 0.0 30.0 0.0 0.0 0.0] in the current configuration
+
+    -kn 5.0 3.0 5.0 4.0 6.0 4.0 6.0
+    --> Set K_nullspace to [5.0 3.0 5.0 4.0 6.0 4.0 6.0] in the current configuration
+
+    -r 20
+    --> Set desired publish rate (Hz)
+    
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s {0,1}, --interaction_active {0,1}
+                        Activate (1) or Deactivate (0) interaction controller
+  -k K_IMPEDANCE [K_IMPEDANCE ...], --K_impedance K_IMPEDANCE [K_IMPEDANCE ...]
+                        A list of desired stiffnesses, one for each of the 6
+                        directions -- stiffness units are (N/m) for first 3
+                        and (Nm/rad) for second 3 values
+  -m {0,1} [{0,1} ...], --max_impedance {0,1} [{0,1} ...]
+                        A list of maximum stiffness behavior state, one for
+                        each of the 6 directions (a single value can be
+                        provided to apply the same value to all the
+                        directions) -- 0 for False, 1 for True
+  -md {1,2,3,4} [{1,2,3,4} ...], --interaction_control_mode {1,2,3,4} [{1,2,3,4} ...]
+                        A list of desired interaction control mode (1:
+                        impedance, 2: force, 3: impedance with force limit, 4:
+                        force with motion limit), one for each of the 6
+                        directions
+  -fr INTERACTION_FRAME [INTERACTION_FRAME ...], --interaction_frame INTERACTION_FRAME [INTERACTION_FRAME ...]
+                        Specify the reference frame for the interaction
+                        controller -- first 3 values are positions [m] and
+                        last 4 values are orientation in quaternion (w, x, y,
+                        z) which has to be normalized values
+  -ef, --in_endpoint_frame
+                        Set the desired reference frame to endpoint frame;
+                        otherwise, it is base frame by default
+  -en ENDPOINT_NAME, --endpoint_name ENDPOINT_NAME
+                        Set the desired endpoint frame by its name; otherwise,
+                        it is right_hand frame by default
+  -f FORCE_COMMAND [FORCE_COMMAND ...], --force_command FORCE_COMMAND [FORCE_COMMAND ...]
+                        A list of desired force commands, one for each of the
+                        6 directions -- in force control mode this is the
+                        vector of desired forces/torques to be regulated in
+                        (N) and (Nm), in impedance with force limit mode this
+                        vector specifies the magnitude of forces/torques (N
+                        and Nm) that the command will not exceed
+  -kn K_NULLSPACE [K_NULLSPACE ...], --K_nullspace K_NULLSPACE [K_NULLSPACE ...]
+                        A list of desired nullspace stiffnesses, one for each
+                        of the 7 joints (a single value can be provided to
+                        apply the same value to all the directions) -- units
+                        are in (Nm/rad)
+  -dd, --disable_damping_in_force_control
+                        Disable damping in force control
+  -dr, --disable_reference_resetting
+                        The reference signal is reset to actual position to
+                        avoid jerks/jumps when interaction parameters are
+                        changed. This option allows the user to disable this
+                        feature.
+  -rc, --rotations_for_constrained_zeroG
+                        Allow arbitrary rotational displacements from the
+                        current orientation for constrained zero-G (works only
+                        with a stationary reference orientation)
+  -r RATE, --rate RATE  A desired publish rate for updating interaction
+                        control commands (10Hz by default) -- 0 if we want to
+                        publish it only once
+&lt;/syntaxhighlight>
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Code Walkthrough ==
+
+Now, let's break down the code.
+
+&lt;syntaxhighlight lang="python" line start="33" enclose="div">
+import rospy
+from intera_core_msgs.msg import InteractionControlCommand
+import argparse
+from geometry_msgs.msg import Pose
+from intera_motion_interface import InteractionOptions
+from intera_motion_interface.utility_functions import int2bool
+&lt;/syntaxhighlight>
+
+This imports the intera motion interface to access the InteractionOptions class. Also, &lt;code>InteractionControlCommand&lt;/code> message is imported from &lt;code>geometry_msgs.msg&lt;/code>.
+
+&lt;syntaxhighlight lang="python" line start="43" enclose="div">
+    try:
+        rospy.init_node('set_interaction_options_py')
+        pub = rospy.Publisher('/robot/limb/right/interaction_control_command', InteractionControlCommand, queue_size = 1)
+        rospy.sleep(0.5)
+
+        if args.rate > 0:
+            rate = rospy.Rate(args.rate)
+        elif args.rate == 0:
+            rospy.logwarn('Interaction control options will be set only once!')
+        elif args.rate &lt; 0:
+            rospy.logerr('Invalid publish rate!')
+&lt;/syntaxhighlight>
+
+The rospy is first initialized, and a publisher for ros topic (&lt;code>/robot/limb/right/interaction_control_command&lt;/code>) is created. The publish rate is set to what is provided in the argument. 
+
+&lt;syntaxhighlight lang="python" line start="69" enclose="div">
+        # set the interaction control options in the current configuration
+        interaction_options = InteractionOptions()
+
+        interaction_options.set_interaction_control_active(int2bool(args.interaction_active))
+        interaction_options.set_K_impedance(args.K_impedance)
+        interaction_options.set_max_impedance(int2bool(args.max_impedance))
+        interaction_options.set_interaction_control_mode(args.interaction_control_mode)
+        interaction_options.set_in_endpoint_frame(args.in_endpoint_frame)
+        interaction_options.set_force_command(args.force_command)
+        interaction_options.set_K_nullspace(args.K_nullspace)
+        if len(args.interaction_frame) &lt; 7:
+            rospy.logerr('The number of elements must be 7!')
+        elif len(args.interaction_frame) == 7:
+            quat_sum_square = args.interaction_frame[3]*args.interaction_frame[3] + args.interaction_frame[4]*args.interaction_frame[4] 
+            + args.interaction_frame[5]*args.interaction_frame[5] + args.interaction_frame[6]*args.interaction_frame[6]
+            if quat_sum_square  &lt; 1.0 + 1e-7 and quat_sum_square > 1.0 - 1e-7:
+                interaction_frame = Pose()
+                interaction_frame.position.x = args.interaction_frame[0]
+                interaction_frame.position.y = args.interaction_frame[1]
+                interaction_frame.position.z = args.interaction_frame[2]
+                interaction_frame.orientation.w = args.interaction_frame[3]
+                interaction_frame.orientation.x = args.interaction_frame[4]
+                interaction_frame.orientation.y = args.interaction_frame[5]
+                interaction_frame.orientation.z = args.interaction_frame[6]
+                interaction_options.set_interaction_frame(interaction_frame)
+            else:
+                rospy.logerr('Invalid input to quaternion! The quaternion must be a unit quaternion!')
+        else:
+            rospy.logerr('Invalid input to interaction_frame!')
+
+        interaction_options.set_disable_damping_in_force_control(args.disable_damping_in_force_control)
+        interaction_options.set_disable_reference_resetting(args.disable_reference_resetting)
+        interaction_options.set_rotations_for_constrained_zeroG(args.rotations_for_constrained_zeroG)
+
+        msg = interaction_options.to_msg()
+&lt;/syntaxhighlight>
+
+An object for &lt;code>InteractionOptions&lt;/code> class is created. Then the interaction parameters are set as specified in the arguments using the helper functions provided by the class. After setting all the parameters, a ROS message is generated.
+
+&lt;syntaxhighlight lang="python" line start="81" enclose="div">
+        # print the resultant interaction options once
+        rospy.loginfo(msg)
+        pub.publish(msg)
+
+        if args.rate > 0:
+            while not rospy.is_shutdown():
+                rate.sleep()
+                pub.publish(msg)
+&lt;/syntaxhighlight>
+
+The generated ROS message is printed out once and it is published at a specified rate.
+
+&lt;syntaxhighlight lang="python" line start="155" enclose="div">
+    except rospy.ROSInterruptException:
+            rospy.logerr('Keyboard interrupt detected from the user. %s',
+                         'Exiting the node...')
+
+if __name__ == '__main__':
+    main()
+&lt;/syntaxhighlight>
+
+Once interrupted, the script exits gracefully printing an error.
+
+&lt;/div>
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="http://sdk.rethinkrobotics.com/intera/Template:TOClimit" title="Template:TOClimit">Template:TOClimit</a> (<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Template:TOClimit&amp;action=edit" title="Template:TOClimit">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../Set_Interaction_Options_Example" title="Set Interaction Options Example">Set Interaction Options Example</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Set_Interaction_Options_Example">http://sdk.rethinkrobotics.com/intera/Set_Interaction_Options_Example</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":44});});</script></body></html>

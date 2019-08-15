@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Sdk-wiki:General disclaimer - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"Project","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":4,"wgPageName":"Sdk-wiki:General_disclaimer","wgTitle":"General disclaimer","wgCurRevisionId":4584,"wgRevisionId":4584,"wgArticleId":691,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Sdk-wiki:General_disclaimer","wgRelevantArticleId":691,"wgRequestId":"da32ba0f7b6e085766b466bd","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["sysop"],"wgRestrictionMove":["sysop"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-4 ns-subject page-Sdk-wiki_General_disclaimer rootpage-Sdk-wiki_General_disclaimer skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Sdk-wiki%3AGeneral+disclaimer&amp;returntoquery=oldid%3D4584">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Sdk-wiki:General disclaimer</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#">More</a><ul><li id="ca-nstab-project" class="selected"><a href="../Sdk-wiki:General_disclaimer" title="View the project page [a]" accesskey="a">Project page</a></li><li id="ca-talk" class="new"><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki_talk:General_disclaimer&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 15:34, 3 January 2017 by <a href="index.php?title=User:Bbenoit&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Bbenoit (page does not exist)"><bdi>Bbenoit</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Bbenoit&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Bbenoit (page does not exist)">talk</a> | <a href="../Special:Contributions/Bbenoit" class="mw-usertoollinks-contribs" title="Special:Contributions/Bbenoit">contribs</a>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:General_disclaimer&amp;diff=prev&amp;oldid=4584" title="Sdk-wiki:General disclaimer">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:General_disclaimer&amp;direction=prev&amp;oldid=4584" title="Sdk-wiki:General disclaimer">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#column-one">navigation</a>, <a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="content-block">
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#TERMS_AND_CONDITIONS_OF_USE_FOR:"><span class="tocnumber">1</span> <span class="toctext">TERMS AND CONDITIONS OF USE FOR:</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#Copyright_and_Trademark_Information"><span class="tocnumber">2</span> <span class="toctext">Copyright and Trademark Information</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#Contributions"><span class="tocnumber">3</span> <span class="toctext">Contributions</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#Conduct"><span class="tocnumber">4</span> <span class="toctext">Conduct</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#Use_of_Wiki_and_Its_Content"><span class="tocnumber">5</span> <span class="toctext">Use of Wiki and Its Content</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#Confidential_Information_and_Accuracy_of_Content"><span class="tocnumber">6</span> <span class="toctext">Confidential Information and Accuracy of Content</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#No_Warranties"><span class="tocnumber">7</span> <span class="toctext">No Warranties</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#Compliance_with_DMCA"><span class="tocnumber">8</span> <span class="toctext">Compliance with DMCA</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#Limitation_of_Liability"><span class="tocnumber">9</span> <span class="toctext">Limitation of Liability</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#Links_to_Third-Party_Web_Sites"><span class="tocnumber">10</span> <span class="toctext">Links to Third-Party Web Sites</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#No_Implied_Endorsements"><span class="tocnumber">11</span> <span class="toctext">No Implied Endorsements</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#Jurisdictional_Issues"><span class="tocnumber">12</span> <span class="toctext">Jurisdictional Issues</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#Enforcement_of_Terms_and_Conditions"><span class="tocnumber">13</span> <span class="toctext">Enforcement of Terms and Conditions</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584#Entire_Agreement"><span class="tocnumber">14</span> <span class="toctext">Entire Agreement</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="TERMS_AND_CONDITIONS_OF_USE_FOR:">TERMS AND CONDITIONS OF USE FOR:</span></h2>
+<p><a rel="nofollow" class="external free" href="../../wiki">http://sdk.rethinkrobotics.com/wiki</a>
+</p><p><br />
+PLEASE READ THESE TERMS AND CONDITIONS OF USE CAREFULLY. THESE TERMS AND CONDITIONS MAY HAVE CHANGED SINCE YOUR LAST VISIT TO THIS WIKI. BY USING THIS WIKI, YOU INDICATE YOUR ACCEPTANCE OF THESE TERMS AND CONDITIONS AND YOUR COMPLIANCE WITH ALL APPLICABLE LAWS AND REGULATIONS INCLUDING ALL EXPORT CONTROL LAWS AND REGULATIONS. IF YOU DO NOT ACCEPT THESE TERMS AND CONDITIONS, THEN DO NOT USE THIS WIKI. 
+</p><p><br />
+Rethink Robotics, Inc. ("Rethink") maintains this wiki as a service to its customers, potential customers, and other interested parties. Rethink may revise these terms at any time by placing new terms on this wiki.  Please visit us frequently to check for revised terms and to browse and download materials and documents contained in this wiki, subject to the terms and conditions set out below.
+</p><p><br />
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Copyright_and_Trademark_Information">Copyright and Trademark Information</span></h2>
+<p>Copyright © 2008-2014 Rethink Robotics, Inc. All rights reserved.  
+</p><p>This wiki is an online open-content collaborative portal hosted by Rethink, and the information which it contains, is the property of Rethink and its affiliates and licensors or of contributors who have contributed material pursuant to these terms and conditions or a previous version of these terms and conditions, and is protected from unauthorized copying and dissemination by United States copyright law, trademark law, international conventions and other intellectual property laws. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Contributions">Contributions</span></h2>
+<p>By uploading, submitting or otherwise making available or contributing to the wiki any software, reference designs, feedback or other materials (“Submitted Material”), you hereby make any Submitted Material that is not software available to all users of this wiki under the Creative Commons Attribution-ShareAlike 3.0 Unported License and you hereby make any Submitted Material that is software available to all users of this wiki under the BSD 2-Clause license found at www.opensource.org.  You represent and warrant that you have sufficient rights in those materials or information to grant these rights and licenses. You agree that you will not unilaterally revoke or seek invalidation of any license that you have granted under these terms and conditions, even if you terminate use of this wiki.  You also agree that Rethink and users of this wiki are free to use any ideas, concepts, know-how or techniques that are embodied in the Submitted Material.
+</p><p><br />
+<b>Further, you hereby give permission to Rethink to release your name or otherwise publicize the fact that you submitted materials or other information to us, and Rethink may do so without the need of further notice to you.</b>
+</p><p><b>Notwithstanding any other terms in these terms and conditions, Rethink may remove any posting or upload you make at Rethink's sole discretion.</b>  
+</p><p><br />
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Conduct">Conduct</span></h2>
+<p>You may not use the wiki to communicate in any manner any unlawful or inappropriate information or materials, including without limitation anything that is threatening, libelous, defamatory, obscene, inflammatory, pornographic or profane. Rethink may investigate complaints or violations of these terms and conditions and, notwithstanding any other terms or policies, it may take any action it deems appropriate including, without limitation, disclosing any information to enforcement agencies or others. In addition, Rethink reserves the right to pursue all remedies available for such violations, and may revoke access to the wiki at any time.
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Use_of_Wiki_and_Its_Content">Use of Wiki and Its Content</span></h2>
+<p>There may be delays, omissions, or inaccuracies in information contained in this wiki. The information on this wiki is provided with the understanding that Rethink and various contributors providing such information do not constitute the rendering of legal, accounting, tax, career or other professional advice or services. As such, information on this wiki should not be relied upon or used as a substitute for consultation with professional advisors. 
+</p><p>Rethink may alter, suspend, or discontinue this wiki at any time for any reason, without notice or cost. The wiki may become unavailable due to maintenance or malfunction of computer equipment or other reasons.
+</p><p>By using this wiki, you agree to indemnify, hold harmless and defend Rethink from any claims, damages, losses, liabilities, and all costs and expenses of defense, including but not limited to, attorneys' fees, resulting directly or indirectly from a claim by a third party that is based on your use of this wiki in violation of these terms.
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Confidential_Information_and_Accuracy_of_Content">Confidential Information and Accuracy of Content</span></h2>
+<p>Information that you submit to this wiki is publicly posted and no information or material submitted to this wiki will be deemed to be confidential.
+</p><p>The information on this wiki may contain technical inaccuracies or typographical errors. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="No_Warranties">No Warranties</span></h2>
+<p>INFORMATION AND DOCUMENTS, INCLUDING SUBMITTED MATERIALS, PROVIDED ON THIS WIKI ARE PROVIDED "AS IS." SPECIFICALLY, BUT WITHOUT LIMITATION, RETHINK DOES NOT WARRANT THAT: (i) THE INFORMATION ON THIS  WIKI IS CORRECT, ACCURATE, RELIABLE OR COMPLETE; (ii) THE FUNCTIONS CONTAINED ON THIS  WIKI WILL BE UNINTERRUPTED OR ERROR-FREE; (iii) DEFECTS WILL BE CORRECTED, OR (iv) THIS  WIKI OR THE SERVER(S) THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. 
+</p><p>It is the user's responsibility to ascertain whether any information downloaded from this wiki is free of viruses, worms, trojan horses, or other items of a potentially destructive nature. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Compliance_with_DMCA">Compliance with DMCA</span></h2>
+<p>It is critical that the Submitted Material can be re-used by other users without fear of liability and that it is not infringing the proprietary rights of others. Rethink will respond to notices of alleged infringement that comply with the formalities of the Digital Millennium Copyright Act (DMCA). 
+</p><p>If you believe any materials accessible on or from this wiki infringe your copyright, you may request removal of those materials (or access thereto) from this wiki by contacting Rethink’s copyright agent (identified below) and providing the following information: 
+</p>
+<ol><li>Identification of the copyrighted work that you believe to be infringed. Please describe the work, and where possible include a copy or the location (e.g., URL) of an authorized version of the work.</li>
+<li>Identification of the material that you believe to be infringing and its location. Please describe the material, and provide us with its URL or any other pertinent information that will allow us to locate the material.</li>
+<li>Your name, address, telephone number and (if available) e-mail address.</li>
+<li>A statement that you have a good faith belief that the complained of use of the materials is not authorized by the copyright owner, its agent, or the law.</li>
+<li>A statement that the information that you have supplied is accurate, and indicating that "under penalty of perjury," you are the copyright owner or are authorized to act on the copyright owner’s behalf.</li>
+<li>A signature or the electronic equivalent from the copyright holder or authorized representative.</li></ol>
+<p><br />
+Rethink’s agent for copyright issues relating to this web site is as follows:
+</p><p><br />
+Steven Daignault
+</p><p>Rethink Robotics, Inc.
+</p><p>27-43 Wormwood Street, Suite 300
+</p><p>Boston, MA 02210
+</p><p>Tel – 617-600-0491
+</p><p>Fax – 617-812-0448
+</p><p>sdaignault@rethinkrobotics.com
+</p><p><br />
+</p><p>In an effort to protect the rights of copyright owners, Rethink maintains a policy for the termination, in appropriate circumstances, of subscribers and account holders of this web site who are repeat infringers. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Limitation_of_Liability">Limitation of Liability</span></h2>
+<p>UNDER NO CIRCUMSTANCES SHALL RETHINK BE LIABLE FOR ANY INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, MULTIPLE OR OTHER INDIRECT DAMAGES THAT RESULT FROM THE USE OF, OR THE INABILITY TO USE, THIS  WIKI OR THE INFORMATION CONTAINED ON THIS  WIKI, EVEN IF RETHINK HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL RETHINK'S TOTAL LIABILITY TO YOU FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION RESULTING FROM YOUR USE OF THIS WIKI, WHETHER IN CONTRACT, TORT (INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE) OR OTHERWISE, EXCEED TEN DOLLARS ($10). 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Links_to_Third-Party_Web_Sites">Links to Third-Party Web Sites</span></h2>
+<p>This wiki may contain links to non-Rethink web sites. These links are provided to you as a convenience, and Rethink is not responsible for the content of any linked web site. Any outside web site accessed from this wiki is independent from Rethink, and Rethink has no control over the content of that web site. In addition, a link to any non-Rethink web site does not imply that Rethink endorses or accepts any responsibility for the content or use of such a web site. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="No_Implied_Endorsements">No Implied Endorsements</span></h2>
+<p>In no event shall any reference to any third party or third party product or service be construed as an approval or endorsement by Rethink of that third party or of any product or service provided by a third party. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Jurisdictional_Issues">Jurisdictional Issues</span></h2>
+<p>Rethink makes no representation that information on this wiki is appropriate or available for use outside the United States. Those who choose to access this wiki from outside the United States do so on their own initiative and are responsible for compliance with local laws, if and to the extent local laws are applicable.
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Enforcement_of_Terms_and_Conditions">Enforcement of Terms and Conditions</span></h2>
+<p>These terms and conditions are governed and interpreted pursuant to the laws of the Commonwealth of Massachusetts, United States of America, notwithstanding any principles of conflicts of law. 
+</p><p>All disputes arising out of or relating to these Terms and Conditions shall be finally resolved by arbitration conducted in the English language in Boston, Massachusetts, U.S.A. under the commercial arbitration rules of the American Arbitration Association. The parties shall appoint as sole arbitrator a retired judge who presided in the Commonwealth of Massachusetts. The parties shall bear equally the cost of the arbitration (except that the prevailing party shall be entitled to an award of reasonable attorneys' fees incurred in connection with the arbitration in such an amount as may be determined by the arbitrator). All decisions of the arbitrator shall be final and binding on both parties and enforceable in any court of competent jurisdiction. Notwithstanding this, application may be made to any court for a judicial acceptance of the award or order of enforcement. Notwithstanding the foregoing, Rethink shall be entitled to seek injunctive relief, security, or other equitable remedies from the United States District Court for the District of Massachusetts or any other court of competent jurisdiction. 
+</p><p>If any part of these terms is unlawful, void, or unenforceable, that part will be deemed severable and will not affect the validity and enforceability of the remaining provisions. Rethink may, at its sole discretion and without notice, revise these terms at any time by updating this posting. 
+</p>
+</div>
+<p><br />
+</p>
+<div class="content-block">
+<h2><span class="mw-headline" id="Entire_Agreement">Entire Agreement</span></h2>
+<p>This is the entire Agreement between the parties relating to the subject matter herein and shall not be modified except in writing signed by both parties or by a new posting by Rethink, as described above. 
+For Additional Information 
+If you have any questions about the rights and restrictions above, please contact: support@rethinkrobotics.com
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815161322
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.012 seconds
+Real time usage: 0.015 seconds
+Preprocessor visited node count: 69/1000000
+Preprocessor generated node count: 88/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:691-0!canonical and timestamp 20190815161322 and revision id 4584
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:General_disclaimer&amp;oldid=4584</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.012","walltime":"0.015","ppvisitednodes":{"value":69,"limit":1000000},"ppgeneratednodes":{"value":88,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815161322","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":65});});</script></body></html>

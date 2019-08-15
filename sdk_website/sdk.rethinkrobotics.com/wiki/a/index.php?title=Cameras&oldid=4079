@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Cameras - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Cameras","wgTitle":"Cameras","wgCurRevisionId":4079,"wgRevisionId":4079,"wgArticleId":355,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Cameras","wgRelevantArticleId":355,"wgRequestId":"21650fce7acc2c9531a0e7c0","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Cameras rootpage-Cameras skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Cameras&amp;returntoquery=oldid%3D4079">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Cameras</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Cameras&amp;oldid=4079#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Cameras&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Cameras&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Cameras" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 11:42, 1 June 2015 by <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Sannoso&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Sannoso (page does not exist)"><bdi>Sannoso</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Sannoso&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Sannoso (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Sannoso" class="mw-usertoollinks-contribs" title="Special:Contributions/Sannoso">contribs</a>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Cameras&amp;diff=prev&amp;oldid=4079" title="Cameras">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Cameras&amp;direction=prev&amp;oldid=4079" title="Cameras">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Cameras&amp;oldid=4079#column-one">navigation</a>, <a href="index.php?title=Cameras&amp;oldid=4079#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table style="padding:5px; border:1px solid #ffcc00; text-align:center; background:#FFFDDF; width:100%; margin-bottom:.5em;">
+<tbody><tr>
+<td><b><a href="../Robot_Components" title="Robot Components"> Robot Components </a>:</b> <a href="../Robot" title="Robot">Robot</a>, <a href="../Arms" title="Arms">Arms</a>, <a href="../Grippers" title="Grippers">Grippers</a>, <a class="mw-selflink selflink">Cameras</a>, <a href="../Head" title="Head">Head</a>, <a href="../Input_and_Output" title="Input and Output"> I/O</a>, <a href="../Screen" title="Screen">Screen</a>
+</td></tr></tbody></table>
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Cameras&amp;oldid=4079#Using_the_Cameras"><span class="tocnumber">1</span> <span class="toctext">Using the Cameras</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Cameras&amp;oldid=4079#Hardware_Overview"><span class="tocnumber">1.1</span> <span class="toctext">Hardware Overview</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=Cameras&amp;oldid=4079#General_Info_.2F_Guide"><span class="tocnumber">1.2</span> <span class="toctext">General Info / Guide</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="index.php?title=Cameras&amp;oldid=4079#Resources"><span class="tocnumber">1.3</span> <span class="toctext">Resources</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="index.php?title=Cameras&amp;oldid=4079#ROS_API"><span class="tocnumber">1.3.1</span> <span class="toctext">ROS API</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="index.php?title=Cameras&amp;oldid=4079#Python_API_.28baxter_interface.29"><span class="tocnumber">1.3.2</span> <span class="toctext">Python API (baxter_interface)</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="index.php?title=Cameras&amp;oldid=4079#Examples"><span class="tocnumber">1.3.3</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="index.php?title=Cameras&amp;oldid=4079#Tools"><span class="tocnumber">1.3.4</span> <span class="toctext">Tools</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="index.php?title=Cameras&amp;oldid=4079#Advanced_Usage"><span class="tocnumber">1.4</span> <span class="toctext">Advanced Usage</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="index.php?title=Cameras&amp;oldid=4079#See_Also"><span class="tocnumber">1.5</span> <span class="toctext">See Also</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Using_the_Cameras">Using the Cameras</span></h1>
+<h2><span class="mw-headline" id="Hardware_Overview">Hardware Overview</span></h2>
+<p>The Baxter Research Robot has three color cameras; one camera is located in each arm, and a third camera is located on the head, above the display screen. Any two cameras can be operated at a given time; USB system limitations do not allow all three cameras to be operated at once. 
+</p><p><br />
+<b>Important Note for RSDK 1.1 Update:</b> As of RSDK 1.1 opening and closing of cameras has changed. Previously all cameras could be powered at the same time, but only two could be opened and operated. Due to 64-bit limitations with the Indigo Baxter's internal USB hub, only two cameras can be powered on at once. This change is taken care of behind the scenes. To accommodate this extra restriction, in RSDK 1.1, closing a camera will also turn power OFF to that camera, and turn power ON to both of Baxter's other cameras. You can turn power OFF to any camera by closing that camera (regardless of whether that camera was actually open or closed previously). Closing another camera is a good way to ensure power is ON on a camera that you are interested in viewing before actually opening it.
+</p><p><br />
+The cameras in the Baxter research Robot can capture images at the resolutions listed below. Modes labeled “RES_HIGH” are sampled at the camera’s maximum resolution of 1280x800; “RES_LOW” modes decimate imager pixels by 2 in X and Y, for an effective imager resolution of 640x400 with the same field of view. Modes labeled as "windowed" capture a sub-window within the camera's field of view, with programmable X and Y offsets for the sub-window position.
+</p><p>Windowed modes 1 to 5 capture a sub-window at the imager's RES_HIGH resolution; for example, mode 5 provides a 320x200 image that can be located anywhere within the camera's field of view. In contrast, windowed modes 7 to 11 capture a sub-window within the imager's decimated RES_LOW resolution. Thus, mode 9 also provides a 320x200 image that can be located anywhere within the camera's field of view, but in this case, because of pixel decimation the 320x200 image covers a larger portion of the camera field of view, with a lower spatial resolution, than the image in mode 5.
+</p><p><br />
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<td>Mode Index
+</td>
+<td>Resolution key
+</td>
+<td>Imager Width
+</td>
+<td>Window width
+</td>
+<td>Window height
+</td>
+<td>Windowed?
+</td>
+<td>Max. Refresh Rate
+</td></tr>
+<tr>
+<td>0
+</td>
+<td>RES_HIGH
+</td>
+<td>1280
+</td>
+<td>1280
+</td>
+<td>800
+</td>
+<td>N
+</td>
+<td>14.1 fps
+</td></tr>
+<tr>
+<td>1
+</td>
+<td>RES_HIGH
+</td>
+<td>1280
+</td>
+<td>960
+</td>
+<td>600
+</td>
+<td>Y
+</td>
+<td>23.8 fps
+</td></tr>
+<tr>
+<td>2
+</td>
+<td>RES_HIGH
+</td>
+<td>1280
+</td>
+<td>640
+</td>
+<td>400
+</td>
+<td>Y
+</td>
+<td>27.8 fps
+</td></tr>
+<tr>
+<td>3
+</td>
+<td>RES_HIGH
+</td>
+<td>1280
+</td>
+<td>480
+</td>
+<td>300
+</td>
+<td>Y
+</td>
+<td>27.9 fps
+</td></tr>
+<tr>
+<td>4
+</td>
+<td>RES_HIGH
+</td>
+<td>1280
+</td>
+<td>384
+</td>
+<td>240
+</td>
+<td>Y
+</td>
+<td>27.8 fps
+</td></tr>
+<tr>
+<td>5
+</td>
+<td>RES_HIGH
+</td>
+<td>1280
+</td>
+<td>320
+</td>
+<td>200
+</td>
+<td>Y
+</td>
+<td>27.9 fps
+</td></tr>
+<tr>
+<td>6
+</td>
+<td>RES_LOW
+</td>
+<td>640
+</td>
+<td>640
+</td>
+<td>400
+</td>
+<td>N
+</td>
+<td>47.6 fps
+</td></tr>
+<tr>
+<td>7
+</td>
+<td>RES_LOW
+</td>
+<td>640
+</td>
+<td>480
+</td>
+<td>300
+</td>
+<td>Y
+</td>
+<td>55.5 fps
+</td></tr>
+<tr>
+<td>8
+</td>
+<td>RES_LOW
+</td>
+<td>640
+</td>
+<td>384
+</td>
+<td>240
+</td>
+<td>Y
+</td>
+<td>55.5 fps
+</td></tr>
+<tr>
+<td>9
+</td>
+<td>RES_LOW
+</td>
+<td>640
+</td>
+<td>320
+</td>
+<td>200
+</td>
+<td>Y
+</td>
+<td>55.5 fps
+</td></tr>
+<tr>
+<td>10
+</td>
+<td>RES_LOW
+</td>
+<td>640
+</td>
+<td>240
+</td>
+<td>150
+</td>
+<td>Y
+</td>
+<td>55.5 fps
+</td></tr>
+<tr>
+<td>11
+</td>
+<td>RES_LOW
+</td>
+<td>640
+</td>
+<td>192
+</td>
+<td>120
+</td>
+<td>Y
+</td>
+<td>55.5 fps
+</td></tr></tbody></table>
+<h2><span id="General_Info_/_Guide"></span><span class="mw-headline" id="General_Info_.2F_Guide">General Info / Guide</span></h2>
+<p>The three available cameras 'left_hand_camera', 'right_hand_camera', and 'head_camera' are exposed with the ability to adjust parameters describing its operation.
+</p><p>These include the ability to modify:
+</p>
+<ul><li>Frame Width and Height to supported operating modes.</li>
+<li>Frame Rate (fps)</li>
+<li>Windowing</li>
+<li>Binning</li>
+<li>Exposure</li>
+<li>Gain</li>
+<li>White Balance</li></ul>
+<p><br />
+<b>Important Note:</b> Due to limited bandwidth capabilities <b>only two</b> cameras can be operating simultaneously. Starting a camera while both of the other cameras are in operation will result in an error, and the camera will not open.
+</p><p><b>Important Note:</b> Default behavior on Baxter startup is for both of the hand cameras to be in operation at a resolution of 320x200 at a framerate of 25 fps.
+</p><p><b>Supported Frame Size Modes:</b> Frame sizes at which the cameras will operate.
+</p>
+<ul><li>1280x800</li>
+<li>960x600</li>
+<li>640x400</li>
+<li>480x300</li>
+<li>384x240</li>
+<li>320x200</li></ul>
+<p><b>When opening a camera at an unsupported frame width and height:</b>    
+Using the camera_control.py example - Exit with the ValueError: Invalid Camera mode.    
+Using the baxter_inteface camera.py API - The camera driver will open with the mode closest to the specified frame width and height.    
+Directly using the service calls - The camera driver will open with mode closest to the specified frame width and height.    
+</p>
+<h2><span class="mw-headline" id="Resources">Resources</span></h2>
+<h3><span class="mw-headline" id="ROS_API">ROS API</span></h3>
+<p>See the <a href="../API_Reference#cameras" title="API Reference">API Reference Page </a> for information on the ROS Interface to the Cameras.
+</p>
+<h3><span id="Python_API_(baxter_interface)"></span><span class="mw-headline" id="Python_API_.28baxter_interface.29">Python API (<code>baxter_interface</code>)</span></h3>
+<p>CameraController class: <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/baxter_interface/blob/release-0.7.0/src/baxter_interface/camera.py">camera.py</a>
+</p>
+<h3><span class="mw-headline" id="Examples">Examples</span></h3>
+<p><b>Input and Output</b>
+</p>
+<ul><li><a href="../Camera_Control_Example" class="mw-redirect" title="Camera Control Example">Camera Control Example</a>
+<ul><li>Demonstrates usage for listing, opening, and closing the available cameras.</li></ul></li>
+<li><a href="../Image_view" title="Image view">View Cameras Example </a>
+<ul><li>Use this simple ROS program from the command line to view the image stream from a camera.  The example shows you how to use the 'image_view' tool with the Baxter camera topics.</li></ul></li></ul>
+<h3><span class="mw-headline" id="Tools">Tools</span></h3>
+<ul><li><a href="../Rviz" title="Rviz">rviz</a> (ROS)
+<ul><li>The ROS visualizer, rviz, is a great tool for viewing multiple cameras and data streams at once.  You can also use the <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Rviz---Baxter-Sensor-Displays&amp;action=edit&amp;redlink=1" class="new" title="Rviz---Baxter-Sensor-Displays (page does not exist)">Camera Display Type</a> to render the view of the (virtual) world from the perspective of one of Baxter's cameras.</li></ul></li>
+<li><a href="../Image_view" title="Image view">image_view</a> (ROS)
+<ul><li>A light-weight image viewer for <a rel="nofollow" class="external text" href="http://ros.org/doc/api/sensor_msgs/html/msg/Image.html">ROS Images</a>.  Use this tool when you just want a quick, simple method to check the camera view or to save snapshots.</li></ul></li></ul>
+<h2><span class="mw-headline" id="Advanced_Usage">Advanced Usage</span></h2>
+<ul><li><a href="../Demo_Mode_-_Code_Walkthrough" title="Demo Mode - Code Walkthrough">Demo Mode - Code Walkthrough</a> - The BRR Demo Mode includes an example that draws images from the cameras and publishes it to the screen.</li></ul>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li><a href="../Using_the_Screen" class="mw-redirect" title="Using the Screen">Using the Screen</a>, <a href="../Head" title="Head">Head</a>, <a href="../Input_and_Output" title="Input and Output">Input and Output</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815161515
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.016 seconds
+Real time usage: 0.017 seconds
+Preprocessor visited node count: 42/1000000
+Preprocessor generated node count: 54/1000000
+Post‐expand include size: 271/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.465      1 Template:Components-group_header
+100.00%    0.465      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:355-0!canonical and timestamp 20190815161515 and revision id 4079
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Cameras&amp;oldid=4079">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Cameras&amp;oldid=4079</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.016","walltime":"0.017","ppvisitednodes":{"value":42,"limit":1000000},"ppgeneratednodes":{"value":54,"limit":1000000},"postexpandincludesize":{"value":271,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.465      1 Template:Components-group_header","100.00%    0.465      1 -total"]},"cachereport":{"timestamp":"20190815161515","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":70});});</script></body></html>

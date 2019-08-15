@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Home - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Home","wgTitle":"Home","wgCurRevisionId":4357,"wgRevisionId":4357,"wgArticleId":351,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Home","wgRelevantArticleId":351,"wgRequestId":"cf9904bc2835da8992f0ae93","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["sysop"],"wgRestrictionMove":["sysop"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="http://sdk.rethinkrobotics.com/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics-index"/>
+<script async="" src="http://sdk.rethinkrobotics.com/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics-index"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://sdk.rethinkrobotics.com/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics-index"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Home rootpage-Home skin-cavendishmw-rethinkrobotics-index action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(a/skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="a/index.php?title=Special:UserLogin&amp;returnto=Home">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment indexContent -->
+<div id="rr_index">
+  <div id="rr_welcome"></div>
+
+  <div id="rr_navMenu">
+    <div id="rr_navMenu_setup" class="rr_navMenu_link">
+      <h2><a href="Getting_Started">Getting Started</a></h2>
+      <ul>
+	<li><a href="Baxter_Setup">Baxter Setup</a></li>
+	<li><a href="Workstation_Setup">Workstation Setup</a></li>
+	<li><a href="Hello_Baxter">Hello Baxter!</a></li>
+      </ul>
+    </div>
+
+    <div id="rr_navMenu_learning" class="rr_navMenu_link">
+      <h2><a href="Learning">Learning</a></h2>
+      <ul>
+	<li><a href="Foundations">Foundations</a></li>
+	<li><a href="Advanced_Understanding">Advanced Concepts</a></li>
+	<li><a href="Tools">Tools</a></li>
+	<li><a href="Configuration_and_Admin">Configuration</a></li>
+      </ul>
+    </div>
+
+    <div id="rr_navMenu_community" class="rr_navMenu_link">
+      <h2><a href="Community">Community</a></h2>
+      <ul>
+	<li><a href="Research">Research</a></li>
+	<li><a href="Showcase">Showcase</a></li>
+	<li><a href="People">People</a></li>
+      </ul>
+    </div>
+
+    <div id="rr_navMenu_support" class="rr_navMenu_link">
+      <h2><a href="Support">Support</a></h2>
+      <ul>
+	<li><a href="Troubleshooting">Troubleshooting</a></li>
+	<li><a href="FAQ">FAQ</a></li>
+	<li><a href="Support_Resources">Resources</a></li>
+      </ul>
+    </div>
+    
+  </div>
+  <div id="rr_quickAccess">
+    <div>
+      <h2>Quick Access</h2>
+      <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="rr_quickAccess_link">
+<h3><span class="mw-headline" id="1.2.0_Software_Update">1.2.0 Software Update</span></h3>
+<p>SDK 1.2.0 has been released!  Please follow the 1.2.0 software update instructions.<br /><br />
+<a href="Software_Update_-_v1.2.0" title="Software Update - v1.2.0">GO</a>
+</p>
+</div>
+<div class="rr_quickAccess_link"> 
+<h3><span id="Baxter_on_Gazebo!"></span><span class="mw-headline" id="Baxter_on_Gazebo.21">Baxter on Gazebo!</span></h3>
+<p>Tutorial for installation and use of Gazebo simulation software with Baxter.<br /><br />
+<a href="Using_Gazebo_and_Baxter" class="mw-redirect" title="Using Gazebo and Baxter">GO</a>
+</p>
+</div>
+<div class="rr_quickAccess_link"> 
+<h3><span class="mw-headline" id="SSH_Access">SSH Access</span></h3>
+<p>SSH access to the robot!  Compile and run your code locally. Now available in SDK 1.0.<br /><br />
+<a href="SSH" title="SSH">GO</a>
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815153414
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.005 seconds
+Real time usage: 0.005 seconds
+Preprocessor visited node count: 4/1000000
+Preprocessor generated node count: 10/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 1/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:351-0!canonical and timestamp 20190815153414 and revision id 4357
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="a/index.php?title=Home&amp;oldid=4357">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Home&amp;oldid=4357</a>"</div>
+      
+    </div>
+  </div>
+</div>
+<!-- end fragment indexContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="a/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.005","walltime":"0.005","ppvisitednodes":{"value":4,"limit":1000000},"ppgeneratednodes":{"value":10,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":1,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815153414","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":57});});</script></body></html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Time and NTP - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Time_and_NTP","wgTitle":"Time and NTP","wgCurRevisionId":3363,"wgRevisionId":0,"wgArticleId":332,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Time_and_NTP","wgRelevantArticleId":332,"wgRequestId":"e7b3aab8e23698293ad42258","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Time_and_NTP rootpage-Time_and_NTP skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Time+and+NTP&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Time and NTP</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Time_and_NTP&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Time_and_NTP&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Time_and_NTP&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Time_and_NTP" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Time_and_NTP" title="Time and NTP">Time and NTP</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Time_and_NTP&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Time_and_NTP&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">= Robot Time and NTP =
+
+The Network Time Protocol ([http://networktimefoundation.org/projects/ntp-project/ NTP]) is run on the robot to keep the robot's system time accurate.
+
+
+== Introduction ==
+By default, your robot will automatically use NTP to synchronize its system clock when connected to the internet.  Large offsets are corrected at boot, while small inaccuracies are handled gradually during run-time.
+
+To correct your robot's time, reboot your robot while having it connected to the internet.
+
+You can check the time on the robot with the &lt;code>ntpdate&lt;/code> tool:
+&lt;source lang="bash">
+    $ ntpdate -q &lt;robot_address>
+    server 192.168.0.1, stratum 2, offset -0.000680, delay 0.03934
+    5 Oct 18:32:31 ntpdate[7238]: adjust time server 192.168.52.242 offset -0.000680 sec  
+&lt;/source>
+This will tell you the difference between your computer's time (the time on the left) and the robot's system clock.
+
+If you cannot connect your Baxter to the internet or need to set a custom configuration, see the [[Time and NTP#configuration|Configuration]] Section.
+
+== Overview ==
+Baxter's on-board time is kept accurate using the standard [http://networktimefoundation.org/projects/ntp-project/ NTP] time service.  The default configuration will set the robot's time once during startup each time the robot boots, and then will maintain a running NTP server that will gradually slew the time to keep the robot's system time in sync.  The default time servers are received from pool.ntp.org, but these can be configured by either providing the &lt;code>ntp-servers&lt;/code> option from your DHCP host, or using the [http://www.eecis.udel.edu/~mills/ntp/html/ntpdc.html ntpdc] tool to configure the running NTP server.
+
+''Note: NTP was first enabled in version 0.6.2 of the RSDK. Make sure you are running rsdk-0.6.2 or above to use these services.''
+
+=== NTP on Baxter ===
+NTP runs automatically on Baxter in two parts:
+
+# The &lt;code>ntp-client&lt;/code> script runs on boot to '''correct large time offsets.'''
+# The &lt;code>ntpd&lt;/code> service then runs an NTP timeserver to gradually keep the time accurate for '''small time differences'''.
+
+The final important piece is the &lt;code>ntp.conf&lt;/code> configuration used for both these services.  This determines which reference time servers the robot should use to synchronize against.
+
+Default settings should work for most people to keep Baxter's time accurate.  Users can query the status of the robot's NTP timeserver using various NTP tools including: ntpdate, ntpq, and ntpdc.
+
+For the advanced users, the above NTP services can be [[Time and NTP#configuration|configured]] using DHCP or the run-time ntpdc client.
+
+=== Timezone ===
+NTP will sync your robot's time to "real-world" time, but you still need to set the robot's timezone.  The robot's timezone can be set using the [[Field Service Menu (FSM)|Field-Service-Menu]].  This does not affect the time kept by NTP as that will be based on UTC, however it will affect the offset used for the displayed system time.
+
+== How to Use NTP ==
+
+=== How to Check Robot Time ===
+You can use the [http://www.eecis.udel.edu/~mills/ntp/html/ntpdate.html ntpdate] tool for a simple reference check against the robot, or use the [[ntpq.html ntpq]]) tool to check the status of the NTP timeserver and Baxter's synchronization, among other details.
+
+Make sure you have installed the ntp tools:
+&lt;source lang="bash">
+    $ sudo apt-get install ntp  
+&lt;/source>
+
+Query the status of the NTP server on the robot:
+&lt;source lang="bash">
+    $ ntpq -p &lt;robot_address>  
+         remote           refid      st t when poll reach   delay   offset  jitter
+    ==============================================================================
+*server2.shellva 128.59.39.48     2 u 1712 1024  376   10.225    1.013   3.852
+*173.44.32.10    96.237.191.14    2 u   42 1024  217   52.744   -7.044  10.286
+     kona.skafari.co 209.51.161.238   2 u 1694 1024  376    8.558   -1.378  16.680
+*sisdb01.muskego 50.18.44.198     3 u  358 1024  377   35.632   -3.661   7.991
+&lt;/source>
+This lists the known synchronization references (and their "refid" references) of the robot’s ntp server.  These are the servers and peer timeservers that the robot’s NTP daemon/server is trying to sync against.
+The first character in a row indicates the current Selection status (‘*’ means active). See ‘Select Field’: http://www.eecis.udel.edu/~mills/ntp/html/decode.html#peer
+
+===== Compare Reference Time =====
+You can compare the robot's time to your system's time using the &lt;code>-q&lt;/code> ntpdate command:
+&lt;source lang="bash">
+    $ ntpdate -q &lt;robot_ip>  
+&lt;/source>
+
+=== How to Fix Robot Time ===
+Robot time is fixed by connecting the robot to timeservers.  This must happen at boot for large offsets.  Smaller inaccuracies (~17min) are handled regularly during run-time.
+
+==== Default Operation ====
+By default the NTP services are configured to get four servers from the [http://www.pool.ntp.org/ NTP Pool Project] at pool.ntp.org.  On boot, if the robot can reach these servers -- i.e. if the robot can connect to the internet -- the &lt;code>ntp-client&lt;/code> corrects the robot's time, setting it to the reference time from the servers in one big jump.  After this the robot's &lt;code>ntpd&lt;/code> timeserver will continue to synchronize against these four servers.
+
+==== Setting the Time on Boot ====
+In order to set large offsets, the boot-time &lt;code>ntp-client&lt;/code> need to be able to connect to the configured NTP servers.  If using the default settings, this just means the robot can reach the internet.  If your robot cannot connect to the internet, or you wish to use different servers during boot time, you can provide those servers using the &lt;code>ntp-servers&lt;/code> option in your DHCP servers configuration.
+
+Once the robot has accurate time, it will save that time to the hardware clock on shutdown.
+
+== Configuration ==
+
+=== DHCP ===
+Using DHCP to provide the &lt;code>ntp-servers&lt;/code> option is the standard way to provide NTP configuration information on a network.  Your local network may already be configured to provide this information.
+
+From [http://www.ietf.org/rfc/rfc2132.txt DHCP Options and BOOTP Vendor Extensions]:
+&lt;blockquote>
+   8.3. Network Time Protocol Servers Option&lt;br />
+&lt;br />
+   This option specifies a list of IP addresses indicating NTP [18]&lt;br />
+   servers available to the client.  Servers SHOULD be listed in order&lt;br />
+   of preference.&lt;br />
+&lt;/blockquote>
+
+-- http://www.ietf.org/rfc/rfc2132.txt
+
+
+==== Running Locally with DHCP ====
+If you need to correct the time locally (without being on a network), you can setup your own DHCP server on a local machine with a tool such as &lt;code>isc-dhcp-server&lt;/code>.  Make sure to run an NTP server on your own machine and provide the address of your machine as the address in the &lt;code>ntp-servers&lt;/code> option.  
+
+If your dev machine is not connected to other authentic time servers, you will need to &lt;code>fudge&lt;/code> your own local time as a valid source of authentication.  By default, NTP does not sync against stratum 16 servers (which is what a disconnected server is). "Stratum" indicates the number of hops you are away from a 'true' time source (stratum 1), such as a GPS based device.
+&lt;source lang="bash">
+= Add backup fake local server =
+server 127.127.1.1             # local clock
+fudge  127.127.1.1 stratum 12  # increase stratum
+&lt;/source>
+
+=== ntpdc Tool ===
+The &lt;code>ntpdc&lt;/code> tool is a program that can be run on the dev machine to query and configure the robot's NTP timeserver.  Configuration changes made at run-time using this tool are only currently saved for that boot.
+
+==== Configuring the NTP Server at Run-Time ====
+Use the &lt;code>ntpdc&lt;/code> tool to configure the NTP server at run-time. The easiest method is to use the interactive mode.
+
+# Get the NTP Authentication Key information from the Rethink FTP - RSDK Resources folder.  Your POC (Point-of-Contact) should have access to this service.
+# In a terminal on your computer, drop into interactive mode:
+#: &lt;source lang="bash">
+    $ ntpdc -i &lt;robot_address>  
+&lt;/source>
+# Authenticate your ntpdc session.  Using the authentication file above:
+#: &lt;source lang="bash">
+    = Use the keyid number found at the start of the line =
+    ntpdc> keyid #&lt;number>
+    = Use the MD5 password found in the middle of the line =
+    ntpdc> passwd
+    MD5 Password: #&lt;Copy-&amp;-Paste middle value of key in keys file here>
+&lt;/source>
+#: Now add a reference to your prefered time server.
+
+# Add a server using the &lt;code>addserver&lt;/code> command; use the &lt;code>prefer&lt;/code> option to prioritize it:
+#: &lt;source lang="bash">
+    ntpdc> addserver ntp0.rethink.cxm prefer  
+&lt;/source>
+
+===== List Status with ntpdc =====
+You can also use the &lt;code>ntpdc&lt;/code> tool to list the current status of the robot's NTP synchronization.
+
+# From inside an interactive session, use the &lt;code>peers&lt;/code> command:
+#: &lt;source lang="bash">
+    ntpdc> peers
+         remote           local      st poll reach  delay   offset    disp
+    =======================================================================
+  *kona.skafari.co 192.168.52.242   2 1024  373 0.00854  0.000148 0.15186
+    =server2.shellva 192.168.52.242   2 1024  372 0.01021  0.001264 0.15143
+    =sisdb01.muskego 192.168.52.242   3 1024  377 0.03574 -0.003096 0.13756
+    =173.44.32.10    192.168.52.242   2 1024   77 0.05266 -0.003718 0.27809
+&lt;/source>
+#: This is the same as using the &lt;code>ntpq -p &lt;robot>&lt;/code> command.
+
+===== Unconfigure Servers =====
+If you want to remove the default servers from the current configuration, you can remove the peers by reference.
+
+# Drop into interactive mode as shown above.
+# Authenticate as shown above.
+# List peers (for finding their reference names):
+#: &lt;source lang="bash">
+    ntpdc> listpeers
+    client    kona.skafari.com
+    client    blah.servers.net
+    client    server2.shellvatore.us
+    client    173.44.32.10
+&lt;/source>
+# Unconfigure each peer/server by address (right side of above):
+#: &lt;source lang="bash">
+    ntpdc> unconfig &lt;peer_address>
+&lt;/source>
+
+== Resources ==
+* ntpq - standard NTP query program: 
+  http://www.eecis.udel.edu/~mills/ntp/html/ntpq.html
+* ntpdc - special NTP query program (for configuration commands): 
+  http://www.eecis.udel.edu/~mills/ntp/html/ntpdc.html
+* ntpd - Network Time Protocol (NTP) daemon: 
+  http://www.eecis.udel.edu/~mills/ntp/html/ntpd.html
+* Command Index - (all the commands available in the ntp.conf configuration file and the ntpdc(/future ntpq versions) tools:
+  http://www.eecis.udel.edu/~mills/ntp/html/comdex.html
+
+== Troubleshooting ==
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Time_and_NTP" title="Time and NTP">Time and NTP</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Time_and_NTP">http://sdk.rethinkrobotics.com/wiki/Time_and_NTP</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":35});});</script></body></html>

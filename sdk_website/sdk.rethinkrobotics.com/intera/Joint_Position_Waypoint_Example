@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Joint Position Waypoint Example - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Joint_Position_Waypoint_Example","wgTitle":"Joint Position Waypoint Example","wgCurRevisionId":1175,"wgRevisionId":1175,"wgArticleId":92,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Joint_Position_Waypoint_Example","wgRelevantArticleId":92,"wgRequestId":"9e1965b0acfbf9b0c10251ed","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="a/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="a/opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Joint_Position_Waypoint_Example rootpage-Joint_Position_Waypoint_Example skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(a/skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="a/index.php?title=Special:UserLogin&amp;returnto=Joint+Position+Waypoint+Example">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="Joint_Position_Waypoint_Example#">More</a>
+                <ul>
+                <li id="ca-viewsource"><a href="a/index.php?title=Joint_Position_Waypoint_Example&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="a/index.php?title=Joint_Position_Waypoint_Example&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="Joint_Position_Waypoint_Example" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">Joint Position Waypoint Example</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="a/index.php?title=Joint_Position_Waypoint_Example&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="Joint_Position_Waypoint_Example#column-one">navigation</a>
+                    ,                     <a href="Joint_Position_Waypoint_Example#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="title-block">
+<p><span style="font-size:120%;"><b>The example demonstrates basic joint position control. A joint position waypoint is a configuration of the arm in joint space (ie. simultaneous joint angles for the arm's seven degrees of freedom). In this example, we enable the robot moving the limb in zero-g mode. Interacting with the arm's navigator buttons, we can record a sequence of joint position waypoints. Upon completion of recording, we will continuously command the limb loop through the recorded joint sequence.</b></span>
+</p>
+</div>
+<div class="toclimit-2"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Joint_Position_Waypoint_Example#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="Joint_Position_Waypoint_Example#Usage"><span class="tocnumber">2</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="Joint_Position_Waypoint_Example#Arguments"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="Joint_Position_Waypoint_Example#Code_Walkthrough"><span class="tocnumber">4</span> <span class="toctext">Code Walkthrough</span></a></li>
+</ul>
+</div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>This example demonstrates the usage of the position controller for simple joint position moves. The <code>main()</code> function calls the <code>record()</code> method which records the waypoints as desired by the user. Then, the <code>playback()</code> method is invoked which demonstrates a smooth motion playback through the recorded joint positions.
+<br />
+<b>Interfaces - </b>
+</p>
+<div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
+<ul><li>Limb.move_to_joint_positions()</li>
+<li>Limb.set_joint_position_speed()</li>
+<li>Limb.joint_angles()</li>
+<li>Navigator.wheel()</li>
+<li>Navigator.button_state()</li></ul>
+</div>
+<p>If you would like to follow along with the actual source code for the example on GitHub, it can be found through <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/joint_position_waypoints.py">this link</a> for joint position waypoints example.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<p>Verify that the robot is enabled from an <a href="SDK_Shell" title="SDK Shell">SDK terminal session</a>, ex:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_interface robot_enable.py
+</pre></div>
+<p><br />
+Start the joint position waypoints example program, you can specify the joint position motion speed ratio <code>-s</code> or joint position accuracy(rad) <code>-a</code> on which we will run the example.
+</p><p>For example, run the example with 0.1 speed ratio and 0.1 accuracy:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_examples joint_position_waypoints.py -s <span class="m">0</span>.1 -a <span class="m">0</span>.1
+</pre></div>
+<p><br />
+Moving the arm in zero-g mode, when we reach a joint position configuration we would like to record, press that <a href="Hardware_Components#Navigator" title="Hardware Components"> navigator</a> wheel.
+</p><p><br />
+You will then be prompted with instructions for recording joint position waypoints.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>Press Navigator <span class="s1">&#39;OK/Wheel&#39;</span> button to record a new joint joint position waypoint.
+Press Navigator <span class="s1">&#39;Rethink&#39;</span> button when finished recording waypoints to begin playback.
+</pre></div>
+<p><br />
+Moving the arm in zero-g mode, when we reach a joint position configuration we would like to record, press that <a href="Hardware_Components#Navigator" title="Hardware Components"> navigator</a> wheel.
+</p><p><br />
+You will get the feedback that the joint position waypoint has been recorded:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>Waypoint Recorded
+</pre></div>
+<p><br />
+When done recording waypoints, pressing the <a href="Hardware_Components#Navigator" title="Hardware Components"> navigator's</a> 'Rethink' button will begin playback.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="o">[</span>INFO<span class="o">]</span> <span class="o">[</span>WallTime: <span class="m">1399571721</span>.540300<span class="o">]</span> Waypoint Playback Started
+  Press Ctrl-C to stop...
+</pre></div>
+<p><br />
+The program will begin looping through the recorded joint positions. When the previous joint position command is fully achieved (within the accuracy threshold), the next recorded joint position will be commanded.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>Waypoint playback loop <span class="c1">#1</span>
+Waypoint playback loop <span class="c1">#2</span>
+...
+</pre></div>
+<p>Pressing <code> Control-C </code> at any time will stop playback and exit the example.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Arguments">Arguments</span></h2>
+<p><b>Important Arguments:</b>  
+</p><p><code> -s </code> or <code> --speed </code>: The joint position motion speed ratio [0.0-1.0] (default:= 0.3)
+</p><p><code> -a </code> or <code> --accuracy </code>: The threshold in Radians at which the current joint position command is considered successful before sending the next following joint position command. (default:= 0.008726646)
+</p><p>See the joint position waypoint's available arguments on the command line by passing joint_position_waypoints.py the <code>-h</code>, help argument:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_examples joint_position_waypoints.py -h
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>usage: joint_position_waypoints.py <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>-s SPEED<span class="o">]</span> <span class="o">[</span>-a ACCURACY<span class="o">]</span>
+
+RSDK Joint Position Waypoints Example
+
+    Records joint positions each <span class="nb">time</span> the navigator <span class="s1">&#39;OK/wheel&#39;</span>
+    button is pressed.
+    Upon pressing the navigator <span class="s1">&#39;Rethink&#39;</span> button, the recorded joint positions
+    will begin playing back in a loop.
+    
+
+optional arguments:
+  -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+  -s SPEED, --speed SPEED
+                        joint position motion speed ratio <span class="o">[</span><span class="m">0</span>.0-1.0<span class="o">]</span> <span class="o">(</span>default:<span class="o">=</span>
+                        <span class="m">0</span>.3<span class="o">)</span>
+  -a ACCURACY, --accuracy ACCURACY
+                        joint position accuracy <span class="o">(</span>rad<span class="o">)</span> at which waypoints must
+                        achieve
+</pre></div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Code_Walkthrough">Code Walkthrough</span></h2>
+<p>Now, let's break down the code.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">33 </span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="lineno">34 </span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="lineno">35 </span>
+<span class="lineno">36 </span><span class="kn">import</span> <span class="nn">rospy</span>
+<span class="lineno">37 </span>
+<span class="lineno">38 </span><span class="kn">import</span> <span class="nn">intera_interface</span>
+</pre></div>
+<p>This imports the intera interface for accessing the limb and the gripper class.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">41 </span><span class="k">class</span> <span class="nc">Waypoints</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="lineno">42 </span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">speed</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">,</span> <span class="n">limb</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">):</span>
+<span class="lineno">43 </span>        <span class="c1"># Create intera_interface limb instance</span>
+<span class="lineno">44 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_arm</span> <span class="o">=</span> <span class="n">limb</span>
+<span class="lineno">45 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_limb</span> <span class="o">=</span> <span class="n">intera_interface</span><span class="o">.</span><span class="n">Limb</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_arm</span><span class="p">)</span>
+<span class="lineno">46 </span>
+<span class="lineno">47 </span>        <span class="c1"># Parameters which will describe joint position moves</span>
+<span class="lineno">48 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_speed</span> <span class="o">=</span> <span class="n">speed</span>
+<span class="lineno">49 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_accuracy</span> <span class="o">=</span> <span class="n">accuracy</span>
+<span class="lineno">50 </span>
+<span class="lineno">51 </span>        <span class="c1"># Recorded waypoints</span>
+<span class="lineno">52 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_waypoints</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<span class="lineno">53 </span>
+<span class="lineno">54 </span>        <span class="c1"># Recording state</span>
+<span class="lineno">55 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_is_recording</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="lineno">56 </span>
+<span class="lineno">57 </span>        <span class="c1"># Verify robot is enabled</span>
+<span class="lineno">58 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Getting robot state... &quot;</span><span class="p">)</span>
+<span class="lineno">59 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_rs</span> <span class="o">=</span> <span class="n">intera_interface</span><span class="o">.</span><span class="n">RobotEnable</span><span class="p">()</span>
+<span class="lineno">60 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_init_state</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rs</span><span class="o">.</span><span class="n">state</span><span class="p">()</span><span class="o">.</span><span class="n">enabled</span>
+<span class="lineno">61 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Enabling robot... &quot;</span><span class="p">)</span>
+<span class="lineno">62 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_rs</span><span class="o">.</span><span class="n">enable</span><span class="p">()</span>
+<span class="lineno">63 </span>
+<span class="lineno">64 </span>        <span class="c1"># Create Navigator I/O</span>
+<span class="lineno">65 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigator_io</span> <span class="o">=</span> <span class="n">intera_interface</span><span class="o">.</span><span class="n">Navigator</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_arm</span><span class="p">)</span>
+</pre></div>
+<p>An instance of the limb interface for the side under interest is created. An instance of the interface for the corresponding navigator, <code>_navigator_io</code>, is also created. The robot is then enabled. It is important to note that the robot should be enabled in order to control the limb's movement.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">67 </span>    <span class="k">def</span> <span class="nf">_record_waypoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="lineno">68 </span>        <span class="sd">&quot;&quot;&quot;</span>
+<span class="lineno">69 </span><span class="sd">        Stores joint position waypoints</span>
+<span class="lineno">70 </span>
+<span class="lineno">71 </span><span class="sd">        Navigator &#39;OK/Wheel&#39; button callback</span>
+<span class="lineno">72 </span><span class="sd">        &quot;&quot;&quot;</span>
+<span class="lineno">73 </span>        <span class="k">if</span> <span class="n">value</span> <span class="o">!=</span> <span class="s1">&#39;OFF&#39;</span><span class="p">:</span>
+<span class="lineno">74 </span>            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Waypoint Recorded&quot;</span><span class="p">)</span>
+<span class="lineno">75 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_waypoints</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_limb</span><span class="o">.</span><span class="n">joint_angles</span><span class="p">())</span>
+</pre></div>
+<p>The <code>joint_angles()</code> method retrieves the current joint angles and they are then appended to the <code>_waypoints</code> list.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">77 </span>    <span class="k">def</span> <span class="nf">_stop_recording</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="lineno">78 </span>        <span class="sd">&quot;&quot;&quot;</span>
+<span class="lineno">79 </span><span class="sd">        Sets is_recording to false</span>
+<span class="lineno">80 </span>
+<span class="lineno">81 </span><span class="sd">        Navigator &#39;Rethink&#39; button callback</span>
+<span class="lineno">82 </span><span class="sd">        &quot;&quot;&quot;</span>
+<span class="lineno">83 </span>        <span class="c1"># On navigator Rethink button press, stop recording</span>
+<span class="lineno">84 </span>        <span class="k">if</span> <span class="n">value</span> <span class="o">!=</span> <span class="s1">&#39;OFF&#39;</span><span class="p">:</span>
+<span class="lineno">85 </span>            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Recording Stopped&quot;</span><span class="p">)</span>
+<span class="lineno">86 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_is_recording</span> <span class="o">=</span> <span class="bp">False</span>
+</pre></div>
+<p>This Rethink button's press event is captured.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno"> 88 </span>    <span class="k">def</span> <span class="nf">record</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno"> 89 </span>        <span class="sd">&quot;&quot;&quot;</span>
+<span class="lineno"> 90 </span><span class="sd">        Records joint position waypoints upon each Navigator &#39;OK/Wheel&#39; button</span>
+<span class="lineno"> 91 </span><span class="sd">        press.</span>
+<span class="lineno"> 92 </span><span class="sd">        &quot;&quot;&quot;</span>
+<span class="lineno"> 93 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;Waypoint Recording Started&quot;</span><span class="p">)</span>
+<span class="lineno"> 94 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Press Navigator &#39;OK/Wheel&#39; button to record a new joint &quot;</span>
+<span class="lineno"> 95 </span>        <span class="s2">&quot;joint position waypoint.&quot;</span><span class="p">)</span>
+<span class="lineno"> 96 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Press Navigator &#39;Rethink&#39; button when finished recording &quot;</span>
+<span class="lineno"> 97 </span>              <span class="s2">&quot;waypoints to begin playback&quot;</span><span class="p">)</span>
+<span class="lineno"> 98 </span>        <span class="c1"># Connect Navigator callbacks</span>
+<span class="lineno"> 99 </span>        <span class="c1"># Navigator scroll wheel button press</span>
+<span class="lineno">100 </span>        <span class="n">ok_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_navigator</span><span class="o">.</span><span class="n">register_callback</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_record_waypoint</span><span class="p">,</span> <span class="s1">&#39;right_button_ok&#39;</span><span class="p">)</span>
+<span class="lineno">101 </span>        <span class="c1"># Navigator Rethink button press</span>
+<span class="lineno">102 </span>        <span class="n">show_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_navigator</span><span class="o">.</span><span class="n">register_callback</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_stop_recording</span><span class="p">,</span> <span class="s1">&#39;right_button_show&#39;</span><span class="p">)</span>
+<span class="lineno">103 </span>
+<span class="lineno">104 </span>        <span class="c1"># Set recording flag</span>
+<span class="lineno">105 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_is_recording</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="lineno">106 </span>
+<span class="lineno">107 </span>        <span class="c1"># Loop until waypoints are done being recorded (&#39;Rethink&#39; Button Press)</span>
+<span class="lineno">108 </span>        <span class="k">while</span> <span class="ow">not</span> <span class="n">rospy</span><span class="o">.</span><span class="n">is_shutdown</span><span class="p">()</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_recording</span><span class="p">:</span>
+<span class="lineno">109 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="lineno">110 </span>
+<span class="lineno">111 </span>        <span class="c1"># We are now done with the navigator callbacks, disconnecting them</span>
+<span class="lineno">112 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigator</span><span class="o">.</span><span class="n">deregister_callback</span><span class="p">(</span><span class="n">ok_id</span><span class="p">)</span>
+<span class="lineno">113 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_navigator</span><span class="o">.</span><span class="n">deregister_callback</span><span class="p">(</span><span class="n">show_id</span><span class="p">)</span>
+</pre></div>
+<p>The navigator 'OK/Wheel' button invokes the <code>_record_waypoint()</code> method on a press event, which records the current joint positions as explained above. Similarly, the navigator 'Rethink' button invokes the <code>_stop_recording</code> method on a press event, which sets the <code>is_recording</code> variable to false. 
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">115 </span>    <span class="k">def</span> <span class="nf">playback</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno">116 </span>        <span class="sd">&quot;&quot;&quot;</span>
+<span class="lineno">117 </span><span class="sd">        Loops playback of recorded joint position waypoints until program is</span>
+<span class="lineno">118 </span><span class="sd">        exited</span>
+<span class="lineno">119 </span><span class="sd">        &quot;&quot;&quot;</span>
+<span class="lineno">120 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="lineno">121 </span>
+<span class="lineno">122 </span>        <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;Waypoint Playback Started&quot;</span><span class="p">)</span>
+<span class="lineno">123 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;  Press Ctrl-C to stop...&quot;</span><span class="p">)</span>
+<span class="lineno">124 </span>
+<span class="lineno">125 </span>        <span class="c1"># Set joint position speed ratio for execution</span>
+<span class="lineno">126 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_limb</span><span class="o">.</span><span class="n">set_joint_position_speed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_speed</span><span class="p">)</span>
+<span class="lineno">127 </span>
+<span class="lineno">128 </span>        <span class="c1"># Loop until program is exited</span>
+<span class="lineno">129 </span>        <span class="n">loop</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno">130 </span>        <span class="k">while</span> <span class="ow">not</span> <span class="n">rospy</span><span class="o">.</span><span class="n">is_shutdown</span><span class="p">():</span>
+<span class="lineno">131 </span>            <span class="n">loop</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="lineno">132 </span>            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Waypoint playback loop #</span><span class="si">%d</span><span class="s2"> &quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">loop</span><span class="p">,))</span>
+<span class="lineno">133 </span>            <span class="k">for</span> <span class="n">waypoint</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_waypoints</span><span class="p">:</span>
+<span class="lineno">134 </span>                <span class="k">if</span> <span class="n">rospy</span><span class="o">.</span><span class="n">is_shutdown</span><span class="p">():</span>
+<span class="lineno">135 </span>                    <span class="k">break</span>
+<span class="lineno">136 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">_limb</span><span class="o">.</span><span class="n">move_to_joint_positions</span><span class="p">(</span><span class="n">waypoint</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mf">20.0</span><span class="p">,</span>
+<span class="lineno">137 </span>                                                   <span class="n">threshold</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_accuracy</span><span class="p">)</span>
+<span class="lineno">138 </span>            <span class="c1"># Sleep for a few seconds between playback loops</span>
+<span class="lineno">139 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">3.0</span><span class="p">)</span>
+<span class="lineno">140 </span>
+<span class="lineno">141 </span>        <span class="c1"># Set joint position speed back to default</span>
+<span class="lineno">142 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_limb</span><span class="o">.</span><span class="n">set_joint_position_speed</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
+</pre></div>
+<p>The <code>set_joint_position_speed()</code> method sets the ratio of max joint speed to use during joint position moves. The method <code>move_to_joint_positions()</code>, moves the joints to the commanded position. It is important to note that there is not trajectory planning involved here. Instead, this is passed onto a low pass filter and the intermediate positions between the start and goal positions are obtained. They are then published as a joint command message using the <code>set_joint_positions()</code> method. Thus, all the waypoints that were stored are visited along a smooth trajectory.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">144 </span>    <span class="k">def</span> <span class="nf">clean_shutdown</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno">145 </span>        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Exiting example...&quot;</span><span class="p">)</span>
+<span class="lineno">146 </span>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_init_state</span><span class="p">:</span>
+<span class="lineno">147 </span>            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Disabling robot...&quot;</span><span class="p">)</span>
+<span class="lineno">148 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_rs</span><span class="o">.</span><span class="n">disable</span><span class="p">()</span>
+<span class="lineno">149 </span>        <span class="k">return</span> <span class="bp">True</span>
+</pre></div>
+<p>On shutdown, the robot is sent to its initial state that was captured.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">152 </span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="lineno">153 </span>    <span class="sd">&quot;&quot;&quot;RSDK Joint Position Waypoints Example</span>
+<span class="lineno">154 </span>
+<span class="lineno">155 </span><span class="sd">    Records joint positions each time the navigator &#39;OK/wheel&#39;</span>
+<span class="lineno">156 </span><span class="sd">    button is pressed.</span>
+<span class="lineno">157 </span><span class="sd">    Upon pressing the navigator &#39;Rethink&#39; button, the recorded joint positions</span>
+<span class="lineno">158 </span><span class="sd">    will begin playing back in a loop.</span>
+<span class="lineno">159 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">160 </span>    <span class="n">arg_fmt</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">RawDescriptionHelpFormatter</span>
+<span class="lineno">161 </span>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">formatter_class</span><span class="o">=</span><span class="n">arg_fmt</span><span class="p">,</span>
+<span class="lineno">162 </span>                                     <span class="n">description</span><span class="o">=</span><span class="n">main</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+<span class="lineno">163 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+<span class="lineno">164 </span>        <span class="s1">&#39;-s&#39;</span><span class="p">,</span> <span class="s1">&#39;--speed&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span>
+<span class="lineno">165 </span>        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;joint position motion speed ratio [0.0-1.0] (default:= 0.3)&#39;</span>
+<span class="lineno">166 </span>    <span class="p">)</span>
+<span class="lineno">167 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+<span class="lineno">168 </span>        <span class="s1">&#39;-a&#39;</span><span class="p">,</span> <span class="s1">&#39;--accuracy&#39;</span><span class="p">,</span>
+<span class="lineno">169 </span>        <span class="n">default</span><span class="o">=</span><span class="n">intera_interface</span><span class="o">.</span><span class="n">settings</span><span class="o">.</span><span class="n">JOINT_ANGLE_TOLERANCE</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span>
+<span class="lineno">170 </span>        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;joint position accuracy (rad) at which waypoints must achieve&#39;</span>
+<span class="lineno">171 </span>    <span class="p">)</span>
+<span class="lineno">172 </span>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">myargv</span><span class="p">()[</span><span class="mi">1</span><span class="p">:])</span>
+</pre></div>
+<p>The speed and accuracy on which the example is to be demonstrated is captured from the command line arguments.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">178 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Initializing node... &quot;</span><span class="p">)</span>
+<span class="lineno">179 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s2">&quot;rsdk_joint_position_waypoints&quot;</span><span class="p">)</span>
+<span class="lineno">180 </span>
+<span class="lineno">181 </span>    <span class="n">waypoints</span> <span class="o">=</span> <span class="n">Waypoints</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">speed</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">accuracy</span><span class="p">)</span>
+<span class="lineno">182 </span>
+<span class="lineno">183 </span>    <span class="c1"># Register clean shutdown</span>
+<span class="lineno">184 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">on_shutdown</span><span class="p">(</span><span class="n">waypoints</span><span class="o">.</span><span class="n">clean_shutdown</span><span class="p">)</span>
+<span class="lineno">185 </span>
+<span class="lineno">186 </span>    <span class="c1"># Begin example program</span>
+<span class="lineno">187 </span>    <span class="n">waypoints</span><span class="o">.</span><span class="n">record</span><span class="p">()</span>
+<span class="lineno">188 </span>    <span class="n">waypoints</span><span class="o">.</span><span class="n">playback</span><span class="p">()</span>
+<span class="lineno">189 </span>
+<span class="lineno">190 </span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="lineno">191 </span>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+<p>The node is initialized and an instance of the <code>Waypoints</code> class is created. The user defined waypoints are recorded using the <code>record()</code> method and are played back using the <code>playback()</code> method as explained above.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815155047
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.102 seconds
+Real time usage: 7.794 seconds
+Preprocessor visited node count: 131/1000000
+Preprocessor generated node count: 418/1000000
+Post‐expand include size: 37/2097152 bytes
+Template argument size: 1/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 26692/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.521      1 Template:TOClimit
+100.00%    0.521      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:92-0!canonical and timestamp 20190815155039 and revision id 1175
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="a/index.php?title=Joint_Position_Waypoint_Example&amp;oldid=1175">http://sdk.rethinkrobotics.com/intera/a/index.php?title=Joint_Position_Waypoint_Example&amp;oldid=1175</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="a/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.102","walltime":"7.794","ppvisitednodes":{"value":131,"limit":1000000},"ppgeneratednodes":{"value":418,"limit":1000000},"postexpandincludesize":{"value":37,"limit":2097152},"templateargumentsize":{"value":1,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":26692,"limit":5000000},"timingprofile":["100.00%    0.521      1 Template:TOClimit","100.00%    0.521      1 -total"]},"cachereport":{"timestamp":"20190815155047","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":22635});});</script></body></html>

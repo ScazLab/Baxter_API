@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Gripper Cuff Control Example - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Gripper_Cuff_Control_Example","wgTitle":"Gripper Cuff Control Example","wgCurRevisionId":1154,"wgRevisionId":1154,"wgArticleId":61,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Gripper_Cuff_Control_Example","wgRelevantArticleId":61,"wgRequestId":"560b390314ce66c41f2a1cca","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Gripper_Cuff_Control_Example rootpage-Gripper_Cuff_Control_Example skin-cavendishrr action-view"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=Gripper+Cuff+Control+Example&amp;returntoquery=oldid%3D1154">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=Gripper_Cuff_Control_Example&amp;oldid=1154#">More</a>
+                <ul>
+                <li id="ca-viewsource"><a href="index.php?title=Gripper_Cuff_Control_Example&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Gripper_Cuff_Control_Example&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../Gripper_Cuff_Control_Example" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">Gripper Cuff Control Example</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=Gripper_Cuff_Control_Example&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                <div class="mw-revision"><div id="mw-revision-info">Revision as of 20:24, 16 January 2017 by <a href="index.php?title=User:Swang&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Swang (page does not exist)"><bdi>Swang</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Swang&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Swang (page does not exist)">talk</a> | <a href="../Special:Contributions/Swang" class="mw-usertoollinks-contribs" title="Special:Contributions/Swang">contribs</a>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Gripper_Cuff_Control_Example&amp;diff=prev&amp;oldid=1154" title="Gripper Cuff Control Example">diff</a>) <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Gripper_Cuff_Control_Example&amp;direction=prev&amp;oldid=1154" title="Gripper Cuff Control Example">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=Gripper_Cuff_Control_Example&amp;oldid=1154#column-one">navigation</a>
+                    ,                     <a href="index.php?title=Gripper_Cuff_Control_Example&amp;oldid=1154#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="title-block">
+<p><span style="font-size:120%;"><b>The Gripper Cuff Control example demonstrates basic cuff/gripper interaction on the robot. In this example, connects cuff buttons to gripper open/close commands: 'Circle' Button will open gripper, 'Dash' Button will close gripper, Cuff 'Squeeze' will turn on Nav lights.</b></span>
+</p>
+</div>
+<div class="toclimit-2"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Gripper_Cuff_Control_Example&amp;oldid=1154#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="index.php?title=Gripper_Cuff_Control_Example&amp;oldid=1154#Usage"><span class="tocnumber">2</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="index.php?title=Gripper_Cuff_Control_Example&amp;oldid=1154#Arguments"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="index.php?title=Gripper_Cuff_Control_Example&amp;oldid=1154#Code_Walkthrough"><span class="tocnumber">4</span> <span class="toctext">Code Walkthrough</span></a></li>
+</ul>
+</div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>This program demonstrates the usage of gripper, cuff, lights interface to control the close and open actions of the gripper and navigation light. The <code>main()</code> function creates an instance of the <code>GripperConnect</code> class which connects the gripper buttons to various callback functions.
+If you would like to follow along with the actual source code for the example on GitHub, it can be found through <a rel="nofollow" class="external text" href="https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/gripper_cuff_control.py">this link</a> for gripper cuff control example.
+</p>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Usage">Usage</span></h2>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>$ rosrun intera_examples gripper_cuff_control.py -h
+</pre></div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Arguments">Arguments</span></h2>
+<p><b>Important Arguments:</b>  
+</p><p><code> -g </code> or <code> --gripper </code>: The gripper limb to control.
+</p><p><code> -n </code> or <code> --no-lights </code>: Specify the argument will not trigger lights on cuff while grasping. 
+</p><p><code> -v </code> or <code> --verbose </code>: Specify the verbose  will print the debug statements from rospy, default value is rospy.INFO
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>usage: gripper_cuff_control.py <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>-g <span class="o">{[</span><span class="s1">&#39;right&#39;</span><span class="o">]}]</span> <span class="o">[</span>-n<span class="o">]</span> <span class="o">[</span>-v<span class="o">]</span>
+
+SDK Gripper Button Control Example
+
+    Connects cuff buttons to gripper open/close commands:
+        <span class="s1">&#39;Circle&#39;</span> Button    - open gripper
+        <span class="s1">&#39;Dash&#39;</span> Button      - close gripper
+        Cuff <span class="s1">&#39;Squeeze&#39;</span>     - turn on Nav lights
+
+    Run this example in the background or in another terminal
+    to be able to easily control the grippers by hand <span class="k">while</span>
+    using the robot. Can be run in parallel with other code.
+    
+
+optional arguments:
+  -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+  -g <span class="o">{[</span><span class="s1">&#39;right&#39;</span><span class="o">]}</span>, --gripper <span class="o">{[</span><span class="s1">&#39;right&#39;</span><span class="o">]}</span>
+                        gripper limb to control <span class="o">(</span>default: both<span class="o">)</span>
+  -n, --no-lights       <span class="k">do</span> not trigger lights on cuff grasp
+  -v, --verbose         print debug statements
+</pre></div>
+</div>
+<div class="content-block">
+<h2><span class="mw-headline" id="Code_Walkthrough">Code Walkthrough</span></h2>
+<p>Now, let's break down the code.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">30 </span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="lineno">31 </span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="lineno">32 </span>
+<span class="lineno">33 </span><span class="kn">import</span> <span class="nn">rospy</span>
+<span class="lineno">34 </span>
+<span class="lineno">35 </span><span class="kn">from</span> <span class="nn">intera_interface</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="lineno">36 </span>    <span class="n">Gripper</span><span class="p">,</span>
+<span class="lineno">37 </span>    <span class="n">Lights</span><span class="p">,</span>
+<span class="lineno">38 </span>    <span class="n">Cuff</span><span class="p">,</span>
+<span class="lineno">39 </span>    <span class="n">RobotParams</span><span class="p">,</span>
+<span class="lineno">40 </span><span class="p">)</span>
+</pre></div>
+<p>This imports the intera interface for accessing the <code>Cuff</code>, <code>Lights</code> and the <code>Gripper</code> class.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">43 </span><span class="k">class</span> <span class="nc">GripperConnect</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="lineno">44 </span>    <span class="sd">&quot;&quot;&quot;</span>
+<span class="lineno">45 </span><span class="sd">    Connects wrist button presses to gripper open/close commands.</span>
+<span class="lineno">46 </span><span class="sd">    Uses the Navigator callback feature to make callbacks to connected</span>
+<span class="lineno">47 </span><span class="sd">    action functions when the button values change.</span>
+<span class="lineno">48 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">49 </span>
+<span class="lineno">50 </span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arm</span><span class="p">,</span> <span class="n">lights</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+<span class="lineno">51 </span>        <span class="sd">&quot;&quot;&quot;</span>
+<span class="lineno">52 </span><span class="sd">        @type arm: str</span>
+<span class="lineno">53 </span><span class="sd">        @param arm: arm of gripper to control</span>
+<span class="lineno">54 </span><span class="sd">        @type lights: bool</span>
+<span class="lineno">55 </span><span class="sd">        @param lights: if lights should activate on cuff grasp</span>
+<span class="lineno">56 </span><span class="sd">        &quot;&quot;&quot;</span>
+<span class="lineno">57 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_arm</span> <span class="o">=</span> <span class="n">arm</span>
+<span class="lineno">58 </span>        <span class="c1"># inputs</span>
+<span class="lineno">59 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_cuff</span> <span class="o">=</span> <span class="n">Cuff</span><span class="p">(</span><span class="n">limb</span><span class="o">=</span><span class="n">arm</span><span class="p">)</span>
+<span class="lineno">60 </span>        <span class="c1"># connect callback fns to signals</span>
+<span class="lineno">61 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_lights</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="lineno">62 </span>        <span class="k">if</span> <span class="n">lights</span><span class="p">:</span>
+<span class="lineno">63 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_lights</span> <span class="o">=</span> <span class="n">Lights</span><span class="p">()</span>
+<span class="lineno">64 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_cuff</span><span class="o">.</span><span class="n">register_callback</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_light_action</span><span class="p">,</span>
+<span class="lineno">65 </span>                                         <span class="s1">&#39;{0}_cuff&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">arm</span><span class="p">))</span>
+</pre></div>
+<p>Instances of the cuff and the lights are created.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">67 </span>        <span class="k">try</span><span class="p">:</span>
+<span class="lineno">68 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span> <span class="o">=</span> <span class="n">Gripper</span><span class="p">(</span><span class="n">arm</span><span class="p">)</span>
+<span class="lineno">69 </span>            <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">is_calibrated</span><span class="p">()</span> <span class="ow">or</span>
+<span class="lineno">70 </span>                    <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">calibrate</span><span class="p">()</span> <span class="o">==</span> <span class="bp">True</span><span class="p">):</span>
+<span class="lineno">71 </span>                <span class="n">rospy</span><span class="o">.</span><span class="n">logerr</span><span class="p">(</span><span class="s2">&quot;({0}_gripper) calibration failed.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+<span class="lineno">72 </span>                               <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
+<span class="lineno">73 </span>                <span class="k">raise</span>
+<span class="lineno">74 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_cuff</span><span class="o">.</span><span class="n">register_callback</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_close_action</span><span class="p">,</span>
+<span class="lineno">75 </span>                                         <span class="s1">&#39;{0}_button_upper&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">arm</span><span class="p">))</span>
+<span class="lineno">76 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_cuff</span><span class="o">.</span><span class="n">register_callback</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_open_action</span><span class="p">,</span>
+<span class="lineno">77 </span>                                         <span class="s1">&#39;{0}_button_lower&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">arm</span><span class="p">))</span>
+<span class="lineno">78 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">loginfo</span><span class="p">(</span><span class="s2">&quot;{0} Cuff Control initialized...&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+<span class="lineno">79 </span>                          <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
+<span class="lineno">80 </span>        <span class="k">except</span><span class="p">:</span>
+<span class="lineno">81 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="lineno">82 </span>            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;{0} Gripper is not connected to the robot.&quot;</span>
+<span class="lineno">83 </span>                   <span class="s2">&quot; Running cuff-light connection only.&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">arm</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+<span class="lineno">84 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logwarn</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</pre></div>
+<p>If the gripper attached, create the instance of the gripper then verify if the gripper was already in a calibrated state, the cuff actions will be registered afterwards. Failed to calibrate the gripper will raise error. 
+If the gripper is not attached, warning message will appear. 
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">87 </span>    <span class="k">def</span> <span class="nf">_open_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="lineno">88 </span>        <span class="k">if</span> <span class="n">value</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">is_ready</span><span class="p">():</span>
+<span class="lineno">89 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logdebug</span><span class="p">(</span><span class="s2">&quot;gripper open triggered&quot;</span><span class="p">)</span>
+<span class="lineno">90 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+<span class="lineno">91 </span>            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lights</span><span class="p">:</span>
+<span class="lineno">92 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">_set_lights</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+<span class="lineno">93 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">_set_lights</span><span class="p">(</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+</pre></div>
+<p>The method opens the gripper and set cuff light when button sends a <code>True</code> value.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno"> 95 </span>    <span class="k">def</span> <span class="nf">_close_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="lineno"> 96 </span>        <span class="k">if</span> <span class="n">value</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">is_ready</span><span class="p">():</span>
+<span class="lineno"> 97 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logdebug</span><span class="p">(</span><span class="s2">&quot;gripper close triggered&quot;</span><span class="p">)</span>
+<span class="lineno"> 98 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_gripper</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="lineno"> 99 </span>            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lights</span><span class="p">:</span>
+<span class="lineno">100 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">_set_lights</span><span class="p">(</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+<span class="lineno">101 </span>                <span class="bp">self</span><span class="o">.</span><span class="n">_set_lights</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+</pre></div>
+<p>The method closes the gripper and set cuff light when button sends a <code>True</code> value.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">103 </span>    <span class="k">def</span> <span class="nf">_light_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="lineno">104 </span>        <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+<span class="lineno">105 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logdebug</span><span class="p">(</span><span class="s2">&quot;cuff grasp triggered&quot;</span><span class="p">)</span>
+<span class="lineno">106 </span>        <span class="k">else</span><span class="p">:</span>
+<span class="lineno">107 </span>            <span class="n">rospy</span><span class="o">.</span><span class="n">logdebug</span><span class="p">(</span><span class="s2">&quot;cuff release triggered&quot;</span><span class="p">)</span>
+<span class="lineno">108 </span>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lights</span><span class="p">:</span>
+<span class="lineno">109 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_set_lights</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+<span class="lineno">110 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_set_lights</span><span class="p">(</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+<span class="lineno">111 </span>            <span class="bp">self</span><span class="o">.</span><span class="n">_set_lights</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+<p>This method assigns the boolean value that was signalled to the light interface.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">113 </span>    <span class="k">def</span> <span class="nf">_set_lights</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="lineno">114 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_lights</span><span class="o">.</span><span class="n">set_light_state</span><span class="p">(</span><span class="s1">&#39;head_{0}_light&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">color</span><span class="p">),</span> <span class="n">on</span><span class="o">=</span><span class="nb">bool</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+<span class="lineno">115 </span>        <span class="bp">self</span><span class="o">.</span><span class="n">_lights</span><span class="o">.</span><span class="n">set_light_state</span><span class="p">(</span><span class="s1">&#39;{0}_hand_{1}_light&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_arm</span><span class="p">,</span> <span class="n">color</span><span class="p">),</span>
+<span class="lineno">116 </span>                                                                 <span class="n">on</span><span class="o">=</span><span class="nb">bool</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+</pre></div>
+<p>Set light color according to the provided params.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">118 </span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="lineno">119 </span>    <span class="sd">&quot;&quot;&quot;SDK Gripper Button Control Example</span>
+<span class="lineno">120 </span><span class="sd">    Connects cuff buttons to gripper open/close commands:</span>
+<span class="lineno">121 </span><span class="sd">        &#39;Circle&#39; Button    - open gripper</span>
+<span class="lineno">122 </span><span class="sd">        &#39;Dash&#39; Button      - close gripper</span>
+<span class="lineno">123 </span><span class="sd">        Cuff &#39;Squeeze&#39;     - turn on Nav lights</span>
+<span class="lineno">124 </span><span class="sd">    Run this example in the background or in another terminal</span>
+<span class="lineno">125 </span><span class="sd">    to be able to easily control the grippers by hand while</span>
+<span class="lineno">126 </span><span class="sd">    using the robot. Can be run in parallel with other code.</span>
+<span class="lineno">127 </span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="lineno">128 </span>    <span class="n">rp</span> <span class="o">=</span> <span class="n">RobotParams</span><span class="p">()</span>
+<span class="lineno">129 </span>    <span class="n">valid_limbs</span> <span class="o">=</span> <span class="n">rp</span><span class="o">.</span><span class="n">get_limb_names</span><span class="p">()</span>
+<span class="lineno">130 </span>    <span class="k">if</span> <span class="ow">not</span> <span class="n">valid_limbs</span><span class="p">:</span>
+<span class="lineno">131 </span>        <span class="n">rp</span><span class="o">.</span><span class="n">log_message</span><span class="p">((</span><span class="s2">&quot;Cannot detect any limb parameters on this robot. &quot;</span>
+<span class="lineno">132 </span>                        <span class="s2">&quot;Exiting.&quot;</span><span class="p">),</span> <span class="s2">&quot;ERROR&quot;</span><span class="p">)</span>
+<span class="lineno">133 </span>        <span class="k">return</span>
+<span class="lineno">134 </span>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">valid_limbs</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+<span class="lineno">135 </span>        <span class="n">valid_limbs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;all_limbs&quot;</span><span class="p">)</span>
+<span class="lineno">136 </span>    <span class="n">arg_fmt</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">RawDescriptionHelpFormatter</span>
+<span class="lineno">137 </span>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">formatter_class</span><span class="o">=</span><span class="n">arg_fmt</span><span class="p">,</span>
+<span class="lineno">138 </span>                                     <span class="n">description</span><span class="o">=</span><span class="n">main</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+<span class="lineno">139 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-g&#39;</span><span class="p">,</span> <span class="s1">&#39;--gripper&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;gripper&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">valid_limbs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+<span class="lineno">140 </span>                        <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="n">valid_limbs</span><span class="p">],</span>
+<span class="lineno">141 </span>                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;gripper limb to control (default: both)&#39;</span><span class="p">)</span>
+<span class="lineno">142 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-n&#39;</span><span class="p">,</span> <span class="s1">&#39;--no-lights&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;lights&#39;</span><span class="p">,</span>
+<span class="lineno">143 </span>                        <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_false&#39;</span><span class="p">,</span>
+<span class="lineno">144 </span>                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;do not trigger lights on cuff grasp&#39;</span><span class="p">)</span>
+<span class="lineno">145 </span>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-v&#39;</span><span class="p">,</span> <span class="s1">&#39;--verbose&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;verbosity&#39;</span><span class="p">,</span>
+<span class="lineno">146 </span>                        <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_const&#39;</span><span class="p">,</span> <span class="n">const</span><span class="o">=</span><span class="n">rospy</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">,</span>
+<span class="lineno">147 </span>                        <span class="n">default</span><span class="o">=</span><span class="n">rospy</span><span class="o">.</span><span class="n">INFO</span><span class="p">,</span>
+<span class="lineno">148 </span>                        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;print debug statements&#39;</span><span class="p">)</span>
+<span class="lineno">149 </span>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">rospy</span><span class="o">.</span><span class="n">myargv</span><span class="p">()[</span><span class="mi">1</span><span class="p">:])</span>
+</pre></div>
+<p>The gripper option, the light and verbose options are parsed from the command line arguments, as entered by the user.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="lineno">153 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s1">&#39;sdk_gripper_cuff_control_{0}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">gripper</span><span class="p">),</span>
+<span class="lineno">154 </span>                    <span class="n">log_level</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">verbosity</span><span class="p">)</span>
+<span class="lineno">155 </span>
+<span class="lineno">156 </span>    <span class="n">arms</span> <span class="o">=</span> <span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">gripper</span><span class="p">,)</span> <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">gripper</span> <span class="o">!=</span> <span class="s1">&#39;all_limbs&#39;</span> <span class="k">else</span> <span class="n">valid_limbs</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="lineno">157 </span>    <span class="n">grip_ctrls</span> <span class="o">=</span> <span class="p">[</span><span class="n">GripperConnect</span><span class="p">(</span><span class="n">arm</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">lights</span><span class="p">)</span> <span class="k">for</span> <span class="n">arm</span> <span class="ow">in</span> <span class="n">arms</span><span class="p">]</span>
+<span class="lineno">158 </span>
+<span class="lineno">159 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Press cuff buttons for gripper control. Spinning...&quot;</span><span class="p">)</span>
+<span class="lineno">160 </span>    <span class="n">rospy</span><span class="o">.</span><span class="n">spin</span><span class="p">()</span>
+<span class="lineno">161 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Gripper Button Control Finished.&quot;</span><span class="p">)</span>
+<span class="lineno">162 </span>    <span class="k">return</span> <span class="mi">0</span>
+<span class="lineno">163 </span>
+<span class="lineno">164 </span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="lineno">165 </span>    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</pre></div>
+<p>The node is initialized and an instance of the <code>GripperConnect</code> is created.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815154939
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.067 seconds
+Real time usage: 2.536 seconds
+Preprocessor visited node count: 75/1000000
+Preprocessor generated node count: 294/1000000
+Post‐expand include size: 37/2097152 bytes
+Template argument size: 1/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 27396/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.511      1 Template:TOClimit
+100.00%    0.511      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key interasdk:pcache:idhash:61-0!canonical and timestamp 20190815154936 and revision id 1154
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Gripper_Cuff_Control_Example&amp;oldid=1154">http://sdk.rethinkrobotics.com/intera/a/index.php?title=Gripper_Cuff_Control_Example&amp;oldid=1154</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.067","walltime":"2.536","ppvisitednodes":{"value":75,"limit":1000000},"ppgeneratednodes":{"value":294,"limit":1000000},"postexpandincludesize":{"value":37,"limit":2097152},"templateargumentsize":{"value":1,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":27396,"limit":5000000},"timingprofile":["100.00%    0.511      1 Template:TOClimit","100.00%    0.511      1 -total"]},"cachereport":{"timestamp":"20190815154939","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":42});});</script></body></html>

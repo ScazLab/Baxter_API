@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Release - v1.1.0 Release Notes - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Release_-_v1.1.0_Release_Notes","wgTitle":"Release - v1.1.0 Release Notes","wgCurRevisionId":3973,"wgRevisionId":0,"wgArticleId":794,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Release_-_v1.1.0_Release_Notes","wgRelevantArticleId":794,"wgRequestId":"65cdcc670e6e88a47424acd5","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Release_-_v1_1_0_Release_Notes rootpage-Release_-_v1_1_0_Release_Notes skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Release+-+v1.1.0+Release+Notes&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Release - v1.1.0 Release Notes</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Release_-_v1.1.0_Release_Notes&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Release_-_v1.1.0_Release_Notes&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Release_-_v1.1.0_Release_Notes&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Release_-_v1.1.0_Release_Notes" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Release_-_v1.1.0_Release_Notes" title="Release - v1.1.0 Release Notes">Release - v1.1.0 Release Notes</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Release_-_v1.1.0_Release_Notes&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Release_-_v1.1.0_Release_Notes&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">
+
+= Baxter Research Robot SDK 1.1.0 Release Notes =
+
+
+'''Release Date: 1/21/2015'''
+
+
+== Overview ==
+
+
+Baxter Research Robot SDK 1.1.0 is focused mainly on making the SDK (both on robot and on the development workstation) compatible with ROS Indigo.  ROS Indigo was released by OSRF in July of 2014, and is the first Long Term Support release for the platform.  There are also upgrades to the Joint Trajectory Server, resulting in smoother and more accurate movements for Baxter’s arms, and support for 3D Sensors through RViz and MoveIt!. 
+
+'''Important Note:'''  It should be noted that ROS Indigo requires an upgrade to your workstation - to Ubuntu 14.04.  If you do not plan to upgrade your workstation, do not install SDK 1.1!
+
+== Update Instructions ==
+
+
+[[Software_Update | Software Updates]]
+
+
+
+== Major Updates ==
+
+
+* ROS Indigo compatibility
+* Ubuntu 14.04 compatibility
+* 3D depth sensor support through RViz and MoveIt!
+* Motion upgrades to joint trajectory server path splining and movement execution
+* Contributor-submitted head trajectory action server
+
+
+== Additions ==
+
+
+* All official Baxter repositories are now ROS Indigo compatible
+* OpenCV2 Python libraries are now utilized by default
+* Updates joint trajectory action server to use new Inverse Dynamics Feed Forward Commands and configurations for smoother &amp; more accurate MoveIt trajectory execution
+* Updates joint trajectory action server to replace linear, cubic, and quintic spline fitting with Cubic Bezier Spline interpolation. These splines can use Position, Velocity, and/or Acceleration to more accurately interpolate supplied trajectories
+* Adds head_trajectory_action_server interface for controlling Baxter's head pan joint, as well as  a head_action_client example program(thanks to @aginika for contributing this)
+* Kinect &amp; Xtion depth sensor support for MoveIt!
+
+
+
+== Removals ==
+
+* As ROS Groovy is now in end-of-life according to OSRF, this update removes official support for this ROS distribution in the Baxter repositories. 
+'''Note:''' If you desire to continue to use ROS Groovy or you need to use an Ubuntu Distribution before Ubuntu 13.10 Saucy, please continue to use SDK 1.0.0, by referring to the “release-1.0.0” branches in each of the baxter repositories. The corresponding final Groovy release branch of the simulator is “release-0.8.1” .
+
+
+== Changes ==
+
+* Upgrades to the Indigo robot required a reworking of how cameras power on / off - Three cameras can no longer be powered at the same time, and closing cameras now turns power off to the specified camera and on to the other two. As an effect of this change, closing a camera (and therefore power cycling) now takes roughly 5 seconds.
+* baxter_core_msgs SEAJointState message was updated to publish the gravity_only field: the torques required to hold the arms against gravity alone. The gravity_model_effort field now include feed forward torques that are applied to the arm when they are in use.
+* If you have previously (in RSDK 1.0 or before) set a Static IP Address for Baxter in the Field Service Menu, Baxter's '''old Static IP Address will be reset to Automatic (DHCP)''' after the RSDK 1.1 upgrade. If a Static IP Address is required your Baxter's network configurations in RSDK 1.1, you must manually set it again in the Field Service menu. &lt;br/>'''NOTE:''' Baxter only supports dynamic link-local addresses. It is not possible to set a static IP address in the link-local reserved address space (169.254.1.0 - 169.254.254.255) in order to avoid potential IP address collisions and software limitations that would prevent Baxter from booting up properly. More information about link-local addresses can be found here http://en.wikipedia.org/wiki/Link-local_address#IPv4
+
+== Fixes ==
+
+
+None
+
+
+== Known Issues ==
+
+None
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Release_-_v1.1.0_Release_Notes" title="Release - v1.1.0 Release Notes">Release - v1.1.0 Release Notes</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Release_-_v1.1.0_Release_Notes">http://sdk.rethinkrobotics.com/wiki/Release_-_v1.1.0_Release_Notes</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":71});});</script></body></html>

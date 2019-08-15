@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>FAQ - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"FAQ","wgTitle":"FAQ","wgCurRevisionId":3535,"wgRevisionId":3535,"wgArticleId":375,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"FAQ","wgRelevantArticleId":375,"wgRequestId":"8867c35d65095aa1039301b7","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["sysop"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="a/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-FAQ rootpage-FAQ skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(a/skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="a/index.php?title=Special:UserLogin&amp;returnto=FAQ">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">FAQ</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="FAQ#">More</a><ul><li id="ca-viewsource"><a href="a/index.php?title=FAQ&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="a/index.php?title=FAQ&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="FAQ" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="Learning">Learning</a></li>
+                <li id="n-Community"><a href="Community">Community</a></li>
+                <li id="n-Support"><a href="Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="FAQ#column-one">navigation</a>, <a href="FAQ#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="FAQ#Frequently_Asked_Questions"><span class="tocnumber">1</span> <span class="toctext">Frequently Asked Questions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="FAQ#System"><span class="tocnumber">1.1</span> <span class="toctext">System</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="FAQ#Maintenance"><span class="tocnumber">1.2</span> <span class="toctext">Maintenance</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="FAQ#Hardware"><span class="tocnumber">1.3</span> <span class="toctext">Hardware</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="FAQ#Network"><span class="tocnumber">1.4</span> <span class="toctext">Network</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Frequently_Asked_Questions">Frequently Asked Questions</span></h1>
+<p>The purpose of this section is to highlight some of our more popular questions about the Baxter Research Robot and to point you in the direction of the solutions to the associated conundrums.
+</p>
+<h2><span class="mw-headline" id="System">System</span></h2>
+<ul><li><b>I am having trouble enabling my robot.</b></li></ul>
+<p>This could be a symptom of one of any number of issues, unfortunately.  Usually though, it is symptomatic of an issue with your environment setup.
+</p><p><a href="Troubleshooting#Trouble_enabling_robot" title="Troubleshooting">Here</a> is a brief rundown on sorting through this problem, and <a rel="nofollow" class="external text" href="https://groups.google.com/a/rethinkrobotics.com/forum/#!topic/brr-users/vuU8oaJW-2E">here</a> and <a rel="nofollow" class="external text" href="https://groups.google.com/a/rethinkrobotics.com/d/msg/brr-users/R5MP1a2-Atw/bJKmUWNshxkJ">here</a> are links to forum threads discussing this issue.
+</p>
+<ul><li><b>I am having trouble connecting to my robot.</b></li></ul>
+<p>We have a number of network configuration options on Baxter to make it mesh well with almost any network environment.  
+</p><p><a href="Networking" title="Networking">Here</a> is a brief rundown on setting up Baxter on your network.
+</p>
+<ul><li><b>My examples are complaining that I have the wrong software/gripper version.</b></li></ul>
+<p>In order to ensure that incompatible versions of software between development machines and Baxter, we have instituted a check preventing you from using some of our example programs without compatible versions.
+</p><p><a href="Software_Version" title="Software Version">Here</a> is the information you should need to get your systems up to date.
+</p>
+<ul><li><b>How do I write a UI for Baxter?</b></li></ul>
+<p>There are number of ways to write a User interface for the Baxter Research Robot.
+</p><p>We suggest you either take a look at our <a href="Demo_Mode_-_Code_Walkthrough" title="Demo Mode - Code Walkthrough">Demo Mode - Code Walkthrough</a> or at <a rel="nofollow" class="external text" href="http://www.google.com/url?q=http%3A%2F%2Fcalumk.com%2Fblog%2FDissertation%2520-%2520Python%2520and%2520OpenCV%2520-%2520Creating%2520a%2520GUI%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFcp2x-UUX307DqtDWYMRYqHuVrtA">this lovely documentation</a> that one of our other customers came up with for developing a UI
+</p>
+<ul><li><b>How do I use the Baxter Research Robot in Windows?</b></li></ul>
+<p><a rel="nofollow" class="external text" href="https://groups.google.com/a/rethinkrobotics.com/d/msg/brr-users/VT_I2LSKLEQ/JcFBIZdtK5MJ">Here</a> is a link to the forum thread discussing this issue.
+</p>
+<ul><li><b>How do I get the DH values for baxter?</b></li></ul>
+<p><a rel="nofollow" class="external text" href="https://groups.google.com/a/rethinkrobotics.com/d/msg/brr-users/5X1-6w-Ja1I/9F9yWpMhOTUJ">Here</a> is a link to the forum thread discussing this issue.
+</p>
+<ul><li><b>What do the joint effort values actually mean?</b></li></ul>
+<p><a rel="nofollow" class="external text" href="https://groups.google.com/a/rethinkrobotics.com/d/msg/brr-users/bzIjt9AIzlI/AN6gSnaoweUJ">Here</a> is the forum thread discussing this issue.
+</p>
+<ul><li><b>How do I enter the Field Service Menu (FSM)?</b></li></ul>
+<p><a rel="nofollow" class="external text" href="Field_Service_Menu_(FSM)#Accessing_the_FSM">Here</a> is the Wiki page with detailed instructions on how to access the FSM
+</p>
+<h2><span class="mw-headline" id="Maintenance">Maintenance</span></h2>
+<ul><li><b>The arms on my Baxter are moving sluggishly, or pulling when in Zero-G mode... What can I do about this?</b></li></ul>
+<p>This probably means that your Baxter's arms could stand to be calibrated. <a href="Arm_Calibration" title="Arm Calibration">Here</a> is a guide on doing this.
+</p>
+<ul><li><b>A spring on an arm of Baxter is making a squeak or groan noise. How do I go about fixing this?</b></li></ul>
+<p>This means that you should apply some grease to the gravitational compensation spring. <a href="How_to_Grease_the_Gravitational_Springs" title="How to Grease the Gravitational Springs">Here</a> is a guide on doing this.
+</p>
+<ul><li><b>The foam on the fan cover appears to be very dusty? How do I clean it?</b></li></ul>
+<p>It's good practice to clean the filters on the fan covers to ensure clean air enters Baxter's torso. <a href="How_to_Clean_the_Foam" title="How to Clean the Foam">Here</a> is a guide on doing this.
+</p>
+<h2><span class="mw-headline" id="Hardware">Hardware</span></h2>
+<ul><li><b>How do I connect a kinect sensor to my robot?</b></li></ul>
+<p>Many of our users have worked through this issue in a number of ways.  <a rel="nofollow" class="external text" href="https://groups.google.com/a/rethinkrobotics.com/forum/#!searchin/brr-users/kinect/brr-users/UGPqdY7yaDk/U_WxycUMDzgJ">Here</a> is a link to the forum thread discussing this issue.
+</p>
+<ul><li><b>How do I use my custom (non-Rethink) gripper on baxter?</b></li></ul>
+<p>We have a useful page on <a href="Gripper_Customization" title="Gripper Customization">Gripper Customization</a> that should give you everything you need to start using your grippers with your Baxter.
+</p>
+<ul><li><b>How do I open my third camera?</b></li></ul>
+<p>You should only open two cameras on Baxter at a time.  <a rel="nofollow" class="external text" href="https://groups.google.com/a/rethinkrobotics.com/d/msg/brr-users/_Dvaldp909U/3fuc-lzh6SUJ">Here</a> is the forum thread discussing this issue.
+</p>
+<ul><li><b>How do I send an angle to a joint?</b></li></ul>
+<p><a rel="nofollow" class="external text" href="https://groups.google.com/a/rethinkrobotics.com/d/msg/brr-users/lhgb5U2LFp4/kK3SGYN8Dp4J">Here</a> is the forum thread discussing this issue.
+</p>
+<ul><li><b>Where can I find general hardware specifications for my Baxter?</b></li></ul>
+<p>Go to the hardware specifications page on the wiki <a href="Hardware_Specifications" title="Hardware Specifications"> Here</a>, or <a rel="nofollow" class="external text" href="https://groups.google.com/a/rethinkrobotics.com/d/msg/brr-users/pIBQeVLKtcA/4S6BDzy0iFwJ">Here</a> is the forum thread discussing this issue.
+</p>
+<ul><li><b>How do I shutdown Baxter?</b></li></ul>
+<p>Follow the instructions <a href="Baxter_Power_Down" title="Baxter Power Down"> here</a> to shut down baxter.
+</p>
+<ul><li><b>How do I put the arms in Zero Gravity (Zero-G) mode?</b></li></ul>
+<p><a rel="nofollow" class="external text" href="Hello_Baxter#Step_3:_Enable_the_Robot">Here</a> is the Wiki page showing you how to put the arms in Zero-G mode
+</p>
+<h2><span class="mw-headline" id="Network">Network</span></h2>
+<p><a href="What_are_the_required_dimensions_for_the_Baxter_workspace" title="What are the required dimensions for the Baxter workspace">What are the required dimensions for the Baxter workspace?</a>
+</p><p><a href="What_kind_of_grippers_works_with_the_Baxter_Research_Robot" class="mw-redirect" title="What kind of grippers works with the Baxter Research Robot">What kind of grippers works with the Baxter Research Robot?</a>
+</p><p><a href="How_often_does_Baxter_need_to_be_calibrated" title="How often does Baxter need to be calibrated">How often does Baxter need to be calibrated?</a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815160703
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.010 seconds
+Real time usage: 0.020 seconds
+Preprocessor visited node count: 18/1000000
+Preprocessor generated node count: 24/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:375-0!canonical and timestamp 20190815160703 and revision id 3535
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="a/index.php?title=FAQ&amp;oldid=3535">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=FAQ&amp;oldid=3535</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="a/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.010","walltime":"0.020","ppvisitednodes":{"value":18,"limit":1000000},"ppgeneratednodes":{"value":24,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815160703","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":119});});</script></body></html>

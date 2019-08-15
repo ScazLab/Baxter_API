@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for SSH - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"SSH","wgTitle":"SSH","wgCurRevisionId":4229,"wgRevisionId":0,"wgArticleId":562,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"SSH","wgRelevantArticleId":562,"wgRequestId":"36572071a6912cc6b1fa7e77","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-SSH rootpage-SSH skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=SSH&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for SSH</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=SSH&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=SSH&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=SSH&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../SSH" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../SSH" title="SSH">SSH</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=SSH&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=SSH&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">&lt;div class="toclimit-4" style="float:left; margin-right:10px; clear:left;">__TOC__&lt;/div>
+
+&lt;div style="clear:both">
+=SSH=
+&lt;/div>
+
+'''Access Baxter's internal PC remotely!'''
+
+Baxter now has a customer-accessible SSH account. With SSH access users will now have the ability to:
+* Run custom code directly from the robot. Eliminate network latency issues, ideal for 'real-time' operation (controls, image processing, screen display, and more..).
+* Start and stop the robot software
+* Copy files to/from Baxter's internal PC
+* Shutdown/reboot the robot remotely
+
+==What is SSH?==
+For those of you new to [https://help.ubuntu.com/community/SSH SSH], it stands for Secure Shell and is a program that provides a command-line interface to a remote system.
+It is called from the command line with the syntax: 
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ ssh &lt;username>@&lt;hostname>
+&lt;/syntaxhighlight>
+
+After entering this command, if this is your first time SSH-ing between these two systems, you will be prompted with the following message:
+&lt;pre>
+The authenticity of host '&lt;hostname> (&lt;ip address>)' can't be established.
+ECDSA key fingerprint is 80:17:0c:38:79:18:54:06:db:d6:a2:7d:c5:7b:ff:7e.
+Are you sure you want to continue connecting (yes/no)? 
+&lt;/pre>
+This message tells us that this computer has never seen this particular host key before, so it isn't able to verify that you're connecting to the host you think you are. Please continue with response "&lt;code>yes&lt;/code>" validating development PC &lt;-> Baxter PC connectivity.
+
+You will then be prompted for your password, and then provided with a shell on the remote server.
+
+The command for returning to your native server is simply "&lt;code>exit&lt;/code>" (alternatively: "ctrl + d").
+
+If you for some reason get a hanging terminal (if the remote server shuts down on you while you are SSH'ed in), you can force the session to exit by hitting Enter, Tilda, and Period, in that order.
+
+==Connecting to Baxter==
+
+===Credentials===
+
+==== username: ruser ====
+
+==== password: '''rethink''' ====
+
+== Secure Copy (SCP) ==
+SCP stands for Secure Copy, and is built off of the SSH protocol, and provides the capability to copy files to and from a remote server.
+
+The syntax for this is similar to the ssh syntax:
+* To scp a file from your computer to a remote server:
+*: &lt;syntaxhighlight lang="bash" enclose="div">
+$ scp &lt;path to local file> &lt;username>@&lt;hostname>:&lt;path to intended destination on remote server> &lt;/syntaxhighlight>
+
+* To scp a file from a remote server to your computer:
+*: &lt;syntaxhighlight lang="bash" enclose="div">
+$ scp &lt;username>@&lt;hostname>:&lt;path to remote file> &lt;path to intended destination on your computer> &lt;/syntaxhighlight>
+* If you are scp-ing to or from the home directory on the remote server, you can forgo the leading /home/&lt;username> in the filepath
+*: So to copy a file, data.txt, from my current directory to the home directory of "ruser" on "baxter", the syntax would be:
+*: &lt;syntaxhighlight lang="bash" enclose="div">
+$ scp data.txt ruser@baxter:
+&lt;/syntaxhighlight>
+
+==SSH Usage==
+Baxter's internal PC is now available for use/development. The '&lt;code>ruser&lt;/code>' account has been given permissions to a number of '&lt;code>sudo&lt;/code>' commands (start/restart robot software, shutdown/restart robot, access logs).
+
+The '&lt;code>ruser&lt;/code>' root directory (&lt;code> /home/ruser &lt;/code>) is the recommended development workspace. This path and it's contents will be preserved during future robot updates so that you will not lose your code.
+
+===Run custom code on the robot===
+Perhaps the most powerful aspect of this feature is the ability to run code local to Baxter. By running your code on the same PC as the core Baxter software stack, you eliminate the latency which was often introduced in a networked setup. This is useful for virtually all areas of robot use, but particularly when deploying robot controls and vision algorithms, as well as displaying to the screen and other user interactions.
+
+The robot is currently running ROS Indigo on the internal PC.
+
+==== Create ROS Workspace ====
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ mkdir -p ~/ros_ws/src
+# ros_ws (short for ROS Workspace)
+&lt;/syntaxhighlight>
+
+==== Source ROS Setup and Initialize Catkin ====
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ source /opt/ros/indigo/setup.bash
+$ cd ~/ros_ws/src
+$ catkin_init_workspace .
+$ cd ~/ros_ws
+$ catkin_make
+&lt;/syntaxhighlight>
+
+==== Clone Rethink SDK Software ====
+We will checkout all required [https://github.com/RethinkRobotics Baxter Github Repositories] into your ROS workspace source directory with the wstool source control tool:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws/src
+$ wstool init .
+$ wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter/master/baxter_sdk.rosinstall
+$ wstool update
+
+&lt;/syntaxhighlight>
+
+==== Baxter Environment Setup Script ====
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ cp src/baxter/baxter.sh .
+# Open baxter.sh in the vi or vim text editor and edit the lines containing the following variables as follows:
+# baxter_hostename="localhost"
+# your_hostname="localhost"
+$ chmod +x baxter.sh
+&lt;/syntaxhighlight>
+
+For more information on configuring your baxter.sh script, please see the [[Hello_Baxter | Hello Baxter Tutorial]]
+
+==== Build and Install SDK Software ====
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ cd ~/ros_ws
+$ ./baxter.sh
+[baxter - http://localhost:11311] $ cd ~/ros_ws
+[baxter - http://localhost:11311] $ catkin_make
+&lt;/syntaxhighlight>
+
+==Start/Stop the robot software==
+You can start and stop the robot software by SSH'ing in and running:
+&lt;syntaxhighlight lang="bash" enclose="div">
+# Stop Baxter Software
+$ sudo rc-service rethink stop
+
+# Start Baxter Software
+$ sudo rc-service rethink start
+&lt;/syntaxhighlight>
+
+It is important to note here that you will need to wait a short time between these commands, as the robot software takes a bit of time to finish shutting down.
+
+==Shutdown/Reboot the robot==
+You can also shutdown and reboot the robot softare remotely:
+&lt;syntaxhighlight lang="bash" enclose="div">
+# Reboot
+$ sudo reboot
+
+# Shutdown
+$ sudo shutdown -h now
+&lt;/syntaxhighlight>
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../SSH" title="SSH">SSH</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../SSH">http://sdk.rethinkrobotics.com/wiki/SSH</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":34});});</script></body></html>

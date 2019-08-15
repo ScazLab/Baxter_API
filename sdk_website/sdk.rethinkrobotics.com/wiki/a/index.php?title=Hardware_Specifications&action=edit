@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for Hardware Specifications - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Hardware_Specifications","wgTitle":"Hardware Specifications","wgCurRevisionId":4536,"wgRevisionId":0,"wgArticleId":636,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Hardware_Specifications","wgRelevantArticleId":636,"wgRequestId":"11701658f948a089d29e2420","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Hardware_Specifications rootpage-Hardware_Specifications skin-cavendishmw-rethinkrobotics action-edit"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Hardware+Specifications&amp;returntoquery=action%3Dedit">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">View source for Hardware Specifications</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Hardware_Specifications&amp;action=edit#">More</a><ul><li id="ca-viewsource" class="selected"><a href="index.php?title=Hardware_Specifications&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Hardware_Specifications&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Hardware_Specifications" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub">← <a href="../Hardware_Specifications" title="Hardware Specifications">Hardware Specifications</a></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Hardware_Specifications&amp;action=edit#column-one">navigation</a>, <a href="index.php?title=Hardware_Specifications&amp;action=edit#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Sdk-wiki:Users&amp;action=edit&amp;redlink=1" class="new" title="Sdk-wiki:Users (page does not exist)">Users</a>.</li>
+<li>This page has been protected to prevent editing or other actions.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">== Description ==
+
+Baxter is a humanoid, anthropomorphic robot sporting two seven degree-of-freedom arms and state-of-the-art sensing technologies, including force, position, and torque sensing and control at every joint, cameras in support of computer vision applications, integrated user input and output elements such as a head-mounted display, buttons, knobs and more.
+
+The Baxter Robot was designed for continuous operation and can run 24/7 for expended periods of time without the risk of damaging the hardware of the robot.  It is recommended that the robot be connected to an uninterruptible  power when running continuously in order to prevent hard drive corruption in the event of a power outage that can cause an improper shutdown of the robot.  If the hard drive of the robot becomes corrupt due to an improper shut down, a fresh install (or factory reset on robots running v1.2 or later) will be required.
+
+==Baxter Arm Specifications==
+
+=== Joint Names ===
+
+Baxter's joint names are mentioned a number of times in this documentation.  A labeled diagram can be found below (S=Shoulder, E=Elbow, W=Wrist)
+
+[[File:Baxter Joint Names.png|300px]]
+
+
+=== Link Lengths ===
+
+Link lengths for Baxter's joints are measured in mm, from the center of one joint to the center of the next.  They can be found in the image below.
+
+[[File:Baxter Link Lengths.png|400px]]
+
+
+=== Range of Motion - Bend Joints ===
+
+The range of motion for each bend joint is presented below.  The table shows the measurements in degrees and radians
+
+
+[[File:Baxter RangeMotion 1.png|400px]]
+{| class="wikitable"
+|-
+|+ '''Joint Range Table (Bend Joints)'''
+!width="100pt"|Joint
+!width="100pt"|(Degrees) Min limit
+!width="100pt"|Max limit
+!width="100pt"|Range
+!width="100pt"|(Radians) Min limit
+!width="100pt"|Max limit
+!width="100pt"|Range
+|-
+! S1
+| -123 || +60 || 183 || -2.147 || +1.047 || 3.194
+|-
+! E1
+| -2.864 || +150 || 153 || -0.05 || +2.618 || 2.67
+|-
+! W1
+| -90 || +120 || 210 || -1.5707 || +2.094 || 3.6647
+|}
+
+=== Range of Motion - Twist Joints ===
+
+The range of motion for each twist joint is presented below.  The table shows the measurements in degrees and radians.
+
+[[File:Baxter RangeMotion 2.png|300px]]
+
+{| class="wikitable"
+|-
+|+ '''Joint Range Table (Twist Joints)'''
+!width="100pt"|Joint
+!width="100pt"|(Degrees) Min limit
+!width="100pt"|Max limit
+!width="100pt"|Range
+!width="100pt"|(Radians) Min limit
+!width="100pt"|Max limit
+!width="100pt"|Range
+|-
+! S0
+| -97.494 || +97.494 || 194.998 || -1.7016 || +1.7016 || 3.4033
+|-
+! E0
+| -174.987 || +174.987 || 349.979 || -3.0541 || +3.0541 || 6.1083
+|-
+! W0
+| -175.25 || +175.25 || 350.5 || -3.059 || +3.059 || 6.117
+|-
+! W2
+| -175.25 || +175.25 || 350.5 || -3.059 || +3.059 || 6.117
+|}
+
+=== Maximum Joint Speeds ===
+
+{| class="wikitable"
+|-
+|+ '''Maximum Joint Speeds (rad/sec)'''
+!width="100pt"|Joint
+!width="100pt"|Maximum Speed
+|-
+! S0
+! 2.0 
+|-
+! S1
+! 2.0
+|-
+! E0
+! 2.0
+|-
+! E1
+! 2.0
+|-
+! W0
+! 4.0
+|-
+! W1
+! 4.0
+|-
+! W2
+! 4.0
+|-
+|}
+=== Joint Flexure Stiffness ===
+
+{| class="wikitable"
+|-
+|+ '''Flexure Stiffness (K)'''
+!width="200pt"|Joint
+!width="200pt"|Stiffness 
+|-
+! Small Flexures (W0, W1, W2)
+| 3.4deg @ 15Nm (~250Nm/rad)
+|-
+! Large Flexures (S0, S1, E0, E1)
+| 3.4deg @ 50Nm (~843Nm/rad)
+|}
+
+=== S1 Spring Specifications ===
+
+{| class="wikitable"
+|-
+|+ '''S1 Spring Specs'''
+!width="100pt"|Description
+!width="300pt"|Spec 
+|-
+! Spring Type
+| JIS standard die spring: ASF 35 X 200
+|-
+! Free Length
+| 200 mm
+|-
+! Stiffness (K)
+| 9.6 N/mm
+|-
+! Operating length
+| 101 mm - 154 mm
+|}
+
+=== Joint Sensor Resolution ===
+
+* The resolution for the joint sensors is 14 bits (over 360 degrees); so 360/(2^14) = 0.021972656 degrees per tick resolution.
+* All of the joints have a sinusoidal non-linearity, giving a typical accuracy on the order of +/-0.10 degrees, worst case +/-0.25 degrees accuracy when approaching joint limits.  In addition, there may be an absolute zero-offset of up to +/-0.10 degree when the arm is not calibrated properly.  Be sure to [[Arm_Calibration | tare and calibrate]] the arms if you're trying to minimize accuracy errors in the joint sensors.
+
+'''Note:''' The performance of the joint controllers is a separate matter; ultimately, the accuracy of the controller is only limited by the accuracy of the sensors.  
+In a case where joint position controllers are included, we use a threshold to determine when the joint states are "close enough" to the commanded joint angles to call it acceptable.  In the baxter_interface for the RSDK, we use a default threshold of: JOINT_ANGLE_TOLERANCE = 0.00872664626 radians (0.5 degrees), which is set in settings.py and used by the limb interface and the joint_position examples.
+If you want to improve the accuracy, you can write your own controller to adjust the setpoint and to overcome any steady-state error in the internal low-level controllers.  Even when the joint controller is slightly off the target position, it always knows exactly how far off it is, via the joint position sensors. 
+
+=== Peak Torque ===
+
+The peak torque specification refers to the maximum amount of torque that can be applied to each joint.
+
+{| class="wikitable"
+|-
+|+ '''Peak Torque Per Joint'''
+!width="100pt"|Joint
+!width="150pt"|Peak Torque 
+|-
+! S0,S1,E0,E1
+| 50Nm
+|-
+! W0,W1,W2
+| 15Nm
+|}
+
+== Other Hardware Specifications ==
+
+=== Camera Specifications ===
+
+{| class="wikitable"
+|-
+!width="100pt"|Description
+!width="150pt"|Spec 
+|-
+! Max Resolution
+| 1280 x 800 pixels
+|-
+! Effective Resolution
+| 640 x 400 pixels
+|-
+! Frame Rate
+| 30 frames per second
+|-
+! Focal Length
+| 1.2mm
+|}
+
+=== On Board CPU ===
+
+{| class="wikitable"
+|-
+!width="100pt"|Description
+!width="150pt"|Spec 
+|-
+! Processor
+| 3rd Gen Intel Core i7-3770 Processor (8MB, 3.4GHz) w/HD4000 Graphics
+|-
+! Memory
+| 4GB, NON-ECC, 1600MHZ DDR3
+|-
+! Hard Drive
+| 128GB Solid State Drive
+|}
+
+=== Component Weights ===
+
+{| class="wikitable"
+|-
+!width="100pt"|Description
+!width="150pt"|Spec 
+|-
+! Total weight (with pedestal)
+| 298 lbs / 135.2 kg
+|-
+! One Arm
+| 47 lbs / 21.3 kg
+|-
+! Torso
+| 70 lbs / 31.8 kg
+|-
+! Pedestal
+| 134 lbs / 60.8 kg
+|}
+
+=== Electrical Power ===
+
+{| class="wikitable"
+|-
+!width="100pt"|Description
+!width="150pt"|Spec 
+|-
+! Battery Operation
+| DC-to-120V AC Inverter  (Note: the Baxter robot has an internal PC, which cannot be powered directly off of 24V DC)
+|-
+! Interface
+| Standard 120VAC power.  Robot power bus and internal PC both have “universal” power supplies and support  90 - 264V AC (47 - 63Hz)
+|-
+! Max Consumption
+| 6A at 120V AC, 720W max per unit
+|-
+! Electrical Efficiency
+| 87% to 92%
+|-
+! Power Supply
+| Uses medical-grade DC switching power supply for robot power bus
+|-
+! Tolerance to sags
+| Sags tolerated to 90V. Sustained interruption will require manual power-up
+|-
+! Voltage Flicker
+| Holdup time 20mS
+|-
+! Voltage Unbalance
+| Single phase operation only
+|}
+
+=== Miscellaneous Specifications ===
+
+{| class="wikitable"
+|-
+!width="100pt"|Description
+!width="150pt"|Spec 
+|-
+! Screen Resolution
+| 1024 x 600 pixels
+|-
+! Positional Accuracy
+| +/- 5 mm
+|-
+! Max Payload (including end-effector)
+| 5 lb / 2.2 kg
+|-
+! Gripping Force (max)
+| 35N or 8 lbs
+|-
+! Infrared Sensor Range
+| 1.5 – 15 in / 4 – 40 cm
+|}
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="../Hardware_Specifications" title="Hardware Specifications">Hardware Specifications</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../Hardware_Specifications">http://sdk.rethinkrobotics.com/wiki/Hardware_Specifications</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":261});});</script></body></html>

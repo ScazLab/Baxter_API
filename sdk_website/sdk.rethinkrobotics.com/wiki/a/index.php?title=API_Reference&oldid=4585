@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>API Reference - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"API_Reference","wgTitle":"API Reference","wgCurRevisionId":4585,"wgRevisionId":4585,"wgArticleId":329,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"API_Reference","wgRelevantArticleId":329,"wgRequestId":"e16f24147648e848b0f5d51f","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-API_Reference rootpage-API_Reference skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=API+Reference&amp;returntoquery=oldid%3D4585">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">API Reference</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=API_Reference&amp;oldid=4585#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=API_Reference&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=API_Reference&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../API_Reference" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 09:31, 14 February 2017 by <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User:Davetcoleman&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Davetcoleman (page does not exist)"><bdi>Davetcoleman</bdi></a> <span class="mw-usertoollinks">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=User_talk:Davetcoleman&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Davetcoleman (page does not exist)">talk</a> | <a href="http://sdk.rethinkrobotics.com/wiki/Special:Contributions/Davetcoleman" class="mw-usertoollinks-contribs" title="Special:Contributions/Davetcoleman">contribs</a>)</span> <span class="comment">(Changed /itb to /navigators per new API)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=API_Reference&amp;diff=prev&amp;oldid=4585" title="API Reference">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=API_Reference&amp;direction=prev&amp;oldid=4585" title="API Reference">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=API_Reference&amp;oldid=4585#column-one">navigation</a>, <a href="index.php?title=API_Reference&amp;oldid=4585#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><h1><span class="mw-headline" id="Robot_API">Robot API</span></h1>
+<h2><span class="mw-headline" id="ROS_Topic_API_Reference">ROS Topic API Reference</span></h2>
+<p>This page serves as a lookup reference for all the hardware and functionality on the Baxter Research SDK robot. The main interface of the Baxter RSDK is via ROS Topics and Services, which you will find listed and described below along with other core information needed to interface with Baxter.
+</p><p><br />
+</p>
+<dl><dt><a rel="nofollow" class="external text" href="http://api.rethinkrobotics.com">Python Code API</a></dt>
+<dd>For the <a href="../Baxter_Interface" title="Baxter Interface">baxter_interface</a> Python classes (built on top of the ROS API), please see the <a rel="nofollow" class="external text" href="http://api.rethinkrobotics.com">Code API Reference</a> page at: <a rel="nofollow" class="external free" href="http://api.rethinkrobotics.com">http://api.rethinkrobotics.com</a></dd></dl>
+<p><br />
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th scope="col">Robot
+</th>
+<th scope="col">Movement
+</th>
+<th scope="col">Sensors+
+</th>
+<th scope="col">I/O
+</th></tr>
+<tr style="vertical-align:top;">
+<td>
+<ul><li><a href="index.php?title=API_Reference&amp;oldid=4585#Enable_Robot">Enabling the Robot</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Robot_Description_.28URDF.29">Robot Description (URDF)</a></li></ul>
+</td>
+<td>
+<ul><li><b><a href="index.php?title=API_Reference&amp;oldid=4585#Joints">Joints</a></b>
+<ul><li><a href="index.php?title=API_Reference&amp;oldid=4585#Arm_Joints">Arm Joints</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Head_Joints">Head Joints</a></li></ul></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Cartesian_Endpoint">Cartesian Endpoint</a>
+<ul><li><a href="index.php?title=API_Reference&amp;oldid=4585#Inverse_Kinematics_Solver_Service">IK Solver</a></li></ul></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Grippers_.28End-Effectors.29">Grippers (End-Effectors)</a></li></ul>
+</td>
+<td>
+<ul><li><b><a href="index.php?title=API_Reference&amp;oldid=4585#Sensors">Sensors</a></b>
+<ul><li><a href="index.php?title=API_Reference&amp;oldid=4585#Accelerometers">Accelerometers</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#IR_Range">IR Range</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Sonar">Sonar</a></li></ul></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Cameras">Cameras</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Screen_.28xdisplay.29">LCD Screen (xdisplay)</a></li></ul>
+</td>
+<td>
+<ul><li><b><a href="index.php?title=API_Reference&amp;oldid=4585#Inputs_and_Outputs">Inputs and Outputs</a></b>
+<ul><li><a href="index.php?title=API_Reference&amp;oldid=4585#Navigators">Navigators</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Cuff_Buttons">Cuff Buttons</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Lights">LED Lights</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Digital_IO">Digital IO</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Analog_IO">Analog IO</a></li></ul></li></ul>
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Enable_Robot">Enable Robot</span></h3>
+<p>Be sure that you 'Enable' the robot before attempting to control any of the motors.  The easiest method for controlling the robot is to use the <code>enable_robot.py</code> ROS executable found in the following example.
+</p>
+<ul><li><a href="../Enable_Robot_Example" class="mw-redirect" title="Enable Robot Example">Enable Robot Example</a></li>
+<li><a href="../Robot_State_and_EStop" title="Robot State and EStop">Robot State and EStop</a></li></ul>
+<p><i>Robot State</i>  <br />
+<code>/robot/state</code> (<a rel="nofollow" class="external text" href="http://api.rethinkrobotics.com/baxter_core_msgs/html/msg/AssemblyState.html">baxter_core_msgs/AssemblyState</a>)
+</p>
+<ul><li>Subscribe to the Robot State for the enabled and error state of the robot hardware itself. It also includes information on the EStop.</li>
+<li>The robot must be enabled (<code>enabled: true</code>) in order to move the robot. Use the <a href="../Enable_Robot_Tool" title="Enable Robot Tool">Enable Robot Tool</a>, or the "Enable Robot Topic" below, to enable the robot.</li>
+<li>It is possible for the robot to have non-fatal errors, so <code>error</code> can be <code>true</code> while <code>enabled</code> is also <code>true</code>.</li>
+<li>For more complete information on robot state, see <a href="../Robot_State_and_EStop" title="Robot State and EStop">Robot State and EStop</a></li></ul>
+<p><i>Enable Robot</i>  <br />
+<code>/robot/set_super_enable</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/Bool.html">std_msgs/Bool</a>)  
+</p>
+<ul><li><code>data</code>: <code>true</code> to Enable robot motors; <code>false</code> to disable.</li>
+<li>You can check the Robot State Topic to see if the robot enabled properly or if it has an error.</li></ul>
+<p><i>Reset Robot State</i>  <br />
+<code>/robot/set_super_reset</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/Empty.html">std_msgs/Empty</a>)  
+</p>
+<ul><li>Publish an Empty message to reset the state after an error.</li>
+<li>A reset will clear all pre-existing errors and the state (it will disable).</li></ul>
+<p><br />
+</p>
+<h3><span id="Robot_Description_(URDF)"></span><span class="mw-headline" id="Robot_Description_.28URDF.29">Robot Description (URDF)</span></h3>
+<p>Baxter automatically builds an appropriate URDF (Unified Robot Description Format) on boot and loads it onto the ROS Parameter Server, under the ROS parameter name <code>/robot_description</code>.  From here, it is accessible by rviz, tf and other ROS utilities that use the URDF.  If you want to grab a copy of the actual URDF xml file yourself, see the <a href="../HowTo_-_Main" title="HowTo - Main">How To's</a>.
+</p>
+<ul><li><a href="../Robot_Description" class="mw-redirect" title="Robot Description">Robot Description</a></li>
+<li><a href="../HowTo_-_Main" title="HowTo - Main">Getting the URDF</a></li></ul>
+<h2><span class="mw-headline" id="Joints">Joints</span></h2>
+<p>Baxter has 7 joints (DoF) in each of its two arms and two more joints in its head (side-to-side panning, and binary, up-down nodding).  The control for the head is done separately from the arms; however, you can read the current joint states (position, velocity, and effort) for all the joints on both arms and head by subscribing to one topic:
+</p><p><code>/robot/joint_states</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/JointState.html">sensor_msgs-JointState</a>)  
+</p><p>where the units for the position of a joint are in (rad), the units of velocity are in (rad/s) and the units of effort in each joint is in (Nm).
+</p><p>The following sections cover the individual joint sensing and control in more detail: 
+</p>
+<h3><span class="mw-headline" id="Arm_Joints">Arm Joints</span></h3>
+<p><b>Component IDs:</b><br />
+<code>left_e0</code>, <code>left_e1</code>, <code>left_s0</code>, <code>left_s1</code>, <code>left_w0</code>, <code>left_w1</code>, <code>left_w2</code>, <code>right_e0</code>, <code>right_e1</code>, <code>right_s0</code>, <code>right_s1</code>, <code>right_w0</code>, <code>right_w1</code>, <code>right_w2</code>  
+</p>
+<h4><span class="mw-headline" id="Arm_Joint_States">Arm Joint States</span></h4>
+<p><code>/robot/joint_states</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/JointState.html">sensor_msgs-JointState</a>)  
+</p>
+<ul><li><code>name[i]</code>: '&lt;component_id&gt;' of <code>i</code>-th joint in message value arrays.</li>
+<li><code>position[i]</code>: position of joint <code>i</code> rad</li>
+<li><code>velocity[i]</code>: velocity of joint <code>i</code> in rad/s</li>
+<li><code>effort[i]</code>: effort applied in joint <code>i</code> in Nm</li></ul>
+<p>Joint states are published by the <code>robot_state_publisher</code> and are updated with information from the sensors for every cycle.
+</p><p><i>Set Joint State Publishing Rate</i>  <br />
+<code>/robot/joint_state_publish_rate</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/UInt16.html">std_msgs-UInt16</a>)  
+</p>
+<ul><li>The rate at which the joints are published can be controlled by publishing a frequency on this topic.</li>
+<li>Default rate is 100Hz; Maximum is 1000Hz.</li>
+<li><i>Note: In current version of SDK (v0.6.0), there is a known bug where high rates will cause many topics to lag and become unresponsive.</i></li></ul>
+<h4><span class="mw-headline" id="Arm_Joint_Control">Arm Joint Control</span></h4>
+<p>There are currently four modes for controlling the arms: Joint Position Mode, Joint Velocity Mode, and Joint Torque Mode, and 'raw' Joint Position Mode.
+</p><p>Alternatively, a joint trajectory action server has been created in support of timestamped joint position trajectories using the ROS standard <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/joint_trajectory_action">joint trajectory action</a>.
+</p><p>For more information on joint control, see the following <a href="../Example_Programs#movement" class="mw-redirect" title="Example Programs">movement example programs.</a>
+</p>
+<h5><span class="mw-headline" id="Joint_Control_Mode">Joint Control Mode</span></h5>
+<p>Each arm can be in independent control modes by publishing the desired control mode to the topic for the appropriate arm.
+</p>
+<h5><span class="mw-headline" id="Position_Mode">Position Mode</span></h5>
+<p>The first is Position Mode, in which users publish target joint angles for given joints and the internal controller drives the arm to the published angles.
+</p>
+<h5><span class="mw-headline" id="Velocity_Mode">Velocity Mode</span></h5>
+<p><i><b>Warning:</b> Advanced Control Mode.</i>  
+In Velocity Control Mode, users publish velocities for given joints and the joints will move at the specified velocity.
+</p>
+<h5><span class="mw-headline" id="Torque_Mode">Torque Mode</span></h5>
+<p><i><b>Warning:</b> Advanced Control Mode.</i>  
+In Torque Control Mode, users publish torques for given joints and the joints will move at the specified torque.
+</p>
+<h5><span id="&quot;Raw&quot;_Position_Mode"></span><span class="mw-headline" id=".22Raw.22_Position_Mode">"Raw" Position Mode</span></h5>
+<p><i><b>Warning:</b> Advanced Control Mode.</i>  
+In 'raw' Position Control Mode, users publish desired joint positions. Where these commands would typically be modified in traditional 'Position Mode', these commands are passed directly to the Joint Controller Boards (JCBs). The only limitation placed on 'raw' joint position commands is a maximum delta from current position to avoid over-torque errors from the JCBs as they try to reach the specified command at the 1000Hz period.
+</p><p><i>Switching Modes</i>  <br />
+<code>/robot/limb/&lt;side&gt;/joint_command</code> (<a rel="nofollow" class="external text" href="http://api.rethinkrobotics.com/baxter_core_msgs/html/msg/JointCommand.html">baxter_core_msgs/JointCommand</a>)  
+</p>
+<ul><li>Mode is set implicitly by specifying the mode in the command message. Publish a <code>JointCommand</code> message to the <code>joint_command</code> topic for a given arm to set the arm into the desired control mode.</li>
+<li>Constants for each mode are defined in the <code>JointCommand</code> message type.</li></ul>
+<h4><span class="mw-headline" id="Joint_Trajectory_Action">Joint Trajectory Action</span></h4>
+<p>The Joint Trajectory Action provides an <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/actionlib">ROS action interface</a> for tracking trajectory execution.
+</p><p>The joint trajectory action server provides an action interface for execution of trajectories requested by the client, known as a <i>Goal* request. The joint trajectory action server then executes the request trajectory communicating the *Result</i> response. The actionlib (action server/client interface) package differs from ROS services, simple request/response interface, in that actions allow mid-execution cancellation, they can also provide feedback during execution as to the progress of the Goal request.
+</p><p><i>Joint Trajectory Action Server</i>  <br />
+<code>/robot/limb/&lt;limb&gt;/follow_joint_trajectory/cancel</code><br />
+<code>/robot/limb/&lt;limb&gt;/follow_joint_trajectory/feedback</code><br />
+<code>/robot/limb/&lt;limb&gt;/follow_joint_trajectory/goal</code><br />
+<code>/robot/limb/&lt;limb&gt;/follow_joint_trajectory/result</code><br />
+<code>/robot/limb/&lt;limb&gt;/follow_joint_trajectory/status</code>
+</p>
+<h4><span class="mw-headline" id="Usage:">Usage:</span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    <span class="c1"># Verify that the robot is enabled:</span>
+    $ rosrun baxter_tools enable_robot.py
+    <span class="c1"># Start the joint trajectory action server:</span>
+    $ rosrun baxter_interface joint_trajectory_action_server.py
+</pre></div>
+<p>Please see the <a href="../Simple_Joint_trajectory_example" title="Simple Joint trajectory example">simple joint trajectory example</a> or <a href="../Joint_Trajectory_Playback_Example" title="Joint Trajectory Playback Example">joint trajectory playback example</a> for examples of creating a client of this action server and requesting a joint trajectory.
+</p>
+<h4><span class="mw-headline" id="Parameters:">Parameters:</span></h4>
+<p>The joint trajectory action server provides a number of parameters which describe it's behavior during the trajectory execution. These were largely designed to follow <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/joint_trajectory_action#ROS_API">these standards.</a>
+</p><p><b>Note:</b> All of these parameters will be initialized on startup of the trajectory_controller.py if they were not previously specified.
+<code>/rethink_rsdk_joint_trajectory_controller/&lt;joint_name&gt;__kp</code>
+The proportional gain with which the joint trajectory controller will track the commanded trajectory for the specified joint.
+</p><p><code>/rethink_rsdk_joint_trajectory_controller/&lt;joint_name&gt;__kd</code>
+The derivative gain with which the joint trajectory controller will track the commanded trajectory for the specified joint.
+</p><p><code>/rethink_rsdk_joint_trajectory_controller/&lt;joint_name&gt;__ki</code>
+The integral gain with which the joint trajectory controller will track the commanded trajectory for the specified joint.
+</p><p><code>/rethink_rsdk_joint_trajectory_controller/goal_time (double, default: 0.0)</code>
+The amount of time (in seconds) that the controller is permitted to be late to the goal. If goal_time has passed and the controller still has not reached the final position (within the parameters described by <code>/rethink_rsdk_joint_trajectory_controller/&lt;joint_name&gt;_goal</code>, then the goal is aborted.
+</p><p><code>/rethink_rsdk_joint_trajectory_controller/&lt;joint&gt;_goal (double, default: -1.0)</code>
+The maximum final error for &lt;joint&gt; for the trajectory goal to be considered successful. Negative numbers indicate that there is no constraint. Given in units of joint position (radians). If this constraint is violated, the goal is aborted.
+</p><p><code>/rethink_rsdk_joint_trajectory_controller/trajectory (double, default: -1.0)</code>
+The maximum error for &lt;joint&gt; at any point during execution for the trajectory goal to be considered successful. Negative numbers indicate that there is no constraint. Given in units of joint position (radians). If this constraint is violated, the goal is aborted.
+</p><p><i><b>Dynamic Reconfigure GUI</b></i> is suggest for use with ROS Distributions &gt;=Indigo for setting these parameters.
+</p>
+<pre>   # Start the dynamic reconfigure GUI:
+   $ rosrun rqt_reconfigure rqt_reconfigure
+</pre>
+<p>Expand the joint trajectory controller's parameters by choosing <code>rethink_rsdk_joint_trajectory_controller</code> from the left menu. Use the sliders/input fields to specify these parameters dynamically.
+</p><p>Alternatively, these parameters can be set  <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/rosparam#YAML_Format">via a YAML file, command line, or programmatically (rospy, roscpp)</a>.
+</p>
+<h3><span class="mw-headline" id="Collision_Avoidance">Collision Avoidance</span></h3>
+<p><i><b>Warning:</b> RETHINK ROBOTICS DISCLAIMS COMPLIANCE BY THE PRODUCTS WITH ANSI, ISO OR OTHER INDUSTRIAL ROBOT SAFETY STANDARDS. RETHINK’S PRODUCTS INCLUDE CERTAIN SAFETY AND/OR COLLISION DETECTION TECHNOLOGY TO PREVENT POSSIBLE INJURY FROM USE OF THE PRODUCTS. THE USER ACKNOWLEDGES THAT HE/SHE HAS THE ABILITY TO DISABLE CERTAIN SAFETY MECHANISMS INCLUDED IN THE PRODUCTS, AND IF DISABLED BY USER, USER ASSUMES ALL RESPONSIBILITY FOR DAMAGE AND/OR HARM CAUSED BY THE PRODUCTS AND AGREES TO INDEMNIFY RETHINK ROBOTICS FROM ALL LIABILITY RELATING TO SUCH DAMAGE OR HARM.</i>  
+</p><p>In certain situations, collision avoidance (forces applied to the joints to avoid self collision) are undesirable.  
+</p><p><i>Torso Collision Avoidance</i>  <br />
+<code>/robot/limb/right/suppress_collision_avoidance</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/Empty.html">std_msgs-Empty</a>) 
+</p>
+<ul><li>To disable torso self collision avoidance, a std_msgs/Empty message must be published at a rate greater than 5 Hz.</li></ul>
+<p><br />
+For additional information on joint control, see the <a href="../Joint_Position_Example" title="Joint Position Example">Joint Position Example</a>, <a href="../Wobbler_Example" title="Wobbler Example">Joint Velocity Example</a>, <a href="../Head_Movement_Example" title="Head Movement Example">Head Movement Example</a>, and <a href="../MoveIt_Tutorial" title="MoveIt Tutorial">MoveIt! Tutorial</a>.
+</p>
+<h2><span class="mw-headline" id="Cartesian_Endpoint">Cartesian Endpoint</span></h2>
+<p>Published at 100 Hz, the endpoint state topic provides the current Cartesian Position, Velocity and Effort at the endpoint for either limb.
+</p>
+<h4><span class="mw-headline" id="Endpoint_State">Endpoint State</span></h4>
+<p><i>Endpoint State</i>  <br />
+<code>/robot/limb/&lt;side&gt;/endpoint_state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-1.2.0/baxter_core_msgs/msg/EndpointState.msg">baxter_core_msgs-EndpointState</a>) 
+</p>
+<ul><li>All of Pose, Twist, and Wrench measurements are reported with respect to the /base frame of the robot</li>
+<li>The endpoint state message provides the current <code>position/orientation pose</code>, <code>linear/angular velocity</code>, and <code>force/torque effort</code> of the robot end-effector at 100 Hz. Pose is in Meters, Velocity in m/s, Effort in Nm.</li>
+<li>The robot's "endpoint" is definied as the <code>&lt;side&gt;_gripper</code> tf frame. This frame is updated dynamically when grippers are connected to the robot or a <a href="../Gripper_Customization" title="Gripper Customization">Gripper Customization</a> command is sent.</li>
+<li><i>New in v1.0.0:</i> The <a href="../URDF" title="URDF">URDF</a> on the parameter server will now update when the Robot Model is updated by Gripper changes. Check the ROS Parameter for an updated copy of the URDF, especially before using IK or motion planners, such as <a href="../MoveIt" class="mw-redirect" title="MoveIt">MoveIt!</a>.</li></ul>
+<h4><span class="mw-headline" id="Inverse_Kinematics_Solver_Service">Inverse Kinematics Solver Service</span></h4>
+<p>The robot software provides a simple Position Inverse Kinematics (IK) Solver as a ROS Service.  Specify a desired Cartesian coordinate and orientation for an Endpoint (in world x,y,z space), and the solver will return a set of joint angles that will get the arm there - or return an Invalid state if the pose is unreachable.  An optional seed to start looking for solutions around can be specified as a joint angle configuration.
+</p><p>Note that the service takes an <i>array</i> of requests, and similarly returns an array of results with corresponding indexes. Similarly, optional seeds for each Endpoint request can be provided in a corresponding array of the same size as the requests array. This multiple array structure is a common structure used in ROS and explained in the <a rel="nofollow" class="external text" href="http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html">sensor_msgs/JointState</a> message.
+</p><p><i>SolvePositionIK Service [srv]</i>  <br />
+<code>/ExternalTools/&lt;side&gt;/PositionKinematicsNode/IKService</code> (<a rel="nofollow" class="external text" href="http://api.rethinkrobotics.com/baxter_core_msgs/html/srv/SolvePositionIK.html">baxter_core_msgs/SolvePositionIK.srv</a>)
+</p>
+<ul><li><i>Request</i>
+<ul><li><code>pose_stamp</code> (Required) - an array of geometry_msgs/PoseStamped requests, each defining the Cartesian &lt;x,y,z&gt; Position and Quaternion orientation of the <a href="index.php?title=API_Reference&amp;oldid=4585#Cartesian_Endpoint">Endpoint</a> in the <code>/base</code> TF frame.</li>
+<li>(Optional) <code>seed_angles</code> - an array of joint configuration seeds to start searching for solutions around, corresponding to each request in <code>pose_stamp</code>, where each individual seed is defined as a JointState message with the joint names and positions filled for all the arm Joints (so <code>seed_angles</code> is an array of arrays).</li>
+<li>(Optional) <code>seed_mode</code> - specify the IK solver strategy for what types of seeds to use. By default (<code>SEED_AUTO</code>), the solver will iterate through the different strategies, starting with the user provided seed if it exists, until a solution is found.  However, by explicitly setting the <code>seed_mode</code> to a specific mode, the solver will only return whether it was able to find a solution using that type of seed. The different mode types are defined as constants in the message (default: SEED_AUTO):
+<dl><dd><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    uint8 <span class="nv">SEED_AUTO</span>    <span class="o">=</span> <span class="m">0</span>
+    uint8 <span class="nv">SEED_USER</span>    <span class="o">=</span> <span class="m">1</span>
+    uint8 <span class="nv">SEED_CURRENT</span> <span class="o">=</span> <span class="m">2</span>
+    uint8 <span class="nv">SEED_NS_MAP</span>  <span class="o">=</span> <span class="m">3</span>
+</pre></div></dd>
+<dd></dd></dl></li></ul></li>
+<li><i>Response</i>
+<ul><li><code>result_type</code> will be a corresponding array of uint8's, which will be 0 if no valid joint solution was found for the given Endpoint request; otherwise, it will be non-zero and correspond to the type of seed eventually used that gave a valid solution. These values correspond to the constants in the message used to specify <code>seed_mode</code>.</li>
+<li><code>isValid</code> will be a corresponding array of booleans which will be True if a valid joint solution was found for the given Endpoint request.</li>
+<li><code>joints</code> will contain joint solutions corresponding to each Endpoint request. Note that you should <b>always</b> check the <code>result_type</code> field to see if a valid joint solution was found, as invalid joint solutions can be returned in this array.</li></ul></li></ul>
+<p>This service allows users to solve for basic IK joint angle solutions or perform workspace validation.  The service will use a number of seeding strategies to find a solution.  These strategies can be specified explicitly or just use the default to find the first solution in the possible methods.  Optionally a Joint configuration can optionally be provided as a seed to the Solver.
+</p>
+<h5><span class="mw-headline" id="Example:">Example:</span></h5>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Seeded request call to the service</span>
+$ rosservice call /ExternalTools/left/PositionKinematicsNode/IKService <span class="s2">&quot;pose_stamp:</span>
+<span class="s2">- header:</span>
+<span class="s2">    seq: 0</span>
+<span class="s2">    stamp: now</span>
+<span class="s2">    frame_id: &#39;base&#39;</span>
+<span class="s2">  pose:</span>
+<span class="s2">    position:</span>
+<span class="s2">      x: 0.657579481614</span>
+<span class="s2">      y: 0.851981417433</span>
+<span class="s2">      z: 0.0388352386502</span>
+<span class="s2">    orientation:</span>
+<span class="s2">      x: -0.366894936773</span>
+<span class="s2">      y: 0.885980397775</span>
+<span class="s2">      z: 0.108155782462</span>
+<span class="s2">      w: 0.262162481772</span>
+<span class="s2">seed_angles:</span>
+<span class="s2">- header: auto</span>
+<span class="s2">  name: [&#39;left_e0&#39;, &#39;left_e1&#39;, &#39;left_s0&#39;, &#39;left_s1&#39;, &#39;left_w0&#39;, &#39;left_w1&#39;, &#39;left_w2&#39;]</span>
+<span class="s2">  position: [0.4371845240478516, 1.8419274289489747, 0.4981602602966309, -1.3483691110107423, -0.11850001572875977, 1.18768462366333, -0.002300971179199219]</span>
+<span class="s2">seed_mode: 0&quot;</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Returns:</span>
+joints: 
+  - 
+    header: 
+      seq: <span class="m">0</span>
+      stamp: 
+        secs: <span class="m">0</span>
+        nsecs: <span class="m">0</span>
+      frame_id: <span class="s1">&#39;&#39;</span>
+    name: <span class="o">[</span><span class="s1">&#39;left_s0&#39;</span>, <span class="s1">&#39;left_s1&#39;</span>, <span class="s1">&#39;left_e0&#39;</span>, <span class="s1">&#39;left_e1&#39;</span>, <span class="s1">&#39;left_w0&#39;</span>, <span class="s1">&#39;left_w1&#39;</span>, <span class="s1">&#39;left_w2&#39;</span><span class="o">]</span>
+    position: <span class="o">[</span><span class="m">0</span>.015646076449046253, -0.5693474841530352, -0.022853580106295266, <span class="m">1</span>.2930237760722652, <span class="m">0</span>.05272603583796626, <span class="m">0</span>.27210782958564905, -0.03912130822108171<span class="o">]</span>
+    velocity: <span class="o">[]</span>
+    effort: <span class="o">[]</span>
+isValid: <span class="o">[</span>True<span class="o">]</span>
+result_type: <span class="o">[</span><span class="m">1</span><span class="o">]</span>
+</pre></div>
+<h2><span class="mw-headline" id="Head_Joints">Head Joints</span></h2>
+<h3><span class="mw-headline" id="Head_Position_and_State">Head Position and State</span></h3>
+<p>The head state topic will give you the current <code>pan</code> angle (side-to-side) of the head and report boolean status flags if the robot is currently moving its head or nodding.  <i>Note: Flags may not report 'true' values until after the first respective movement command is sent.</i>  
+</p><p><b>Component IDs:</b> <br />
+<code>head_nod</code>, <code>head_pan</code> 
+</p><p><i>Head State</i>  <br />
+<code>/robot/head/head_state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/HeadState.msg">baxter_core_msgs-HeadState</a>)  
+</p>
+<ul><li><code>pan</code> field gives you the current angle (radians) of the head.  0 is forward, <code>-pi/2</code> to Baxter's right, and <code>+pi/2</code> to Baxter's left.</li>
+<li><code>isPanning</code> and <code>isNodding</code> are boolean fields that will switch to True while the robot is executing a command.  <i>Note: The <code>isPanning</code> field is initialized to True upon startup and will update thereafter.</i></li></ul>
+<p><br />
+<i>Head (Joint) State</i>  <br />
+<code>/robot/joint_states</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/JointState.html">sensor_msgs-JointState</a>)  
+</p>
+<ul><li>The position of the head may also be determined from the <code>joint_state</code> message.  <i>Note: The 'nod' joint will never update, as it is only a binary state.</i></li></ul>
+<h3><span class="mw-headline" id="Head_Movement_Control">Head Movement Control</span></h3>
+<p><i>Pan Head</i>  <br />
+<code>/robot/head/command_head_pan</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/HeadPanCommand.msg">baxter_core_msgs-HeadPanCommand</a>)  
+</p>
+<ul><li><code>target</code> sets the target angle.  0.0 is straight ahead.</li>
+<li><code>speed</code> is an integer from [0-100], 100 = max speed.</li>
+<li>Setting an angle in the command_head_pan topic does not gurantee the head will get to that position.  There is a small deband around the reference angle around the order of +/- 0.12 radians.</li></ul>
+<p><i>Nod Head</i>  <br />
+<code>/robot/head/command_head_nod</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/Bool.html">std_msgs-Bool</a>)  
+</p>
+<ul><li>Send True to nod!</li></ul>
+<h4><span class="mw-headline" id="Example:_2">Example:</span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    <span class="c1"># Check head position/state: </span>
+    $ rostopic <span class="nb">echo</span> /robot/head/head_state
+    <span class="c1"># Move (pan) head side-to-side: </span>
+    $ rostopic pub /robot/head/command_head_pan baxter_core_msgs/HeadPanCommand -- <span class="m">0</span>.0 <span class="m">100</span>
+    <span class="c1"># Make head nod up-down: </span>
+    $ rostopic pub /robot/head/command_head_nod std_msgs/Bool True
+</pre></div>
+<h2><span id="Grippers_(End-Effectors)"></span><span class="mw-headline" id="Grippers_.28End-Effectors.29">Grippers (End-Effectors)</span></h2>
+<p>Before using an End-Effector, or Gripper, you must first send the calibration command. You can check whether the gripper has been calibrated yet by echoing on the gripper state topic for that hand.  Once calibrated, grippers can be controlled using the simplified command_grip and command_release topics, or using the more direct command_set topic.
+</p><p>For more information on using the grippers, see the <a href="../Gripper_Example" title="Gripper Example">Gripper Example Program</a>.  
+</p>
+<h4><span class="mw-headline" id="Gripper_Configuration">Gripper Configuration</span></h4>
+<p><i>Calibrate Gripper</i>  <br />
+<code>/robot/end_effector/&lt;side&gt;_gripper/command</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/EndEffectorCommand.msg">baxter_core_msgs-EndEffectorCommand</a>)  
+</p>
+<ul><li>Publish an End Effector Command message to calibrate a new gripper. Gripper should open and close once.</li>
+<li>The <code>calibrated</code> field of the gripper state topic will also update to '1' after successful calibration.</li>
+<li>Once calibrated, the gripper will not calibrate again unless the command reset message is sent, or the robot is restarted.</li></ul>
+<p><i>Reset Gripper</i>  <br />
+<code>/robot/end_effector/&lt;side&gt;_gripper/command</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/EndEffectorCommand.msg">baxter_core_msgs-EndEffectorCommand</a>)  
+</p>
+<ul><li>Publish a End Effector Command message to reset the gripper state.</li>
+<li>The <code>calibrated</code> field of the gripper state message will reset to '0'.</li></ul>
+<h4><span class="mw-headline" id="Gripper_State">Gripper State</span></h4>
+<p><i>Gripper State</i>  <br />
+<code>/robot/end_effector/&lt;side&gt;_gripper/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/EndEffectorState.msg">baxter_core_msgs-EndEffectorState</a>)  
+</p>
+<ul><li>The <code>calibrated</code> field must be true (1) before you can control the gripper.  Use the command_calibrate topic to calibrate the gripper.</li>
+<li>The gripper state message will also give you the current <code>position</code>, <code>force</code>, and if the gripper is current <code>moving</code>.  Position is from [0.0-100.0] [close-open].</li></ul>
+<h4><span class="mw-headline" id="Simple_Gripper_Control">Simple Gripper Control</span></h4>
+<p><i>Simple Gripper Close</i> <br /> 
+<code>/robot/end_effector/&lt;side&gt;_gripper/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/EndEffectorState.msg">baxter_core_msgs-EndEffectorState</a>)  
+</p>
+<ul><li>Publish a End Effector Command message to grip.</li></ul>
+<p><i>Simple Gripper Open</i>  <br />
+<code>/robot/end_effector/&lt;side&gt;_gripper/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/EndEffectorState.msg">baxter_core_msgs-EndEffectorState</a>)  
+</p>
+<ul><li>Publish a End Effector Command message to release.</li></ul>
+<h2><span class="mw-headline" id="Sensors">Sensors</span></h2>
+<h3><span class="mw-headline" id="Accelerometers">Accelerometers</span></h3>
+<p>Each hand has a 3-axis accelerometer located inside the cuff, in the same plane as the gripper electrical connection header.  The positive z-axis points back 'up' the arm (towards the previous wrist joint, w0).  The positive x-axis points towards the camera, and the y-axis points towards the cuff buttons, using standard <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Right-hand_rule">Right-Hand-Rule</a> notation.
+</p><p><b>Component IDs:</b> <br />
+<code>left_accelerometer</code>, <code>right_accelerometer</code>  
+</p><p><i>Read Linear Acceleration</i> <br />  
+<code>/robot/accelerometer/&lt;component_id&gt;/state</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/Imu.html">sensor_msgs-Imu</a>)  
+</p>
+<ul><li>Acceleration values (in m/s^2) are published under <code>linear_acceleration</code> for the x, y, and z axes.  The force of gravity is NOT compensated for.</li>
+<li>Note: <code>linear_acceleration</code> is currently the only valid data in the message.  The sensor_msgs/Imu ROS message type is used for the sake of compatibility and standardization.</li></ul>
+<h3><span class="mw-headline" id="IR_Range">IR Range</span></h3>
+<p>There are two IR Range sensors on each hand.  The sensor data is published on the tf frame <code>&lt;side&gt;_hand_range</code>, and points down the +x axis, as is convention for <a rel="nofollow" class="external text" href="http://ros.org/wiki/rviz/DisplayTypes/Range">rviz</a>.
+</p><p><b>Component IDs:</b> <br />
+<code>left_hand_range</code>, <code>right_hand_range</code>
+</p><p><i>Read Range Sensor Measurements</i> <br /> 
+<code>/robot/range/&lt;component_id&gt;</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/Range.html">sensor_msgs-Range</a>)  
+</p>
+<ul><li>Range is published in meters in the <code>range</code> field.</li>
+<li>When the sensor goes beyond its max range, the invalid value of 65.5350036621(m) is published instead.  Users should check for valid measurements using the <code>min_range</code> and <code>max_range</code> fields.</li></ul>
+<h3><span class="mw-headline" id="Sonar">Sonar</span></h3>
+<p>Mounted in a ring around the head are 12 sonar distance sensors.  There is also a yellow LED around each sensor that, by default, triggers when the corresponding sensor measures a distance below its threshold.  For more information on controlling the lights on Baxter's head, see the <a href="index.php?title=API_Reference&amp;oldid=4585#Lights">Lights</a> section.
+</p><p><b>Component IDs:</b>  <br />
+<code>head_sonar</code>  
+</p>
+<h4><span id="Read_Sonar_3D_Distances_(Point_Cloud)"></span><span class="mw-headline" id="Read_Sonar_3D_Distances_.28Point_Cloud.29">Read Sonar 3D Distances (Point Cloud)</span></h4>
+<p>The sonar range measurements are published as a set of 3D coordinate points in space around Baxter, called a PointCloud.  This gives a "mapping" of detections in the workspace and is well-suited for occupancy-oriented reasoning in the robot's world.
+</p><p><i>Read Sonar Point Cloud</i>  <br />
+<code>/robot/sonar/head_sonar/state</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/PointCloud.html">sensor_msgs-PointCloud</a>)  
+</p>
+<ul><li>The PointCloud message takes all the individual sonar range measurements and instead, uses the known locations of the sonar sensors on the robot, to map the readings into 'points' in 3D space that mark the location of detected objects.</li>
+<li>The points for all incoming, valid, current readings are collected each time and published as an array in the PointCloud message.</li>
+<li>Note: the result of this is that each published message contains measurements for only a subset of the sensors, not readings for all 12 sensors every time.</li>
+<li>There will be a Point for each <i>currently active measurement</i> - this means a message published at one instant could contain points for only 4 of the sensors, and, also, another instant the published message could contain two points for the same sensor if the sensor had two valid measurements in the last time interval.</li>
+<li>The <code>points</code> field contains the array of the actual 3D Points - one for each current measurement - in terms of the (x,y,z) coordinates for each point, relative to Baxter's <code>base</code> tf frame.</li>
+<li>The <code>channels</code> field contains arrays with additional information about each point.  The values in each array map 1:1 to the values at the same indices in the <code>points</code> array.</li>
+<li>The array with the name <code>SensorId</code> lists which physical sensor each point came from.</li>
+<li>The array with the name <code>Distance</code> lists the original range measurement from that sensor.</li></ul>
+<h2><span class="mw-headline" id="Inputs_and_Outputs">Inputs and Outputs</span></h2>
+<h3><span class="mw-headline" id="Navigators">Navigators</span></h3>
+<p>There are four Navigators on Baxter's body: two on each side of the torso and one on each arm.  Each Navigator is comprised of three push buttons, one of which is also an indexing scroll wheel, and two sets of blue LED lights.
+</p><p><b>Component IDs:</b><br />
+<code>left_itb</code>, <code>right_itb</code>, <code>torso_left_itb</code>, <code>torso_right_itb</code>
+</p>
+<h4><span class="mw-headline" id="Navigator_Input_Buttons">Navigator Input Buttons</span></h4>
+<p><i>Read Button States</i>  <br />
+<code>/robot/navigators/&lt;component_id&gt;/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/ITBState.msg">baxter_core_msgs-ITBState</a>)  
+</p>
+<ul><li>The states of the three push buttons are the first three values in the boolean <code>buttons[]</code> array.  A value of 'True' indicates the button is currently pushed down. The order is as follows:</li>
+<li>OK_BUTTON (<code>buttons[0]</code>):  The circular button in the middle of the Navigator.</li>
+<li>CANCEL_BUTTON (<code>buttons[1]</code>):  The button 'above' the OK_BUTTON, typically with a 'Back' arrow symbol.</li>
+<li>SHOW_BUTTON (<code>buttons[2]</code>):  The SHOW_BUTTON, or "Rethink Button", is 'below' the OK_BUTTON, and typically is labeled with the Rethink logo.</li></ul>
+<p><i>Read Wheel Index</i>  <br />
+<code>/robot/navigators/&lt;component_id&gt;/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/ITBState.msg">baxter_core_msgs-ITBState</a>)  
+</p>
+<ul><li>The <code>wheel</code> field returns an integer between [0-255].  Each physical 'click' of the wheel corresponds to a +/-1 increment.  The value will loop when it goes above or below the bounds.</li></ul>
+<h4><span class="mw-headline" id="Control_Navigator_Lights">Control Navigator Lights</span></h4>
+<p>There are two sets of lights on each Navigator: the 'inner' light ring around the circular OK Button, and the 'outer' oval light ring around the entire Navigator.  Each light is identified by the 'Component ID' of its Navigator followed by <code>_light_inner</code> or <code>_light_outer</code>.
+</p><p><b>Component IDs:</b>  <br />
+Inner Lights: <code>left_itb_light_inner</code>, <code>right_itb_light_inner</code>, <code>torso_left_itb_light_inner</code>, <code>torso_right_itb_light_inner</code>  <br />
+Outer Lights: <code>left_itb_light_outer</code>, <code>right_itb_light_outer</code>, <code>torso_left_itb_light_outer</code>, <code>torso_right_itb_light_outer</code>  
+</p><p><i>Turn LEDs On/Off</i>  <br />
+<code>/robot/digital_io/command</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalOutputCommand.msg">baxter_core_msgs-DigitalOutputCommand</a>)
+</p>
+<ul><li>name: <code>&lt;navigator_component_id&gt;_light_inner</code>, <code>&lt;navigator_component_id&gt;_light_outer</code></li>
+<li>value: {True, False}</li></ul>
+<ul><li>Publish a DigitalOutputCommand message with the component id of the light as the <code>name</code> and a <code>value</code> of <code>True</code> or <code>False</code> to turn the LEDs On or Off, respectively.</li></ul>
+<p><i>Check State of LEDs</i>  <br />
+<code>/robot/digital_io/&lt;light_component_id&gt;/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg//DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li>The <code>state</code> field will give you the current setting of the LED, ON(1) or OFF(0).</li></ul>
+<h3><span class="mw-headline" id="Shoulder_Buttons">Shoulder Buttons</span></h3>
+<p>There are two shoulder buttons on the back of the torso, one on each side.  The state of each button is published in a DigitalIOState message under its own topic (DigitalIOState constants: PRESSED==1, UNPRESSED==0).
+</p><p><b>Component IDs:</b><br />
+<code>left_shoulder_button</code>, <code>right_shoulder_button</code>
+</p><p><i>Read Button Pressed</i>  <br />
+<code>/robot/digital_io/&lt;side&gt;_shoulder_button/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li>The integer field <code>state</code> will read PRESSED (1) when the button is pressed down, and UNPRESSED (0) otherwise.</li></ul>
+<h3><span class="mw-headline" id="Cuff_Buttons">Cuff Buttons</span></h3>
+<p>There are two buttons and one touch sensor in the cuff of each hand.  The state of each button is published in a DigitalIOState message under its own topic (DigitalIOState constants: PRESSED==1, UNPRESSED==0).
+</p>
+<h4><span id="Cuff_(Squeeze)_Sensor"></span><span class="mw-headline" id="Cuff_.28Squeeze.29_Sensor">Cuff (Squeeze) Sensor</span></h4>
+<p><b>Component IDs:</b> <br />
+<code>left_lower_cuff</code>, <code>right_lower_cuff</code>  
+</p><p><i>Read Cuff Squeezed</i>  <br />
+<code>/robot/digital_io/&lt;side&gt;_lower_cuff/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li>Integer <code>state</code> will read PRESSED (1) when the cuff sensor is squeezed, and UNPRESSED (0) otherwise.</li></ul>
+<h4><span class="mw-headline" id="Cuff_OK_Button">Cuff OK Button</span></h4>
+<p>This is the circular button on the cuff.  <br />
+<b>Component IDs:</b><br />
+<code>left_lower_button</code>, <code>right_lower_button</code>
+</p><p><i>Read OK Button Pressed</i><br />  
+<code>/robot/digital_io/&lt;side&gt;_lower_button/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li>Integer <code>state</code> will read PRESSED (1) when the button is pressed, and UNPRESSED (0) otherwise.</li></ul>
+<h4><span class="mw-headline" id="Cuff_Grasp_Button">Cuff Grasp Button</span></h4>
+<p>This is the long, thin button on the cuff.  
+<b>Component IDs:</b><br />
+<code>left_upper_button</code>, <code>right_upper_button</code>
+</p><p><i>Read Grasp Button Pressed</i><br />  
+<code>/robot/digital_io/&lt;side&gt;_upper_button/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li>Integer <code>state</code> will read PRESSED (1) when the button is pressed, and UNPRESSED (0) otherwise.</li></ul>
+<h3><span class="mw-headline" id="Lights">Lights</span></h3>
+<ul><li>LEDs <span id="LEDs">&#160;</span>
+<ul><li><a href="index.php?title=API_Reference&amp;oldid=4585#Halo_LEDs">Head Halo (Red, Green)</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Sonar_LED_Indicators">Sonar Rings (Yellow)</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Navigator_Lights">Navigator LEDs (inner, outer)</a></li></ul></li></ul>
+<h3><span id="(Head)_Halo_LEDs"></span><span class="mw-headline" id=".28Head.29_Halo_LEDs">(Head) Halo LEDs</span></h3>
+<p>The 'Halo' light is the red/green light at the top of Baxter's head.  The Halo is actually two separate lights - one for the red, one for the green - whose intensity levels can be independently controlled and mixed to produce a range of colors.
+</p><p><i>Control Light Brightness</i> <br /> 
+<code>/robot/sonar/lights/set_red_level</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/Float32.html">std_msgs-Float32</a>) <br />
+<code>/robot/sonar/lights/set_green_level</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/Float32.html">std_msgs-Float32</a>)  
+</p>
+<ul><li>Set the brightness level of the red or green light using a value between 0.0 (full off) and 100.0 (full on).</li></ul>
+<p><i>Read Current Light Levels</i>  <br />
+<code>/robot/sonar/head_sonar/lights/red_level</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/Float32.html">std_msgs-Float32</a>) <br /> 
+<code>/robot/sonar/head_sonar/lights/green_level</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/Float32.html">std_msgs-Float32</a>)  
+</p>
+<ul><li>Brightness ranges from 0.0 (full off) to 100.0 (full on).</li></ul>
+<h3><span class="mw-headline" id="Sonar_LED_Indicators">Sonar LED Indicators</span></h3>
+<p>The yellow LEDs surrounding each sonar sensor on the head default to automatically being turned on or off when something enters/leaves the respective sensor's range.  This behavior can be overridden by publishing on the control topic below.  The published value should be the bit-wise OR of the desired mode and state for the 12 individual LEDs.  The two modes are Normal (sensor-based) operation, and Manual Override.  See the definitions below.  <b>Note:</b> Make sure you constantly publish the values at rate of at least 100Hz or the LEDs will timeout and revert to Normal operation.
+</p><p>To set the LEDs, pick one of the 'Mode's and OR it with any of the individual LED States desired:
+<code>
+</code></p><code><pre>   # Mode 
+   DEFAULT_BEHAVIOR = 0x0000;
+   OVERRIDE_ENABLE  = 0x8000;
+   # States 
+   ALL_LIGHTS_OFF   = 0x8000;
+   ALL_LIGHTS_ON    = 0x0fff;
+   LED_0_ON     0x0001
+   LED_1_ON     0x0002
+   LED_2_ON     0x0004
+   LED_3_ON     0x0008
+   LED_4_ON     0x0010
+   LED_5_ON     0x0020
+   LED_6_ON     0x0040
+   LED_7_ON     0x0080
+   LED_8_ON     0x0100
+   LED_9_ON     0x0200
+   LED_10_ON    0x0400
+   LED_11_ON    0x0800
+   LED_ALL_ON   0x8FFF
+   LED_ALL_OFF  0x8000
+</pre></code><code></code><p><code></code>
+</p><p><i>Control Lights</i>  
+<code>/robot/sonar/head_sonar/lights/set_lights</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/UInt16.html">std_msgs-UInt16</a>)  
+</p>
+<ul><li>If bit 15 is zero, LEDs are controlled locally by Sonar.</li>
+<li>Set bit 15 to enable overrides, bits 0-11 to control individual channel LEDs.</li>
+<li>To use these flags, OR the OVERRIDE_ENABLE flag with the desired x_ON flags.</li></ul>
+<p><i>State of Lights</i>  
+<code>/robot/sonar/head_sonar/lights/state</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/UInt16.html">std_msgs-UInt16</a>)
+</p>
+<h3><span class="mw-headline" id="Navigator_LEDs">Navigator LEDs</span></h3>
+<p><i>(See: <a href="index.php?title=API_Reference&amp;oldid=4585#Navigator_Lights">Navigator Lights</a>)</i>
+</p>
+<h3><span class="mw-headline" id="Digital_IO">Digital IO</span></h3>
+<p><i>Read Digital Input State</i>  <br />
+<code>/robot/digital_io/&lt;component_id&gt;/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li><code>state</code>: field will be 0 (for True, Pressed, On) or 1 (for False, Released, Off).  If the component is an output, then the <code>state</code> field will be the current setting of the output.</li>
+<li><code>isInputOnly</code>: field tells you if the component is an input (sensor) only, and cannot output (not a light, actuator, nor indicator).</li></ul>
+<p><i>Control Digital Output</i>  
+<code>/robot/digital_io/command</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalOutputCommand.msg">baxter_core_msgs-DigitalOutputCommand</a>)  
+</p>
+<ul><li>name: <code>&lt;component_id&gt;</code></li>
+<li>value: {True, False}</li></ul>
+<ul><li>Publish a DigitalOutputCommand message with the component id of the Output as the <code>name</code> and a <code>value</code> of <code>True</code> or <code>False</code> to turn the Output On or Off, respectively.</li></ul>
+<p><br />
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th colspan="3">All Digital Component IDs:
+</th></tr>
+<tr>
+<th colspan="3" style="text-align:left;">Outputs
+</th></tr>
+<tr>
+<td style="width:3em;">
+</td>
+<td>Nav Inner Lights:</td>
+<td><code>left_itb_light_inner</code>, <code>right_itb_light_inner</code>, <code>torso_left_itb_light_inner</code>, <code>torso_right_itb_light_inner</code>
+</td></tr>
+<tr>
+<td></td>
+<td>Nav Outer Lights</td>
+<td><code>left_itb_light_outer</code>, <code>right_itb_light_outer</code>, <code>torso_left_itb_light_outer</code>, <code>torso_right_itb_light_outer</code>
+</td></tr>
+<tr>
+<td></td>
+<td>Configure Valves:</td>
+<td><code>left_blow</code>, <code>right_blow</code>, <code>left_suck</code>, <code>right_suck</code>
+</td></tr>
+<tr>
+<td></td>
+<td>Actuate Pneumatics:</td>
+<td><code>left_pneumatic</code>, <code>right_pneumatic</code>
+</td></tr>
+<tr>
+<td></td>
+<td>Camera Power:</td>
+<td><code>left_hand_camera_power</code>, <code>right_hand_camera_power</code>, <code>torso_camera_power</code>
+</td></tr>
+<tr>
+<th colspan="3" style="text-align:left;">Inputs
+</th></tr>
+<tr>
+<td></td>
+<td>(Analog) Raw IR Range Values:</td>
+<td><code>left_hand_range</code>, <code>right_hand_range</code>
+</td></tr>
+<tr>
+<td></td>
+<td>Back Shoulder Buttons:</td>
+<td><code>left_shoulder_button</code>, <code>right_shoulder_button</code>
+</td></tr>
+<tr>
+<td></td>
+<td>Cuff (Squeeze) Sensor:</td>
+<td><code>left_lower_cuff</code>, <code>right_lower_cuff</code>
+</td></tr>
+<tr>
+<td></td>
+<td>Cuff OK Button:</td>
+<td><code>left_lower_button</code>, <code>right_lower_button</code>
+</td></tr>
+<tr>
+<td></td>
+<td>Cuff Grasp Button:</td>
+<td><code>left_upper_button</code>, <code>right_upper_button</code>
+</td></tr>
+<tr>
+<td></td>
+<td>Safety Mat 'is attached':</td>
+<td><code>torso_process_sense0</code>
+</td></tr>
+<tr>
+<td></td>
+<td>Safety Mat 'is NOT actuated':</td>
+<td><code>torso_safety_stop</code>
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Pneumatics">Pneumatics</span></h3>
+<p>Baxter is equipped with a pneumatic valve system that can be controlled independently on the left and right sides and fed to proper grippers for suction-based picking.
+&#160;&#160;
+</p>
+<h4><span class="mw-headline" id="Configure_Valves">Configure Valves</span></h4>
+<p><i>Blow</i>  
+<b>Component IDs:</b>
+<code>left_blow</code>, <code>right_blow</code>  
+<code>/robot/digital_io/&lt;side&gt;_blow/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li>Use to switch on/off the suck <i>valve</i> -- (does not activate suction).</li>
+<li>Use this setting to grip objects in most cases.</li></ul>
+<p><i>Suck</i>  
+<b>Component IDs:</b>
+<code>left_suck</code>, <code>right_suck</code>  
+<code>/robot/digital_io/&lt;side&gt;_suck/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li>Use to switch off the blow <i>valve</i> -- (does not activate suction).</li>
+<li>Use this setting to release objects in most cases.</li></ul>
+<h4><span class="mw-headline" id="Actuate_Pneumatics">Actuate Pneumatics</span></h4>
+<p><i>Turn On/Off Pneumatic Pressure/Airflow</i>  
+<b>Component IDs:</b>
+<code>left_pneumatic</code>, <code>right_pneumatic</code>  
+<code>/robot/digital_io/&lt;side&gt;_pneumatic/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li>This is how to use the pneumatic message.</li></ul>
+<h4><span class="mw-headline" id="Camera_Power">Camera Power</span></h4>
+<p><b>Component IDs:</b>
+<code>left_hand_camera_power</code>, <code>right_hand_camera_power</code>, <code>torso_camera_power</code>  
+<code>/robot/digital_io/&lt;location&gt;_camera_power/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)
+</p>
+<h3><span class="mw-headline" id="Analog_IO">Analog IO</span></h3>
+<p><i>(Analog) Input State</i>  
+<code>/robot/analog_io/&lt;component_id&gt;/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/AnalogIOState.msg">baxter_core_msgs-AnalogIOState</a>)  
+</p>
+<ul><li><code>value</code>: is an integer often either rounded up from the hundreds decimal place or going from [0-100]</li></ul>
+<p><i>(Analog) Output Control</i>  
+<code>/robot/analog_io/command</code> (<a rel="nofollow" class="external autonumber" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/AnalogOutputCommand.msgbaxter_core_msgs-AnalogOutputCommand">[1]</a>)  
+</p>
+<ul><li>name: <code>&lt;component_id&gt;</code></li>
+<li>value: [0-65535] - (uint16)</li></ul>
+<ul><li>Publish a AnalogOutputCommand message with the component id of the Output as the <code>name</code> and a uint16 <code>value</code> from [0-65535].</li></ul>
+<p><br />
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th colspan="3">All Analog Component IDs
+</th></tr>
+<tr>
+<th colspan="3" style="text-align:left;">Outputs
+</th></tr>
+<tr>
+<td style="width:3em;">
+</td>
+<td>Workspace Lights:</td>
+<td><code>torso_lighting</code>
+</td></tr>
+<tr>
+<td></td>
+<td>Torso Fan:</td>
+<td><code>torso_fan</code>
+</td></tr>
+<tr>
+<th colspan="3" style="text-align:left;">Inputs
+</th></tr>
+<tr>
+<td></td>
+<td>(Analog) Raw IR Range Values:</td>
+<td><code>left_hand_range</code>, <code>right_hand_range</code>
+</td></tr>
+<tr>
+<td></td>
+<td>Vacuum Sensor:</td>
+<td><code>left_vacuum_sensor_analog</code>, <code>right_vacuum_sensor_analog</code>
+</td></tr></tbody></table>
+<h4><span class="mw-headline" id="Torso_Fan">Torso Fan</span></h4>
+<p><b>Component IDs:</b>
+<code>torso_fan</code>  
+<i>Control Fan Speed</i>  
+<code>/robot/analog_io/command</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/AnalogOutputCommand.msg">baxter_core_msgs-AnalogOutputCommand</a>)  
+</p>
+<ul><li>value: [0-100] power to the fan:</li>
+<li>(0 = Auto, 1 = Off, 100 = Full-on)</li>
+<li>Auto: Automatic control by hardware, based on torso board heatsink.</li></ul>
+<p><i>Fan State</i>  
+<code>/robot/analog_io/torso_fan/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/AnalogIOState.msg">baxter_core_msgs-AnalogIOState</a>)  
+</p>
+<ul><li><code>value</code>: Current fan setting [0.0-100.0]</li></ul>
+<h4><span id="(Analog)_Raw_IR_Range_Values"></span><span class="mw-headline" id=".28Analog.29_Raw_IR_Range_Values">(Analog) Raw IR Range Values</span></h4>
+<p>Values are shifted by 3 decimal points (essentially in mm).  
+<b>Component IDs:</b>
+<code>left_hand_range</code>, <code>right_hand_range</code>  
+</p><p><i>Standard Integer Value</i>  
+<code>/robot/analog_io/&lt;side&gt;_hand_range/value_uint32</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/UInt32.html">std_msgs-UInt32</a>)  <br />
+<i>Analog Stamped State</i>  
+<code>/robot/analog_io/&lt;side&gt;_hand_range/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/AnalogIOState.msg">baxter_core_msgs-AnalogIOState</a>)  
+</p>
+<h4><span class="mw-headline" id="Vacuum_Sensor">Vacuum Sensor</span></h4>
+<p><b>Component IDs:</b>
+<code>left_vacuum_sensor_analog</code>, <code>right_vacuum_sensor_analog</code>  <br />
+<i>Standard Integer Value</i>  
+<code>/robot/analog_io/&lt;side&gt;_vacuum_sensor_analog/value_uint32</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/UInt32.html">std_msgs-UInt32</a>)  <br />
+<i>Analog Stamped State</i>  
+<code>/robot/analog_io/&lt;side&gt;_vacuum_sensor_analog/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/AnalogIOState.msg">baxter_core_msgs-AnalogIOState</a>)
+</p>
+<h2><span class="mw-headline" id="Cameras">Cameras</span></h2>
+<p>You can access Baxter's two hand cameras and the head camera using the standard ROS image types and image_transport mechanism listed below.  You can use the ROS Services to open, close, and configure each of the cameras.  See the <a href="../Camera_Control_Example" class="mw-redirect" title="Camera Control Example">Camera Control Example</a> and <a href="../Using_the_Cameras" class="mw-redirect" title="Using the Cameras">Using the Cameras</a> for more information on using the cameras.  Useful tools for using cameras in ROS include <a href="../Rviz" title="Rviz">rviz</a> and the <a href="../Image_view" title="Image view">image_view</a> program.  
+<b>IMPORTANT:</b> You can only have two cameras open at a time at standard resolutions, due to bandwidth limitations.  The hand cameras are opened by default at boot-time, 
+</p><p><b>Component IDs:</b>
+<code>left_hand_camera</code>, <code>right_hand_camera</code>, <code>head_camera</code>  
+</p>
+<h4><span class="mw-headline" id="Camera_Published_Topics">Camera Published Topics</span></h4>
+<p><i>Raw Image</i>  
+<code>/cameras/&lt;component_id&gt;/image</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/Image.html">sensor_msgs-Image</a>)  
+</p><p><i>Camera Intrinsics</i>  
+<code>/cameras/&lt;component_id&gt;/camera_info</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/CameraInfo.html">sensor_msgs-CameraInfo</a>)  
+</p><p><i>Standardized Camera Intrinsics</i>  
+<code>/cameras/&lt;component_id&gt;/camera_info_std</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/CameraInfo.html">sensor_msgs-CameraInfo</a>)  
+</p>
+<h4><span class="mw-headline" id="Camera_Control_Services">Camera Control Services</span></h4>
+<p><i>List Cameras Service_  <b>[ _srv</b></i><b> ]</b>  
+<code>/cameras/list</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/srv/ListCameras.srv">baxter_core_msgs-ListCameras</a>)  
+</p>
+<ul><li><i>Call:</i></li></ul>
+<pre>   $ rosservice call /cameras/list
+</pre>
+<ul><li><i>Returns:</i></li></ul>
+<pre>   cameras: ['&lt;camera_name-1&gt;', ... '&lt;camera_name-n&gt;']
+</pre>
+<ul><li>Returns list of camera names.</li></ul>
+<p><i>Close Camera_  <b>[ _srv</b></i><b> ]</b>  
+<code>/cameras/close</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/srv/CloseCamera.srv">baxter_core_msgs-CloseCamera</a>)  
+</p>
+<ul><li><i>Call:</i></li></ul>
+<pre>   $ rosservice call /cameras/close &lt;camera_name&gt;
+</pre>
+<ul><li><i>Returns:</i></li></ul>
+<pre>   err: &lt;error_number&gt; # 0, for success
+</pre>
+<ul><li>Call this service with the <code>&lt;camera_name&gt;</code> argument set to the name of the camera to close (see List Cameras Service above).</li>
+<li>Closes the specified camera.</li>
+<li>If successful: Returns '0' in <code>err</code> field.</li>
+<li>Else: Returns non-zero, integer error-code in <code>err</code> field.
+<ul><li>From the command line, the camera name string can be given as an argument with or without quotes.</li></ul></li></ul>
+<p><i>Open Camera_  <b>[ _srv</b></i><b> ]</b>  
+<code>/cameras/open</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/srv/OpenCamera.srv">baxter_core_msgs-OpenCamera</a>)  
+</p>
+<ul><li><i>Call:</i></li></ul>
+<pre>   $ rosservice call /cameras/open '{name: &lt;camera_name&gt;, settings: {&lt;optional settings&gt;}}<i></i>
+</pre>
+<ul><li><i>Returns:</i></li></ul>
+<pre>   err: &lt;error_number&gt; # 0, for success
+</pre>
+<ul><li>Call this service with at least the <code>name:</code> field set to <code>&lt;camera_name&gt;</code> (see List Cameras Service above).</li>
+<li>Opens the specified camera, with the optional <code>settings</code> parameters if given (see service type for more info on options).</li>
+<li>If successful: Returns '0' in <code>err</code> field.</li>
+<li>Else: Returns non-zero, integer error-code in <code>err</code> field.
+<ul><li>From the command line, the camera name string can be given as an argument with or without quotes.</li></ul></li>
+<li>Currently available resolutions are: MODES = [(1280, 800); (960, 600); (640, 400); (480, 300); (384, 240); (320, 200)]</li></ul>
+<h6><span class="mw-headline" id="Example:_3">Example:</span></h6>
+<pre>   # List available cameras
+   $ rosservice call /cameras/list
+   cameras: ['head_camera', 'left_hand_camera', 'right_hand_camera']
+   # Close open camera
+   $ rosservice call /cameras/close left_hand_camera
+   err: 0
+   # Open head camera with optional resolution
+   $ rosservice call /cameras/open '{name: right_hand_camera, settings: {width: 960, height: 600 }}'
+   err: 0
+   # View now open camera topics
+   $ rostopic list /cameras
+   /cameras/head_camera/camera_info
+   /cameras/head_camera/camera_info_std
+   /cameras/head_camera/image
+   /cameras/right_hand_camera/camera_info
+   /cameras/right_hand_camera/camera_info_std
+   /cameras/right_hand_camera/image
+</pre>
+<h2><span id="Screen_(xdisplay)"></span><span class="mw-headline" id="Screen_.28xdisplay.29">Screen (xdisplay)</span></h2>
+<p>Images can be displayed on Baxter's LCD screen by publishing the image data as a ROS <code>sensor_msgs/Image</code>.  
+</p><p><i>Display Image</i>  
+<code>/robot/xdisplay</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/Image.html">sensor_msgs-Image</a>)  
+</p>
+<ul><li>Publish image data as a <a rel="nofollow" class="external text" href="http://ros.org/wiki/sensor_msgs">ROS Image message</a> to update the display.</li>
+<li>The screen resolution is 1024 x 600.  Images smaller than this will appear in the top-left corner.</li>
+<li>There are dedicated ROS packages for working with and sending ROS Image messages, including <a rel="nofollow" class="external text" href="http://ros.org/wiki/image_transport">image_transport</a> and <a rel="nofollow" class="external text" href="http://ros.org/wiki/image_pipeline">image_pipeline</a>.</li>
+<li>Useful tools for working with images in ROS include <a href="../Image_view" title="Image view">Image_view</a> and <a rel="nofollow" class="external text" href="http://ros.org/wiki/image_transport#republish">republish</a>. Also see <a rel="nofollow" class="external text" href="http://ros.org/wiki/camera_drivers">camera_drivers</a> for assistance working with your own cameras.</li></ul>
+<p>For more information on displaying images to Baxter's LCD screen, see the <a href="../Display_Image_Example" title="Display Image Example">Display Image Example</a>.
+</p>
+<h1><span class="mw-headline" id="Simulator_API">Simulator API</span></h1>
+<div style="padding:5px; border:1px solid #ffcc00; background:#FFFDDF; margin-bottom:0.2em; Font-size:140%;"><a href="../Baxter_Simulator" title="Baxter Simulator"><img alt="Back.png" src="images/b/b9/Back.png" width="29" height="20" /></a> <a href="../Baxter_Simulator" title="Baxter Simulator">Baxter Simulator</a></div>
+<h2><span class="mw-headline" id="Baxter_simulator_API">Baxter simulator API</span></h2>
+<p>This page serves as a lookup reference for all the hardware and functionality on the Baxter Research SDK robot's simulator. The main interface of the Baxter RSDK is via ROS Topics and Services, which you will find listed and described below along with other core information needed to interface with Baxter.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th scope="col">Robot
+</th>
+<th scope="col">Movement
+</th>
+<th scope="col">Sensors+
+</th>
+<th scope="col">I/O
+</th></tr>
+<tr>
+<td>
+<ul><li><b><a href="index.php?title=API_Reference&amp;oldid=4585#Enable_Robot_2">Enabling the Robot</a></b></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Tuck.2FUntuck_Arms_2">Untuck/Tuck Arms</a></li></ul>
+</td>
+<td>
+<ul><li><b><a href="index.php?title=API_Reference&amp;oldid=4585#Joints_2">Joints</a></b>
+<ul><li><a href="index.php?title=API_Reference&amp;oldid=4585#Arm_Joints_2">Arm Joints</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Head_Joints_2">Head Joints</a></li></ul></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Cartesian_.28Endpoint_State.29_2">Cartesian (Endpoint State)</a></li></ul>
+</td>
+<td>
+<ul><li><b><a href="index.php?title=API_Reference&amp;oldid=4585#Sensors_2">Sensors</a></b>
+<ul><li><a href="index.php?title=API_Reference&amp;oldid=4585#Accelerometers_2">Accelerometers</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#IR_Range_2">IR Range</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Sonar_2">Sonar</a></li></ul></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Cameras_2">Cameras</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Screen_.28xdisplay.29_2">LCD Screen (xdisplay)</a></li></ul>
+</td>
+<td>
+<ul><li><b><a href="index.php?title=API_Reference&amp;oldid=4585#Inputs_and_Outputs_2">Inputs and Outputs</a></b>
+<ul><li><a href="index.php?title=API_Reference&amp;oldid=4585#Navigators_2">Navigators</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Cuff_Buttons_2">Cuff Buttons</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Lights_2">LED Lights</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Digital_IO_2">Digital IO</a></li></ul></li></ul>
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Python_Code_API">Python Code API</span></h2>
+<p>For the <code>baxter_interface</code> Python classes (built on top of the ROS API), please see the <a rel="nofollow" class="external text" href="http://api.rethinkrobotics.com">Code API Reference</a> page at: <a rel="nofollow" class="external free" href="http://api.rethinkrobotics.com">http://api.rethinkrobotics.com</a>
+</p>
+<h3><span class="mw-headline" id="Enable_Robot_2">Enable Robot</span></h3>
+<p>Be sure that you 'Enable' the robot before attempting to control any of the motors.  The easiest method for controlling the robot is to use the <code>enable_robot.py</code> ROS executable found in the following example.
+</p>
+<ul><li><a href="../Enable_Robot_Example" class="mw-redirect" title="Enable Robot Example">Enable Robot Example</a></li></ul>
+<h3><span id="Tuck/Untuck_Arms"></span><span class="mw-headline" id="Tuck.2FUntuck_Arms">Tuck/Untuck Arms</span></h3>
+<p>A useful configuration for Baxter is the 'shipping pose' (the pose of Baxter's arms upon arrival). This configuration decscribes Baxter's arms tucked into a compact form for ease of movement through doorways etc. The easiest method for tucking/untucking the arms to/from the shipping pose is the example program 'tuck_arms.py' ROS executable:
+</p>
+<ul><li><a href="../Tuck_Arms_Example" class="mw-redirect" title="Tuck Arms Example">Tuck Arms Example</a></li></ul>
+<h2><span class="mw-headline" id="Joints_2">Joints</span></h2>
+<p>Baxter has 7 joints (DoF) in each of its two arms and two more joints in its head (side-to-side panning, and binary, up-down nodding). The control for the head is done separately from the arms; however, you can read the current joint states (position, velocity, and effort) for all the joints on both arms and head by subscribing to one topic:
+</p><p><code>/robot/joint_states</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/JointState.html">sensor_msgs-JointState</a>)  
+</p><p>where the units for the position of a joint are in (rad), the units of velocity are in (rad/s) and the units of effort in each joint is in (Nm).
+</p><p>The following sections cover the individual joint sensing and control in more detail:
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Arm_Joints_2">Arm Joints</span></h3>
+<p><b>Component IDs:</b><br />
+<code>left_e0</code>, <code>left_e1</code>, <code>left_s0</code>, <code>left_s1</code>, <code>left_w0</code>, <code>left_w1</code>, <code>left_w2</code>, <code>right_e0</code>, <code>right_e1</code>, <code>right_s0</code>, <code>right_s1</code>, <code>right_w0</code>, <code>right_w1</code>, <code>right_w2</code>  
+</p>
+<h3><span class="mw-headline" id="Arm_Joint_States_2">Arm Joint States</span></h3>
+<p><code>/robot/joint_states</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/JointState.html">sensor_msgs-JointState</a>)  
+</p>
+<ul><li><code>name[i]</code>: '&lt;component_id&gt;' of <code>i</code>-th joint in message value arrays.</li>
+<li><code>position[i]</code>: position of joint <code>i</code> rad</li>
+<li><code>velocity[i]</code>: velocity of joint <code>i</code> in rad/s</li>
+<li><code>effort[i]</code>: effort applied in joint <code>i</code> in Nm</li></ul>
+<p>Joint states are published by the <code>robot_state_publisher</code> and are updated with information from the sensors for every cycle.
+</p><p><i>Set Joint State Publishing Rate</i>  <br />
+<code>/robot/joint_state_publish_rate</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/UInt16.html">std_msgs-UInt16</a>)  
+</p>
+<ul><li>The rate at which the joints are published can be controlled by publishing a frequency on this topic.</li>
+<li>Default rate is 100Hz; Maximum is 1000Hz.</li></ul>
+<p><br />
+</p>
+<h4><span class="mw-headline" id="Arm_Joint_Control_2">Arm Joint Control</span></h4>
+<p>There are currently three modes for controlling the arms: Position Mode, Velocity Mode, and Torque Mode.
+</p><p>Alternatively, a joint trajectory action server has been created in support of timestamped joint position trajectories using the ROS standard <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/joint_trajectory_action">joint trajectory action</a>.
+</p><p>For more information on joint control, see the following <a href="../Example_Programs#movement" class="mw-redirect" title="Example Programs">movement example programs.</a>
+</p>
+<h5><span class="mw-headline" id="Joint_Control_Mode_2">Joint Control Mode</span></h5>
+<p>Each arm can be in independent control modes by publishing the desired control mode to the topic for the appropriate arm.
+</p>
+<h5><span class="mw-headline" id="Position_Mode_2">Position Mode</span></h5>
+<p>The first is Position Mode, in which users publish target joint angles for given joints and the internal controller drives the arm to the published angles.
+</p>
+<h5><span class="mw-headline" id="Velocity_Mode_2">Velocity Mode</span></h5>
+<p><i><b>Warning:</b> Advanced Control Mode.</i>  
+In Velocity Control Mode, users publish velocities for given joints and the joints will move at the specified velocity.
+</p>
+<h5><span class="mw-headline" id="Torque_Mode_2">Torque Mode</span></h5>
+<p><i><b>Warning:</b> Advanced Control Mode.</i>  
+In Torque Control Mode, users publish torques for given joints and the joints will move at the specified torque.
+</p><p><i>Switching Modes</i>  <br />
+<code>/robot/limb/&lt;side&gt;/joint_command</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/JointCommand.msg">baxter_core_msgs-JointCommand</a>)  
+</p>
+<ul><li>Mode is set implicitly by specifying the mode in the command message. Publish a <code>JointCommand</code> message to the <code>joint_command</code> topic for a given arm to set the arm into the desired control mode.</li>
+<li>Constants for each mode are defined in the <code>JointCommand</code> message type.</li></ul>
+<h5><span class="mw-headline" id="Joint_Trajectory_Action_2">Joint Trajectory Action</span></h5>
+<p>The Joint Trajectory Action provides an <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/actionlib">ROS action interface</a> for tracking trajectory execution.
+</p><p>The joint trajectory action server provides an action interface for execution of trajectories requested by the client, known as a <i>Goal* request. The joint trajectory action server then executes the request trajectory communicating the *Result</i> response. The actionlib (action server/client interface) package differs from ROS services, simple request/response interface, in that actions allow mid-execution cancellation, they can also provide feedback during execution as to the progress of the Goal request.
+</p><p><i>Joint Trajectory Action Server</i>  <br />
+<code>/robot/limb/&lt;limb&gt;/follow_joint_trajectory/cancel</code><br />
+<code>/robot/limb/&lt;limb&gt;/follow_joint_trajectory/feedback</code><br />
+<code>/robot/limb/&lt;limb&gt;/follow_joint_trajectory/goal</code><br />
+<code>/robot/limb/&lt;limb&gt;/follow_joint_trajectory/result</code><br />
+<code>/robot/limb/&lt;limb&gt;/follow_joint_trajectory/status</code>
+</p>
+<h5><span class="mw-headline" id="Usage:_2">Usage:</span></h5>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Verify that the robot is enabled:</span>
+$ rosrun baxter_tools enable_robot.py
+<span class="c1"># Start the joint trajectory action server:</span>
+$ rosrun baxter_interface joint_trajectory_action_server.py
+</pre></div>
+<p>Please see the <a href="../Simple_Joint_trajectory_example" title="Simple Joint trajectory example">simple joint trajectory example</a> or <a href="../Joint_Trajectory_Playback_Example" title="Joint Trajectory Playback Example">joint trajectory playback example</a> for examples of creating a client of this action server and requesting a joint trajectory.
+</p>
+<h5><span class="mw-headline" id="Parameters:_2">Parameters:</span></h5>
+<p>The joint trajectory action server provides a number of parameters which describe it's behavior during the trajectory execution. These were largely designed to follow <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/joint_trajectory_action#ROS_API">these standards.</a>
+</p><p><b>Note:</b> All of these parameters will be initialized on startup of the trajectory_controller.py if they were not previously specified.
+<code>/rethink_rsdk_joint_trajectory_controller/&lt;joint_name&gt;__kp</code>
+The proportional gain with which the joint trajectory controller will track the commanded trajectory for the specified joint.
+</p><p><code>/rethink_rsdk_joint_trajectory_controller/&lt;joint_name&gt;__kd</code>
+The derivative gain with which the joint trajectory controller will track the commanded trajectory for the specified joint.
+</p><p><code>/rethink_rsdk_joint_trajectory_controller/&lt;joint_name&gt;__ki</code>
+The integral gain with which the joint trajectory controller will track the commanded trajectory for the specified joint.
+</p><p><code>/rethink_rsdk_joint_trajectory_controller/goal_time (double, default: 0.0)</code>
+The amount of time (in seconds) that the controller is permitted to be late to the goal. If goal_time has passed and the controller still has not reached the final position (within the parameters described by <code>/rethink_rsdk_joint_trajectory_controller/&lt;joint_name&gt;_goal</code>, then the goal is aborted.
+</p><p><code>/rethink_rsdk_joint_trajectory_controller/&lt;joint&gt;_goal (double, default: -1.0)</code>
+The maximum final error for &lt;joint&gt; for the trajectory goal to be considered successful. Negative numbers indicate that there is no constraint. Given in units of joint position (radians). If this constraint is violated, the goal is aborted.
+</p><p><code>/rethink_rsdk_joint_trajectory_controller/trajectory (double, default: -1.0)</code>
+The maximum error for &lt;joint&gt; at any point during execution for the trajectory goal to be considered successful. Negative numbers indicate that there is no constraint. Given in units of joint position (radians). If this constraint is violated, the goal is aborted.
+</p><p><i><b>Dynamic Reconfigure GUI</b></i> is suggest for use with ROS Distributions &gt;=Groovy for setting these parameters.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Start the dynamic reconfigure GUI:</span>
+$ rosrun rqt_reconfigure rqt_reconfigure
+</pre></div>
+<p>Expand the joint trajectory controller's parameters by choosing <code>rethink_rsdk_joint_trajectory_controller</code> from the left menu. Use the sliders/input fields to specify these parameters dynamically.
+</p><p>Alternatively, these parameters can be set  <a rel="nofollow" class="external text" href="http://www.ros.org/wiki/rosparam#YAML_Format">via a YAML file, command line, or programmatically (rospy, roscpp)</a>.
+</p><p>For additional information on joint control, see the <a href="../Joint_Position_Example" title="Joint Position Example">Joint Position Example</a>, <a href="../Wobbler_Example" title="Wobbler Example">Joint Velocity Example</a>, <a href="../Head_Movement_Example" title="Head Movement Example">Head Movement Example</a>, and <a href="../MoveIt_Tutorial" title="MoveIt Tutorial">MoveIt! Tutorial</a>.
+</p>
+<h2><span class="mw-headline" id="Head_Joints_2">Head Joints</span></h2>
+<h3><span class="mw-headline" id="Head_Position_and_State_2">Head Position and State</span></h3>
+<p>The head state topic will give you the current <code>pan</code> angle (side-to-side) of the head and report boolean status flags if the robot is currently moving its head or nodding.  <i>Note: Flags may not report 'true' values until after the first respective movement command is sent. Even though the head nodding cannot be visualized in gazebo, the head state topic would indicate if the command is passed</i>  
+</p><p><b>Component IDs:</b> <br />
+<code>head_nod</code>, <code>head_pan</code> 
+</p><p><i>Head State</i>  <br />
+<code>/robot/head/head_state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/HeadState.msg">baxter_core_msgs-HeadState</a>)  
+</p>
+<ul><li><code>pan</code> field gives you the current angle (radians) of the head.  0 is forward, <code>-pi/2</code> to Baxter's right, and <code>+pi/2</code> to Baxter's left.</li>
+<li><code>isPanning</code> and <code>isNodding</code> are boolean fields that will switch to True while the robot is executing a command.  <i>Note: The <code>isPanning</code> field is initialized to True upon startup and will update thereafter.</i></li></ul>
+<p><br />
+<i>Head (Joint) State</i>  <br />
+<code>/robot/joint_states</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/JointState.html">sensor_msgs-JointState</a>)  
+</p>
+<ul><li>The position of the head may also be determined from the <code>joint_state</code> message.  <i>Note: The 'nod' joint will never update, as it is only a binary state.</i></li></ul>
+<h3><span class="mw-headline" id="Head_Movement_Control_2">Head Movement Control</span></h3>
+<p><i>Pan Head</i>  <br />
+<code>/robot/head/command_head_pan</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/HeadPanCommand.msg">baxter_core_msgs-HeadPanCommand</a>)  
+</p>
+<ul><li><code>target</code> sets the target angle.  0.0 is straight ahead.</li>
+<li><code>speed</code> is an integer from [0-100], 100 = max speed.</li>
+<li>Setting an angle in the command_head_pan topic does not gurantee the head will get to that position.  There is a small deband around the reference angle around the order of +/- 0.12 radians.<i>Note: Speed of the head movement cannot be controlled at this point of time.</i></li></ul>
+<p><i>Nod Head</i>  <br />
+<code>/robot/head/command_head_nod</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/std_msgs/html/msg/Bool.html">std_msgs-Bool</a>)  
+</p>
+<ul><li>Send True to nod!</li></ul>
+<h4><span class="mw-headline" id="Example:_4">Example:</span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Check head position/state: </span>
+$ rostopic <span class="nb">echo</span> /robot/head/head_state
+<span class="c1"># Move (pan) head side-to-side: </span>
+$ rostopic pub /robot/head/command_head_pan baxter_core_msgs/HeadPanCommand -- <span class="m">10</span>.0 <span class="m">100</span>
+<span class="c1"># Make head nod up-down: </span>
+$ rostopic pub /robot/head/command_head_nod std_msgs/Bool True
+</pre></div>
+<h3><span id="Cartesian_(Endpoint_State)"></span><span class="mw-headline" id="Cartesian_.28Endpoint_State.29">Cartesian (Endpoint State)</span></h3>
+<p>Published at 100 Hz, the endpoint state topic provides the current Cartesian Position, Velocity and Effort at the endpoint for either limb.
+</p>
+<h4><span class="mw-headline" id="Endpoint_State_2">Endpoint State</span></h4>
+<p><i>Endpoint State</i>  <br />
+<code>/robot/limb/&lt;side&gt;/endpoint_state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/EndpointState.msg">baxter_core_msgs-EndpointState</a>) 
+</p>
+<ul><li>The endpoint state message provides the current <code>position/orientation pose</code>, <code>linear/angular velocity</code>, and <code>force/torque effort</code> of the robot end-effector at 100 Hz. Pose is in Meters, Velocity in m/s, Effort in Nm.<i>Note: The wrench and the twist values would be 0 for the simulated baxter since it is not implemented.</i></li></ul>
+<h2><span class="mw-headline" id="Sensors_2">Sensors</span></h2>
+<h3><span class="mw-headline" id="Accelerometers_2">Accelerometers</span></h3>
+<p>Each hand has a 3-axis accelerometer located inside the cuff, in the same plane as the gripper electrical connection header.  The positive z-axis points back 'up' the arm (towards the previous wrist joint, w0).  The positive x-axis points towards the camera, and the y-axis points towards the cuff buttons, using standard <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Right-hand_rule">Right-Hand-Rule</a> notation.
+</p><p><b>Component IDs:</b> <br />
+<code>left_accelerometer</code>, <code>right_accelerometer</code>  
+</p><p><i>Read Linear Acceleration</i> <br />  
+<code>/robot/accelerometer/&lt;component_id&gt;/state</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/Imu.html">sensor_msgs-Imu</a>)  
+</p>
+<ul><li>Acceleration values (in m/s^2) are published under <code>linear_acceleration</code> for the x, y, and z axes.  The force of gravity is NOT compensated for.</li>
+<li>Note: <code>linear_acceleration</code> is currently the only valid data in the message.  The sensor_msgs/Imu ROS message type is used for the sake of compatibility and standardization.</li></ul>
+<h3><span class="mw-headline" id="IR_Range_2">IR Range</span></h3>
+<p>There are two IR Range sensors on each hand.  The sensor data is published on the tf frame <code>&lt;side&gt;_hand_range</code>, and points down the +x axis, as is convention for <a rel="nofollow" class="external text" href="http://ros.org/wiki/rviz/DisplayTypes/Range">rviz</a>.
+</p><p><b>Component IDs:</b> <br />
+<code>left_hand_range</code>, <code>right_hand_range</code>
+</p><p><i>Read Range Sensor Measurements</i> <br /> 
+<code>/robot/range/&lt;component_id&gt;</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/Range.html">sensor_msgs-Range</a>)  
+</p>
+<ul><li>Range is published in meters in the <code>range</code> field.</li>
+<li>When the sensor goes beyond its max range, the invalid value of 65.5350036621(m) is published instead.  Users should check for valid measurements using the <code>min_range</code> and <code>max_range</code> fields.</li></ul>
+<h3><span class="mw-headline" id="Sonar_2">Sonar</span></h3>
+<p>Mounted in a ring around the head are 12 sonar distance sensors.
+</p><p><b>Component IDs:</b>  <br />
+<code>head_sonar</code>  
+</p>
+<h4><span id="Read_Sonar_3D_Distances_(Point_Cloud)_2"></span><span class="mw-headline" id="Read_Sonar_3D_Distances_.28Point_Cloud.29_2">Read Sonar 3D Distances (Point Cloud)</span></h4>
+<p>The sonar range measurements are published as a set of 3D coordinate points in space around Baxter, called a PointCloud.  This gives a "mapping" of detections in the workspace and is well-suited for occupancy-oriented reasoning in the robot's world.
+</p><p><i>Read Sonar Point Cloud</i>  <br />
+<code>/robot/sonar/head_sonar/state</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/PointCloud.html">sensor_msgs-PointCloud</a>)  
+</p>
+<ul><li>The PointCloud message takes all the individual sonar range measurements and instead, uses the known locations of the sonar sensors on the robot, to map the readings into 'points' in 3D space that mark the location of detected objects.</li>
+<li>The points for all incoming, valid, current readings are collected each time and published as an array in the PointCloud message.</li>
+<li>Note: the result of this is that each published message contains measurements for only a subset of the sensors, not readings for all 12 sensors every time.</li>
+<li>There will be a Point for each <i>currently active measurement</i> - this means a message published at one instant could contain points for only 4 of the sensors, and, also, another instant the published message could contain two points for the same sensor if the sensor had two valid measurements in the last time interval.</li>
+<li>The <code>points</code> field contains the array of the actual 3D Points - one for each current measurement - in terms of the (x,y,z) coordinates for each point, relative to Baxter's <code>base</code> tf frame.</li>
+<li>The <code>channels</code> field contains arrays with additional information about each point.  The values in each array map 1:1 to the values at the same indices in the <code>points</code> array.</li>
+<li>The array with the name <code>SensorId</code> lists which physical sensor each point came from.</li>
+<li>The array with the name <code>Distance</code> lists the original range measurement from that sensor.</li></ul>
+<h2><span class="mw-headline" id="Inputs_and_Outputs_2">Inputs and Outputs</span></h2>
+<h3><span class="mw-headline" id="Navigators_2">Navigators</span></h3>
+<p>There are four Navigators on that are simulated as a QT plugin in the simulated baxter: two for each side of the torso and one for each arm. Each Navigator is comprised of three push buttons, and an indexing scroll wheel.
+</p><p><b>Component IDs:</b><br />
+<code>left_navigator</code>, <code>right_navigator</code>, <code>torso_left_navigator</code>, <code>torso_right_navigator</code>
+</p>
+<h4><span class="mw-headline" id="Navigator_Input_Buttons_2">Navigator Input Buttons</span></h4>
+<p><i>Read Button States</i>  <br />
+<code>/robot/navigators/&lt;component_id&gt;/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/ITBState.msg">baxter_core_msgs-ITBState</a>)  
+</p>
+<ul><li>The states of the three push buttons are the first three values in the boolean <code>buttons[]</code> array.  A value of 'True' indicates the button is currently pushed down. The order is as follows:</li>
+<li>OK_BUTTON (<code>buttons[0]</code>):  The small rectangular button labelled as 'Ok'.</li>
+<li>CANCEL_BUTTON (<code>buttons[1]</code>):  The button 'above' the OK_BUTTON, labelled as 'Cancel'.</li>
+<li>SHOW_BUTTON (<code>buttons[2]</code>):  The SHOW_BUTTON, or "Rethink Button", is 'below' the OK_BUTTON, and typically is labeled as the 'Show'.</li></ul>
+<p><i>Read Wheel Index</i>  <br />
+<code>/robot/navigators/&lt;component_id&gt;/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/ITBState.msg">baxter_core_msgs-ITBState</a>)  
+</p>
+<ul><li>The <code>wheel</code> field returns an integer between [0-255].  Each physical 'click' of the wheel corresponds to a +/-1 increment.  The value will loop when it goes above or below the bounds.</li></ul>
+<h4><span class="mw-headline" id="Control_Navigator_Lights_2">Control Navigator Lights</span></h4>
+<p>There are two sets of lights on each Navigator: the 'inner' light ring around the circular OK Button, and the 'outer' oval light ring around the entire Navigator.  Each light is identified by the 'Component ID' of its Navigator followed by <code>_light_inner</code> or <code>_light_outer</code>.
+</p><p><b>Component IDs:</b>  <br />
+Inner Lights: <code>left_inner_light</code>, <code>right_inner_light</code>, <code>torso_left_inner_light</code>, <code>torso_right_inner_light</code>  <br />
+Outer Lights: <code>left_outer_light</code>, <code>right_outer_light</code>, <code>torso_left_outer_light</code>, <code>torso_right_outer_light</code>  <br />  
+</p><p><i>Turn LEDs On/Off</i>  <br />
+<code>/robot/digital_io/command</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalOutputCommand.msg">baxter_core_msgs-DigitalOutputCommand</a>)
+</p>
+<ul><li>name: <code>&lt;navigator_component_id&gt;_light_inner</code>, <code>&lt;navigator_component_id&gt;_light_outer</code></li>
+<li>value: {True, False}</li></ul>
+<ul><li>Publish a DigitalOutputCommand message with the component id of the light as the <code>name</code> and a <code>value</code> of <code>True</code> or <code>False</code> to turn the LEDs On or Off, respectively.</li></ul>
+<p><i>Check State of LEDs</i>  <br />
+<code>/robot/digital_io/&lt;light_component_id&gt;/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg//DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li>The <code>state</code> field will give you the current setting of the LED, ON(1) or OFF(0).<i>Note: The Navigator LED are not simulated in gazebo and hence viewing the lights go on and off is not possible. However, the topics mentioned above indicate the appropriate states of these lights.</i></li></ul>
+<h2><span class="mw-headline" id="Shoulder_Buttons_2">Shoulder Buttons</span></h2>
+<p>There are two shoulder buttons on the back of the torso, one on each side.  The state of each button is published in a DigitalIOState message under its own topic (DigitalIOState constants: PRESSED==1, UNPRESSED==0).
+</p><p><b>Component IDs:</b><br />
+<code>left_shoulder_button</code>, <code>right_shoulder_button</code>
+</p><p><i>Read Button Pressed</i>  <br />
+<code>/robot/digital_io/&lt;side&gt;_shoulder_button/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li>The integer field <code>state</code> will read PRESSED (1) when the button is pressed down, and UNPRESSED (0) otherwise.</li></ul>
+<h2><span class="mw-headline" id="Cuff_Buttons_2">Cuff Buttons</span></h2>
+<p>There are two buttons and one touch sensor in the cuff of each hand.  The state of each button is published in a DigitalIOState message under its own topic (DigitalIOState constants: PRESSED==1, UNPRESSED==0).
+</p>
+<h4><span id="Cuff_(Squeeze)_Sensor_2"></span><span class="mw-headline" id="Cuff_.28Squeeze.29_Sensor_2">Cuff (Squeeze) Sensor</span></h4>
+<p><b>Component IDs:</b> <br />
+<code>left_lower_cuff</code>, <code>right_lower_cuff</code>  
+</p><p><i>Read Cuff Squeezed</i>  <br />
+<code>/robot/digital_io/&lt;side&gt;_lower_cuff/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li>Integer <code>state</code> will read PRESSED (1) when the cuff sensor is squeezed, and UNPRESSED (0) otherwise.</li></ul>
+<h4><span class="mw-headline" id="Cuff_OK_Button_2">Cuff OK Button</span></h4>
+<p>This is the circular button on the cuff.  <br />
+<b>Component IDs:</b><br />
+<code>left_lower_button</code>, <code>right_lower_button</code>
+</p><p><i>Read OK Button Pressed</i><br />  
+<code>/robot/digital_io/&lt;side&gt;_lower_button/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li>Integer <code>state</code> will read PRESSED (1) when the button is pressed, and UNPRESSED (0) otherwise.</li></ul>
+<h4><span class="mw-headline" id="Cuff_Grasp_Button_2">Cuff Grasp Button</span></h4>
+<p>This is the long, thin button on the cuff.  
+<b>Component IDs:</b><br />
+<code>left_upper_button</code>, <code>right_upper_button</code>
+</p><p><i>Read Grasp Button Pressed</i><br />  
+<code>/robot/digital_io/&lt;side&gt;_upper_button/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li>Integer <code>state</code> will read PRESSED (1) when the button is pressed, and UNPRESSED (0) otherwise.</li></ul>
+<h2><span class="mw-headline" id="Lights_2">Lights</span></h2>
+<ul><li>LEDs <span id="LEDs">&#160;</span>
+<ul><li><a href="index.php?title=API_Reference&amp;oldid=4585#Halo_LEDs">Head Halo (Red, Green)</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Sonar_LED_Indicators">Sonar Rings (Yellow)</a></li>
+<li><a href="index.php?title=API_Reference&amp;oldid=4585#Navigator_Lights">Navigator LEDs (inner, outer)</a></li></ul></li></ul>
+<h2><span class="mw-headline" id="Digital_IO_2">Digital IO</span></h2>
+<p><i>Read Digital Input State</i>  <br />
+<code>/robot/digital_io/&lt;component_id&gt;/state</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalIOState.msg">baxter_core_msgs-DigitalIOState</a>)  
+</p>
+<ul><li><code>state</code>: field will be 0 (for True, Pressed, On) or 1 (for False, Released, Off).  If the component is an output, then the <code>state</code> field will be the current setting of the output.</li>
+<li><code>isInputOnly</code>: field tells you if the component is an input (sensor) only, and cannot output (not a light, actuator, nor indicator).</li></ul>
+<p><i>Control Digital Output</i>  
+<code>/robot/digital_io/command</code> (<a rel="nofollow" class="external text" href="http://github.com/RethinkRobotics/baxter_common/blob/release-0.7.0/baxter_core_msgs/msg/DigitalOutputCommand.msg">baxter_core_msgs-DigitalOutputCommand</a>)  
+</p>
+<ul><li>name: <code>&lt;component_id&gt;</code></li>
+<li>value: {True, False}</li></ul>
+<ul><li>Publish a DigitalOutputCommand message with the component id of the Output as the <code>name</code> and a <code>value</code> of <code>True</code> or <code>False</code> to turn the Output On or Off, respectively.</li></ul>
+<p><b>All Digital Component IDs:</b>  <br />
+<i>Outputs:</i>  <br />
+Inner Lights: <code>left_inner_light</code>, <code>right_inner_light</code>, <code>torso_left_inner_light</code>, <code>torso_right_inner_light</code> <br /> 
+Outer Lights: <code>left_outer_light</code>, <code>right_outer_light</code>, <code>torso_left_outer_light</code>, <code>torso_right_outer_light</code> <br /> 
+</p><p><i>Inputs:</i>  <br />
+Back Shoulder Buttons: <code>left_shoulder_button</code>, <code>right_shoulder_button</code>  <br />
+Cuff (Squeeze) Sensor: <code>left_lower_cuff</code>, <code>right_lower_cuff</code>  <br />
+Cuff OK Button: <code>left_lower_button</code>, <code>right_lower_button</code>  <br />
+Cuff Grasp Button: <code>left_upper_button</code>, <code>right_upper_button</code>  
+<i>Note: The /robot/digital_io_states is not yet simulated to publish compiled states of the digital_io and the individual state topic of each of the navigator would furnish those information</i>
+</p>
+<h2><span class="mw-headline" id="Cameras_2">Cameras</span></h2>
+<p>You can access Baxter's two hand cameras and the head camera using the standard ROS image types and image_transport mechanism listed below. These cameras would show rendered images of the gazebo environment. Useful tools for using cameras in ROS include <a href="../Rviz" title="Rviz">rviz</a> and the <a href="../Image_view" title="Image view">image_view</a> program.  
+<b>IMPORTANT:</b> There is no limitation on the number of cameras used simultaneously in simulation as in the real baxter. 
+</p><p><b>Component IDs:</b>
+<code>left_hand_camera</code>, <code>right_hand_camera</code>, <code>head_camera</code>  
+</p>
+<h4><span class="mw-headline" id="Camera_Published_Topics_2">Camera Published Topics</span></h4>
+<p><i>Raw Image</i>  
+<code>/cameras/&lt;component_id&gt;/image</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/Image.html">sensor_msgs-Image</a>)  
+</p><p><i>Camera Intrinsics</i>  
+<code>/cameras/&lt;component_id&gt;/camera_info</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/CameraInfo.html">sensor_msgs-CameraInfo</a>)  
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> 
+<span class="c1"># View now open camera topics</span>
+$ rostopic list /cameras
+  /cameras/head_camera/camera_info
+  /cameras/head_camera/image
+  /cameras/right_hand_camera/camera_info
+  /cameras/right_hand_camera/image
+  /cameras/left_hand_camera/camera_info
+  /cameras/left_hand_camera/image
+</pre></div>
+<h2><span id="Screen_(xdisplay)_2"></span><span class="mw-headline" id="Screen_.28xdisplay.29_2">Screen (xdisplay)</span></h2>
+<p>Images can be displayed on Baxter's LCD screen by publishing the image data as a ROS <code>sensor_msgs/Image</code>.  
+</p><p><i>Display Image</i>  
+<code>/robot/xdisplay</code> (<a rel="nofollow" class="external text" href="http://www.ros.org/doc/api/sensor_msgs/html/msg/Image.html">sensor_msgs-Image</a>)  
+</p>
+<ul><li>Publish image data as a <a rel="nofollow" class="external text" href="http://ros.org/wiki/sensor_msgs">ROS Image message</a> to update the display.</li>
+<li>The screen resolution is 1024 x 600.  Images smaller than this will appear in the top-left corner.</li>
+<li>There are dedicated ROS packages for working with and sending ROS Image messages, including <a rel="nofollow" class="external text" href="http://ros.org/wiki/image_transport">image_transport</a> and <a rel="nofollow" class="external text" href="http://ros.org/wiki/image_pipeline">image_pipeline</a>.</li>
+<li>Useful tools for working with images in ROS include <a href="../Image_view" title="Image view">Image_view</a> and <a rel="nofollow" class="external text" href="http://ros.org/wiki/image_transport#republish">republish</a>. Also see <a rel="nofollow" class="external text" href="http://ros.org/wiki/camera_drivers">camera_drivers</a> for assistance working with your own cameras.</li></ul>
+<p>For more information on displaying images to Baxter's LCD screen, see the <a href="../Display_Image_Example" title="Display Image Example">Display Image Example</a>.
+For more information on the working of each example with the simulator refer <a rel="nofollow" class="external text" href="https://docs.google.com/a/rethinkrobotics.com/spreadsheet/ccc?key=0AuwgVjo4IL7VdHJudVFRQUVqQ1JKS3VKYldYd19heXc&amp;usp=drive_web#gid=0">here</a>
+</p>
+<hr />
+<p>&lt;headertabs /&gt;
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815161517
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.140 seconds
+Real time usage: 1.883 seconds
+Preprocessor visited node count: 602/1000000
+Preprocessor generated node count: 836/1000000
+Post‐expand include size: 180/2097152 bytes
+Template argument size: 32/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 5658/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.674      1 Template:Parent_header
+100.00%    0.674      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:329-0!canonical and timestamp 20190815161515 and revision id 4585
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=API_Reference&amp;oldid=4585">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=API_Reference&amp;oldid=4585</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.140","walltime":"1.883","ppvisitednodes":{"value":602,"limit":1000000},"ppgeneratednodes":{"value":836,"limit":1000000},"postexpandincludesize":{"value":180,"limit":2097152},"templateargumentsize":{"value":32,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":5658,"limit":5000000},"timingprofile":["100.00%    0.674      1 Template:Parent_header","100.00%    0.674      1 -total"]},"cachereport":{"timestamp":"20190815161517","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":1941});});</script></body></html>

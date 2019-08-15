@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Software Update - v0.6.2 - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Software_Update_-_v0.6.2","wgTitle":"Software Update - v0.6.2","wgCurRevisionId":4249,"wgRevisionId":4249,"wgArticleId":300,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Software_Update_-_v0.6.2","wgRelevantArticleId":300,"wgRequestId":"3e48134d3a72241a17c64939","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=ext.pygments%257Cmediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Software_Update_-_v0_6_2 rootpage-Software_Update_-_v0_6_2 skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:UserLogin&amp;returnto=Software+Update+-+v0.6.2&amp;returntoquery=oldid%3D4249">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Software Update - v0.6.2</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#">More</a><ul><li id="ca-viewsource"><a href="index.php?title=Software_Update_-_v0.6.2&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=Software_Update_-_v0.6.2&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="../Software_Update_-_v0.6.2" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="../Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="../Learning">Learning</a></li>
+                <li id="n-Community"><a href="../Community">Community</a></li>
+                <li id="n-Support"><a href="../Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><div class="mw-revision"><div id="mw-revision-info">Revision as of 22:55, 7 December 2015 by <a href="index.php?title=User:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Imcmahon (page does not exist)"><bdi>Imcmahon</bdi></a> <span class="mw-usertoollinks">(<a href="index.php?title=User_talk:Imcmahon&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Imcmahon (page does not exist)">talk</a> | <a href="../Special:Contributions/Imcmahon" class="mw-usertoollinks-contribs" title="Special:Contributions/Imcmahon">contribs</a>)</span> <span class="comment">(<a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#I._Download_Update_Files">→</a>‎<span dir="auto"><span class="autocomment">I. Download Update Files</span></span>)</span></div><div id="mw-revision-nav">(<a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Software_Update_-_v0.6.2&amp;diff=prev&amp;oldid=4249" title="Software Update - v0.6.2">diff</a>) <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Software_Update_-_v0.6.2&amp;direction=prev&amp;oldid=4249" title="Software Update - v0.6.2">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#column-one">navigation</a>, <a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#Update_Instructions_for_Baxter_Research_Robot:_rsdk_0.6.2"><span class="tocnumber">1</span> <span class="toctext">Update Instructions for Baxter Research Robot: rsdk_0.6.2</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#Prerequisites"><span class="tocnumber">1.1</span> <span class="toctext">Prerequisites</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#Instructions"><span class="tocnumber">1.2</span> <span class="toctext">Instructions</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#I._Download_Update_Files"><span class="tocnumber">1.2.1</span> <span class="toctext">I. Download Update Files</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#II._Setup_and_Check_Version"><span class="tocnumber">1.2.2</span> <span class="toctext">II. Setup and Check Version</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#III._Run_the_Updater_for_Version_0.6.2"><span class="tocnumber">1.2.3</span> <span class="toctext">III. Run the Updater for Version 0.6.2</span></a>
+<ul>
+<li class="toclevel-4 tocsection-7"><a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#Problems_after_Reboot"><span class="tocnumber">1.2.3.1</span> <span class="toctext">Problems after Reboot</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-8"><a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#V._Updating_the_SDK_on_the_Workstation_.28git_repo.29"><span class="tocnumber">1.2.4</span> <span class="toctext">V.  Updating the SDK on the Workstation (git repo)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#FTP_Access"><span class="tocnumber">2</span> <span class="toctext">FTP Access</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249#Troubleshooting"><span class="tocnumber">3</span> <span class="toctext">Troubleshooting</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Update_Instructions_for_Baxter_Research_Robot:_rsdk_0.6.2">Update Instructions for Baxter Research Robot: rsdk_0.6.2</span></h2>
+<p>This document provides instructions on updating the software on your Baxter Research Robot to 'rsdk_0.6.2'.
+</p><p><b>Note:</b> These instructions are for updating from 0.6.1.  If updating <i>from</i> version 0.6.0, you should follow the instructions at: <a href="../Software_Update_-_v0.6.1" title="Software Update - v0.6.1">Software Update - v0.6.1</a>.
+</p>
+<h3><span class="mw-headline" id="Prerequisites">Prerequisites</span></h3>
+<p>You will need:
+</p>
+<ul><li>A Baxter Research Robot running 0.6.1</li>
+<li>USB drive (FAT32 formatted, at least 500MB)</li>
+<li>Update Files from the <a href="../Rethink_FTP" title="Rethink FTP">Rethink FTP</a></li>
+<li>Development Workstation with the RSDK installed</li></ul>
+<h3><span class="mw-headline" id="Instructions">Instructions</span></h3>
+<h4><span class="mw-headline" id="I._Download_Update_Files">I. Download Update Files</span></h4>
+<p>1. Download the Update files from the Rethink FTP Service - <a href="../Rethink_FTP" title="Rethink FTP">Rethink_FTP</a>.  
+</p>
+<ul><li>Your organization's Point-Of-Contact (POC) will receive an email notice, granting access to the new Update folder, and allowing them to create credentials upon first login.  <i><a href="../Software_Update_-_v0.6.2#ftp-access" title="Software Update - v0.6.2">More Info</a></i></li></ul>
+<p><br /><b>Note:</b> If you do not have access to the Rethink FTP, simply send a request to the <b><a rel="nofollow" class="external text" href="mailto:RSDK.Support@rethinkrobotics.com">rsdk.support@rethinkrobotics.com</a></b> email with your contact information, and we will gladly provide access.
+</p>
+<ul><li>From the 'Baxter Research Robot 0.6.2 Software' folder:</li></ul>
+<pre>    Download the compressed gzip file: <code>rethink-update-rsdk_0.6.2.tar.gz</code>
+</pre>
+<p>2. Unzip the Update Files  
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ mkdir updates
+    $ tar xvfz rethink-update-rsdk_0.6.2.tar.gz -C updates/
+    $ <span class="nb">cd</span> updates
+</pre></div>
+<p>3. Copy all the update files onto a USB flash drive
+</p>
+<ul><li>You may use a normal File Browser or any other method to <b>copy the files onto a USB drive</b>.</li>
+<li>Make sure the USB flash drive is formatted as a FAT32 partition.</li>
+<li>The files should all be placed in the top-level directory of the USB drive (i.e. not in a sub-folder).</li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    <span class="c1">#on the USB drive </span>
+    $ ls 
+    rethink-update-0.6.2-obf
+    rethink-update-0.6.2-obf.config
+    rethink-update-0.6.2-obf.config.gpg
+</pre></div>
+<ul><li>Safely eject the flash drive.</li></ul>
+<h4><span class="mw-headline" id="II._Setup_and_Check_Version">II. Setup and Check Version</span></h4>
+<p>1.  Turn on Baxter.
+2.  Start an <a href="../RSDK_Shell" title="RSDK Shell">RSDK Shell</a> on your development workstation.  
+</p>
+<pre>   Make sure you have edited the baxter.sh script file for your ROS_IP or ROS_HOSTNAME.
+</pre>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ <span class="nb">cd</span> ~/ros_ws
+    $ ./baxter.sh
+</pre></div>
+<p>3. Check the Software Version  
+</p>
+<pre>   You can check the <a href="../Software_Version" title="Software Version">Software Version</a> of your robot using the following command:
+</pre>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ rosparam get /rethink/software_version
+    <span class="m">0</span>.6.1
+</pre></div>
+<ul><li><i>If the version says <code>0.6.0</code> update to 0.6.1 first using these instructions: <a href="../Software_Update_-_v0.6.1" title="Software Update - v0.6.1">Software-Update - v0.6.1</a>.</i></li></ul>
+<h4><span class="mw-headline" id="III._Run_the_Updater_for_Version_0.6.2">III. Run the Updater for Version 0.6.2</span></h4>
+<p>1.  Allow robot to fully boot.
+2.  Plug the USB drive into the USB port <b>on Baxter's torso</b>.
+3.  Wait ~30 seconds for the system to recognize the drive.
+4.  <i>(On Dev Workstation)</i> Find the UUID for the Update Primer (Version <code>0.6.2</code>) using the <a href="../Software_Update" title="Software Update">Software Update Tool</a>:  
+</p>
+<ul><li>Use the <code>-l</code> argument to the <code>update_robot.py</code> tool to list the available updates Baxter found on the USB drive.</li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ rosrun baxter_tools update_robot.py -l
+    Version                       UUID
+    <span class="m">0</span>.6.2                         e3790020-35db-11e3-bae4-e0cb4e8bae9f
+</pre></div>
+<ul><li>Find the UUID for the Version '<b><code>0.6.2</code>'</b> update.  In this example, the UUID is <code>e3790020-35db-11e3-bae4-e0cb4e8bae9f</code>.</li></ul>
+<p>5.  Start the Update, using the <code>0.6.2</code> Version.
+</p>
+<ul><li>Run the <code>update_robot.py</code> tool again, this time using the <code>-u</code> argument followed by the <i><b>UUID</b></i> found in the last step for Version <code>0.6.2</code>.</li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ rosrun baxter_tools update_robot.py -u e3790020-35db-11e3-bae4-e0cb4e8bae9f
+</pre></div>
+<pre>    This starts the verification and unpacking of the update payload.  The status will be printed out as it goes through the required steps, ending in a notification that the robot system will reboot to finish updating.  
+</pre>
+<ul><li><b>NOTE: During this step, a bunch of text will scroll through on Baxter's screen.</b>  This is a good thing and shows that the update is progressing.  Once finished, Baxter reboots to the new software and finalizes the update.</li></ul>
+<p>6.  Confirm the New Software Version
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ rosparam get /rethink/software_version
+    <span class="m">0</span>.6.2
+</pre></div>
+<pre>   You should see <code>0.6.2</code> reported back.  Congratulations, you have updated your Baxter!
+</pre>
+<h5><span class="mw-headline" id="Problems_after_Reboot">Problems after Reboot</span></h5>
+<p>Rebooting after an update can take a few minutes while the controller boards are flashed with new firmware.  If you have any problems after reboot - such as the 'Halo' light on Baxter's head flashing Red, or the robot not fully booting with the Green light, even after a significant wait (~10 minutes) - you should try a hard power-cycle:  
+</p>
+<ul><li>Hit the Power Button on Baxter's side to perform a full power-off shutdown of Baxter.</li>
+<li>Once all the lights and fans are off and Baxter is completely shutdown, hit the Power Button again to turn Baxter back on.</li></ul>
+<h4><span id="V._Updating_the_SDK_on_the_Workstation_(git_repo)"></span><span class="mw-headline" id="V._Updating_the_SDK_on_the_Workstation_.28git_repo.29">V.  Updating the SDK on the Workstation (git repo)</span></h4>
+<p>Along with updating the software on the robot to version rsdk_0.6.2, you will want to update your Workstation-side SDK software from the git repository to the corresponding v0.6.2.  To do this, follow the instructions for checking out a new tagged version, with tag <code>v0.6.2</code>:  <a href="../Installing_the_Research_SDK" class="mw-redirect" title="Installing the Research SDK">Installing the Research SDK</a>
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>    $ <span class="nb">cd</span> sdk-examples
+    $ git fetch
+    $ git tag -l
+    $ git checkout v0.6.2
+    $ ./init.sh &lt;Baxter Hostname&gt; <span class="o">[</span>ROS Distro<span class="o">]</span>
+    $ rosmake baxter --pre-clean
+</pre></div>
+<h2><span class="mw-headline" id="FTP_Access">FTP Access</span></h2>
+<p>Use the login credentials provided to your organization's Point-Of-Contact (POC). Updates to the Robot Software are distributed via the Rethink FTP Service - <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Hostedftp.com_Hosted~FTP~&amp;action=edit&amp;redlink=1" class="new" title="Hostedftp.com Hosted~FTP~ (page does not exist)">hostedftp.com Hosted~FTP~</a>.  Your organization's Point-Of-Contact (POC) will receive an email, notifying them of the new update folder, and allowing them to sign-in using their email address. <i>Note: When a new release occurs, POC's will be granted access to the Hosted~FTP~  via their email address.  Credentials are created upon first sign-in.</i>
+</p>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<p>For common issues specific to using software update with Baxter, check out the <a href="../Software_Update_-_Troubleshooting" title="Software Update - Troubleshooting">Troubleshooting page</a>.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190815161016
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.027 seconds
+Real time usage: 1.827 seconds
+Preprocessor visited node count: 110/1000000
+Preprocessor generated node count: 204/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 2028/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:300-0!canonical and timestamp 20190815161015 and revision id 4249
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Software_Update_-_v0.6.2&amp;oldid=4249</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="../Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="../Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="../Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="../Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.027","walltime":"1.827","ppvisitednodes":{"value":110,"limit":1000000},"ppgeneratednodes":{"value":204,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":2028,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20190815161016","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":47});});</script></body></html>

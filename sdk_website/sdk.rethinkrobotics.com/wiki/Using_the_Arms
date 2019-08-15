@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Arms - sdk-wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Arms","wgTitle":"Arms","wgCurRevisionId":3572,"wgRevisionId":3572,"wgArticleId":301,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Arms","wgRelevantArticleId":301,"wgRequestId":"ee8eb9460d4caea95573dc1e","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"],"wgRedirectedFrom":"Using_the_Arms","wgInternalRedirectTargetUrl":"/wiki/Arms"});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready"});mw.loader.implement("user.tokens@01doy7a",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.view.redirect","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.cavendishmw-rethinkrobotics"]);});</script>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<script async="" src="a/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="a/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishmw-rethinkrobotics"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://sdk.rethinkrobotics.com/wiki/a/opensearch_desc.php" title="sdk-wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://sdk.rethinkrobotics.com/wiki/a/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="sdk-wiki Atom feed" href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="Arms"/>
+<!--[if lt IE 9]><script src="/wiki/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=cavendishmw-rethinkrobotics&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Arms rootpage-Arms skin-cavendishmw-rethinkrobotics action-view"><div id="container"><!-- start fragment header -->
+    <!-- <div id="mozilla-org"><a href="#">Mozilla Skin</a></div> -->
+    <div id="header" class="noprint">
+        <a name="top" id="contentTop"></a>
+
+        <!-- Logo + site name -->
+        <h1>
+            <a href="../wiki" style="text-indent: 2em; width: 194px; height: 67px; background: transparent url(a/skins/cavendishmw-rethinkrobotics/styles/images/header_logo.png) no-repeat scroll 5px -5px;" title="Visit the main page">&nbsp;</a>        </h1>
+
+	<div id="rr_ActionWrap">
+	<!-- Account action links -->
+	<div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="a/index.php?title=Special:UserLogin&amp;returnto=Arms">Log in</a></div>
+        <!-- Search box -->
+            <form action="http://sdk.rethinkrobotics.com/wiki/a/index.php" id="searchform">
+        <label for="searchInput">Search</label>
+        <input type='hidden' name="title" value="Special:Search"/>
+        <input type="search" name="search" placeholder="Search sdk-wiki" title="Search sdk-wiki [f]" accesskey="f" id="searchInput"/>
+        &#160;
+        <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>    </form>
+	</div>
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <h1 lang="en"><span dir="auto">Arms</span></h1>
+
+
+        <!-- Content action buttons -->
+        <ul><li><a href="Using_the_Arms#">More</a><ul><li id="ca-viewsource"><a href="a/index.php?title=Arms&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="a/index.php?title=Arms&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></li><li id="ca-nstab-main" class="selected"><a href="Arms" title="View the content page [c]" accesskey="c">Page</a></li></ul>
+</div><!-- end fragment firstHeader --><!-- start fragment sidebar -->        <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+            <ul id="nav">
+                      <li><span>Navigation</span>
+            <ul>
+                <li id="n-Getting-Started"><a href="Getting_Started">Getting Started</a></li>
+                <li id="n-Learning"><a href="Learning">Learning</a></li>
+                <li id="n-Community"><a href="Community">Community</a></li>
+                <li id="n-Support"><a href="Support">Support</a></li>
+            </ul>
+        </li>
+      <li><span>Links</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-Forum"><a href="https://groups.google.com/a/rethinkrobotics.com/forum/#!forum/brr-users" rel="nofollow">Forum</a></li>
+                <li id="n-Source"><a href="https://github.com/RethinkRobotics" rel="nofollow">Source</a></li>
+                <li id="n-Source-API"><a href="http://api.rethinkrobotics.com/" rel="nofollow">Source API</a></li>
+            </ul>
+        </li>
+      <li><span>Tools</span>
+            <ul class="collapsible-collapsed">
+                <li id="n-All-Pages"><a href="Special:AllPages">All Pages</a></li>
+                <li id="n-Upload-File"><a href="Special:Upload">Upload File</a></li>
+                <li id="n-What-Links-Here.3F"><a href="Special:WhatLinksHere">What Links Here?</a></li>
+            </ul>
+        </li>
+            </ul> <!-- /nav -->
+        </div> <!-- /side -->
+<!-- end fragment sidebar -->
+<div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+    
+  <div id="bodyContent" class="mw-body">
+    <div id="siteSub">From sdk-wiki</div>
+    <div id="contentSub"><span class="mw-redirectedfrom">(Redirected from <a href="a/index.php?title=Using_the_Arms&amp;redirect=no" class="mw-redirect" title="Using the Arms">Using the Arms</a>)</span></div>
+    <div id="jump-to-nav" class="mw-jump">Jump to: <a href="Using_the_Arms#column-one">navigation</a>, <a href="Using_the_Arms#searchInput">search</a></div>
+    
+  <!-- start content -->
+  <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table style="padding:5px; border:1px solid #ffcc00; text-align:center; background:#FFFDDF; width:100%; margin-bottom:.5em;">
+<tbody><tr>
+<td><b><a href="Robot_Components" title="Robot Components"> Robot Components </a>:</b> <a href="Robot" title="Robot">Robot</a>, <a class="mw-selflink selflink">Arms</a>, <a href="Grippers" title="Grippers">Grippers</a>, <a href="Cameras" title="Cameras">Cameras</a>, <a href="Head" title="Head">Head</a>, <a href="Input_and_Output" title="Input and Output"> I/O</a>, <a href="Screen" title="Screen">Screen</a>
+</td></tr></tbody></table>
+<div class="toclimit-3" style="float:left; margin-right:10px; clear:left;"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Using_the_Arms#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="Using_the_Arms#Joints"><span class="tocnumber">2</span> <span class="toctext">Joints</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="Using_the_Arms#Joint_Naming"><span class="tocnumber">2.1</span> <span class="toctext">Joint Naming</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="Using_the_Arms#Series_Elastic_Actuators_.28SEAs.29"><span class="tocnumber">2.2</span> <span class="toctext">Series Elastic Actuators (SEAs)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="Using_the_Arms#Control_Systems"><span class="tocnumber">3</span> <span class="toctext">Control Systems</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="Using_the_Arms#Sensors"><span class="tocnumber">4</span> <span class="toctext">Sensors</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="Using_the_Arms#Resources"><span class="tocnumber">5</span> <span class="toctext">Resources</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="Using_the_Arms#Hardware_Specs"><span class="tocnumber">5.1</span> <span class="toctext">Hardware Specs</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="Using_the_Arms#Control_Modes"><span class="tocnumber">5.2</span> <span class="toctext">Control Modes</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="Using_the_Arms#ROS_API"><span class="tocnumber">5.3</span> <span class="toctext">ROS API</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="Using_the_Arms#Python_API_.28baxter_interface.29"><span class="tocnumber">5.4</span> <span class="toctext">Python API (baxter_interface)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="Using_the_Arms#Limb_interface_class"><span class="tocnumber">5.4.1</span> <span class="toctext">Limb interface class</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="Using_the_Arms#Joint_trajectory_action_server_class"><span class="tocnumber">5.4.2</span> <span class="toctext">Joint trajectory action server class</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-14"><a href="Using_the_Arms#Examples_.26_Tools"><span class="tocnumber">5.5</span> <span class="toctext">Examples &amp; Tools</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="Using_the_Arms#Examples"><span class="tocnumber">5.5.1</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-4 tocsection-16"><a href="Using_the_Arms#Joint_Position"><span class="tocnumber">5.5.1.1</span> <span class="toctext">Joint Position</span></a></li>
+<li class="toclevel-4 tocsection-17"><a href="Using_the_Arms#Joint_Velocity"><span class="tocnumber">5.5.1.2</span> <span class="toctext">Joint Velocity</span></a></li>
+<li class="toclevel-4 tocsection-18"><a href="Using_the_Arms#Inverse_Kinematics"><span class="tocnumber">5.5.1.3</span> <span class="toctext">Inverse Kinematics</span></a></li>
+<li class="toclevel-4 tocsection-19"><a href="Using_the_Arms#Joint_Trajectory"><span class="tocnumber">5.5.1.4</span> <span class="toctext">Joint Trajectory</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-20"><a href="Using_the_Arms#Tools"><span class="tocnumber">5.5.2</span> <span class="toctext">Tools</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div style="clear:both">
+<h1><span class="mw-headline" id="Summary">Summary</span></h1>
+</div>
+<p>This components page describes Baxter's Arms. Baxter's arms are an integral part of "Baxter being Baxter" from the basic actuation premise of Series Elastic Actuators (SEAs), to available control modes, to the overall safety of the system. This page is the gathering point for all of the knowledge that define Baxter's Arms.
+</p>
+<h1><span class="mw-headline" id="Joints">Joints</span></h1>
+<p>Baxter's has two seven degree-of-freedom (DOF) arms. Seven DOF arms are desirable as they provide a kinematic redundancy greatly improving manipulability and safety.
+</p>
+<h2><span class="mw-headline" id="Joint_Naming">Joint Naming</span></h2>
+<p><a href="File:Baxter_arm.png" class="image"><img alt="Baxter arm.png" src="a/images/7/7c/Baxter_arm.png" width="400" height="454" /></a>
+</p><p>The arm joints are named in the following manner:
+</p><p><b>S0</b> - Shoulder Roll
+</p><p><b>S1</b> - Shoulder Pitch
+</p><p><b>E0</b> - Elbow Roll
+</p><p><b>E1</b> - Elbow Pitch
+</p><p><b>W0</b> - Wrist Roll
+</p><p><b>W1</b> - Wrist Pitch
+</p><p><b>W2</b> - Wrist Roll
+</p>
+<h2><span id="Series_Elastic_Actuators_(SEAs)"></span><span class="mw-headline" id="Series_Elastic_Actuators_.28SEAs.29">Series Elastic Actuators (SEAs)</span></h2>
+<p><a href="File:Baxter_arm_naked.png" class="image"><img alt="Baxter arm naked.png" src="a/images/4/41/Baxter_arm_naked.png" width="300" height="407" /></a>
+</p><p>Image Credit: <a rel="nofollow" class="external text" href="http://www.technologyreview.com/featuredstory/513746/baxter-the-blue-collar-robot/">MIT Technology Review</a>
+</p><p><b>Series Elastic Actuators (SEAs)</b> are the actuation technique, or mechanism responsible for moving the robot links. SEAs are an integral part of "what makes Baxter, Baxter".
+</p><p><b>Recommended Reading:</b> <a rel="nofollow" class="external text" href="http://groups.csail.mit.edu/lbr/hrg/1995/mattw_ms_thesis.pdf">Series Elastic Actuators</a> (Rethink's own Matthew Williamson)
+</p><p>Series Elastic Actuators differ from traditional actuation techniques in that we introduce a spring between the motor/gearing elements and the output of the actuator. This results in "gains in stable, low noise force control, and protection against shock loads".
+</p><p>Inherent safety is a characteristic of SEAs. The springs in these actuators are deformable by human level inputs. This deflection is an inherent safety mechanism.
+</p><p>Lastly, and perhaps most importantly, by introducing the spring element we are now able to <b>measure torque output</b> from the actuator. This enables such things as torque control, impedance control, and more!
+</p>
+<h1><span class="mw-headline" id="Control_Systems">Control Systems</span></h1>
+<p>There are a number of control systems for controlling Baxter's arms and adding robustness or safety to Baxter. Joint Position, Joint Velocity, and Joint Torque control modes exist for commanding Baxter's arm for your specific application. The robustness and safety systems consist of Collision Avoidance (preventing self collision) and Collision Detection (detecting collision with the environment). Zero-G mode is one of the most prominent modes, allowing human-interaction with Baxter.
+</p><p>For detailed explanations and information on usage (including enabling/disabling) of these control systems, see:
+</p>
+<ul><li><b><a href="Arm_Control_Overview" title="Arm Control Overview">Arm Control Overview</a></b></li>
+<li><b><a href="Arm_Control_Modes" title="Arm Control Modes">Arm Control Modes</a></b></li>
+<li><b><a href="Collision_Avoidance_and_Detection" title="Collision Avoidance and Detection">Collision Avoidance and Detection</a></b></li>
+<li><b><a href="Gravity_Compensation" title="Gravity Compensation">Gravity Compensation</a></b></li>
+<li><b><a href="Zero-G_Mode" title="Zero-G Mode">Zero-G Mode</a></b></li></ul>
+<h1><span class="mw-headline" id="Sensors">Sensors</span></h1>
+<p>Baxter's arms are also loaded with a number of useful sensors. These include an 'eye-in-hand' camera, IR range sensor, accelerometer, and user input buttons.
+</p><p><a href="File:Hand_sensors.png" class="image"><img alt="Hand sensors.png" src="a/images/thumb/4/48/Hand_sensors.png/425px-Hand_sensors.png" width="425" height="299" srcset="/wiki/a/images/4/48/Hand_sensors.png 1.5x" /></a>
+</p>
+<ul><li>Cameras</li></ul>
+<ul><li>Infrared (IR) Range Sensors</li></ul>
+<ul><li>Accelerometer</li></ul>
+<ul><li>Navigators/Cuff Buttons</li></ul>
+<h1><span class="mw-headline" id="Resources">Resources</span></h1>
+<h2><span class="mw-headline" id="Hardware_Specs">Hardware Specs</span></h2>
+<p>See the <a href="Hardware_Specifications" title="Hardware Specifications"> Hardware Specifications</a> page for detailed hardware specs.
+</p>
+<h2><span class="mw-headline" id="Control_Modes">Control Modes</span></h2>
+<p>See <a rel="nofollow" class="external text" href="Arm_Control_Modes">Arm Control Modes</a> for detailed explanations on the position, velocity, and torque arm control modes.
+</p>
+<h2><span class="mw-headline" id="ROS_API">ROS API</span></h2>
+<p>See the <a href="API_Reference#Joints" title="API Reference">API Reference Page </a> for information on the ROS Interface to the Arms.
+</p>
+<h2><span id="Python_API_(baxter_interface)"></span><span class="mw-headline" id="Python_API_.28baxter_interface.29">Python API (<code>baxter_interface</code>)</span></h2>
+<h4><span class="mw-headline" id="Limb_interface_class">Limb interface class</span></h4>
+<p>(<code>limb.py</code>) - The python <a href="Baxter_Interface" title="Baxter Interface"> baxter_interface</a> class for limb control. Allows for all of the above control methods, abstracting the ROS communication into clean Python method calls.
+</p>
+<h4><span class="mw-headline" id="Joint_trajectory_action_server_class">Joint trajectory action server class</span></h4>
+<p>(<code>joint_trajectory_action_server.py</code>) - The implementation of the ROS standard <a rel="nofollow" class="external text" href="http://wiki.ros.org/joint_trajectory_action">joint trajectory action</a>. Used in popular motion planning framework <a rel="nofollow" class="external text" href="http://moveit.ros.org/">MoveIt!</a>
+</p>
+<h2><span id="Examples_&amp;_Tools"></span><span class="mw-headline" id="Examples_.26_Tools">Examples &amp; Tools</span></h2>
+<h3><span class="mw-headline" id="Examples">Examples</span></h3>
+<p>This section lists example programs which use the arms, demonstrating baxter_interface's Limb class (limb.py).
+</p>
+<h4><span class="mw-headline" id="Joint_Position">Joint Position</span></h4>
+<ul><li><a href="Joint_Position_Keyboard_Example" title="Joint Position Keyboard Example"> Joint Position Keyboard Example</a>
+<dl><dd>The joint position keyboard example demonstrates how to move the arms using joint angles input based on keyboard input.</dd></dl></li></ul>
+<h4><span class="mw-headline" id="Joint_Velocity">Joint Velocity</span></h4>
+<ul><li><a href="Wobbler_Example" title="Wobbler Example">Wobbler Example</a>
+<dl><dd>Simple demo that uses velocity control to move the arms in a random magnitude sinusoidal pattern.</dd></dl></li></ul>
+<ul><li><a href="Puppet_Example" title="Puppet Example">Puppet Example</a>
+<dl><dd>Reads the measured joint velocities of the input arm and 'puppets' (mimics) those velocity commands on the opposing arm.</dd></dl></li></ul>
+<h4><span class="mw-headline" id="Inverse_Kinematics">Inverse Kinematics</span></h4>
+<ul><li><a href="IK_Service_Example" title="IK Service Example">IK Service Example</a>
+<dl><dd>Basic example using the Inverse Kinematics solver service.</dd></dl></li></ul>
+<h4><span class="mw-headline" id="Joint_Trajectory">Joint Trajectory</span></h4>
+<ul><li><a href="Simple_Joint_trajectory_example" title="Simple Joint trajectory example">Simple Joint trajectory example</a>
+<dl><dd>Enable the robot joint trajectory interface and send a simple joint trajectory for Baxter to follow.</dd></dl></li></ul>
+<ul><li><a href="Joint_Trajectory_Playback_Example" title="Joint Trajectory Playback Example">Joint Trajectory Playback Example</a>
+<dl><dd>Enable the robot joint trajectory interface, parse a file created using the joint recorder example, and send the resulting joint trajectory to the joint trajectory action server.</dd></dl></li></ul>
+<h3><span class="mw-headline" id="Tools">Tools</span></h3>
+<ul><li><a href="Enable_Robot_Example" class="mw-redirect" title="Enable Robot Example">Enable Robot Tool</a>
+<dl><dd>You need to have the robot enabled to control the arm motors. <i>(Or... if you ever need a way to stop the motors via software.)</i></dd></dl></li>
+<li><a href="Tuck_Arms_Example" class="mw-redirect" title="Tuck Arms Example">Tuck Arms Example</a>
+<dl><dd>The tuck arms program will allow you to tuck/untuck Baxter's arms to/from 'shipping pose'.</dd></dl></li>
+<li><a href="Rviz" title="Rviz">rviz</a> (ROS)
+<dl><dd>You can use the Robot Model to visualize the joint positions and tf world axes coordinates. Check out the <a href="http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Rviz---Baxter-Sensor-Displays&amp;action=edit&amp;redlink=1" class="new" title="Rviz---Baxter-Sensor-Displays (page does not exist)">Joint States Display Types</a>.</dd></dl></li>
+<li><i>Maintenance tools</i>
+<ul><li><a href="Tare" class="mw-redirect" title="Tare">Tare</a> - Light arm re-zeroing <i>(Can run approx. weekly, at constant daily use)</i></li>
+<li><a href="Calibration" class="mw-redirect" title="Calibration">Calibration</a> - Arm sensor re-calibration <i>(Can run approx. monthly, with daily use)</i></li></ul></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190815161440
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.024 seconds
+Real time usage: 0.026 seconds
+Preprocessor visited node count: 84/1000000
+Preprocessor generated node count: 98/1000000
+Post‐expand include size: 271/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.503      1 Template:Components-group_header
+100.00%    0.503      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wikisdk:pcache:idhash:301-0!canonical and timestamp 20190815161440 and revision id 3572
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="a/index.php?title=Arms&amp;oldid=3572">http://sdk.rethinkrobotics.com/wiki/a/index.php?title=Arms&amp;oldid=3572</a>"</div>
+  <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>  <!-- end content -->
+  
+    <div class="visualClear"></div>
+</div>
+</div> <!-- /mainContent -->
+<!-- end fragment mainContent --></div> <!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->    <div id="footer" role="contentinfo">
+        <div id="f-poweredbyico">
+                <a href="http://www.mediawiki.org/"><img src="a/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+            </div>
+        <ul id="f-list">
+                <li id="copywrite_notice">&copy; 2015 Rethink Robotics. All rights reserved.</li>
+                <li id="special_pages"><a href="Special:SpecialPages" title="Special:SpecialPages">SpecialPages</a></li>
+                <li id="privacy"><a href="Sdk-wiki:Privacy_policy" title="Sdk-wiki:Privacy policy">Privacy policy</a></li>
+                <li id="about"><a href="Sdk-wiki:About" title="Sdk-wiki:About">About sdk-wiki</a></li>
+                <li id="disclaimer"><a href="Sdk-wiki:General_disclaimer" title="Sdk-wiki:General disclaimer">Disclaimers</a></li>
+            </ul>
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.024","walltime":"0.026","ppvisitednodes":{"value":84,"limit":1000000},"ppgeneratednodes":{"value":98,"limit":1000000},"postexpandincludesize":{"value":271,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.503      1 Template:Components-group_header","100.00%    0.503      1 -total"]},"cachereport":{"timestamp":"20190815161440","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":142});});</script></body></html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>View source for IK Service Example - Intera SDK</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"IK_Service_Example","wgTitle":"IK Service Example","wgCurRevisionId":1158,"wgRevisionId":0,"wgArticleId":64,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"IK_Service_Example","wgRelevantArticleId":64,"wgRequestId":"224d897bf9865bd5f2447094","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.cavendishrr":"ready"});mw.loader.implement("user.tokens@09sx7ae",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","cavendishrr.js","app.js"]);});</script>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.sectionAnchor%257Cskins.cavendishrr&amp;only=styles&amp;skin=cavendishrr"/>
+<script async="" src="load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cavendishrr"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700|Roboto+Condensed:300,700|Open+Sans:300"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=cavendishrr"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="../../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Intera SDK (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Intera SDK Atom feed" href="index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/intera/a/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=CavendishRR&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-IK_Service_Example rootpage-IK_Service_Example skin-cavendishrr action-edit"><div id="container"><!-- start fragment header -->
+    <div id="header" class="noprint">
+            <a name="top" id="contentTop"></a>
+
+            <!-- Logo + site name -->
+            <h1>
+                <a href="../../intera.1" style="text-indent: 2em; width: 123px; height: 69px; background: transparent url(skins/CavendishRR/styles/images/header_logo.png) no-repeat scroll;" title="Visit the main page">&nbsp;</a>            </h1>
+
+            <div id="rr_ActionWrap">
+                <!-- Account action links -->
+                <div id="accountActions"><a href="http://sdk-accounts.rethinkrobotics.com/public/NewUser">Create account</a><a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Special:UserLogin&amp;returnto=IK+Service+Example&amp;returntoquery=action%3Dedit">Log in</a></div>                <!-- Search box -->
+                        <form action="http://sdk.rethinkrobotics.com/intera/a/index.php" id="searchform">
+            <label for="searchInput">Search</label>
+            <input type='hidden' name="title" value="Special:Search"/>
+            <input type="search" name="search" placeholder="Search Intera SDK" title="Search Intera SDK [f]" accesskey="f" id="searchInput"/>
+                            <button type="submit" name="button">Search</button>        </form>
+                </div><!--/#rr_ActionWrap-->
+    </div> <!-- End header div -->
+<!-- end fragment header --><div id="mBody"><!-- start fragment mainContent -->
+<!-- start fragment firstHeader -->
+<div id="firstHeadingDiv" class="firstHeading">
+    <div class="l-container">
+        <!-- Content action buttons -->
+                <ul class="m-cactions">
+            <li><a href="index.php?title=IK_Service_Example&amp;action=edit#">More</a>
+                <ul>
+                <li id="ca-viewsource" class="selected"><a href="index.php?title=IK_Service_Example&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="index.php?title=IK_Service_Example&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                </ul>
+            </li>
+
+            <li id="ca-nstab-main" class="selected"><a href="../IK_Service_Example" title="View the content page [c]" accesskey="c">Page</a></li>        </ul>
+        
+        <h1 lang="en">
+            <span dir="auto">View source for IK Service Example</span>
+        </h1>
+    </div><!--/.l-container-->
+</div><!--/#firstHeadingDiv-->
+<!-- end fragment firstHeader -->
+<div class="bg-wrapper clearfix">
+    <!-- start fragment sidebar -->
+    <div id="side" class="noprint" > <!-- cavendishmw: s/column-one/side/ -->
+        <ul id="nav">
+                  <li>
+          <span>Installation &amp; Configuration</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Robot-Setup"><a href="../Robot_Setup">Robot Setup</a></li>                                    <li id="n-Workstation-Setup"><a href="../Workstation_Setup">Workstation Setup</a></li>                                    <li id="n-Networking"><a href="../Networking">Networking</a></li>                                    <li id="n-Hello-Robot.21"><a href="../Hello_Robot">Hello Robot!</a></li>                                    <li id="n-Hardware-Components"><a href="../Hardware_Components">Hardware Components</a></li>                                    <li id="n-SDK-Workstation-Requirements"><a href="../System_requirements">SDK Workstation Requirements</a></li>                                    <li id="n-Robot-Workspace-Guidelines"><a href="../Workspace_Guidelines">Robot Workspace Guidelines</a></li>                                    <li id="n-Field-Service-Menu-.28FSM.29"><a href="../Field_Service_Menu_(FSM)">Field Service Menu (FSM)</a></li>                                    <li id="n-Time-and-NTP"><a href="../Time_and_NTP">Time and NTP</a></li>                                    <li id="n-SDK-Software-Update"><a href="../Software_Update">SDK Software Update</a></li>                                    <li id="n-SDK-Release-Notes"><a href="../Release-Changes">SDK Release Notes</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Concepts</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-SDK-Robot-Workstation-Overview"><a href="../SDK_System_Overview">SDK Robot-Workstation Overview</a></li>                                    <li id="n-E-STOP-and-Enable-Robot"><a href="../E-STOP_and_Enable_Robot">E-STOP and Enable Robot</a></li>                                    <li id="n-Arm-Calibration"><a href="../Arm_Calibration">Arm Calibration</a></li>                                    <li id="n-Arm-Control-Systems"><a href="../Arm_Control_Systems">Arm Control Systems</a></li>                                    <li id="n-API-Reference"><a href="../API_Reference">API Reference</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tutorials</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Interaction-Control-Tutorial"><a href="../Interaction_Control_Tutorial">Interaction Control Tutorial</a></li>                                    <li id="n-Motion-Interface-Tutorial"><a href="../Motion_Interface_Tutorial">Motion Interface Tutorial</a></li>                                    <li id="n-MoveIt.21-Tutorial"><a href="../MoveIt_Tutorial">MoveIt! Tutorial</a></li>                                    <li id="n-Gazebo-Tutorial"><a href="../Gazebo_Tutorial">Gazebo Tutorial</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Code Examples</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-Running-Examples-Overview"><a href="../Running_Examples_Overview">Running Examples Overview</a></li>                                    <li id="n-Camera-Image-Display-Example"><a href="../Camera_Image_Display_Example">Camera Image Display Example</a></li>                                    <li id="n-Gripper-Example"><a href="../Gripper_Example">Gripper Example</a></li>                                    <li id="n-Gripper-Cuff-Control-Example"><a href="../Gripper_Cuff_Control_Example">Gripper Cuff Control Example</a></li>                                    <li id="n-Head-Display-Image-Example"><a href="../Head_Display_Image_Example">Head Display Image Example</a></li>                                    <li id="n-Head-Movement-Example"><a href="../Head_Movement_Example">Head Movement Example</a></li>                                    <li id="n-Lights-Blinking-Example"><a href="../Lights_Blinking_Example">Lights Blinking Example</a></li>                                    <li id="n-IK-Service-Example"><a href="../IK_Service_Example">IK Service Example</a></li>                                    <li id="n-Joint-Position-Example"><a href="../Joint_Position_Example">Joint Position Example</a></li>                                    <li id="n-Joint-Position-Waypoint-Example"><a href="../Joint_Position_Waypoint_Example">Joint Position Waypoint Example</a></li>                                    <li id="n-Joint-Torque-Springs-Example"><a href="../Joint_Torque_Springs_Example">Joint Torque Springs Example</a></li>                                    <li id="n-Joint-Trajectory-Playback-Example"><a href="../Joint_Trajectory_Playback_Example">Joint Trajectory Playback Example</a></li>                                    <li id="n-Set-Interaction-Options-Example"><a href="../Set_Interaction_Options_Example">Set Interaction Options Example</a></li>                                    <li id="n-Motion-Interface-Go-To-Joint-Angles"><a href="../Go_To_Joint_Angles_Example">Motion Interface Go-To-Joint Angles</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Support</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-User-Forum"><a href="../User_Forum">User Forum</a></li>                            </ul>
+                </li>
+          <li>
+          <span>Tools</span>
+
+                    <ul class="collapsible-collapsed">
+                                    <li id="n-All-Pages"><a href="../Special:AllPages">All Pages</a></li>                                    <li id="n-Print"><a href="index.php?title=IK_Service_Example&amp;printable=yes" rel="nofollow">Print</a></li>                                    <li id="n-Upload-File"><a href="../Special:Upload">Upload File</a></li>                                    <li id="n-What-Links-Here.3F"><a href="../Special:WhatLinksHere">What Links Here?</a></li>                            </ul>
+                </li>
+            </ul> <!-- /nav -->
+    </div> <!-- /side -->
+<!-- end fragment sidebar -->
+    <div id="mainContent"> <!-- cavendishmw: s/column-content/mainContent/ -->
+        
+        <div id="bodyContent" class="mw-body">
+
+            <div id="contentSub">
+                ← <a href="../IK_Service_Example" title="IK Service Example">IK Service Example</a>            </div>
+
+            
+            
+                            <div id="jump-to-nav" class="mw-jump">
+                    Jump to:                    <a href="index.php?title=IK_Service_Example&amp;action=edit#column-one">navigation</a>
+                    ,                     <a href="index.php?title=IK_Service_Example&amp;action=edit#searchInput">search</a>
+                </div>
+            
+            <!-- start content -->
+            <div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Intera_SDK:Users&amp;action=edit&amp;redlink=1" class="new" title="Intera SDK:Users (page does not exist)">Users</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">&lt;div class="title-block">
+
+&lt;span style="font-size:120%;">'''The IK service example shows the very basics of calling the on-robot Inverse-Kinematics (IK) Service to obtain a joint angles solution for a given endpoint Cartesian point &amp; orientation.'''&lt;/span>
+
+&lt;/div>
+
+{{TOClimit|limit=2}}
+
+&lt;div class="content-block">
+
+== Introduction ==
+
+This example demonstrates the usage of the IK service that is available in Sawyer. The &lt;code>main()&lt;/code> function records the joint on which the IK service is to be called and then invokes the &lt;code>ik_test()&lt;/code> function. This is where the rospy node is initialized, default cartesian coordinates are initialized, and the IK service is called.
+Service - &lt;code>ExternalTools/right/PositionKinematicsNode/IKService&lt;/code>
+
+If you would like to follow along with the actual source code for the example on GitHub, it can be found through [https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/ik_service_client.py this link] for ik service client example.
+&lt;br />
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Usage ==
+
+From an RSDK Shell, run the ik_service_client.py demo from the inverse_kinematics package, ex:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+$ rosrun intera_examples ik_service_client.py 
+&lt;/syntaxhighlight>
+
+The test will call the IK Service for a hard-coded Cartesian Pose for the given arm. The response will then be printed to the screen with the found joint solution if the solution is a valid configuration for Sawyer's arm.
+
+
+The 'inverse_kinematics' test code is an example of how to communicate with a robot-side ROS node that provides an Inverse-Kinematics (IK) service. Normal arm control is done using joint angles or states; for instance, position joint control allows the user to set the position in radians for shoulder, elbow, and wrist joint. Often in robotics manipulation, it can be useful to work in the Cartesian space of the arm's endpoint. Inverse Kinematics is used to convert between the Cartesian (x,y,z, roll, pitch, yaw) space representation, to actual controllable 7-DOF joint states.
+The example script simply calls the service for a canonical Cartesian point + orientation for either the left or right arm and as such merely provides the most basic example of how to use this service. Note that we provide this service just to have some out of the box method for IK. The complicated nature of 7-DOF Inverse Kinematics control, usually means the best IK implementations are customized for a specific use case. The node is not a complete Cartesian control solution, just a rudimentary solver exposed for convenience in elementary situations.
+For anything needing high-performance IK, it makes a lot more sense to implement it on the development machine.
+
+After run the example, the result shows on terminal:
+&lt;syntaxhighlight lang="bash" enclose="div">
+[INFO] [WallTime: 1482347669.474299] Running Simple IK Service Client example.
+[INFO] [WallTime: 1482347669.483886] SUCCESS - Valid Joint Solution Found from Seed Type: Current Joint Angles
+[INFO] [WallTime: 1482347669.483992] 
+IK Joint Solution:
+{'right_j6': -1.8083939242780869, 'right_j5': 2.7143783429757264, 'right_j4': -1.1756920541664397, 'right_j3': -2.215699739532649, 'right_j2': 0.5385031263389193, 'right_j1': 0.7321306707818217, 'right_j0': 0.5964531288816591}
+[INFO] [WallTime: 1482347669.484124] ------------------
+[INFO] [WallTime: 1482347669.484202] Response Message:
+joints: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 0
+        nsecs: 0
+      frame_id: ''
+    name: ['right_j0', 'right_j1', 'right_j2', 'right_j3', 'right_j4', 'right_j5', 'right_j6']
+    position: [0.5964531288816591, 0.7321306707818217, 0.5385031263389193, -2.215699739532649, -1.1756920541664397, 2.7143783429757264, -1.8083939242780869]
+    velocity: []
+    effort: []
+result_type: [2]
+[INFO] [WallTime: 1482347669.484463] Simple IK call passed!
+[INFO] [WallTime: 1482347669.484575] Running Advanced IK Service Client example.
+[INFO] [WallTime: 1482347669.491490] SUCCESS - Valid Joint Solution Found from Seed Type: User Provided Seed
+[INFO] [WallTime: 1482347669.491611] 
+IK Joint Solution:
+{'right_j6': 1.8756467201212745, 'right_j5': -1.0697047509927082, 'right_j4': -1.855751853200498, 'right_j3': 1.47406455200751, 'right_j2': -1.0393484209059132, 'right_j1': -0.20372936772965106, 'right_j0': 0.9594468009963417}
+[INFO] [WallTime: 1482347669.491745] ------------------
+[INFO] [WallTime: 1482347669.491820] Response Message:
+joints: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 0
+        nsecs: 0
+      frame_id: ''
+    name: ['right_j0', 'right_j1', 'right_j2', 'right_j3', 'right_j4', 'right_j5', 'right_j6']
+    position: [0.9594468009963417, -0.20372936772965106, -1.0393484209059132, 1.47406455200751, -1.855751853200498, -1.0697047509927082, 1.8756467201212745]
+    velocity: []
+    effort: []
+result_type: [1]
+[INFO] [WallTime: 1482347669.492051] Advanced IK call passed!
+&lt;/syntaxhighlight>
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== ROS APIs ==
+
+IK Solver Service: &lt;code>/ExternalTools/&lt;limb>/PositionKinematicsNode/IKService&lt;/code>
+
+For more ROS APIs: [[API Reference|ROS APIs]]
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Using the IK Solution Response ==
+
+The format of the SolvePositionIK Service Response is an array of &lt;code>sensor_msgs/JointState&lt;/code> solutions and a boolean array that return if the solution is valid. To use the SolvePositionIK response to control the arm joints, you can use the values returned in the JointPositions ROS message to command the arm via the Limb interface.
+As a rudimentary learning example, try building off the inverse_kinematics python example by adding a Limb interface and using the &lt;code>set_positions()&lt;/code> function. By extracting the arrays of joint names and positions into a dictionary, you can pass in the found angles to &lt;code>set_positions()&lt;/code> to move the arm joints to the desired solution, with something along the lines of:
+
+&lt;syntaxhighlight lang="bash" enclose="div">
+    ...
+    ikreq.pose_stamp.append(poses[limb])
+    try:
+        resp = iksvc(ikreq)
+    ...
+    # reformat the solution arrays into a dictionary
+    joint_solution = dict(zip(resp.joints[0].names, resp.joints[0].angles))
+    # set arm joint positions to solution
+    arm = intera_interface.Limb(limb)
+    while not rospy.is_shutdown():
+        arm.set_positions(joint_solution)
+        rospy.sleep(0.01)
+&lt;/syntaxhighlight>
+
+This is not a complete solution, as you will also need to add code to enable the robot, as is done in other arm control examples. Check out the main function of the [https://github.com/RethinkRobotics/intera_sdk/blob/master/intera_examples/scripts/joint_position_file_playback.py joint_positions_file_playback.py] example for reference.
+
+&lt;/div>
+
+&lt;div class="content-block">
+
+== Code Walkthrough ==
+
+Now, let's break down the code.
+
+&lt;syntaxhighlight lang="python" line start="33" enclose="div">
+import rospy
+from geometry_msgs.msg import (
+    PoseStamped,
+    Pose,
+    Point,
+    Quaternion,
+)
+from std_msgs.msg import Header
+from sensor_msgs.msg import JointState
+
+from intera_core_msgs.srv import (
+    SolvePositionIK,
+    SolvePositionIKRequest,
+)
+&lt;/syntaxhighlight>
+
+The geometry message types are imported to build the request message for the IK service. The custom request and response message types (intera_core_msgs-SolvePositionIK) are imported from the intera_core_msgs package.
+
+&lt;syntaxhighlight lang="python" line start="48" enclose="div">
+def ik_service_client(limb = "right", use_advanced_options = False):
+    ns = "ExternalTools/" + limb + "/PositionKinematicsNode/IKService"
+    iksvc = rospy.ServiceProxy(ns, SolvePositionIK)
+    ikreq = SolvePositionIKRequest()
+    hdr = Header(stamp=rospy.Time.now(), frame_id='base')
+&lt;/syntaxhighlight>
+
+The ros node is initialized. An object for the service call is initialized by passing the service name &lt;code>ns&lt;/code> and the Request-Response message type, &lt;code>SolvePositionIK. SolvePositionIKRequest&lt;/code> is the IK Request message type that is generated at compile time.
+
+&lt;syntaxhighlight lang="python" line start="53" enclose="div">
+    poses = {
+        'right': PoseStamped(
+            header=hdr,
+            pose=Pose(
+                position=Point(
+                    x=0.450628752997,
+                    y=0.161615832271,
+                    z=0.217447307078,
+                ),
+                orientation=Quaternion(
+                    x=0.704020578925,
+                    y=0.710172716916,
+                    z=0.00244101361829,
+                    w=0.00194372088834,
+                ),
+            ),
+        ),
+    }
+    # Add desired pose for inverse kinematics
+    ikreq.pose_stamp.append(poses[limb])
+    # Request inverse kinematics from base to "right_hand" link
+    ikreq.tip_names.append('right_hand')
+
+    if (use_advanced_options):
+        # Optional Advanced IK parameters
+        rospy.loginfo("Running Advanced IK Service Client example.")
+        # The joint seed is where the IK position solver starts its optimization
+        ikreq.seed_mode = ikreq.SEED_USER
+        seed = JointState()
+        seed.name = ['right_j0', 'right_j1', 'right_j2', 'right_j3',
+                     'right_j4', 'right_j5', 'right_j6']
+        seed.position = [0.7, 0.4, -1.7, 1.4, -1.1, -1.6, -0.4]
+        ikreq.seed_angles.append(seed)
+
+        # Once the primary IK task is solved, the solver will then try to bias the
+        # the joint angles toward the goal joint configuration. The null space is 
+        # the extra degrees of freedom the joints can move without affecting the
+        # primary IK task.
+        ikreq.use_nullspace_goal.append(True)
+        # The nullspace goal can either be the full set or subset of joint angles
+        goal = JointState()
+        goal.name = ['right_j1', 'right_j2', 'right_j3']
+        goal.position = [0.1, -0.3, 0.5]
+        ikreq.nullspace_goal.append(goal)
+        # The gain used to bias toward the nullspace goal. Must be [0.0, 1.0]
+        # If empty, the default gain of 0.4 will be used
+        ikreq.nullspace_gain.append(0.4)
+    else:
+        rospy.loginfo("Running Simple IK Service Client example.")
+&lt;/syntaxhighlight>
+
+The &lt;code>poses&lt;/code> dictionary is populated with hard-coded cartesian coordinates for robot arm, also append the gain used to bias toward the nullspace goal.
+
+&lt;syntaxhighlight lang="python" line start="103" enclose="div">
+    try:
+        rospy.wait_for_service(ns, 5.0)
+        resp = iksvc(ikreq)
+    except (rospy.ServiceException, rospy.ROSException), e:
+        rospy.logerr("Service call failed: %s" % (e,))
+        return False
+&lt;/syntaxhighlight>
+
+With a timeout of 5 seconds, the IK service is called along with the IK request message. The resp objects captures the response message which contains the joint positions. It throws an error on timeout.
+
+&lt;syntaxhighlight lang="python" line start="87" enclose="div">
+    # Check if result valid, and type of seed ultimately used to get solution
+    if (resp.result_type[0] > 0):
+        seed_str = {
+                    ikreq.SEED_USER: 'User Provided Seed',
+                    ikreq.SEED_CURRENT: 'Current Joint Angles',
+                    ikreq.SEED_NS_MAP: 'Nullspace Setpoints',
+                   }.get(resp.result_type[0], 'None')
+        rospy.loginfo("SUCCESS - Valid Joint Solution Found from Seed Type: %s" %
+              (seed_str,))
+        # Format solution into Limb API-compatible dictionary
+        limb_joints = dict(zip(resp.joints[0].name, resp.joints[0].position))
+        rospy.loginfo("\nIK Joint Solution:\n%s", limb_joints)
+        rospy.loginfo("------------------")
+        rospy.loginfo("Response Message:\n%s", resp)
+    else:
+        rospy.loginfo("INVALID POSE - No Valid Joint Solution Found.")
+
+    return True
+&lt;/syntaxhighlight>
+
+Check the result is valid or not. The &lt;code>limb_joints&lt;/code> is dictionary that holds the joint names and their corresponding position from the response message. This can be passed as a joint command to the position controller to move the arm to the corresponding position.
+
+&lt;syntaxhighlight lang="python" line start="130" enclose="div">
+def main():
+    """RSDK Inverse Kinematics Example
+
+    A simple example of using the Rethink Inverse Kinematics
+    Service which returns the joint angles and validity for
+    a requested Cartesian Pose.
+
+    Run this example, the example will use the default limb
+    and call the Service with a sample Cartesian
+    Pose, pre-defined in the example code, printing the
+    response of whether a valid joint solution was found,
+    and if so, the corresponding joint angles.
+    """
+    rospy.init_node("rsdk_ik_service_client")
+
+    if ik_service_client():
+        rospy.loginfo("Simple IK call passed!")
+    else:
+        rospy.logerror("Simple IK call FAILED")
+
+    if ik_service_client(use_advanced_options=True):
+        rospy.loginfo("Advanced IK call passed!")
+    else:
+        rospy.logerror("Advanced IK call FAILED")
+
+
+if __name__ == '__main__':
+    main()
+&lt;/syntaxhighlight>
+
+The &lt;code>ik_service_client()&lt;/code> function is called with use advanced option as an argument to calculate the IK service as explained above.
+
+&lt;/div>
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="http://sdk.rethinkrobotics.com/intera/Template:TOClimit" title="Template:TOClimit">Template:TOClimit</a> (<a href="http://sdk.rethinkrobotics.com/intera/a/index.php?title=Template:TOClimit&amp;action=edit" title="Template:TOClimit">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="../IK_Service_Example" title="IK Service Example">IK Service Example</a>.</p>
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="../IK_Service_Example">http://sdk.rethinkrobotics.com/intera/IK_Service_Example</a>"</div>
+
+            <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>            <!-- end content -->
+
+                        <div class="visualClear"></div>
+        </div><!--/#bodyContent-->
+    </div> <!-- /mainContent -->
+</div><!--/.bg-wrapper
+<!-- end fragment mainContent --></div><!-- /mBody --><div class="visualClear"></div><!-- start fragment footer -->        <div id="footer" role="contentinfo">
+                <div id="f-poweredbyico">
+                            <a href="http://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/intera/a/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /intera/a/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>                    </div>
+            <ul id="f-list">
+                            <li id="copywrite_notice">&copy; 2019 Rethink Robotics. All rights reserved.</li>
+                            <li id="special_pages"><a href="http://sdk.rethinkrobotics.com/intera/%E2%A7%BCspecialPagePage%E2%A7%BD" title="⧼specialPagePage⧽">Special page</a></li>
+                            <li id="privacy"><a href="../Intera_SDK:Privacy_policy" title="Intera SDK:Privacy policy">Privacy policy</a></li>
+                            <li id="about"><a href="../Intera_SDK:About" title="Intera SDK:About">About Intera SDK</a></li>
+                            <li id="disclaimer"><a href="../Intera_SDK:General_disclaimer" title="Intera SDK:General disclaimer">Disclaimers</a></li>
+                    </ul><!--/#f-list-->
+    </div><!-- end fragment footer --></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":120});});</script></body></html>
